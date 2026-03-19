@@ -1,0 +1,188 @@
+---
+interface Props {
+  showNav?: boolean;
+}
+
+const { showNav = true } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <div class="header-content container">
+    <a href="/" class="logo-link">
+      <img 
+        src="/Lightmodewidelogo.png" 
+        alt="EduAtlas" 
+        class="logo logo-light"
+      />
+      <img 
+        src="/Darkmodewidelogo.png" 
+        alt="EduAtlas" 
+        class="logo logo-dark"
+      />
+    </a>
+    
+    <nav class="nav-links">
+      <a href="/" class={`nav-item ${currentPath === '/' ? 'active' : ''}`}>
+         <span>Home</span>
+         <div class="nav-line"></div>
+      </a>
+      <a href="/subjects" class={`nav-item ${currentPath.startsWith('/subjects') ? 'active' : ''}`}>
+         <span>Subjects</span>
+         <div class="nav-line"></div>
+      </a>
+      <a href="/about" class={`nav-item ${currentPath === '/about' ? 'active' : ''}`}>
+         <span>About</span>
+         <div class="nav-line"></div>
+      </a>
+    </nav>
+    
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="https://educationos.vercel.app" target="_blank" rel="noopener noreferrer" class="eduos-pill">
+        by EduOS
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--app-bg-top);
+    border-bottom: 2px solid var(--app-border);
+    transition: all 0.2s ease;
+  }
+
+  .header-content {
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .logo-link:hover {
+    transform: scale(1.05) rotate(-2deg);
+  }
+
+  .logo {
+    height: 32px;
+    width: auto;
+  }
+
+  .logo-dark { display: none; }
+  :global([data-theme="dark"]) .logo-light { display: none; }
+  :global([data-theme="dark"]) .logo-dark { display: block; }
+
+  .nav-links {
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    .nav-links { display: flex; }
+  }
+
+  .nav-item {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: var(--app-text-muted);
+    font-size: 1.35rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item:hover {
+    color: var(--app-text);
+  }
+
+  .nav-item.active {
+    color: var(--app-accent);
+  }
+
+  .nav-line {
+    position: absolute;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: var(--app-accent);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 999px;
+  }
+
+  .nav-item:hover .nav-line {
+    width: 60%;
+  }
+
+  .nav-item.active .nav-line {
+    width: 80%;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 2px solid var(--app-border);
+    border-radius: 12px;
+    background: transparent;
+    color: var(--app-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .theme-btn:hover {
+    border-color: var(--app-accent);
+    color: var(--app-accent);
+    transform: rotate(15deg);
+  }
+
+  .sun-icon { display: block; }
+  .moon-icon { display: none; }
+  :global([data-theme="dark"]) .sun-icon { display: none; }
+  :global([data-theme="dark"]) .moon-icon { display: block; }
+
+  .eduos-pill {
+    display: none;
+    padding: 0.35rem 1rem;
+    background: var(--app-accent-weak);
+    color: var(--app-accent-text);
+    border: 2px solid var(--app-accent-border);
+    border-radius: 999px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+
+  @media (min-width: 480px) {
+    .eduos-pill { display: block; }
+  }
+
+  .eduos-pill:hover {
+    transform: translateY(-2px) rotate(2deg);
+    background: var(--app-accent);
+    color: white;
+  }
+</style>

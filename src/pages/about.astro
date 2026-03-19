@@ -1,0 +1,301 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About EduAtlas">
+  <div class="page-wrapper">
+    <Header />
+    
+    <main class="main-content">
+      <section class="about-hero">
+        <div class="container animate-fade-in">
+          <nav class="breadcrumb">
+            <a href="/" class="breadcrumb-link">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <span class="breadcrumb-current">About</span>
+          </nav>
+          <h1 class="hero-title wiggly-heading">Better Learning for <span class="gradient-text">Everyone</span></h1>
+          <p class="hero-subtitle">EduAtlas is the premier educational atlas designed for the IGCSE curriculum.</p>
+        </div>
+      </section>
+
+      <section class="about-main-section">
+        <div class="container">
+          <div class="mission-grid">
+            <div class="mission-image-card card glass animate-float">
+               <div class="logo-stack">
+                 <img src="/Lightmodeicon.png" alt="EduAtlas" class="stack-logo logo-light" />
+                 <img src="/Darkmodeicon.png" alt="EduAtlas" class="stack-logo logo-dark" />
+               </div>
+            </div>
+            <div class="mission-text-content">
+              <h2 class="section-heading wiggly-heading">Our Mission</h2>
+              <p class="section-text">
+                At EduAtlas, we believe that high-quality education should be accessible to all. Our mission is to bridge the gap between complex curricula and student understanding by providing clear, concise, and engaging study materials.
+              </p>
+              <p class="section-text">
+                Every piece of content on our platform is meticulously crafted to align with the <strong class="text-accent">Pearson Edexcel IGCSE</strong> specifications. We are built with the same DNA as <strong class="text-accent">EduOS</strong>, ensuring a student-first experience.
+              </p>
+              <div class="mission-stats">
+                 <div class="stat-item">
+                    <span class="stat-value">5+</span>
+                    <span class="stat-label">Subjects</span>
+                 </div>
+                 <div class="stat-item">
+                    <span class="stat-value">50+</span>
+                    <span class="stat-label">Chapters</span>
+                 </div>
+                 <div class="stat-item">
+                    <span class="stat-value">Free</span>
+                    <span class="stat-label">Education</span>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="core-pillars">
+        <div class="container">
+          <div class="section-header center">
+            <h2 class="section-heading wiggly-heading">Core Pillars</h2>
+            <p class="section-subtitle">What makes EduAtlas special.</p>
+          </div>
+          
+          <div class="pillars-grid">
+            <div class="pillar-card card">
+               <div class="pillar-icon-box blue">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+               </div>
+               <h3 class="pillar-title">Clarity</h3>
+               <p class="pillar-desc">Breaking down complex topics into digestible segments.</p>
+            </div>
+            
+            <div class="pillar-card card">
+               <div class="pillar-icon-box green">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+               </div>
+               <h3 class="pillar-title">Interactivity</h3>
+               <p class="pillar-desc">Feedback loops through interactive quizzes.</p>
+            </div>
+            
+            <div class="pillar-card card">
+               <div class="pillar-icon-box orange">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+               </div>
+               <h3 class="pillar-title">Precision</h3>
+               <p class="pillar-desc">True alignment with exam syllabi.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="eduos-integration-section">
+        <div class="container">
+          <div class="integration-banner card glass shadow-xl">
+             <div class="integration-content">
+                <span class="badge-tag">POWERED BY EDUOS</span>
+                <h2 class="banner-title">EduOS Ecosystem</h2>
+                <p class="banner-text">
+                  EduAtlas is part of the EduOS ecosystem—the unified workspace for modern classrooms. Built to help students excel through technology.
+                </p>
+                <div class="banner-actions">
+                   <a href="https://educationos.vercel.app" target="_blank" rel="noopener noreferrer" class="btn lg">
+                     Visit EducationOS
+                   </a>
+                </div>
+             </div>
+             <div class="integration-visual">
+                <img src="/Lightmodeicon.png" alt="EduOS" class="visual-logo logo-light" />
+                <img src="/Darkmodeicon.png" alt="EduOS" class="visual-logo logo-dark" />
+             </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  /* About Hero */
+  .about-hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+    border-bottom: 2px solid var(--app-border);
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .breadcrumb-link {
+    color: var(--app-accent);
+    text-decoration: none;
+  }
+
+  .breadcrumb-link:hover { text-decoration: underline; }
+  .breadcrumb-current { color: var(--app-text-muted); }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    color: var(--app-text-muted);
+    max-width: 600px;
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  /* Mission Section */
+  .about-main-section { padding: 6rem 0; }
+
+  .mission-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .mission-grid { grid-template-columns: 0.8fr 1.2fr; }
+  }
+
+  .mission-image-card {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5rem;
+    border-width: 2px;
+  }
+
+  .stack-logo {
+    width: 140px;
+    height: 140px;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+  }
+
+  .logo-dark { display: none; }
+  :global([data-theme="dark"]) .logo-light { display: none; }
+  :global([data-theme="dark"]) .logo-dark { display: block; }
+
+  .section-heading { font-size: 2.5rem; margin-bottom: 2rem; }
+
+  .section-text {
+    font-size: 1.2rem;
+    color: var(--app-text-muted);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .text-accent { color: var(--app-accent-text); font-weight: 700; }
+
+  .mission-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .stat-item { display: flex; flex-direction: column; }
+  .stat-value { font-size: 2.5rem; font-weight: 800; color: var(--app-accent); font-family: 'Caveat', cursive; }
+  .stat-label { font-size: 0.9rem; color: var(--app-text-muted); font-weight: 700; text-transform: uppercase; }
+
+  /* Core Pillars */
+  .core-pillars { padding: 6rem 0; background: var(--app-surface-muted); }
+  .section-header.center { text-align: center; margin-bottom: 4rem; }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .pillar-card {
+    padding: 3rem;
+    border-radius: 2.5rem;
+    border-width: 2px;
+    text-align: center;
+  }
+
+  .pillar-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 1.25rem;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .pillar-icon-box.blue { background: #3b82f6; }
+  .pillar-icon-box.green { background: #10b981; }
+  .pillar-icon-box.orange { background: #f59e0b; }
+
+  .pillar-title { font-family: 'Caveat', cursive; font-size: 2rem; margin-bottom: 1rem; }
+  .pillar-desc { color: var(--app-text-muted); line-height: 1.4; font-size: 1.1rem; }
+
+  /* Integration Section */
+  .eduos-integration-section { padding: 8rem 0; }
+
+  .integration-banner {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-width: 2px;
+    border-radius: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    .integration-banner { grid-template-columns: 1.2fr 0.8fr; }
+  }
+
+  .badge-tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: var(--app-accent-weak);
+    color: var(--app-accent-text);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-title { font-size: 2.75rem; margin-bottom: 1.5rem; }
+  .banner-text { font-size: 1.25rem; color: var(--app-text-muted); line-height: 1.5; margin-bottom: 2.5rem; }
+
+  .integration-visual { display: flex; justify-content: center; align-items: center; }
+  .visual-logo {
+    width: 130px;
+    height: 130px;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
+  }
+</style>

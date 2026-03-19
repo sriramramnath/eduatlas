@@ -1,0 +1,167 @@
+---
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <img src="/Lightmodeicon.png" alt="EduAtlas" class="footer-logo footer-logo-light" />
+      <img src="/Darkmodeicon.png" alt="EduAtlas" class="footer-logo footer-logo-dark" />
+      <div class="footer-text">
+        <span class="brand-name font-display">EduAtlas</span>
+        <span class="brand-by">by <a href="https://educationos.vercel.app" target="_blank" rel="noopener noreferrer" class="eduos-link">EduOS</a></span>
+      </div>
+    </div>
+    
+    <div class="footer-links">
+      <div class="footer-section">
+        <h4 class="footer-heading font-display">Subjects</h4>
+        <a href="/subjects/biology" class="footer-link">Biology</a>
+        <a href="/subjects/chemistry" class="footer-link">Chemistry</a>
+        <a href="/subjects/physics" class="footer-link">Physics</a>
+        <a href="/subjects/ict" class="footer-link">ICT</a>
+        <a href="/subjects/math" class="footer-link">Mathematics</a>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-heading font-display">Resources</h4>
+        <a href="/about" class="footer-link">About</a>
+        <a href="https://educationos.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-link">Visit EduOS</a>
+        <a href="https://educationos.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-link">Contact</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; {new Date().getFullYear()} EduAtlas by <a href="https://educationos.vercel.app" target="_blank" rel="noopener noreferrer" class="eduos-link">EduOS</a>. Free IGCSE resources for Pearson Edexcel students.
+      </p>
+      <p class="exam-notice">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Aligned with Pearson Edexcel IGCSE Specification
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--app-surface);
+    border-top: 2px solid var(--app-border);
+    margin-top: auto;
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-logo-dark {
+    display: none;
+  }
+
+  :global([data-theme="dark"]) .footer-logo-light {
+    display: none;
+  }
+
+  :global([data-theme="dark"]) .footer-logo-dark {
+    display: block;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--app-text);
+    margin: 0;
+  }
+
+  .brand-by {
+    font-size: 0.875rem;
+    color: var(--app-text-muted);
+  }
+
+  .eduos-link {
+    color: var(--app-accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .eduos-link:hover {
+    text-decoration: underline;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .footer-links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-heading {
+    font-size: 1.25rem;
+    color: var(--app-text);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .footer-link {
+    color: var(--app-text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .footer-link:hover {
+    color: var(--app-accent);
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--app-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .copyright {
+    color: var(--app-text-muted);
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  .exam-notice {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--app-accent-text);
+    font-size: 0.8rem;
+    margin: 0;
+  }
+</style>

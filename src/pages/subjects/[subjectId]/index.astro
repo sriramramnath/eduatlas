@@ -1,0 +1,377 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { subjects, getSubject } from '../../../data/subjects';
+
+export function getStaticPaths() {
+  return Object.keys(subjects).map(subjectId => ({
+    params: { subjectId }
+  }));
+}
+
+const { subjectId } = Astro.params;
+const subject = getSubject(subjectId!);
+
+if (!subject) {
+  return Astro.redirect('/subjects');
+}
+
+const bannerMap: Record<string, string> = {
+  'biology': '/banners/biology.png',
+  'chemistry': '/banners/chemistry.png',
+  'physics': '/banners/physics.png',
+  'math': '/banners/math.png',
+  'ict': '/banners/compsci.png',
+};
+
+const bannerSrc = bannerMap[subjectId] || '';
+---
+
+<Layout title={subject.title}>
+  <div class="page-wrapper patrick-hand">
+    <Header />
+    
+    <main class="main-content">
+      <section class="subject-hero-section">
+        <div class="container animate-fade-in">
+          <nav class="breadcrumb">
+            <a href="/" class="breadcrumb-link">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <a href="/subjects" class="breadcrumb-link">Subjects</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <span class="breadcrumb-current">{subject.title}</span>
+          </nav>
+          
+          <div class="subject-header">
+             <div class="subject-brand">
+                <div class="subject-icon-box" style={`border-color: ${subject.color}`}>
+                   <img src={bannerSrc} alt="" class="hero-brand-img" />
+                </div>
+                <h1 class="hero-title wiggly-heading">{subject.title}</h1>
+             </div>
+             <p class="hero-subtitle">{subject.description}</p>
+             <div class="subject-stats">
+                <div class="stat-pill glass">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                  {subject.chapters.length} Chapters
+                </div>
+                <div class="stat-pill glass">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+                  {subject.chapters.reduce((acc, ch) => acc + ch.topics.length, 0)} Topics
+                </div>
+                <div class="stat-pill glass">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Pearson IGCSE
+                </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapters-grid-section">
+        <div class="container">
+          <div class="section-header-row">
+            <h2 class="section-heading wiggly-heading">Curriculum Chapters</h2>
+            <p class="section-text">Explore the structured learning path for this subject.</p>
+          </div>
+          
+          <div class="chapters-list">
+            {subject.chapters.map((chapter) => (
+              <a href={`/subjects/${subjectId}/chapters/${chapter.id}`} class="chapter-item-link card glass">
+                <div class="chapter-body">
+                  <div class="chapter-number">{chapter.number}</div>
+                  <div class="chapter-info">
+                    <h3 class="chapter-name">{chapter.title}</h3>
+                    <p class="chapter-overview">{chapter.synopsis}</p>
+                    <div class="chapter-tags">
+                      {chapter.topics.slice(0, 3).map(topic => (
+                        <span class="chapter-topic-tag">{topic}</span>
+                      ))}
+                      {chapter.topics.length > 3 && (
+                        <span class="chapter-topic-tag more">+{chapter.topics.length - 3}</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div class="chapter-action">
+                   <div class="arrow-circle" style={`background: ${subject.color}`}>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                   </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="subject-resources-section">
+        <div class="container">
+          <div class="resources-grid">
+            <div class="resource-card card">
+               <div class="resource-visual-box blue">
+                 <img src={bannerSrc} alt="" class="resource-img" />
+               </div>
+               <h4 class="resource-title">Chapter Notes</h4>
+               <p class="resource-desc">In-depth explanations of every topic in the syllabus.</p>
+            </div>
+            <div class="resource-card card">
+               <div class="resource-visual-box green">
+                 <img src={bannerSrc} alt="" class="resource-img" />
+               </div>
+               <h4 class="resource-title">Guided Quizzes</h4>
+               <p class="resource-desc">Check your knowledge with chapter-wise assessments.</p>
+            </div>
+            <div class="resource-card card">
+               <div class="resource-visual-box orange">
+                 <img src={bannerSrc} alt="" class="resource-img" />
+               </div>
+               <h4 class="resource-title">Exam Practice</h4>
+               <p class="resource-desc">Sharpen your skills with realistic examination questions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .patrick-hand {
+    font-family: 'Patrick Hand', cursive !important;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  /* Hero Section */
+  .subject-hero-section {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+    border-bottom: 2px solid var(--app-border);
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+  }
+
+  .breadcrumb-link {
+    color: var(--app-accent);
+    text-decoration: none;
+  }
+
+  .breadcrumb-link:hover { text-decoration: underline; }
+  .breadcrumb-current { color: var(--app-text-muted); }
+
+  .subject-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .subject-brand {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .subject-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: white;
+    border: 3px solid;
+  }
+
+  .hero-brand-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.45rem;
+    color: var(--app-text-muted);
+    max-width: 800px;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+
+  .subject-stats {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  /* Chapters List */
+  .chapters-grid-section {
+    padding: 6rem 0;
+  }
+
+  .section-header-row {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .section-heading { font-size: 2.75rem; margin-bottom: 0.5rem; }
+  .section-text { font-size: 1.35rem; color: var(--app-text-muted); }
+
+  .chapters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .chapter-item-link {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-width: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .chapter-item-link:hover {
+    transform: scale(1.02) translateX(10px);
+    border-color: var(--app-accent);
+  }
+
+  .chapter-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1;
+  }
+
+  .chapter-number {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--app-accent);
+    min-width: 45px;
+    line-height: 1;
+  }
+
+  .chapter-info {
+    flex: 1;
+  }
+
+  .chapter-name {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .chapter-overview {
+    font-size: 1.25rem;
+    color: var(--app-text-muted);
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .chapter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chapter-topic-tag {
+    padding: 0.2rem 0.85rem;
+    background: var(--app-surface-muted);
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .arrow-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .chapter-item-link:hover .arrow-circle {
+    transform: rotate(-15deg) scale(1.1);
+  }
+
+  /* Resources Section */
+  .subject-resources-section {
+    padding: 4rem 0 8rem;
+    background: var(--app-surface-muted);
+  }
+
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .resource-card {
+    padding: 2.5rem;
+    text-align: center;
+    border-width: 2px;
+  }
+
+  .resource-visual-box {
+    width: 72px;
+    height: 72px;
+    border-radius: 1.25rem;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: 3px solid var(--app-border);
+  }
+
+  .resource-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .resource-title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .resource-desc {
+    color: var(--app-text-muted);
+    font-size: 1.25rem;
+  }
+</style>

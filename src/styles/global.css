@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+  --app-bg-top: #ffffff;
+  --app-bg-bottom: #f8fafc;
+  --app-surface: rgba(255, 255, 255, 0.85);
+  --app-surface-opaque: #ffffff;
+  --app-surface-muted: #f1f5f9;
+  --app-border: #e2e8f0;
+  --app-text: #0f172a;
+  --app-text-muted: #475569;
+  --app-accent: #10b981;
+  --app-accent-weak: #dcfce7;
+  --app-accent-text: #059669;
+  --app-accent-border: #10b981;
+  --app-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --app-radius: 12px;
+  --sketch-border-width: 2px;
+}
+
+[data-theme="dark"] {
+  --app-bg-top: #0a0f1d;
+  --app-bg-bottom: #020617;
+  --app-surface: rgba(15, 23, 42, 0.7);
+  --app-surface-opaque: #1e293b;
+  --app-surface-muted: rgba(255, 255, 255, 0.05);
+  --app-border: rgba(255, 255, 255, 0.1);
+  --app-text: #f8fafc;
+  --app-text-muted: #94a3b8;
+  --app-accent: #10b981;
+  --app-accent-weak: rgba(16, 185, 129, 0.15);
+  --app-accent-text: #34d399;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--app-text);
+  background-color: var(--app-bg-top);
+  background-image: 
+    radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--app-accent) 6%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, color-mix(in srgb, #3b82f6 5%, transparent) 0%, transparent 45%),
+    linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+  min-height: 100vh;
+  line-height: 1.4;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass {
+  background: var(--app-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--app-border);
+}
+
+.card {
+  background: var(--app-surface-opaque);
+  border: var(--sketch-border-width) solid var(--app-border);
+  border-radius: var(--app-radius);
+  box-shadow: var(--app-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.75rem 2rem;
+  background: var(--app-accent);
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--app-accent) 70%, black);
+}
+
+.btn:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 0 color-mix(in srgb, var(--app-accent) 70%, black);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 transparent;
+}
+
+.btn-secondary {
+  background: var(--app-surface-muted);
+  color: var(--app-text);
+  border: var(--sketch-border-width) solid var(--app-border);
+  box-shadow: 0 4px 0 var(--app-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--app-accent);
+  color: var(--app-accent);
+  box-shadow: 0 8px 0 var(--app-border);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 1rem;
+  background: var(--app-accent-weak);
+  color: var(--app-accent-text);
+  border-radius: 9999px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.wiggly-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.wiggly-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='6' viewBox='0 0 52 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5C4.5 4.5 5.5 1.5 9 1.5C12.5 1.5 13.5 4.5 17 4.5C20.5 4.5 21.5 1.5 25 1.5C28.5 1.5 29.5 4.5 33 4.5C36.5 4.5 37.5 1.5 41 1.5C44.5 1.5 45.5 4.5 49 4.5' stroke='%2310B981' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--app-accent), #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1.5deg); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--app-bg-top); }
+::-webkit-scrollbar-thumb { background: var(--app-border); border-radius: 5px; border: 2px solid var(--app-bg-top); }
+::-webkit-scrollbar-thumb:hover { background: var(--app-accent); }

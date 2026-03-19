@@ -1,0 +1,460 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Header from '../../../../components/Header.astro';
+import Footer from '../../../../components/Footer.astro';
+import { subjects, getSubject, getChapter } from '../../../../data/subjects';
+import { marked } from 'marked';
+
+export function getStaticPaths() {
+  const paths: Array<{params: {subjectId: string; chapterId: string}}> = [];
+  
+  for (const subjectId of Object.keys(subjects)) {
+    const subject = subjects[subjectId];
+    for (const chapter of subject.chapters) {
+      paths.push({
+        params: { subjectId, chapterId: chapter.id }
+      });
+    }
+  }
+  
+  return paths;
+}
+
+const { subjectId, chapterId } = Astro.params;
+const subject = getSubject(subjectId!);
+const chapter = getChapter(subjectId!, chapterId!);
+
+if (!subject || !chapter) {
+  return Astro.redirect('/subjects');
+}
+
+const tab = Astro.url.searchParams.get('tab') || 'notes';
+
+const contentHtml = chapter.content ? marked.parse(chapter.content) : null;
+
+const tabIcons: Record<string, string> = {
+  notes: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>',
+  synopsis: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  quiz: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>',
+  practice: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>',
+};
+---
+
+<Layout title={`${chapter.title} - ${subject.title}`}>
+  <div class="page-wrapper patrick-hand">
+    <Header />
+    
+    <main class="main-content">
+      <section class="chapter-hero">
+        <div class="container animate-fade-in">
+          <nav class="breadcrumb">
+            <a href="/" class="breadcrumb-link">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            <a href="/subjects" class="breadcrumb-link">Subjects</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            <a href={`/subjects/${subjectId}`} class="breadcrumb-link">{subject.title}</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            <span class="breadcrumb-current">Chapter {chapter.number}</span>
+          </nav>
+          
+          <div class="chapter-header">
+            <div class="chapter-tag-wrap">
+              <span class="chapter-tag" style={`background: ${subject.color}`}>Chapter {chapter.number}</span>
+            </div>
+            <h1 class="hero-title wiggly-heading">{chapter.title}</h1>
+            <p class="hero-subtitle">{chapter.synopsis}</p>
+            <div class="chapter-meta">
+              <span class="meta-item glass">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                {chapter.estimatedTime}
+              </span>
+              <span class="meta-item glass">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+                {chapter.topics.length} Topics
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter-content-section">
+        <div class="container">
+          <div class="tabs-nav glass">
+            <div class="tabs-list" style={`--tab-accent: ${subject.color}`}>
+              <a href={`?tab=notes`} class={`tab-item ${tab === 'notes' ? 'active' : ''}`}>
+                 <div class="tab-icon" set:html={tabIcons.notes} />
+                 <span>Notes</span>
+              </a>
+              <a href={`?tab=synopsis`} class={`tab-item ${tab === 'synopsis' ? 'active' : ''}`}>
+                 <div class="tab-icon" set:html={tabIcons.synopsis} />
+                 <span>Synopsis</span>
+              </a>
+              <a href={`?tab=quiz`} class={`tab-item ${tab === 'quiz' ? 'active' : ''}`}>
+                 <div class="tab-icon" set:html={tabIcons.quiz} />
+                 <span>Quiz</span>
+              </a>
+              <a href={`?tab=practice`} class={`tab-item ${tab === 'practice' ? 'active' : ''}`}>
+                 <div class="tab-icon" set:html={tabIcons.practice} />
+                 <span>Practice</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-panel animate-fade-in">
+            {tab === 'notes' && (
+              <div class="notes-panel">
+                <div class="panel-card card">
+                  <div class="card-header-accent" style={`background: ${subject.color}`}>
+                    <h2 class="panel-card-title">Study Material</h2>
+                  </div>
+                  <div class="card-body">
+                    {contentHtml ? (
+                      <div class="markdown-content" set:html={contentHtml} />
+                    ) : (
+                      <div class="no-content">
+                         <p>Detailed notes for this chapter are coming soon.</p>
+                         <h3 class="panel-subheading wiggly-heading">Topics Covered</h3>
+                         <div class="topics-grid">
+                            {chapter.topics.map((topic, index) => (
+                              <div class="topic-item card glass">
+                                 <span class="topic-num">{index + 1}</span>
+                                 <span class="topic-label">{topic}</span>
+                              </div>
+                            ))}
+                         </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {tab === 'synopsis' && (
+              <div class="premium-lock-panel animate-fade-in">
+                <div class="panel-card card glass">
+                  <div class="premium-lock-content">
+                    <div class="lock-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lock-icon"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h2 class="premium-title patrick-hand">Premium Feature</h2>
+                    <p class="premium-text patrick-hand">Upgrade to EduOS Pro to unlock the full chapter synopsis, knowledge check-points, and guided walkthroughs.</p>
+                    <a href="https://educationos.vercel.app/?page=pricing" target="_blank" class="btn lg premium-btn patrick-hand">
+                      Upgrade to EduOS Pro
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {tab === 'quiz' && (
+              <div class="premium-lock-panel animate-fade-in">
+                <div class="panel-card card glass">
+                  <div class="premium-lock-content">
+                    <div class="lock-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lock-icon"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h2 class="premium-title patrick-hand">Start the Quiz!</h2>
+                    <p class="premium-text patrick-hand">Challenge yourself with interactive questions and instant feedback. Requires an EduOS Pro subscription.</p>
+                    <a href="https://educationos.vercel.app/?page=pricing" target="_blank" class="btn lg premium-btn patrick-hand">
+                      Upgrade to EduOS Pro
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {tab === 'practice' && (
+              <div class="premium-lock-panel animate-fade-in">
+                <div class="panel-card card glass">
+                  <div class="premium-lock-content">
+                    <div class="lock-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lock-icon"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h2 class="premium-title patrick-hand">Master Practice</h2>
+                    <p class="premium-text patrick-hand">Get access to past paper questions and expert-written model answers. Requires an EduOS Pro subscription.</p>
+                    <a href="https://educationos.vercel.app/?page=pricing" target="_blank" class="btn lg premium-btn patrick-hand">
+                      Upgrade to EduOS Pro
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
+
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </div>
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const quizContainer = document.getElementById('quiz-container');
+    const checkBtn = document.getElementById('check-btn');
+    const resetBtn = document.getElementById('reset-btn');
+    const feedback = document.getElementById('quiz-feedback');
+    
+    if (quizContainer && checkBtn && resetBtn && feedback) {
+      const options = quizContainer.querySelectorAll('.quiz-opt');
+      
+      options.forEach(opt => {
+        opt.addEventListener('click', () => {
+          options.forEach(o => o.classList.remove('selected'));
+          opt.classList.add('selected');
+        });
+      });
+      
+      checkBtn.addEventListener('click', () => {
+        const selected = quizContainer.querySelector('.quiz-opt.selected');
+        if (!selected) return;
+        
+        const isCorrect = selected.getAttribute('data-correct') === 'true';
+        selected.classList.add(isCorrect ? 'correct' : 'incorrect');
+        
+        feedback.style.display = 'block';
+        feedback.className = `quiz-feedback ${isCorrect ? 'success' : 'error'}`;
+        feedback.innerHTML = isCorrect 
+          ? '<strong>Correct!</strong> You nailed it!' 
+          : '<strong>Oops!</strong> That\'s not quite right. Try again!';
+      });
+      
+      resetBtn.addEventListener('click', () => {
+        options.forEach(o => o.classList.remove('selected', 'correct', 'incorrect'));
+        feedback.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+<style>
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .patrick-hand {
+    font-family: 'Patrick Hand', cursive !important;
+  }
+
+  .main-content { flex: 1; }
+
+  /* Chapter Hero */
+  .chapter-hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+    border-bottom: 2px solid var(--app-border);
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .breadcrumb-link { color: var(--app-accent); }
+  .breadcrumb-current { color: var(--app-text-muted); }
+
+  .chapter-tag-wrap { margin-bottom: 1.5rem; }
+  .chapter-tag {
+    padding: 0.4rem 1.25rem;
+    border-radius: 999px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .hero-title { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem; }
+  .hero-subtitle {
+    font-size: 1.4rem;
+    color: var(--app-text-muted);
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+
+  .chapter-meta { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .meta-item {
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Content Section */
+  .chapter-content-section { padding: 4rem 0 8rem; }
+
+  .tabs-nav {
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border-width: 2px;
+  }
+
+  .tabs-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  @media (min-width: 640px) { .tabs-list { grid-template-columns: repeat(4, 1fr); } }
+
+  .tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    gap: 0.5rem;
+    font-size: 1.65rem;
+    font-weight: 400;
+    color: var(--app-text-muted);
+    transition: all 0.2s ease;
+  }
+
+  .tab-item:hover { background: var(--app-surface-muted); color: var(--app-text); }
+  .tab-item.active { background: var(--tab-accent); color: white; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+
+  .tab-icon { margin-top: -2px; }
+
+  /* Panel Design */
+  .panel-card { border-width: 2px; border-radius: 2.5rem; }
+  .card-header-accent { padding: 1.5rem 2.5rem; border-radius: 2.2rem 2.2rem 0 0; }
+  .panel-card-title { font-size: 2rem; color: white; margin: 0; }
+  .card-body { padding: 3rem 2.5rem; }
+
+  .notes-text-intro, .synopsis-long-text {
+    font-size: 1.3rem;
+    color: var(--app-text-muted);
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+
+  .panel-subheading { font-size: 2.25rem; margin-bottom: 2rem; }
+
+  .topics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+  .topic-item { padding: 1.5rem; border-radius: 1.5rem; display: flex; align-items: center; gap: 1rem; border-width: 2px; }
+  .topic-num { font-size: 2rem; font-weight: 800; color: var(--app-accent); }
+  .topic-label { font-size: 1.35rem; }
+
+  .checkpoints-list { display: flex; flex-direction: column; gap: 1rem; }
+  .checkpoint-item { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem; border-radius: 1rem; background: var(--app-surface-muted); }
+  .checkpoint-label { font-size: 1.35rem; }
+
+  /* Markdown Content Styling */
+  .markdown-content {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--app-text);
+  }
+
+  .markdown-content :global(h1) { font-size: 2.5rem; margin: 2rem 0 1rem; color: var(--app-accent); position: relative; display: inline-block; }
+  .markdown-content :global(h1::after) { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: var(--app-accent); opacity: 0.3; }
+  
+  .markdown-content :global(h2) { font-size: 2rem; margin: 1.5rem 0 0.75rem; color: var(--app-text); }
+  .markdown-content :global(h3) { font-size: 1.65rem; margin: 1.25rem 0 0.5rem; color: var(--app-text-muted); }
+  
+  .markdown-content :global(p) { margin-bottom: 1.25rem; }
+  
+  .markdown-content :global(ul), .markdown-content :global(ol) { margin: 1rem 0 1.5rem 2rem; }
+  .markdown-content :global(li) { margin-bottom: 0.5rem; }
+  
+  .markdown-content :global(table) { width: 100%; border-collapse: collapse; margin: 2rem 0; border: 2px solid var(--app-border); border-radius: 1rem; overflow: hidden; }
+  .markdown-content :global(th), .markdown-content :global(td) { padding: 0.75rem 1rem; border: 1px solid var(--app-border); text-align: left; }
+  .markdown-content :global(th) { background: var(--app-surface-muted); font-weight: 700; }
+
+  .markdown-content :global(strong) { color: var(--app-accent-text); }
+
+  /* Quiz Design */
+  .quiz-question-card { padding: 2.5rem; border-radius: 2rem; border-width: 2px; margin-bottom: 2rem; }
+  .q-number { font-size: 1.2rem; color: var(--app-text-muted); }
+  .q-text { font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0 2rem; }
+
+  .quiz-options-list { display: flex; flex-direction: column; gap: 1rem; }
+  .quiz-opt {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 2rem;
+    border-radius: 1.25rem;
+    border: 2px solid var(--app-border);
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    font-family: 'Patrick Hand', cursive !important;
+  }
+
+  .quiz-opt.selected { border-color: var(--app-text); background: var(--app-surface-muted); }
+  .quiz-opt.correct { background: #dcfce7; border-color: #10b981; color: #064e3b; }
+  .quiz-opt.incorrect { background: #fee2e2; border-color: #ef4444; color: #7f1d1d; }
+
+  .opt-id { font-size: 1.5rem; font-weight: 800; min-width: 25px; }
+  .opt-val { font-size: 1.4rem; }
+
+  .quiz-feedback { margin-top: 2rem; padding: 1.25rem 2rem; border-radius: 1rem; font-size: 1.35rem; }
+  .quiz-feedback.success { background: #dcfce7; color: #064e3b; }
+  .quiz-feedback.error { background: #fee2e2; color: #7f1d1d; }
+
+  .quiz-actions-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  /* Practice Panel */
+  .practice-questions-list { display: flex; flex-direction: column; gap: 1.5rem; }
+  .practice-item { padding: 1.5rem; border-radius: 2rem; display: flex; gap: 1.5rem; border-width: 2px; }
+  .p-num { width: 40px; height: 40px; border-radius: 999px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.4rem; flex-shrink: 0; }
+  .p-heading { font-size: 1.45rem; margin-bottom: 1rem; }
+  .p-details { border-radius: 1rem; overflow: hidden; }
+  .p-summary { cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; background: var(--app-surface-muted); font-weight: 700; font-size: 1.1rem; }
+  /* Premium Lock Panel */
+  .premium-lock-panel {
+    padding: 2rem 0;
+  }
+
+  .premium-lock-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .lock-icon-wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--app-accent-weak);
+    color: var(--app-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .premium-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--app-text);
+  }
+
+  .premium-text {
+    font-size: 1.4rem;
+    color: var(--app-text-muted);
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .premium-btn {
+    min-width: 280px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .lock-icon-wrap {
+      background: rgba(16, 185, 129, 0.2);
+    }
+  }
+</style>

@@ -1,0 +1,135 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import SubjectCard from '../../components/SubjectCard.astro';
+import { subjects } from '../../data/subjects';
+---
+
+<Layout title="All Subjects">
+  <div class="page-wrapper">
+    <Header />
+    
+    <main class="main-content">
+      <section class="subjects-hero">
+        <div class="container animate-fade-in">
+          <nav class="breadcrumb">
+            <a href="/" class="breadcrumb-link">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <span class="breadcrumb-current">Subjects</span>
+          </nav>
+          <h1 class="hero-title wiggly-heading">Master Your <span class="gradient-text">Subjects</span></h1>
+          <p class="hero-subtitle">Browse our complete collection of IGCSE resources, curated for excellence.</p>
+        </div>
+      </section>
+
+      <section class="subjects-grid-section">
+        <div class="container">
+          <div class="subjects-grid">
+            <SubjectCard 
+              title="Biology"
+              description="Complete IGCSE Biology notes covering cell biology, genetics, evolution, ecology, and more."
+              href="/subjects/biology"
+              color="#22c55e"
+              icon="biology"
+              chapterCount={subjects.biology.chapters.length}
+            />
+            <SubjectCard 
+              title="Chemistry"
+              description="Master Chemistry concepts from atomic structure to organic chemistry with detailed notes."
+              href="/subjects/chemistry"
+              color="#3b82f6"
+              icon="chemistry"
+              chapterCount={subjects.chemistry.chapters.length}
+            />
+            <SubjectCard 
+              title="Physics"
+              description="Understand Physics principles from forces to electricity with worked examples."
+              href="/subjects/physics"
+              color="#f59e0b"
+              icon="physics"
+              chapterCount={subjects.physics.chapters.length}
+            />
+            <SubjectCard 
+              title="ICT"
+              description="Learn Information Technology concepts including hardware, software, networks, and databases."
+              href="/subjects/ict"
+              color="#8b5cf6"
+              icon="ict"
+              chapterCount={subjects.ict.chapters.length}
+            />
+            <SubjectCard 
+              title="Mathematics"
+              description="Comprehensive Math coverage from algebra to calculus with practice problems."
+              href="/subjects/math"
+              color="#ec4899"
+              icon="math"
+              chapterCount={subjects.math.chapters.length}
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .subjects-hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+    border-bottom: 2px solid var(--app-border);
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .breadcrumb-link {
+    color: var(--app-accent);
+    text-decoration: none;
+  }
+
+  .breadcrumb-link:hover { text-decoration: underline; }
+  .breadcrumb-current { color: var(--app-text-muted); }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    color: var(--app-text-muted);
+    max-width: 600px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.5;
+  }
+
+  .subjects-grid-section {
+    padding: 6rem 0;
+  }
+
+  .subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+</style>
