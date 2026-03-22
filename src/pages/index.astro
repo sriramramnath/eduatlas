@@ -11,13 +11,28 @@ import SubjectCard from '../components/SubjectCard.astro';
     
     <main class="main-content">
       <section class="hero-section">
-        <div class="container hero-container">
-          <div class="hero-content animate-fade-in">
-            <div class="hero-badge-wrapper">
-              <span class="hero-badge tag glass">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="sparkle"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707"/></svg>
-                <span class="patrick-hand">Free IGCSE Resources</span>
         <div class="container hero-container centered">
+          <div class="hero-content animate-fade-in">
+            <h1 class="hero-title wiggly-heading">
+              Master Your IGCSEs, <br /> The Fun and Free Way.
+            </h1>
+            <p class="hero-subtitle">
+              EduAtlas provides comprehensive, curriculum-aligned study notes and resources for Pearson Edexcel IGCSE subjects, all for free. No subscriptions, no hidden fees.
+            </p>
+            
+            <div class="hero-search-wrapper">
+              <input type="search" placeholder="Find a subject..." class="hero-search-input" />
+              <button class="btn patrick-hand">Search</button>
+            </div>
+
+            <div class="hero-quick-links">
+              <span class="quick-links-label">Popular:</span>
+              <a href="/subjects/biology" class="quick-link tag">Biology</a>
+              <a href="/subjects/chemistry" class="quick-link tag">Chemistry</a>
+              <a href="/subjects/physics" class="quick-link tag">Physics</a>
+              <a href="/subjects/math" class="quick-link tag">Maths</a>
+            </div>
+          </div>
           
           <div class="hero-visual animate-float large-mode">
             <div class="large-icon-wrapper glass">
@@ -196,19 +211,42 @@ import SubjectCard from '../components/SubjectCard.astro';
     line-height: 1.6;
   }
 
-  .hero-actions {
+  .hero-search-wrapper {
     display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 
-  .btn.lg {
-    padding: 0.85rem 2.25rem;
-    font-size: 1.4rem;
+  .hero-search-input {
+    flex-grow: 1;
+    border-radius: 0.75rem 0 0 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--app-border);
+    border-right: none;
+    font-size: 1.2rem;
   }
-  
-  .btn-icon {
-    flex-shrink: 0;
+
+  .hero-search-wrapper .btn {
+    border-radius: 0 0.75rem 0.75rem 0;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .hero-quick-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--app-text-muted);
+  }
+
+  .quick-link.tag {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .quick-link.tag:hover {
+    background: var(--app-surface-heavy);
+    color: var(--app-accent);
   }
 
   /* Hero Visual */

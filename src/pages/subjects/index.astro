@@ -3,7 +3,10 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import SubjectCard from '../../components/SubjectCard.astro';
-import { subjects } from '../../data/subjects';
+import { getSubjects } from '../../utils/subjects';
+
+const subjects = getSubjects();
+const subjectsList = Object.values(subjects);
 ---
 
 <Layout title="All Subjects">
@@ -26,46 +29,22 @@ import { subjects } from '../../data/subjects';
       <section class="subjects-grid-section">
         <div class="container">
           <div class="subjects-grid">
-            <SubjectCard 
-              title="Biology"
-              description="Complete IGCSE Biology notes covering cell biology, genetics, evolution, ecology, and more."
-              href="/subjects/biology"
-              color="#22c55e"
-              icon="biology"
-              chapterCount={subjects.biology.chapters.length}
-            />
-            <SubjectCard 
-              title="Chemistry"
-              description="Master Chemistry concepts from atomic structure to organic chemistry with detailed notes."
-              href="/subjects/chemistry"
-              color="#3b82f6"
-              icon="chemistry"
-              chapterCount={subjects.chemistry.chapters.length}
-            />
-            <SubjectCard 
-              title="Physics"
-              description="Understand Physics principles from forces to electricity with worked examples."
-              href="/subjects/physics"
-              color="#f59e0b"
-              icon="physics"
-              chapterCount={subjects.physics.chapters.length}
-            />
-            <SubjectCard 
-              title="ICT"
-              description="Learn Information Technology concepts including hardware, software, networks, and databases."
-              href="/subjects/ict"
-              color="#8b5cf6"
-              icon="ict"
-              chapterCount={subjects.ict.chapters.length}
-            />
-            <SubjectCard 
-              title="Mathematics"
-              description="Comprehensive Math coverage from algebra to calculus with practice problems."
-              href="/subjects/math"
-              color="#ec4899"
-              icon="math"
-              chapterCount={subjects.math.chapters.length}
-            />
+            {subjectsList.length > 0 ? (
+              subjectsList.map((subject: any) => (
+                <SubjectCard 
+                  title={subject.title}
+                  description={subject.description}
+                  href={`/subjects/${subject.id}`}
+                  color={subject.color}
+                  icon={subject.id}
+                  chapterCount={subject.chapters.length}
+                />
+              ))
+            ) : (
+              <div class="empty-state">
+                <p>No subjects available yet. Add subjects to the <code>/src/subjects</code> folder to get started.</p>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -131,5 +110,17 @@ import { subjects } from '../../data/subjects';
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2.5rem;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 4rem;
+    color: var(--app-text-muted);
+  }
+
+  .empty-state code {
+    background: var(--app-surface-muted);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
   }
 </style>

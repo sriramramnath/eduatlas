@@ -2,16 +2,18 @@
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
-import { subjects, getSubject } from '../../../data/subjects';
+import { getSubjects } from '../../../utils/subjects';
 
 export function getStaticPaths() {
+  const subjects = getSubjects();
   return Object.keys(subjects).map(subjectId => ({
     params: { subjectId }
   }));
 }
 
 const { subjectId } = Astro.params;
-const subject = getSubject(subjectId!);
+const subjects = getSubjects();
+const subject = subjects[subjectId!];
 
 if (!subject) {
   return Astro.redirect('/subjects');
