@@ -20,10 +20,16 @@ import SubjectCard from '../components/SubjectCard.astro';
               EduAtlas provides comprehensive, curriculum-aligned study notes and resources for Pearson Edexcel IGCSE subjects, all for free. No subscriptions, no hidden fees.
             </p>
             
-            <div class="hero-search-wrapper">
-              <input type="search" placeholder="Find a subject..." class="hero-search-input" />
-              <button class="btn patrick-hand">Search</button>
-            </div>
+            <form class="hero-search-wrapper" action="/search" method="get">
+              <input
+                type="search"
+                name="q"
+                placeholder="Find a subject, chapter, notes, quiz..."
+                class="hero-search-input"
+                aria-label="Search EduAtlas"
+              />
+              <button type="submit" class="btn patrick-hand">Search</button>
+            </form>
 
             <div class="hero-quick-links">
               <span class="quick-links-label">Popular:</span>

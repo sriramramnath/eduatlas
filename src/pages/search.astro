@@ -1,0 +1,681 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getSearchDocuments } from '../utils/search';
+
+const searchDocuments = getSearchDocuments();
+---
+
+<Layout title="Search">
+  <div class="page-wrapper patrick-hand">
+    <Header />
+
+    <main class="main-content">
+      <section class="search-hero">
+        <div class="container">
+          <div class="search-shell card glass animate-fade-in">
+            <form class="search-form" action="/search" method="get">
+              <label class="search-input-wrap">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                <input
+                  id="atlas-search-input"
+                  class="search-input"
+                  type="search"
+                  name="q"
+                  placeholder="Try biology, chapter 5, quiz, photosynthesis..."
+                  autocomplete="off"
+                  aria-label="Search EduAtlas"
+                />
+              </label>
+              <button type="submit" class="btn patrick-hand">Search</button>
+            </form>
+
+            <div class="search-suggestions" aria-label="Suggested searches">
+              <a class="suggestion-chip" href="/search?q=biology">Biology</a>
+              <a class="suggestion-chip" href="/search?q=photosynthesis">Photosynthesis</a>
+              <a class="suggestion-chip" href="/search?q=food+and+digestion">Food and Digestion</a>
+              <a class="suggestion-chip" href="/search?q=chapter+10+quiz">Chapter 10 Quiz</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-results-section">
+        <div class="container">
+          <div class="results-meta animate-fade-in">
+            <p id="search-status" class="results-status">Enter a search to see results.</p>
+            <p id="search-helper" class="results-helper">Results are grouped by subject or chapter so you can jump into notes, synopsis, quiz, or practice from one place.</p>
+          </div>
+
+          <div id="search-results" class="results-grid" aria-live="polite"></div>
+
+          <div id="search-empty" class="empty-state card hidden">
+            <h2 class="empty-title">No matches found</h2>
+            <p class="empty-copy">
+              Try a subject name, chapter number, topic, or a page type like notes, synopsis, quiz, or practice.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </div>
+</Layout>
+
+<script define:vars={{ searchDocuments }}>
+  const input = document.querySelector('#atlas-search-input');
+  const status = document.querySelector('#search-status');
+  const helper = document.querySelector('#search-helper');
+  const resultsRoot = document.querySelector('#search-results');
+  const emptyState = document.querySelector('#search-empty');
+
+  const subjectImages = {
+    biology: '/banners/biology.png',
+    chemistry: '/banners/chemistry.png',
+    physics: '/banners/physics.png',
+    math: '/banners/math.png',
+    ict: '/banners/compsci.png',
+  };
+
+  const typeLabels = {
+    subject: 'Subject',
+    chapter: 'Chapter',
+    notes: 'Notes',
+    synopsis: 'Synopsis',
+    quiz: 'Quiz',
+    practice: 'Practice',
+  };
+
+  function normalize(value) {
+    return value
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function escapeHtml(value) {
+    return value
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function titleCase(value) {
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  }
+
+  function scoreDocument(doc, normalizedQuery, tokens) {
+    if (!normalizedQuery) {
+      return 0;
+    }
+
+    const title = normalize(doc.title);
+    const subtitle = normalize(doc.subtitle);
+    const description = normalize(doc.description);
+    const keywords = normalize(doc.keywords.join(' '));
+    const haystack = [title, subtitle, description, keywords].join(' ');
+
+    let score = 0;
+
+    if (title === normalizedQuery) score += 140;
+    if (subtitle === normalizedQuery) score += 120;
+    if (title.startsWith(normalizedQuery)) score += 100;
+    if (subtitle.startsWith(normalizedQuery)) score += 80;
+    if (title.includes(normalizedQuery)) score += 55;
+    if (subtitle.includes(normalizedQuery)) score += 40;
+    if (description.includes(normalizedQuery)) score += 24;
+    if (keywords.includes(normalizedQuery)) score += 32;
+
+    let matchedTokens = 0;
+
+    for (const token of tokens) {
+      if (!token) continue;
+
+      let tokenMatched = false;
+
+      if (title.includes(token)) {
+        score += 24;
+        tokenMatched = true;
+      }
+
+      if (subtitle.includes(token)) {
+        score += 16;
+        tokenMatched = true;
+      }
+
+      if (description.includes(token)) {
+        score += 8;
+        tokenMatched = true;
+      }
+
+      if (keywords.includes(token)) {
+        score += 12;
+        tokenMatched = true;
+      }
+
+      if (tokenMatched) {
+        matchedTokens += 1;
+      }
+    }
+
+    if (matchedTokens === tokens.length) {
+      score += 36;
+    }
+
+    if (!haystack.includes(normalizedQuery) && matchedTokens === 0) {
+      return 0;
+    }
+
+    const typePriority = {
+      subject: 6,
+      chapter: 5,
+      notes: 4,
+      synopsis: 3,
+      quiz: 2,
+      practice: 1,
+    };
+
+    return score + typePriority[doc.type];
+  }
+
+  function getSectionLabel(doc) {
+    if (doc.type === 'subject') {
+      return 'Subject overview';
+    }
+
+    return `Section: Chapter ${doc.chapterNumber}`;
+  }
+
+  function getPageLabel(doc) {
+    if (doc.type === 'subject') {
+      return 'Subject';
+    }
+
+    if (doc.type === 'chapter') {
+      return 'Overview';
+    }
+
+    return titleCase(doc.type);
+  }
+
+  function getCardTitle(doc) {
+    if (doc.type === 'subject') {
+      return doc.subjectTitle;
+    }
+
+    return doc.title.replace(/\s+(Notes|Synopsis|Quiz|Practice)$/i, '');
+  }
+
+  function getPrimaryLabel(doc) {
+    if (doc.type === 'subject') {
+      return doc.subjectTitle;
+    }
+
+    return `Chapter ${doc.chapterNumber}`;
+  }
+
+  function getActionLabel(doc) {
+    return 'Open Page';
+  }
+
+  function renderResults(query) {
+    const normalizedQuery = normalize(query);
+    const tokens = normalizedQuery.split(' ').filter(Boolean);
+
+    if (input) {
+      input.value = query;
+    }
+
+    if (!normalizedQuery) {
+      resultsRoot.innerHTML = '';
+      emptyState.classList.add('hidden');
+      status.textContent = 'Enter a search to see results.';
+      helper.textContent = 'Search results show the exact subject page or chapter page that matches.';
+      return;
+    }
+
+    const results = searchDocuments
+      .map((doc) => ({ doc, score: scoreDocument(doc, normalizedQuery, tokens) }))
+      .filter((entry) => entry.score > 0)
+      .sort((left, right) => right.score - left.score || left.doc.title.localeCompare(right.doc.title))
+      .slice(0, 18);
+
+    status.textContent =
+      results.length > 0
+        ? `${results.length} result${results.length === 1 ? '' : 's'} for "${query}"`
+        : `No results for "${query}"`;
+
+    helper.textContent =
+      results.length > 0
+        ? 'Each card points to an exact page so you can jump directly into the right section.'
+        : 'Try a broader topic, a subject name, a chapter number, or a page type like notes or quiz.';
+
+    emptyState.classList.toggle('hidden', results.length > 0);
+
+    resultsRoot.innerHTML = results
+      .map(({ doc }) => {
+        const imageSrc = subjectImages[doc.subjectId] || '/Lightmodeicon.png';
+        const isSubject = doc.type === 'subject';
+        const pageLabel = getPageLabel(doc);
+        const titleLabel = getCardTitle(doc);
+
+        return `
+          <a class="result-card card" href="${doc.href}">
+            <div class="result-card-glow"></div>
+            <div class="result-image-wrap">
+              <img class="result-image" src="${imageSrc}" alt="${escapeHtml(doc.subjectTitle)}" />
+              <div class="result-image-overlay">
+                <span class="result-badge">${escapeHtml(doc.subjectTitle)}</span>
+                <span class="result-image-tag">${escapeHtml(pageLabel)}</span>
+              </div>
+            </div>
+            <div class="result-body">
+              <h2 class="result-title">${escapeHtml(getPrimaryLabel(doc))}</h2>
+              <p class="result-page-type">${escapeHtml(pageLabel)}</p>
+              ${isSubject ? '' : `<p class="result-chapter-name">${escapeHtml(titleLabel)}</p>`}
+              <p class="result-section">${escapeHtml(getSectionLabel(doc))}</p>
+              <p class="result-description">${escapeHtml(doc.description)}</p>
+            </div>
+            <div class="result-footer">
+              <div class="result-cta">
+                <span class="result-cta-label">${escapeHtml(getActionLabel(doc))}</span>
+                <span class="result-arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+          </a>
+        `;
+      })
+      .join('');
+  }
+
+  const url = new URL(window.location.href);
+  renderResults(url.searchParams.get('q') || '');
+</script>
+
+<style>
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .patrick-hand {
+    font-family: 'Patrick Hand', cursive !important;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .search-hero {
+    padding: 3.75rem 0 1.25rem;
+  }
+
+  .search-shell {
+    padding: clamp(1.15rem, 2vw, 1.5rem);
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .search-shell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 16%, transparent) 0%, transparent 32%),
+      linear-gradient(180deg, color-mix(in srgb, var(--app-surface-opaque) 88%, transparent) 0%, color-mix(in srgb, var(--app-surface) 70%, transparent) 100%);
+    pointer-events: none;
+  }
+
+  .search-shell > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+
+  @media (min-width: 640px) {
+    .search-form {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  .search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    flex: 1;
+    min-width: 0;
+    min-height: 4.25rem;
+    padding: 0 1.1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--app-border);
+    background: color-mix(in srgb, var(--app-surface-opaque) 92%, white);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .search-input-wrap:focus-within {
+    border-color: color-mix(in srgb, var(--app-accent) 60%, white);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--app-accent) 16%, transparent);
+  }
+
+  .search-icon {
+    flex-shrink: 0;
+    color: var(--app-text-muted);
+  }
+
+  .search-input {
+    flex: 1;
+    min-width: 0;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--app-text);
+    font-size: 1.15rem;
+  }
+
+  .search-input::placeholder {
+    color: color-mix(in srgb, var(--app-text-muted) 72%, white);
+  }
+
+  .search-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+  }
+
+  .suggestion-chip {
+    border-radius: 999px;
+    padding: 0.5rem 0.9rem;
+    background: color-mix(in srgb, var(--app-surface-opaque) 86%, transparent);
+    border: 1px solid var(--app-border);
+    color: var(--app-text-muted);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .suggestion-chip:hover {
+    border-color: var(--app-accent);
+    color: var(--app-accent);
+    transform: translateY(-1px);
+  }
+
+  .search-results-section {
+    padding: 0.75rem 0 6rem;
+  }
+
+  .results-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1.1rem;
+  }
+
+  .results-status {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--app-text);
+    font-weight: 700;
+  }
+
+  .results-helper {
+    margin: 0;
+    max-width: 36rem;
+    color: var(--app-text-muted);
+    text-align: right;
+    font-size: 0.96rem;
+    font-weight: 600;
+  }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .result-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.35rem;
+    min-height: 290px;
+    position: relative;
+    isolation: isolate;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--app-surface-opaque) 100%, transparent) 0%, color-mix(in srgb, var(--app-surface-opaque) 94%, var(--app-accent) 6%) 100%);
+    text-decoration: none;
+    color: inherit;
+    border-width: 3px;
+  }
+
+  .result-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--app-accent);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.16);
+  }
+
+  .result-card-glow {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--app-accent) 18%, transparent), transparent 55%);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .result-image-wrap {
+    width: calc(100% + 2.7rem);
+    height: 12rem;
+    margin: -1.35rem -1.35rem 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid color-mix(in srgb, var(--app-accent) 18%, var(--app-border));
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .result-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .result-badge {
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    background: rgba(15, 23, 42, 0.82);
+    color: white;
+    backdrop-filter: blur(10px);
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  .result-image-overlay {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .result-image-tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--app-accent) 85%, black 10%);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .result-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding-top: 0.5rem;
+  }
+
+  .result-title {
+    margin: 0;
+    font-size: 2.35rem;
+    line-height: 0.95;
+    max-width: none;
+    letter-spacing: -0.02em;
+    color: var(--app-text);
+    font-weight: 900;
+  }
+
+  .result-page-type {
+    margin: 0;
+    color: var(--app-accent);
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .result-chapter-name {
+    margin: 0;
+    color: var(--app-text);
+    font-size: 1.15rem;
+    line-height: 1.15;
+    font-weight: 800;
+  }
+
+  .result-section {
+    margin: 0;
+    color: var(--app-text-muted);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .result-description {
+    margin: 0.4rem 0 0;
+    color: var(--app-text-muted);
+    font-size: 0.98rem;
+    line-height: 1.45;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .result-footer {
+    margin-top: auto;
+    padding-top: 0.9rem;
+    border-top: 1px solid color-mix(in srgb, var(--app-border) 88%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .result-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: center;
+    min-height: 3rem;
+    padding: 0.55rem 1rem 0.55rem 1.15rem;
+    border-radius: 0.95rem;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--app-accent) 88%, white), color-mix(in srgb, var(--app-accent) 72%, #0f172a));
+    color: white;
+    border: 1px solid color-mix(in srgb, var(--app-accent) 65%, black);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.18);
+  }
+
+  .result-card:hover .result-cta {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 24px rgba(16, 185, 129, 0.24);
+  }
+
+  .result-cta-label {
+    font-size: 0.98rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+
+  .result-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+  .empty-state {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .empty-title {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+  }
+
+  .empty-copy {
+    margin: 0;
+    color: var(--app-text-muted);
+    font-size: 1.05rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    .results-helper {
+      text-align: left;
+    }
+
+    .result-title {
+      max-width: none;
+    }
+
+    .results-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .result-card {
+      min-height: auto;
+    }
+
+    .result-image-overlay {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+</style>
