@@ -315,9 +315,275 @@ const tabIcons: Record<string, string> = {
       });
     });
   }
+
+  function stripWrappedQuotes(value: string) {
+    return value.replace(/^["']|["']$/g, '').trim();
+  }
+
+  function getLeadingLabel(text: string) {
+    const match = text.match(/^([A-Z])\)\s+/);
+    return match ? match[1] : '';
+  }
+
+  function stripLeadingLabel(text: string) {
+    return text.replace(/^[A-Z]\)\s+/, '').trim();
+  }
+
+  function normalizeAnswerValue(value: string) {
+    return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+
+  function parseAnswerLine(text: string) {
+    return text.replace(/^answer:\s*/i, '').trim();
+  }
+
+  function parseExplanationLine(text: string) {
+    return text.replace(/^(explanation|correction):\s*/i, '').trim();
+  }
+
+  function stripHtmlTags(value: string) {
+    const temp = document.createElement('div');
+    temp.innerHTML = value;
+    return temp.textContent?.trim() || '';
+  }
+
+  function getParagraphLines(node: Element) {
+    return node.innerHTML
+      .split(/<br\s*\/?>/i)
+      .map((line) => stripHtmlTags(line))
+      .map((line) => line.replace(/\u00a0/g, ' ').trim())
+      .filter(Boolean);
+  }
+
+  function parseQuizBlock(nodes: Element[]) {
+    const heading = nodes[0];
+    const headingText = heading.textContent?.trim() || '';
+    const contentNodes = nodes.slice(1);
+    const paragraphs = contentNodes.filter((node) => node.tagName === 'P');
+    const textParagraphs = paragraphs.flatMap((node) => getParagraphLines(node));
+
+    const answerLine = textParagraphs.find((text) => /^answer:/i.test(text));
+    if (!answerLine) {
+      return null;
+    }
+
+    const explanationLine = textParagraphs.find((text) => /^(explanation|correction):/i.test(text));
+    const optionParagraphs = textParagraphs.filter((text) => /^[A-Z]\)\s+/.test(text));
+    const promptParagraph = textParagraphs.find(
+      (text) =>
+        !/^[A-Z]\)\s+/.test(text) &&
+        !/^answer:/i.test(text) &&
+        !/^(explanation|correction):/i.test(text),
+    );
+
+    const isTrueFalse = /^statement/i.test(headingText);
+    const answerValue = parseAnswerLine(answerLine);
+
+    let options = optionParagraphs.map((text) => ({
+      value: getLeadingLabel(text),
+      label: stripLeadingLabel(text),
+    }));
+
+    let correctValue = '';
+    if (isTrueFalse) {
+      options = [
+        { value: 'true', label: 'True' },
+        { value: 'false', label: 'False' },
+      ];
+      correctValue = normalizeAnswerValue(answerValue);
+    } else {
+      const answerMatch = answerValue.match(/[A-Z]/i);
+      correctValue = answerMatch ? answerMatch[0].toUpperCase() : '';
+    }
+
+    if (!options.length || !correctValue) {
+      return null;
+    }
+
+    return {
+      heading: headingText,
+      prompt: stripWrappedQuotes(promptParagraph || headingText),
+      options,
+      correctValue,
+      answerLabel: answerValue,
+      explanation: explanationLine ? parseExplanationLine(explanationLine) : 'Review the marked answer and chapter notes for the reasoning.',
+    };
+  }
+
+  function buildQuizCard(question: {
+    heading: string;
+    prompt: string;
+    options: Array<{ value: string; label: string }>;
+    correctValue: string;
+    answerLabel: string;
+    explanation: string;
+  }) {
+    const card = document.createElement('article');
+    card.className = 'quiz-card card';
+    card.dataset.correct = question.correctValue;
+    const numberMatch = question.heading.match(/(\d+)/);
+    const questionNumber = numberMatch ? numberMatch[1] : '1';
+    const markMatch = question.heading.match(/\((\d+)\s*mark/i);
+    const marks = markMatch ? `${markMatch[1]} mark${markMatch[1] === '1' ? '' : 's'}` : '1 mark';
+
+    const optionsHtml = question.options
+      .map((option) => {
+        const token = option.value.length <= 2 ? option.value.toUpperCase() : option.label.charAt(0).toUpperCase();
+        return `
+          <button type="button" class="quiz-option" data-value="${option.value}">
+            <span class="quiz-option-token">${token}</span>
+          </button>
+        `;
+      })
+      .join('');
+
+    const optionListHtml = question.options
+      .map((option) => {
+        const token = option.value.length <= 2 ? `${option.value.toUpperCase()}.` : '';
+        return `<li><strong>${token}</strong> ${option.label}</li>`;
+      })
+      .join('');
+
+    card.innerHTML = `
+      <div class="quiz-card-shell">
+        <div class="quiz-card-top">
+          <span class="quiz-number-badge">${questionNumber}</span>
+          <span class="quiz-mark-badge">${marks}</span>
+        </div>
+        <div class="quiz-card-divider"></div>
+        <div class="quiz-card-body">
+          <h3 class="quiz-card-question">${question.prompt}</h3>
+          <ul class="quiz-choice-list">
+            ${optionListHtml}
+          </ul>
+        </div>
+        <div class="quiz-card-footer">
+          <p class="quiz-answer-label">Choose your answer</p>
+          <div class="quiz-options" role="list">
+            ${optionsHtml}
+          </div>
+          <div class="quiz-feedback hidden" aria-live="polite">
+            <div class="quiz-feedback-main">
+              <div class="quiz-feedback-badge"></div>
+              <p class="quiz-feedback-answer">Correct answer: <strong>${question.answerLabel}</strong></p>
+              <p class="quiz-feedback-explanation">${question.explanation}</p>
+            </div>
+            <button type="button" class="quiz-answer-button">View answer</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    const options = Array.from(card.querySelectorAll<HTMLButtonElement>('.quiz-option'));
+    const feedback = card.querySelector<HTMLDivElement>('.quiz-feedback');
+    const feedbackBadge = card.querySelector<HTMLDivElement>('.quiz-feedback-badge');
+    const answerButton = card.querySelector<HTMLButtonElement>('.quiz-answer-button');
+
+    if (answerButton) {
+      answerButton.disabled = true;
+    }
+
+    options.forEach((option) => {
+      option.addEventListener('click', () => {
+        if (!feedback || !feedbackBadge || card.dataset.answered === 'true') {
+          return;
+        }
+
+        const selectedValue = option.dataset.value || '';
+        const isCorrect = normalizeAnswerValue(selectedValue) === normalizeAnswerValue(question.correctValue);
+        card.dataset.answered = 'true';
+
+        options.forEach((button) => {
+          const buttonValue = button.dataset.value || '';
+          const buttonIsCorrect = normalizeAnswerValue(buttonValue) === normalizeAnswerValue(question.correctValue);
+          button.disabled = true;
+          button.classList.add('is-locked');
+
+          if (buttonIsCorrect) {
+            button.classList.add('is-correct');
+          }
+
+          if (button === option && !buttonIsCorrect) {
+            button.classList.add('is-incorrect');
+          }
+        });
+
+        feedback.classList.remove('hidden');
+        feedback.classList.toggle('is-correct', isCorrect);
+        feedback.classList.toggle('is-incorrect', !isCorrect);
+        feedbackBadge.textContent = isCorrect ? 'Correct' : 'Not quite';
+
+        if (answerButton) {
+          answerButton.disabled = false;
+          answerButton.classList.add('is-active');
+        }
+      });
+    });
+
+    return card;
+  }
+
+  function initQuizCards() {
+    const quizContent = document.querySelector('#tab-quiz .markdown-content');
+    if (!(quizContent instanceof HTMLElement) || quizContent.dataset.enhanced === 'true') {
+      return;
+    }
+
+    const children = Array.from(quizContent.children);
+    const fragment = document.createDocumentFragment();
+    const interactiveQuestions: ReturnType<typeof parseQuizBlock>[] = [];
+
+    for (let index = 0; index < children.length; index += 1) {
+      const node = children[index];
+
+      if (node.tagName === 'H3') {
+        const blockNodes = [node];
+        let nextIndex = index + 1;
+
+        while (nextIndex < children.length && children[nextIndex].tagName !== 'H3') {
+          blockNodes.push(children[nextIndex]);
+          nextIndex += 1;
+        }
+
+        const parsedQuestion = parseQuizBlock(blockNodes);
+        if (parsedQuestion) {
+          interactiveQuestions.push(parsedQuestion);
+          fragment.append(buildQuizCard(parsedQuestion));
+          index = nextIndex - 1;
+          continue;
+        }
+      }
+
+      if (node.tagName === 'HR') {
+        continue;
+      }
+
+      fragment.append(node.cloneNode(true));
+    }
+
+    quizContent.innerHTML = '';
+
+    if (interactiveQuestions.length > 0) {
+      const introCard = document.createElement('section');
+      introCard.className = 'quiz-intro card';
+      introCard.innerHTML = `
+        <div class="quiz-intro-copy">
+          <span class="quiz-intro-kicker">Interactive quiz mode</span>
+          <h3 class="quiz-intro-title">Tap an answer to reveal the explanation instantly.</h3>
+          <p class="quiz-intro-text">${interactiveQuestions.length} questions were upgraded with instant feedback so you can check the reasoning right away.</p>
+        </div>
+      `;
+      quizContent.append(introCard);
+    }
+
+    quizContent.append(fragment);
+    quizContent.dataset.enhanced = 'true';
+    quizContent.classList.add('quiz-enhanced');
+  }
   
   // Run on page load
   initTabs();
+  initQuizCards();
 </script>
 
 <style>
@@ -553,6 +819,318 @@ const tabIcons: Record<string, string> = {
   .markdown-content :global(th) { background: var(--app-surface-muted); font-weight: 700; }
 
   .markdown-content :global(strong) { color: var(--app-accent-text); }
+
+  :global(.quiz-enhanced) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  :global(.quiz-intro) {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-width: 2px;
+    border-radius: 2rem;
+    background:
+      radial-gradient(circle at top right, rgba(34, 197, 94, 0.26) 0%, transparent 32%),
+      linear-gradient(135deg, #102117, #163120);
+  }
+
+  :global(.quiz-intro-kicker) {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.18);
+    color: #bbf7d0;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  :global(.quiz-intro-title) {
+    margin: 0.9rem 0 0.45rem;
+    font-size: clamp(1.8rem, 3vw, 2.45rem);
+    color: #f8fafc;
+  }
+
+  :global(.quiz-intro-text) {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  :global(.quiz-card) {
+    padding: 0;
+    border-width: 2px;
+    border-radius: 1.9rem;
+    background: #171717;
+    border-color: rgba(34, 197, 94, 0.2);
+    color: #fafafa;
+  }
+
+  :global(.quiz-card-shell) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  :global(.quiz-card-top) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.45rem 1.6rem 1rem;
+  }
+
+  :global(.quiz-number-badge) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 999px;
+    background: #0c120d;
+    color: #f8fafc;
+    font-size: 1.85rem;
+  }
+
+  :global(.quiz-mark-badge) {
+    color: rgba(255, 255, 255, 0.94);
+    font-size: 1.4rem;
+  }
+
+  :global(.quiz-card-divider) {
+    height: 1px;
+    margin: 0 1.6rem;
+    background: rgba(34, 197, 94, 0.24);
+  }
+
+  :global(.quiz-card-body) {
+    padding: 1.8rem 1.6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  :global(.quiz-card-question) {
+    margin: 0;
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    line-height: 1.3;
+    color: #fafafa;
+  }
+
+  :global(.quiz-choice-list) {
+    margin: 0;
+    padding-left: 2.9rem;
+    display: grid;
+    gap: 0.8rem;
+    list-style: none;
+  }
+
+  :global(.quiz-choice-list li) {
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  :global(.quiz-choice-list strong) {
+    color: #ffffff;
+    margin-right: 0.25rem;
+  }
+
+  :global(.quiz-card-footer) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.4rem 1.6rem 1.6rem;
+    border-top: 1px solid rgba(34, 197, 94, 0.16);
+  }
+
+  :global(.quiz-answer-label) {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.98);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  :global(.quiz-options) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  :global(.quiz-option) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.25rem;
+    height: 4.25rem;
+    padding: 0;
+    border-radius: 999px;
+    border: 2px solid rgba(34, 197, 94, 0.24);
+    background: transparent;
+    color: #4ade80;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    font: inherit;
+  }
+
+  :global(.quiz-option:hover) {
+    transform: translateY(-2px);
+    border-color: rgba(74, 222, 128, 0.85);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  }
+
+  :global(.quiz-option:disabled) {
+    cursor: default;
+  }
+
+  :global(.quiz-option-token) {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  :global(.quiz-option.is-correct) {
+    border-color: #22c55e;
+    background: #22c55e;
+    color: white;
+  }
+
+  :global(.quiz-option.is-incorrect) {
+    border-color: #ef4444;
+    background: #ef4444;
+    color: white;
+  }
+
+  :global(.quiz-option.is-locked:not(.is-correct):not(.is-incorrect)) {
+    opacity: 0.72;
+  }
+
+  :global(.quiz-feedback) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(34, 197, 94, 0.18);
+  }
+
+  :global(.quiz-feedback.is-correct) {
+    color: #e5ffe7;
+  }
+
+  :global(.quiz-feedback.is-incorrect) {
+    color: #fff1dc;
+  }
+
+  :global(.quiz-feedback-main) {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  :global(.quiz-feedback-badge) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-height: 2rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.14);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  :global(.quiz-feedback-answer),
+  :global(.quiz-feedback-explanation) {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  :global(.quiz-feedback-answer) {
+    color: #ffffff;
+    font-weight: 800;
+  }
+
+  :global(.quiz-feedback-explanation) {
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 700;
+    max-width: 52rem;
+  }
+
+  :global(.quiz-answer-button) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 15rem;
+    min-height: 4.3rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    background: transparent;
+    border: 2px solid #22c55e;
+    color: #4ade80;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: inherit;
+  }
+
+  :global(.quiz-answer-button:disabled) {
+    opacity: 0.55;
+  }
+
+  :global(.quiz-feedback.hidden) {
+    display: none;
+  }
+
+  :global(.quiz-answer-button.is-active) {
+    opacity: 1;
+  }
+
+  :global(.quiz-answer-button.is-active:disabled) {
+    opacity: 0.55;
+  }
+
+  @media (max-width: 640px) {
+    :global(.quiz-card),
+    :global(.quiz-intro) {
+      padding: 1.15rem;
+      border-radius: 1.6rem;
+    }
+
+    :global(.quiz-option) {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+
+    :global(.quiz-option-token) {
+      font-size: 1.75rem;
+    }
+
+    :global(.quiz-choice-list) {
+      padding-left: 1.4rem;
+    }
+
+    :global(.quiz-choice-list li) {
+      font-size: 1.2rem;
+    }
+
+    :global(.quiz-feedback) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    :global(.quiz-answer-button) {
+      width: 100%;
+      min-width: 0;
+    }
+  }
 
   .debug-info { display: none; }
 </style>

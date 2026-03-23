@@ -10,14 +10,20 @@ function escapeXml(value: string) {
     .replaceAll("'", '&apos;');
 }
 
-function createUrlEntry(loc: string, priority: string, changefreq: string) {
-  return [
+function createUrlEntry(loc: string, priority: string, changefreq: string, lastmod?: string) {
+  const parts = [
     '  <url>',
     `    <loc>${escapeXml(loc)}</loc>`,
     `    <changefreq>${changefreq}</changefreq>`,
     `    <priority>${priority}</priority>`,
-    '  </url>',
-  ].join('\n');
+  ];
+  
+  if (lastmod) {
+    parts.push(`    <lastmod>${lastmod}</lastmod>`);
+  }
+  
+  parts.push('  </url>');
+  return parts.join('\n');
 }
 
 export const GET: APIRoute = ({ site, url }) => {
@@ -25,16 +31,18 @@ export const GET: APIRoute = ({ site, url }) => {
   const subjects = getSubjects();
 
   const staticRoutes = [
-    { path: '/', priority: '1.0', changefreq: 'weekly' },
-    { path: '/subjects', priority: '0.9', changefreq: 'weekly' },
-    { path: '/about', priority: '0.6', changefreq: 'monthly' },
-    { path: '/search', priority: '0.7', changefreq: 'weekly' },
+    { path: '/', priority: '1.0', changefreq: 'daily', lastmod: '2025-03-23' },
+    { path: '/subjects', priority: '0.9', changefreq: 'weekly', lastmod: '2025-03-23' },
+    { path: '/search', priority: '0.8', changefreq: 'weekly', lastmod: '2025-03-23' },
+    { path: '/about', priority: '0.6', changefreq: 'monthly', lastmod: '2025-03-23' },
+    { path: '/404', priority: '0.3', changefreq: 'monthly', lastmod: '2025-03-23' },
   ];
 
   const subjectRoutes = Object.values(subjects).map((subject) => ({
     path: `/subjects/${subject.id}`,
     priority: '0.8',
     changefreq: 'weekly',
+    lastmod: '2025-03-23',
   }));
 
   const chapterRoutes = Object.values(subjects).flatMap((subject) =>
@@ -42,18 +50,19 @@ export const GET: APIRoute = ({ site, url }) => {
       path: `/subjects/${subject.id}/chapters/${chapter.id}`,
       priority: '0.7',
       changefreq: 'weekly',
+      lastmod: '2025-03-23',
     })),
   );
 
   const urls = [...staticRoutes, ...subjectRoutes, ...chapterRoutes]
-    .map(({ path, priority, changefreq }) =>
-      createUrlEntry(new URL(path, baseUrl).toString(), priority, changefreq),
+    .map(({ path, priority, changefreq, lastmod }) =>
+      createUrlEntry(new URL(path, baseUrl).toString(), priority, changefreq, lastmod),
     )
     .join('\n');
 
   const body = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     urls,
     '</urlset>',
   ].join('\n');
