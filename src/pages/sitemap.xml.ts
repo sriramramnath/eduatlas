@@ -27,7 +27,7 @@ function createUrlEntry(loc: string, priority: string, changefreq: string, lastm
 }
 
 export const GET: APIRoute = ({ site, url }) => {
-  const baseUrl = site ?? new URL(url.origin);
+  const baseUrl = new URL('https://eduosatlas.vercel.app');
   const subjects = getSubjects();
 
   const staticRoutes = [
