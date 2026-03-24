@@ -1,4 +1,5 @@
 import { getSubjects } from './subjects';
+import { contentSubjectConfigs } from './contentSubjects';
 
 export type SearchDocumentType = 'subject' | 'chapter' | 'notes' | 'synopsis' | 'quiz' | 'practice';
 
@@ -54,25 +55,35 @@ function getChapterContentAvailability() {
   const synopsisModules = import.meta.glob('/src/subjects/*/chapter-*/synopsis.md');
   const quizModules = import.meta.glob('/src/subjects/*/chapter-*/quiz.md');
   const practiceModules = import.meta.glob('/src/subjects/*/chapter-*/practice.md');
-  const biologyNoteModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Notes.md');
-  const biologySynopsisModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Synopsis.md');
-  const biologyQuizModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Quiz.md');
+  const contentSubjectSources = {
+    biology: {
+      notes: import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Notes.md'),
+      synopsis: import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Synopsis.md'),
+      quiz: import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Quiz.md'),
+    },
+    chemistry: {
+      notes: import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Notes.md'),
+      synopsis: import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Synopsis.md'),
+      quiz: import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Quiz.md'),
+    },
+  };
 
   return {
     has(subjectId: string, chapterId: string, chapterNumber: number, type: Exclude<SearchDocumentType, 'subject' | 'chapter'>) {
-      if (subjectId === 'biology') {
+      if (subjectId in contentSubjectSources) {
         if (type === 'practice') {
-          return true;
+          return subjectId === 'biology';
         }
 
-        const chapterSuffix = `Biology_Chapter${chapterNumber}_${pageMeta[type].label}.md`;
-        const biologySources: Record<'notes' | 'synopsis' | 'quiz', Record<string, unknown>> = {
-          notes: biologyNoteModules,
-          synopsis: biologySynopsisModules,
-          quiz: biologyQuizModules,
-        };
+        const config = contentSubjectConfigs[subjectId as keyof typeof contentSubjectConfigs];
+        const expectedPath =
+          type === 'notes'
+            ? config.notePath(chapterNumber)
+            : type === 'synopsis'
+              ? config.synopsisPath(chapterNumber)
+              : config.quizPath(chapterNumber);
 
-        return Object.keys(biologySources[type]).some((path) => path.endsWith(chapterSuffix));
+        return Boolean(contentSubjectSources[subjectId as keyof typeof contentSubjectSources][type][expectedPath]);
       }
 
       const basePath = `/src/subjects/${subjectId}/${chapterId}`;

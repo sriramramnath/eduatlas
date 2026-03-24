@@ -1,3 +1,5 @@
+import { contentSubjectConfigs, type ContentSubjectId } from './contentSubjects';
+
 // Subject configuration type
 export interface SubjectConfig {
   title: string;
@@ -40,8 +42,12 @@ function extractBiologyTitle(raw: string, chapterNumber: number): string {
   if (!heading) return `Chapter ${chapterNumber}`;
 
   const title = heading
+    .replace(/^#\s*(?:IGCSE\s+)?Chemistry\s+Chapter\s+\d+:\s*/i, '')
     .replace(/^#\s*Chapter\s+\d+:\s*/i, '')
     .replace(/\s*-\s*Concise Synopsis\s*$/i, '')
+    .replace(/\s*-\s*Quick Synopsis.*$/i, '')
+    .replace(/\s*-\s*Quiz Section\s*$/i, '')
+    .replace(/\s*-\s*Notes\s*$/i, '')
     .trim();
 
   return title || `Chapter ${chapterNumber}`;
@@ -61,6 +67,36 @@ function extractBiologyTopics(raw: string): string[] {
     .slice(0, 6);
 }
 
+function extractChemistryTopics(raw: string): string[] {
+  return raw
+    .split('\n')
+    .filter((line) => line.startsWith('## '))
+    .map((line) =>
+      line
+        .replace(/^##\s*/, '')
+        .replace(/^\d+(?:\.\d+)?\.?\s*/, '')
+        .replace(/\*\*/g, '')
+        .trim(),
+    )
+    .filter((topic) => topic && !/^(Detailed Notes|Quick Revision Synopsis|Concise Synopsis)/i.test(topic))
+    .slice(0, 6);
+}
+
+function extractPhysicsTopics(raw: string): string[] {
+  return raw
+    .split('\n')
+    .filter((line) => line.startsWith('## '))
+    .map((line) =>
+      line
+        .replace(/^##\s*/, '')
+        .replace(/^\d+(?:\.\d+)?\.?\s*/, '')
+        .replace(/\*\*/g, '')
+        .trim(),
+    )
+    .filter((topic) => topic && !/^(Pearson Edexcel|Quiz Section|Multiple Choice|True\/False)/i.test(topic))
+    .slice(0, 6);
+}
+
 function buildBiologySynopsis(title: string, topics: string[]): string {
   if (topics.length === 0) {
     return `Study ${title} using the notes, synopsis, quiz, and practice papers.`;
@@ -77,6 +113,64 @@ function buildBiologySynopsis(title: string, topics: string[]): string {
   return `Study ${topics.slice(0, 3).join(', ')}, and more in this chapter.`;
 }
 
+function buildChapterSynopsis(title: string, topics: string[]): string {
+  if (topics.length === 0) {
+    return `Study ${title} using the notes, synopsis, and quiz.`;
+  }
+
+  if (topics.length === 1) {
+    return `Study ${topics[0]} in this chapter.`;
+  }
+
+  if (topics.length === 2) {
+    return `Study ${topics[0]} and ${topics[1]} in this chapter.`;
+  }
+
+  return `Study ${topics.slice(0, 3).join(', ')}, and more in this chapter.`;
+}
+
+function getContentSubjectChapterData(subjectId: ContentSubjectId) {
+  const config = contentSubjectConfigs[subjectId];
+  const synopsisModules =
+    subjectId === 'biology'
+      ? import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Synopsis.md', {
+          eager: true,
+          query: '?raw',
+          import: 'default',
+        })
+      : subjectId === 'chemistry'
+        ? import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Synopsis.md', {
+            eager: true,
+            query: '?raw',
+            import: 'default',
+          })
+        : import.meta.glob('/src/newcontent/physics/Physics_*_Synopsis.md', {
+            eager: true,
+            query: '?raw',
+            import: 'default',
+          });
+  const notesModules =
+    subjectId === 'biology'
+      ? import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Notes.md', {
+          eager: true,
+          query: '?raw',
+          import: 'default',
+        })
+      : subjectId === 'chemistry'
+        ? import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Notes.md', {
+            eager: true,
+            query: '?raw',
+            import: 'default',
+          })
+        : import.meta.glob('/src/newcontent/physics/Physics_*_Notes.md', {
+            eager: true,
+            query: '?raw',
+            import: 'default',
+          });
+
+  return { config, synopsisModules, notesModules };
+}
+
 // Get all subjects from the file system
 export function getSubjects(): Record<string, Subject> {
   const subjects: Record<string, Subject> = {};
@@ -84,11 +178,11 @@ export function getSubjects(): Record<string, Subject> {
   // Import all subject JSONs using glob
   const subjectModules = import.meta.glob('/src/subjects/*/subject.json', { eager: true });
   const chapterModules = import.meta.glob('/src/subjects/*/chapter-*/chapter.json', { eager: true });
-  const biologySynopsisModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Synopsis.md', {
-    eager: true,
-    query: '?raw',
-    import: 'default',
-  });
+  const contentSubjectData: Partial<Record<ContentSubjectId, ReturnType<typeof getContentSubjectChapterData>>> = {
+    biology: getContentSubjectChapterData('biology'),
+    chemistry: getContentSubjectChapterData('chemistry'),
+    physics: getContentSubjectChapterData('physics'),
+  };
   
   for (const path in subjectModules) {
     const match = path.match(/\/src\/subjects\/([^/]+)\/subject\.json$/);
@@ -123,9 +217,12 @@ export function getSubjects(): Record<string, Subject> {
       });
     }
 
-    if (subjectId === 'biology') {
-      for (const chapterPath in biologySynopsisModules) {
-        const chapterMatch = chapterPath.match(/Biology_Chapter(\d+)_Synopsis\.md$/);
+    if (subjectId in contentSubjectData) {
+      const { config, synopsisModules, notesModules } = contentSubjectData[subjectId as ContentSubjectId]!;
+      const topicExtractor = subjectId === 'chemistry' ? extractChemistryTopics : subjectId === 'physics' ? extractPhysicsTopics : extractBiologyTopics;
+
+      for (const chapterPath in synopsisModules) {
+        const chapterMatch = chapterPath.match(config.synopsisMatcher);
         if (!chapterMatch) continue;
 
         const chapterNum = parseInt(chapterMatch[1], 10);
@@ -136,15 +233,16 @@ export function getSubjects(): Record<string, Subject> {
           continue;
         }
 
-        const rawSynopsis = biologySynopsisModules[chapterPath] as string;
+        const rawSynopsis = synopsisModules[chapterPath] as string;
+        const rawNotes = notesModules[config.notePath(chapterNum)] as string | undefined;
         const title = extractBiologyTitle(rawSynopsis, chapterNum);
-        const topics = extractBiologyTopics(rawSynopsis);
+        const topics = topicExtractor(rawNotes || rawSynopsis);
 
         chapters.push({
           id: `chapter-${chapterNum}`,
           number: chapterNum,
           title,
-          synopsis: buildBiologySynopsis(title, topics),
+          synopsis: buildChapterSynopsis(title, topics),
           topics,
           estimatedTime: '60 min',
         });

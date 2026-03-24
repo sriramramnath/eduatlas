@@ -3,6 +3,7 @@ import Layout from '../../../../layouts/Layout.astro';
 import Header from '../../../../components/Header.astro';
 import Footer from '../../../../components/Footer.astro';
 import { getSubjects, getChapter } from '../../../../utils/subjects';
+import { contentSubjectConfigs } from '../../../../utils/contentSubjects';
 
 export function getStaticPaths() {
   const subjects = getSubjects();
@@ -37,23 +38,60 @@ const practiceModules = import.meta.glob('/src/subjects/*/chapter-*/practice.md'
 const biologyNoteModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Notes.md', { eager: true });
 const biologySynopsisModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Synopsis.md', { eager: true });
 const biologyQuizModules = import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Quiz.md', { eager: true });
+const chemistryNoteModules = import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Notes.md', { eager: true });
+const chemistrySynopsisModules = import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Synopsis.md', { eager: true });
+const chemistryQuizModules = import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Quiz.md', { eager: true });
+const physicsNoteModules = import.meta.glob('/src/newcontent/physics/Physics_*_Notes.md', { eager: true });
+const physicsSynopsisModules = import.meta.glob('/src/newcontent/physics/Physics_*_Synopsis.md', { eager: true });
+const physicsQuizModules = import.meta.glob('/src/newcontent/physics/Physics_*_Quiz.md', { eager: true });
 
 // Find the content for this chapter
 const isBiology = subjectId === 'biology';
-const notePath = isBiology
-  ? `/src/newcontent/Biology/Biology_Chapter${chapter.number}_Notes.md`
+const isChemistry = subjectId === 'chemistry';
+const isPhysics = subjectId === 'physics';
+const contentSubjectConfig = isBiology
+  ? contentSubjectConfigs.biology
+  : isChemistry
+    ? contentSubjectConfigs.chemistry
+    : isPhysics
+      ? contentSubjectConfigs.physics
+      : null;
+const notePath = contentSubjectConfig
+  ? contentSubjectConfig.notePath(chapter.number)
   : `/src/subjects/${subjectId}/${chapterId}/note.md`;
-const synopsisPath = isBiology
-  ? `/src/newcontent/Biology/Biology_Chapter${chapter.number}_Synopsis.md`
+const synopsisPath = contentSubjectConfig
+  ? contentSubjectConfig.synopsisPath(chapter.number)
   : `/src/subjects/${subjectId}/${chapterId}/synopsis.md`;
-const quizPath = isBiology
-  ? `/src/newcontent/Biology/Biology_Chapter${chapter.number}_Quiz.md`
+const quizPath = contentSubjectConfig
+  ? contentSubjectConfig.quizPath(chapter.number)
   : `/src/subjects/${subjectId}/${chapterId}/quiz.md`;
 const practicePath = `/src/subjects/${subjectId}/${chapterId}/practice.md`;
 
-const noteModule = (isBiology ? biologyNoteModules[notePath] : noteModules[notePath]) as any;
-const synopsisModule = (isBiology ? biologySynopsisModules[synopsisPath] : synopsisModules[synopsisPath]) as any;
-const quizModule = (isBiology ? biologyQuizModules[quizPath] : quizModules[quizPath]) as any;
+const contentNoteModules = isBiology
+  ? biologyNoteModules
+  : isChemistry
+    ? chemistryNoteModules
+    : isPhysics
+      ? physicsNoteModules
+      : noteModules;
+const contentSynopsisModules = isBiology
+  ? biologySynopsisModules
+  : isChemistry
+    ? chemistrySynopsisModules
+    : isPhysics
+      ? physicsSynopsisModules
+      : synopsisModules;
+const contentQuizModules = isBiology
+  ? biologyQuizModules
+  : isChemistry
+    ? chemistryQuizModules
+    : isPhysics
+      ? physicsQuizModules
+      : quizModules;
+
+const noteModule = contentNoteModules[notePath] as any;
+const synopsisModule = contentSynopsisModules[synopsisPath] as any;
+const quizModule = contentQuizModules[quizPath] as any;
 const practiceModule = practiceModules[practicePath] as any;
 const biologyPracticeLinks = [
   {
@@ -334,11 +372,11 @@ const tabIcons: Record<string, string> = {
   }
 
   function parseAnswerLine(text: string) {
-    return text.replace(/^answer:\s*/i, '').trim();
+    return text.replace(/^answer:\s*/i, '').replace(/\*+$/, '').trim();
   }
 
   function parseExplanationLine(text: string) {
-    return text.replace(/^(explanation|correction):\s*/i, '').trim();
+    return text.replace(/^(explanation|correction):\s*/i, '').replace(/\*+$/, '').trim();
   }
 
   function stripHtmlTags(value: string) {
@@ -362,19 +400,36 @@ const tabIcons: Record<string, string> = {
     const paragraphs = contentNodes.filter((node) => node.tagName === 'P');
     const textParagraphs = paragraphs.flatMap((node) => getParagraphLines(node));
 
-    const answerLine = textParagraphs.find((text) => /^answer:/i.test(text));
+    // For broken format where answer comes before options, we need to get ALL text from ALL paragraphs in this block
+    const allBlockText = paragraphs.flatMap((node) => {
+      const html = node.innerHTML;
+      // Get plain text
+      const temp = document.createElement('div');
+      temp.innerHTML = html;
+      return temp.textContent || '';
+    }).join(' | ');
+
+    // Find answer line - look in ALL text paragraphs
+    const answerLine = textParagraphs.find((text) => /^\*?\*?(\*\*)?answer:/i.test(text));
     if (!answerLine) {
       return null;
     }
 
-    const explanationLine = textParagraphs.find((text) => /^(explanation|correction):/i.test(text));
-    const optionParagraphs = textParagraphs.filter((text) => /^[A-Z]\)\s+/.test(text));
+    const explanationLine = textParagraphs.find((text) => /^\*?\*?(\*\*)?(explanation|correction):/i.test(text));
+    
+    // Get ALL options from the entire block (handles broken format where options come after answer)
+    const allOptionParagraphs = textParagraphs.filter((text) => /^[A-Z]\)\s+/.test(text));
+    
+    // For prompt, look in text that's not options or answer/explanation
     const promptParagraph = textParagraphs.find(
       (text) =>
         !/^[A-Z]\)\s+/.test(text) &&
         !/^answer:/i.test(text) &&
-        !/^(explanation|correction):/i.test(text),
+        !/^(explanation|correction):/i.test(text) &&
+        text.length > 5,
     );
+    
+    const optionParagraphs = allOptionParagraphs;
 
     const isTrueFalse = /^statement/i.test(headingText);
     const answerValue = parseAnswerLine(answerLine);
@@ -396,7 +451,9 @@ const tabIcons: Record<string, string> = {
       correctValue = answerMatch ? answerMatch[0].toUpperCase() : '';
     }
 
-    if (!options.length || !correctValue) {
+    // If options not found but answer is valid, still return (may be broken format)
+    // For MCQ we need options, for True/False we don't
+    if (!options.length && !isTrueFalse && !correctValue) {
       return null;
     }
 
