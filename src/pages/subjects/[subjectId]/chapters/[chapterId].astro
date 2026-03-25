@@ -30,6 +30,16 @@ if (!subject || !chapter) {
   return Astro.redirect('/subjects');
 }
 
+const bannerMap: Record<string, string> = {
+  'biology': '/banners/biology.png',
+  'chemistry': '/banners/chemistry.png',
+  'physics': '/banners/physics.png',
+  'math': '/banners/math.png',
+  'ict': '/banners/compsci.png',
+};
+
+const bannerSrc = bannerMap[subjectId!] || '';
+
 // Import all chapter content files
 const noteModules = import.meta.glob('/src/subjects/*/chapter-*/note.md', { eager: true });
 const synopsisModules = import.meta.glob('/src/subjects/*/chapter-*/synopsis.md', { eager: true });
@@ -44,18 +54,25 @@ const chemistryQuizModules = import.meta.glob('/src/newcontent/chemistry/Chemist
 const physicsNoteModules = import.meta.glob('/src/newcontent/physics/Physics_*_Notes.md', { eager: true });
 const physicsSynopsisModules = import.meta.glob('/src/newcontent/physics/Physics_*_Synopsis.md', { eager: true });
 const physicsQuizModules = import.meta.glob('/src/newcontent/physics/Physics_*_Quiz.md', { eager: true });
+const ictNoteModules = import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Notes.md', { eager: true });
+const ictSynopsisModules = import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md', { eager: true });
+const ictQuizModules = import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Quiz.md', { eager: true });
 
 // Find the content for this chapter
 const isBiology = subjectId === 'biology';
 const isChemistry = subjectId === 'chemistry';
 const isPhysics = subjectId === 'physics';
+const isIct = subjectId === 'ict';
+
 const contentSubjectConfig = isBiology
   ? contentSubjectConfigs.biology
   : isChemistry
     ? contentSubjectConfigs.chemistry
     : isPhysics
       ? contentSubjectConfigs.physics
-      : null;
+      : isIct
+        ? contentSubjectConfigs.ict
+        : null;
 const notePath = contentSubjectConfig
   ? contentSubjectConfig.notePath(chapter.number)
   : `/src/subjects/${subjectId}/${chapterId}/note.md`;
@@ -73,21 +90,27 @@ const contentNoteModules = isBiology
     ? chemistryNoteModules
     : isPhysics
       ? physicsNoteModules
-      : noteModules;
+      : isIct
+        ? ictNoteModules
+        : noteModules;
 const contentSynopsisModules = isBiology
   ? biologySynopsisModules
   : isChemistry
     ? chemistrySynopsisModules
     : isPhysics
       ? physicsSynopsisModules
-      : synopsisModules;
+      : isIct
+        ? ictSynopsisModules
+        : synopsisModules;
 const contentQuizModules = isBiology
   ? biologyQuizModules
   : isChemistry
     ? chemistryQuizModules
     : isPhysics
       ? physicsQuizModules
-      : quizModules;
+      : isIct
+        ? ictQuizModules
+        : quizModules;
 
 const noteModule = contentNoteModules[notePath] as any;
 const synopsisModule = contentSynopsisModules[synopsisPath] as any;
@@ -128,6 +151,8 @@ const tabIcons: Record<string, string> = {
     
     <main class="main-content">
       <section class="chapter-hero">
+        <img src={bannerSrc} alt="" class="hero-bg-image" />
+        <div class="hero-overlay"></div>
         <div class="container animate-fade-in">
           <nav class="breadcrumb">
             <a href="/" class="breadcrumb-link">Home</a>
@@ -643,7 +668,7 @@ const tabIcons: Record<string, string> = {
   initQuizCards();
 </script>
 
-<style>
+<style define:vars={{ bannerSrc }}>
   .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -659,8 +684,35 @@ const tabIcons: Record<string, string> = {
   /* Chapter Hero */
   .chapter-hero {
     padding: 6rem 0 4rem;
-    background: linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+    position: relative;
+    overflow: hidden;
     border-bottom: 2px solid var(--app-border);
+    background: #070B1B;
+  }
+
+  .hero-bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+    filter: saturate(1.2) brightness(0.85);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7, 11, 27, 0.45) 0%, var(--app-bg-top) 100%);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
   }
 
   .breadcrumb {

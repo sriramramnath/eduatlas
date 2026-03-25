@@ -541,42 +541,42 @@ While traditional chemical tests are useful for identifying simple substances, i
 
 ## Common Exam Mistakes
 
-### ⚠️ Mistake 1: Confusing oxygen and hydrogen tests
+###  Mistake 1: Confusing oxygen and hydrogen tests
 - Oxygen: GLOWING splint RELIGHTS
 - Hydrogen: LIGHTED splint gives "POP"
 - Remember: "Hydrogen goes pop when lit; Oxygen brings the glow back to life"
 
-### ⚠️ Mistake 2: Wrong flame colours
+###  Mistake 2: Wrong flame colours
 - Lithium = crimson red (not just red)
 - Calcium = orange-red or brick red (not red)
 - Potassium = lilac (not purple)
 - Copper = blue-green (not just green)
 
-### ⚠️ Mistake 3: Forgetting "excess NaOH" observations
+###  Mistake 3: Forgetting "excess NaOH" observations
 - Al³⁺ and Zn²⁺ precipitates dissolve in excess NaOH
 - Ca²⁺ precipitate does NOT dissolve in excess NaOH
 - Cu²⁺, Fe²⁺, Fe³⁺ precipitates do NOT dissolve in excess NaOH
 
-### ⚠️ Mistake 4: Not adding acid before testing for anions
+###  Mistake 4: Not adding acid before testing for anions
 - Always add HCl before BaCl₂ for sulfate test (removes carbonate)
 - Always add HNO₃ before AgNO₃ for halide test (removes carbonate and hydroxide)
 
-### ⚠️ Mistake 5: Confusing silver halide colours
+###  Mistake 5: Confusing silver halide colours
 - AgCl = white
 - AgBr = cream (pale yellow)
 - AgI = yellow
 - In order of increasing depth of colour
 
-### ⚠️ Mistake 6: Damp litmus for chlorine test
+###  Mistake 6: Damp litmus for chlorine test
 - Must be DAMP blue litmus for chlorine test
 - Dry litmus paper won't show the proper colour change
 
-### ⚠️ Mistake 7: State symbols in equations
+###  Mistake 7: State symbols in equations
 - Precipitates are solid (s)
 - Solutions are aqueous (aq)
 - Gases are (g)
 
-### ⚠️ Mistake 8: Distinguishing Al³⁺ and Zn²⁺
+###  Mistake 8: Distinguishing Al³⁺ and Zn²⁺
 - Both give white precipitate with NaOH that dissolves in excess
 - Use ammonia to distinguish: Al(OH)₃ insoluble in excess NH₃; Zn(OH)₂ dissolves
 

@@ -19,6 +19,26 @@ const bannerMap: Record<string, string> = {
   'ICT': '/banners/compsci.png',
 };
 
+const iconMap: Record<string, string> = {
+  'Biology': '/icons/lightmode/Biology.svg',
+  'Chemistry': '/icons/lightmode/Chemistry.svg',
+  'Physics': '/icons/lightmode/Physics.svg',
+  'Math': '/icons/lightmode/Maths.svg',
+  'Mathematics': '/icons/lightmode/Maths.svg',
+  'ICT': '/icons/lightmode/ICT.svg',
+};
+
+const darkIconMap: Record<string, string> = {
+  'Biology': '/icons/darkmode/Biology.svg',
+  'Chemistry': '/icons/darkmode/Chemistry.svg',
+  'Physics': '/icons/darkmode/Physics.svg',
+  'Math': '/icons/darkmode/Maths.svg',
+  'Mathematics': '/icons/darkmode/Maths.svg',
+  'ICT': '/icons/darkmode/ICT.svg',
+};
+
+const iconSrc = iconMap[title] || '';
+const darkIconSrc = darkIconMap[title] || '';
 const bannerSrc = bannerMap[title] || '';
 ---
 
@@ -27,7 +47,7 @@ const bannerSrc = bannerMap[title] || '';
     <img src={bannerSrc} alt={title} class="banner-image-bg" />
     <div class="banner-overlay"></div>
     <div class="subject-icon-box" style={`border-color: ${color}`}>
-       <img src={bannerSrc} alt="" class="subject-icon-img" />
+       <img src={iconSrc} data-light-src={iconSrc} data-dark-src={darkIconSrc} alt="" class="subject-icon-img" />
     </div>
   </div>
   
@@ -45,6 +65,17 @@ const bannerSrc = bannerMap[title] || '';
       </span>
     </div>
   </div>
+  <script>
+    function updateIconTheme() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      document.querySelectorAll('.subject-icon-img[data-dark-src]').forEach((img: HTMLImageElement) => {
+        img.src = isDark ? img.dataset.darkSrc : img.dataset.lightSrc;
+      });
+    }
+    updateIconTheme();
+    const observer = new MutationObserver(updateIconTheme);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  </script>
 </a>
 
 <style>
@@ -81,6 +112,10 @@ const bannerSrc = bannerMap[title] || '';
     transition: transform 0.5s ease;
   }
 
+  :global([data-theme="dark"]) .banner-image-bg {
+    filter: saturate(0.8) brightness(1.2);
+  }
+
   .banner-overlay {
     position: absolute;
     inset: 0;
@@ -94,7 +129,7 @@ const bannerSrc = bannerMap[title] || '';
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: #F1F5F9;
     border: 3px solid;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     z-index: 1;
@@ -107,6 +142,10 @@ const bannerSrc = bannerMap[title] || '';
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  :global([data-theme="dark"]) .subject-icon-box {
+    background: #070B1B;
   }
 
   .card-body {

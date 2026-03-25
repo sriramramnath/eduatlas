@@ -1,4 +1,4 @@
-export type ContentSubjectId = 'biology' | 'chemistry' | 'physics';
+export type ContentSubjectId = 'biology' | 'chemistry' | 'physics' | 'ict';
 
 export interface ContentSubjectConfig {
   synopsisMatcher: RegExp;
@@ -29,5 +29,11 @@ export const contentSubjectConfigs: Record<ContentSubjectId, ContentSubjectConfi
     notePath: (chapterNumber) => `/src/newcontent/physics/Physics_${padChapterNumber(chapterNumber)}_Notes.md`,
     synopsisPath: (chapterNumber) => `/src/newcontent/physics/Physics_${padChapterNumber(chapterNumber)}_Synopsis.md`,
     quizPath: (chapterNumber) => `/src/newcontent/physics/Physics_${padChapterNumber(chapterNumber)}_Quiz.md`,
+  },
+  ict: {
+    synopsisMatcher: /ICT_Chapter(\d+)_Synopsis\.md$/,
+    notePath: (chapterNumber) => `/src/newcontent/ICT/ICT_Chapter${chapterNumber}_Notes.md`,
+    synopsisPath: (chapterNumber) => `/src/newcontent/ICT/ICT_Chapter${chapterNumber}_Synopsis.md`,
+    quizPath: (chapterNumber) => `/src/newcontent/ICT/ICT_Chapter${chapterNumber}_Quiz.md`,
   },
 };

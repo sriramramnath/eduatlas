@@ -78,7 +78,7 @@ Excretion is the removal of waste products of metabolism. This is different from
 - **Urea**: Waste product from protein metabolism, excreted by kidneys in urine
 - **Excess water and salts**: Removed by kidneys and sweat glands
 
-⚠️ **Common Exam Mistake**: Students often confuse excretion with egestion. Remember: Excretion removes metabolic waste (produced by cells), while egestion removes undigested food that never entered cells.
+ **Common Exam Mistake**: Students often confuse excretion with egestion. Remember: Excretion removes metabolic waste (produced by cells), while egestion removes undigested food that never entered cells.
 
 #### Nutrition
 
@@ -233,7 +233,7 @@ Effects on plant cells:
 - In hypertonic solution: Cell becomes plasmolysed (cell membrane pulls away from cell wall)
 - In isotonic solution: Cell becomes flaccid
 
-⚠️ **Exam Tip**: Never say water moves from "weak solution to strong solution" - always use correct terminology (higher to lower water potential).
+ **Exam Tip**: Never say water moves from "weak solution to strong solution" - always use correct terminology (higher to lower water potential).
 
 #### Active Transport
 
@@ -336,7 +336,7 @@ Causes of denaturation:
 - Heavy metal ions (e.g., lead, mercury)
 - High salt concentrations
 
-⚠️ **Exam Tip**: Never confuse denaturation with enzyme "death" - enzymes are not alive. Also, do not say the enzyme is "destroyed" - it still exists but has changed shape.
+ **Exam Tip**: Never confuse denaturation with enzyme "death" - enzymes are not alive. Also, do not say the enzyme is "destroyed" - it still exists but has changed shape.
 
 ### Enzymes in Digestion
 

@@ -31,18 +31,18 @@ export const GET: APIRoute = ({ site, url }) => {
   const subjects = getSubjects();
 
   const staticRoutes = [
-    { path: '/', priority: '1.0', changefreq: 'daily', lastmod: '2025-03-23' },
-    { path: '/subjects', priority: '0.9', changefreq: 'weekly', lastmod: '2025-03-23' },
-    { path: '/search', priority: '0.8', changefreq: 'weekly', lastmod: '2025-03-23' },
-    { path: '/about', priority: '0.6', changefreq: 'monthly', lastmod: '2025-03-23' },
-    { path: '/404', priority: '0.3', changefreq: 'monthly', lastmod: '2025-03-23' },
+    { path: '/', priority: '1.0', changefreq: 'daily', lastmod: '2026-03-25' },
+    { path: '/subjects', priority: '0.9', changefreq: 'weekly', lastmod: '2026-03-25' },
+    { path: '/search', priority: '0.8', changefreq: 'weekly', lastmod: '2026-03-25' },
+    { path: '/about', priority: '0.6', changefreq: 'monthly', lastmod: '2026-03-25' },
+    { path: '/404', priority: '0.3', changefreq: 'monthly', lastmod: '2026-03-25' },
   ];
 
   const subjectRoutes = Object.values(subjects).map((subject) => ({
     path: `/subjects/${subject.id}`,
     priority: '0.8',
     changefreq: 'weekly',
-    lastmod: '2025-03-23',
+    lastmod: '2026-03-25',
   }));
 
   const chapterRoutes = Object.values(subjects).flatMap((subject) =>
@@ -50,7 +50,7 @@ export const GET: APIRoute = ({ site, url }) => {
       path: `/subjects/${subject.id}/chapters/${chapter.id}`,
       priority: '0.7',
       changefreq: 'weekly',
-      lastmod: '2025-03-23',
+      lastmod: '2026-03-25',
     })),
   );
 

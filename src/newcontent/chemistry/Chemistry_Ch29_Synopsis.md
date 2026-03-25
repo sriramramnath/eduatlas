@@ -203,7 +203,7 @@ Chloroethene: n CH₂=CHCl  →  -[-CH₂-CHCl-]-n-
 
 ---
 
-## ⚠️ Common Exam Traps
+##  Common Exam Traps
 
 1. **Polymer bonds**: Polymer has C-C single bonds, NOT C=C
 2. **Always use brackets**: poly(ethene) not polyethene

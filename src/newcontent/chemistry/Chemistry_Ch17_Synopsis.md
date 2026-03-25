@@ -147,7 +147,7 @@ Precipitation:     Ba²⁺ + SO₄²⁻ → BaSO₄
 
 ---
 
-## ⚠️ Common Exam Pitfalls
+##  Common Exam Pitfalls
 
 1. **Wrong salt name** - Check which acid was used
 2. **Missing Roman numerals** - Iron(II), Iron(III), Copper(II)

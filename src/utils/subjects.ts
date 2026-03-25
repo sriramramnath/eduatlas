@@ -37,17 +37,18 @@ export interface Chapter {
   estimatedTime: string;
 }
 
-function extractBiologyTitle(raw: string, chapterNumber: number): string {
+function extractSubjectTitle(raw: string, chapterNumber: number): string {
   const heading = raw.split('\n').find((line) => line.startsWith('# '));
   if (!heading) return `Chapter ${chapterNumber}`;
 
   const title = heading
-    .replace(/^#\s*(?:IGCSE\s+)?Chemistry\s+Chapter\s+\d+:\s*/i, '')
+    .replace(/^#\s*(?:IGCSE\s+)?(?:Chemistry|Biology|Physics|ICT)\s+(?:—\s+)?Chapter\s+\d+:\s*/i, '')
     .replace(/^#\s*Chapter\s+\d+:\s*/i, '')
     .replace(/\s*-\s*Concise Synopsis\s*$/i, '')
     .replace(/\s*-\s*Quick Synopsis.*$/i, '')
     .replace(/\s*-\s*Quiz Section\s*$/i, '')
     .replace(/\s*-\s*Notes\s*$/i, '')
+    .replace(/\s*—\s*/i, '')
     .trim();
 
   return title || `Chapter ${chapterNumber}`;
@@ -93,7 +94,22 @@ function extractPhysicsTopics(raw: string): string[] {
         .replace(/\*\*/g, '')
         .trim(),
     )
-    .filter((topic) => topic && !/^(Pearson Edexcel|Quiz Section|Multiple Choice|True\/False)/i.test(topic))
+    .filter((topic) => topic && !/^(Pearson Edexcel|Quiz Section|Multiple Choice|True\/False|Detailed Notes)/i.test(topic))
+    .slice(0, 6);
+}
+
+function extractIctTopics(raw: string): string[] {
+  return raw
+    .split('\n')
+    .filter((line) => line.startsWith('## '))
+    .map((line) =>
+      line
+        .replace(/^##\s*/, '')
+        .replace(/^\d+(?:\.\d+)?\.?\s*/, '')
+        .replace(/\*\*/g, '')
+        .trim(),
+    )
+    .filter((topic) => topic && !/^(Detailed Notes|Quick Revision Synopsis|Concise Synopsis|Common Exam Mistakes|Key Terms)/i.test(topic))
     .slice(0, 6);
 }
 
@@ -144,11 +160,17 @@ function getContentSubjectChapterData(subjectId: ContentSubjectId) {
             query: '?raw',
             import: 'default',
           })
-        : import.meta.glob('/src/newcontent/physics/Physics_*_Synopsis.md', {
-            eager: true,
-            query: '?raw',
-            import: 'default',
-          });
+        : subjectId === 'physics'
+          ? import.meta.glob('/src/newcontent/physics/Physics_*_Synopsis.md', {
+              eager: true,
+              query: '?raw',
+              import: 'default',
+            })
+          : import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md', {
+              eager: true,
+              query: '?raw',
+              import: 'default',
+            });
   const notesModules =
     subjectId === 'biology'
       ? import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Notes.md', {
@@ -162,11 +184,17 @@ function getContentSubjectChapterData(subjectId: ContentSubjectId) {
             query: '?raw',
             import: 'default',
           })
-        : import.meta.glob('/src/newcontent/physics/Physics_*_Notes.md', {
-            eager: true,
-            query: '?raw',
-            import: 'default',
-          });
+        : subjectId === 'physics'
+          ? import.meta.glob('/src/newcontent/physics/Physics_*_Notes.md', {
+              eager: true,
+              query: '?raw',
+              import: 'default',
+            })
+          : import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Notes.md', {
+              eager: true,
+              query: '?raw',
+              import: 'default',
+            });
 
   return { config, synopsisModules, notesModules };
 }
@@ -177,15 +205,17 @@ export function getSubjects(): Record<string, Subject> {
   
   // Import all subject JSONs using glob
   const subjectModules = import.meta.glob('/src/subjects/*/subject.json', { eager: true });
+  console.log('Found subject modules at:', Object.keys(subjectModules));
   const chapterModules = import.meta.glob('/src/subjects/*/chapter-*/chapter.json', { eager: true });
   const contentSubjectData: Partial<Record<ContentSubjectId, ReturnType<typeof getContentSubjectChapterData>>> = {
     biology: getContentSubjectChapterData('biology'),
     chemistry: getContentSubjectChapterData('chemistry'),
     physics: getContentSubjectChapterData('physics'),
+    ict: getContentSubjectChapterData('ict'),
   };
   
   for (const path in subjectModules) {
-    const match = path.match(/\/src\/subjects\/([^/]+)\/subject\.json$/);
+    const match = path.match(/subjects\/([^/]+)\/subject\.json$/);
     if (!match) continue;
     
     const subjectId = match[1];
@@ -219,7 +249,7 @@ export function getSubjects(): Record<string, Subject> {
 
     if (subjectId in contentSubjectData) {
       const { config, synopsisModules, notesModules } = contentSubjectData[subjectId as ContentSubjectId]!;
-      const topicExtractor = subjectId === 'chemistry' ? extractChemistryTopics : subjectId === 'physics' ? extractPhysicsTopics : extractBiologyTopics;
+      const topicExtractor = subjectId === 'chemistry' ? extractChemistryTopics : subjectId === 'physics' ? extractPhysicsTopics : subjectId === 'ict' ? extractIctTopics : extractBiologyTopics;
 
       for (const chapterPath in synopsisModules) {
         const chapterMatch = chapterPath.match(config.synopsisMatcher);
@@ -235,7 +265,7 @@ export function getSubjects(): Record<string, Subject> {
 
         const rawSynopsis = synopsisModules[chapterPath] as string;
         const rawNotes = notesModules[config.notePath(chapterNum)] as string | undefined;
-        const title = extractBiologyTitle(rawSynopsis, chapterNum);
+        const title = extractSubjectTitle(rawSynopsis, chapterNum);
         const topics = topicExtractor(rawNotes || rawSynopsis);
 
         chapters.push({

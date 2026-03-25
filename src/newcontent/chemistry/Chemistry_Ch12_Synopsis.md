@@ -104,7 +104,7 @@ Form **hydrogen halides** (covalent gases)
 
 ---
 
-## ⚠️ Common Exam Pitfalls
+##  Common Exam Pitfalls
 
 1. ❌ "Reactivity increases down Group 7" → ✅ **Decreases**
 2. ❌ "Halogens lose electrons" → ✅ **Gain** electrons

@@ -66,6 +66,16 @@ function getChapterContentAvailability() {
       synopsis: import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Synopsis.md'),
       quiz: import.meta.glob('/src/newcontent/chemistry/Chemistry_Ch*_Quiz.md'),
     },
+    physics: {
+      notes: import.meta.glob('/src/newcontent/physics/Physics_*_Notes.md'),
+      synopsis: import.meta.glob('/src/newcontent/physics/Physics_*_Synopsis.md'),
+      quiz: import.meta.glob('/src/newcontent/physics/Physics_*_Quiz.md'),
+    },
+    ict: {
+      notes: import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Notes.md'),
+      synopsis: import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md'),
+      quiz: import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Quiz.md'),
+    },
   };
 
   return {

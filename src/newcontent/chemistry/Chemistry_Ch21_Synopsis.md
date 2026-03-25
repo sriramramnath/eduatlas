@@ -102,7 +102,7 @@ CuSO₄(s) + 5H₂O(l) ⇌ CuSO₄·5H₂O(s)
 
 ---
 
-## ⚠️ Common Exam Traps
+##  Common Exam Traps
 
 1. **Equilibrium is NOT static** - reactions continue (dynamic)
 2. **Concentrations are constant, NOT equal**

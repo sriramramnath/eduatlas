@@ -162,7 +162,7 @@ Test:  Add HNO₃ (removes carbonate/hydroxide), then AgNO₃
 
 ---
 
-## ⚠️ Common Exam Pitfalls
+##  Common Exam Pitfalls
 
 1. **O₂ vs H₂ test** - O₂ uses GLOWING splint; H₂ uses LIGHTED splint
 2. **Flame colours** - Learn exact terms: crimson, lilac, orange-red, blue-green

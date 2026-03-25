@@ -98,7 +98,7 @@
 
 ---
 
-## ⚠️ Common Exam Pitfalls
+##  Common Exam Pitfalls
 
 1. ❌ "Reactivity decreases down group" → ✅ **Increases**
 2. ❌ "Melting points increase down group" → ✅ **Decrease**

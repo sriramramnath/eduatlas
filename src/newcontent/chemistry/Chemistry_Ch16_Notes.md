@@ -319,31 +319,31 @@ To determine the concentration of a solution of sodium hydroxide using a standar
 
 ## Common Exam Mistakes
 
-### ⚠️ Mistake 1: Confusing bases and alkalis
+###  Mistake 1: Confusing bases and alkalis
 - **Remember:** All alkalis are bases, but not all bases are alkalis
 - Alkalis are specifically **soluble** bases
 
-### ⚠️ Mistake 2: Indicator colour changes
+###  Mistake 2: Indicator colour changes
 - Learn the colour changes for common indicators
 - Phenolphthalein: colourless in acid, pink in alkali
 - Methyl orange: red in acid, yellow in alkali
 
-### ⚠️ Mistake 3: Units in calculations
+###  Mistake 3: Units in calculations
 - Always convert cm³ to dm³ by dividing by 1000
 - Check that concentration is in mol/dm³
 
-### ⚠️ Mistake 4: Ignoring molar ratios
+###  Mistake 4: Ignoring molar ratios
 - Always write the balanced equation
 - Use the stoichiometric ratio in calculations
 - For H₂SO₄ + 2NaOH, the ratio is 1:2
 
-### ⚠️ Mistake 5: Strong vs concentrated
+###  Mistake 5: Strong vs concentrated
 - Strong refers to degree of dissociation
 - Concentrated refers to the amount dissolved
 - A dilute strong acid is still strong!
 - A concentrated weak acid is still weak!
 
-### ⚠️ Mistake 6: Titration technique
+###  Mistake 6: Titration technique
 - Always swirl the flask continuously
 - Add dropwise near the endpoint
 - Use a white tile to see colour change clearly

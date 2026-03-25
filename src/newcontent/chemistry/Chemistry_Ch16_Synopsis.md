@@ -124,7 +124,7 @@ Where n = moles ratio from equation
 
 ---
 
-## ⚠️ Common Exam Pitfalls
+##  Common Exam Pitfalls
 
 1. **Alkali ≠ Base** - All alkalis are bases, not vice versa
 2. **Don't forget units** - Convert cm³ to dm³ in calculations

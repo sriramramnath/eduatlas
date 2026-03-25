@@ -45,8 +45,8 @@ All living things share seven characteristics, remembered by the acronym MRS GRE
     id: 'chemistry',
     title: 'Chemistry',
     description: 'Master the atomic world. Detailed coverage of chemical principles for the Pearson Edexcel IGCSE Chemistry curriculum.',
-    color: '#3b82f6',
-    bgColor: '#dbeafe',
+    color: '#f59e0b',
+    bgColor: '#fef3c7',
     chapters: [
       {
         id: 'principles-of-chemistry',
@@ -67,8 +67,8 @@ This chapter introduces fundamental concepts. You will learn about the three sta
     id: 'physics',
     title: 'Physics',
     description: 'Master the laws of the universe with our comprehensive guide to the Pearson Edexcel IGCSE Physics specification.',
-    color: '#f59e0b',
-    bgColor: '#fef3c7',
+    color: '#8b5cf6',
+    bgColor: '#ede9fe',
     chapters: [
       {
           id: 'forces-and-motion',
@@ -89,8 +89,8 @@ This chapter covers the basics of motion, including the difference between speed
     id: 'ict',
     title: 'ICT',
     description: 'Explore the digital world. Master information and communication technology fundamentals for IGCSE.',
-    color: '#8b5cf6',
-    bgColor: '#ede9fe',
+    color: '#ef4444',
+    bgColor: '#fee2e2',
     chapters: [
       {
         id: 'digital-devices',
@@ -111,8 +111,8 @@ This chapter introduces the various types of digital devices you will encounter,
     id: 'math',
     title: 'Mathematics',
     description: 'Build a strong mathematical foundation for IGCSE success. Algebra, Geometry, and beyond.',
-    color: '#ec4899',
-    bgColor: '#fce7f3',
+    color: '#3b82f6',
+    bgColor: '#dbeafe',
     chapters: [
       {
         id: 'number',

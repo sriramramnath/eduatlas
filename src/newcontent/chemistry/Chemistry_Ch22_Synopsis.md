@@ -154,7 +154,7 @@ With Na₂CO₃: 2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂
 
 ---
 
-## ⚠️ Common Exam Traps
+##  Common Exam Traps
 
 1. **Hydrocarbons = ONLY C and H** (no oxygen!)
 2. **Saturated = single bonds only**; **Unsaturated = has C=C**

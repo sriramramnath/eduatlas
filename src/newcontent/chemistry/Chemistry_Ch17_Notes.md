@@ -419,35 +419,35 @@ CuO(s) + H₂SO₄(aq) → CuSO₄(aq) + H₂O(l)
 
 ## Common Exam Mistakes
 
-### ⚠️ Mistake 1: Wrong salt name
+###  Mistake 1: Wrong salt name
 - Remember: HCl → chloride, H₂SO₄ → sulfate, HNO₃ → nitrate
 - Don't forget Roman numerals for variable valency metals
 
-### ⚠️ Mistake 2: Incorrect equations
+###  Mistake 2: Incorrect equations
 - Balance equations properly
 - Remember water is produced with metal oxides/hydroxides
 - Remember CO₂ is produced with carbonates
 
-### ⚠️ Mistake 3: Choosing wrong method
+###  Mistake 3: Choosing wrong method
 - Acid + metal: only for metals above hydrogen
 - Acid + insoluble base: for unreactive metals
 - Precipitation: for insoluble salts
 
-### ⚠️ Mistake 4: Crystallisation errors
+###  Mistake 4: Crystallisation errors
 - Don't evaporate to dryness
 - Cool slowly for better crystals
 - Wash with cold water
 
-### ⚠️ Mistake 5: Solubility rules
+###  Mistake 5: Solubility rules
 - Learn which compounds are soluble/insoluble
 - Remember exceptions (AgCl, BaSO₄, PbCl₂)
 
-### ⚠️ Mistake 6: Ionic equations
+###  Mistake 6: Ionic equations
 - Show only ions that react (spectator ions omitted)
 - Include state symbols
 - Balance the equation
 
-### ⚠️ Mistake 7: Forgetting excess base
+###  Mistake 7: Forgetting excess base
 - When making salts, always use excess insoluble base
 - This ensures all acid is neutralised
 

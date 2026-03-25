@@ -27,7 +27,25 @@ const bannerMap: Record<string, string> = {
   'ict': '/banners/compsci.png',
 };
 
+const iconMap: Record<string, string> = {
+  'biology': '/icons/lightmode/Biology.svg',
+  'chemistry': '/icons/lightmode/Chemistry.svg',
+  'physics': '/icons/lightmode/Physics.svg',
+  'math': '/icons/lightmode/Maths.svg',
+  'ict': '/icons/lightmode/ICT.svg',
+};
+
+const darkIconMap: Record<string, string> = {
+  'biology': '/icons/darkmode/Biology.svg',
+  'chemistry': '/icons/darkmode/Chemistry.svg',
+  'physics': '/icons/darkmode/Physics.svg',
+  'math': '/icons/darkmode/Maths.svg',
+  'ict': '/icons/darkmode/ICT.svg',
+};
+
 const bannerSrc = bannerMap[subjectId] || '';
+const iconSrc = iconMap[subjectId] || '';
+const darkIconSrc = darkIconMap[subjectId] || '';
 ---
 
 <Layout title={subject.title}>
@@ -36,6 +54,8 @@ const bannerSrc = bannerMap[subjectId] || '';
     
     <main class="main-content">
       <section class="subject-hero-section">
+        <img src={bannerSrc} alt="" class="hero-bg-image" />
+        <div class="hero-overlay"></div>
         <div class="container animate-fade-in">
           <nav class="breadcrumb">
             <a href="/" class="breadcrumb-link">Home</a>
@@ -48,7 +68,7 @@ const bannerSrc = bannerMap[subjectId] || '';
           <div class="subject-header">
              <div class="subject-brand">
                 <div class="subject-icon-box" style={`border-color: ${subject.color}`}>
-                   <img src={bannerSrc} alt="" class="hero-brand-img" />
+                   <img src={iconSrc} data-light-src={iconSrc} data-dark-src={darkIconSrc} alt="" class="hero-brand-img" />
                 </div>
                 <h1 class="hero-title wiggly-heading">{subject.title}</h1>
              </div>
@@ -138,9 +158,20 @@ const bannerSrc = bannerMap[subjectId] || '';
     
     <Footer />
   </div>
+  <script>
+    function updateIconTheme() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      document.querySelectorAll('.hero-brand-img[data-dark-src]').forEach((img: HTMLImageElement) => {
+        img.src = isDark ? img.dataset.darkSrc : img.dataset.lightSrc;
+      });
+    }
+    updateIconTheme();
+    const observer = new MutationObserver(updateIconTheme);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  </script>
 </Layout>
 
-<style>
+<style define:vars={{ bannerSrc }}>
   .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -158,8 +189,36 @@ const bannerSrc = bannerMap[subjectId] || '';
   /* Hero Section */
   .subject-hero-section {
     padding: 6rem 0 4rem;
-    background: linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
+    position: relative;
+    overflow: hidden;
     border-bottom: 2px solid var(--app-border);
+    /* In dark mode, ensure the text remains punchy against the image */
+    background: #070B1B;
+  }
+
+  .hero-bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+    filter: saturate(1.2) brightness(0.85);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7, 11, 27, 0.45) 0%, var(--app-bg-top) 100%);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
   }
 
   .breadcrumb {
@@ -199,8 +258,12 @@ const bannerSrc = bannerMap[subjectId] || '';
     justify-content: center;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
     overflow: hidden;
-    background: white;
+    background: #F1F5F9;
     border: 3px solid;
+  }
+
+  :global([data-theme="dark"]) .subject-icon-box {
+    background: #070B1B;
   }
 
   .hero-brand-img {
@@ -365,6 +428,11 @@ const bannerSrc = bannerMap[subjectId] || '';
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: invert(0);
+  }
+
+  :global([data-theme="dark"]) .resource-img {
+    filter: invert(1);
   }
 
   .resource-title {
