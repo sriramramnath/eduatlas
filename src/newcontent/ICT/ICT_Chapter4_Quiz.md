@@ -13,7 +13,7 @@ B) Coaxial cable
 C) Fibre optic cable  
 D) USB cable  
 
-**Correct Answer: C) Fibre optic cable**
+**Answer: C) Fibre optic cable**
 
 **Explanation:** Fibre optic cables transmit data as pulses of light through thin glass or plastic fibres. Copper-based cables (twisted pair, coaxial) transmit electrical signals. Fibre optics offer the highest speeds and longest distances.
 
@@ -27,7 +27,7 @@ B) The maximum data transfer rate
 C) The time delay in transmission  
 D) The number of connected devices  
 
-**Correct Answer: B) The maximum data transfer rate**
+**Answer: B) The maximum data transfer rate**
 
 **Explanation:** Bandwidth measures the maximum rate at which data can be transferred, typically expressed in bits per second (bps, Mbps, Gbps). It represents the capacity of a connection, not the speed or latency.
 
@@ -41,7 +41,7 @@ B) IMAP
 C) SMTP  
 D) HTTP  
 
-**Correct Answer: C) SMTP**
+**Answer: C) SMTP**
 
 **Explanation:** SMTP (Simple Mail Transfer Protocol) is used to send emails from clients to servers and between mail servers. POP3 and IMAP are used for receiving/downloading emails. HTTP is used for web pages.
 
@@ -55,7 +55,7 @@ B) Smaller file sizes
 C) Encrypted secure communication  
 D) Better image quality  
 
-**Correct Answer: C) Encrypted secure communication**
+**Answer: C) Encrypted secure communication**
 
 **Explanation:** HTTPS (HTTP Secure) adds SSL/TLS encryption to HTTP, ensuring data transmitted between browser and server cannot be intercepted or read by third parties. This is essential for secure transactions like banking and shopping.
 
@@ -69,7 +69,7 @@ B) Bluetooth
 C) 4G mobile network  
 D) Satellite  
 
-**Correct Answer: B) Bluetooth**
+**Answer: B) Bluetooth**
 
 **Explanation:** Bluetooth typically has a range of 10-100 metres, designed for personal area networks. Wi-Fi ranges 30-100 metres, 4G covers kilometres via cell towers, and satellite provides global coverage.
 
@@ -83,7 +83,7 @@ B) The time delay between sending and receiving data
 C) The amount of data that can be stored  
 D) The number of users on a network  
 
-**Correct Answer: B) The time delay between sending and receiving data**
+**Answer: B) The time delay between sending and receiving data**
 
 **Explanation:** Latency is the time delay between data being sent and received, measured in milliseconds (ms). High latency causes lag in video calls and online gaming, even with high bandwidth connections.
 
@@ -97,7 +97,7 @@ B) FTP
 C) DNS  
 D) TCP  
 
-**Correct Answer: C) DNS**
+**Answer: C) DNS**
 
 **Explanation:** DNS (Domain Name System) translates human-readable domain names into numerical IP addresses that computers use to identify each other on the network.
 
@@ -111,7 +111,7 @@ B) Half-duplex
 C) Full-duplex  
 D) Multiplex  
 
-**Correct Answer: C) Full-duplex**
+**Answer: C) Full-duplex**
 
 **Explanation:** Full-duplex transmission allows data to flow in both directions at the same time. Simplex is one-way only; half-duplex allows both directions but not simultaneously (one at a time).
 
@@ -125,7 +125,7 @@ B) 5GHz
 C) 600MHz  
 D) 10GHz  
 
-**Correct Answer: B) 5GHz**
+**Answer: B) 5GHz**
 
 **Explanation:** The 5GHz frequency band is less congested than 2.4GHz, which is used by many devices including microwaves, Bluetooth devices, and older Wi-Fi networks. 5GHz offers better performance in areas with many wireless networks.
 
@@ -139,7 +139,7 @@ B) Provide reliable, ordered delivery of data packets
 C) Encrypt data for secure transmission  
 D) Compress files for faster transfer  
 
-**Correct Answer: B) Provide reliable, ordered delivery of data packets**
+**Answer: B) Provide reliable, ordered delivery of data packets**
 
 **Explanation:** TCP (Transmission Control Protocol) ensures reliable data delivery by breaking data into packets, numbering them, confirming receipt, and resending any lost packets. IP handles addressing and routing.
 
@@ -153,7 +153,7 @@ B) Long distance to satellite
 C) Too many Wi-Fi networks nearby  
 D) Old web browser  
 
-**Correct Answer: B) Long distance to satellite**
+**Answer: B) Long distance to satellite**
 
 **Explanation:** Geostationary satellites orbit at approximately 35,786km above Earth. Data must travel this distance twice (up and down), causing significant signal delay (latency) regardless of bandwidth availability.
 
@@ -167,7 +167,7 @@ B) Bandwidth is shared among users
 C) Latency decreases  
 D) Security improves  
 
-**Correct Answer: B) Bandwidth is shared among users**
+**Answer: B) Bandwidth is shared among users**
 
 **Explanation:** Wi-Fi bandwidth is shared among all connected users. As more users connect and use the network, less bandwidth is available per user, potentially causing slower speeds for everyone.
 

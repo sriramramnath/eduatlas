@@ -13,7 +13,7 @@ B) Worm
 C) Ransomware  
 D) Spyware  
 
-**Correct Answer: C) Ransomware**
+**Answer: C) Ransomware**
 
 **Explanation:** Ransomware encrypts victims' files and demands payment (usually in cryptocurrency) for the decryption key. It has become one of the most damaging types of malware for both individuals and organisations.
 
@@ -27,7 +27,7 @@ B) Worms require a host file; viruses do not
 C) Viruses require a host file; worms do not  
 D) Worms only affect mobile devices  
 
-**Correct Answer: C) Viruses require a host file; worms do not**
+**Answer: C) Viruses require a host file; worms do not**
 
 **Explanation:** Viruses attach themselves to host files and spread when those files are executed. Worms are self-contained programs that can spread independently across networks without needing a host file.
 
@@ -41,7 +41,7 @@ B) Brute force
 C) DDoS  
 D) Packet sniffing  
 
-**Correct Answer: A) Phishing**
+**Answer: A) Phishing**
 
 **Explanation:** Phishing attacks use fraudulent emails, text messages, or websites that appear to be from legitimate organisations to trick victims into revealing sensitive information like passwords, credit card numbers, or personal details.
 
@@ -55,7 +55,7 @@ B) Firewall
 C) Password manager  
 D) Encryption  
 
-**Correct Answer: B) Firewall**
+**Answer: B) Firewall**
 
 **Explanation:** A firewall monitors and controls network traffic based on security rules. It acts as a barrier between trusted and untrusted networks, blocking unauthorised access while permitting legitimate communication.
 
@@ -69,7 +69,7 @@ B) Two-File Access
 C) Triple-Feature Authentication  
 D) Two-Form Authorization  
 
-**Correct Answer: A) Two-Factor Authentication**
+**Answer: A) Two-Factor Authentication**
 
 **Explanation:** 2FA (Two-Factor Authentication) requires users to provide two different authentication factors to verify their identity, typically something they know (password) and something they have (phone for code).
 
@@ -83,7 +83,7 @@ B) Worm
 C) Trojan horse  
 D) Adware  
 
-**Correct Answer: C) Trojan horse**
+**Answer: C) Trojan horse**
 
 **Explanation:** Trojan horses disguise themselves as legitimate or useful software to trick users into installing them. Once installed, they can steal data, create backdoors, or download additional malware.
 
@@ -97,7 +97,7 @@ B) Convert data into unreadable format that requires a key to decode
 C) Compress files to save space  
 D) Detect malware infections  
 
-**Correct Answer: B) Convert data into unreadable format that requires a key to decode**
+**Answer: B) Convert data into unreadable format that requires a key to decode**
 
 **Explanation:** Encryption converts readable data (plaintext) into an unreadable format (ciphertext) that can only be decoded with the correct decryption key. This protects data confidentiality during transmission and storage.
 
@@ -111,7 +111,7 @@ B) Mix of upper and lower case letters
 C) Contains personal information like your birthday  
 D) Includes numbers and special characters  
 
-**Correct Answer: C) Contains personal information like your birthday**
+**Answer: C) Contains personal information like your birthday**
 
 **Explanation:** Strong passwords should NOT contain personal information like birthdays, names, or pet names. This information can be easily discovered by attackers through social media or social engineering.
 
@@ -125,7 +125,7 @@ B) Manipulating people into revealing confidential information
 C) Engineering software for social networks  
 D) Testing software with real users  
 
-**Correct Answer: B) Manipulating people into revealing confidential information**
+**Answer: B) Manipulating people into revealing confidential information**
 
 **Explanation:** Social engineering involves manipulating people into divulging confidential information or performing actions that compromise security. It exploits human psychology rather than technical vulnerabilities.
 
@@ -139,7 +139,7 @@ B) Click the link and check if the website looks legitimate
 C) Forward the email to friends to warn them  
 D) Do not respond; contact the bank directly through official channels  
 
-**Correct Answer: D) Do not respond; contact the bank directly through official channels**
+**Answer: D) Do not respond; contact the bank directly through official channels**
 
 **Explanation:** Legitimate banks never ask for login details via email. This is likely a phishing attempt. Always contact the organisation directly through official channels rather than using links in suspicious emails.
 
@@ -153,7 +153,7 @@ B) Incremental backup
 C) Mirror backup  
 D) Cloud backup  
 
-**Correct Answer: B) Incremental backup**
+**Answer: B) Incremental backup**
 
 **Explanation:** Incremental backups only copy files that have changed since the last backup (whether full or incremental). This makes them faster and uses less storage space than full backups.
 
@@ -167,7 +167,7 @@ B) An attacker intercepting communication between two parties
 C) A type of malware that replicates itself  
 D) An attack that floods a network with traffic  
 
-**Correct Answer: B) An attacker intercepting communication between two parties**
+**Answer: B) An attacker intercepting communication between two parties**
 
 **Explanation:** In a MITM attack, the attacker secretly positions themselves between two communicating parties, intercepting and potentially altering the communication without either party's knowledge.
 

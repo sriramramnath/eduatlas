@@ -31,7 +31,7 @@
   --app-text-muted: #94a3b8;
   --app-accent: #10b981;
   --app-accent-weak: rgba(16, 185, 129, 0.15);
-  --app-accent-text: #34d399;
+  --app-accent-text: #10282D;
 }
 
 * {
@@ -48,7 +48,7 @@ html {
 body {
   color: var(--app-text);
   background-color: var(--app-bg-top);
-  background-image: 
+  background-image:
     radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--app-accent) 6%, transparent) 0%, transparent 45%),
     radial-gradient(circle at 90% 80%, color-mix(in srgb, #3b82f6 5%, transparent) 0%, transparent 45%),
     linear-gradient(180deg, var(--app-bg-top) 0%, var(--app-bg-bottom) 100%);
@@ -58,7 +58,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: 0.5rem;
@@ -170,13 +175,27 @@ a {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(1.5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(1.5deg);
+  }
 }
 
 .animate-fade-in {
@@ -188,7 +207,20 @@ a {
 }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: var(--app-bg-top); }
-::-webkit-scrollbar-thumb { background: var(--app-border); border-radius: 5px; border: 2px solid var(--app-bg-top); }
-::-webkit-scrollbar-thumb:hover { background: var(--app-accent); }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--app-bg-top);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--app-border);
+  border-radius: 5px;
+  border: 2px solid var(--app-bg-top);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--app-accent);
+}

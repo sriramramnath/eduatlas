@@ -13,7 +13,7 @@ B) Arithmetic Logic Unit (ALU)
 C) Register  
 D) Cache  
 
-**Correct Answer: B) Arithmetic Logic Unit (ALU)**
+**Answer: B) Arithmetic Logic Unit (ALU)**
 
 **Explanation:** The ALU performs all mathematical operations (addition, subtraction, multiplication, division) and logical comparisons (AND, OR, NOT, equal to, greater than). The Control Unit coordinates operations but doesn't perform calculations.
 
@@ -27,7 +27,7 @@ B) Decode – Fetch – Execute
 C) Fetch – Decode – Execute  
 D) Fetch – Execute – Decode  
 
-**Correct Answer: C) Fetch – Decode – Execute**
+**Answer: C) Fetch – Decode – Execute**
 
 **Explanation:** The CPU follows this cycle: first it fetches the instruction from memory, then it decodes the instruction to understand what operation to perform, and finally it executes the instruction.
 
@@ -41,7 +41,7 @@ B) RAM
 C) Flash memory  
 D) Hard disk drive  
 
-**Correct Answer: B) RAM**
+**Answer: B) RAM**
 
 **Explanation:** RAM (Random Access Memory) is volatile memory that requires constant power to retain data. When power is removed, all data in RAM is lost. ROM, flash memory, and HDDs are non-volatile and retain data without power.
 
@@ -55,7 +55,7 @@ B) To store the operating system permanently
 C) To provide fast access to frequently used data and instructions  
 D) To connect the CPU to external devices  
 
-**Correct Answer: C) To provide fast access to frequently used data and instructions**
+**Answer: C) To provide fast access to frequently used data and instructions**
 
 **Explanation:** Cache memory is located close to or inside the CPU and stores frequently accessed data and instructions. This reduces the time the CPU spends waiting for data from slower RAM.
 
@@ -69,7 +69,7 @@ B) Dual-core
 C) Quad-core  
 D) Octa-core  
 
-**Correct Answer: C) Quad-core**
+**Answer: C) Quad-core**
 
 **Explanation:** A quad-core processor contains four independent processing units (cores). Dual-core has two cores, octa-core has eight cores, and single-core has one core.
 
@@ -83,7 +83,7 @@ B) Solid State Drive (SSD)
 C) DVD drive  
 D) Blu-ray drive  
 
-**Correct Answer: B) Solid State Drive (SSD)**
+**Answer: B) Solid State Drive (SSD)**
 
 **Explanation:** SSDs use flash memory chips with no moving mechanical parts. HDDs have spinning platters and moving read/write heads. Optical drives (DVD, Blu-ray) have spinning discs and moving laser assemblies.
 
@@ -97,7 +97,7 @@ B) The number of instruction cycles per second
 C) The temperature of the CPU  
 D) The amount of RAM installed  
 
-**Correct Answer: B) The number of instruction cycles per second**
+**Answer: B) The number of instruction cycles per second**
 
 **Explanation:** Clock speed, measured in Hertz (Hz), indicates how many cycles the CPU can perform per second. A 3GHz processor theoretically completes 3 billion cycles per second.
 
@@ -111,7 +111,7 @@ B) Virtual memory is used to extend available memory
 C) The CPU stops processing  
 D) Data is permanently deleted  
 
-**Correct Answer: B) Virtual memory is used to extend available memory**
+**Answer: B) Virtual memory is used to extend available memory**
 
 **Explanation:** When RAM is full, the operating system moves inactive data to virtual memory (a swap file on the hard drive). This frees RAM for active applications, though performance is reduced.
 
@@ -125,7 +125,7 @@ B) RAM
 C) SSD  
 D) HDD  
 
-**Correct Answer: A) L1 Cache**
+**Answer: A) L1 Cache**
 
 **Explanation:** L1 cache is located directly inside the CPU core and is the fastest memory type. The speed hierarchy from fastest to slowest is: Registers → L1 Cache → L2 Cache → L3 Cache → RAM → SSD → HDD.
 
@@ -139,7 +139,7 @@ B) Storing data permanently
 C) Coordinating and controlling all CPU operations  
 D) Connecting to external networks  
 
-**Correct Answer: C) Coordinating and controlling all CPU operations**
+**Answer: C) Coordinating and controlling all CPU operations**
 
 **Explanation:** The Control Unit directs and coordinates all CPU operations, managing the fetch-decode-execute cycle, sending control signals, and directing data flow between components. The ALU performs calculations.
 
@@ -153,7 +153,7 @@ B) Storage space used as temporary RAM
 C) A type of ROM  
 D) Memory used specifically for graphics  
 
-**Correct Answer: B) Storage space used as temporary RAM**
+**Answer: B) Storage space used as temporary RAM**
 
 **Explanation:** Virtual memory uses part of the hard drive or SSD as temporary RAM when physical RAM is full. Data is "swapped" between RAM and storage, allowing systems to run more programs than physical RAM would permit.
 
@@ -167,7 +167,7 @@ B) No moving parts
 C) Lower cost per GB  
 D) Quieter operation  
 
-**Correct Answer: C) Lower cost per GB**
+**Answer: C) Lower cost per GB**
 
 **Explanation:** SSDs are faster, more durable (no moving parts), and quieter than HDDs. However, SSDs have a higher cost per GB compared to HDDs, which is a disadvantage, not an advantage.
 

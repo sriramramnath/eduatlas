@@ -335,6 +335,7 @@ const tabIcons: Record<string, string> = {
 </Layout>
 
 <script>
+  console.log('[Quiz] Script tag loaded');
   // Tab switching logic
   function initTabs() {
     const tabButtons = document.querySelectorAll('.tab-item[data-tab]');
@@ -397,11 +398,20 @@ const tabIcons: Record<string, string> = {
   }
 
   function parseAnswerLine(text: string) {
-    return text.replace(/^answer:\s*/i, '').replace(/\*+$/, '').trim();
+    return text
+      .replace(/^[\s\*]*\*\*[\s\*]*answer:\*\*[\s\*]*/i, '')
+      .replace(/^[\s\*]*correct answer:\*\*[\s\*]*/i, '')
+      .replace(/^[\s\*]*answer:\s*/i, '')
+      .replace(/[\s\*]+$/, '')
+      .trim();
   }
 
   function parseExplanationLine(text: string) {
-    return text.replace(/^(explanation|correction):\s*/i, '').replace(/\*+$/, '').trim();
+    return text
+      .replace(/^[\s\*]*\*\*(explanation|correction):\*[\s\*]*/i, '$1:')
+      .replace(/^[\s\*]*(explanation|correction):\s*/i, '')
+      .replace(/[\s\*]+$/, '')
+      .trim();
   }
 
   function stripHtmlTags(value: string) {
@@ -421,9 +431,36 @@ const tabIcons: Record<string, string> = {
   function parseQuizBlock(nodes: Element[]) {
     const heading = nodes[0];
     const headingText = heading.textContent?.trim() || '';
+    console.log('[Quiz] parseQuizBlock called, heading:', headingText);
     const contentNodes = nodes.slice(1);
+    
+    // Check for Short Answer Questions (SAQ)
+    const isSAQ = contentNodes.some((node) => 
+      node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme)/i.test(node.textContent?.replace(/\*/g, '') || '')
+    );
+
+    if (isSAQ) {
+      const markSchemeIndex = contentNodes.findIndex((node) => 
+        node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme)/i.test(node.textContent?.replace(/\*/g, '') || '')
+      );
+
+      const promptHtml = contentNodes.slice(0, markSchemeIndex).map(n => n.outerHTML).join('');
+      const explanationHtml = contentNodes.slice(markSchemeIndex + 1).map(n => n.outerHTML).join('');
+
+      return {
+        isSAQ: true,
+        heading: headingText,
+        prompt: promptHtml,
+        options: [],
+        correctValue: '',
+        answerLabel: '',
+        explanation: explanationHtml,
+      };
+    }
+
     const paragraphs = contentNodes.filter((node) => node.tagName === 'P');
     const textParagraphs = paragraphs.flatMap((node) => getParagraphLines(node));
+    console.log('[Quiz] textParagraphs:', textParagraphs.slice(0, 5));
 
     // For broken format where answer comes before options, we need to get ALL text from ALL paragraphs in this block
     const allBlockText = paragraphs.flatMap((node) => {
@@ -435,12 +472,14 @@ const tabIcons: Record<string, string> = {
     }).join(' | ');
 
     // Find answer line - look in ALL text paragraphs
-    const answerLine = textParagraphs.find((text) => /^\*?\*?(\*\*)?answer:/i.test(text));
+    const answerLine = textParagraphs.find((text) => /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) && !/(explanation|correction):/i.test(text));
+    console.log('[Quiz] answerLine:', answerLine);
     if (!answerLine) {
+      console.log('[Quiz] Returning null - no answer line found');
       return null;
     }
 
-    const explanationLine = textParagraphs.find((text) => /^\*?\*?(\*\*)?(explanation|correction):/i.test(text));
+    const explanationLine = textParagraphs.find((text) => /^[\s\*]*(explanation|correction):/i.test(text.replace(/\*/g, '')));
     
     // Get ALL options from the entire block (handles broken format where options come after answer)
     const allOptionParagraphs = textParagraphs.filter((text) => /^[A-Z]\)\s+/.test(text));
@@ -449,14 +488,14 @@ const tabIcons: Record<string, string> = {
     const promptParagraph = textParagraphs.find(
       (text) =>
         !/^[A-Z]\)\s+/.test(text) &&
-        !/^answer:/i.test(text) &&
-        !/^(explanation|correction):/i.test(text) &&
-        text.length > 5,
+        !/(answer:|correct answer:)/i.test(text) &&
+        !/(explanation|correction):/i.test(text) &&
+        text.trim().length > 5,
     );
     
     const optionParagraphs = allOptionParagraphs;
 
-    const isTrueFalse = /^statement/i.test(headingText);
+    const isTrueFalse = /statement/i.test(headingText);
     const answerValue = parseAnswerLine(answerLine);
 
     let options = optionParagraphs.map((text) => ({
@@ -493,6 +532,7 @@ const tabIcons: Record<string, string> = {
   }
 
   function buildQuizCard(question: {
+    isSAQ?: boolean;
     heading: string;
     prompt: string;
     options: Array<{ value: string; label: string }>;
@@ -507,6 +547,52 @@ const tabIcons: Record<string, string> = {
     const questionNumber = numberMatch ? numberMatch[1] : '1';
     const markMatch = question.heading.match(/\((\d+)\s*mark/i);
     const marks = markMatch ? `${markMatch[1]} mark${markMatch[1] === '1' ? '' : 's'}` : '1 mark';
+
+    if (question.isSAQ) {
+      card.innerHTML = `
+        <div class="quiz-card-shell saq-card-shell">
+          <div class="quiz-card-top">
+            <div class="quiz-number-badge">${questionNumber}</div>
+            <div class="quiz-mark-badge">${marks}</div>
+          </div>
+          <div class="quiz-card-divider"></div>
+          <div class="quiz-card-body">
+            <div class="quiz-card-question saq-prompt">${question.prompt}</div>
+          </div>
+          <div class="quiz-card-footer">
+            <div class="quiz-feedback hidden" aria-live="polite">
+              <div class="quiz-feedback-main">
+                <p class="quiz-feedback-answer"><strong>Mark Scheme:</strong></p>
+                <div class="quiz-feedback-explanation saq-explanation">${question.explanation}</div>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; width: 100%;">
+              <button type="button" class="quiz-answer-button saq-answer-button">View answer</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      const answerButton = card.querySelector<HTMLButtonElement>('.saq-answer-button');
+      const feedback = card.querySelector<HTMLDivElement>('.quiz-feedback');
+
+      if (answerButton && feedback) {
+        answerButton.addEventListener('click', () => {
+          const isHidden = feedback.classList.contains('hidden');
+          if (isHidden) {
+            feedback.classList.remove('hidden');
+            answerButton.textContent = 'Hide answer';
+            answerButton.style.background = 'rgba(52, 211, 153, 0.1)';
+          } else {
+            feedback.classList.add('hidden');
+            answerButton.textContent = 'View answer';
+            answerButton.style.background = 'transparent';
+          }
+        });
+      }
+
+      return card;
+    }
 
     const optionsHtml = question.options
       .map((option) => {
@@ -529,8 +615,8 @@ const tabIcons: Record<string, string> = {
     card.innerHTML = `
       <div class="quiz-card-shell">
         <div class="quiz-card-top">
-          <span class="quiz-number-badge">${questionNumber}</span>
-          <span class="quiz-mark-badge">${marks}</span>
+          <div class="quiz-number-badge">${questionNumber}</div>
+          <div class="quiz-mark-badge">${marks}</div>
         </div>
         <div class="quiz-card-divider"></div>
         <div class="quiz-card-body">
@@ -598,6 +684,20 @@ const tabIcons: Record<string, string> = {
         if (answerButton) {
           answerButton.disabled = false;
           answerButton.classList.add('is-active');
+          answerButton.addEventListener('click', () => {
+             const isHidden = feedback.classList.contains('hidden');
+             if (isHidden) {
+               feedback.classList.remove('hidden');
+               answerButton.textContent = 'Hide answer';
+               answerButton.style.background = 'rgba(52, 211, 153, 0.1)';
+             } else {
+               feedback.classList.add('hidden');
+               answerButton.textContent = 'View answer';
+               answerButton.style.background = 'transparent';
+             }
+          });
+          answerButton.textContent = 'Hide answer';
+          answerButton.style.background = 'rgba(52, 211, 153, 0.1)';
         }
       });
     });
@@ -606,17 +706,31 @@ const tabIcons: Record<string, string> = {
   }
 
   function initQuizCards() {
-    const quizContent = document.querySelector('#tab-quiz .markdown-content');
+    const quizContent = document.querySelector('#tab-quiz .markdown-content') || document.querySelector('.tab-content#tab-quiz .markdown-content');
+    console.log('[Quiz] quizContent found:', !!quizContent);
+    if (!quizContent) {
+      // Try all markdown-content elements
+      const allContent = document.querySelectorAll('.markdown-content');
+      console.log('[Quiz] All markdown-content elements:', allContent.length);
+      for (const el of allContent) {
+        const parent = el.closest('.tab-content');
+        console.log('[Quiz] Content parent ID:', parent?.id);
+      }
+    }
+    console.log('[Quiz] Starting initQuizCards');
     if (!(quizContent instanceof HTMLElement) || quizContent.dataset.enhanced === 'true') {
+      console.log('[Quiz] Returning early, enhanced:', quizContent?.dataset?.enhanced);
       return;
     }
 
     const children = Array.from(quizContent.children);
+    console.log('[Quiz] Children count:', children.length);
     const fragment = document.createDocumentFragment();
     const interactiveQuestions: ReturnType<typeof parseQuizBlock>[] = [];
 
     for (let index = 0; index < children.length; index += 1) {
       const node = children[index];
+      console.log('[Quiz] Node:', node.tagName);
 
       if (node.tagName === 'H3') {
         const blockNodes = [node];
@@ -998,17 +1112,19 @@ const tabIcons: Record<string, string> = {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4.1rem;
-    height: 4.1rem;
+    width: 2.8rem;
+    height: 2.8rem;
     border-radius: 999px;
     background: #0c120d;
     color: #f8fafc;
-    font-size: 1.85rem;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
 
   :global(.quiz-mark-badge) {
     color: rgba(255, 255, 255, 0.94);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 
   :global(.quiz-card-divider) {
@@ -1018,17 +1134,18 @@ const tabIcons: Record<string, string> = {
   }
 
   :global(.quiz-card-body) {
-    padding: 1.8rem 1.6rem 2rem;
+    padding: 1.8rem 1.6rem 2.8rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0;
   }
 
   :global(.quiz-card-question) {
-    margin: 0;
-    font-size: clamp(1.9rem, 3.5vw, 3rem);
-    line-height: 1.3;
-    color: #fafafa;
+    margin: 1.5rem 0 1.5rem;
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    line-height: 1.4;
+    color: #ffffff;
+    font-weight: 500;
   }
 
   :global(.quiz-choice-list) {
@@ -1041,13 +1158,14 @@ const tabIcons: Record<string, string> = {
 
   :global(.quiz-choice-list li) {
     color: rgba(255, 255, 255, 0.96);
-    font-size: 1.5rem;
-    line-height: 1.4;
+    font-size: 1.35rem;
+    line-height: 1.5;
   }
 
   :global(.quiz-choice-list strong) {
     color: #ffffff;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
+    font-weight: 700;
   }
 
   :global(.quiz-card-footer) {
@@ -1075,22 +1193,22 @@ const tabIcons: Record<string, string> = {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4.25rem;
-    height: 4.25rem;
+    width: 3.5rem;
+    height: 3.5rem;
     padding: 0;
     border-radius: 999px;
-    border: 2px solid rgba(34, 197, 94, 0.24);
-    background: transparent;
-    color: #4ade80;
+    border: 2px solid rgba(52, 211, 153, 0.25);
+    background: rgba(255, 255, 255, 0.05);
+    color: #34D399;
     cursor: pointer;
-    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     font: inherit;
   }
 
   :global(.quiz-option:hover) {
     transform: translateY(-2px);
-    border-color: rgba(74, 222, 128, 0.85);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   :global(.quiz-option:disabled) {
@@ -1098,13 +1216,13 @@ const tabIcons: Record<string, string> = {
   }
 
   :global(.quiz-option-token) {
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: 1.4rem;
+    font-weight: 700;
   }
 
   :global(.quiz-option.is-correct) {
-    border-color: #22c55e;
-    background: #22c55e;
+    border-color: #34D399;
+    background: #34D399;
     color: white;
   }
 
@@ -1178,16 +1296,22 @@ const tabIcons: Record<string, string> = {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 15rem;
-    min-height: 4.3rem;
-    padding: 0.6rem 1.4rem;
+    min-width: 10rem;
+    min-height: 3.2rem;
+    padding: 0.4rem 1rem;
     border-radius: 999px;
     background: transparent;
-    border: 2px solid #22c55e;
-    color: #4ade80;
-    font-size: 1.2rem;
-    font-weight: 800;
+    border: 2px solid #34D399;
+    color: #34D399;
+    font-size: 1rem;
+    font-weight: 700;
     font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  :global(.quiz-answer-button:hover:not(:disabled)) {
+    background: rgba(52, 211, 153, 0.1);
   }
 
   :global(.quiz-answer-button:disabled) {

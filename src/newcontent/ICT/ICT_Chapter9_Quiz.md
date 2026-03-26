@@ -13,7 +13,7 @@ B) General Data Protection Regulation
 C) Global Data Protection Rights  
 D) Government Data Privacy Regulation  
 
-**Correct Answer: B) General Data Protection Regulation**
+**Answer: B) General Data Protection Regulation**
 
 **Explanation:** GDPR (General Data Protection Regulation) is an EU regulation that sets standards for collecting, storing, and processing personal data, giving individuals rights over their data.
 
@@ -27,7 +27,7 @@ B) Copyright Act
 C) Computer Misuse Act  
 D) Data Protection Act  
 
-**Correct Answer: C) Computer Misuse Act**
+**Answer: C) Computer Misuse Act**
 
 **Explanation:** The Computer Misuse Act (UK) criminalises unauthorised access to computer systems, hacking, and creating/distributing malware. GDPR deals with data protection, while copyright law protects creative works.
 
@@ -41,7 +41,7 @@ B) Patents
 C) Trademarks  
 D) Design rights  
 
-**Correct Answer: C) Trademarks**
+**Answer: C) Trademarks**
 
 **Explanation:** Trademarks protect brand identity elements like logos, names, and slogans. Copyright protects creative works, patents protect inventions, and design rights protect visual appearance of products.
 
@@ -55,7 +55,7 @@ B) AI can reflect and amplify biases from training data
 C) AI cannot connect to the internet  
 D) AI is always accurate  
 
-**Correct Answer: B) AI can reflect and amplify biases from training data**
+**Answer: B) AI can reflect and amplify biases from training data**
 
 **Explanation:** AI systems trained on historical data may inherit and amplify existing biases, leading to discriminatory outcomes. This is a significant ethical concern in AI development and deployment.
 
@@ -69,7 +69,7 @@ B) University students
 C) Elderly people  
 D) IT professionals  
 
-**Correct Answer: C) Elderly people**
+**Answer: C) Elderly people**
 
 **Explanation:** Elderly people are often most affected by the skills aspect of the digital divide because they may have had less exposure to digital technologies and face greater challenges learning new digital skills.
 
@@ -83,7 +83,7 @@ B) Electronic waste from discarded devices
 C) Excess bandwidth usage  
 D) Email spam  
 
-**Correct Answer: B) Electronic waste from discarded devices**
+**Answer: B) Electronic waste from discarded devices**
 
 **Explanation:** E-waste refers to discarded electronic devices such as old smartphones, computers, and tablets. It's a growing environmental problem due to toxic materials and improper disposal.
 
@@ -97,7 +97,7 @@ B) Right to erasure ("right to be forgotten")
 C) Right to copy anyone's data  
 D) Right to delete others' data  
 
-**Correct Answer: B) Right to erasure ("right to be forgotten")**
+**Answer: B) Right to erasure ("right to be forgotten")**
 
 **Explanation:** GDPR gives individuals the right to request deletion of their personal data under certain circumstances. This is often called the "right to be forgotten."
 
@@ -111,7 +111,7 @@ B) Technology that restricts how digital content can be used
 C) A social media platform  
 D) A type of internet connection  
 
-**Correct Answer: B) Technology that restricts how digital content can be used**
+**Answer: B) Technology that restricts how digital content can be used**
 
 **Explanation:** DRM (Digital Rights Management) refers to technologies that restrict how digital content can be copied, shared, or used, often to protect copyright.
 
@@ -125,7 +125,7 @@ B) Higher energy consumption
 C) Reduced travel through video conferencing  
 D) More paper usage  
 
-**Correct Answer: C) Reduced travel through video conferencing**
+**Answer: C) Reduced travel through video conferencing**
 
 **Explanation:** Video conferencing and remote work reduce the need for travel, decreasing carbon emissions from transportation. This is a positive environmental impact of digital technologies.
 
@@ -139,7 +139,7 @@ B) Increased demand for cashiers
 C) Disrupted traditional retail through e-commerce  
 D) Eliminated all shopping  
 
-**Correct Answer: C) Disrupted traditional retail through e-commerce**
+**Answer: C) Disrupted traditional retail through e-commerce**
 
 **Explanation:** E-commerce has significantly disrupted traditional retail, with many physical stores closing as consumers shift to online shopping. This has reduced demand for some retail positions while creating new e-commerce roles.
 
@@ -153,7 +153,7 @@ B) Labour market with flexible, freelance work arrangements
 C) Gaming industry economy  
 D) Government internet regulation  
 
-**Correct Answer: B) Labour market with flexible, freelance work arrangements**
+**Answer: B) Labour market with flexible, freelance work arrangements**
 
 **Explanation:** The gig economy refers to a labour market characterised by short-term contracts and freelance work rather than permanent employment. Examples include Uber drivers and freelance designers.
 
@@ -167,7 +167,7 @@ B) Social media manager
 C) Bank teller  
 D) Video store clerk  
 
-**Correct Answer: B) Social media manager**
+**Answer: B) Social media manager**
 
 **Explanation:** Social media manager is a job created by digital technology that didn't exist before social media platforms. Travel agents, bank tellers, and video store clerks are roles that have declined due to digital technology.
 

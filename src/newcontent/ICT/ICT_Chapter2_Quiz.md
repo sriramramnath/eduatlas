@@ -1,9 +1,10 @@
-# IGCSE ICT — Chapter 2: Software
-## Quiz Section (Pearson Edexcel Specification)
+# Chapter 2: Software - Quiz Section
+
+## Exam-Style Questions for Pearson Edexcel IGCSE ICT
 
 ---
 
-## SECTION A: Multiple Choice Questions
+## Part A: Multiple Choice Questions (MCQs)
 
 ### Question 1
 Which type of software manages computer hardware and provides a platform for running applications?
@@ -13,7 +14,7 @@ B) System software
 C) Utility software  
 D) Programming software  
 
-**Correct Answer: B) System software**
+**Answer: B) System software**
 
 **Explanation:** System software manages and controls computer hardware, providing a platform for application software to run. It includes operating systems, utility programs, device drivers, and language translators. Application software performs specific tasks for users.
 
@@ -27,7 +28,7 @@ B) Allocating and deallocating RAM to programs
 C) Organising files into folders  
 D) Connecting to the internet  
 
-**Correct Answer: B) Allocating and deallocating RAM to programs**
+**Answer: B) Allocating and deallocating RAM to programs**
 
 **Explanation:** Memory management involves assigning RAM space to programs when they load and reclaiming it when they close. The OS ensures programs have sufficient memory and prevents programs from accessing memory allocated to other programs.
 
@@ -41,7 +42,7 @@ B) Disk defragmenter
 C) Disk cleanup  
 D) Backup software  
 
-**Correct Answer: C) Disk cleanup**
+**Answer: C) Disk cleanup**
 
 **Explanation:** Disk cleanup utilities remove temporary files, browser cache, recycle bin contents, and other unnecessary files to free storage space. Defragmentation reorganises files; antivirus removes malware; backup creates copies of data.
 
@@ -55,7 +56,7 @@ B) Compilers translate entire programs before execution; interpreters translate 
 C) Interpreters produce faster programs than compilers  
 D) Compilers only work with Python; interpreters work with all languages  
 
-**Correct Answer: B) Compilers translate entire programs before execution; interpreters translate line by line during execution**
+**Answer: B) Compilers translate entire programs before execution; interpreters translate line by line during execution**
 
 **Explanation:** Compilers translate the entire source code into machine code before execution, producing an executable file. Interpreters translate and execute code line by line during runtime, which is slower but provides immediate error feedback.
 
@@ -69,7 +70,7 @@ B) Spreadsheet software
 C) Presentation software  
 D) Database software  
 
-**Correct Answer: B) Spreadsheet software**
+**Answer: B) Spreadsheet software**
 
 **Explanation:** Spreadsheet software is designed for numerical data and calculations. It uses formulas and functions to automatically calculate values when data changes, making it ideal for budgets, financial analysis, and data tracking.
 
@@ -83,7 +84,7 @@ B) General-purpose application software
 C) Special-purpose application software  
 D) Utility software  
 
-**Correct Answer: C) Special-purpose application software**
+**Answer: C) Special-purpose application software**
 
 **Explanation:** Adobe Photoshop is special-purpose application software designed specifically for photo editing and graphic manipulation. Unlike general-purpose applications (word processors, spreadsheets), it serves a specific industry and task.
 
@@ -97,7 +98,7 @@ B) Adobe Photoshop
 C) Mozilla Firefox  
 D) Windows 10  
 
-**Correct Answer: C) Mozilla Firefox**
+**Answer: C) Mozilla Firefox**
 
 **Explanation:** Mozilla Firefox is open source software, meaning its source code is publicly available for anyone to view, modify, and distribute. Microsoft Word, Adobe Photoshop, and Windows 10 are proprietary software with closed source code.
 
@@ -111,7 +112,7 @@ B) Software that enables the OS to communicate with hardware
 C) A type of application software for gaming  
 D) A utility that cleans up disk space  
 
-**Correct Answer: B) Software that enables the OS to communicate with hardware**
+**Answer: B) Software that enables the OS to communicate with hardware**
 
 **Explanation:** Device drivers are specialised programs that translate operating system commands into instructions that specific hardware devices understand. Each hardware device requires a driver to function properly with the OS.
 
@@ -125,7 +126,7 @@ B) Multi-user licence
 C) Site licence  
 D) Subscription licence  
 
-**Correct Answer: C) Site licence**
+**Answer: C) Site licence**
 
 **Explanation:** A site licence permits installation on all computers at a specific location, such as a school or business. This is cost-effective for organisations with many computers at one site.
 
@@ -139,7 +140,7 @@ B) Graphical User Interface
 C) Global User Interaction  
 D) Graphics Utility Integration  
 
-**Correct Answer: B) Graphical User Interface**
+**Answer: B) Graphical User Interface**
 
 **Explanation:** GUI stands for Graphical User Interface. It is a visual interface that uses windows, icons, menus, and pointers (WIMP) to allow users to interact with the computer, as opposed to text-based command-line interfaces.
 
@@ -153,7 +154,7 @@ B) Incremental backup
 C) System backup  
 D) Image backup  
 
-**Correct Answer: B) Incremental backup**
+**Answer: B) Incremental backup**
 
 **Explanation:** Incremental backups copy only files that have changed since the last backup (whether full or incremental). This makes them faster and uses less storage than full backups, though recovery takes longer.
 
@@ -167,7 +168,7 @@ B) Immediately available
 C) Tailored exactly to specific needs  
 D) Better vendor support  
 
-**Correct Answer: C) Tailored exactly to specific needs**
+**Answer: C) Tailored exactly to specific needs**
 
 **Explanation:** Custom software is developed specifically for an organisation's unique requirements, providing features that precisely match business needs. However, it has higher costs, longer development time, and more risk than off-the-shelf software.
 

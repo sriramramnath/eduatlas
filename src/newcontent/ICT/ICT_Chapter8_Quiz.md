@@ -13,7 +13,7 @@ B) Professional networking
 C) Dating  
 D) Photo sharing  
 
-**Correct Answer: B) Professional networking**
+**Answer: B) Professional networking**
 
 **Explanation:** LinkedIn is designed for professional networking, allowing users to create professional profiles, connect with colleagues, find job opportunities, and engage with industry content.
 
@@ -27,7 +27,7 @@ B) Etiquette guidelines for online communication
 C) Social media privacy settings  
 D) Online gaming rules  
 
-**Correct Answer: B) Etiquette guidelines for online communication**
+**Answer: B) Etiquette guidelines for online communication**
 
 **Explanation:** Netiquette (network etiquette) refers to the conventions of polite and appropriate behaviour when communicating online, such as being respectful, clear, and protecting privacy.
 
@@ -41,7 +41,7 @@ B) They provide emotional support and shared experiences
 C) They guarantee solutions to problems  
 D) They are always moderated by professionals  
 
-**Correct Answer: B) They provide emotional support and shared experiences**
+**Answer: B) They provide emotional support and shared experiences**
 
 **Explanation:** Online support communities allow people facing similar challenges to share experiences, offer emotional support, and exchange practical advice. However, they don't replace professional help and may not be professionally moderated.
 
@@ -55,7 +55,7 @@ B) The trail of data left by online activities
 C) A type of computer virus  
 D) An online security feature  
 
-**Correct Answer: B) The trail of data left by online activities**
+**Answer: B) The trail of data left by online activities**
 
 **Explanation:** A digital footprint is the record of your online activities, including posts, searches, purchases, and interactions. This data can persist and may be visible to others.
 
@@ -69,7 +69,7 @@ B) Access to educational resources
 C) Online predators posing as peers  
 D) Connection with distant family  
 
-**Correct Answer: C) Online predators posing as peers**
+**Answer: C) Online predators posing as peers**
 
 **Explanation:** Online predators may create fake profiles pretending to be young people to gain trust and exploit children. This is a serious safety risk in online communities.
 
@@ -83,7 +83,7 @@ B) An environment reinforcing existing beliefs without challenge
 C) A music sharing community  
 D) A type of discussion forum  
 
-**Correct Answer: B) An environment reinforcing existing beliefs without challenge**
+**Answer: B) An environment reinforcing existing beliefs without challenge**
 
 **Explanation:** Echo chambers occur when people are only exposed to viewpoints that agree with their existing beliefs. This can reinforce biases and prevent exposure to diverse perspectives.
 
@@ -97,7 +97,7 @@ B) Enforcing community rules and managing content
 C) Selling products to community members  
 D) Designing the platform interface  
 
-**Correct Answer: B) Enforcing community rules and managing content**
+**Answer: B) Enforcing community rules and managing content**
 
 **Explanation:** Moderators are responsible for enforcing community rules, removing inappropriate content, warning or banning violators, and maintaining a safe and positive community environment.
 
@@ -111,7 +111,7 @@ B) Twitter/X
 C) TikTok  
 D) Reddit  
 
-**Correct Answer: C) TikTok**
+**Answer: C) TikTok**
 
 **Explanation:** TikTok is a social media platform focused on short-form video content, where users create and share creative videos, often following trends and using music or filters.
 
@@ -125,7 +125,7 @@ B) Delete your account immediately
 C) Report it to moderators and avoid engaging  
 D) Share it publicly to expose the bully  
 
-**Correct Answer: C) Report it to moderators and avoid engaging**
+**Answer: C) Report it to moderators and avoid engaging**
 
 **Explanation:** The best response to cyberbullying is to report it to community moderators and avoid engaging with the bully. Responding aggressively often escalates the situation.
 
@@ -139,7 +139,7 @@ B) Interest-based community
 C) Educational forum  
 D) Dating platform  
 
-**Correct Answer: B) Interest-based community**
+**Answer: B) Interest-based community**
 
 **Explanation:** Interest-based communities form around shared hobbies, passions, or topics. A music fan would find like-minded people in fan communities, music forums, or dedicated social media groups.
 
@@ -153,7 +153,7 @@ B) It could be used for identity theft or fraud
 C) Moderators don't allow it  
 D) It uses too much storage space  
 
-**Correct Answer: B) It could be used for identity theft or fraud**
+**Answer: B) It could be used for identity theft or fraud**
 
 **Explanation:** Personal information shared online can be collected by criminals for identity theft, fraud, or social engineering attacks. Limiting shared information protects your safety and privacy.
 
@@ -167,7 +167,7 @@ B) Respecting others' opinions even when disagreeing
 C) Sharing private messages publicly  
 D) Responding immediately to every message  
 
-**Correct Answer: B) Respecting others' opinions even when disagreeing**
+**Answer: B) Respecting others' opinions even when disagreeing**
 
 **Explanation:** Good netiquette includes treating others with respect, even during disagreements. This helps maintain positive community interactions and constructive discussions.
 

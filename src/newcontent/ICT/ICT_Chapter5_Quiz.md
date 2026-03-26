@@ -13,7 +13,7 @@ B) WAN
 C) PAN  
 D) WLAN  
 
-**Correct Answer: B) WAN**
+**Answer: B) WAN**
 
 **Explanation:** WAN (Wide Area Network) spans large geographical areas such as cities, countries, or continents. The internet is the largest WAN. LAN covers a single building, PAN covers just a few metres, and WLAN is a wireless LAN.
 
@@ -27,7 +27,7 @@ B) Hub
 C) Router  
 D) Modem  
 
-**Correct Answer: C) Router**
+**Answer: C) Router**
 
 **Explanation:** Routers connect different networks together, such as connecting a LAN to the internet (WAN). Switches connect devices on the same network. Hubs are basic devices that broadcast to all ports. Modems connect to ISP networks.
 
@@ -41,7 +41,7 @@ B) Ring topology
 C) Star topology  
 D) Mesh topology  
 
-**Correct Answer: C) Star topology**
+**Answer: C) Star topology**
 
 **Explanation:** In star topology, all devices connect to a central device (usually a switch or hub). This is the most common LAN topology because it's easy to troubleshoot and a single device failure doesn't affect others.
 
@@ -55,7 +55,7 @@ B) Assigns IP addresses automatically
 C) Connects wireless devices  
 D) Filters network traffic  
 
-**Correct Answer: B) Assigns IP addresses automatically**
+**Answer: B) Assigns IP addresses automatically**
 
 **Explanation:** DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration to devices when they connect to a network. This eliminates manual configuration and prevents IP address conflicts.
 
@@ -69,7 +69,7 @@ B) MAC address
 C) DNS address  
 D) Web address  
 
-**Correct Answer: B) MAC address**
+**Answer: B) MAC address**
 
 **Explanation:** MAC (Media Access Control) addresses are permanently assigned to network hardware by manufacturers. IP addresses can change and are assigned by DHCP or manually. MAC addresses are used for local network communication.
 
@@ -83,7 +83,7 @@ B) If the central device fails, the entire network fails
 C) Uses too much cable  
 D) Slow data transfer speeds  
 
-**Correct Answer: B) If the central device fails, the entire network fails**
+**Answer: B) If the central device fails, the entire network fails**
 
 **Explanation:** In star topology, all devices connect to a central device. If this central device (switch or hub) fails, all connected devices lose network connectivity. This is the main weakness of star topology.
 
@@ -97,7 +97,7 @@ B) Switch
 C) Modem  
 D) Repeater  
 
-**Correct Answer: B) Switch**
+**Answer: B) Switch**
 
 **Explanation:** Switches learn the MAC addresses of connected devices and forward data only to the port where the recipient device is connected. Hubs broadcast data to all ports regardless of destination.
 
@@ -111,7 +111,7 @@ B) Virtual Public Network
 C) Variable Private Network  
 D) Verified Private Network  
 
-**Correct Answer: A) Virtual Private Network**
+**Answer: A) Virtual Private Network**
 
 **Explanation:** VPN (Virtual Private Network) creates a secure, encrypted connection over a public network like the internet. It allows remote users to securely access private networks.
 
@@ -125,7 +125,7 @@ B) Switch
 C) Firewall  
 D) Modem  
 
-**Correct Answer: C) Firewall**
+**Answer: C) Firewall**
 
 **Explanation:** A firewall monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted and untrusted networks.
 
@@ -139,7 +139,7 @@ B) Allow wireless devices to connect to a wired network
 C) Assign IP addresses  
 D) Block unauthorised access  
 
-**Correct Answer: B) Allow wireless devices to connect to a wired network**
+**Answer: B) Allow wireless devices to connect to a wired network**
 
 **Explanation:** A WAP (Wireless Access Point) enables wireless devices to connect to a wired network using Wi-Fi. It bridges wireless and wired network segments.
 
@@ -153,7 +153,7 @@ B) 192.168.1.1
 C) 192.168.1.1.1  
 D) 192.168.1  
 
-**Correct Answer: B) 192.168.1.1**
+**Answer: B) 192.168.1.1**
 
 **Explanation:** IPv4 addresses consist of four numbers separated by dots, each ranging from 0 to 255. 192.168.1.1 is a valid private IP address format. 256 is invalid (too high), and the other options have wrong numbers of segments.
 
@@ -167,7 +167,7 @@ B) Data can still reach its destination via alternative paths
 C) Only that device disconnects  
 D) The network becomes slower but works  
 
-**Correct Answer: B) Data can still reach its destination via alternative paths**
+**Answer: B) Data can still reach its destination via alternative paths**
 
 **Explanation:** In mesh topology, devices have multiple connections to other devices. If one connection fails, data can be rerouted through alternative paths, making mesh networks highly fault-tolerant.
 

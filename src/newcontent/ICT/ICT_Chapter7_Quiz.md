@@ -13,7 +13,7 @@ B) Business to Consumer
 C) Buyer to Consumer  
 D) Business to Customer  
 
-**Correct Answer: B) Business to Consumer**
+**Answer: B) Business to Consumer**
 
 **Explanation:** B2C (Business to Consumer) refers to transactions where businesses sell directly to individual consumers, such as when a customer buys products from Amazon or ASOS.
 
@@ -27,7 +27,7 @@ B) Digital divide
 C) Digital discrimination  
 D) Digital distance  
 
-**Correct Answer: B) Digital divide**
+**Answer: B) Digital divide**
 
 **Explanation:** The digital divide refers to the gap between those who have access to modern information technology (computers, internet) and those who do not. This gap can be based on geography, income, age, or education.
 
@@ -41,7 +41,7 @@ B) Guarantees employment
 C) Offers flexible learning times and locations  
 D) Is always free  
 
-**Correct Answer: C) Offers flexible learning times and locations**
+**Answer: C) Offers flexible learning times and locations**
 
 **Explanation:** Online learning allows students to access educational content at times and locations convenient for them. This flexibility is one of its main advantages, though it requires self-discipline and motivation.
 
@@ -55,7 +55,7 @@ B) Social comparison affecting self-esteem
 C) Improved physical fitness  
 D) Better sleep quality  
 
-**Correct Answer: B) Social comparison affecting self-esteem**
+**Answer: B) Social comparison affecting self-esteem**
 
 **Explanation:** Social media can negatively affect mental health when users compare themselves unfavourably to the curated, idealised images others post. This comparison culture can lead to feelings of inadequacy and low self-esteem.
 
@@ -69,7 +69,7 @@ B) B2B
 C) C2C  
 D) C2B  
 
-**Correct Answer: C) C2C**
+**Answer: C) C2C**
 
 **Explanation:** C2C (Consumer to Consumer) e-commerce involves transactions between individual consumers. Platforms like eBay, Facebook Marketplace, and Gumtree facilitate these transactions.
 
@@ -83,7 +83,7 @@ B) Reduced travel through remote work and meetings
 C) Higher energy consumption from data centres  
 D) Increased consumption from online shopping  
 
-**Correct Answer: B) Reduced travel through remote work and meetings**
+**Answer: B) Reduced travel through remote work and meetings**
 
 **Explanation:** Remote work and online meetings reduce the need for commuting and business travel, decreasing carbon emissions from transportation. This is a positive environmental impact of internet usage.
 
@@ -97,7 +97,7 @@ B) Medical care delivered remotely via technology
 C) Online medical insurance  
 D) Social media for doctors  
 
-**Correct Answer: B) Medical care delivered remotely via technology**
+**Answer: B) Medical care delivered remotely via technology**
 
 **Explanation:** Telemedicine involves providing healthcare services remotely using telecommunications technology. Patients can consult with doctors via video calls, receive diagnoses, and get prescriptions without visiting a physical clinic.
 
@@ -111,7 +111,7 @@ B) Young professionals
 C) Elderly people  
 D) University students  
 
-**Correct Answer: C) Elderly people**
+**Answer: C) Elderly people**
 
 **Explanation:** Elderly people are more likely to be affected by the skills digital divide because they may have had less exposure to digital technology during their working lives and may find it harder to adapt to new technologies.
 
@@ -125,7 +125,7 @@ B) A personalised information environment limiting exposure to diverse views
 C) A type of internet security  
 D) A content creation tool  
 
-**Correct Answer: B) A personalised information environment limiting exposure to diverse views**
+**Answer: B) A personalised information environment limiting exposure to diverse views**
 
 **Explanation:** Filter bubbles occur when algorithms show users content aligned with their existing beliefs and interests, potentially limiting their exposure to different perspectives and creating echo chambers.
 
@@ -139,7 +139,7 @@ B) Physical media retail (DVDs, CDs)
 C) Food delivery  
 D) Telecommunications  
 
-**Correct Answer: B) Physical media retail (DVDs, CDs)**
+**Answer: B) Physical media retail (DVDs, CDs)**
 
 **Explanation:** Streaming services like Netflix and Spotify have dramatically reduced demand for physical media such as DVDs and CDs. Video rental stores have largely disappeared, and music stores have declined significantly.
 
@@ -153,7 +153,7 @@ B) Labour market with freelance, flexible work arrangements
 C) Economy of online gaming  
 D) Economic theory about internet growth  
 
-**Correct Answer: B) Labour market with freelance, flexible work arrangements**
+**Answer: B) Labour market with freelance, flexible work arrangements**
 
 **Explanation:** The gig economy refers to a labour market characterised by short-term contracts and freelance work rather than permanent jobs. Examples include Uber drivers, food delivery riders, and freelance designers.
 
@@ -167,7 +167,7 @@ B) Cannot physically examine products before purchase
 C) Price comparison available  
 D) 24/7 availability  
 
-**Correct Answer: B) Cannot physically examine products before purchase**
+**Answer: B) Cannot physically examine products before purchase**
 
 **Explanation:** A key disadvantage of online shopping is that consumers cannot touch, try on, or physically examine products before buying. This can lead to disappointment when products don't match expectations.
 

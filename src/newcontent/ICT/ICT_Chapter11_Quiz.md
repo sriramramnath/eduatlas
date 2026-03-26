@@ -13,7 +13,7 @@ B) Two-factor authentication (2FA)
 C) Encryption  
 D) Firewall  
 
-**Correct Answer: B) Two-factor authentication (2FA)**
+**Answer: B) Two-factor authentication (2FA)**
 
 **Explanation:** Two-factor authentication requires two different types of verification—typically something you know (password) and something you have (phone for receiving codes). This significantly improves security beyond just a password.
 
@@ -27,7 +27,7 @@ B) Multiple Online Option Course
 C) Major Online Open Class  
 D) Mobile Open Online Certificate  
 
-**Correct Answer: A) Massive Open Online Course**
+**Answer: A) Massive Open Online Course**
 
 **Explanation:** MOOC stands for Massive Open Online Course. These are online courses designed for unlimited participation, offered by platforms like Coursera, edX, and FutureLearn.
 
@@ -41,7 +41,7 @@ B) Cannot physically examine products before purchase
 C) Price comparison is easier  
 D) 24/7 availability  
 
-**Correct Answer: B) Cannot physically examine products before purchase**
+**Answer: B) Cannot physically examine products before purchase**
 
 **Explanation:** A key disadvantage of online shopping is that customers cannot touch, try on, or closely examine products before buying. This can lead to disappointment when products don't meet expectations.
 
@@ -55,7 +55,7 @@ B) Medical care delivered remotely via technology
 C) Online medical insurance  
 D) Social media for doctors  
 
-**Correct Answer: B) Medical care delivered remotely via technology**
+**Answer: B) Medical care delivered remotely via technology**
 
 **Explanation:** Telemedicine involves providing healthcare services remotely using telecommunications technology, such as video consultations with doctors, online diagnosis, and remote monitoring.
 
@@ -69,7 +69,7 @@ B) PayPal
 C) Cash  
 D) Cheque  
 
-**Correct Answer: B) PayPal**
+**Answer: B) PayPal**
 
 **Explanation:** PayPal is a digital wallet that stores payment information and enables online transactions. Other digital wallets include Apple Pay, Google Pay, and Samsung Pay.
 
@@ -83,7 +83,7 @@ B) 14-day right to cancel online orders
 C) Right to half price on all products  
 D) No rights for online purchases  
 
-**Correct Answer: B) 14-day right to cancel online orders**
+**Answer: B) 14-day right to cancel online orders**
 
 **Explanation:** UK consumers have the right to cancel most online orders within 14 days of delivery for a full refund. This is part of consumer protection legislation for distance selling.
 
@@ -97,7 +97,7 @@ B) Available 24/7 without visiting branches
 C) No security needed  
 D) Banks give free money  
 
-**Correct Answer: B) Available 24/7 without visiting branches**
+**Answer: B) Available 24/7 without visiting branches**
 
 **Explanation:** Online banking is available around the clock, allowing customers to check balances, transfer money, and pay bills at any time without needing to visit a physical branch during opening hours.
 
@@ -111,7 +111,7 @@ B) Fraudulent attempt to steal login credentials
 C) A banking feature  
 D) A secure login method  
 
-**Correct Answer: B) Fraudulent attempt to steal login credentials**
+**Answer: B) Fraudulent attempt to steal login credentials**
 
 **Explanation:** Phishing is a fraudulent technique where attackers impersonate legitimate organisations (like banks) to trick people into revealing sensitive information such as usernames, passwords, or credit card details.
 
@@ -125,7 +125,7 @@ B) Netflix
 C) PayPal  
 D) Online banking  
 
-**Correct Answer: B) Netflix**
+**Answer: B) Netflix**
 
 **Explanation:** Netflix is a video streaming service offering on-demand access to films and TV series. Spotify streams music, PayPal is for payments, and online banking is for financial services.
 
@@ -139,7 +139,7 @@ B) Requires self-discipline and motivation
 C) Always more expensive than traditional learning  
 D) Too many teachers available  
 
-**Correct Answer: B) Requires self-discipline and motivation**
+**Answer: B) Requires self-discipline and motivation**
 
 **Explanation:** Online learning typically requires greater self-discipline than traditional classroom learning because students must manage their own time, stay focused without direct supervision, and maintain motivation independently.
 
@@ -153,7 +153,7 @@ B) Ordering online and picking up in store
 C) Collecting coupons online  
 D) Returning unwanted items  
 
-**Correct Answer: B) Ordering online and picking up in store**
+**Answer: B) Ordering online and picking up in store**
 
 **Explanation:** Click and collect allows customers to order products online and collect them from a physical store. This combines online convenience with avoiding delivery fees and waiting for delivery.
 
@@ -167,7 +167,7 @@ B) IT professionals
 C) Elderly people without internet access  
 D) University students  
 
-**Correct Answer: C) Elderly people without internet access**
+**Answer: C) Elderly people without internet access**
 
 **Explanation:** The digital divide particularly affects elderly people who may lack internet access, devices, or digital skills. This exclusion prevents them from accessing increasingly digital services.
 

@@ -13,7 +13,7 @@ B) Systematically browse the web to discover content
 C) Create website content  
 D) Delete outdated websites  
 
-**Correct Answer: B) Systematically browse the web to discover content**
+**Answer: B) Systematically browse the web to discover content**
 
 **Explanation:** Search engine bots (also called spiders or crawlers) systematically browse the web, following links from page to page to discover and collect content for indexing.
 
@@ -27,7 +27,7 @@ B) Finds an exact phrase match
 C) Excludes certain words  
 D) Limits to news articles  
 
-**Correct Answer: B) Finds an exact phrase match**
+**Answer: B) Finds an exact phrase match**
 
 **Explanation:** Quotation marks around a phrase tell the search engine to find that exact phrase in that exact word order. For example, "climate change" finds only pages with those words together.
 
@@ -41,7 +41,7 @@ B) Accessibility
 C) Availability  
 D) Authority  
 
-**Correct Answer: D) Authority** (or Accuracy—both are part of CRAAP)
+**Answer: D) Authority** (or Accuracy—both are part of CRAAP)
 
 **Explanation:** The CRAAP test stands for Currency, Relevance, Authority, Accuracy, and Purpose. Authority examines who created the information and their credentials; Accuracy examines correctness and verification.
 
@@ -55,7 +55,7 @@ B) .ac.uk
 C) .school.uk  
 D) .education  
 
-**Correct Answer: B) .ac.uk**
+**Answer: B) .ac.uk**
 
 **Explanation:** .ac.uk is the domain extension for UK academic and educational institutions. .edu is primarily used by US educational institutions. UK schools typically use .sch.uk.
 
@@ -69,7 +69,7 @@ B) Misinformation is deliberately false; disinformation is accidentally false
 C) Misinformation is accidentally false; disinformation is deliberately false  
 D) Both are always true  
 
-**Correct Answer: C) Misinformation is accidentally false; disinformation is deliberately false**
+**Answer: C) Misinformation is accidentally false; disinformation is deliberately false**
 
 **Explanation:** Misinformation is false information shared without intent to harm (shared by mistake). Disinformation is deliberately created and spread false information intended to deceive.
 
@@ -83,7 +83,7 @@ B) Using others' work without proper attribution
 C) Creating original content  
 D) Paraphrasing with credit  
 
-**Correct Answer: B) Using others' work without proper attribution**
+**Answer: B) Using others' work without proper attribution**
 
 **Explanation:** Plagiarism is using someone else's work, ideas, or words without giving them proper credit. This includes copying text, paraphrasing without attribution, or submitting others' work as your own.
 
@@ -97,7 +97,7 @@ B) No modifications allowed
 C) Attribution to the creator  
 D) Sharing under same licence  
 
-**Correct Answer: C) Attribution to the creator**
+**Answer: C) Attribution to the creator**
 
 **Explanation:** The Creative Commons "BY" (Attribution) licence requires users to give appropriate credit to the original creator. It's the most permissive CC licence, allowing use with attribution.
 
@@ -111,7 +111,7 @@ B) Finds websites similar to BBC
 C) Limits search results to the BBC website  
 D) Blocks BBC from results  
 
-**Correct Answer: C) Limits search results to the BBC website**
+**Answer: C) Limits search results to the BBC website**
 
 **Explanation:** The "site:" operator restricts search results to a specific website or domain. "site:bbc.com" will only show results from pages on the BBC website.
 
@@ -125,7 +125,7 @@ B) The article includes citations to research
 C) The headline uses extreme emotional language  
 D) The article was published recently  
 
-**Correct Answer: C) The headline uses extreme emotional language**
+**Answer: C) The headline uses extreme emotional language**
 
 **Explanation:** Sensational or emotionally charged headlines ("SHOCKING truth they don't want you to know!") are often signs of clickbait or unreliable sources. Reliable sources typically use neutral, informative headlines.
 
@@ -139,7 +139,7 @@ B) To verify the accuracy of claims and stories
 C) To sell subscriptions  
 D) To promote certain political views  
 
-**Correct Answer: B) To verify the accuracy of claims and stories**
+**Answer: B) To verify the accuracy of claims and stories**
 
 **Explanation:** Fact-checking websites like Snopes, Full Fact, and Politifact investigate claims, rumours, and viral stories to determine their accuracy and provide evidence-based conclusions.
 
@@ -153,7 +153,7 @@ B) Non-paid results based on relevance
 C) Results from government websites  
 D) Paid advertisements  
 
-**Correct Answer: B) Non-paid results based on relevance**
+**Answer: B) Non-paid results based on relevance**
 
 **Explanation:** Organic results are the natural search results that appear based on their relevance to the search terms, as determined by the search engine's algorithm. They are not paid advertisements.
 
@@ -167,7 +167,7 @@ B) The weather when you accessed it
 C) The date you accessed the website  
 D) The website owner's home address  
 
-**Correct Answer: C) The date you accessed the website**
+**Answer: C) The date you accessed the website**
 
 **Explanation:** When citing online sources, include the date accessed because web content can change or be removed. This helps readers find the version you used.
 

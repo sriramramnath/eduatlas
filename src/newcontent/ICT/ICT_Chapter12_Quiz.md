@@ -13,7 +13,7 @@ B) Storage as a Service
 C) System as a Service  
 D) Security as a Service  
 
-**Correct Answer: A) Software as a Service**
+**Answer: A) Software as a Service**
 
 **Explanation:** SaaS (Software as a Service) delivers complete software applications over the internet. Users access the software through a web browser without needing to install anything locally. Examples include Google Docs, Microsoft 365, and Salesforce.
 
@@ -27,7 +27,7 @@ B) PaaS
 C) IaaS  
 D) DaaS  
 
-**Correct Answer: C) IaaS**
+**Answer: C) IaaS**
 
 **Explanation:** IaaS (Infrastructure as a Service) provides fundamental computing infrastructure including virtual machines, storage, and networking. Users manage operating systems and applications while the provider manages the underlying hardware.
 
@@ -41,7 +41,7 @@ B) Private cloud
 C) Hybrid cloud  
 D) Community cloud  
 
-**Correct Answer: B) Private cloud**
+**Answer: B) Private cloud**
 
 **Explanation:** Private cloud is dedicated infrastructure used exclusively by one organisation. It offers greater control, security, and customisation but at higher cost than public cloud options.
 
@@ -55,7 +55,7 @@ B) Microsoft Azure Virtual Machines
 C) Google Docs  
 D) Google App Engine  
 
-**Correct Answer: C) Google Docs**
+**Answer: C) Google Docs**
 
 **Explanation:** Google Docs is a complete software application delivered over the internet—making it SaaS. Amazon EC2 and Azure VMs are IaaS (infrastructure), while Google App Engine is PaaS (platform for development).
 
@@ -69,7 +69,7 @@ B) Resources can be increased or decreased as needed
 C) Resources are always unlimited  
 D) Resources are only available to large companies  
 
-**Correct Answer: B) Resources can be increased or decreased as needed**
+**Answer: B) Resources can be increased or decreased as needed**
 
 **Explanation:** Cloud scalability allows organisations to increase resources during high demand and decrease them when demand is low. This elasticity means you only pay for what you use and can handle peak loads without maintaining excess capacity.
 
@@ -83,7 +83,7 @@ B) It requires internet connectivity to access services
 C) It is always slower than local computing  
 D) It cannot be used by businesses  
 
-**Correct Answer: B) It requires internet connectivity to access services**
+**Answer: B) It requires internet connectivity to access services**
 
 **Explanation:** Cloud computing depends on internet connectivity. Without a reliable internet connection, users cannot access their data or applications stored in the cloud. This is a fundamental limitation.
 
@@ -97,7 +97,7 @@ B) Combination of public and private cloud resources
 C) A cloud that uses both electricity and solar power  
 D) A cloud used only for gaming  
 
-**Correct Answer: B) Combination of public and private cloud resources**
+**Answer: B) Combination of public and private cloud resources**
 
 **Explanation:** Hybrid cloud combines public and private clouds, allowing data and applications to move between them. This provides flexibility—for example, keeping sensitive data in a private cloud while using public cloud for additional capacity.
 
@@ -111,7 +111,7 @@ B) An external hard drive
 C) Google Drive  
 D) A DVD  
 
-**Correct Answer: C) Google Drive**
+**Answer: C) Google Drive**
 
 **Explanation:** Google Drive is cloud storage—data stored on remote servers accessible via internet. USB drives, external hard drives, and DVDs are all local storage devices that you physically possess.
 
@@ -125,7 +125,7 @@ B) Difficulty switching between cloud providers
 C) Cloud providers going out of business  
 D) Internet connection problems  
 
-**Correct Answer: B) Difficulty switching between cloud providers**
+**Answer: B) Difficulty switching between cloud providers**
 
 **Explanation:** Vendor lock-in occurs when it becomes difficult or expensive to switch from one cloud provider to another, often because of proprietary technologies, data formats, or integrated services that don't transfer easily.
 
@@ -139,7 +139,7 @@ B) Paying only for the resources you actually use
 C) Paying before receiving any service  
 D) Not paying anything for services  
 
-**Correct Answer: B) Paying only for the resources you actually use**
+**Answer: B) Paying only for the resources you actually use**
 
 **Explanation:** Pay-as-you-go is a pricing model where users pay only for the computing resources they consume, similar to utilities like electricity. This contrasts with traditional computing where you pay for hardware upfront regardless of usage.
 
@@ -153,7 +153,7 @@ B) PaaS
 C) IaaS  
 D) All require equal management  
 
-**Correct Answer: C) IaaS**
+**Answer: C) IaaS**
 
 **Explanation:** IaaS (Infrastructure as a Service) requires users to manage operating systems, applications, and data. The provider only manages the physical hardware. SaaS requires the least management (just use the application), while PaaS is in between.
 
@@ -167,7 +167,7 @@ B) Multi-tenant environment where resources are shared
 C) Data is never encrypted  
 D) Only one person can access data  
 
-**Correct Answer: B) Multi-tenant environment where resources are shared**
+**Answer: B) Multi-tenant environment where resources are shared**
 
 **Explanation:** In public cloud, multiple organisations (tenants) share the same infrastructure. While data is logically separated, the shared environment creates potential security risks that don't exist in dedicated private cloud environments.
 

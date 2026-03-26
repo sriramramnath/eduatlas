@@ -20,6 +20,7 @@ const { title, description = "Free IGCSE Notes, Quizzes & Practice Questions for
     <link rel="icon" type="image/png" href="/Lightmodeicon.png" />
     <meta name="theme-color" content="#15803d" />
     <title>{title} | EduAtlas by EduOS</title>
+    <slot name="head" />
     <script is:inline>
       (function() {
         const theme = localStorage.getItem('theme') || 'light';
