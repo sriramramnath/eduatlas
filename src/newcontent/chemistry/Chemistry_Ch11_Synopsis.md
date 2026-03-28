@@ -16,7 +16,7 @@
 
 ---
 
-## 🔑 Essential Points
+## Essential Points
 
 ### Physical Properties
 - **Soft metals** - can be cut with a knife

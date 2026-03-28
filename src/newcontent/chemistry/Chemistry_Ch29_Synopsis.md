@@ -5,7 +5,7 @@
 
 ---
 
-## 🔑 Key Concepts at a Glance
+## Key Concepts at a Glance
 
 ### What is a Polymer?
 - **Polymer** = Large molecule made from many small repeating units

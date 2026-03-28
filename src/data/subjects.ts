@@ -107,8 +107,8 @@ This chapter introduces the various types of digital devices you will encounter,
       }
     ]
   },
-  math: {
-    id: 'math',
+  maths: {
+    id: 'maths',
     title: 'Mathematics',
     description: 'Build a strong mathematical foundation for IGCSE success. Algebra, Geometry, and beyond.',
     color: '#3b82f6',

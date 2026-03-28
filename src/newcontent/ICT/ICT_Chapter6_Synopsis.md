@@ -33,7 +33,7 @@
 ### 3. Phishing Warning Signs
 
 ```
-⚠️ SUSPICIOUS EMAIL INDICATORS:
+ SUSPICIOUS EMAIL INDICATORS:
 • Sender address doesn't match organisation
 • Generic greeting ("Dear Customer")
 • Urgent action required

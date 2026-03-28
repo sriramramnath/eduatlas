@@ -34,7 +34,7 @@ const bannerMap: Record<string, string> = {
   'biology': '/banners/biology.png',
   'chemistry': '/banners/chemistry.png',
   'physics': '/banners/physics.png',
-  'math': '/banners/math.png',
+  'maths': '/banners/math.png',
   'ict': '/banners/compsci.png',
 };
 
@@ -57,12 +57,16 @@ const physicsQuizModules = import.meta.glob('/src/newcontent/physics/Physics_*_Q
 const ictNoteModules = import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Notes.md', { eager: true });
 const ictSynopsisModules = import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md', { eager: true });
 const ictQuizModules = import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Quiz.md', { eager: true });
+const mathsNoteModules = import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Notes.md', { eager: true });
+const mathsSynopsisModules = import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Synopsis.md', { eager: true });
+const mathsQuizModules = import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Quiz.md', { eager: true });
 
 // Find the content for this chapter
 const isBiology = subjectId === 'biology';
 const isChemistry = subjectId === 'chemistry';
 const isPhysics = subjectId === 'physics';
 const isIct = subjectId === 'ict';
+const isMaths = subjectId === 'maths';
 
 const contentSubjectConfig = isBiology
   ? contentSubjectConfigs.biology
@@ -72,15 +76,18 @@ const contentSubjectConfig = isBiology
       ? contentSubjectConfigs.physics
       : isIct
         ? contentSubjectConfigs.ict
-        : null;
+        : isMaths
+          ? contentSubjectConfigs.maths
+          : null;
+const chapterPathParam = isMaths ? chapter.id.replace('chapter-', '') : chapter.number;
 const notePath = contentSubjectConfig
-  ? contentSubjectConfig.notePath(chapter.number)
+  ? contentSubjectConfig.notePath(chapterPathParam)
   : `/src/subjects/${subjectId}/${chapterId}/note.md`;
 const synopsisPath = contentSubjectConfig
-  ? contentSubjectConfig.synopsisPath(chapter.number)
+  ? contentSubjectConfig.synopsisPath(chapterPathParam)
   : `/src/subjects/${subjectId}/${chapterId}/synopsis.md`;
 const quizPath = contentSubjectConfig
-  ? contentSubjectConfig.quizPath(chapter.number)
+  ? contentSubjectConfig.quizPath(chapterPathParam)
   : `/src/subjects/${subjectId}/${chapterId}/quiz.md`;
 const practicePath = `/src/subjects/${subjectId}/${chapterId}/practice.md`;
 
@@ -92,7 +99,9 @@ const contentNoteModules = isBiology
       ? physicsNoteModules
       : isIct
         ? ictNoteModules
-        : noteModules;
+        : isMaths
+          ? mathsNoteModules
+          : noteModules;
 const contentSynopsisModules = isBiology
   ? biologySynopsisModules
   : isChemistry
@@ -101,7 +110,9 @@ const contentSynopsisModules = isBiology
       ? physicsSynopsisModules
       : isIct
         ? ictSynopsisModules
-        : synopsisModules;
+        : isMaths
+          ? mathsSynopsisModules
+          : synopsisModules;
 const contentQuizModules = isBiology
   ? biologyQuizModules
   : isChemistry
@@ -110,7 +121,9 @@ const contentQuizModules = isBiology
       ? physicsQuizModules
       : isIct
         ? ictQuizModules
-        : quizModules;
+        : isMaths
+          ? mathsQuizModules
+          : quizModules;
 
 const noteModule = contentNoteModules[notePath] as any;
 const synopsisModule = contentSynopsisModules[synopsisPath] as any;
@@ -420,7 +433,13 @@ const tabIcons: Record<string, string> = {
     return temp.textContent?.trim() || '';
   }
 
-  function getParagraphLines(node: Element) {
+  function getParagraphLines(node: Element, keepHtml: boolean = false) {
+    if (keepHtml) {
+      return node.innerHTML
+        .split(/<br\s*\/?>/i)
+        .map((line) => line.replace(/\u00a0/g, ' ').trim())
+        .filter(Boolean);
+    }
     return node.innerHTML
       .split(/<br\s*\/?>/i)
       .map((line) => stripHtmlTags(line))
@@ -459,7 +478,8 @@ const tabIcons: Record<string, string> = {
     }
 
     const paragraphs = contentNodes.filter((node) => node.tagName === 'P');
-    const textParagraphs = paragraphs.flatMap((node) => getParagraphLines(node));
+    const textParagraphs = paragraphs.flatMap((node) => getParagraphLines(node, false));
+    const htmlParagraphs = paragraphs.flatMap((node) => getParagraphLines(node, true));
     console.log('[Quiz] textParagraphs:', textParagraphs.slice(0, 5));
 
     // For broken format where answer comes before options, we need to get ALL text from ALL paragraphs in this block
@@ -472,20 +492,22 @@ const tabIcons: Record<string, string> = {
     }).join(' | ');
 
     // Find answer line - look in ALL text paragraphs
-    const answerLine = textParagraphs.find((text) => /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) && !/(explanation|correction):/i.test(text));
-    console.log('[Quiz] answerLine:', answerLine);
-    if (!answerLine) {
+    const answerIndex = textParagraphs.findIndex((text) => /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) && !/(explanation|correction):/i.test(text));
+    console.log('[Quiz] answerLine:', answerIndex !== -1 ? textParagraphs[answerIndex] : 'NOT FOUND');
+    if (answerIndex === -1) {
       console.log('[Quiz] Returning null - no answer line found');
       return null;
     }
+    const answerLine = textParagraphs[answerIndex];
 
-    const explanationLine = textParagraphs.find((text) => /^[\s\*]*(explanation|correction):/i.test(text.replace(/\*/g, '')));
+    const explanationIndex = textParagraphs.findIndex((text) => /^[\s\*]*(explanation|correction):/i.test(text.replace(/\*/g, '')));
     
     // Get ALL options from the entire block (handles broken format where options come after answer)
     const allOptionParagraphs = textParagraphs.filter((text) => /^[A-Z]\)\s+/.test(text));
+    const allOptionHtmlParagraphs = htmlParagraphs.filter((text) => /^[A-Z]\)\s+/.test(stripHtmlTags(text)));
     
     // For prompt, look in text that's not options or answer/explanation
-    const promptParagraph = textParagraphs.find(
+    const promptIndex = textParagraphs.findIndex(
       (text) =>
         !/^[A-Z]\)\s+/.test(text) &&
         !/(answer:|correct answer:)/i.test(text) &&
@@ -494,13 +516,14 @@ const tabIcons: Record<string, string> = {
     );
     
     const optionParagraphs = allOptionParagraphs;
+    const optionHtmlParagraphs = allOptionHtmlParagraphs;
 
     const isTrueFalse = /statement/i.test(headingText);
     const answerValue = parseAnswerLine(answerLine);
 
-    let options = optionParagraphs.map((text) => ({
-      value: getLeadingLabel(text),
-      label: stripLeadingLabel(text),
+    let options = optionHtmlParagraphs.map((html) => ({
+      value: getLeadingLabel(stripHtmlTags(html)),
+      label: stripLeadingLabel(html),
     }));
 
     let correctValue = '';
@@ -521,13 +544,16 @@ const tabIcons: Record<string, string> = {
       return null;
     }
 
+    const promptHtml = promptIndex !== -1 ? htmlParagraphs[promptIndex] : headingText;
+    const explanationHtml = explanationIndex !== -1 ? parseExplanationLine(htmlParagraphs[explanationIndex]) : 'Review the marked answer and chapter notes for the reasoning.';
+
     return {
       heading: headingText,
-      prompt: stripWrappedQuotes(promptParagraph || headingText),
+      prompt: promptHtml,
       options,
       correctValue,
       answerLabel: answerValue,
-      explanation: explanationLine ? parseExplanationLine(explanationLine) : 'Review the marked answer and chapter notes for the reasoning.',
+      explanation: explanationHtml,
     };
   }
 
@@ -577,6 +603,11 @@ const tabIcons: Record<string, string> = {
       const feedback = card.querySelector<HTMLDivElement>('.quiz-feedback');
 
       if (answerButton && feedback) {
+        // Render any LaTeX in the SAQ card
+        if (typeof (window as any).renderMath === 'function') {
+          (window as any).renderMath(card);
+        }
+        
         answerButton.addEventListener('click', () => {
           const isHidden = feedback.classList.contains('hidden');
           if (isHidden) {
@@ -620,7 +651,7 @@ const tabIcons: Record<string, string> = {
         </div>
         <div class="quiz-card-divider"></div>
         <div class="quiz-card-body">
-          <h3 class="quiz-card-question">${question.prompt}</h3>
+          <div class="quiz-card-question">${question.prompt}</div>
           <ul class="quiz-choice-list">
             ${optionListHtml}
           </ul>
@@ -701,6 +732,11 @@ const tabIcons: Record<string, string> = {
         }
       });
     });
+
+    // Render any LaTeX in the MCQ card
+    if (typeof (window as any).renderMath === 'function') {
+      (window as any).renderMath(card);
+    }
 
     return card;
   }

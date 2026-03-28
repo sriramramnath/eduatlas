@@ -76,6 +76,11 @@ function getChapterContentAvailability() {
       synopsis: import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md'),
       quiz: import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Quiz.md'),
     },
+    maths: {
+      notes: import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Notes.md'),
+      synopsis: import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Synopsis.md'),
+      quiz: import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Quiz.md'),
+    },
   };
 
   return {

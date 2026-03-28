@@ -5,7 +5,7 @@
 
 ---
 
-## 🔑 Key Concepts at a Glance
+## Key Concepts at a Glance
 
 ### What is Organic Chemistry?
 - Study of **carbon-containing compounds**
@@ -43,7 +43,7 @@
 
 ---
 
-## 📚 Homologous Series
+##  Homologous Series
 
 **Definition**: Family of compounds with:
 - Same **general formula**

@@ -5,7 +5,7 @@
 
 ---
 
-## 🔑 Key Concepts at a Glance
+## Key Concepts at a Glance
 
 ### Reversible Reactions
 - Reactions that can proceed in **both directions**

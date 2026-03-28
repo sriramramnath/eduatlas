@@ -195,7 +195,7 @@ Test:  Add HNO₃ (removes carbonate/hydroxide), then AgNO₃
 
 ---
 
-## 💡 Memory Tips
+##  Memory Tips
 
 ### Gas Tests
 - **O₂ = Oxygen brings Old embers back to life** (relights glowing splint)
@@ -239,7 +239,7 @@ Ag⁺ + Cl⁻ → AgCl(s) white
 
 ---
 
-## 🔑 Key Concepts for Exam
+## Key Concepts for Exam
 
 ✓ Memorise all gas tests and their results  
 ✓ Know exact flame colour terminology  

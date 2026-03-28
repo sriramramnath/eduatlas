@@ -42,7 +42,9 @@ function extractSubjectTitle(raw: string, chapterNumber: number): string {
   if (!heading) return `Chapter ${chapterNumber}`;
 
   const title = heading
-    .replace(/^#\s*(?:IGCSE\s+)?(?:Chemistry|Biology|Physics|ICT)\s+(?:—\s+)?Chapter\s+\d+:\s*/i, '')
+    .replace(/^#\s*/, '')
+    .replace(/^(?:IGCSE\s+)?(?:Chemistry|Biology|Physics|ICT|Mathematics)\s+(?:—\s+)?Chapter\s+\d+:\s*/i, '')
+    .replace(/^Chapter\s+\d+:\s*/i, '')
     .replace(/^#\s*Chapter\s+\d+:\s*/i, '')
     .replace(/\s*-\s*Concise Synopsis\s*$/i, '')
     .replace(/\s*-\s*Quick Synopsis.*$/i, '')
@@ -113,6 +115,21 @@ function extractIctTopics(raw: string): string[] {
     .slice(0, 6);
 }
 
+function extractMathsTopics(raw: string): string[] {
+  return raw
+    .split('\n')
+    .filter((line) => line.startsWith('## '))
+    .map((line) =>
+      line
+        .replace(/^##\s*/, '')
+        .replace(/^\d+(?:\.\d+)?\.?\s*/, '')
+        .replace(/\*\*/g, '')
+        .trim(),
+    )
+    .filter((topic) => topic && !/^(Detailed Notes|Quick Revision Synopsis|Concise Synopsis|Common Exam Mistakes|Key Terms|QUICK REFERENCE|EXAM CHECKLIST|HIGH-YIELD|FORMULA SHEET)/i.test(topic))
+    .slice(0, 6);
+}
+
 function buildBiologySynopsis(title: string, topics: string[]): string {
   if (topics.length === 0) {
     return `Study ${title} using the notes, synopsis, quiz, and practice papers.`;
@@ -166,11 +183,17 @@ function getContentSubjectChapterData(subjectId: ContentSubjectId) {
               query: '?raw',
               import: 'default',
             })
-          : import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md', {
-              eager: true,
-              query: '?raw',
-              import: 'default',
-            });
+          : subjectId === 'maths'
+            ? import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Synopsis.md', {
+                eager: true,
+                query: '?raw',
+                import: 'default',
+              })
+            : import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Synopsis.md', {
+                eager: true,
+                query: '?raw',
+                import: 'default',
+              });
   const notesModules =
     subjectId === 'biology'
       ? import.meta.glob('/src/newcontent/Biology/Biology_Chapter*_Notes.md', {
@@ -190,11 +213,17 @@ function getContentSubjectChapterData(subjectId: ContentSubjectId) {
               query: '?raw',
               import: 'default',
             })
-          : import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Notes.md', {
-              eager: true,
-              query: '?raw',
-              import: 'default',
-            });
+          : subjectId === 'maths'
+            ? import.meta.glob('/src/newcontent/maths/Mathematics_Chapter*_Notes.md', {
+                eager: true,
+                query: '?raw',
+                import: 'default',
+              })
+            : import.meta.glob('/src/newcontent/ICT/ICT_Chapter*_Notes.md', {
+                eager: true,
+                query: '?raw',
+                import: 'default',
+              });
 
   return { config, synopsisModules, notesModules };
 }
@@ -212,13 +241,21 @@ export function getSubjects(): Record<string, Subject> {
     chemistry: getContentSubjectChapterData('chemistry'),
     physics: getContentSubjectChapterData('physics'),
     ict: getContentSubjectChapterData('ict'),
+    maths: getContentSubjectChapterData('maths'),
   };
   
   for (const path in subjectModules) {
+    console.log('Testing path:', path);
     const match = path.match(/subjects\/([^/]+)\/subject\.json$/);
+    console.log('Match result:', match ? match[1] : 'NONE');
     if (!match) continue;
     
     const subjectId = match[1];
+    console.log('Processing subjectId in getSubjects:', subjectId);
+    if (!subjectModules[path]) {
+      console.log('No subject module for:', subjectId);
+      continue;
+    }
     const subjectConfig = (subjectModules[path] as any).default;
     
     // Find chapters for this subject
@@ -248,14 +285,26 @@ export function getSubjects(): Record<string, Subject> {
     }
 
     if (subjectId in contentSubjectData) {
+      console.log('Found content subject config for:', subjectId);
       const { config, synopsisModules, notesModules } = contentSubjectData[subjectId as ContentSubjectId]!;
-      const topicExtractor = subjectId === 'chemistry' ? extractChemistryTopics : subjectId === 'physics' ? extractPhysicsTopics : subjectId === 'ict' ? extractIctTopics : extractBiologyTopics;
+      console.log(`${subjectId} has ${Object.keys(synopsisModules).length} synopsis modules`);
+      const topicExtractor = subjectId === 'chemistry' ? extractChemistryTopics : subjectId === 'physics' ? extractPhysicsTopics : subjectId === 'ict' ? extractIctTopics : subjectId === 'maths' ? extractMathsTopics : extractBiologyTopics;
 
-      for (const chapterPath in synopsisModules) {
+      let seqNumber = 1;
+      const sortedPaths = Object.keys(synopsisModules).sort();
+      for (const chapterPath of sortedPaths) {
         const chapterMatch = chapterPath.match(config.synopsisMatcher);
-        if (!chapterMatch) continue;
+        if (!chapterMatch) {
+          console.log(`Skipping path ${chapterPath} due to regex mismatch for ${subjectId}`);
+          continue;
+        }
 
-        const chapterNum = parseInt(chapterMatch[1], 10);
+        const chapterIdStr = chapterMatch[1];
+        let chapterNum = parseInt(chapterIdStr, 10);
+        if (isNaN(chapterNum)) {
+          chapterNum = seqNumber++;
+        }
+
         const existingChapter = chapterConfigMap.get(chapterNum);
 
         if (existingChapter) {
@@ -264,12 +313,12 @@ export function getSubjects(): Record<string, Subject> {
         }
 
         const rawSynopsis = synopsisModules[chapterPath] as string;
-        const rawNotes = notesModules[config.notePath(chapterNum)] as string | undefined;
+        const rawNotes = notesModules[config.notePath(chapterIdStr)] as string | undefined;
         const title = extractSubjectTitle(rawSynopsis, chapterNum);
         const topics = topicExtractor(rawNotes || rawSynopsis);
 
         chapters.push({
-          id: `chapter-${chapterNum}`,
+          id: `chapter-${chapterIdStr}`,
           number: chapterNum,
           title,
           synopsis: buildChapterSynopsis(title, topics),
@@ -277,6 +326,7 @@ export function getSubjects(): Record<string, Subject> {
           estimatedTime: '60 min',
         });
       }
+      console.log(`Added ${chapters.length} chapters for content subject ${subjectId}`, chapters.map(c => c.id).slice(0, 5));
     } else {
       chapters.push(...chapterConfigMap.values());
     }
@@ -289,6 +339,7 @@ export function getSubjects(): Record<string, Subject> {
       ...subjectConfig,
       chapters,
     };
+    console.log('Successfully added subject to map:', subjectId);
   }
   
   return subjects;

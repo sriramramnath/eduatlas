@@ -68,7 +68,7 @@ web     in DB    result order
 ### 6. Signs of Unreliable Sources
 
 ```
-⚠️ WARNING SIGNS:
+ WARNING SIGNS:
 • Sensational/emotional headlines
 • No author or credentials
 • No citations or references

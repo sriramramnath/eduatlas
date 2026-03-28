@@ -165,7 +165,7 @@ Where n = moles ratio from equation
 
 ---
 
-## 💡 Memory Tips
+##  Memory Tips
 
 - **"AAA"** = **A**cids **A**re **A**cceptors? NO! They are **donors** (don't get confused!)
 - **Phenolphthalein** = **Pink** in alkali (both start with P)

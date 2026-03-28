@@ -172,7 +172,7 @@ Precipitation:     Ba²⁺ + SO₄²⁻ → BaSO₄
 
 ---
 
-## 💡 Memory Tips
+##  Memory Tips
 
 - **"NAK" = **N**itrates, **A**mmonium, **K** (potassium) and **N**a (sodium) - all soluble
 - **Chlorides** - remember **Ag** and **Pb** are exceptions
@@ -191,7 +191,7 @@ Precipitation:     Ba²⁺ + SO₄²⁻ → BaSO₄
 
 ---
 
-## 🔑 Key Concepts for Exam
+## Key Concepts for Exam
 
 ✓ Know all reactions of acids  
 ✓ Learn salt naming conventions  

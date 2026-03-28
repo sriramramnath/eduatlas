@@ -15,7 +15,7 @@
 
 ---
 
-## 🔑 Essential Points
+## Essential Points
 
 ### Electronic Structure
 - **All have SEVEN electrons in outer shell**
