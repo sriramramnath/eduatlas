@@ -546,13 +546,14 @@ const tabIcons: Record<string, string> = {
 
     const promptHtml = promptIndex !== -1 ? htmlParagraphs[promptIndex] : headingText;
     const explanationHtml = explanationIndex !== -1 ? parseExplanationLine(htmlParagraphs[explanationIndex]) : 'Review the marked answer and chapter notes for the reasoning.';
+    const answerHtml = answerIndex !== -1 ? parseAnswerLine(htmlParagraphs[answerIndex]) : answerValue;
 
     return {
       heading: headingText,
       prompt: promptHtml,
       options,
       correctValue,
-      answerLabel: answerValue,
+      answerLabel: answerHtml,
       explanation: explanationHtml,
     };
   }
