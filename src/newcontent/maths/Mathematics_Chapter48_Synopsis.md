@@ -10,7 +10,7 @@
 
 ---
 
-## 📝 VECTOR NOTATION
+##  VECTOR NOTATION
 
 | Form | Example |
 |------|---------|

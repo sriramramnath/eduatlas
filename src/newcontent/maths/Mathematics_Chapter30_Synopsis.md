@@ -49,7 +49,7 @@
 
 ---
 
-## 📝 STEP-BY-STEP METHODS
+##  STEP-BY-STEP METHODS
 
 ### Method 1: Finding nth Term (Linear Sequence)
 

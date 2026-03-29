@@ -128,7 +128,7 @@ $$30 \times \frac{25-20}{40-20} = 30 \times \frac{5}{20} = 7.5 \approx 8$$
 
 ---
 
-## 📝 Examiner's Checklist
+##  Examiner's Checklist
 
 When answering histogram questions:
 

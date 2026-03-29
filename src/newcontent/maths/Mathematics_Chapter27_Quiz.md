@@ -732,7 +732,7 @@ This is above $y = -5$, confirming part (a).
 ## Frequently Tested Question Types
 
 ### Type 1: Solving Quadratics Graphically
-**Frequency:** ⭐⭐⭐⭐⭐ (Very Common)
+**Frequency:**  (Very Common)
 
 **What examiners ask:**
 - "Use your graph to solve..."
@@ -748,7 +748,7 @@ This is above $y = -5$, confirming part (a).
 ---
 
 ### Type 2: Non-Linear Simultaneous Equations
-**Frequency:** ⭐⭐⭐⭐⭐ (Very Common)
+**Frequency:**  (Very Common)
 
 **What examiners ask:**
 - "Solve the simultaneous equations..."
@@ -764,7 +764,7 @@ This is above $y = -5$, confirming part (a).
 ---
 
 ### Type 3: Number of Solutions
-**Frequency:** ⭐⭐⭐⭐ (Common)
+**Frequency:**  (Common)
 
 **What examiners ask:**
 - "Explain why there are no solutions..."
@@ -779,7 +779,7 @@ This is above $y = -5$, confirming part (a).
 ---
 
 ### Type 4: Rearranging for Graphical Solution
-**Frequency:** ⭐⭐⭐⭐ (Common)
+**Frequency:**  (Common)
 
 **What examiners ask:**
 - "Given the graph of $y = x^2 + 3x$, solve $x^2 + 3x = 5$"

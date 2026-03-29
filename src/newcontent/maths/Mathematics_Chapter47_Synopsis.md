@@ -53,7 +53,7 @@ $$= \frac{\theta}{360}\pi r^2 - \frac{1}{2}r^2\sin\theta$$
 
 ---
 
-## 🔴 Circle Theorems Summary
+##  Circle Theorems Summary
 
 | Theorem | Rule |
 |---------|------|
@@ -217,7 +217,7 @@ Given: radius r, angle θ
 
 ---
 
-## 📝 Units Checklist
+##  Units Checklist
 
 - Length: mm, cm, m, km
 - Area: mm², cm², m², km²

@@ -519,7 +519,7 @@ $$\vec{AB} = \vec{OB} - \vec{OA}$$
 
 ## 12. EXAM FOCUS & STRATEGY
 
-### 🔴 Frequently Tested Question Types
+###  Frequently Tested Question Types
 
 1. **Basic operations**: Add, subtract, find scalar multiples of vectors
 2. **Finding column vectors**: From diagrams or coordinates

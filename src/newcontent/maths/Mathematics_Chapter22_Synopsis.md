@@ -43,7 +43,7 @@ $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\text{rise}}{\text{run}}$$
 
 ---
 
-### 📝 Special Lines
+###  Special Lines
 
 | Type | Equation | Gradient |
 |------|----------|----------|
@@ -139,7 +139,7 @@ $$x = -\frac{b}{2a}$$
 
 ---
 
-### 📝 Method Steps
+###  Method Steps
 
 1. **Plot both graphs** on same axes
 2. **Identify intersection point(s)**

@@ -75,7 +75,7 @@ The simplest cubic function $y = x^3$ has the following properties:
 3. If $a < 0$, reflect in x-axis
 4. Vertical shift by $k$
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Describe the transformation from $y = x^3$ to $y = -2(x - 3)^3 + 1$
 > 
 > **Solution:**
@@ -112,7 +112,7 @@ To find where the cubic crosses the x-axis, solve $ax^3 + bx^2 + cx + d = 0$
 2. **Trial and error** to find one root, then factor theorem
 3. **Drawing the graph** and reading intersections
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Find the x-intercepts of $y = x^3 - 6x^2 + 11x - 6$
 > 
 > **Solution:**
@@ -153,7 +153,7 @@ When plotting cubic graphs, turning points occur where:
 - Values increase then decrease (maximum), or
 - Values decrease then increase (minimum)
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Complete the table for $y = x^3 - 3x + 2$ and identify turning points.
 > 
 > | x | -3 | -2 | -1 | 0 | 1 | 2 | 3 |
@@ -228,7 +228,7 @@ Shape 3: Two turning points      Shape 4: No turning point
 - If the question specifies a range, use that
 - Add extra points near turning points if needed
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Draw the graph of $y = x^3 - 4x$ for $-3 \leq x \leq 3$
 > 
 > **Solution:**
@@ -257,7 +257,7 @@ Once a cubic graph is drawn, it can be used to solve equations.
 2. Draw the line required by the equation
 3. Find the x-coordinates of intersection points
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Use the graph of $y = x^3 - 4x$ to solve $x^3 - 4x = 2$
 > 
 > **Solution:**
@@ -374,7 +374,7 @@ This means if you rotate the curve 180° around the origin, it maps onto itself.
 - Vertical: $x = h$
 - Horizontal: $y = k$
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Sketch $y = \frac{2}{x-3} + 1$ and state its asymptotes.
 > 
 > **Solution:**
@@ -406,7 +406,7 @@ For $y = \frac{1}{x}$, use values like:
 - Positive: 0.5, 1, 2, 3, 4
 - Negative: -0.5, -1, -2, -3, -4
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Draw the graph of $y = \frac{3}{x}$ for $-4 \leq x \leq 4$, $x \neq 0$
 > 
 > **Solution:**
@@ -428,7 +428,7 @@ For $y = \frac{1}{x}$, use values like:
 
 Similar to cubic graphs, once drawn, reciprocal graphs can solve equations.
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Use the graph of $y = \frac{2}{x}$ to solve $\frac{2}{x} = x + 1$
 > 
 > **Solution:**

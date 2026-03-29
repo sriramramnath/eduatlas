@@ -636,12 +636,12 @@ $$P(\text{No Illness}|\text{Negative}) = \frac{138}{146} = \frac{69}{73} \approx
 
 | Question Type | Frequency | Key Skills |
 |---------------|-----------|------------|
-| Tree diagrams with/without replacement | ⭐⭐⭐⭐⭐ | Draw complete diagram, calculate paths |
-| Conditional probability from tables | ⭐⭐⭐⭐⭐ | Apply formula, interpret results |
-| "At least one" using complement | ⭐⭐⭐⭐ | Recognise pattern, use $1 - P(\text{none})$ |
-| Reverse conditional (Bayes-type) | ⭐⭐⭐⭐ | Tree diagram, then apply formula |
-| Testing independence | ⭐⭐⭐ | Check $P(A \cap B) = P(A) \times P(B)$ |
-| Medical/diagnostic testing | ⭐⭐⭐ | Calculate sensitivity, PPV, NPV |
+| Tree diagrams with/without replacement |  | Draw complete diagram, calculate paths |
+| Conditional probability from tables |  | Apply formula, interpret results |
+| "At least one" using complement |  | Recognise pattern, use $1 - P(\text{none})$ |
+| Reverse conditional (Bayes-type) |  | Tree diagram, then apply formula |
+| Testing independence |  | Check $P(A \cap B) = P(A) \times P(B)$ |
+| Medical/diagnostic testing |  | Calculate sensitivity, PPV, NPV |
 
 ---
 

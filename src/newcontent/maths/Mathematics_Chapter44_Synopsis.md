@@ -99,7 +99,7 @@
 
 ---
 
-## 📝 Rearrangement Quick Guide
+##  Rearrangement Quick Guide
 
 | Equation Form | Rearranged For | Result |
 |---------------|----------------|--------|

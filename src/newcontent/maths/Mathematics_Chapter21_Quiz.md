@@ -696,20 +696,20 @@ $$h = 3$$
 
 # Part D: Exam Focus & Strategy
 
-## 🔥 Frequently Tested Question Types
+##  Frequently Tested Question Types
 
 | Question Type | Frequency | Key Skills |
 |--------------|-----------|------------|
-| Calculate gradient from coordinates | ⭐⭐⭐⭐⭐ | Substitution, negative numbers |
-| Find equation from two points | ⭐⭐⭐⭐ | Gradient formula, finding c |
-| Plot straight line graphs | ⭐⭐⭐⭐ | Tables of values, accuracy |
-| Interpret distance-time graphs | ⭐⭐⭐⭐ | Speed = gradient, read scales |
-| Parallel/perpendicular lines | ⭐⭐⭐ | Same gradient, negative reciprocal |
-| Conversion graphs | ⭐⭐⭐ | Gradient = rate, reading values |
+| Calculate gradient from coordinates |  | Substitution, negative numbers |
+| Find equation from two points |  | Gradient formula, finding c |
+| Plot straight line graphs |  | Tables of values, accuracy |
+| Interpret distance-time graphs |  | Speed = gradient, read scales |
+| Parallel/perpendicular lines |  | Same gradient, negative reciprocal |
+| Conversion graphs |  | Gradient = rate, reading values |
 
 ---
 
-## 🧩 Typical Problem-Solving Patterns
+##  Typical Problem-Solving Patterns
 
 ### Pattern A: "Find the equation of the line..."
 1. Identify what's given (two points? gradient + point? parallel to another line?)
@@ -731,7 +731,7 @@ $$h = 3$$
 
 ---
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What Examiners Want |
 |--------------|---------------------|

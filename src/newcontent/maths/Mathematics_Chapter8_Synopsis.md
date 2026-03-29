@@ -19,7 +19,7 @@
 
 ---
 
-### Area Conversions ⭐ SQUARE the linear factor
+### Area Conversions  SQUARE the linear factor
 
 | Conversion | Factor |
 |------------|--------|
@@ -34,7 +34,7 @@
 
 ---
 
-### Volume Conversions ⭐ CUBE the linear factor
+### Volume Conversions  CUBE the linear factor
 
 | Conversion | Factor |
 |------------|--------|
@@ -167,7 +167,7 @@ Left│    ×     │Right
 
 ---
 
-## 📝 QUICK MEMORY AIDS
+##  QUICK MEMORY AIDS
 
 ### Area vs Volume Conversion Factors
 - **Area = 2D** → Square the factor ($^2$)

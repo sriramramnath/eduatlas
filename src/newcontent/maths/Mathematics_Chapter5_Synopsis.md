@@ -163,7 +163,7 @@ Length = 25 cm (nearest cm)
 
 ---
 
-## 📝 Checklist Before Exam
+##  Checklist Before Exam
 
 - [ ] Can find LB and UB for any rounding type
 - [ ] Know operation rules for combining bounds

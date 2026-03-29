@@ -182,7 +182,7 @@ Rearrange: $ax^2 + (b-m)x + (c-d) = 0$
 
 ---
 
-## 📝 EXAM QUESTION TYPES
+##  EXAM QUESTION TYPES
 
 ### Type 1: Solve $f(x) = k$
 **Command:** "Use your graph to solve..."

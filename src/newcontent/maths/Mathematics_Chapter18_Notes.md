@@ -412,7 +412,7 @@ State whether each of the following statements is true or false:
 
 **Answer:** $gf(3) = 49$
 
-> 📝 **Note:** $fg(3) \neq gf(3)$ – order matters!
+>  **Note:** $fg(3) \neq gf(3)$ – order matters!
 
 ---
 
@@ -956,13 +956,13 @@ $x - 1 \neq 0$, so $x \neq 1$
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Evaluate $f(a)$ | 1-2 | ⭐⭐⭐⭐⭐ Very High |
-| Find domain/range | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Find composite $fg(x)$ | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Find inverse $f^{-1}(x)$ | 2-4 | ⭐⭐⭐⭐⭐ Very High |
-| Solve $f(x) = k$ | 2-3 | ⭐⭐⭐⭐ High |
-| Combined composite and inverse | 4-6 | ⭐⭐⭐⭐ High |
-| Problems with domain restrictions | 3-4 | ⭐⭐⭐ Medium |
+| Evaluate $f(a)$ | 1-2 |  Very High |
+| Find domain/range | 2-3 |  Very High |
+| Find composite $fg(x)$ | 2-3 |  Very High |
+| Find inverse $f^{-1}(x)$ | 2-4 |  Very High |
+| Solve $f(x) = k$ | 2-3 |  High |
+| Combined composite and inverse | 4-6 |  High |
+| Problems with domain restrictions | 3-4 |  Medium |
 
 ---
 

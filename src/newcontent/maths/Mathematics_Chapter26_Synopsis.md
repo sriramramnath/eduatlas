@@ -154,7 +154,7 @@ $$y = \frac{a}{x - h} + k$$
 
 ---
 
-## 📝 EXAM QUESTION TYPES
+##  EXAM QUESTION TYPES
 
 ### Type 1: Plotting
 "Complete the table and draw the graph of..."

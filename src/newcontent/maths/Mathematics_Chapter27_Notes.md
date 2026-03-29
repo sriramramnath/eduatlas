@@ -44,7 +44,7 @@ For a quadratic equation $ax^2 + bx + c = 0$:
 2. Draw the corresponding quadratic graph
 3. Find x-intercepts
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve $x^2 - 4x + 3 = 0$ graphically.
 > 
 > **Solution:**
@@ -90,7 +90,7 @@ To solve $ax^2 + bx + c = k$:
 3. Find the intersection points
 4. Read off the x-coordinates
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Use the graph of $y = x^2 - 2x - 3$ to solve $x^2 - 2x - 3 = 2$
 > 
 > **Solution:**
@@ -119,7 +119,7 @@ To solve $ax^2 + bx + c = k$:
 
 Sometimes we need to rearrange an equation to use a given graph.
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > You have drawn the graph of $y = x^2 - 3x$.
 > Use this graph to solve $x^2 = 3x + 4$
 > 
@@ -166,7 +166,7 @@ Another approach is to draw **two separate graphs** and find their intersection.
 3. Find intersection points
 4. Read x-coordinates
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve $x^2 = x + 2$ using the intersection method.
 > 
 > **Solution:**
@@ -215,7 +215,7 @@ The solutions are the x-intercepts of $y = ax^3 + bx^2 + cx + d$.
 - The graph must cross the x-axis at least once
 - A "double root" occurs when the graph touches but doesn't cross
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > The graph of $y = x^3 - 4x$ is drawn for $-3 \leq x \leq 3$.
 > Use the graph to solve $x^3 - 4x = 0$
 > 
@@ -237,7 +237,7 @@ The solutions are the x-intercepts of $y = ax^3 + bx^2 + cx + d$.
 2. Draw horizontal line $y = k$
 3. Find intersections and read x-values
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Use the graph of $y = x^3 - 6x^2 + 11x - 6$ to solve $x^3 - 6x^2 + 11x - 6 = 2$
 > 
 > **Solution:**
@@ -262,7 +262,7 @@ The solutions are the x-intercepts of $y = ax^3 + bx^2 + cx + d$.
 2. Draw horizontal line $y = k$
 3. Find intersection x-coordinate
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Use the graph of $y = \frac{2}{x}$ to solve $\frac{2}{x} = 3$
 > 
 > **Solution:**
@@ -280,7 +280,7 @@ The solutions are the x-intercepts of $y = ax^3 + bx^2 + cx + d$.
 2. Draw $y = bx + c$ (straight line)
 3. Find intersections
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve $\frac{4}{x} = x + 3$ graphically.
 > 
 > **Solution:**
@@ -311,7 +311,7 @@ Some equations involve terms like $x^n$ where $n$ can be fractional or negative.
 
 **Example:** $y = x^{1.5}$ or $y = x^{-0.5}$
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > The graph of $y = 2^x$ is drawn.
 > Use it to solve $2^x = 5$
 > 
@@ -336,7 +336,7 @@ The equation $(x-a)^2 + (y-b)^2 = r^2$ represents a circle.
 2. Draw the line
 3. Find intersection coordinates
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > A circle has equation $x^2 + y^2 = 25$.
 > Find the intersection with line $y = 3$.
 > 
@@ -393,7 +393,7 @@ For $\begin{cases} y = ax^2 + bx + c \\ y = mx + d \end{cases}$
 
 **Step 3:** Find intersection points - read both x and y coordinates
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve the simultaneous equations graphically:
 > $$y = x^2 - 2x - 3$$
 > $$y = x - 1$$
@@ -445,7 +445,7 @@ For $\begin{cases} y = ax^2 + bx + c \\ y = mx + d \end{cases}$
 3. Solve the resulting quadratic equation
 4. Find corresponding y-values
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve algebraically:
 > $$y = x^2$$
 > $$y = 2x + 3$$
@@ -486,7 +486,7 @@ For $\begin{cases} y = ax^2 + bx + c \\ y = mx + d \end{cases}$
 
 **Example:** $\begin{cases} x^2 + y^2 = 16 \\ y = x^2 - 4 \end{cases}$
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve graphically:
 > $$x^2 + y^2 = 25 \quad \text{(circle, radius 5)}$$
 > $$y = x^2 - 5 \quad \text{(parabola)}$$
@@ -517,7 +517,7 @@ For $\begin{cases} y = ax^2 + bx + c \\ y = mx + d \end{cases}$
 
 **Example:** $\begin{cases} y = \frac{4}{x} \\ y = x + 3 \end{cases}$
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve simultaneously:
 > $$xy = 4$$
 > $$y = x + 3$$
@@ -547,7 +547,7 @@ For $\begin{cases} y = ax^2 + bx + c \\ y = mx + d \end{cases}$
 
 **Example:** $\begin{cases} y = x^2 \\ y = -x^2 + 8 \end{cases}$
 
-> **📝 Worked Example:**
+> ** Worked Example:**
 > Solve simultaneously:
 > $$y = x^2$$
 > $$y = 8 - x^2$$

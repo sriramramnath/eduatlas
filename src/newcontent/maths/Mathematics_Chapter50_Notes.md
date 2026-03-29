@@ -111,7 +111,7 @@
 - The coefficient $2$ inside the angle causes a **horizontal stretch** by factor $\frac{1}{2}$
   - Period changes from $360°$ to $\frac{360°}{2} = 180°$
 
-> **📝 Exam Answer:** "Vertical stretch by factor 3 and horizontal stretch by factor $\frac{1}{2}$ (period becomes $180°$)"
+> ** Exam Answer:** "Vertical stretch by factor 3 and horizontal stretch by factor $\frac{1}{2}$ (period becomes $180°$)"
 
 ---
 
@@ -353,7 +353,7 @@ $$X = \cos^{-1}(0.7307...) = 43.0°$$
 
 **Solution:**
 
-> **📝 Key Insight:** The largest angle is always opposite the longest side. So we need to find angle $B$ (opposite side $AC = 10$ cm).
+> ** Key Insight:** The largest angle is always opposite the longest side. So we need to find angle $B$ (opposite side $AC = 10$ cm).
 
 **Step 1:** Apply the Cosine Rule
 $$\cos B = \frac{AB^2 + BC^2 - AC^2}{2 \times AB \times BC}$$

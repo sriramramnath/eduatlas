@@ -720,7 +720,7 @@ $$L_2 = \frac{45}{\cos 51.4°} = 72.2 \text{ m}$$
 
 ---
 
-### 📝 Command Word Guidance
+###  Command Word Guidance
 
 | Command | What to Do | Example |
 |---------|------------|---------|

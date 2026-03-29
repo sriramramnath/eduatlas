@@ -777,7 +777,7 @@ The graphical estimate is reasonable.
 
 ---
 
-> 📝 **Exam Tip:** When a question asks to "solve graphically," you **must** draw the graphs and read from them, even if you can solve algebraically.
+>  **Exam Tip:** When a question asks to "solve graphically," you **must** draw the graphs and read from them, even if you can solve algebraically.
 
 ---
 

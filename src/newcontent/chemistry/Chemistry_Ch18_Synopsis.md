@@ -28,7 +28,7 @@
 
 ---
 
-## 🔥 Flame Tests
+##  Flame Tests
 
 ### Method
 1. Clean wire loop in HCl, heat in flame (no colour)
@@ -218,7 +218,7 @@ Test:  Add HNO₃ (removes carbonate/hydroxide), then AgNO₃
 
 ---
 
-## 📝 Key Equations Summary
+##  Key Equations Summary
 
 ### Gas Test Equations
 ```

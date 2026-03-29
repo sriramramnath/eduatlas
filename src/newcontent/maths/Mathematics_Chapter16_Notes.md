@@ -268,7 +268,7 @@ $$y = \frac{24}{8} = 3$$
 
 **Answer:** $y = 3$
 
-> 📝 **Note:** When $x$ doubled from 4 to 8, $y$ halved from 6 to 3. This confirms inverse proportion.
+>  **Note:** When $x$ doubled from 4 to 8, $y$ halved from 6 to 3. This confirms inverse proportion.
 
 ---
 
@@ -552,7 +552,7 @@ $$3^4 \times 3^6 = 3^{4+6} = 3^{10}$$
 **Solution:**
 $$2x^3 \times 5x^4 = 2 \times 5 \times x^3 \times x^4 = 10x^{3+4} = 10x^7$$
 
-> 📝 **Note:** Multiply the coefficients (2 × 5 = 10), add the powers of $x$.
+>  **Note:** Multiply the coefficients (2 × 5 = 10), add the powers of $x$.
 
 ---
 
@@ -938,14 +938,14 @@ $$\frac{x^3y^{-2}}{x^{-1}y^4} = x^{3-(-1)} \times y^{-2-4} = x^4y^{-6} = \frac{x
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Direct proportion equation | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Inverse proportion equation | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Find $k$ given values | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Simplify indices (basic) | 1-2 | ⭐⭐⭐⭐⭐ Very High |
-| Simplify indices (complex) | 2-3 | ⭐⭐⭐⭐ High |
-| Evaluate fractional indices | 2-3 | ⭐⭐⭐⭐ High |
-| Word problems with proportion | 4-6 | ⭐⭐⭐⭐ High |
-| Express with positive indices | 2 | ⭐⭐⭐ Medium |
+| Direct proportion equation | 2-3 |  Very High |
+| Inverse proportion equation | 2-3 |  Very High |
+| Find $k$ given values | 2-3 |  Very High |
+| Simplify indices (basic) | 1-2 |  Very High |
+| Simplify indices (complex) | 2-3 |  High |
+| Evaluate fractional indices | 2-3 |  High |
+| Word problems with proportion | 4-6 |  High |
+| Express with positive indices | 2 |  Medium |
 
 ---
 

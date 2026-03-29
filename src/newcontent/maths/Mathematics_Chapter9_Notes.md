@@ -314,7 +314,7 @@ For exam purposes, tax bands will be given in the question. A typical structure:
 | Higher Rate | £50,271 to £125,140 | 40% |
 | Additional Rate | Over £125,140 | 45% |
 
-> **📝 Note:** Tax bands and personal allowance may vary by year. Always use the values given in the exam question.
+> ** Note:** Tax bands and personal allowance may vary by year. Always use the values given in the exam question.
 
 ---
 

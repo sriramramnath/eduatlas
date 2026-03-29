@@ -76,7 +76,7 @@ $$\boxed{\tan \theta = \frac{O}{A}}$$
 
 ---
 
-## 📝 KEY TANGENT VALUES
+##  KEY TANGENT VALUES
 
 | Angle | tan θ |
 |-------|-------|

@@ -580,7 +580,7 @@ $$P = \frac{10,000}{1.338225...} = £7,472.58 \text{ (to 2 d.p.)}$$
 
 # 5. Exam Focus & Strategy
 
-## 🔥 Frequently Tested Question Types
+##  Frequently Tested Question Types
 
 ### Standard Form
 1. **Converting** between ordinary numbers and standard form
@@ -598,7 +598,7 @@ $$P = \frac{10,000}{1.338225...} = £7,472.58 \text{ (to 2 d.p.)}$$
 
 ---
 
-## 🧩 Typical Problem-Solving Patterns
+##  Typical Problem-Solving Patterns
 
 ### Pattern 1: The "Of" Means Multiply
 When you see "X% of Y", always convert X% to a decimal or fraction and multiply.
@@ -622,7 +622,7 @@ For repeated percentage changes:
 
 ---
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What to Do |
 |--------------|------------|

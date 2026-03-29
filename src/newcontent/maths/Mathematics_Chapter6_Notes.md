@@ -149,7 +149,7 @@ $$y = 2.5 \times 10 = 25$$
 
 ---
 
-## 🔴 Common Mistakes with Direct Proportion
+##  Common Mistakes with Direct Proportion
 
 | Mistake | Correction |
 |---------|------------|
@@ -309,7 +309,7 @@ $$S = \frac{180}{2.5} = 72 \text{ km/h}$$
 
 ---
 
-## 🔴 Common Mistakes with Inverse Proportion
+##  Common Mistakes with Inverse Proportion
 
 | Mistake | Correction |
 |---------|------------|
@@ -433,7 +433,7 @@ Evaluate: $\sqrt{4} = 2$, then $2^3 = 8$
 
 ---
 
-## 🔴 Common Mistakes with Fractional Indices
+##  Common Mistakes with Fractional Indices
 
 | Mistake | Correction |
 |---------|------------|
@@ -569,7 +569,7 @@ $$10^{-6} = 0.000001$$
 
 ---
 
-## 🔴 Common Mistakes with Negative Indices
+##  Common Mistakes with Negative Indices
 
 | Mistake | Correction |
 |---------|------------|
@@ -679,7 +679,7 @@ $$y = \frac{36}{6^2} = \frac{36}{36} = 1$$
 
 ---
 
-## 📝 Key Formulas to Memorise
+##  Key Formulas to Memorise
 
 | Topic | Formula |
 |-------|---------|
@@ -692,7 +692,7 @@ $$y = \frac{36}{6^2} = \frac{36}{36} = 1$$
 
 ---
 
-## ⭐ Key Exam Insights
+##  Key Exam Insights
 
 1. **Direct proportion questions**: Look for keywords like "directly proportional", "varies directly", or the symbol $\propto$
 

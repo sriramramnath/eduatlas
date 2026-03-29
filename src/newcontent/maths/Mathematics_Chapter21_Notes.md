@@ -535,7 +535,7 @@ $$C = -40$$
 
 # 6. Exam Focus & Strategy
 
-## 🔥 Frequently Tested Question Types
+##  Frequently Tested Question Types
 
 1. **Calculating gradient** from coordinates or from a drawn line
 2. **Finding the equation** of a line from given information
@@ -546,7 +546,7 @@ $$C = -40$$
 
 ---
 
-## 🧩 Typical Problem-Solving Patterns
+##  Typical Problem-Solving Patterns
 
 ### Pattern 1: Multi-Part Graph Questions
 - Often combine plotting with interpretation
@@ -565,7 +565,7 @@ $$C = -40$$
 
 ---
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What to Do |
 |--------------|------------|

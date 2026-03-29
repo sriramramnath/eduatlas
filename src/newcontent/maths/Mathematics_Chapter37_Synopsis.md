@@ -180,7 +180,7 @@ $P(1 \text{ or } 2) = P(1) + P(2) = \frac{1}{6} + \frac{1}{6} = \frac{1}{3}$
 
 ---
 
-# 📝 QUICK EXAMPLES
+#  QUICK EXAMPLES
 
 ## Example 1: Basic Probability
 **Q:** Bag has 3 red, 5 blue, 2 green marbles. $P(\text{red}) = ?$

@@ -122,7 +122,7 @@ $$\boxed{(A \cap B)' = A' \cup B'}$$
 
 ---
 
-# 🔴 Common Exam Traps
+#  Common Exam Traps
 
 | Trap | Wrong | Correct |
 |------|-------|---------|
@@ -161,7 +161,7 @@ Before answering set problems:
 
 ---
 
-# 📝 Quick Worked Examples
+#  Quick Worked Examples
 
 ## Example 1: Basic Union/Intersection
 $A = \{1, 2, 3, 4, 5\}$, $B = \{4, 5, 6, 7\}$

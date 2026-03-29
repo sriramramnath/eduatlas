@@ -102,7 +102,7 @@ $$n(\text{none}) = n(\xi) - n(M \cup P \cup C) = 120 - 90 = 30$$
 
 ## 1.3 Filling Three-Set Venn Diagrams — Systematic Method
 
-### ⭐ The "Inside-Out" Strategy:
+###  The "Inside-Out" Strategy:
 
 **Rule:** Always start with the center (triple intersection) and work outward.
 

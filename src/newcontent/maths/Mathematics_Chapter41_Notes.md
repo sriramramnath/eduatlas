@@ -50,7 +50,7 @@ $$115° + C = 180°$$
 $$C = 180° - 115°$$
 $$C = 65°$$
 
-> **📝 EXAM TIP:** Always write down the rule you're using (e.g., "Angles in a triangle sum to 180°") to secure method marks.
+> ** EXAM TIP:** Always write down the rule you're using (e.g., "Angles in a triangle sum to 180°") to secure method marks.
 
 ---
 
@@ -554,7 +554,7 @@ Two triangles are similar if ANY ONE of these conditions is met:
 | SSS | Side-Side-Side (proportional) | All three sides are in proportion |
 | SAS | Side-Angle-Side | Two sides in proportion and included angle equal |
 
-> **📝 EXAM TIP:** For AAA, you only need to prove TWO angles equal (the third follows automatically since angles sum to 180°)
+> ** EXAM TIP:** For AAA, you only need to prove TWO angles equal (the third follows automatically since angles sum to 180°)
 
 ---
 

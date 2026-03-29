@@ -81,7 +81,7 @@ An **algebraic fraction** is a fraction where the numerator and/or denominator c
 
 **Answer:** $\frac{x-3}{x+1}$ (valid for $x \neq -1$ and $x \neq -3$)
 
-> **📝 Exam Tip:** Always check both factorisation AND cancellation. Common exam trap: cancelling terms that aren't factors!
+> ** Exam Tip:** Always check both factorisation AND cancellation. Common exam trap: cancelling terms that aren't factors!
 
 ---
 
@@ -508,7 +508,7 @@ Both solutions are valid.
 
 **Answer:** No solution. The equation $\frac{x^2-9}{x-3} = 6$ has no valid solutions.
 
-> **📝 Exam Tip:** This is a classic examiner trap! The algebra gives $x=3$, but this is extraneous.
+> ** Exam Tip:** This is a classic examiner trap! The algebra gives $x=3$, but this is extraneous.
 
 ---
 
@@ -655,31 +655,31 @@ A **complex fraction** is a fraction where the numerator and/or denominator cont
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Cancel common factors (after factorisation) | 2-3 | ⭐⭐⭐⭐⭐ |
-| Difference of squares recognition | 2-3 | ⭐⭐⭐⭐ |
-| Complex factorisation required | 3-4 | ⭐⭐⭐⭐ |
+| Cancel common factors (after factorisation) | 2-3 |  |
+| Difference of squares recognition | 2-3 |  |
+| Complex factorisation required | 3-4 |  |
 
 ### Operations with Algebraic Fractions
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Adding/subtracting (finding LCD) | 3-4 | ⭐⭐⭐⭐⭐ |
-| Multiplication (with cancellation) | 2-3 | ⭐⭐⭐⭐ |
-| Division (multiply by reciprocal) | 3-4 | ⭐⭐⭐⭐ |
-| Mixed operations | 4-5 | ⭐⭐⭐ |
+| Adding/subtracting (finding LCD) | 3-4 |  |
+| Multiplication (with cancellation) | 2-3 |  |
+| Division (multiply by reciprocal) | 3-4 |  |
+| Mixed operations | 4-5 |  |
 
 ### Solving Fraction Equations
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Linear equations (clear denominator) | 3-4 | ⭐⭐⭐⭐⭐ |
-| Quadratic equations from fractions | 4-5 | ⭐⭐⭐⭐ |
-| Identifying extraneous solutions | 3-4 | ⭐⭐⭐⭐ |
-| Word problems leading to fractions | 4-6 | ⭐⭐⭐ |
+| Linear equations (clear denominator) | 3-4 |  |
+| Quadratic equations from fractions | 4-5 |  |
+| Identifying extraneous solutions | 3-4 |  |
+| Word problems leading to fractions | 4-6 |  |
 
 ---
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What to Do |
 |--------------|------------|

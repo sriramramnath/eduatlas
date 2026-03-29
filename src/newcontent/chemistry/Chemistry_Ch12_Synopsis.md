@@ -89,7 +89,7 @@ Form **hydrogen halides** (covalent gases)
 
 ---
 
-## 📝 Quick Memory Aids
+##  Quick Memory Aids
 
 **Reactivity Order:** "First Class Boys In" (F > Cl > Br > I)
 

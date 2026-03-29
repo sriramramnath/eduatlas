@@ -810,7 +810,7 @@ $= 1 - 0.16807 = 0.83193 \approx 0.832$ **[A1]**
    - Calculate "only" regions
    - Find "neither" region last
 
-### 📝 Command Word Guidance
+###  Command Word Guidance
 
 | Command Word | What Examiners Want |
 |--------------|---------------------|

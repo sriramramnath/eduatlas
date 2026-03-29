@@ -918,7 +918,7 @@ Integer solutions: $\boxed{3, 4}$
 
 ---
 
-## 📝 KEY FORMULAS AND RULES SUMMARY
+##  KEY FORMULAS AND RULES SUMMARY
 
 | Topic | Rule/Formula |
 |-------|--------------|

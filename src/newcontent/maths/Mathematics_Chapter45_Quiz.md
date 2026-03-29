@@ -611,12 +611,12 @@ $$m = \frac{6}{2} = 3$$
 
 | Type | Frequency | Key Skills Required |
 |------|-----------|---------------------|
-| Describe transformation | ⭐⭐⭐⭐⭐ | Identify type + all required details |
-| Draw transformed shape | ⭐⭐⭐⭐⭐ | Apply transformation rules accurately |
-| Find single equivalent | ⭐⭐⭐⭐ | Apply combined transformation results |
-| Negative enlargement | ⭐⭐⭐ | Draw rays, count distances |
-| Area calculations | ⭐⭐⭐ | Remember $k^2$ rule |
-| Find centre/rule | ⭐⭐ | Geometric construction |
+| Describe transformation |  | Identify type + all required details |
+| Draw transformed shape |  | Apply transformation rules accurately |
+| Find single equivalent |  | Apply combined transformation results |
+| Negative enlargement |  | Draw rays, count distances |
+| Area calculations |  | Remember $k^2$ rule |
+| Find centre/rule |  | Geometric construction |
 
 ### Typical Problem-Solving Patterns
 

@@ -3,7 +3,7 @@
 
 ---
 
-## 📝 SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
+##  SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
 
 **Instructions:** Choose the correct answer from A, B, C, or D.
 
@@ -273,7 +273,7 @@ $$= 3(x + 2)^2 - 7$$
 
 ---
 
-## 📝 SECTION B: TRUE OR FALSE
+##  SECTION B: TRUE OR FALSE
 
 **Instructions:** State whether each statement is TRUE or FALSE. If FALSE, provide the correction.
 
@@ -413,7 +413,7 @@ $$x = 0 \text{ or } x = 3$$
 
 ---
 
-## 📝 SECTION C: STRUCTURED QUESTIONS
+##  SECTION C: STRUCTURED QUESTIONS
 
 ---
 
@@ -912,7 +912,7 @@ Since $(x + 1)^2 \geq 0$ for all real $x$, and $-4 < 0$, there are no real solut
 
 ---
 
-## 📝 ANSWER SUMMARY
+##  ANSWER SUMMARY
 
 ### MCQ Answers
 | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 | Q14 | Q15 | Q16 |

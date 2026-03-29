@@ -712,7 +712,7 @@ In triangle $ABC$, $\vec{AB} = \begin{pmatrix} 4 \\ 1 \end{pmatrix}$ and $\vec{A
 
 ## SECTION D: EXAM FOCUS & STRATEGY
 
-### 🔴 Frequently Tested Question Types
+###  Frequently Tested Question Types
 
 1. **Basic Vector Operations** (Grades 4-5)
    - Addition and subtraction of column vectors

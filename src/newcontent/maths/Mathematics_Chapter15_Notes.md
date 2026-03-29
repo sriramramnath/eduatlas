@@ -69,7 +69,7 @@ $$= -10x + 6$$
 $$5x(2x - 3y + 1) = 5x \times 2x - 5x \times 3y + 5x \times 1$$
 $$= 10x^2 - 15xy + 5x$$
 
-> 📝 **TIP**: When expanding, take your time with each multiplication. Write each product separately before combining.
+>  **TIP**: When expanding, take your time with each multiplication. Write each product separately before combining.
 
 ---
 
@@ -142,7 +142,7 @@ $$(x + 2)(x + 7) = x^2 + 7x + 2x + 14 = x^2 + 9x + 14$$
 **Combine:**
 $$(x - 3)(x + 4) = x^2 + 4x - 3x - 12 = x^2 + x - 12$$
 
-> 📝 **EXAM TIP**: Watch the signs carefully! A negative times a positive gives negative.
+>  **EXAM TIP**: Watch the signs carefully! A negative times a positive gives negative.
 
 ---
 
@@ -214,7 +214,7 @@ $$(x + 6)(x - 6) = x^2 - 6^2 = x^2 - 36$$
 **Solution:**
 $$(3x + 5)(3x - 5) = (3x)^2 - 5^2 = 9x^2 - 25$$
 
-> 📝 **MEMORISE**: This pattern appears frequently in exams!
+>  **MEMORISE**: This pattern appears frequently in exams!
 
 ---
 
@@ -318,7 +318,7 @@ $$8x^2 - 12x = 4x(2x - 3)$$
 **Solution:**
 $$x^2 - 9x = x(x - 9)$$
 
-> 📝 **TIP**: Check by expanding: $x \times x = x^2$, $x \times (-9) = -9x$ ✓
+>  **TIP**: Check by expanding: $x \times x = x^2$, $x \times (-9) = -9x$ ✓
 
 ---
 
@@ -515,7 +515,7 @@ $$4x^2 - 9 = (2x)^2 - 3^2 = (2x + 3)(2x - 3)$$
 $$x^4 - 16 = (x^2)^2 - 4^2 = (x^2 + 4)(x^2 - 4)$$
 $$= (x^2 + 4)(x + 2)(x - 2)$$
 
-> 📝 **NOTE**: $x^2 + 4$ cannot be factorised further using real numbers.
+>  **NOTE**: $x^2 + 4$ cannot be factorised further using real numbers.
 
 ---
 
@@ -844,7 +844,7 @@ $$= (x - 4)^2 - 6$$
 
 **Therefore:** $a = 4$ and $b = -6$
 
-> 📝 **TIP**: The minimum value occurs when $(x - 4)^2 = 0$, giving minimum value $= -6$ at $x = 4$.
+>  **TIP**: The minimum value occurs when $(x - 4)^2 = 0$, giving minimum value $= -6$ at $x = 4$.
 
 ---
 
@@ -1071,16 +1071,16 @@ $$R = 4500 + 300(7.5) - 20(7.5)^2 = £5625$$
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Expand single bracket | 1-2 | ⭐⭐⭐⭐⭐ Very High |
-| Expand double brackets | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Factorise $x^2 + bx + c$ | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Solve quadratic by factorising | 3-4 | ⭐⭐⭐⭐⭐ Very High |
-| Factorise $ax^2 + bx + c$ | 3-4 | ⭐⭐⭐⭐ High |
-| Quadratic formula | 3-4 | ⭐⭐⭐⭐ High |
-| Word problems | 4-6 | ⭐⭐⭐⭐ High |
-| Completing the square | 3-5 | ⭐⭐⭐ Medium |
-| Difference of two squares | 2-3 | ⭐⭐⭐⭐ High |
-| Perfect square expansion | 2-3 | ⭐⭐⭐ Medium |
+| Expand single bracket | 1-2 |  Very High |
+| Expand double brackets | 2-3 |  Very High |
+| Factorise $x^2 + bx + c$ | 2-3 |  Very High |
+| Solve quadratic by factorising | 3-4 |  Very High |
+| Factorise $ax^2 + bx + c$ | 3-4 |  High |
+| Quadratic formula | 3-4 |  High |
+| Word problems | 4-6 |  High |
+| Completing the square | 3-5 |  Medium |
+| Difference of two squares | 2-3 |  High |
+| Perfect square expansion | 2-3 |  Medium |
 
 ---
 

@@ -182,7 +182,7 @@ Precipitation:     Ba²⁺ + SO₄²⁻ → BaSO₄
 
 ---
 
-## 📝 Tests Summary
+##  Tests Summary
 
 | Gas | Test | Result |
 |-----|------|--------|

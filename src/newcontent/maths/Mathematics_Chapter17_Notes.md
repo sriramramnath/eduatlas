@@ -940,14 +940,14 @@ $$P = -2(0)^2 + 1400 = £1400$$
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Solve by factorising | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Complete the square | 2-4 | ⭐⭐⭐⭐⭐ Very High |
-| Use quadratic formula | 3-4 | ⭐⭐⭐⭐⭐ Very High |
-| Quadratic inequality | 3-4 | ⭐⭐⭐⭐ High |
-| Find turning point | 2-3 | ⭐⭐⭐⭐ High |
-| Discriminant problems | 3-5 | ⭐⭐⭐⭐ High |
-| Word problems | 4-6 | ⭐⭐⭐⭐ High |
-| Find coefficients from form | 3-4 | ⭐⭐⭐ Medium |
+| Solve by factorising | 2-3 |  Very High |
+| Complete the square | 2-4 |  Very High |
+| Use quadratic formula | 3-4 |  Very High |
+| Quadratic inequality | 3-4 |  High |
+| Find turning point | 2-3 |  High |
+| Discriminant problems | 3-5 |  High |
+| Word problems | 4-6 |  High |
+| Find coefficients from form | 3-4 |  Medium |
 
 ---
 

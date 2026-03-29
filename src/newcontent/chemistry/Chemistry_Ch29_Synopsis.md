@@ -175,7 +175,7 @@ From **diol** (two -OH groups) + **dicarboxylic acid** (two -COOH groups)
 
 ---
 
-## 📝 Drawing Polymer Equations
+##  Drawing Polymer Equations
 
 ### Addition Polymerisation
 

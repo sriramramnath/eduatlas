@@ -1,5 +1,5 @@
 # Chapter 4: Numbers 4 - Concise Synopsis
-## 📝 Complete Quiz & Practice Questions
+##  Complete Quiz & Practice Questions
 
 ---
 
@@ -783,7 +783,7 @@ $$Percentage Profit = \frac{1200}{15000} \times 100 = 8\%$$
 
 ---
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What Examiners Expect |
 |--------------|----------------------|

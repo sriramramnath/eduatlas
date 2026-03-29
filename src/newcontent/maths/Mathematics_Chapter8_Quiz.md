@@ -695,7 +695,7 @@ A car travels from City A to City B, a distance of 270 km.
 
 ---
 
-### 📝 Command Word Guidance
+###  Command Word Guidance
 
 | Command Word | What It Means | How to Answer |
 |--------------|---------------|---------------|

@@ -411,6 +411,14 @@ const tabIcons: Record<string, string> = {
   }
 
   function parseAnswerLine(text: string) {
+    // Check if the text is JUST True or False OR starts with it (for physics explanations on same line)
+    const cleanText = text.replace(/\*/g, '').trim().toUpperCase();
+    if (/^(TRUE|FALSE)/.test(cleanText)) {
+      // Extract just the TRUE/FALSE part
+      const match = cleanText.match(/^(TRUE|FALSE)/);
+      return match ? match[0] : cleanText;
+    }
+
     return text
       .replace(/^[\s\*]*\*\*[\s\*]*answer:\*\*[\s\*]*/i, '')
       .replace(/^[\s\*]*correct answer:\*\*[\s\*]*/i, '')
@@ -455,12 +463,12 @@ const tabIcons: Record<string, string> = {
     
     // Check for Short Answer Questions (SAQ)
     const isSAQ = contentNodes.some((node) => 
-      node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme)/i.test(node.textContent?.replace(/\*/g, '') || '')
+      node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme|m1|a1)/i.test(node.textContent?.replace(/\*/g, '') || '')
     );
 
     if (isSAQ) {
       const markSchemeIndex = contentNodes.findIndex((node) => 
-        node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme)/i.test(node.textContent?.replace(/\*/g, '') || '')
+        node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme|m1|a1)/i.test(node.textContent?.replace(/\*/g, '') || '')
       );
 
       const promptHtml = contentNodes.slice(0, markSchemeIndex).map(n => n.outerHTML).join('');
@@ -477,22 +485,50 @@ const tabIcons: Record<string, string> = {
       };
     }
 
-    const paragraphs = contentNodes.filter((node) => node.tagName === 'P');
-    const textParagraphs = paragraphs.flatMap((node) => getParagraphLines(node, false));
-    const htmlParagraphs = paragraphs.flatMap((node) => getParagraphLines(node, true));
+    const quizBlocks = contentNodes.filter((node) => ['P', 'UL', 'OL', 'LI'].includes(node.tagName));
+    
+    function getNodesContent(nodes: Element[], keepHtml: boolean) {
+      return nodes.flatMap((node) => {
+        if (node.tagName === 'P' || node.tagName === 'LI') {
+          return getParagraphLines(node, keepHtml);
+        } else if (node.tagName === 'UL' || node.tagName === 'OL') {
+          return Array.from(node.children).flatMap((li) => getParagraphLines(li, keepHtml));
+        }
+        return [];
+      });
+    }
+
+    const textParagraphs = getNodesContent(quizBlocks, false);
+    const htmlParagraphs = getNodesContent(quizBlocks, true);
     console.log('[Quiz] textParagraphs:', textParagraphs.slice(0, 5));
 
-    // For broken format where answer comes before options, we need to get ALL text from ALL paragraphs in this block
-    const allBlockText = paragraphs.flatMap((node) => {
-      const html = node.innerHTML;
-      // Get plain text
-      const temp = document.createElement('div');
-      temp.innerHTML = html;
-      return temp.textContent || '';
+    // For broken format where answer comes before options, we need to get ALL text from ALL paragraphs/lists in this block
+    const allBlockText = quizBlocks.flatMap((node) => {
+      if (node.tagName === 'P' || node.tagName === 'LI') {
+        const temp = document.createElement('div');
+        temp.innerHTML = node.innerHTML;
+        return temp.textContent || '';
+      } else if (node.tagName === 'UL' || node.tagName === 'OL') {
+        return Array.from(node.children).map(li => {
+           const temp = document.createElement('div');
+           temp.innerHTML = li.innerHTML;
+           return temp.textContent || '';
+        });
+      }
+      return '';
     }).join(' | ');
 
     // Find answer line - look in ALL text paragraphs
-    const answerIndex = textParagraphs.findIndex((text) => /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) && !/(explanation|correction):/i.test(text));
+    // Look for "Answer:" OR just "TRUE"/"FALSE"
+    const answerIndex = textParagraphs.findIndex((text) => {
+      const clean = text.replace(/\*/g, '').trim().toUpperCase();
+      return (
+        /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) ||
+        clean === 'TRUE' ||
+        clean === 'FALSE'
+      ) && !/(explanation|correction):/i.test(text);
+    });
+    
     console.log('[Quiz] answerLine:', answerIndex !== -1 ? textParagraphs[answerIndex] : 'NOT FOUND');
     if (answerIndex === -1) {
       console.log('[Quiz] Returning null - no answer line found');
@@ -518,8 +554,8 @@ const tabIcons: Record<string, string> = {
     const optionParagraphs = allOptionParagraphs;
     const optionHtmlParagraphs = allOptionHtmlParagraphs;
 
-    const isTrueFalse = /statement/i.test(headingText);
     const answerValue = parseAnswerLine(answerLine);
+    const isTrueFalse = /statement/i.test(headingText) || /^(TRUE|FALSE)/.test(answerValue.toUpperCase());
 
     let options = optionHtmlParagraphs.map((html) => ({
       value: getLeadingLabel(stripHtmlTags(html)),
@@ -769,7 +805,8 @@ const tabIcons: Record<string, string> = {
       const node = children[index];
       console.log('[Quiz] Node:', node.tagName);
 
-      if (node.tagName === 'H3') {
+      const isHeading = node.tagName === 'H3' || (node.tagName === 'P' && /^[\s\*]*question\s+\d+/i.test(node.textContent?.replace(/\*/g, '') || ''));
+      if (isHeading) {
         const blockNodes = [node];
         let nextIndex = index + 1;
 

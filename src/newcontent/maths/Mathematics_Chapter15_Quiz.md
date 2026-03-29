@@ -3,7 +3,7 @@
 
 ---
 
-## 📝 SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
+##  SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
 
 **Instructions:** Choose the correct answer from A, B, C, or D.
 
@@ -248,7 +248,7 @@ $$x = 0 \quad \text{or} \quad x = -2$$
 
 ---
 
-## 📝 SECTION B: TRUE OR FALSE
+##  SECTION B: TRUE OR FALSE
 
 **Instructions:** State whether each statement is TRUE or FALSE. If FALSE, provide the correction.
 
@@ -353,7 +353,7 @@ $$(x - 4)(x + 3) = x^2 + 3x - 4x - 12 = x^2 - x - 12$$
 
 ---
 
-## 📝 SECTION C: STRUCTURED QUESTIONS
+##  SECTION C: STRUCTURED QUESTIONS
 
 ---
 
@@ -765,7 +765,7 @@ $$x^3 - x = x(x + 1)(x - 1)$$
 
 ---
 
-## 📝 ANSWER SUMMARY
+##  ANSWER SUMMARY
 
 ### MCQ Answers
 | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 | Q14 | Q15 |

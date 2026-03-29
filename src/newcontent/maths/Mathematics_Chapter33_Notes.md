@@ -774,7 +774,7 @@ $P(\text{same colour}) = \frac{2}{15} + \frac{1}{3} = \frac{2}{15} + \frac{5}{15
 | Confusing $A \cap B$ with $A \cup B$ | $\cap$ = AND (intersection), $\cup$ = OR (union) |
 | Wrong conditional probability denominator | $P(A \mid B)$: denominator is $P(B)$, not $P(A)$ |
 
-### 📝 Exam Tips
+###  Exam Tips
 
 1. **Read carefully:** "Given that" or "if" usually indicates conditional probability
 2. **Check independence:** If events don't affect each other, use multiplication rule

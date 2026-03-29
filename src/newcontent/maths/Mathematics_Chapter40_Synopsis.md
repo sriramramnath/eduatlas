@@ -284,7 +284,7 @@ $$= 1 - P(\text{all tails}) = 1 - \frac{1}{2} \times \frac{1}{2} \times \frac{1}
 
 ---
 
-## 📝 Exam Command Words
+##  Exam Command Words
 
 | Word | Action Required |
 |------|-----------------|

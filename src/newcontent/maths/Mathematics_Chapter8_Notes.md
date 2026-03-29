@@ -49,7 +49,7 @@ $$\boxed{1 \text{ km} = 1000 \text{ m} = 100000 \text{ cm} = 1000000 \text{ mm}}
 
 ## 1.2 Area Conversions
 
-### ⭐ KEY CONCEPT: Area Conversion Factors
+###  KEY CONCEPT: Area Conversion Factors
 
 Area is measured in **square units**. When converting between units, we must square the linear conversion factor.
 
@@ -104,7 +104,7 @@ $$\boxed{1 \text{ m}^2 = 10000 \text{ cm}^2}$$
 
 ## 1.3 Volume Conversions
 
-### ⭐ KEY CONCEPT: Volume Conversion Factors
+###  KEY CONCEPT: Volume Conversion Factors
 
 Volume is measured in **cubic units**. When converting between units, we must cube the linear conversion factor.
 
@@ -143,7 +143,7 @@ $$\boxed{1 \text{ m}^3 = 1000000 \text{ cm}^3}$$
 
 ## 1.4 Capacity and Volume Connection
 
-### ⭐ IMPORTANT RELATIONSHIP
+###  IMPORTANT RELATIONSHIP
 
 There is a crucial connection between volume and capacity:
 
@@ -263,7 +263,7 @@ A **compound measure** is a quantity that is made up of two or more other quanti
 | **Density** | $\text{Density} = \frac{\text{Mass}}{\text{Volume}}$ | g/cm³, kg/m³ |
 | **Pressure** | $\text{Pressure} = \frac{\text{Force}}{\text{Area}}$ | N/m², Pa, N/cm² |
 
-### ⭐ The Triangle Method
+###  The Triangle Method
 
 For all three compound measures, use the formula triangle:
 
@@ -330,7 +330,7 @@ $$\text{Time} = \frac{\text{Distance}}{\text{Speed}} = \frac{180}{60} = 3 \text{
 
 $$72 \text{ km/h} = \frac{72000 \text{ m}}{3600 \text{ s}} = 20 \text{ m/s}$$
 
-### ⭐ Quick Conversion Method
+###  Quick Conversion Method
 To convert km/h to m/s: **divide by 3.6** (or multiply by $\frac{5}{18}$)
 To convert m/s to km/h: **multiply by 3.6** (or multiply by $\frac{18}{5}$)
 
@@ -425,7 +425,7 @@ $$\text{Volume} = \frac{\text{Mass}}{\text{Density}} = \frac{270}{2.7} = 100 \te
 
 $$\text{Density} = \frac{1000000 \text{ g}}{1000000 \text{ cm}^3} = 1 \text{ g/cm}^3$$
 
-### ⭐ Key Fact
+###  Key Fact
 $$\boxed{1000 \text{ kg/m}^3 = 1 \text{ g/cm}^3}$$
 
 This makes sense because:

@@ -278,7 +278,7 @@ $$\text{Frequency Density} = \frac{20}{20} = 1$$
 
 The bar height should be 1, not 4. The problem statement has inconsistent data.
 
-> **📝 Exam Insight:** In exams, if given partial information, always check that the data is consistent. Work systematically, calculating what you can and using the total frequency as a check.
+> ** Exam Insight:** In exams, if given partial information, always check that the data is consistent. Work systematically, calculating what you can and using the total frequency as a check.
 
 ### 5.2 Histograms with Unknown Frequencies
 

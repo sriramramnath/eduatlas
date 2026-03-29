@@ -109,7 +109,7 @@ Where n = moles ratio from equation
 
 ---
 
-## 📝 Worked Example
+##  Worked Example
 
 **Problem:** 25.0 cm³ NaOH needs 20.0 cm³ of 0.150 mol/dm³ HCl
 

@@ -20,7 +20,7 @@
 
 ---
 
-## ⭐ Three-Set Cardinality Formula:
+##  Three-Set Cardinality Formula:
 
 $$n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(B \cap C) - n(A \cap C) + n(A \cap B \cap C)$$
 

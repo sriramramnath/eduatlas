@@ -81,7 +81,7 @@
 
 ---
 
-## 📝 Essential Equations to Know
+##  Essential Equations to Know
 
 ### Haber Process
 ```

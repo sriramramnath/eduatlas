@@ -180,7 +180,7 @@ $$v - u = at$$
 **Step 2:** Divide both sides by $a$:
 $$t = \frac{v - u}{a}$$
 
-> 📝 **EXAM TIP**: The answer $t = \frac{v-u}{a}$ is preferred over $t = \frac{-u+v}{a}$
+>  **EXAM TIP**: The answer $t = \frac{v-u}{a}$ is preferred over $t = \frac{-u+v}{a}$
 
 ---
 
@@ -320,7 +320,7 @@ $$ab = h(a + b)$$
 **Step 3:** Divide by $(a + b)$:
 $$h = \frac{ab}{a + b}$$
 
-> 📝 **MEMORISE THIS**: This is the formula for combining resistors in parallel or lenses in contact!
+>  **MEMORISE THIS**: This is the formula for combining resistors in parallel or lenses in contact!
 
 ---
 
@@ -404,7 +404,7 @@ $$y = 3(4) - (-4) + 5$$
 $$y = 12 + 4 + 5$$
 $$y = 21$$
 
-> 📝 **WORKING TIP**: Show all intermediate steps clearly for method marks!
+>  **WORKING TIP**: Show all intermediate steps clearly for method marks!
 
 ---
 
@@ -505,12 +505,12 @@ $$r = 5 \text{ units}$$
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Simple substitution | 1-2 | ⭐⭐⭐⭐⭐ Very High |
-| Two-step rearrangement | 2-3 | ⭐⭐⭐⭐⭐ Very High |
-| Worded formula creation | 2-3 | ⭐⭐⭐⭐ High |
-| Complex rearrangement (powers/fractions) | 3-4 | ⭐⭐⭐ Medium |
-| Rearrange + substitute | 3-5 | ⭐⭐⭐⭐ High |
-| Subject appears twice | 3-4 | ⭐⭐ Low-Medium |
+| Simple substitution | 1-2 |  Very High |
+| Two-step rearrangement | 2-3 |  Very High |
+| Worded formula creation | 2-3 |  High |
+| Complex rearrangement (powers/fractions) | 3-4 |  Medium |
+| Rearrange + substitute | 3-5 |  High |
+| Subject appears twice | 3-4 |  Low-Medium |
 
 ### 5.2 Command Word Guidance
 

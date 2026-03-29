@@ -980,12 +980,12 @@ Verification: $0.\dot{4}\dot{5} = \frac{45}{99} = \frac{5}{11}$ ✓
 
 | Type | Marks | Frequency | Key Skills |
 |------|-------|-----------|------------|
-| Convert recurring → fraction | 2-3 | ⭐⭐⭐⭐⭐ | Algebraic method, simplification |
-| Convert fraction → decimal | 1-2 | ⭐⭐⭐ | Long division, recognize patterns |
-| Order mixed numbers | 2-3 | ⭐⭐⭐⭐ | Convert to common format, compare |
-| Proof questions | 3-4 | ⭐⭐⭐ | Show full working, conclude properly |
-| Calculation with recurring | 3-4 | ⭐⭐⭐ | Convert to fractions first |
-| "Hence" questions | 2-4 | ⭐⭐⭐ | Use previous results |
+| Convert recurring → fraction | 2-3 |  | Algebraic method, simplification |
+| Convert fraction → decimal | 1-2 |  | Long division, recognize patterns |
+| Order mixed numbers | 2-3 |  | Convert to common format, compare |
+| Proof questions | 3-4 |  | Show full working, conclude properly |
+| Calculation with recurring | 3-4 |  | Convert to fractions first |
+| "Hence" questions | 2-4 |  | Use previous results |
 
 ---
 

@@ -167,7 +167,7 @@ $$\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n$$
 
 ---
 
-# 📝 Key Vocabulary
+#  Key Vocabulary
 
 | Term | Meaning |
 |------|---------|

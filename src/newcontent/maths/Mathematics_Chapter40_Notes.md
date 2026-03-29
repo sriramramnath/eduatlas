@@ -214,7 +214,7 @@ $$P(\text{exactly 2 white}) = \frac{1}{10} + \frac{1}{10} + \frac{1}{10} = \frac
 Using complement:
 $$P(\text{at least one black}) = 1 - P(\text{all white}) = 1 - \frac{1}{30} = \frac{29}{30}$$
 
-> **📝 Key Insight:** Notice that for exactly two white socks, all three paths have the same probability. This happens when the number of each colour is the same in different orders!
+> ** Key Insight:** Notice that for exactly two white socks, all three paths have the same probability. This happens when the number of each colour is the same in different orders!
 
 ### 2.6 Tree Diagrams for Multiple Categories
 
@@ -443,7 +443,7 @@ $$P(A|D) = \frac{P(A \cap D)}{P(D)} = \frac{0.018}{0.038} = \frac{18}{38} = \fra
 
 **Answer:** Given the widget is defective, there is a $\frac{9}{19}$ (≈47.4%) probability it came from Machine A.
 
-> **📝 Exam Insight:** This is a classic "reverse conditional probability" problem. Bayes' theorem is used, but you can solve it with tree diagrams!
+> ** Exam Insight:** This is a classic "reverse conditional probability" problem. Bayes' theorem is used, but you can solve it with tree diagrams!
 
 ### 4.2 Worked Example 9: False Positives
 

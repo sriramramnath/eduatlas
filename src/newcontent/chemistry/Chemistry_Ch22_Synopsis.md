@@ -53,7 +53,7 @@
 
 ---
 
-## 📝 General Formulas & Prefixes
+##  General Formulas & Prefixes
 
 ### Prefixes (Carbon Count)
 | Carbons | Prefix |

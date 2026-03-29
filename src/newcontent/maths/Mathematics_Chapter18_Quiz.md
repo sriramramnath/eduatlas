@@ -3,7 +3,7 @@
 
 ---
 
-## 📝 SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
+##  SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
 
 **Instructions:** Choose the correct answer from A, B, C, or D.
 
@@ -261,7 +261,7 @@ $$y = \frac{3 + x}{x} = \frac{x + 3}{x}$$
 
 ---
 
-## 📝 SECTION B: TRUE OR FALSE
+##  SECTION B: TRUE OR FALSE
 
 **Instructions:** State whether each statement is TRUE or FALSE. If FALSE, provide the correction.
 
@@ -378,7 +378,7 @@ Since the inverse function reverses the mapping, the input values for $f^{-1}$ a
 
 ---
 
-## 📝 SECTION C: STRUCTURED QUESTIONS
+##  SECTION C: STRUCTURED QUESTIONS
 
 ---
 
@@ -853,7 +853,7 @@ Actually, $(gf)^{-1}(x) = f^{-1}g^{-1}(x) = \frac{x + 1}{2}$ in this case.
 
 ---
 
-## 📝 ANSWER SUMMARY
+##  ANSWER SUMMARY
 
 ### MCQ Answers
 | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 | Q14 | Q15 | Q16 |

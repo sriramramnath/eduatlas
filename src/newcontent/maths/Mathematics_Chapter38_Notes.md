@@ -64,7 +64,7 @@ This is one of the most frequently used laws in exams!
 
 ---
 
-### ⭐ Worked Example 1: Complementary Events
+###  Worked Example 1: Complementary Events
 
 **Question:** The probability that a bus arrives on time is 0.72. Find the probability that:
 (a) The bus is late
@@ -105,7 +105,7 @@ where $\cup$ means "union" (or).
 
 ---
 
-### ⭐ Worked Example 2: Mutually Exclusive Events
+###  Worked Example 2: Mutually Exclusive Events
 
 **Question:** A bag contains 5 red, 3 blue, and 2 green balls. A ball is drawn at random. Find the probability of getting:
 (a) A red ball
@@ -146,7 +146,7 @@ $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 
 ---
 
-### ⭐ Worked Example 3: Non-Mutually Exclusive Events
+###  Worked Example 3: Non-Mutually Exclusive Events
 
 **Question:** In a class of 30 students, 18 study Mathematics, 14 study Physics, and 8 study both. Find the probability that a randomly selected student:
 (a) Studies Mathematics or Physics
@@ -190,7 +190,7 @@ $$P(\text{neither}) = 1 - P(\text{Maths or Physics}) = 1 - \frac{4}{5} = \frac{1
 
 A **sample space diagram** shows all possible outcomes for combined events.
 
-### ⭐ Worked Example 4: Sample Space Diagram
+###  Worked Example 4: Sample Space Diagram
 
 **Question:** Two fair dice are rolled. Draw a sample space diagram and find:
 (a) $P(\text{both show 6})$
@@ -231,7 +231,7 @@ $$P(\text{at least one 5}) = \frac{11}{36}$$
 
 **Two-way tables** organize data for two categorical variables.
 
-### ⭐ Worked Example 5: Two-Way Table
+###  Worked Example 5: Two-Way Table
 
 **Question:** A survey of 100 people gave the following results:
 
@@ -288,7 +288,7 @@ $$P(A \cap B) = P(A) \times P(B)$$
 
 ---
 
-### ⭐ Worked Example 6: Basic Independent Events
+###  Worked Example 6: Basic Independent Events
 
 **Question:** Two fair coins are tossed. Find the probability of getting:
 (a) Two heads
@@ -311,7 +311,7 @@ $$P(\text{at least one tail}) = P(HT) + P(TH) + P(TT) = \frac{1}{4} + \frac{1}{4
 
 ---
 
-### ⭐ Worked Example 7: Independent Events with Replacement
+###  Worked Example 7: Independent Events with Replacement
 
 **Question:** A bag contains 4 red and 6 blue balls. A ball is drawn, its color noted, and then replaced. A second ball is drawn. Find:
 (a) $P(\text{both red})$
@@ -344,7 +344,7 @@ $$= (0.4 \times 0.6) + (0.6 \times 0.4) + 0.16 = 0.24 + 0.24 + 0.16 = 0.64$$ ✓
 To check if two events are independent, verify:
 $$P(A \cap B) = P(A) \times P(B)$$
 
-### ⭐ Worked Example 8: Testing Independence
+###  Worked Example 8: Testing Independence
 
 **Question:** In a school, 60% of students study French, 40% study German, and 24% study both. Are studying French and German independent events?
 
@@ -368,7 +368,7 @@ When drawing **without replacement**, probabilities change after each draw.
 
 ---
 
-### ⭐ Worked Example 9: Dependent Events
+###  Worked Example 9: Dependent Events
 
 **Question:** A bag contains 4 red and 6 blue balls. Two balls are drawn **without replacement**. Find:
 (a) $P(\text{both red})$
@@ -419,7 +419,7 @@ $$P(\text{second red} \mid \text{first red}) = \frac{3}{9} = \frac{1}{3}$$
 
 ## 4.2 Tree Diagrams for Independent Events
 
-### ⭐ Worked Example 10: Tree Diagram - Independent Events
+###  Worked Example 10: Tree Diagram - Independent Events
 
 **Question:** A fair coin is tossed three times. Draw a tree diagram and find:
 (a) $P(\text{exactly two heads})$
@@ -464,7 +464,7 @@ $$P(\text{first two heads}) = \frac{1}{8} + \frac{1}{8} = \frac{2}{8} = \frac{1}
 
 ## 4.3 Tree Diagrams for Dependent Events
 
-### ⭐ Worked Example 11: Tree Diagram - Without Replacement
+###  Worked Example 11: Tree Diagram - Without Replacement
 
 **Question:** A box contains 5 red and 3 blue pens. Two pens are drawn without replacement. Draw a tree diagram and find:
 (a) $P(\text{both red})$
@@ -521,7 +521,7 @@ $$= \frac{15}{56} + \frac{15}{56} + \frac{6}{56} = \frac{36}{56} = \frac{9}{14}$
 
 ## 4.4 Tree Diagrams with More Than Two Outcomes
 
-### ⭐ Worked Example 12: Three-Outcome Tree Diagram
+###  Worked Example 12: Three-Outcome Tree Diagram
 
 **Question:** A spinner has three equal sections: Red, Blue, and Green. It is spun twice. Find:
 (a) $P(\text{both same color})$
@@ -571,7 +571,7 @@ When we calculate $P(A \mid B)$:
 
 ---
 
-### ⭐ Worked Example 13: Basic Conditional Probability
+###  Worked Example 13: Basic Conditional Probability
 
 **Question:** In a class of 40 students:
 - 25 play football (F)
@@ -604,7 +604,7 @@ $$P(F \mid \text{not } C) = \frac{15}{22}$$
 
 ## 5.3 Conditional Probability from Two-Way Tables
 
-### ⭐ Worked Example 14: Conditional Probability from Table
+###  Worked Example 14: Conditional Probability from Table
 
 **Question:** The table shows the results of a survey about pets:
 
@@ -639,7 +639,7 @@ $$P(\text{No Dog} \mid \text{No Cat}) = \frac{15}{40} = \frac{3}{8}$$
 >
 > This means: knowing B occurred doesn't change the probability of A.
 
-### ⭐ Worked Example 15: Testing Independence with Conditional Probability
+###  Worked Example 15: Testing Independence with Conditional Probability
 
 **Question:** Using the data from Example 14, determine if "having a cat" and "having a dog" are independent events.
 
@@ -661,7 +661,7 @@ Since $\frac{12}{37} \neq \frac{3}{7}$, **the events are NOT independent.**
 
 Tree diagrams naturally show conditional probabilities on their branches.
 
-### ⭐ Worked Example 16: Conditional Probability on Tree Diagrams
+###  Worked Example 16: Conditional Probability on Tree Diagrams
 
 **Question:** A factory has two machines. Machine A produces 60% of items with a 5% defect rate. Machine B produces 40% of items with a 3% defect rate. Find:
 (a) $P(\text{defective})$
@@ -703,7 +703,7 @@ This is more general than the independent events formula!
 
 ---
 
-### ⭐ Worked Example 17: General Multiplication Rule
+###  Worked Example 17: General Multiplication Rule
 
 **Question:** A bag contains 4 white and 5 black balls. Two balls are drawn without replacement. Given that the first ball is white, find:
 (a) The probability that the second is black
@@ -726,7 +726,7 @@ $$P(\text{same}) = \frac{1}{6} + \frac{5}{18} = \frac{3}{18} + \frac{5}{18} = \f
 
 ---
 
-# 📝 EXAM FOCUS & STRATEGY
+#  EXAM FOCUS & STRATEGY
 
 ## Frequently Tested Question Types
 

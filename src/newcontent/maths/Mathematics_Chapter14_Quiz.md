@@ -3,7 +3,7 @@
 
 ---
 
-## 📝 SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
+##  SECTION A: MULTIPLE CHOICE QUESTIONS (MCQs)
 
 **Instructions:** Choose the correct answer from A, B, C, or D.
 
@@ -203,7 +203,7 @@ Divide by $4\pi$: $\frac{3V}{4\pi} = r^3$
 
 ---
 
-## 📝 SECTION B: TRUE OR FALSE
+##  SECTION B: TRUE OR FALSE
 
 **Instructions:** State whether each statement is TRUE or FALSE. If FALSE, provide the correction.
 
@@ -302,7 +302,7 @@ $$x = \frac{y-c}{m}$$
 
 ---
 
-## 📝 SECTION C: STRUCTURED QUESTIONS
+##  SECTION C: STRUCTURED QUESTIONS
 
 ---
 
@@ -658,7 +658,7 @@ $$h = 6 \text{ cm}$$
 
 ---
 
-## 📝 ANSWER SUMMARY
+##  ANSWER SUMMARY
 
 ### MCQ Answers
 | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 |

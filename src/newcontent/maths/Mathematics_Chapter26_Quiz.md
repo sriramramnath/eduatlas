@@ -669,7 +669,7 @@ From the graph:
 ## Frequently Tested Question Types
 
 ### Type 1: Table Completion and Graph Drawing
-**Frequency:** ⭐⭐⭐⭐⭐ (Very Common)
+**Frequency:**  (Very Common)
 
 **What examiners ask:**
 - Complete a table of values for a cubic or reciprocal function
@@ -685,7 +685,7 @@ From the graph:
 ---
 
 ### Type 2: Reading Values from Graphs
-**Frequency:** ⭐⭐⭐⭐⭐ (Very Common)
+**Frequency:**  (Very Common)
 
 **What examiners ask:**
 - Find y given x (or x given y)
@@ -700,7 +700,7 @@ From the graph:
 ---
 
 ### Type 3: Solving Equations Graphically
-**Frequency:** ⭐⭐⭐⭐ (Common)
+**Frequency:**  (Common)
 
 **What examiners ask:**
 - "Use your graph to solve..."
@@ -716,7 +716,7 @@ From the graph:
 ---
 
 ### Type 4: Transformations
-**Frequency:** ⭐⭐⭐⭐ (Common)
+**Frequency:**  (Common)
 
 **What examiners ask:**
 - Describe transformations
@@ -731,7 +731,7 @@ From the graph:
 ---
 
 ### Type 5: Asymptotes
-**Frequency:** ⭐⭐⭐⭐ (Common for reciprocals)
+**Frequency:**  (Common for reciprocals)
 
 **What examiners ask:**
 - Write down equations of asymptotes

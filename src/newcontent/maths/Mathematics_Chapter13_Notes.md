@@ -185,7 +185,7 @@ $(a + b)(a - b) = a^2 - ab + ab - b^2 = a^2 - b^2$
 - $x^2 = (x)^2$ and $20 = (\sqrt{20})^2 = (2\sqrt{5})^2$
 - $(x + 2\sqrt{5})(x - 2\sqrt{5})$
 
-> **📝 Note:** In some questions, you may leave answers with surds.
+> ** Note:** In some questions, you may leave answers with surds.
 
 ### Hidden Difference of Two Squares
 

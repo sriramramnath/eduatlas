@@ -222,14 +222,14 @@ $$\boxed{\text{Perpendicular from center bisects chord}}$$
 
 | Priority | Topic |
 |----------|-------|
-| ⭐⭐⭐ | Pythagoras applications |
-| ⭐⭐⭐ | Angle in semicircle |
-| ⭐⭐⭐ | Cyclic quadrilateral |
-| ⭐⭐⭐ | Tangent ⊥ radius |
-| ⭐⭐ | Angle at center theorem |
-| ⭐⭐ | Same segment angles |
-| ⭐⭐ | Alternate segment |
-| ⭐ | Chord properties |
+|  | Pythagoras applications |
+|  | Angle in semicircle |
+|  | Cyclic quadrilateral |
+|  | Tangent ⊥ radius |
+|  | Angle at center theorem |
+|  | Same segment angles |
+|  | Alternate segment |
+|  | Chord properties |
 
 ---
 

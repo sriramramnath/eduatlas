@@ -86,7 +86,7 @@
 
 ---
 
-## 📝 Quick Memory Aids
+##  Quick Memory Aids
 
 **Reactivity Order:** "Little Naughty Kids Rub Cats"
 (Li < Na < K < Rb < Cs)

@@ -497,4 +497,4 @@ $$\text{Multiplier} = 1.10 \times 1.15 = 1.265$$
 
 ---
 
-*📝 These notes cover all essential content for Pearson Edexcel IGCSE Mathematics Number 4 syllabus requirements.*
+* These notes cover all essential content for Pearson Edexcel IGCSE Mathematics Number 4 syllabus requirements.*

@@ -230,12 +230,12 @@ $$k = \frac{\text{Image length}}{\text{Object length}}$$
 
 | Topic | Frequency |
 |-------|-----------|
-| Describing transformations | ⭐⭐⭐⭐⭐ Very High |
-| Drawing transformations | ⭐⭐⭐⭐⭐ Very High |
-| Combined transformations | ⭐⭐⭐⭐ High |
-| Negative enlargement | ⭐⭐⭐ Medium |
-| Area scale factor | ⭐⭐⭐ Medium |
-| Invariant points | ⭐⭐ Lower |
+| Describing transformations |  Very High |
+| Drawing transformations |  Very High |
+| Combined transformations |  High |
+| Negative enlargement |  Medium |
+| Area scale factor |  Medium |
+| Invariant points |  Lower |
 
 ---
 

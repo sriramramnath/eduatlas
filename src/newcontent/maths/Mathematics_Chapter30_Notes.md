@@ -581,7 +581,7 @@ n=3:    ●           (6 dots)
 
 ---
 
-### 📝 Exam Command Words
+###  Exam Command Words
 
 | Command Word | What It Means |
 |---|---|

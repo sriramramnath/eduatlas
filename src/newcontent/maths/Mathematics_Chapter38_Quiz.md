@@ -854,7 +854,7 @@ $= \frac{13}{20}$
 
 ---
 
-# 📝 MARKING GUIDANCE
+#  MARKING GUIDANCE
 
 ## General Marking Principles
 

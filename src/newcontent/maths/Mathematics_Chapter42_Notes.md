@@ -91,7 +91,7 @@ $$c^2 = 169$$
 $$c = \sqrt{169}$$
 $$c = 13 \text{ cm}$$
 
-> **📝 EXAM TIP:** The answer 13 cm comes from recognizing that $13^2 = 169$. Memorizing perfect squares up to $15^2 = 225$ saves time!
+> ** EXAM TIP:** The answer 13 cm comes from recognizing that $13^2 = 169$. Memorizing perfect squares up to $15^2 = 225$ saves time!
 
 ---
 
@@ -200,7 +200,7 @@ $$c^2 = 9^2 = 81$$
 
 Since $74 \neq 81$, **the triangle is NOT right-angled**.
 
-> **📝 EXAM TIP:** If $a^2 + b^2 < c^2$, the triangle is obtuse-angled. If $a^2 + b^2 > c^2$, the triangle is acute-angled.
+> ** EXAM TIP:** If $a^2 + b^2 < c^2$, the triangle is obtuse-angled. If $a^2 + b^2 > c^2$, the triangle is acute-angled.
 
 ---
 
@@ -263,7 +263,7 @@ $$d^2 = 64 + 64$$
 $$d^2 = 128$$
 $$d = \sqrt{128} = \sqrt{64 \times 2} = 8\sqrt{2} \text{ cm}$$
 
-> **📝 EXAM TIP:** For a square with side $s$, the diagonal is always $s\sqrt{2}$.
+> ** EXAM TIP:** For a square with side $s$, the diagonal is always $s\sqrt{2}$.
 
 ---
 
@@ -690,7 +690,7 @@ $$\triangle OAP \cong \triangle OBP$$
 
 Therefore: $PA = PB$
 
-> **📝 EXAM TIP:** "Two tangents from an external point are equal in length" is a frequently tested result!
+> ** EXAM TIP:** "Two tangents from an external point are equal in length" is a frequently tested result!
 
 ---
 

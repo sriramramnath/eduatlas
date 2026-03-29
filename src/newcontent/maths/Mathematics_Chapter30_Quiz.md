@@ -769,7 +769,7 @@ $$S_4 = \frac{4}{2}[2(4) + 3(3)] = 2[8 + 9] = 34$$
 
 ---
 
-### 📝 Command Word Guidance
+###  Command Word Guidance
 
 | Command Word | What To Do |
 |---|---|

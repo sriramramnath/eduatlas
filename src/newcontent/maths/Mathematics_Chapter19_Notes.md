@@ -108,7 +108,7 @@ For $y = -2x + 5$: passes through $(0, 5)$ and $(2.5, 0)$
 - $y = 1 + 2 = 3$ ✓
 - $y = -2(1) + 5 = 3$ ✓
 
-> **📝 Exam Tip:** Always verify your solution by substituting back into BOTH original equations.
+> ** Exam Tip:** Always verify your solution by substituting back into BOTH original equations.
 
 ---
 
@@ -581,7 +581,7 @@ Proof by exhaustion is used when there are a **finite number of cases** to check
 
 **Q.E.D.**
 
-> **📝 Exam Tip:** The square of any number ending in 5 actually ends in **25** (not just 5)!
+> ** Exam Tip:** The square of any number ending in 5 actually ends in **25** (not just 5)!
 
 ---
 
@@ -612,25 +612,25 @@ Proof by exhaustion is used when there are a **finite number of cases** to check
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Linear simultaneous equations (substitution/elimination) | 3-4 | ⭐⭐⭐⭐⭐ |
-| Linear-quadratic systems | 4-6 | ⭐⭐⭐⭐ |
-| Finding intersection graphically | 2-3 | ⭐⭐⭐ |
-| Word problems leading to simultaneous equations | 5-7 | ⭐⭐⭐⭐ |
-| Proving number of solutions using discriminant | 4-5 | ⭐⭐⭐ |
+| Linear simultaneous equations (substitution/elimination) | 3-4 |  |
+| Linear-quadratic systems | 4-6 |  |
+| Finding intersection graphically | 2-3 |  |
+| Word problems leading to simultaneous equations | 5-7 |  |
+| Proving number of solutions using discriminant | 4-5 |  |
 
 ### Algebraic Proof
 
 | Question Type | Marks | Frequency |
 |---------------|-------|-----------|
-| Prove sum/product of evens/odds | 3-4 | ⭐⭐⭐⭐⭐ |
-| Prove properties of consecutive integers | 3-5 | ⭐⭐⭐⭐ |
-| Counter-example questions | 2-3 | ⭐⭐⭐⭐ |
-| Prove divisibility | 4-5 | ⭐⭐⭐ |
-| Proof involving squares | 3-4 | ⭐⭐⭐⭐ |
+| Prove sum/product of evens/odds | 3-4 |  |
+| Prove properties of consecutive integers | 3-5 |  |
+| Counter-example questions | 2-3 |  |
+| Prove divisibility | 4-5 |  |
+| Proof involving squares | 3-4 |  |
 
 ---
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What to Do |
 |--------------|------------|

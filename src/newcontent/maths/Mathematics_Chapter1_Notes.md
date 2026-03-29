@@ -432,7 +432,7 @@ Round to 2 d.p.: **Answer: 1.74**
 
 # 4. Exam Focus & Strategy
 
-## 🔥 Frequently Tested Question Types
+##  Frequently Tested Question Types
 
 1. **Mixed fraction calculations** - Questions combining all operations
 2. **Word problems involving fractions** - Real-life contexts (sharing, recipes)
@@ -440,7 +440,7 @@ Round to 2 d.p.: **Answer: 1.74**
 4. **Rounding accuracy questions** - Often combined with calculations
 5. **Calculator vs non-calculator** - Different skills required
 
-## 🧩 Typical Problem-Solving Patterns
+##  Typical Problem-Solving Patterns
 
 ### Pattern 1: Fraction Word Problems
 - Read carefully to identify the operation
@@ -457,7 +457,7 @@ Round to 2 d.p.: **Answer: 1.74**
 - Remember to show full working
 - Don't round until the final answer
 
-## 📝 Command Word Guidance
+##  Command Word Guidance
 
 | Command Word | What to Do |
 |--------------|------------|
