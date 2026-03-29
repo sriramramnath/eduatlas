@@ -31,6 +31,10 @@ function createUrlEntry(loc: string, priority: string, changefreq: string, lastm
   return parts.join('\n');
 }
 
+function padNumber(num: number, length: number = 2): string {
+  return String(num).padStart(length, '0');
+}
+
 export const GET: APIRoute = ({ site, url }) => {
   const baseUrl = new URL('https://eduosatlas.vercel.app');
   const today = '2026-03-29';
@@ -44,11 +48,11 @@ export const GET: APIRoute = ({ site, url }) => {
   ];
 
   const subjects = [
-    { id: 'biology', chapters: 22 },
-    { id: 'chemistry', chapters: 29 },
-    { id: 'ict', chapters: 12 },
-    { id: 'maths', chapters: 50 },
-    { id: 'physics', chapters: 28 },
+    { id: 'biology', chapters: 22, padded: false },
+    { id: 'chemistry', chapters: 29, padded: true },
+    { id: 'ict', chapters: 12, padded: false },
+    { id: 'maths', chapters: 50, padded: false },
+    { id: 'physics', chapters: 28, padded: true },
   ];
 
   const subjectRoutes: UrlEntry[] = subjects.map(({ id }) => ({
@@ -58,16 +62,11 @@ export const GET: APIRoute = ({ site, url }) => {
   }));
 
   const chapterRoutes: UrlEntry[] = [];
-  for (const { id, chapters } of subjects) {
+  for (const { id, chapters, padded } of subjects) {
     for (let i = 1; i <= chapters; i++) {
-      const chapterPath = `/subjects/${id}/chapters/chapter-${i}`;
-      chapterRoutes.push(
-        { path: chapterPath, priority: '0.7', changefreq: 'weekly' },
-        { path: `${chapterPath}?tab=notes`, priority: '0.7', changefreq: 'weekly' },
-        { path: `${chapterPath}?tab=synopsis`, priority: '0.7', changefreq: 'weekly' },
-        { path: `${chapterPath}?tab=quiz`, priority: '0.7', changefreq: 'weekly' },
-        { path: `${chapterPath}?tab=practice`, priority: '0.6', changefreq: 'weekly' },
-      );
+      const chapterId = padded ? padNumber(i) : String(i);
+      const chapterPath = `/subjects/${id}/chapters/chapter-${chapterId}`;
+      chapterRoutes.push({ path: chapterPath, priority: '0.7', changefreq: 'weekly' });
     }
   }
 
