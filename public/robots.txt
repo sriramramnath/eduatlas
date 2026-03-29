@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduosatlas.vercel.app/newsitemap.xml
+Sitemap: https://eduosatlas.vercel.app/sitemap.xml
