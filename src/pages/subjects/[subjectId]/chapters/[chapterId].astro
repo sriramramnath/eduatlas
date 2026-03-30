@@ -397,13 +397,34 @@ const tabIcons: Record<string, string> = {
     return value.replace(/^["']|["']$/g, '').trim();
   }
 
+  function isQuizParagraphHeading(text: string) {
+    const normalized = text.replace(/\*/g, '').replace(/\[[^\]]+\]/g, '').trim();
+    return /^(question|statement)\s+\d+$/i.test(normalized);
+  }
+
+  function isQuestionStartNode(node: Element) {
+    if (node.tagName === 'H3') {
+      return true;
+    }
+
+    if (node.tagName !== 'P') {
+      return false;
+    }
+
+    return isQuizParagraphHeading(node.textContent || '');
+  }
+
+  function isOptionLine(text: string) {
+    return /^[A-Z][\)\.]\s+/.test(text);
+  }
+
   function getLeadingLabel(text: string) {
-    const match = text.match(/^([A-Z])\)\s+/);
+    const match = text.match(/^([A-Z])[\)\.]\s+/);
     return match ? match[1] : '';
   }
 
   function stripLeadingLabel(text: string) {
-    return text.replace(/^[A-Z]\)\s+/, '').trim();
+    return text.replace(/^[A-Z][\)\.]\s+/, '').trim();
   }
 
   function normalizeAnswerValue(value: string) {
@@ -411,26 +432,40 @@ const tabIcons: Record<string, string> = {
   }
 
   function parseAnswerLine(text: string) {
+    const normalizedText = stripHtmlTags(text) || text;
+
     // Check if the text is JUST True or False OR starts with it (for physics explanations on same line)
-    const cleanText = text.replace(/\*/g, '').trim().toUpperCase();
+    const cleanText = normalizedText.replace(/\*/g, '').trim().toUpperCase();
     if (/^(TRUE|FALSE)/.test(cleanText)) {
       // Extract just the TRUE/FALSE part
       const match = cleanText.match(/^(TRUE|FALSE)/);
       return match ? match[0] : cleanText;
     }
 
-    return text
+    return normalizedText
       .replace(/^[\s\*]*\*\*[\s\*]*answer:\*\*[\s\*]*/i, '')
       .replace(/^[\s\*]*correct answer:\*\*[\s\*]*/i, '')
+      .replace(/^[\s\*]*answer:\s*/i, '')
+      .replace(/^[\s\*]*correct answer:\s*/i, '')
       .replace(/^[\s\*]*answer:\s*/i, '')
       .replace(/[\s\*]+$/, '')
       .trim();
   }
 
   function parseExplanationLine(text: string) {
-    return text
-      .replace(/^[\s\*]*\*\*(explanation|correction):\*[\s\*]*/i, '$1:')
+    const normalizedText = stripHtmlTags(text) || text;
+    return normalizedText
+      .replace(/^[\s\*]*\*\*(explanation|correction):\*\*[\s\*]*/i, '$1:')
+      .replace(/^[\s\*]*\*\*(explanation|correction)\*\*:\s*/i, '')
       .replace(/^[\s\*]*(explanation|correction):\s*/i, '')
+      .replace(/[\s\*]+$/, '')
+      .trim();
+  }
+
+  function parseInlineTrueFalseExplanation(text: string) {
+    const normalizedText = stripHtmlTags(text) || text;
+    return normalizedText
+      .replace(/^[\s\*]*(true|false)\b[\s\*]*[:\-–—]?\s*/i, '')
       .replace(/[\s\*]+$/, '')
       .trim();
   }
@@ -502,21 +537,10 @@ const tabIcons: Record<string, string> = {
     const htmlParagraphs = getNodesContent(quizBlocks, true);
     console.log('[Quiz] textParagraphs:', textParagraphs.slice(0, 5));
 
-    // For broken format where answer comes before options, we need to get ALL text from ALL paragraphs/lists in this block
-    const allBlockText = quizBlocks.flatMap((node) => {
-      if (node.tagName === 'P' || node.tagName === 'LI') {
-        const temp = document.createElement('div');
-        temp.innerHTML = node.innerHTML;
-        return temp.textContent || '';
-      } else if (node.tagName === 'UL' || node.tagName === 'OL') {
-        return Array.from(node.children).map(li => {
-           const temp = document.createElement('div');
-           temp.innerHTML = li.innerHTML;
-           return temp.textContent || '';
-        });
-      }
-      return '';
-    }).join(' | ');
+    const optionIndices = textParagraphs
+      .map((text, index) => (isOptionLine(text) ? index : -1))
+      .filter((index) => index !== -1);
+    const firstOptionIndex = optionIndices[0] ?? -1;
 
     // Find answer line - look in ALL text paragraphs
     // Look for "Answer:" OR just "TRUE"/"FALSE"
@@ -524,8 +548,7 @@ const tabIcons: Record<string, string> = {
       const clean = text.replace(/\*/g, '').trim().toUpperCase();
       return (
         /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) ||
-        clean === 'TRUE' ||
-        clean === 'FALSE'
+        /^(TRUE|FALSE)\b/.test(clean)
       ) && !/(explanation|correction):/i.test(text);
     });
     
@@ -537,30 +560,33 @@ const tabIcons: Record<string, string> = {
     const answerLine = textParagraphs[answerIndex];
 
     const explanationIndex = textParagraphs.findIndex((text) => /^[\s\*]*(explanation|correction):/i.test(text.replace(/\*/g, '')));
-    
-    // Get ALL options from the entire block (handles broken format where options come after answer)
-    const allOptionParagraphs = textParagraphs.filter((text) => /^[A-Z]\)\s+/.test(text));
-    const allOptionHtmlParagraphs = htmlParagraphs.filter((text) => /^[A-Z]\)\s+/.test(stripHtmlTags(text)));
-    
-    // For prompt, look in text that's not options or answer/explanation
-    const promptIndex = textParagraphs.findIndex(
-      (text) =>
-        !/^[A-Z]\)\s+/.test(text) &&
-        !/(answer:|correct answer:)/i.test(text) &&
-        !/(explanation|correction):/i.test(text) &&
-        text.trim().length > 5,
-    );
-    
-    const optionParagraphs = allOptionParagraphs;
-    const optionHtmlParagraphs = allOptionHtmlParagraphs;
 
     const answerValue = parseAnswerLine(answerLine);
     const isTrueFalse = /statement/i.test(headingText) || /^(TRUE|FALSE)/.test(answerValue.toUpperCase());
 
-    let options = optionHtmlParagraphs.map((html) => ({
-      value: getLeadingLabel(stripHtmlTags(html)),
-      label: stripLeadingLabel(html),
+    let options = optionIndices.map((index) => ({
+      value: getLeadingLabel(stripHtmlTags(htmlParagraphs[index])),
+      label: stripLeadingLabel(htmlParagraphs[index]),
     }));
+
+    const promptEndCandidates = [firstOptionIndex, answerIndex, explanationIndex].filter((index) => index !== -1);
+    const promptEndIndex = promptEndCandidates.length ? Math.min(...promptEndCandidates) : textParagraphs.length;
+    const promptHtml = htmlParagraphs
+      .slice(0, promptEndIndex)
+      .filter((html) => !isQuizParagraphHeading(stripHtmlTags(html)))
+      .join('');
+
+    let answerHtml = parseAnswerLine(htmlParagraphs[answerIndex] || answerLine);
+    if (!answerHtml) {
+      const answerContinuation = htmlParagraphs
+        .slice(answerIndex + 1, explanationIndex === -1 ? undefined : explanationIndex)
+        .filter((html) => !isOptionLine(stripHtmlTags(html)))
+        .map((html) => stripHtmlTags(html))
+        .filter(Boolean);
+      if (answerContinuation.length) {
+        answerHtml = answerContinuation.join(' ');
+      }
+    }
 
     let correctValue = '';
     if (isTrueFalse) {
@@ -574,19 +600,27 @@ const tabIcons: Record<string, string> = {
       correctValue = answerMatch ? answerMatch[0].toUpperCase() : '';
     }
 
+    const inlineTrueFalseExplanation = isTrueFalse ? parseInlineTrueFalseExplanation(answerLine) : '';
+    const explanationHtml =
+      explanationIndex === -1
+        ? inlineTrueFalseExplanation || 'Review the marked answer and chapter notes for the reasoning.'
+        : htmlParagraphs
+            .slice(explanationIndex)
+            .map((html, index) => (index === 0 ? parseExplanationLine(html) : html))
+            .filter(Boolean)
+            .join('<br />');
+
+    options = options.filter((option) => option.value && option.label);
+
     // If options not found but answer is valid, still return (may be broken format)
     // For MCQ we need options, for True/False we don't
     if (!options.length && !isTrueFalse && !correctValue) {
       return null;
     }
 
-    const promptHtml = promptIndex !== -1 ? htmlParagraphs[promptIndex] : headingText;
-    const explanationHtml = explanationIndex !== -1 ? parseExplanationLine(htmlParagraphs[explanationIndex]) : 'Review the marked answer and chapter notes for the reasoning.';
-    const answerHtml = answerIndex !== -1 ? parseAnswerLine(htmlParagraphs[answerIndex]) : answerValue;
-
     return {
       heading: headingText,
-      prompt: promptHtml,
+      prompt: promptHtml || headingText,
       options,
       correctValue,
       answerLabel: answerHtml,
@@ -805,12 +839,12 @@ const tabIcons: Record<string, string> = {
       const node = children[index];
       console.log('[Quiz] Node:', node.tagName);
 
-      const isHeading = node.tagName === 'H3' || (node.tagName === 'P' && /^[\s\*]*question\s+\d+/i.test(node.textContent?.replace(/\*/g, '') || ''));
+      const isHeading = isQuestionStartNode(node);
       if (isHeading) {
         const blockNodes = [node];
         let nextIndex = index + 1;
 
-        while (nextIndex < children.length && children[nextIndex].tagName !== 'H3') {
+        while (nextIndex < children.length && !isQuestionStartNode(children[nextIndex])) {
           blockNodes.push(children[nextIndex]);
           nextIndex += 1;
         }
@@ -1116,6 +1150,36 @@ const tabIcons: Record<string, string> = {
   .markdown-content :global(th) { background: var(--app-surface-muted); font-weight: 700; }
 
   .markdown-content :global(strong) { color: var(--app-accent-text); }
+  .markdown-content :global(.tikz-diagram) {
+    margin: 1.5rem 0 2rem;
+    padding: 1rem;
+    border: 1px solid var(--app-border);
+    border-radius: 1.25rem;
+    background: linear-gradient(180deg, var(--app-surface), var(--app-surface-muted));
+    overflow-x: auto;
+  }
+  .markdown-content :global(.tikz-diagram svg) {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    --tikz-fg: #111827;
+  }
+  .markdown-content :global(.tikz-diagram svg text) {
+    fill: var(--tikz-fg) !important;
+  }
+  .markdown-content :global(.tikz-diagram svg [stroke="#000"]) {
+    stroke: var(--tikz-fg) !important;
+  }
+  .markdown-content :global(.tikz-diagram svg path:not([fill="none"])) {
+    fill: var(--tikz-fg) !important;
+  }
+  .markdown-content :global(.tikz-diagram svg polygon:not([fill="none"])) {
+    fill: var(--tikz-fg) !important;
+  }
+  :global(html[data-theme='dark']) .markdown-content :global(.tikz-diagram svg) {
+    --tikz-fg: #ffffff;
+  }
 
   :global(.quiz-enhanced) {
     display: flex;

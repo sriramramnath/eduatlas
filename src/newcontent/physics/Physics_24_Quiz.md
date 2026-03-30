@@ -252,7 +252,7 @@ Radiation can damage DNA and cause mutations.
 ### Question 1
 Explain why technetium-99m is suitable for use as a medical tracer.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Gamma emitter (can be detected outside body) (1)
 - Short half-life (6 hours, minimizes dose) (1)
 - Non-toxic/safe for patient (1)
@@ -262,7 +262,7 @@ Explain why technetium-99m is suitable for use as a medical tracer.
 ### Question 2
 Describe how carbon dating is used to estimate the age of ancient organic material.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Living organisms have constant C-14 ratio (1)
 - After death, C-14 decays (half-life 5730 years) (1)
 - Measure remaining C-14 activity (1)
@@ -273,7 +273,7 @@ Describe how carbon dating is used to estimate the age of ancient organic materi
 ### Question 3
 Explain the principle of thickness gauging using radiation.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Radiation passes through material (1)
 - Amount transmitted depends on thickness (1)
 - Detector measures transmitted radiation (1)
@@ -283,7 +283,7 @@ Explain the principle of thickness gauging using radiation.
 ### Question 4
 A sample of ancient wood has 1/8 of the carbon-14 activity of living wood. Calculate its age.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - 1/8 = (½)³, so 3 half-lives (1)
 - Half-life of C-14 = 5730 years (1)
 - Age = 3 × 5730 = 17190 years (1)
@@ -293,7 +293,7 @@ A sample of ancient wood has 1/8 of the carbon-14 activity of living wood. Calcu
 ### Question 5
 Describe how an ionization smoke detector works.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Alpha source ionizes air in chamber (1)
 - Ions allow current to flow (1)
 - Smoke particles attach to ions (1)
@@ -304,7 +304,7 @@ Describe how an ionization smoke detector works.
 ### Question 6
 State two advantages of using gamma radiation for sterilizing medical equipment.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Any two from: penetrates packaging, no heat damage, no chemical residues, effective against all microorganisms (2)
 
 ---
@@ -312,7 +312,7 @@ State two advantages of using gamma radiation for sterilizing medical equipment.
 ### Question 7
 Explain why uranium-238 is used for dating rocks but carbon-14 is not.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - U-238 has very long half-life (4.5 billion years) (1)
 - Rocks are millions/billions of years old (1)
 - C-14 half-life too short for ancient rocks (1)
@@ -322,7 +322,7 @@ Explain why uranium-238 is used for dating rocks but carbon-14 is not.
 ### Question 8
 State the three principles of radiation protection (ALARA) and give one example of each.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Time: minimize exposure time (1)
 - Distance: maximize distance from source (1)
 - Shielding: use lead/concrete barriers (1)
@@ -332,7 +332,7 @@ State the three principles of radiation protection (ALARA) and give one example 
 ### Question 9
 Explain why cancer cells are more affected by radiation therapy than healthy cells.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Cancer cells divide rapidly/more susceptible (1)
 - Cancer cells less able to repair damage (1)
 
@@ -341,7 +341,7 @@ Explain why cancer cells are more affected by radiation therapy than healthy cel
 ### Question 10
 A wooden artifact has 6.25% of its original carbon-14. Calculate how many half-lives have passed.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - 100% → 50% → 25% → 12.5% → 6.25% (1)
 - 4 half-lives (1)
 
@@ -349,7 +349,7 @@ A wooden artifact has 6.25% of its original carbon-14. Calculate how many half-l
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 A hospital uses radioactive isotopes for both diagnosis and treatment.
 
 a) Explain why technetium-99m is suitable as a medical tracer for diagnosis. Include reference to:
@@ -364,7 +364,7 @@ b) Compare the properties required for an isotope used in:
 
 c) A patient receives a dose of 200 MBq of technetium-99m for a scan. Calculate the activity remaining after 24 hours. Show your working. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (4 marks):***
 - Gamma emitter (1)

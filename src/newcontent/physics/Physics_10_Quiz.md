@@ -15,7 +15,7 @@ D) Watt
 
 **Answer: C**
 
-**Explanation**: Frequency is measured in hertz (Hz), which means cycles per second.*
+**Explanation**: Frequency is measured in hertz (Hz), which means cycles per second.
 
 ---
 
@@ -29,7 +29,7 @@ D) v = λ ÷ f
 
 **Answer: B**
 
-**Explanation**: Wave speed = frequency × wavelength.*
+**Explanation**: Wave speed = frequency × wavelength.
 
 ---
 
@@ -43,7 +43,7 @@ D) Not at all
 
 **Answer: B**
 
-**Explanation**: In transverse waves, particle vibration is perpendicular to wave direction.*
+**Explanation**: In transverse waves, particle vibration is perpendicular to wave direction.
 
 ---
 
@@ -57,7 +57,7 @@ D) Stationary
 
 **Answer: B**
 
-**Explanation**: Sound waves are longitudinal - particles vibrate parallel to the direction of travel.*
+**Explanation**: Sound waves are longitudinal - particles vibrate parallel to the direction of travel.
 
 ---
 
@@ -71,7 +71,7 @@ D) 3 × 10⁹ m/s
 
 **Answer: C**
 
-**Explanation**: All electromagnetic waves travel at 3 × 10⁸ m/s in a vacuum.*
+**Explanation**: All electromagnetic waves travel at 3 × 10⁸ m/s in a vacuum.
 
 ---
 
@@ -85,7 +85,7 @@ D) 50 m/s
 
 **Answer: A**
 
-**Explanation**: v = f × λ = 10 × 0.5 = 5 m/s.*
+**Explanation**: v = f × λ = 10 × 0.5 = 5 m/s.
 
 ---
 
@@ -99,7 +99,7 @@ D) Microwaves
 
 **Answer: A**
 
-**Explanation**: Sound waves are mechanical waves, not electromagnetic waves.*
+**Explanation**: Sound waves are mechanical waves, not electromagnetic waves.
 
 ---
 
@@ -113,7 +113,7 @@ D) The time for one wave
 
 **Answer: B**
 
-**Explanation**: Amplitude is the maximum distance particles move from their rest position.*
+**Explanation**: Amplitude is the maximum distance particles move from their rest position.
 
 ---
 
@@ -127,7 +127,7 @@ D) Gamma rays
 
 **Answer: D**
 
-**Explanation**: Gamma rays have the shortest wavelength and highest frequency in the EM spectrum.*
+**Explanation**: Gamma rays have the shortest wavelength and highest frequency in the EM spectrum.
 
 ---
 
@@ -141,7 +141,7 @@ D) 500 Hz
 
 **Answer: C**
 
-**Explanation**: f = 1/T = 1/0.02 = 50 Hz.*
+**Explanation**: f = 1/T = 1/0.02 = 50 Hz.
 
 ---
 
@@ -155,7 +155,7 @@ D) Interferes with another wave
 
 **Answer: C**
 
-**Explanation**: Refraction is the change in direction when a wave enters a medium with different speed.*
+**Explanation**: Refraction is the change in direction when a wave enters a medium with different speed.
 
 ---
 
@@ -169,7 +169,7 @@ D) Wavelength
 
 **Answer: B**
 
-**Explanation**: Higher frequency = higher pitch. Amplitude determines loudness.*
+**Explanation**: Higher frequency = higher pitch. Amplitude determines loudness.
 
 ---
 
@@ -180,7 +180,7 @@ All electromagnetic waves are transverse.
 
 **Answer: True***
 
-**Explanation**: All electromagnetic waves (radio, light, X-rays, etc.) are transverse waves.*
+**Explanation**: All electromagnetic waves (radio, light, X-rays, etc.) are transverse waves.
 
 ---
 
@@ -198,7 +198,7 @@ Wavelength is the distance between two consecutive crests.
 
 **Answer: True***
 
-**Explanation**: Wavelength is the distance between any two consecutive corresponding points on a wave.*
+**Explanation**: Wavelength is the distance between any two consecutive corresponding points on a wave.
 
 ---
 
@@ -225,7 +225,7 @@ Radio waves have longer wavelengths than X-rays.
 
 **Answer: True***
 
-**Explanation**: Radio waves have the longest wavelengths in the EM spectrum; gamma rays have the shortest.*
+**Explanation**: Radio waves have the longest wavelengths in the EM spectrum; gamma rays have the shortest.
 
 ---
 
@@ -243,7 +243,7 @@ Diffraction is the spreading of waves when they pass through a gap.
 
 **Answer: True***
 
-**Explanation**: Diffraction occurs when waves encounter obstacles or pass through gaps, causing them to spread out.*
+**Explanation**: Diffraction occurs when waves encounter obstacles or pass through gaps, causing them to spread out.
 
 ---
 
@@ -252,7 +252,7 @@ All electromagnetic waves travel at the same speed in a vacuum.
 
 **Answer: True***
 
-**Explanation**: All EM waves travel at 3 × 10⁸ m/s in a vacuum, regardless of frequency or wavelength.*
+**Explanation**: All EM waves travel at 3 × 10⁸ m/s in a vacuum, regardless of frequency or wavelength.
 
 ---
 
@@ -270,7 +270,7 @@ Visible light has wavelengths between 400-700 nm.
 
 **Answer: True***
 
-**Explanation**: Visible light ranges from about 700 nm (red) to 400 nm (violet).*
+**Explanation**: Visible light ranges from about 700 nm (red) to 400 nm (violet).
 
 ---
 
@@ -288,7 +288,7 @@ Reflection is when waves change direction entering a new medium.
 ### Question 1 (2 marks)
 Define wavelength and state its unit.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Wavelength is the distance between two consecutive corresponding points on a wave (1 mark)
 - Unit: metre (m) (1 mark)
 
@@ -297,7 +297,7 @@ Define wavelength and state its unit.
 ### Question 2 (3 marks)
 A wave has frequency 20 Hz and wavelength 0.25 m. Calculate the wave speed.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: v = f × λ (1 mark)
 - Substitution: v = 20 × 0.25 (1 mark)
 - Answer: 5 m/s (1 mark)
@@ -307,7 +307,7 @@ A wave has frequency 20 Hz and wavelength 0.25 m. Calculate the wave speed.
 ### Question 3 (4 marks)
 Distinguish between transverse and longitudinal waves.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Transverse: particles vibrate perpendicular to direction of travel (1 mark)
 - Longitudinal: particles vibrate parallel to direction of travel (1 mark)
 - Transverse example: light/water waves (1 mark)
@@ -318,7 +318,7 @@ Distinguish between transverse and longitudinal waves.
 ### Question 4 (3 marks)
 A sound wave has frequency 500 Hz and speed 340 m/s. Calculate its wavelength.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: λ = v ÷ f (1 mark)
 - Substitution: λ = 340 ÷ 500 (1 mark)
 - Answer: 0.68 m (1 mark)
@@ -328,7 +328,7 @@ A sound wave has frequency 500 Hz and speed 340 m/s. Calculate its wavelength.
 ### Question 5 (4 marks)
 List the electromagnetic spectrum in order of increasing frequency.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Radio waves (1 mark)
 - Microwaves, infrared, visible, ultraviolet (1 mark)
 - X-rays (1 mark)
@@ -339,7 +339,7 @@ List the electromagnetic spectrum in order of increasing frequency.
 ### Question 6 (3 marks)
 Explain why sound cannot travel through a vacuum.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Sound is a mechanical wave (1 mark)
 - It requires particles to vibrate and transfer energy (1 mark)
 - A vacuum has no particles, so sound cannot travel (1 mark)
@@ -351,7 +351,7 @@ A wave has period 0.04 s and wavelength 2 m.
 (a) Calculate the frequency. (2 marks)
 (b) Calculate the wave speed. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) f = 1/T = 1/0.04 (1 mark)
     f = 25 Hz (1 mark)
 (b) v = f × λ = 25 × 2 (1 mark)
@@ -362,7 +362,7 @@ A wave has period 0.04 s and wavelength 2 m.
 ### Question 8 (2 marks)
 State two properties that all electromagnetic waves have in common.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - They are all transverse waves (1 mark)
   - They all travel at 3 × 10⁸ m/s in a vacuum (1 mark)
@@ -374,7 +374,7 @@ State two properties that all electromagnetic waves have in common.
 ### Question 9 (3 marks)
 Explain the difference between reflection and refraction.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Reflection: waves bounce off a surface (1 mark)
 - Refraction: waves change direction when entering a different medium (1 mark)
 - Refraction is caused by change in wave speed (1 mark)
@@ -386,7 +386,7 @@ A radio station broadcasts at a frequency of 100 MHz (100 × 10⁶ Hz).
 (a) Calculate the wavelength of the radio waves. (3 marks)
 (b) State what type of wave this is. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) v = 3 × 10⁸ m/s (for EM waves) (1 mark)
     λ = v ÷ f = 3×10⁸ ÷ 100×10⁶ (1 mark)
     λ = 3 m (1 mark)
@@ -396,27 +396,27 @@ A radio station broadcasts at a frequency of 100 MHz (100 × 10⁶ Hz).
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A student is investigating waves on a string.
 
 (a) The student observes that the wave has frequency 5 Hz and wavelength 0.4 m. Calculate the speed of the wave. (2 marks)
 (b) The student doubles the frequency while keeping the wavelength constant. State and explain what happens to the wave speed. (2 marks)
 (c) Explain why the wave on the string is a transverse wave. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Wave speed calculation***
+**(a) Wave speed calculation**
 - v = f × λ = 5 × 0.4 (1 mark)
 - v = 2 m/s (1 mark)
 
-**(b) Effect of doubling frequency***
+**(b) Effect of doubling frequency**
 - Wave speed doubles (1 mark)
 - Because v = fλ, and λ is constant, so v ∝ f (1 mark)
 
-**(c) Transverse wave explanation***
+**(c) Transverse wave explanation**
 - Particles of the string vibrate perpendicular to the direction of wave travel (1 mark)
 - This is the definition of a transverse wave (1 mark)
 
 ---
 
-*End of Chapter 10 Quiz**
+*End of Chapter 10 Quiz*

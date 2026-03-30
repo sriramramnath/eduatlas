@@ -252,7 +252,7 @@ Irregular galaxies have no definite shape.
 ### Question 1
 Explain what is meant by redshift and how it provides evidence for the expanding universe.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Redshift: light wavelength stretched/increased (1)
 - Caused by source moving away (1)
 - Galaxies show redshift (1)
@@ -263,7 +263,7 @@ Explain what is meant by redshift and how it provides evidence for the expanding
 ### Question 2
 State Hubble's Law and explain its significance.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - v = H₀d (recession velocity proportional to distance) (1)
 - More distant galaxies recede faster (1)
 - Evidence for Big Bang/expanding universe (1)
@@ -273,7 +273,7 @@ State Hubble's Law and explain its significance.
 ### Question 3
 Describe the Cosmic Microwave Background and explain why it supports the Big Bang theory.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Radiation from all directions (1)
 - Temperature ~2.7 K (1)
 - Formed 380,000 years after Big Bang (1)
@@ -284,7 +284,7 @@ Describe the Cosmic Microwave Background and explain why it supports the Big Ban
 ### Question 4
 Explain the difference between dark matter and dark energy.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Dark matter: invisible mass/affects gravity (1)
 - Dark matter: holds galaxies together (1)
 - Dark energy: causes accelerating expansion (1)
@@ -295,7 +295,7 @@ Explain the difference between dark matter and dark energy.
 ### Question 5
 Calculate the redshift if a spectral line at 500 nm is observed at 550 nm.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - z = Δλ/λ (1)
 - z = (550 - 500)/500 (1)
 - z = 50/500 = 0.1 (1)
@@ -305,7 +305,7 @@ Calculate the redshift if a spectral line at 500 nm is observed at 550 nm.
 ### Question 6
 Describe the three possible fates of the universe based on its density.
 
-**Mark Scheme (6 marks):***
+**Mark Scheme (6 marks):**
 - Open (ρ < ρ_critical): expands forever (2)
 - Flat (ρ = ρ_critical): expands forever, slows to stop (2)
 - Closed (ρ > ρ_critical): eventually collapses/Big Crunch (2)
@@ -315,7 +315,7 @@ Describe the three possible fates of the universe based on its density.
 ### Question 7
 Explain why space telescopes can provide better images than ground-based telescopes.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Above atmosphere/no atmospheric distortion (1)
 - No light pollution (1)
 - Can observe all wavelengths (1)
@@ -325,7 +325,7 @@ Explain why space telescopes can provide better images than ground-based telesco
 ### Question 8
 State two pieces of evidence supporting the Big Bang theory.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Any two from: redshift of galaxies, CMB, abundance of light elements (2)
 
 ---
@@ -333,7 +333,7 @@ State two pieces of evidence supporting the Big Bang theory.
 ### Question 9
 Explain why more distant galaxies show greater redshift.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - More distant galaxies recede faster (1)
 - Hubble's Law (v = H₀d) (1)
 - Greater velocity means greater redshift (1)
@@ -344,7 +344,7 @@ Explain why more distant galaxies show greater redshift.
 Convert 4.2 light-years to meters.
 (Speed of light = 3 × 10⁸ m/s)
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - 1 year = 365 × 24 × 3600 = 3.15 × 10⁷ s (1)
 - 1 ly = 3 × 10⁸ × 3.15 × 10⁷ = 9.46 × 10¹⁵ m (1)
 - 4.2 ly = 4.2 × 9.46 × 10¹⁵ = 4.0 × 10¹⁶ m (1)
@@ -353,7 +353,7 @@ Convert 4.2 light-years to meters.
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 Our understanding of the universe has developed significantly over the past century.
 
 a) Describe the Doppler effect and explain how it relates to observations of distant galaxies. (4 marks)
@@ -364,7 +364,7 @@ c) Describe the Cosmic Microwave Background (CMB) and explain why it is consider
 
 d) Discuss the role of dark matter and dark energy in our current understanding of the universe. (4 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (4 marks):***
 - Doppler effect: change in frequency/wavelength due to relative motion (1)

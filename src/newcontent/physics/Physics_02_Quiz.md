@@ -15,7 +15,7 @@ D) Watt
 
 **Answer: B**
 
-**Explanation**: Force is measured in newtons (N), named after Isaac Newton.*
+**Explanation**: Force is measured in newtons (N), named after Isaac Newton.
 
 ---
 
@@ -29,7 +29,7 @@ D) 500 N
 
 **Answer: C**
 
-**Explanation**: W = m × g = 5 × 10 = 50 N.*
+**Explanation**: W = m × g = 5 × 10 = 50 N.
 
 ---
 
@@ -43,7 +43,7 @@ D) Mass changes when you go to the Moon
 
 **Answer: C**
 
-**Explanation**: Weight = m × g, and g varies with location. Mass is constant.*
+**Explanation**: Weight = m × g, and g varies with location. Mass is constant.
 
 ---
 
@@ -57,7 +57,7 @@ D) 200 N/m
 
 **Answer: C**
 
-**Explanation**: k = F ÷ e = 2 N ÷ 0.04 m = 50 N/m. Note: extension must be in metres.*
+**Explanation**: k = F ÷ e = 2 N ÷ 0.04 m = 50 N/m. Note: extension must be in metres.
 
 ---
 
@@ -71,7 +71,7 @@ D) Extension is inversely proportional to force
 
 **Answer: C**
 
-**Explanation**: F = k × e, so F ∝ e (within limit of proportionality).*
+**Explanation**: F = k × e, so F ∝ e (within limit of proportionality).
 
 ---
 
@@ -99,7 +99,7 @@ D) 16 N to the left
 
 **Answer: B**
 
-**Explanation**: Resultant = 10 - 6 = 4 N in direction of larger force (right).*
+**Explanation**: Resultant = 10 - 6 = 4 N in direction of larger force (right).
 
 ---
 
@@ -113,7 +113,7 @@ D) E = k × e
 
 **Answer: B**
 
-**Explanation**: Energy stored = area under force-extension graph = ½ × base × height = ½ × e × F.*
+**Explanation**: Energy stored = area under force-extension graph = ½ × base × height = ½ × e × F.
 
 ---
 
@@ -127,7 +127,7 @@ D) Air resistance
 
 **Answer: C**
 
-**Explanation**: Gravitational, magnetic, and electrostatic forces act without physical contact.*
+**Explanation**: Gravitational, magnetic, and electrostatic forces act without physical contact.
 
 ---
 
@@ -141,7 +141,7 @@ D) It becomes stiffer
 
 **Answer: B**
 
-**Explanation**: Beyond the limit, the force-extension graph is no longer a straight line through the origin.*
+**Explanation**: Beyond the limit, the force-extension graph is no longer a straight line through the origin.
 
 ---
 
@@ -155,7 +155,7 @@ D) 600 kg
 
 **Answer: B**
 
-**Explanation**: Mass is constant everywhere. Only weight changes with g.*
+**Explanation**: Mass is constant everywhere. Only weight changes with g.
 
 ---
 
@@ -169,7 +169,7 @@ D) 10 J
 
 **Answer: A**
 
-**Explanation**: E = ½ × k × e² = ½ × 100 × (0.1)² = 50 × 0.01 = 0.5 J.*
+**Explanation**: E = ½ × k × e² = ½ × 100 × (0.1)² = 50 × 0.01 = 0.5 J.
 
 ---
 
@@ -189,7 +189,7 @@ A stiffer spring has a higher spring constant.
 
 **Answer: True***
 
-**Explanation**: Spring constant k measures stiffness. Higher k means more force needed for same extension.*
+**Explanation**: Spring constant k measures stiffness. Higher k means more force needed for same extension.
 
 ---
 
@@ -216,7 +216,7 @@ On a force-extension graph, the area under the graph represents the work done.
 
 **Answer: True***
 
-**Explanation**: Area under force-extension graph = energy stored = work done in stretching the spring.*
+**Explanation**: Area under force-extension graph = energy stored = work done in stretching the spring.
 
 ---
 
@@ -234,7 +234,7 @@ Air resistance is a type of friction.
 
 **Answer: True***
 
-**Explanation**: Air resistance is the friction force that opposes motion through air.*
+**Explanation**: Air resistance is the friction force that opposes motion through air.
 
 ---
 
@@ -261,7 +261,7 @@ A spring that stretches 2 cm with 4 N force will stretch 4 cm with 8 N force (wi
 
 **Answer: True***
 
-**Explanation**: Hooke's Law: F ∝ e, so doubling force doubles extension.*
+**Explanation**: Hooke's Law: F ∝ e, so doubling force doubles extension.
 
 ---
 
@@ -288,7 +288,7 @@ The value of g is the same on the Moon as on Earth.
 ### Question 1 (2 marks)
 State the difference between mass and weight.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Mass is the amount of matter in an object (measured in kg) (1 mark)
 - Weight is the force of gravity acting on an object (measured in N) (1 mark)
 
@@ -299,7 +299,7 @@ A spring has an original length of 8 cm. When a 6 N weight is attached, it stret
 (a) The extension of the spring (1 mark)
 (b) The spring constant (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Extension = 14 - 8 = 6 cm = 0.06 m (1 mark)
 (b) Formula: k = F ÷ e (1 mark)
     k = 6 ÷ 0.06 = 100 N/m (1 mark)
@@ -309,7 +309,7 @@ A spring has an original length of 8 cm. When a 6 N weight is attached, it stret
 ### Question 3 (3 marks)
 Explain what is meant by the limit of proportionality for a spring.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The point beyond which Hooke's Law is no longer obeyed (1 mark)
 - Beyond this point, force is no longer proportional to extension (1 mark)
 - The spring may be permanently stretched/deformed (1 mark)
@@ -319,7 +319,7 @@ Explain what is meant by the limit of proportionality for a spring.
 ### Question 4 (4 marks)
 Describe an experiment to determine the spring constant of a spring.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Suspend spring from clamp stand and measure original length (1 mark)
 - Add known masses/weights and measure new length each time (1 mark)
 - Calculate extension for each weight (1 mark)
@@ -333,7 +333,7 @@ Calculate:
 (a) Its weight on Earth (1 mark)
 (b) Its weight on the Moon (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) W = m × g = 2 × 10 = 20 N (1 mark)
 (b) W = m × g = 2 × 1.6 (1 mark)
     W = 3.2 N (1 mark)
@@ -343,7 +343,7 @@ Calculate:
 ### Question 6 (2 marks)
 State two ways to reduce friction between moving surfaces.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Use lubricants/oil/grease (1 mark)
   - Use ball bearings (1 mark)
@@ -357,7 +357,7 @@ A spring with spring constant 80 N/m is stretched by 0.15 m.
 (a) Calculate the force required. (2 marks)
 (b) Calculate the energy stored in the spring. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) F = k × e = 80 × 0.15 (1 mark)
     F = 12 N (1 mark)
 (b) E = ½ × k × e² = ½ × 80 × (0.15)² (1 mark)
@@ -368,7 +368,7 @@ A spring with spring constant 80 N/m is stretched by 0.15 m.
 ### Question 8 (3 marks)
 Explain why a person weighs less on the Moon than on Earth.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Weight = mass × gravitational field strength (1 mark)
 - Mass is constant (same on Moon and Earth) (1 mark)
 - g on Moon (1.6 N/kg) is less than g on Earth (10 N/kg) (1 mark)
@@ -378,7 +378,7 @@ Explain why a person weighs less on the Moon than on Earth.
 ### Question 9 (2 marks)
 Forces of 8 N north and 6 N east act on an object. Calculate the magnitude of the resultant force.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Use Pythagoras: F² = 8² + 6² = 64 + 36 = 100 (1 mark)
 - F = √100 = 10 N (1 mark)
 
@@ -387,7 +387,7 @@ Forces of 8 N north and 6 N east act on an object. Calculate the magnitude of th
 ### Question 10 (4 marks)
 Explain the difference between elastic and inelastic deformation.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Elastic: object returns to original shape when force removed (1 mark)
 - Inelastic (plastic): object does not return to original shape (1 mark)
 - Elastic occurs within limit of proportionality (1 mark)
@@ -397,7 +397,7 @@ Explain the difference between elastic and inelastic deformation.
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A student investigates how a spring stretches when different masses are hung from it.
 
 | Mass (g) | 0 | 100 | 200 | 300 | 400 | 500 |
@@ -409,24 +409,24 @@ A student investigates how a spring stretches when different masses are hung fro
 (c) Determine the spring constant from your graph. (1 mark)
 (d) Identify the limit of proportionality and explain your answer. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Extensions***
+**(a) Extensions**
 - 0, 2.0, 4.0, 6.0, 8.5, 11.5 cm (all correct = 2 marks, 4-5 correct = 1 mark)
 - Force values: 0, 1, 2, 3, 4, 5 N (using W = mg, g = 10 N/kg)
 
-**(b) Graph***
+**(b) Graph**
 - Correct axes labelled with units (1 mark)
 - Points plotted correctly and suitable line (1 mark)
 
-**(c) Spring constant***
+**(c) Spring constant**
 - Gradient from linear region: k = ΔF ÷ Δe (e.g., 3 ÷ 0.06 = 50 N/m) (1 mark)
 - Accept 48-52 N/m
 
-**(d) Limit of proportionality***
+**(d) Limit of proportionality**
 - At 300 g / 3 N / 6 cm extension (1 mark)
 - Beyond this, graph is not straight/line doesn't go through origin if extended (1 mark)
 
 ---
 
-*End of Chapter 2 Quiz**
+*End of Chapter 2 Quiz*

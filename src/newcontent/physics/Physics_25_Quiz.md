@@ -252,7 +252,7 @@ Tritium has two protons and one neutron.
 ### Question 1
 Describe what happens during nuclear fission.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Heavy nucleus splits (1)
 - Into two smaller nuclei (1)
 - Releasing energy and neutrons (1)
@@ -262,7 +262,7 @@ Describe what happens during nuclear fission.
 ### Question 2
 Explain the purpose of control rods in a nuclear reactor.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Absorb neutrons (1)
 - Control rate of reaction (1)
 - Can shut down reactor when fully inserted (1)
@@ -272,7 +272,7 @@ Explain the purpose of control rods in a nuclear reactor.
 ### Question 3
 State the conditions required for nuclear fusion to occur.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - High temperature (~10⁸ °C) (1)
 - High pressure/density (1)
 - Confinement of plasma (1)
@@ -282,7 +282,7 @@ State the conditions required for nuclear fusion to occur.
 ### Question 4
 Explain why fusion is not yet used for commercial electricity generation.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Requires extreme temperatures (1)
 - Difficult to contain plasma (1)
 - Has not yet achieved net energy gain/sustained reaction (1)
@@ -294,7 +294,7 @@ Compare nuclear fission and fusion in terms of:
 a) The process involved
 b) The fuel used
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - a) Fission: splitting heavy nuclei; Fusion: joining light nuclei (2)
 - b) Fission: uranium/plutonium; Fusion: hydrogen isotopes (2)
 
@@ -303,7 +303,7 @@ b) The fuel used
 ### Question 6
 Calculate the energy released if 0.001 kg of mass is completely converted to energy.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - E = mc² (1)
 - E = 0.001 × (3 × 10⁸)² (1)
 - E = 9 × 10¹³ J (1)
@@ -313,7 +313,7 @@ Calculate the energy released if 0.001 kg of mass is completely converted to ene
 ### Question 7
 Describe how a chain reaction occurs in nuclear fission.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Fission releases neutrons (1)
 - Neutrons cause further fissions (1)
 - Process continues/multiplies (1)
@@ -323,7 +323,7 @@ Describe how a chain reaction occurs in nuclear fission.
 ### Question 8
 Explain why a moderator is needed in a nuclear reactor.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Fast neutrons are less likely to cause fission (1)
 - Moderator slows neutrons for better absorption (1)
 
@@ -332,7 +332,7 @@ Explain why a moderator is needed in a nuclear reactor.
 ### Question 9
 State two advantages of fusion over fission as an energy source.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Any two from: abundant fuel, no greenhouse gases, less radioactive waste, safer (no meltdown risk) (2)
 
 ---
@@ -340,7 +340,7 @@ State two advantages of fusion over fission as an energy source.
 ### Question 10
 Describe how high-level nuclear waste is managed.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Stored in cooling ponds initially (1)
 - Vitrified (made into glass) (1)
 - Stored in deep geological repositories (1)
@@ -349,7 +349,7 @@ Describe how high-level nuclear waste is managed.
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 Nuclear power stations use controlled fission reactions to generate electricity.
 
 a) Describe the process of nuclear fission and explain how a chain reaction is established. (4 marks)
@@ -360,7 +360,7 @@ b) Explain the function of:
 
 c) Compare nuclear fission and nuclear fusion as potential energy sources, discussing advantages and disadvantages of each. (6 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (4 marks):***
 - Heavy nucleus (U-235) splits when hit by neutron (1)

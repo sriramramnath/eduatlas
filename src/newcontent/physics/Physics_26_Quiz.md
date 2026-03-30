@@ -252,7 +252,7 @@ Uranus rotates on its side compared to other planets.
 ### Question 1
 State Newton's law of gravitation.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Force of attraction between two masses (1)
 - Proportional to product of masses (1)
 - Inversely proportional to square of distance (1)
@@ -262,7 +262,7 @@ State Newton's law of gravitation.
 ### Question 2
 Explain why a satellite in a lower orbit travels faster than one in a higher orbit.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - v = √(GM/r) (1)
 - Smaller r gives larger v (1)
 - Stronger gravity requires faster speed to maintain orbit (1)
@@ -272,7 +272,7 @@ Explain why a satellite in a lower orbit travels faster than one in a higher orb
 ### Question 3
 Describe the difference between spring and neap tides.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Spring: Sun, Earth, Moon aligned/full or new moon (1)
 - Spring: highest tides/forces add (1)
 - Neap: Sun and Moon at right angles/first or last quarter (1)
@@ -283,7 +283,7 @@ Describe the difference between spring and neap tides.
 ### Question 4
 Explain how the Sun produces energy.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Nuclear fusion (1)
 - Hydrogen nuclei fuse to form helium (1)
 - Mass converted to energy (1)
@@ -294,7 +294,7 @@ Explain how the Sun produces energy.
 Calculate the gravitational force between two 1000 kg masses 10 m apart.
 (G = 6.67 × 10⁻¹¹ N m²/kg²)
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - F = Gm₁m₂/r² (1)
 - F = (6.67 × 10⁻¹¹ × 1000 × 1000) / 100 (1)
 - F = 6.67 × 10⁻⁷ N (1)
@@ -304,7 +304,7 @@ Calculate the gravitational force between two 1000 kg masses 10 m apart.
 ### Question 6
 Explain why we always see the same side of the Moon from Earth.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Moon is tidally locked to Earth (1)
 - Rotation period equals orbital period (1)
 
@@ -313,7 +313,7 @@ Explain why we always see the same side of the Moon from Earth.
 ### Question 7
 State two uses of geostationary satellites.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Any two from: communications, TV broadcasting, weather monitoring (2)
 
 ---
@@ -321,7 +321,7 @@ State two uses of geostationary satellites.
 ### Question 8
 Describe the difference between a solar and lunar eclipse.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Solar: Moon between Earth and Sun (1)
 - Solar: Moon blocks Sun's light (1)
 - Lunar: Earth between Sun and Moon (1)
@@ -332,7 +332,7 @@ Describe the difference between a solar and lunar eclipse.
 ### Question 9
 Explain why Venus is the hottest planet.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Thick atmosphere (1)
 - Runaway greenhouse effect traps heat (1)
 
@@ -341,7 +341,7 @@ Explain why Venus is the hottest planet.
 ### Question 10
 State the relationship between orbital period and orbital radius.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - T² ∝ r³ (1)
 - Period squared proportional to radius cubed (1)
 
@@ -349,7 +349,7 @@ State the relationship between orbital period and orbital radius.
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 Artificial satellites have many important applications in modern life.
 
 a) Explain what is meant by a geostationary satellite and state one use. (3 marks)
@@ -359,7 +359,7 @@ b) Calculate the orbital speed of a satellite orbiting 400 km above Earth's surf
 
 c) Explain why satellites in lower orbits have shorter orbital periods than those in higher orbits. (3 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (3 marks):***
 - Orbits above equator (1)

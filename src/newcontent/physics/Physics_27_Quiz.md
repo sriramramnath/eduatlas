@@ -252,7 +252,7 @@ A brown dwarf is a star that never began fusion.
 ### Question 1
 Describe the process by which a star forms from a nebula.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Nebula is cloud of gas and dust (1)
 - Gravity causes collapse (1)
 - Gravitational potential energy converts to thermal energy (1)
@@ -263,7 +263,7 @@ Describe the process by which a star forms from a nebula.
 ### Question 2
 Explain what happens when a star like the Sun leaves the main sequence.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Hydrogen in core runs out (1)
 - Core contracts and heats up (1)
 - Shell hydrogen burning begins (1)
@@ -274,7 +274,7 @@ Explain what happens when a star like the Sun leaves the main sequence.
 ### Question 3
 Describe the final stages in the life of a high-mass star.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Forms iron core (1)
 - Core collapses (1)
 - Supernova explosion (1)
@@ -285,7 +285,7 @@ Describe the final stages in the life of a high-mass star.
 ### Question 4
 Explain why massive stars have shorter lifetimes than less massive stars.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Massive stars are hotter/more luminous (1)
 - Burn fuel much faster (1)
 - Despite having more fuel, use it up quicker (1)
@@ -295,7 +295,7 @@ Explain why massive stars have shorter lifetimes than less massive stars.
 ### Question 5
 State the difference between a neutron star and a black hole.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Neutron star: extreme density, ~20 km, light cannot escape from black hole (1)
 - Black hole: gravity so strong nothing escapes (1)
 - Black hole forms from more massive stars (1)
@@ -305,7 +305,7 @@ State the difference between a neutron star and a black hole.
 ### Question 6
 Explain what is meant by the main sequence on an HR diagram.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Diagonal band of stars (1)
 - Stars fusing hydrogen in core (1)
 - Stable phase of stellar evolution (1)
@@ -315,7 +315,7 @@ Explain what is meant by the main sequence on an HR diagram.
 ### Question 7
 Describe how elements heavier than iron are formed.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Formed in supernovae (1)
 - Extreme temperatures and pressures (1)
 - Rapid neutron capture (1)
@@ -325,7 +325,7 @@ Describe how elements heavier than iron are formed.
 ### Question 8
 Explain why a white dwarf no longer produces energy.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Fusion has stopped (1)
 - It is a cooling remnant with no energy source (1)
 
@@ -334,7 +334,7 @@ Explain why a white dwarf no longer produces energy.
 ### Question 9
 State the spectral classification of stars from hottest to coolest.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - O, B, A, F, G, K, M (2)
 (Award 1 mark for mostly correct)
 
@@ -343,7 +343,7 @@ State the spectral classification of stars from hottest to coolest.
 ### Question 10
 Explain what happens to a star's core during a supernova.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Iron core collapses catastrophically (1)
 - Outer layers rebound and are ejected (1)
 - Core becomes neutron star or black hole (1)
@@ -352,7 +352,7 @@ Explain what happens to a star's core during a supernova.
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 Stars have different evolutionary paths depending on their mass.
 
 a) Describe the life cycle of a star similar to our Sun from formation to final state. (6 marks)
@@ -361,7 +361,7 @@ b) Compare the life cycle of a high-mass star (greater than 8 solar masses) with
 
 c) Explain how the HR diagram can be used to determine the stage of a star's evolution. (4 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (6 marks):***
 - Forms from nebula collapsing under gravity (1)

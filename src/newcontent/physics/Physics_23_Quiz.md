@@ -252,7 +252,7 @@ The ionization caused by radiation in a GM tube creates a detectable signal.
 ### Question 1
 Define the term 'half-life'.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Time taken for activity to halve (1)
 - OR time for half the radioactive nuclei to decay (1)
 
@@ -261,7 +261,7 @@ Define the term 'half-life'.
 ### Question 2
 List three sources of background radiation.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Any three from: radon gas, rocks/soil, cosmic rays, food/drink, medical, nuclear industry (3)
 
 ---
@@ -271,7 +271,7 @@ A radioactive source has activity 1600 Bq and half-life 5 days.
 a) What is the activity after 10 days?
 b) What is the activity after 20 days?
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - a) 10 days = 2 half-lives (1)
 - Activity = 1600 × ¼ = 400 Bq (1)
 - b) 20 days = 4 half-lives (1)
@@ -282,7 +282,7 @@ b) What is the activity after 20 days?
 ### Question 4
 Explain why radioactive decay is described as random and spontaneous.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Random: cannot predict which nucleus decays when (1)
 - Spontaneous: cannot be triggered or prevented (1)
 - Constant probability per unit time for each nucleus (1)
@@ -292,7 +292,7 @@ Explain why radioactive decay is described as random and spontaneous.
 ### Question 5
 Describe how a GM tube detects radiation.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Radiation enters and ionizes gas (1)
 - Ions accelerate to electrodes creating pulse (1)
 - Counter records/counts pulses (1)
@@ -302,7 +302,7 @@ Describe how a GM tube detects radiation.
 ### Question 6
 A sample of 200g decays to 25g in 24 days. Calculate the half-life.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - 200 → 100 → 50 → 25 (3 half-lives) (1)
 - 3 half-lives = 24 days (1)
 - Half-life = 8 days (1)
@@ -312,7 +312,7 @@ A sample of 200g decays to 25g in 24 days. Calculate the half-life.
 ### Question 7
 Explain why film badges are used by workers handling radioactive materials.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Measure cumulative radiation dose (1)
 - Film darkens with exposure (1)
 - Different filters help identify radiation type (1)
@@ -322,7 +322,7 @@ Explain why film badges are used by workers handling radioactive materials.
 ### Question 8
 A counter records 340 counts/minute with source present and 40 counts/minute with source removed. Calculate the corrected count rate.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Background = 40 counts/min (1)
 - Corrected = 340 - 40 = 300 counts/min (1)
 
@@ -331,7 +331,7 @@ A counter records 340 counts/minute with source present and 40 counts/minute wit
 ### Question 9
 Sketch the shape of an activity-time graph for a radioactive source.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Exponential decay curve (1)
 - Starting from initial activity (1)
 - Activity never reaches zero (1)
@@ -341,14 +341,14 @@ Sketch the shape of an activity-time graph for a radioactive source.
 ### Question 10
 State two safety precautions when handling radioactive sources.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Any two from: use tongs, keep at distance, minimize time, use shielding, store in lead container, wear film badge (2)
 
 ---
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 A student investigates the half-life of a radioactive isotope. The table shows her results:
 
 | Time (hours) | Activity (Bq) |
@@ -369,7 +369,7 @@ c) Predict the activity after 18 hours. Explain your reasoning. (2 marks)
 
 d) Explain why the measured activity values may be higher than the actual activity of the source. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (3 marks):***
 - Correct axes labeled with units (1)

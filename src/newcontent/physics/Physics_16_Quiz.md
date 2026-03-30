@@ -15,7 +15,7 @@ D) Pascal
 
 **Answer: C**
 
-**Explanation**: Work is measured in joules (J). 1 J = 1 Nm.*
+**Explanation**: Work is measured in joules (J). 1 J = 1 Nm.
 
 ---
 
@@ -29,7 +29,7 @@ D) 2000 J
 
 **Answer: C**
 
-**Explanation**: W = F × d = 40 × 5 = 200 J.*
+**Explanation**: W = F × d = 40 × 5 = 200 J.
 
 ---
 
@@ -43,7 +43,7 @@ D) Ampere
 
 **Answer: B**
 
-**Explanation**: Power is measured in watts (W). 1 W = 1 J/s.*
+**Explanation**: Power is measured in watts (W). 1 W = 1 J/s.
 
 ---
 
@@ -57,7 +57,7 @@ D) 40,000 W
 
 **Answer: A**
 
-**Explanation**: P = W ÷ t = 600 ÷ 15 = 40 W.*
+**Explanation**: P = W ÷ t = 600 ÷ 15 = 40 W.
 
 ---
 
@@ -71,7 +71,7 @@ D) 400,000 J
 
 **Answer: C**
 
-**Explanation**: W = P × t = 8000 × 20 = 160,000 J.*
+**Explanation**: W = P × t = 8000 × 20 = 160,000 J.
 
 ---
 
@@ -85,7 +85,7 @@ D) 30,000 W
 
 **Answer: C**
 
-**Explanation**: P = F × v = 200 × 15 = 3000 W.*
+**Explanation**: P = F × v = 200 × 15 = 3000 W.
 
 ---
 
@@ -99,7 +99,7 @@ D) Both B and C
 
 **Answer: D**
 
-**Explanation**: Work requires both force AND movement in the direction of the force.*
+**Explanation**: Work requires both force AND movement in the direction of the force.
 
 ---
 
@@ -113,7 +113,7 @@ D) 1200 J
 
 **Answer: C**
 
-**Explanation**: Weight = 3 × 10 = 30 N. W = F × d = 30 × 4 = 120 J.*
+**Explanation**: Weight = 3 × 10 = 30 N. W = F × d = 30 × 4 = 120 J.
 
 ---
 
@@ -127,7 +127,7 @@ D) P = F - v
 
 **Answer: B**
 
-**Explanation**: Power = force × velocity (when force and velocity are in the same direction).*
+**Explanation**: Power = force × velocity (when force and velocity are in the same direction).
 
 ---
 
@@ -141,7 +141,7 @@ D) 8000 W
 
 **Answer: B**
 
-**Explanation**: P = W ÷ t = 800 ÷ 10 = 80 W.*
+**Explanation**: P = W ÷ t = 800 ÷ 10 = 80 W.
 
 ---
 
@@ -155,7 +155,7 @@ D) 850%
 
 **Answer: A**
 
-**Explanation**: Efficiency = (350 ÷ 500) × 100% = 70%.*
+**Explanation**: Efficiency = (350 ÷ 500) × 100% = 70%.
 
 ---
 
@@ -169,7 +169,7 @@ D) 6000 J
 
 **Answer: A**
 
-**Explanation**: No work is done because there is no movement. Holding requires force but no distance.*
+**Explanation**: No work is done because there is no movement. Holding requires force but no distance.
 
 ---
 
@@ -198,7 +198,7 @@ Power is the total amount of work done.
 
 **Answer: True***
 
-**Explanation**: 1 W = 1 J/s by definition.*
+**Explanation**: 1 W = 1 J/s by definition.
 
 ---
 
@@ -207,7 +207,7 @@ A force acting perpendicular to the direction of motion does no work.
 
 **Answer: True***
 
-**Explanation**: Work = F × d × cos(θ). When θ = 90°, cos(90°) = 0, so no work is done.*
+**Explanation**: Work = F × d × cos(θ). When θ = 90°, cos(90°) = 0, so no work is done.
 
 ---
 
@@ -216,7 +216,7 @@ Lifting an object increases its gravitational potential energy.
 
 **Answer: True***
 
-**Explanation**: Work done against gravity = mgh = GPE gained.*
+**Explanation**: Work done against gravity = mgh = GPE gained.
 
 ---
 
@@ -234,7 +234,7 @@ The work done by a force is independent of the time taken.
 
 **Answer: True***
 
-**Explanation**: Work = F × d. Time affects power, not work.*
+**Explanation**: Work = F × d. Time affects power, not work.
 
 ---
 
@@ -243,7 +243,7 @@ When a car travels at constant speed, the engine power equals the power dissipat
 
 **Answer: True***
 
-**Explanation**: At constant speed, net force is zero, so engine force equals resistive force. P = Fv for both.*
+**Explanation**: At constant speed, net force is zero, so engine force equals resistive force. P = Fv for both.
 
 ---
 
@@ -252,7 +252,7 @@ When a car travels at constant speed, the engine power equals the power dissipat
 
 **Answer: True***
 
-**Explanation**: 1 kW = 1000 W.*
+**Explanation**: 1 kW = 1000 W.
 
 ---
 
@@ -279,7 +279,7 @@ Power can be calculated as force multiplied by velocity.
 
 **Answer: True***
 
-**Explanation**: P = F × v is a valid equation for power when force and velocity are parallel.*
+**Explanation**: P = F × v is a valid equation for power when force and velocity are parallel.
 
 ---
 
@@ -288,7 +288,7 @@ Power can be calculated as force multiplied by velocity.
 ### Question 1 (2 marks)
 Define work done.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Work done = force × distance moved in direction of force (1 mark)
 - Unit: joule (J) (1 mark)
 
@@ -297,7 +297,7 @@ Define work done.
 ### Question 2 (3 marks)
 A 60 N force pulls a box 10 m along the floor. Calculate the work done.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: W = F × d (1 mark)
 - W = 60 × 10 (1 mark)
 - W = 600 J (1 mark)
@@ -307,7 +307,7 @@ A 60 N force pulls a box 10 m along the floor. Calculate the work done.
 ### Question 3 (4 marks)
 Explain why a person holding a heavy weight stationary does no work on the weight.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Work requires both force and movement (1 mark)
 - The person applies an upward force (1 mark)
 - But the weight does not move (1 mark)
@@ -318,7 +318,7 @@ Explain why a person holding a heavy weight stationary does no work on the weigh
 ### Question 4 (3 marks)
 A motor does 2400 J of work in 30 s. Calculate its power output.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: P = W ÷ t (1 mark)
 - P = 2400 ÷ 30 (1 mark)
 - P = 80 W (1 mark)
@@ -330,7 +330,7 @@ A crane lifts a 500 kg load 12 m in 20 s. Calculate:
 (a) The work done by the crane. (2 marks)
 (b) The power output of the crane. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Force = weight = 500 × 10 = 5000 N (1 mark)
     W = 5000 × 12 = 60,000 J (1 mark)
 (b) P = W ÷ t = 60,000 ÷ 20 (1 mark)
@@ -341,7 +341,7 @@ A crane lifts a 500 kg load 12 m in 20 s. Calculate:
 ### Question 6 (3 marks)
 A car travels at a constant speed of 25 m/s against resistive forces of 800 N. Calculate the power output of the engine.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: P = F × v (1 mark)
 - P = 800 × 25 (1 mark)
 - P = 20,000 W (or 20 kW) (1 mark)
@@ -351,7 +351,7 @@ A car travels at a constant speed of 25 m/s against resistive forces of 800 N. C
 ### Question 7 (4 marks)
 Explain the difference between work and power.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Work is force × distance (energy transferred) (1 mark)
 - Unit: joule (J) (1 mark)
 - Power is work ÷ time (rate of doing work) (1 mark)
@@ -362,7 +362,7 @@ Explain the difference between work and power.
 ### Question 8 (2 marks)
 A machine has an input power of 800 W and an output power of 600 W. Calculate its efficiency.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Efficiency = 600 ÷ 800 (1 mark)
 - Efficiency = 0.75 = 75% (1 mark)
 
@@ -371,7 +371,7 @@ A machine has an input power of 800 W and an output power of 600 W. Calculate it
 ### Question 9 (3 marks)
 A student of mass 50 kg runs up a flight of stairs, gaining 8 m of height in 6 s. Calculate her power output. (g = 10 N/kg)
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Work done = mgh = 50 × 10 × 8 = 4000 J (1 mark)
 - P = W ÷ t = 4000 ÷ 6 (1 mark)
 - P = 667 W (accept 660-670 W) (1 mark)
@@ -383,7 +383,7 @@ A cyclist travels at a constant speed of 8 m/s against total resistive forces of
 (a) Calculate the power output of the cyclist. (2 marks)
 (b) Explain why the cyclist must keep pedalling to maintain constant speed. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) P = F × v = 120 × 8 (1 mark)
     P = 960 W (1 mark)
 (b) Resistive forces oppose motion (1 mark)
@@ -393,26 +393,26 @@ A cyclist travels at a constant speed of 8 m/s against total resistive forces of
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A crane lifts a 2000 kg load from the ground to a height of 15 m in 25 seconds.
 (a) Calculate the work done by the crane. (g = 10 N/kg) (2 marks)
 (b) Calculate the power output of the crane. (2 marks)
 (c) The crane motor has an efficiency of 75%. Calculate the electrical power input to the motor. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Work done***
+**(a) Work done**
 - Force = weight = 2000 × 10 = 20,000 N (1 mark)
 - W = F × d = 20,000 × 15 = 300,000 J (1 mark)
 
-**(b) Power output***
+**(b) Power output**
 - P = W ÷ t = 300,000 ÷ 25 (1 mark)
 - P = 12,000 W (or 12 kW) (1 mark)
 
-**(c) Power input***
+**(c) Power input**
 - Efficiency = useful output ÷ total input (1 mark)
 - 0.75 = 12,000 ÷ input → input = 12,000 ÷ 0.75 = 16,000 W (1 mark)
 
 ---
 
-*End of Chapter 16 Quiz**
+*End of Chapter 16 Quiz*

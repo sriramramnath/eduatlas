@@ -15,7 +15,7 @@ D) All require a medium
 
 **Answer: C**
 
-**Explanation**: Radiation is heat transfer by electromagnetic waves and can travel through a vacuum.*
+**Explanation**: Radiation is heat transfer by electromagnetic waves and can travel through a vacuum.
 
 ---
 
@@ -29,7 +29,7 @@ D) 373 K
 
 **Answer: D**
 
-**Explanation**: 100°C + 273 = 373 K.*
+**Explanation**: 100°C + 273 = 373 K.
 
 ---
 
@@ -43,7 +43,7 @@ D) Silver and shiny
 
 **Answer: B**
 
-**Explanation**: Dark, matte surfaces are the best absorbers (and emitters) of infrared radiation.*
+**Explanation**: Dark, matte surfaces are the best absorbers (and emitters) of infrared radiation.
 
 ---
 
@@ -57,7 +57,7 @@ D) 84,000 J
 
 **Answer: D**
 
-**Explanation**: E = mcΔθ = 2 × 4200 × 10 = 84,000 J.*
+**Explanation**: E = mcΔθ = 2 × 4200 × 10 = 84,000 J.
 
 ---
 
@@ -71,7 +71,7 @@ D) All materials
 
 **Answer: B**
 
-**Explanation**: Convection requires fluid movement, so it only occurs in liquids and gases.*
+**Explanation**: Convection requires fluid movement, so it only occurs in liquids and gases.
 
 ---
 
@@ -85,7 +85,7 @@ D) Fluctuates randomly
 
 **Answer: C**
 
-**Explanation**: During melting or boiling, energy goes into breaking bonds, not raising temperature.*
+**Explanation**: During melting or boiling, energy goes into breaking bonds, not raising temperature.
 
 ---
 
@@ -99,7 +99,7 @@ D) They are magnetic
 
 **Answer: B**
 
-**Explanation**: Free electrons in metals can move quickly and transfer energy efficiently.*
+**Explanation**: Free electrons in metals can move quickly and transfer energy efficiently.
 
 ---
 
@@ -113,7 +113,7 @@ D) -373°C
 
 **Answer: C**
 
-**Explanation**: Absolute zero is 0 K, which equals -273°C. This is the theoretical temperature where all particle motion stops.*
+**Explanation**: Absolute zero is 0 K, which equals -273°C. This is the theoretical temperature where all particle motion stops.
 
 ---
 
@@ -127,7 +127,7 @@ D) Radiation only
 
 **Answer: C**
 
-**Explanation**: The air gap in double glazing reduces heat transfer by both conduction and convection.*
+**Explanation**: The air gap in double glazing reduces heat transfer by both conduction and convection.
 
 ---
 
@@ -141,7 +141,7 @@ D) 668,000 J
 
 **Answer: C**
 
-**Explanation**: E = m × Lf = 0.5 × 334,000 = 167,000 J.*
+**Explanation**: E = m × Lf = 0.5 × 334,000 = 167,000 J.
 
 ---
 
@@ -155,7 +155,7 @@ D) It changes colour
 
 **Answer: B**
 
-**Explanation**: When heated, air expands and becomes less dense, causing it to rise.*
+**Explanation**: When heated, air expands and becomes less dense, causing it to rise.
 
 ---
 
@@ -169,7 +169,7 @@ D) Lower temperature
 
 **Answer: A**
 
-**Explanation**: A lower U-value means less heat transfer, so better insulation.*
+**Explanation**: A lower U-value means less heat transfer, so better insulation.
 
 ---
 
@@ -189,7 +189,7 @@ Water has a high specific heat capacity.
 
 **Answer: True***
 
-**Explanation**: Water's specific heat capacity (4200 J/kg°C) is very high compared to most substances.*
+**Explanation**: Water's specific heat capacity (4200 J/kg°C) is very high compared to most substances.
 
 ---
 
@@ -216,7 +216,7 @@ During boiling, the temperature of water stays at 100°C.
 
 **Answer: True***
 
-**Explanation**: During a change of state (boiling), temperature remains constant even though energy is being added.*
+**Explanation**: During a change of state (boiling), temperature remains constant even though energy is being added.
 
 ---
 
@@ -234,7 +234,7 @@ The Kelvin temperature scale starts at absolute zero.
 
 **Answer: True***
 
-**Explanation**: The Kelvin scale is an absolute temperature scale with its zero point at absolute zero.*
+**Explanation**: The Kelvin scale is an absolute temperature scale with its zero point at absolute zero.
 
 ---
 
@@ -252,7 +252,7 @@ The specific latent heat of vaporization is greater than the specific latent hea
 
 **Answer: True***
 
-**Explanation**: Lv (2,260,000 J/kg) is much greater than Lf (334,000 J/kg) because boiling requires more energy than melting.*
+**Explanation**: Lv (2,260,000 J/kg) is much greater than Lf (334,000 J/kg) because boiling requires more energy than melting.
 
 ---
 
@@ -270,7 +270,7 @@ A vacuum flask reduces heat loss by conduction, convection, and radiation.
 
 **Answer: True***
 
-**Explanation**: Vacuum flasks use a vacuum (prevents conduction/convection) and silvered surfaces (reduce radiation).*
+**Explanation**: Vacuum flasks use a vacuum (prevents conduction/convection) and silvered surfaces (reduce radiation).
 
 ---
 
@@ -279,7 +279,7 @@ A vacuum flask reduces heat loss by conduction, convection, and radiation.
 
 **Answer: True***
 
-**Explanation**: K = °C + 273 = 25 + 273 = 298 K.*
+**Explanation**: K = °C + 273 = 25 + 273 = 298 K.
 
 ---
 
@@ -288,7 +288,7 @@ A vacuum flask reduces heat loss by conduction, convection, and radiation.
 ### Question 1 (2 marks)
 State the three methods of heat transfer.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Conduction (1 mark)
 - Convection and radiation (1 mark)
 
@@ -297,7 +297,7 @@ State the three methods of heat transfer.
 ### Question 2 (3 marks)
 Explain why metals are good conductors of heat.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Metals have free electrons (1 mark)
 - These electrons can move quickly through the metal (1 mark)
 - They transfer energy efficiently between particles (1 mark)
@@ -307,7 +307,7 @@ Explain why metals are good conductors of heat.
 ### Question 3 (4 marks)
 Describe how convection currents are formed when water is heated in a beaker.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Water at bottom is heated and expands (1 mark)
 - Expanded water is less dense and rises (1 mark)
 - Cooler, denser water sinks to take its place (1 mark)
@@ -318,7 +318,7 @@ Describe how convection currents are formed when water is heated in a beaker.
 ### Question 4 (3 marks)
 Calculate the energy needed to heat 0.5 kg of aluminum from 20°C to 80°C. (Specific heat capacity of aluminum = 900 J/kg°C)
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: E = mcΔθ (1 mark)
 - E = 0.5 × 900 × 60 (1 mark)
 - E = 27,000 J (1 mark)
@@ -328,7 +328,7 @@ Calculate the energy needed to heat 0.5 kg of aluminum from 20°C to 80°C. (Spe
 ### Question 5 (4 marks)
 Explain why double glazing reduces heat loss from a house.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Double glazing has two panes with an air gap between (1 mark)
 - Air is a poor conductor, reducing heat loss by conduction (1 mark)
 - The trapped air cannot move easily, reducing convection (1 mark)
@@ -341,7 +341,7 @@ Convert:
 (a) 27°C to Kelvin (1 mark)
 (b) 350 K to Celsius (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) 27 + 273 = 300 K (1 mark)
 (b) 350 - 273 = 77°C (2 marks)
 
@@ -351,7 +351,7 @@ Convert:
 (a) Calculate the energy needed to melt 0.2 kg of ice at 0°C. (Specific latent heat of fusion = 334,000 J/kg) (2 marks)
 (b) Explain why the temperature stays constant during melting. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) E = m × Lf = 0.2 × 334,000 (1 mark)
     E = 66,800 J (1 mark)
 (b) Energy is used to break bonds between molecules (1 mark)
@@ -362,7 +362,7 @@ Convert:
 ### Question 8 (2 marks)
 State two features of a surface that make it a good absorber of infrared radiation.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Dark colour (1 mark)
 - Matte (not shiny) surface (1 mark)
 
@@ -371,7 +371,7 @@ State two features of a surface that make it a good absorber of infrared radiati
 ### Question 9 (3 marks)
 Explain why cavity wall insulation reduces heat loss from a house.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Insulation material traps air in the cavity (1 mark)
 - Air is a poor conductor of heat (1 mark)
 - This reduces heat loss through the walls by conduction (1 mark)
@@ -381,7 +381,7 @@ Explain why cavity wall insulation reduces heat loss from a house.
 ### Question 10 (4 marks)
 A 2 kg block of copper is heated with 39,000 J of energy. Calculate the temperature rise. (Specific heat capacity of copper = 390 J/kg°C)
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: E = mcΔθ (1 mark)
 - 39000 = 2 × 390 × Δθ (1 mark)
 - Δθ = 39000 ÷ 780 (1 mark)
@@ -391,27 +391,27 @@ A 2 kg block of copper is heated with 39,000 J of energy. Calculate the temperat
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe an experiment to compare how well different surfaces emit infrared radiation. (3 marks)
 (b) A kettle contains 1.5 kg of water at 20°C. Calculate the energy needed to bring the water to boiling point (100°C). (Specific heat capacity of water = 4200 J/kg°C) (2 marks)
 (c) Explain why the kettle heating element is placed at the bottom. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Experiment description***
+**(a) Experiment description**
 - Use Leslie's cube or similar apparatus with different surfaces (1 mark)
 - Heat to constant temperature and measure radiation (e.g., with infrared detector) (1 mark)
 - Compare readings for different surfaces (1 mark)
 - Or: use differential temperature measurement approach
 
-**(b) Energy calculation***
+**(b) Energy calculation**
 - E = mcΔθ = 1.5 × 4200 × 80 (1 mark)
 - E = 504,000 J (1 mark)
 
-**(c) Heating element position***
+**(c) Heating element position**
 - Hot water rises, creating convection currents (1 mark)
 - This circulates water and heats it evenly (1 mark)
 
 ---
 
-*End of Chapter 15 Quiz**
+*End of Chapter 15 Quiz*

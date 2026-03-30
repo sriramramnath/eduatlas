@@ -15,7 +15,7 @@ D) Plastic
 
 **Answer: C**
 
-**Explanation**: Iron is a ferromagnetic material. Copper, aluminum, and plastic are not magnetic.*
+**Explanation**: Iron is a ferromagnetic material. Copper, aluminum, and plastic are not magnetic.
 
 ---
 
@@ -29,7 +29,7 @@ D) The motor effect
 
 **Answer: B**
 
-**Explanation**: The right-hand grip rule gives the direction of the magnetic field around a current-carrying wire.*
+**Explanation**: The right-hand grip rule gives the direction of the magnetic field around a current-carrying wire.
 
 ---
 
@@ -43,7 +43,7 @@ D) Have no effect on each other
 
 **Answer: B**
 
-**Explanation**: Like poles repel, opposite poles attract.*
+**Explanation**: Like poles repel, opposite poles attract.
 
 ---
 
@@ -57,7 +57,7 @@ D) Aluminum
 
 **Answer: B**
 
-**Explanation**: Soft iron is easy to magnetize and demagnetize, making it ideal for electromagnets.*
+**Explanation**: Soft iron is easy to magnetize and demagnetize, making it ideal for electromagnets.
 
 ---
 
@@ -71,7 +71,7 @@ D) Finding the voltage in a circuit
 
 **Answer: B**
 
-**Explanation**: Fleming's left-hand rule (First = Field, Second = Current, Thumb = Force) is used for the motor effect.*
+**Explanation**: Fleming's left-hand rule (First = Field, Second = Current, Thumb = Force) is used for the motor effect.
 
 ---
 
@@ -85,7 +85,7 @@ D) Reduces friction
 
 **Answer: B**
 
-**Explanation**: The commutator reverses the current direction to keep the motor rotating in the same direction.*
+**Explanation**: The commutator reverses the current direction to keep the motor rotating in the same direction.
 
 ---
 
@@ -99,7 +99,7 @@ D) Using a steel core
 
 **Answer: C**
 
-**Explanation**: More current, more turns, and a soft iron core all increase electromagnet strength.*
+**Explanation**: More current, more turns, and a soft iron core all increase electromagnet strength.
 
 ---
 
@@ -113,7 +113,7 @@ D) A coil with no core
 
 **Answer: C**
 
-**Explanation**: Earth behaves like a giant bar magnet with magnetic poles near the geographic poles.*
+**Explanation**: Earth behaves like a giant bar magnet with magnetic poles near the geographic poles.
 
 ---
 
@@ -127,7 +127,7 @@ D) In any material
 
 **Answer: B**
 
-**Explanation**: The motor effect - a current-carrying wire in a magnetic field experiences a force.*
+**Explanation**: The motor effect - a current-carrying wire in a magnetic field experiences a force.
 
 ---
 
@@ -141,7 +141,7 @@ D) It is cheaper
 
 **Answer: B**
 
-**Explanation**: Electromagnets can be switched on/off, their strength varied, and pole direction changed.*
+**Explanation**: Electromagnets can be switched on/off, their strength varied, and pole direction changed.
 
 ---
 
@@ -155,7 +155,7 @@ D) Random directions
 
 **Answer: B**
 
-**Explanation**: Magnetic field lines go from North pole to South pole outside the magnet.*
+**Explanation**: Magnetic field lines go from North pole to South pole outside the magnet.
 
 ---
 
@@ -169,7 +169,7 @@ D) Reduce the number of turns
 
 **Answer: C**
 
-**Explanation**: More current, stronger magnets, or more turns all increase motor speed.*
+**Explanation**: More current, stronger magnets, or more turns all increase motor speed.
 
 ---
 
@@ -189,7 +189,7 @@ Magnetic field lines go from North to South.
 
 **Answer: True***
 
-**Explanation**: Outside a magnet, field lines go from North pole to South pole.*
+**Explanation**: Outside a magnet, field lines go from North pole to South pole.
 
 ---
 
@@ -207,7 +207,7 @@ A compass needle points toward the Earth's magnetic North Pole.
 
 **Answer: True***
 
-**Explanation**: A compass needle (which is a small magnet with North seeking pole) points toward Earth's magnetic North Pole.*
+**Explanation**: A compass needle (which is a small magnet with North seeking pole) points toward Earth's magnetic North Pole.
 
 ---
 
@@ -225,7 +225,7 @@ Increasing the number of turns on a coil increases the strength of an electromag
 
 **Answer: True***
 
-**Explanation**: More turns means more magnetic field, making a stronger electromagnet.*
+**Explanation**: More turns means more magnetic field, making a stronger electromagnet.
 
 ---
 
@@ -234,7 +234,7 @@ A solenoid with a current flowing through it behaves like a bar magnet.
 
 **Answer: True***
 
-**Explanation**: A current-carrying solenoid produces a magnetic field similar to a bar magnet.*
+**Explanation**: A current-carrying solenoid produces a magnetic field similar to a bar magnet.
 
 ---
 
@@ -252,7 +252,7 @@ Hard magnetic materials are used for permanent magnets.
 
 **Answer: True***
 
-**Explanation**: Hard magnetic materials (like steel) retain their magnetism, making them suitable for permanent magnets.*
+**Explanation**: Hard magnetic materials (like steel) retain their magnetism, making them suitable for permanent magnets.
 
 ---
 
@@ -279,7 +279,7 @@ Loudspeakers use the motor effect to produce sound.
 
 **Answer: True***
 
-**Explanation**: Loudspeakers use a varying current in a coil in a magnetic field to move a cone and produce sound.*
+**Explanation**: Loudspeakers use a varying current in a coil in a magnetic field to move a cone and produce sound.
 
 ---
 
@@ -288,7 +288,7 @@ Loudspeakers use the motor effect to produce sound.
 ### Question 1 (2 marks)
 State two properties of a magnet.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Has two poles (North and South) (1 mark)
   - Like poles repel (1 mark)
@@ -300,7 +300,7 @@ State two properties of a magnet.
 ### Question 2 (3 marks)
 Describe the magnetic field pattern around a straight current-carrying wire.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Circular field lines (1 mark)
 - Concentric circles around wire (1 mark)
 - Direction given by right-hand grip rule (1 mark)
@@ -310,7 +310,7 @@ Describe the magnetic field pattern around a straight current-carrying wire.
 ### Question 3 (4 marks)
 Explain how an electromagnet differs from a permanent magnet.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Electromagnet can be switched on/off (1 mark)
 - Electromagnet strength can be varied (1 mark)
 - Electromagnet pole direction can be changed (1 mark)
@@ -321,7 +321,7 @@ Explain how an electromagnet differs from a permanent magnet.
 ### Question 4 (3 marks)
 State Fleming's left-hand rule for the motor effect.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - First finger = Field (N to S) (1 mark)
 - Second finger = Current (1 mark)
 - Thumb = Force/Motion (1 mark)
@@ -331,7 +331,7 @@ State Fleming's left-hand rule for the motor effect.
 ### Question 5 (4 marks)
 Describe how a simple DC electric motor works.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Coil carries current in magnetic field (1 mark)
 - Force on coil causes rotation (1 mark)
 - Commutator reverses current every half turn (1 mark)
@@ -342,7 +342,7 @@ Describe how a simple DC electric motor works.
 ### Question 6 (3 marks)
 State three factors that affect the strength of an electromagnet.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any three from:
   - Number of turns on coil (1 mark)
   - Current flowing through coil (1 mark)
@@ -354,7 +354,7 @@ State three factors that affect the strength of an electromagnet.
 ### Question 7 (4 marks)
 Explain why soft iron is used as the core of an electromagnet rather than steel.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Soft iron magnetizes easily (1 mark)
 - Soft iron demagnetizes easily when current stops (1 mark)
 - Steel retains magnetism (hard magnetic material) (1 mark)
@@ -365,7 +365,7 @@ Explain why soft iron is used as the core of an electromagnet rather than steel.
 ### Question 8 (2 marks)
 State two ways to increase the speed of a DC motor.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Increase current (1 mark)
   - Use stronger magnets (1 mark)
@@ -376,7 +376,7 @@ State two ways to increase the speed of a DC motor.
 ### Question 9 (3 marks)
 Describe an experiment to show that a current-carrying wire produces a magnetic field.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Pass current through straight wire (1 mark)
 - Place compass near wire / sprinkle iron filings (1 mark)
 - Compass deflects / iron filings show circular pattern (1 mark)
@@ -386,7 +386,7 @@ Describe an experiment to show that a current-carrying wire produces a magnetic 
 ### Question 10 (4 marks)
 A wire of length 0.5 m carries a current of 3 A perpendicular to a magnetic field of flux density 0.4 T. Calculate the force on the wire.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: F = BIL (1 mark)
 - F = 0.4 × 3 × 0.5 (1 mark)
 - F = 0.6 N (2 marks)
@@ -395,22 +395,22 @@ A wire of length 0.5 m carries a current of 3 A perpendicular to a magnetic fiel
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe the construction of an electromagnet. (3 marks)
 (b) Explain why electromagnets are used in scrap yards for lifting iron and steel. (3 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Electromagnet construction***
+**(a) Electromagnet construction**
 - Coil of insulated wire (1 mark)
 - Wrapped around soft iron core (1 mark)
 - Connected to power supply (1 mark)
 
-**(b) Use in scrap yards***
+**(b) Use in scrap yards**
 - Can be switched on to attract iron/steel (1 mark)
 - Can be switched off to release load (1 mark)
 - Allows easy lifting and moving of magnetic materials (1 mark)
 
 ---
 
-*End of Chapter 20 Quiz**
+*End of Chapter 20 Quiz*

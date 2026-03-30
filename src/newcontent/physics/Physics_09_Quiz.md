@@ -15,7 +15,7 @@ D) Discharged
 
 **Answer: B**
 
-**Explanation**: Polythene gains electrons from the cloth when rubbed, becoming negatively charged.*
+**Explanation**: Polythene gains electrons from the cloth when rubbed, becoming negatively charged.
 
 ---
 
@@ -29,7 +29,7 @@ D) Ions
 
 **Answer: C**
 
-**Explanation**: Only electrons can be transferred between materials. Protons are fixed in the nucleus.*
+**Explanation**: Only electrons can be transferred between materials. Protons are fixed in the nucleus.
 
 ---
 
@@ -43,7 +43,7 @@ D) Cancel each other's charge
 
 **Answer: B**
 
-**Explanation**: Like charges repel, opposite charges attract.*
+**Explanation**: Like charges repel, opposite charges attract.
 
 ---
 
@@ -57,7 +57,7 @@ D) Random
 
 **Answer: B**
 
-**Explanation**: Electric field lines show the direction a positive test charge would move, so they go from positive to negative.*
+**Explanation**: Electric field lines show the direction a positive test charge would move, so they go from positive to negative.
 
 ---
 
@@ -71,7 +71,7 @@ D) Radiation
 
 **Answer: B**
 
-**Explanation**: Induction causes charge separation in the neutral object, leading to attraction.*
+**Explanation**: Induction causes charge separation in the neutral object, leading to attraction.
 
 ---
 
@@ -85,7 +85,7 @@ D) It increases temperature
 
 **Answer: A**
 
-**Explanation**: Static discharge can damage sensitive electronic components, and sparks can ignite flammable materials.*
+**Explanation**: Static discharge can damage sensitive electronic components, and sparks can ignite flammable materials.
 
 ---
 
@@ -99,7 +99,7 @@ D) Reduce air resistance
 
 **Answer: B**
 
-**Explanation**: Conducting straps allow any static charge to flow safely to earth, preventing sparks that could ignite fuel.*
+**Explanation**: Conducting straps allow any static charge to flow safely to earth, preventing sparks that could ignite fuel.
 
 ---
 
@@ -113,7 +113,7 @@ D) The drum is wet
 
 **Answer: B**
 
-**Explanation**: The charged drum attracts oppositely charged toner particles to create the image.*
+**Explanation**: The charged drum attracts oppositely charged toner particles to create the image.
 
 ---
 
@@ -127,7 +127,7 @@ D) Discharged
 
 **Answer: B**
 
-**Explanation**: Perspex loses electrons to the cloth when rubbed, becoming positively charged.*
+**Explanation**: Perspex loses electrons to the cloth when rubbed, becoming positively charged.
 
 ---
 
@@ -141,7 +141,7 @@ D) Generate electricity
 
 **Answer: B**
 
-**Explanation**: The gold leaf electroscope detects the presence of electric charge by the repulsion of the leaf.*
+**Explanation**: The gold leaf electroscope detects the presence of electric charge by the repulsion of the leaf.
 
 ---
 
@@ -155,7 +155,7 @@ D) Temperature increases
 
 **Answer: B**
 
-**Explanation**: Lightning is a massive electrostatic discharge between charged clouds and the ground.*
+**Explanation**: Lightning is a massive electrostatic discharge between charged clouds and the ground.
 
 ---
 
@@ -169,7 +169,7 @@ D) Generator
 
 **Answer: B**
 
-**Explanation**: Electrostatic precipitators use electrostatic attraction to remove dust particles from smoke.*
+**Explanation**: Electrostatic precipitators use electrostatic attraction to remove dust particles from smoke.
 
 ---
 
@@ -198,7 +198,7 @@ Electric field lines point from positive to negative charges.
 
 **Answer: True***
 
-**Explanation**: Field lines show the direction a positive test charge would move, from positive to negative.*
+**Explanation**: Field lines show the direction a positive test charge would move, from positive to negative.
 
 ---
 
@@ -216,7 +216,7 @@ Earthing is an important safety measure for preventing static electricity hazard
 
 **Answer: True***
 
-**Explanation**: Earthing provides a safe path for static charge to flow to ground, preventing dangerous sparks.*
+**Explanation**: Earthing provides a safe path for static charge to flow to ground, preventing dangerous sparks.
 
 ---
 
@@ -225,7 +225,7 @@ The gold leaf in an electroscope rises when the electroscope is charged.
 
 **Answer: True***
 
-**Explanation**: When charged, both the metal rod and gold leaf have the same charge, causing them to repel and the leaf to rise.*
+**Explanation**: When charged, both the metal rod and gold leaf have the same charge, causing them to repel and the leaf to rise.
 
 ---
 
@@ -234,7 +234,7 @@ Static electricity can cause explosions in grain silos.
 
 **Answer: True***
 
-**Explanation**: Static sparks can ignite flammable dust in grain silos, causing explosions.*
+**Explanation**: Static sparks can ignite flammable dust in grain silos, causing explosions.
 
 ---
 
@@ -252,7 +252,7 @@ Electrostatic spray painting uses the principle that opposite charges attract.
 
 **Answer: True***
 
-**Explanation**: Paint droplets are charged and attracted to the earthed (oppositely charged) object being painted.*
+**Explanation**: Paint droplets are charged and attracted to the earthed (oppositely charged) object being painted.
 
 ---
 
@@ -261,7 +261,7 @@ Humid air reduces static electricity problems.
 
 **Answer: True***
 
-**Explanation**: Moist air conducts electricity better than dry air, allowing static charges to dissipate.*
+**Explanation**: Moist air conducts electricity better than dry air, allowing static charges to dissipate.
 
 ---
 
@@ -288,7 +288,7 @@ When ebonite is rubbed with fur, the ebonite becomes positively charged.
 ### Question 1 (2 marks)
 Explain how a polythene rod becomes negatively charged when rubbed with a cloth.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Electrons transfer from the cloth to the polythene (1 mark)
 - Polythene gains electrons, becoming negatively charged (1 mark)
 
@@ -297,7 +297,7 @@ Explain how a polythene rod becomes negatively charged when rubbed with a cloth.
 ### Question 2 (3 marks)
 Explain why a charged comb can attract small pieces of paper.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The charged comb induces charge separation in the neutral paper (1 mark)
 - Opposite charges in the paper are attracted to the comb (1 mark)
 - The attraction is stronger than the repulsion because opposite charges are closer (1 mark)
@@ -309,7 +309,7 @@ Describe the electric field pattern around:
 (a) A positive point charge (2 marks)
 (b) Two opposite charges (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Field lines radiate outward from the charge (1 mark)
     Arrows point away from positive charge (1 mark)
 (b) Field lines go from positive to negative charge (1 mark)
@@ -320,7 +320,7 @@ Describe the electric field pattern around:
 ### Question 4 (3 marks)
 Explain why fuel tankers have conducting straps connecting the tanker to the ground.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Friction can cause charge to build up on the tanker (1 mark)
 - Conducting strap provides a path for charge to flow to earth (1 mark)
 - This prevents sparks that could ignite fuel vapour (1 mark)
@@ -330,7 +330,7 @@ Explain why fuel tankers have conducting straps connecting the tanker to the gro
 ### Question 5 (4 marks)
 Explain how an electrostatic precipitator removes dust from smoke.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Wires in the chimney are given a high voltage (1 mark)
 - Dust particles become charged as they pass the wires (1 mark)
 - Charged particles are attracted to oppositely charged collecting plates (1 mark)
@@ -341,7 +341,7 @@ Explain how an electrostatic precipitator removes dust from smoke.
 ### Question 6 (3 marks)
 Explain why electronic components are sensitive to static electricity and how they are protected.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Static discharge can damage sensitive electronic components (1 mark)
 - Protection methods include anti-static mats (1 mark)
 - And wrist straps / humidity control / conducting packaging (1 mark)
@@ -351,7 +351,7 @@ Explain why electronic components are sensitive to static electricity and how th
 ### Question 7 (4 marks)
 Describe an experiment to show that like charges repel and opposite charges attract.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Charge two polythene rods by rubbing with cloth (both negative) (1 mark)
 - Bring them together - they repel (1 mark)
 - Charge a perspex rod (positive) and bring near polythene rod (negative) (1 mark)
@@ -362,7 +362,7 @@ Describe an experiment to show that like charges repel and opposite charges attr
 ### Question 8 (2 marks)
 State two applications of electrostatics.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Photocopiers (1 mark)
   - Inkjet printers (1 mark)
@@ -374,7 +374,7 @@ State two applications of electrostatics.
 ### Question 9 (3 marks)
 Explain how a gold leaf electroscope can be used to detect charge.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - When charged object touches the cap, charge flows to the gold leaf (1 mark)
 - The leaf and rod have the same charge and repel (1 mark)
 - The leaf rises, indicating the presence of charge (1 mark)
@@ -384,7 +384,7 @@ Explain how a gold leaf electroscope can be used to detect charge.
 ### Question 10 (4 marks)
 Explain why lightning occurs during thunderstorms.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Charge separation occurs in storm clouds (negative at bottom) (1 mark)
 - This induces positive charge on the ground below (1 mark)
 - When potential difference is large enough, air breaks down (1 mark)
@@ -394,30 +394,30 @@ Explain why lightning occurs during thunderstorms.
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Explain why a student receives a shock when touching a metal door handle after walking across a carpet. (3 marks)
 (b) Describe two safety measures used in hospital operating theatres to prevent problems caused by static electricity. (2 marks)
 (c) Explain how an inkjet printer uses electrostatics to position ink droplets accurately. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Static shock explanation***
+**(a) Static shock explanation**
 - Friction between shoes and carpet causes charge build-up on student (1 mark)
 - Student becomes charged (usually positive) (1 mark)
 - When touching the earthed metal handle, charge flows rapidly, causing a shock (1 mark)
 
-**(b) Safety measures in operating theatres***
+**(b) Safety measures in operating theatres**
 - Any two from:
   - Conducting floors to prevent charge build-up (1 mark)
   - Anti-static clothing for staff (1 mark)
   - Humidity control to allow charge dissipation (1 mark)
   - Special equipment grounding (1 mark)
 
-**(c) Inkjet printer***
+**(c) Inkjet printer**
 - Ink droplets are given a precise charge (1 mark)
 - Charged plates deflect the droplets to the correct position (1 mark)
 - Or: charged droplets attracted to the paper (1 mark)
 
 ---
 
-*End of Chapter 9 Quiz**
+*End of Chapter 9 Quiz*

@@ -15,7 +15,7 @@ D) Angles are unrelated
 
 **Answer: B**
 
-**Explanation**: The law of reflection states that the angle of incidence equals the angle of reflection.*
+**Explanation**: The law of reflection states that the angle of incidence equals the angle of reflection.
 
 ---
 
@@ -29,7 +29,7 @@ D) Slows down and bends away from the normal
 
 **Answer: B**
 
-**Explanation**: Light slows down in denser media and bends towards the normal when entering a denser medium.*
+**Explanation**: Light slows down in denser media and bends towards the normal when entering a denser medium.
 
 ---
 
@@ -43,7 +43,7 @@ D) Any medium to any other
 
 **Answer: B**
 
-**Explanation**: TIR occurs when light travels from a denser to a less dense medium and the angle of incidence exceeds the critical angle.*
+**Explanation**: TIR occurs when light travels from a denser to a less dense medium and the angle of incidence exceeds the critical angle.
 
 ---
 
@@ -57,7 +57,7 @@ D) 90°
 
 **Answer: A**
 
-**Explanation**: sin(c) = 1/n = 1/2 = 0.5, so c = 30°.*
+**Explanation**: sin(c) = 1/n = 1/2 = 0.5, so c = 30°.
 
 ---
 
@@ -71,7 +71,7 @@ D) Diffraction
 
 **Answer: C**
 
-**Explanation**: Light undergoes repeated total internal reflection along the core of the optical fibre.*
+**Explanation**: Light undergoes repeated total internal reflection along the core of the optical fibre.
 
 ---
 
@@ -85,7 +85,7 @@ D) Curved on one side only
 
 **Answer: B**
 
-**Explanation**: Converging (convex) lenses are thicker in the middle and converge light to a focal point.*
+**Explanation**: Converging (convex) lenses are thicker in the middle and converge light to a focal point.
 
 ---
 
@@ -99,7 +99,7 @@ D) Virtual and inverted
 
 **Answer: B**
 
-**Explanation**: When the object is inside F, a converging lens produces a virtual, upright, magnified image (like a magnifying glass).*
+**Explanation**: When the object is inside F, a converging lens produces a virtual, upright, magnified image (like a magnifying glass).
 
 ---
 
@@ -113,7 +113,7 @@ D) Violet
 
 **Answer: D**
 
-**Explanation**: Violet light has the shortest wavelength and is deviated most during dispersion.*
+**Explanation**: Violet light has the shortest wavelength and is deviated most during dispersion.
 
 ---
 
@@ -127,7 +127,7 @@ D) Virtual and inverted
 
 **Answer: B**
 
-**Explanation**: Plane mirrors produce virtual, upright images that are laterally inverted.*
+**Explanation**: Plane mirrors produce virtual, upright images that are laterally inverted.
 
 ---
 
@@ -141,7 +141,7 @@ D) Refracts red light
 
 **Answer: B**
 
-**Explanation**: A red object reflects red light and absorbs all other colours of visible light.*
+**Explanation**: A red object reflects red light and absorbs all other colours of visible light.
 
 ---
 
@@ -155,7 +155,7 @@ D) Frequency in vacuum ÷ frequency in medium
 
 **Answer: B**
 
-**Explanation**: n = c/v, where c is speed in vacuum and v is speed in the medium.*
+**Explanation**: n = c/v, where c is speed in vacuum and v is speed in the medium.
 
 ---
 
@@ -169,7 +169,7 @@ D) Diamond sparkle
 
 **Answer: C**
 
-**Explanation**: A magnifying glass uses refraction through a lens, not total internal reflection.*
+**Explanation**: A magnifying glass uses refraction through a lens, not total internal reflection.
 
 ---
 
@@ -207,7 +207,7 @@ A diverging lens always produces a virtual image.
 
 **Answer: True***
 
-**Explanation**: Diverging (concave) lenses always produce virtual, upright, smaller images regardless of object position.*
+**Explanation**: Diverging (concave) lenses always produce virtual, upright, smaller images regardless of object position.
 
 ---
 
@@ -216,7 +216,7 @@ White light is a mixture of all colours of the visible spectrum.
 
 **Answer: True***
 
-**Explanation**: White light can be split into the colours of the spectrum (ROYGBIV) by a prism.*
+**Explanation**: White light can be split into the colours of the spectrum (ROYGBIV) by a prism.
 
 ---
 
@@ -225,7 +225,7 @@ The critical angle depends on the colour of light.
 
 **Answer: True***
 
-**Explanation**: Different colours have slightly different refractive indices, so they have slightly different critical angles (dispersion).*
+**Explanation**: Different colours have slightly different refractive indices, so they have slightly different critical angles (dispersion).
 
 ---
 
@@ -243,7 +243,7 @@ A convex lens is also called a converging lens.
 
 **Answer: True***
 
-**Explanation**: Convex lenses converge parallel rays to a focal point, so they are called converging lenses.*
+**Explanation**: Convex lenses converge parallel rays to a focal point, so they are called converging lenses.
 
 ---
 
@@ -252,7 +252,7 @@ The image formed by a plane mirror is laterally inverted.
 
 **Answer: True***
 
-**Explanation**: Images in plane mirrors are left-right reversed (laterally inverted).*
+**Explanation**: Images in plane mirrors are left-right reversed (laterally inverted).
 
 ---
 
@@ -261,7 +261,7 @@ Diamond has a high refractive index, which contributes to its sparkle.
 
 **Answer: True***
 
-**Explanation**: Diamond's high refractive index (2.42) means light undergoes total internal reflection easily, creating brilliant sparkle.*
+**Explanation**: Diamond's high refractive index (2.42) means light undergoes total internal reflection easily, creating brilliant sparkle.
 
 ---
 
@@ -288,7 +288,7 @@ The primary colours of light are red, yellow, and blue.
 ### Question 1 (2 marks)
 State the law of reflection.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The angle of incidence equals the angle of reflection (1 mark)
 - Both angles measured from the normal (1 mark)
 
@@ -297,7 +297,7 @@ State the law of reflection.
 ### Question 2 (3 marks)
 Explain why light bends when it passes from air into glass.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Light slows down in glass (1 mark)
 - This causes a change in direction (1 mark)
 - Light bends towards the normal (1 mark)
@@ -307,7 +307,7 @@ Explain why light bends when it passes from air into glass.
 ### Question 3 (4 marks)
 State the two conditions necessary for total internal reflection to occur.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Light must travel from a denser to a less dense medium (1 mark)
 - The angle of incidence must be greater than the critical angle (1 mark)
 - Explanation of first condition (1 mark)
@@ -318,7 +318,7 @@ State the two conditions necessary for total internal reflection to occur.
 ### Question 4 (3 marks)
 A glass has refractive index 1.5. Calculate the critical angle for this glass.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: sin(c) = 1/n (1 mark)
 - sin(c) = 1/1.5 = 0.667 (1 mark)
 - c = 41.8° (accept 42°) (1 mark)
@@ -328,7 +328,7 @@ A glass has refractive index 1.5. Calculate the critical angle for this glass.
 ### Question 5 (4 marks)
 Explain how an optical fibre transmits light signals over long distances.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Light enters the core of the fibre (1 mark)
 - The core has a higher refractive index than the cladding (1 mark)
 - Light undergoes total internal reflection at the core-cladding boundary (1 mark)
@@ -339,7 +339,7 @@ Explain how an optical fibre transmits light signals over long distances.
 ### Question 6 (3 marks)
 Describe the image formed by a plane mirror.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Virtual (1 mark)
 - Upright / same size as object (1 mark)
 - Laterally inverted / same distance behind mirror (1 mark)
@@ -351,7 +351,7 @@ White light passes through a prism and produces a spectrum.
 (a) What is this phenomenon called? (1 mark)
 (b) Explain why different colours are deviated by different amounts. (3 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Dispersion (1 mark)
 (b) Different colours have different wavelengths (1 mark)
 - Different wavelengths refract by different amounts (1 mark)
@@ -362,7 +362,7 @@ White light passes through a prism and produces a spectrum.
 ### Question 8 (2 marks)
 State two advantages of using optical fibres instead of copper wires for communication.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Higher bandwidth / can carry more data (1 mark)
   - Less signal loss over distance (1 mark)
@@ -375,7 +375,7 @@ State two advantages of using optical fibres instead of copper wires for communi
 ### Question 9 (3 marks)
 Explain why a magnifying glass produces a magnified image.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The object is placed inside the focal length of the converging lens (1 mark)
 - A virtual image is formed (1 mark)
 - The image is upright and magnified (1 mark)
@@ -387,7 +387,7 @@ Light travels from air into water (refractive index 1.33).
 (a) Calculate the speed of light in water. (2 marks)
 (b) Explain what happens to the wavelength of light as it enters the water. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) v = c/n = 3×10⁸/1.33 (1 mark)
     v = 2.26 × 10⁸ m/s (accept 2.25 × 10⁸) (1 mark)
 (b) Wavelength decreases (1 mark)
@@ -397,23 +397,23 @@ Light travels from air into water (refractive index 1.33).
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Explain the difference between specular and diffuse reflection. (2 marks)
 (b) Describe an experiment to demonstrate total internal reflection. (2 marks)
 (c) Explain why diamond sparkles more than glass. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Specular vs diffuse reflection***
+**(a) Specular vs diffuse reflection**
 - Specular: smooth surface, parallel rays reflected parallel, clear image formed (1 mark)
 - Diffuse: rough surface, light scattered in different directions, no clear image (1 mark)
 
-**(b) TIR experiment***
+**(b) TIR experiment**
 - Shine light through semi-circular glass block (1 mark)
 - Increase angle of incidence until light no longer emerges / reflects internally (1 mark)
 - Or: demonstrate with optical fibre or water jet
 
-**(c) Diamond sparkle***
+**(c) Diamond sparkle**
 - Diamond has higher refractive index than glass (1 mark)
 - This gives a smaller critical angle / more TIR occurs (1 mark)
 - Light is trapped and reflected many times, creating sparkle (1 mark)
@@ -421,4 +421,4 @@ Light travels from air into water (refractive index 1.33).
 
 ---
 
-*End of Chapter 12 Quiz**
+*End of Chapter 12 Quiz*

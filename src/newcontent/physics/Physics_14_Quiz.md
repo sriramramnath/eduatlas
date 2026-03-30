@@ -15,7 +15,7 @@ D) Pascal
 
 **Answer: C**
 
-**Explanation**: Energy is measured in joules (J).*
+**Explanation**: Energy is measured in joules (J).
 
 ---
 
@@ -29,7 +29,7 @@ D) 32 J
 
 **Answer: C**
 
-**Explanation**: KE = ½mv² = ½ × 2 × 4² = ½ × 2 × 16 = 16 J.*
+**Explanation**: KE = ½mv² = ½ × 2 × 4² = ½ × 2 × 16 = 16 J.
 
 ---
 
@@ -43,7 +43,7 @@ D) 450 J
 
 **Answer: C**
 
-**Explanation**: GPE = mgh = 5 × 10 × 3 = 150 J.*
+**Explanation**: GPE = mgh = 5 × 10 × 3 = 150 J.
 
 ---
 
@@ -57,7 +57,7 @@ D) Chemical → KE
 
 **Answer: B**
 
-**Explanation**: As a ball falls, it loses gravitational potential energy and gains kinetic energy.*
+**Explanation**: As a ball falls, it loses gravitational potential energy and gains kinetic energy.
 
 ---
 
@@ -71,7 +71,7 @@ D) 1400%
 
 **Answer: B**
 
-**Explanation**: Efficiency = 600/800 = 0.75 = 75%.*
+**Explanation**: Efficiency = 600/800 = 0.75 = 75%.
 
 ---
 
@@ -85,7 +85,7 @@ D) Nuclear fuel
 
 **Answer: C**
 
-**Explanation**: Wind is renewable - it won't run out. Coal, natural gas, and nuclear fuel are non-renewable.*
+**Explanation**: Wind is renewable - it won't run out. Coal, natural gas, and nuclear fuel are non-renewable.
 
 ---
 
@@ -99,7 +99,7 @@ D) Halves
 
 **Answer: C**
 
-**Explanation**: KE = ½mv². If v doubles, v² quadruples, so KE quadruples.*
+**Explanation**: KE = ½mv². If v doubles, v² quadruples, so KE quadruples.
 
 ---
 
@@ -113,7 +113,7 @@ D) Chemical
 
 **Answer: A**
 
-**Explanation**: Friction is a force, not a form of energy. It can transfer energy to thermal energy.*
+**Explanation**: Friction is a force, not a form of energy. It can transfer energy to thermal energy.
 
 ---
 
@@ -127,7 +127,7 @@ D) 200 m/s
 
 **Answer: B**
 
-**Explanation**: Using mgh = ½mv²: v² = 2gh = 2 × 10 × 20 = 400, so v = 20 m/s.*
+**Explanation**: Using mgh = ½mv²: v² = 2gh = 2 × 10 × 20 = 400, so v = 20 m/s.
 
 ---
 
@@ -141,7 +141,7 @@ D) Chemical energy to electrical energy
 
 **Answer: B**
 
-**Explanation**: Solar panels convert light energy (from the Sun) into electrical energy.*
+**Explanation**: Solar panels convert light energy (from the Sun) into electrical energy.
 
 ---
 
@@ -155,7 +155,7 @@ D) 100% or more
 
 **Answer: D**
 
-**Explanation**: Due to energy losses (friction, heat), efficiency is always less than 100%.*
+**Explanation**: Due to energy losses (friction, heat), efficiency is always less than 100%.
 
 ---
 
@@ -169,7 +169,7 @@ D) Coal
 
 **Answer: D**
 
-**Explanation**: Burning coal releases CO₂. Wind, solar, and hydroelectric do not produce CO₂ during operation.*
+**Explanation**: Burning coal releases CO₂. Wind, solar, and hydroelectric do not produce CO₂ during operation.
 
 ---
 
@@ -189,7 +189,7 @@ Kinetic energy depends on the square of velocity.
 
 **Answer: True***
 
-**Explanation**: KE = ½mv², so kinetic energy is proportional to velocity squared.*
+**Explanation**: KE = ½mv², so kinetic energy is proportional to velocity squared.
 
 ---
 
@@ -207,7 +207,7 @@ Gravitational potential energy depends on an object's mass, height, and g.
 
 **Answer: True***
 
-**Explanation**: GPE = mgh, so it depends on mass, height, and gravitational field strength.*
+**Explanation**: GPE = mgh, so it depends on mass, height, and gravitational field strength.
 
 ---
 
@@ -234,7 +234,7 @@ Efficiency is calculated as useful output divided by total input.
 
 **Answer: True***
 
-**Explanation**: Efficiency = useful energy output ÷ total energy input.*
+**Explanation**: Efficiency = useful energy output ÷ total energy input.
 
 ---
 
@@ -243,7 +243,7 @@ A stationary object has zero kinetic energy.
 
 **Answer: True***
 
-**Explanation**: KE = ½mv². If v = 0, then KE = 0.*
+**Explanation**: KE = ½mv². If v = 0, then KE = 0.
 
 ---
 
@@ -252,7 +252,7 @@ Hydroelectric power uses the energy of flowing or falling water.
 
 **Answer: True***
 
-**Explanation**: Hydroelectric power stations use the kinetic and potential energy of water to turn turbines.*
+**Explanation**: Hydroelectric power stations use the kinetic and potential energy of water to turn turbines.
 
 ---
 
@@ -261,7 +261,7 @@ Elastic potential energy is stored in a compressed spring.
 
 **Answer: True***
 
-**Explanation**: Elastic potential energy is stored in any stretched or compressed elastic object.*
+**Explanation**: Elastic potential energy is stored in any stretched or compressed elastic object.
 
 ---
 
@@ -270,7 +270,7 @@ Burning fossil fuels releases carbon dioxide into the atmosphere.
 
 **Answer: True***
 
-**Explanation**: Fossil fuels (coal, oil, natural gas) contain carbon, which forms CO₂ when burned.*
+**Explanation**: Fossil fuels (coal, oil, natural gas) contain carbon, which forms CO₂ when burned.
 
 ---
 
@@ -288,7 +288,7 @@ The higher an object is above the ground, the less gravitational potential energ
 ### Question 1 (2 marks)
 State the principle of conservation of energy.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Energy cannot be created or destroyed (1 mark)
 - It can only be transferred from one form to another (1 mark)
 
@@ -297,7 +297,7 @@ State the principle of conservation of energy.
 ### Question 2 (3 marks)
 A 4 kg object moves at 5 m/s. Calculate its kinetic energy.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: KE = ½mv² (1 mark)
 - KE = ½ × 4 × 5² = ½ × 4 × 25 (1 mark)
 - KE = 50 J (1 mark)
@@ -309,7 +309,7 @@ A 3 kg ball is dropped from a height of 10 m.
 (a) Calculate its gravitational potential energy at the start. (g = 10 N/kg) (2 marks)
 (b) Calculate its kinetic energy just before hitting the ground. (Ignore air resistance) (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) GPE = mgh = 3 × 10 × 10 (1 mark)
     GPE = 300 J (1 mark)
 (b) By conservation of energy, KE = GPE lost (1 mark)
@@ -320,7 +320,7 @@ A 3 kg ball is dropped from a height of 10 m.
 ### Question 4 (3 marks)
 A machine has an efficiency of 40%. If the total energy input is 500 J, calculate the useful energy output.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Efficiency = useful output ÷ total input (1 mark)
 - 0.4 = useful output ÷ 500 (1 mark)
 - Useful output = 200 J (1 mark)
@@ -330,7 +330,7 @@ A machine has an efficiency of 40%. If the total energy input is 500 J, calculat
 ### Question 5 (4 marks)
 Explain the difference between renewable and non-renewable energy resources, giving one example of each.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Renewable: will not run out / naturally replenished (1 mark)
 - Example: solar, wind, hydroelectric, tidal, wave, geothermal, biomass (1 mark)
 - Non-renewable: will run out / finite resource (1 mark)
@@ -343,7 +343,7 @@ Describe the energy transfers that occur when:
 (a) A battery-powered torch is switched on (2 marks)
 (b) A car brakes to a stop (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Chemical → Electrical → Light + Thermal (2 marks)
 (b) Kinetic → Thermal (1 mark)
 
@@ -354,7 +354,7 @@ A ball of mass 0.5 kg is thrown vertically upwards with a speed of 10 m/s.
 (a) Calculate its initial kinetic energy. (2 marks)
 (b) Calculate the maximum height reached. (g = 10 N/kg) (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) KE = ½ × 0.5 × 10² = ½ × 0.5 × 100 (1 mark)
     KE = 25 J (1 mark)
 (b) At max height, KE = 0, so GPE = 25 J (1 mark)
@@ -365,7 +365,7 @@ A ball of mass 0.5 kg is thrown vertically upwards with a speed of 10 m/s.
 ### Question 8 (2 marks)
 State two advantages of using wind power instead of coal power.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Wind is renewable / won't run out (1 mark)
   - Wind produces no CO₂ when operating (1 mark)
@@ -377,7 +377,7 @@ State two advantages of using wind power instead of coal power.
 ### Question 9 (3 marks)
 Explain why the efficiency of a machine is always less than 100%.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Some energy is always wasted (1 mark)
 - Due to friction / heat / sound (1 mark)
 - This energy is transferred to the surroundings and is not useful (1 mark)
@@ -389,7 +389,7 @@ A car of mass 800 kg is travelling at 15 m/s.
 (a) Calculate its kinetic energy. (2 marks)
 (b) The driver applies the brakes and the car stops. State what happens to this kinetic energy. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) KE = ½ × 800 × 15² = ½ × 800 × 225 (1 mark)
     KE = 90,000 J (or 90 kJ) (1 mark)
 (b) KE is transferred to thermal energy (1 mark)
@@ -399,26 +399,26 @@ A car of mass 800 kg is travelling at 15 m/s.
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe how hydroelectric power generates electricity. (3 marks)
 (b) A 50 kg student climbs a rope to a height of 4 m. Calculate the gain in gravitational potential energy. (g = 10 N/kg) (2 marks)
 (c) Explain why hydroelectric power is considered a renewable energy resource. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Hydroelectric power***
+**(a) Hydroelectric power**
 - Water stored at height has gravitational potential energy (1 mark)
 - Water flows down, GPE converted to kinetic energy (1 mark)
 - Flowing water turns turbines which drive generators to produce electricity (1 mark)
 
-**(b) GPE calculation***
+**(b) GPE calculation**
 - GPE = mgh = 50 × 10 × 4 (1 mark)
 - GPE = 2000 J (1 mark)
 
-**(c) Renewable explanation***
+**(c) Renewable explanation**
 - Water cycle continuously replenishes the water supply (1 mark)
 - Or: rainfall fills reservoirs, so water source doesn't run out (1 mark)
 
 ---
 
-*End of Chapter 14 Quiz**
+*End of Chapter 14 Quiz*

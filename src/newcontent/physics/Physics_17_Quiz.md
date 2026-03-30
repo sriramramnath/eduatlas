@@ -15,7 +15,7 @@ D) Nuclear fuel
 
 **Answer: C**
 
-**Explanation**: Wind is renewable - it won't run out. Coal, natural gas, and nuclear fuel are finite resources.*
+**Explanation**: Wind is renewable - it won't run out. Coal, natural gas, and nuclear fuel are finite resources.
 
 ---
 
@@ -29,7 +29,7 @@ D) Coal
 
 **Answer: D**
 
-**Explanation**: Burning coal releases CO₂. Solar, wind, and hydroelectric do not produce CO₂ during operation.*
+**Explanation**: Burning coal releases CO₂. Solar, wind, and hydroelectric do not produce CO₂ during operation.
 
 ---
 
@@ -43,7 +43,7 @@ D) Heat → electrical → kinetic
 
 **Answer: A**
 
-**Explanation**: Heat produces steam, which drives turbines (kinetic), which drive generators (electrical).*
+**Explanation**: Heat produces steam, which drives turbines (kinetic), which drive generators (electrical).
 
 ---
 
@@ -57,7 +57,7 @@ D) Wave
 
 **Answer: C**
 
-**Explanation**: Hydroelectric power can be controlled and is not dependent on weather like solar, wind, and wave.*
+**Explanation**: Hydroelectric power can be controlled and is not dependent on weather like solar, wind, and wave.
 
 ---
 
@@ -71,7 +71,7 @@ D) Solar energy
 
 **Answer: B**
 
-**Explanation**: Nuclear power stations use nuclear fission (splitting of atomic nuclei) to release heat.*
+**Explanation**: Nuclear power stations use nuclear fission (splitting of atomic nuclei) to release heat.
 
 ---
 
@@ -85,7 +85,7 @@ D) To make it cheaper to produce
 
 **Answer: B**
 
-**Explanation**: Higher voltage means lower current for the same power, which reduces heat loss in transmission cables.*
+**Explanation**: Higher voltage means lower current for the same power, which reduces heat loss in transmission cables.
 
 ---
 
@@ -99,7 +99,7 @@ D) It produces radioactive waste
 
 **Answer: B**
 
-**Explanation**: Wind power requires wind to generate electricity, so it is weather dependent.*
+**Explanation**: Wind power requires wind to generate electricity, so it is weather dependent.
 
 ---
 
@@ -113,7 +113,7 @@ D) It produces acid rain
 
 **Answer: B**
 
-**Explanation**: Burning fossil fuels releases CO₂, a greenhouse gas that traps heat in the atmosphere.*
+**Explanation**: Burning fossil fuels releases CO₂, a greenhouse gas that traps heat in the atmosphere.
 
 ---
 
@@ -127,7 +127,7 @@ D) Geothermal
 
 **Answer: B**
 
-**Explanation**: Tidal power uses the rise and fall of tides (sea levels) to generate electricity.*
+**Explanation**: Tidal power uses the rise and fall of tides (sea levels) to generate electricity.
 
 ---
 
@@ -141,7 +141,7 @@ D) Heat from nuclear reactions
 
 **Answer: B**
 
-**Explanation**: Geothermal power uses natural heat from within the Earth.*
+**Explanation**: Geothermal power uses natural heat from within the Earth.
 
 ---
 
@@ -155,7 +155,7 @@ D) Solar farm
 
 **Answer: C**
 
-**Explanation**: Nuclear power stations produce radioactive waste that must be carefully stored and disposed of.*
+**Explanation**: Nuclear power stations produce radioactive waste that must be carefully stored and disposed of.
 
 ---
 
@@ -169,7 +169,7 @@ D) It is cheap
 
 **Answer: B**
 
-**Explanation**: Biomass is renewable because the organic material (plants) can be regrown, replacing what is used.*
+**Explanation**: Biomass is renewable because the organic material (plants) can be regrown, replacing what is used.
 
 ---
 
@@ -189,7 +189,7 @@ Nuclear power stations produce CO₂ during operation.
 
 **Answer: False***
 
-**Explanation**: Nuclear power stations do not produce CO₂ during operation (though some CO₂ is produced during construction and fuel processing).*
+**Explanation**: Nuclear power stations do not produce CO₂ during operation (though some CO₂ is produced during construction and fuel processing).
 
 ---
 
@@ -198,7 +198,7 @@ Hydroelectric power stations can respond quickly to changes in electricity deman
 
 **Answer: True***
 
-**Explanation**: Hydroelectric power can be increased or decreased quickly by controlling water flow through turbines.*
+**Explanation**: Hydroelectric power can be increased or decreased quickly by controlling water flow through turbines.
 
 ---
 
@@ -216,7 +216,7 @@ Fossil fuels are finite resources that will eventually run out.
 
 **Answer: True***
 
-**Explanation**: Coal, oil, and natural gas are finite resources formed over millions of years and will eventually be depleted.*
+**Explanation**: Coal, oil, and natural gas are finite resources formed over millions of years and will eventually be depleted.
 
 ---
 
@@ -234,7 +234,7 @@ High voltage transmission reduces energy losses in power lines.
 
 **Answer: True***
 
-**Explanation**: Higher voltage means lower current for the same power, which reduces heat loss (I²R losses) in cables.*
+**Explanation**: Higher voltage means lower current for the same power, which reduces heat loss (I²R losses) in cables.
 
 ---
 
@@ -252,7 +252,7 @@ Wind turbines convert kinetic energy into electrical energy.
 
 **Answer: True***
 
-**Explanation**: Wind (kinetic energy) turns turbines, which drive generators to produce electrical energy.*
+**Explanation**: Wind (kinetic energy) turns turbines, which drive generators to produce electrical energy.
 
 ---
 
@@ -270,7 +270,7 @@ Biomass is carbon neutral if the plants are replaced.
 
 **Answer: True***
 
-**Explanation**: If plants are regrown, they absorb the same amount of CO₂ that was released when the previous plants were burned.*
+**Explanation**: If plants are regrown, they absorb the same amount of CO₂ that was released when the previous plants were burned.
 
 ---
 
@@ -288,7 +288,7 @@ Nuclear fusion is used in current nuclear power stations.
 ### Question 1 (2 marks)
 State two advantages of using solar power to generate electricity.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Renewable / free fuel (1 mark)
   - No pollution / CO₂ during operation (1 mark)
@@ -300,7 +300,7 @@ State two advantages of using solar power to generate electricity.
 ### Question 2 (3 marks)
 Explain why electricity is transmitted at high voltage.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - High voltage means lower current for same power (1 mark)
 - Lower current means less heat loss in cables (1 mark)
 - More efficient transmission / less energy wasted (1 mark)
@@ -310,7 +310,7 @@ Explain why electricity is transmitted at high voltage.
 ### Question 3 (4 marks)
 Describe how a coal-fired power station generates electricity.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Coal is burned to release heat (1 mark)
 - Heat boils water to produce steam (1 mark)
 - Steam drives turbines (1 mark)
@@ -321,7 +321,7 @@ Describe how a coal-fired power station generates electricity.
 ### Question 4 (3 marks)
 Explain why wind power is considered renewable but unreliable.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Renewable: wind will not run out / is naturally replenished (1 mark)
 - Unreliable: only generates when wind blows (1 mark)
 - Wind speed varies / cannot guarantee output (1 mark)
@@ -331,7 +331,7 @@ Explain why wind power is considered renewable but unreliable.
 ### Question 5 (4 marks)
 Compare nuclear power and coal power as methods of electricity generation.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Nuclear: no CO₂ during operation, produces radioactive waste (2 marks)
 - Coal: produces CO₂ and other pollutants, no radioactive waste (2 marks)
 - Both: reliable, use heat → steam → turbine → generator process
@@ -341,7 +341,7 @@ Compare nuclear power and coal power as methods of electricity generation.
 ### Question 6 (3 marks)
 State three disadvantages of using fossil fuels for electricity generation.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any three from:
   - Produce CO₂ (greenhouse gas) (1 mark)
   - Produce other pollutants (SO₂, NOx) (1 mark)
@@ -353,7 +353,7 @@ State three disadvantages of using fossil fuels for electricity generation.
 ### Question 7 (4 marks)
 Explain how hydroelectric power works and why it is considered reliable.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Water stored in reservoir / dam (1 mark)
 - Water released through turbines to generate electricity (1 mark)
 - Reliable: water flow can be controlled (1 mark)
@@ -364,7 +364,7 @@ Explain how hydroelectric power works and why it is considered reliable.
 ### Question 8 (2 marks)
 State two environmental problems caused by burning fossil fuels.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Global warming / climate change (1 mark)
   - Acid rain (1 mark)
@@ -376,7 +376,7 @@ State two environmental problems caused by burning fossil fuels.
 ### Question 9 (3 marks)
 Explain why tidal power is more predictable than wind power.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Tides follow regular, predictable patterns (1 mark)
 - Tides are caused by Moon's gravity (known in advance) (1 mark)
 - Wind is weather dependent / less predictable (1 mark)
@@ -386,7 +386,7 @@ Explain why tidal power is more predictable than wind power.
 ### Question 10 (4 marks)
 A student suggests that all countries should use only renewable energy resources. Discuss the advantages and disadvantages of this suggestion.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Advantages: no CO₂, won't run out, less pollution (2 marks)
 - Disadvantages: weather dependent, high initial cost, need backup, limited sites (2 marks)
 - Balanced argument showing understanding of both sides
@@ -395,26 +395,26 @@ A student suggests that all countries should use only renewable energy resources
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe how energy is generated in a nuclear power station. (3 marks)
 (b) Explain why some people are concerned about nuclear power. (2 marks)
 (c) Suggest one reason why a country might choose to use nuclear power despite these concerns. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Nuclear power generation***
+**(a) Nuclear power generation**
 - Nuclear fission releases heat (1 mark)
 - Heat boils water to produce steam (1 mark)
 - Steam drives turbines which drive generators (1 mark)
 
-**(b) Concerns about nuclear power***
+**(b) Concerns about nuclear power**
 - Any two from:
   - Risk of accidents (Chernobyl, Fukushima) (1 mark)
   - Radioactive waste disposal (1 mark)
   - High decommissioning costs (1 mark)
   - Terrorism risk (1 mark)
 
-**(c) Reason to use nuclear power***
+**(c) Reason to use nuclear power**
 - Any one from:
   - No CO₂ during operation (1 mark)
   - Reliable / not weather dependent (1 mark)
@@ -423,4 +423,4 @@ A student suggests that all countries should use only renewable energy resources
 
 ---
 
-*End of Chapter 17 Quiz**
+*End of Chapter 17 Quiz*

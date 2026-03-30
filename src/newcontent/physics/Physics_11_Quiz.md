@@ -15,7 +15,7 @@ D) Radio waves
 
 **Answer: D**
 
-**Explanation**: Radio waves have the longest wavelength in the electromagnetic spectrum.*
+**Explanation**: Radio waves have the longest wavelength in the electromagnetic spectrum.
 
 ---
 
@@ -29,7 +29,7 @@ D) 3 × 10⁹ m/s
 
 **Answer: C**
 
-**Explanation**: All electromagnetic waves travel at 3 × 10⁸ m/s in a vacuum.*
+**Explanation**: All electromagnetic waves travel at 3 × 10⁸ m/s in a vacuum.
 
 ---
 
@@ -43,7 +43,7 @@ D) X-rays
 
 **Answer: B**
 
-**Explanation**: Microwave ovens use microwaves, which are absorbed by water molecules causing heating.*
+**Explanation**: Microwave ovens use microwaves, which are absorbed by water molecules causing heating.
 
 ---
 
@@ -57,7 +57,7 @@ D) Are harmless to humans
 
 **Answer: B**
 
-**Explanation**: X-rays penetrate soft tissue but are absorbed by denser materials like bone, creating images.*
+**Explanation**: X-rays penetrate soft tissue but are absorbed by denser materials like bone, creating images.
 
 ---
 
@@ -71,7 +71,7 @@ D) Gamma rays
 
 **Answer: D**
 
-**Explanation**: Gamma rays, X-rays, and UV are ionizing. Radio, microwaves, infrared, and visible light are non-ionizing.*
+**Explanation**: Gamma rays, X-rays, and UV are ionizing. Radio, microwaves, infrared, and visible light are non-ionizing.
 
 ---
 
@@ -85,7 +85,7 @@ D) Sterilization
 
 **Answer: B**
 
-**Explanation**: Remote controls use infrared signals to communicate with devices.*
+**Explanation**: Remote controls use infrared signals to communicate with devices.
 
 ---
 
@@ -99,7 +99,7 @@ D) Violet
 
 **Answer: D**
 
-**Explanation**: Violet light has the shortest wavelength (about 400 nm) in the visible spectrum.*
+**Explanation**: Violet light has the shortest wavelength (about 400 nm) in the visible spectrum.
 
 ---
 
@@ -113,7 +113,7 @@ D) Microwave ovens
 
 **Answer: C**
 
-**Explanation**: Gamma rays are emitted during radioactive decay of unstable atomic nuclei.*
+**Explanation**: Gamma rays are emitted during radioactive decay of unstable atomic nuclei.
 
 ---
 
@@ -127,7 +127,7 @@ D) Ultraviolet
 
 **Answer: C**
 
-**Explanation**: Mobile phones use microwaves to transmit signals.*
+**Explanation**: Mobile phones use microwaves to transmit signals.
 
 ---
 
@@ -141,7 +141,7 @@ D) X-rays
 
 **Answer: C**
 
-**Explanation**: Sunscreen absorbs ultraviolet radiation, protecting skin from damage.*
+**Explanation**: Sunscreen absorbs ultraviolet radiation, protecting skin from damage.
 
 ---
 
@@ -155,7 +155,7 @@ D) Gamma rays
 
 **Answer: D**
 
-**Explanation**: Gamma rays have the highest frequency and highest energy in the EM spectrum.*
+**Explanation**: Gamma rays have the highest frequency and highest energy in the EM spectrum.
 
 ---
 
@@ -169,7 +169,7 @@ D) X-rays
 
 **Answer: C**
 
-**Explanation**: Optical fibres use infrared or visible light to carry data as pulses.*
+**Explanation**: Optical fibres use infrared or visible light to carry data as pulses.
 
 ---
 
@@ -180,7 +180,7 @@ All electromagnetic waves are transverse.
 
 **Answer: True***
 
-**Explanation**: All electromagnetic waves are transverse waves.*
+**Explanation**: All electromagnetic waves are transverse waves.
 
 ---
 
@@ -207,7 +207,7 @@ Gamma rays are used in cancer treatment.
 
 **Answer: True***
 
-**Explanation**: Gamma rays are used in radiotherapy to kill cancer cells.*
+**Explanation**: Gamma rays are used in radiotherapy to kill cancer cells.
 
 ---
 
@@ -216,7 +216,7 @@ Infrared radiation can be felt as heat.
 
 **Answer: True***
 
-**Explanation**: Infrared radiation is thermal radiation and can be felt as heat.*
+**Explanation**: Infrared radiation is thermal radiation and can be felt as heat.
 
 ---
 
@@ -234,7 +234,7 @@ Radio waves can diffract around obstacles.
 
 **Answer: True***
 
-**Explanation**: Radio waves have long wavelengths and can diffract (bend) around obstacles.*
+**Explanation**: Radio waves have long wavelengths and can diffract (bend) around obstacles.
 
 ---
 
@@ -252,7 +252,7 @@ The ozone layer absorbs ultraviolet radiation.
 
 **Answer: True***
 
-**Explanation**: The ozone layer in the atmosphere absorbs much of the harmful UV radiation from the Sun.*
+**Explanation**: The ozone layer in the atmosphere absorbs much of the harmful UV radiation from the Sun.
 
 ---
 
@@ -279,7 +279,7 @@ Lead is used as shielding against X-rays and gamma rays.
 
 **Answer: True***
 
-**Explanation**: Lead is dense and absorbs X-rays and gamma rays, making it ideal for shielding.*
+**Explanation**: Lead is dense and absorbs X-rays and gamma rays, making it ideal for shielding.
 
 ---
 
@@ -288,7 +288,7 @@ Lead is used as shielding against X-rays and gamma rays.
 ### Question 1 (2 marks)
 State two properties common to all electromagnetic waves.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - They are all transverse waves (1 mark)
   - They all travel at 3 × 10⁸ m/s in a vacuum (1 mark)
@@ -300,7 +300,7 @@ State two properties common to all electromagnetic waves.
 ### Question 2 (3 marks)
 List the electromagnetic spectrum in order of increasing wavelength.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Gamma rays, X-rays, ultraviolet (1 mark)
 - Visible light, infrared (1 mark)
 - Microwaves, radio waves (1 mark)
@@ -310,7 +310,7 @@ List the electromagnetic spectrum in order of increasing wavelength.
 ### Question 3 (4 marks)
 Explain why microwaves are used for satellite communication.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Microwaves can pass through the atmosphere (1 mark)
 - They can travel long distances (1 mark)
 - They can carry large amounts of information (1 mark)
@@ -321,7 +321,7 @@ Explain why microwaves are used for satellite communication.
 ### Question 4 (3 marks)
 State three uses of infrared radiation.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any three from:
   - Thermal imaging (1 mark)
   - Remote controls (1 mark)
@@ -334,7 +334,7 @@ State three uses of infrared radiation.
 ### Question 5 (4 marks)
 Explain the hazards of ultraviolet radiation and how to protect against them.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Hazards: skin damage, sunburn, skin cancer, eye damage (any 2 = 2 marks)
 - Protection: sunscreen, sunglasses, stay in shade, limit exposure (any 2 = 2 marks)
 
@@ -343,7 +343,7 @@ Explain the hazards of ultraviolet radiation and how to protect against them.
 ### Question 6 (3 marks)
 Explain how X-rays are used to produce images of bones.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - X-rays pass through soft tissue (1 mark)
 - X-rays are absorbed by bone (1 mark)
 - This creates a shadow image on the detector (1 mark)
@@ -353,7 +353,7 @@ Explain how X-rays are used to produce images of bones.
 ### Question 7 (4 marks)
 Compare the properties of gamma rays and radio waves.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Gamma: short wavelength, high frequency, high energy (1 mark)
 - Radio: long wavelength, low frequency, low energy (1 mark)
 - Both: transverse, travel at 3 × 10⁸ m/s in vacuum (1 mark)
@@ -364,7 +364,7 @@ Compare the properties of gamma rays and radio waves.
 ### Question 8 (2 marks)
 State what is meant by ionizing radiation.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Radiation that can remove electrons from atoms (1 mark)
 - Creating ions (1 mark)
 
@@ -373,7 +373,7 @@ State what is meant by ionizing radiation.
 ### Question 9 (3 marks)
 Explain why gamma rays are dangerous to living organisms.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Gamma rays are highly ionizing (1 mark)
 - They can damage DNA in cells (1 mark)
 - This can cause mutations or cancer (1 mark)
@@ -383,7 +383,7 @@ Explain why gamma rays are dangerous to living organisms.
 ### Question 10 (4 marks)
 A student says that all electromagnetic radiation is harmful. Explain why this statement is incorrect.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Only high frequency EM radiation is harmful (UV, X-rays, gamma) (1 mark)
 - Radio, microwaves, infrared, and visible light are generally safe (1 mark)
 - We are exposed to visible light and infrared constantly without harm (1 mark)
@@ -393,30 +393,30 @@ A student says that all electromagnetic radiation is harmful. Explain why this s
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) State the speed of electromagnetic waves in a vacuum. (1 mark)
 (b) List the following types of electromagnetic radiation in order of increasing frequency: microwaves, gamma rays, visible light, X-rays, radio waves. (2 marks)
 (c) For each of the following applications, state the type of electromagnetic radiation used and explain why it is suitable:
 (i) Cooking food in a microwave oven (2 marks)
 (ii) Detecting broken bones (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Speed***
+**(a) Speed**
 - 3 × 10⁸ m/s (1 mark)
 
-**(b) Order of increasing frequency***
+**(b) Order of increasing frequency**
 - Radio waves, microwaves, visible light, X-rays, gamma rays (2 marks)
 - (Deduct 1 mark for each error, minimum 0)
 
-**(c)(i) Microwave oven***
+**(c)(i) Microwave oven**
 - Microwaves (1 mark)
 - Water molecules absorb microwaves and heat up / microwaves penetrate food (1 mark)
 
-**(c)(ii) Detecting broken bones***
+**(c)(ii) Detecting broken bones**
 - X-rays (1 mark)
 - X-rays pass through flesh but are absorbed by bone (1 mark)
 
 ---
 
-*End of Chapter 11 Quiz**
+*End of Chapter 11 Quiz*

@@ -738,7 +738,7 @@ $$Percentage Profit = \frac{1200}{15000} \times 100 = 8\%$$
 
 **Explanation:** Percentage profit is calculated on the cost price, not the selling price. The 10% discount is applied to the selling price (£1800), not the cost price. Since profit percentage uses cost price as the base, we cannot simply subtract the percentages.
 
-**Answer:** [1 mark]
+**Answer:** The percentages use different base values, so they cannot be subtracted directly. The discount is on the selling price, but profit percentage is calculated from the cost price. [1 mark]
 
 ---
 

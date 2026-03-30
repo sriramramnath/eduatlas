@@ -15,7 +15,7 @@ D) Move in a circular path
 
 **Answer: B**
 
-**Explanation**: Newton's First Law (Law of Inertia) describes what happens when resultant force is zero.*
+**Explanation**: Newton's First Law (Law of Inertia) describes what happens when resultant force is zero.
 
 ---
 
@@ -29,7 +29,7 @@ D) 8000 N
 
 **Answer: C**
 
-**Explanation**: F = m × a = 500 × 4 = 2000 N.*
+**Explanation**: F = m × a = 500 × 4 = 2000 N.
 
 ---
 
@@ -43,7 +43,7 @@ D) Are always contact forces
 
 **Answer: C**
 
-**Explanation**: Newton's Third Law states that forces are equal and opposite, but act on different objects.*
+**Explanation**: Newton's Third Law states that forces are equal and opposite, but act on different objects.
 
 ---
 
@@ -57,7 +57,7 @@ D) Stays the same
 
 **Answer: C**
 
-**Explanation**: Braking distance is proportional to speed squared (v²). Double speed = 4× braking distance.*
+**Explanation**: Braking distance is proportional to speed squared (v²). Double speed = 4× braking distance.
 
 ---
 
@@ -71,7 +71,7 @@ D) Acceleration is maximum
 
 **Answer: B**
 
-**Explanation**: At terminal velocity, forces are balanced (resultant force = 0), so acceleration = 0.*
+**Explanation**: At terminal velocity, forces are balanced (resultant force = 0), so acceleration = 0.
 
 ---
 
@@ -85,7 +85,7 @@ D) Joule
 
 **Answer: C**
 
-**Explanation**: Force is measured in newtons (N), named after Isaac Newton.*
+**Explanation**: Force is measured in newtons (N), named after Isaac Newton.
 
 ---
 
@@ -99,7 +99,7 @@ D) 720 N upward
 
 **Answer: B**
 
-**Explanation**: F = m × a = 60 × 2 = 120 N in direction of acceleration (upward).*
+**Explanation**: F = m × a = 60 × 2 = 120 N in direction of acceleration (upward).
 
 ---
 
@@ -113,7 +113,7 @@ D) Driver's reaction time
 
 **Answer: B**
 
-**Explanation**: Brake condition affects braking distance, not thinking distance. Thinking distance depends on speed and reaction time.*
+**Explanation**: Brake condition affects braking distance, not thinking distance. Thinking distance depends on speed and reaction time.
 
 ---
 
@@ -127,7 +127,7 @@ D) Exerts a smaller force on you
 
 **Answer: B**
 
-**Explanation**: Newton's Third Law - ground pushes forward on you with equal and opposite force.*
+**Explanation**: Newton's Third Law - ground pushes forward on you with equal and opposite force.
 
 ---
 
@@ -141,7 +141,7 @@ D) 4 m/s²
 
 **Answer: B**
 
-**Explanation**: Resultant force = 3000 - 1000 = 2000 N. a = F/m = 2000/1000 = 2 m/s².*
+**Explanation**: Resultant force = 3000 - 1000 = 2000 N. a = F/m = 2000/1000 = 2 m/s².
 
 ---
 
@@ -155,7 +155,7 @@ D) A type of energy
 
 **Answer: B**
 
-**Explanation**: Inertia is the resistance of an object to changes in its state of motion. Greater mass = greater inertia.*
+**Explanation**: Inertia is the resistance of an object to changes in its state of motion. Greater mass = greater inertia.
 
 ---
 
@@ -169,7 +169,7 @@ D) Preventing collisions
 
 **Answer: B**
 
-**Explanation**: F = m(v-u)/t. Increasing stopping time (t) reduces force (F) on passengers.*
+**Explanation**: F = m(v-u)/t. Increasing stopping time (t) reduces force (F) on passengers.
 
 ---
 
@@ -207,7 +207,7 @@ Acceleration is directly proportional to resultant force.
 
 **Answer: True***
 
-**Explanation**: Newton's Second Law: F = ma, so a = F/m. At constant mass, a ∝ F.*
+**Explanation**: Newton's Second Law: F = ma, so a = F/m. At constant mass, a ∝ F.
 
 ---
 
@@ -216,7 +216,7 @@ A more massive object has more inertia than a less massive object.
 
 **Answer: True***
 
-**Explanation**: Inertia depends on mass. More mass = harder to change motion = more inertia.*
+**Explanation**: Inertia depends on mass. More mass = harder to change motion = more inertia.
 
 ---
 
@@ -234,7 +234,7 @@ When a rocket launches, the rocket pushes exhaust gases downward and the gases p
 
 **Answer: True***
 
-**Explanation**: This is Newton's Third Law in action - equal and opposite forces.*
+**Explanation**: This is Newton's Third Law in action - equal and opposite forces.
 
 ---
 
@@ -252,7 +252,7 @@ At terminal velocity, a falling object has zero acceleration.
 
 **Answer: True***
 
-**Explanation**: At terminal velocity, weight = air resistance, so resultant force = 0, and acceleration = 0.*
+**Explanation**: At terminal velocity, weight = air resistance, so resultant force = 0, and acceleration = 0.
 
 ---
 
@@ -270,7 +270,7 @@ A 2000 kg truck has more inertia than a 500 kg car.
 
 **Answer: True***
 
-**Explanation**: Inertia depends on mass. The truck has 4× the mass, so it has 4× the inertia.*
+**Explanation**: Inertia depends on mass. The truck has 4× the mass, so it has 4× the inertia.
 
 ---
 
@@ -288,7 +288,7 @@ When you push against a wall, the wall pushes back with a smaller force.
 ### Question 1 (2 marks)
 State Newton's Second Law of Motion.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The acceleration of an object is directly proportional to the resultant force (1 mark)
 - And inversely proportional to its mass / F = ma (1 mark)
 
@@ -299,7 +299,7 @@ A car of mass 800 kg accelerates from rest to 20 m/s in 10 seconds. Calculate:
 (a) The acceleration of the car (1 mark)
 (b) The resultant force acting on the car (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) a = (v-u)/t = (20-0)/10 = 2 m/s² (1 mark)
 (b) F = m × a = 800 × 2 (1 mark)
     F = 1600 N (1 mark)
@@ -309,7 +309,7 @@ A car of mass 800 kg accelerates from rest to 20 m/s in 10 seconds. Calculate:
 ### Question 3 (4 marks)
 Explain, using Newton's Third Law, how a swimmer moves forward through the water.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Swimmer pushes water backward with hands/feet (1 mark)
 - Water pushes swimmer forward with equal force (1 mark)
 - These are action-reaction forces (1 mark)
@@ -320,7 +320,7 @@ Explain, using Newton's Third Law, how a swimmer moves forward through the water
 ### Question 4 (3 marks)
 State three factors that increase the braking distance of a vehicle.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any three from:
   - Higher speed (1 mark)
   - Greater mass (1 mark)
@@ -333,7 +333,7 @@ State three factors that increase the braking distance of a vehicle.
 ### Question 5 (4 marks)
 Explain why a driver who has been drinking alcohol has an increased stopping distance.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Alcohol increases reaction time (1 mark)
 - Thinking distance = speed × reaction time (1 mark)
 - Increased reaction time means increased thinking distance (1 mark)
@@ -346,7 +346,7 @@ A 50 kg crate is pulled across a floor with a 200 N force. Friction is 150 N.
 (a) Calculate the resultant force. (1 mark)
 (b) Calculate the acceleration. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Resultant force = 200 - 150 = 50 N (1 mark)
 (b) F = ma, so a = F/m = 50/50 (1 mark)
     a = 1 m/s² (1 mark)
@@ -356,7 +356,7 @@ A 50 kg crate is pulled across a floor with a 200 N force. Friction is 150 N.
 ### Question 7 (4 marks)
 Explain, in terms of forces, why a skydiver reaches a terminal velocity.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Initially, weight > air resistance, so acceleration downward (1 mark)
 - As speed increases, air resistance increases (1 mark)
 - Eventually, air resistance = weight (1 mark)
@@ -367,7 +367,7 @@ Explain, in terms of forces, why a skydiver reaches a terminal velocity.
 ### Question 8 (2 marks)
 State the difference between thinking distance and braking distance.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Thinking distance: distance travelled during driver's reaction time (1 mark)
 - Braking distance: distance travelled while brakes are applied (1 mark)
 
@@ -376,7 +376,7 @@ State the difference between thinking distance and braking distance.
 ### Question 9 (3 marks)
 Explain how airbags reduce injury during a car collision.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Airbag increases stopping time for passenger (1 mark)
 - F = m(v-u)/t, so increased time means decreased force (1 mark)
 - Force is also spread over larger area, reducing pressure (1 mark)
@@ -388,7 +388,7 @@ A rocket of mass 5000 kg is launched vertically upward. The engines provide an u
 (a) Calculate the weight of the rocket. (2 marks)
 (b) Calculate the initial acceleration. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) W = m × g = 5000 × 10 = 50000 N (2 marks)
 (b) Resultant force = 80000 - 50000 = 30000 N upward (1 mark)
     a = F/m = 30000/5000 = 6 m/s² (1 mark)
@@ -397,7 +397,7 @@ A rocket of mass 5000 kg is launched vertically upward. The engines provide an u
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A car of mass 1200 kg is travelling at 30 m/s on a dry road.
 
 (a) Calculate the thinking distance if the driver's reaction time is 0.4 s. (2 marks)
@@ -405,25 +405,25 @@ A car of mass 1200 kg is travelling at 30 m/s on a dry road.
 (c) Explain why the braking distance would be longer on a wet road. (2 marks)
 (d) The driver doubles his speed to 60 m/s. State the new braking distance. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Thinking distance***
+**(a) Thinking distance**
 - Formula: thinking distance = speed × reaction time (1 mark)
 - Thinking distance = 30 × 0.4 = 12 m (1 mark)
 
-**(b) Total stopping distance***
+**(b) Total stopping distance**
 - Stopping distance = 12 + 14 = 26 m (1 mark)
 
-**(c) Wet road explanation***
+**(c) Wet road explanation**
 - Wet road reduces friction between tyres and road (1 mark)
 - Less friction means less braking force / tyres can't grip as well (1 mark)
 - So car travels further while slowing down (1 mark)
 (Any 2 points)
 
-**(d) New braking distance at 60 m/s***
+**(d) New braking distance at 60 m/s**
 - Braking distance ∝ v², so double speed = 4× braking distance (1 mark)
 - New braking distance = 14 × 4 = 56 m (1 mark)
 
 ---
 
-*End of Chapter 3 Quiz**
+*End of Chapter 3 Quiz*

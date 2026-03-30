@@ -15,7 +15,7 @@ D) J/s
 
 **Answer: B**
 
-**Explanation**: Momentum = mass × velocity, so units = kg × m/s = kg m/s (also equal to Ns).*
+**Explanation**: Momentum = mass × velocity, so units = kg × m/s = kg m/s (also equal to Ns).
 
 ---
 
@@ -29,7 +29,7 @@ D) 200000 kg m/s
 
 **Answer: C**
 
-**Explanation**: p = m × v = 1000 × 20 = 20000 kg m/s.*
+**Explanation**: p = m × v = 1000 × 20 = 20000 kg m/s.
 
 ---
 
@@ -43,7 +43,7 @@ D) Always decreasing
 
 **Answer: C**
 
-**Explanation**: The principle of conservation of momentum states that total momentum before equals total momentum after in a closed system.*
+**Explanation**: The principle of conservation of momentum states that total momentum before equals total momentum after in a closed system.
 
 ---
 
@@ -57,7 +57,7 @@ D) 6 m/s
 
 **Answer: B**
 
-**Explanation**: (2×3) + (1×0) = (2+1)×v → 6 = 3v → v = 2 m/s.*
+**Explanation**: (2×3) + (1×0) = (2+1)×v → 6 = 3v → v = 2 m/s.
 
 ---
 
@@ -71,7 +71,7 @@ D) F = p - t
 
 **Answer: B**
 
-**Explanation**: Force = change in momentum ÷ time taken, or F = Δp ÷ t.*
+**Explanation**: Force = change in momentum ÷ time taken, or F = Δp ÷ t.
 
 ---
 
@@ -85,7 +85,7 @@ D) Total momentum is zero
 
 **Answer: B**
 
-**Explanation**: In elastic collisions, both momentum and kinetic energy are conserved. Objects bounce apart.*
+**Explanation**: In elastic collisions, both momentum and kinetic energy are conserved. Objects bounce apart.
 
 ---
 
@@ -99,7 +99,7 @@ D) 80 m/s
 
 **Answer: B**
 
-**Explanation**: 0 = (4×v) + (0.05×400) → 4v = -20 → v = -5 m/s (5 m/s in opposite direction).*
+**Explanation**: 0 = (4×v) + (0.05×400) → 4v = -20 → v = -5 m/s (5 m/s in opposite direction).
 
 ---
 
@@ -113,7 +113,7 @@ D) 200 N
 
 **Answer: A**
 
-**Explanation**: Impulse = F × t = 100 × 0.5 = 50 Ns (also equals change in momentum).*
+**Explanation**: Impulse = F × t = 100 × 0.5 = 50 Ns (also equals change in momentum).
 
 ---
 
@@ -127,7 +127,7 @@ D) 36 kg m/s
 
 **Answer: C**
 
-**Explanation**: Δp = mv - mu = (0.2×-8) - (0.2×10) = -1.6 - 2 = -3.6 kg m/s. Magnitude = 3.6 kg m/s.*
+**Explanation**: Δp = mv - mu = (0.2×-8) - (0.2×10) = -1.6 - 2 = -3.6 kg m/s. Magnitude = 3.6 kg m/s.
 
 ---
 
@@ -141,7 +141,7 @@ D) Increasing the impact force
 
 **Answer: B**
 
-**Explanation**: F = Δp ÷ t. Increasing time reduces force for same momentum change.*
+**Explanation**: F = Δp ÷ t. Increasing time reduces force for same momentum change.
 
 ---
 
@@ -155,7 +155,7 @@ D) Total momentum is zero
 
 **Answer: C**
 
-**Explanation**: Elastic collisions conserve both momentum and kinetic energy. Inelastic collisions only conserve momentum.*
+**Explanation**: Elastic collisions conserve both momentum and kinetic energy. Inelastic collisions only conserve momentum.
 
 ---
 
@@ -169,7 +169,7 @@ D) 15 m/s
 
 **Answer: B**
 
-**Explanation**: (1500×10) + (1000×0) = (1500+1000)×v → 15000 = 2500v → v = 6 m/s.*
+**Explanation**: (1500×10) + (1000×0) = (1500+1000)×v → 15000 = 2500v → v = 6 m/s.
 
 ---
 
@@ -207,7 +207,7 @@ Impulse equals force multiplied by time.
 
 **Answer: True***
 
-**Explanation**: Impulse = F × t = change in momentum.*
+**Explanation**: Impulse = F × t = change in momentum.
 
 ---
 
@@ -216,7 +216,7 @@ Air bags reduce the force on passengers by increasing the stopping time.
 
 **Answer: True***
 
-**Explanation**: F = Δp ÷ t. For the same momentum change, increasing time decreases force.*
+**Explanation**: F = Δp ÷ t. For the same momentum change, increasing time decreases force.
 
 ---
 
@@ -225,7 +225,7 @@ When a gun fires a bullet, the momentum of the gun equals the momentum of the bu
 
 **Answer: True***
 
-**Explanation**: Total momentum before = 0, so after firing, momentum of gun + momentum of bullet = 0. They are equal and opposite.*
+**Explanation**: Total momentum before = 0, so after firing, momentum of gun + momentum of bullet = 0. They are equal and opposite.
 
 ---
 
@@ -234,7 +234,7 @@ In an explosion, total momentum before equals total momentum after.
 
 **Answer: True***
 
-**Explanation**: Conservation of momentum applies to explosions. Usually total momentum before = 0, so pieces move in opposite directions.*
+**Explanation**: Conservation of momentum applies to explosions. Usually total momentum before = 0, so pieces move in opposite directions.
 
 ---
 
@@ -252,7 +252,7 @@ The unit Ns is equivalent to kg m/s.
 
 **Answer: True***
 
-**Explanation**: Ns = (kg m/s²) × s = kg m/s. Both are correct units for momentum.*
+**Explanation**: Ns = (kg m/s²) × s = kg m/s. Both are correct units for momentum.
 
 ---
 
@@ -288,7 +288,7 @@ If two objects collide and stick together, the collision is elastic.
 ### Question 1 (2 marks)
 Define momentum and state its unit.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Momentum = mass × velocity (1 mark)
 - Unit: kg m/s or Ns (1 mark)
 
@@ -297,7 +297,7 @@ Define momentum and state its unit.
 ### Question 2 (3 marks)
 A 500 kg car travels at 30 m/s. Calculate its momentum.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: p = m × v (1 mark)
 - Substitution: p = 500 × 30 (1 mark)
 - Answer: 15000 kg m/s (1 mark)
@@ -307,7 +307,7 @@ A 500 kg car travels at 30 m/s. Calculate its momentum.
 ### Question 3 (4 marks)
 A 3 kg ball moving at 4 m/s collides with a stationary 2 kg ball. After the collision, the 3 kg ball moves at 1 m/s in the same direction. Calculate the velocity of the 2 kg ball.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Before: (3×4) + (2×0) = 12 kg m/s (1 mark)
 - After: (3×1) + (2×v) = 3 + 2v (1 mark)
 - Conservation: 12 = 3 + 2v (1 mark)
@@ -318,7 +318,7 @@ A 3 kg ball moving at 4 m/s collides with a stationary 2 kg ball. After the coll
 ### Question 4 (4 marks)
 Explain how crumple zones reduce injury to passengers during a collision.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Crumple zones collapse/compact during collision (1 mark)
 - This increases the time taken to stop (1 mark)
 - F = Δp ÷ t, so increased time means decreased force (1 mark)
@@ -329,7 +329,7 @@ Explain how crumple zones reduce injury to passengers during a collision.
 ### Question 5 (3 marks)
 A 0.1 kg ball hits a wall at 12 m/s and rebounds at 8 m/s. The collision lasts 0.02 s. Calculate the average force on the ball.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Change in momentum = (0.1×-8) - (0.1×12) = -2 kg m/s (1 mark)
 - F = Δp ÷ t = 2 ÷ 0.02 (1 mark)
 - F = 100 N (1 mark)
@@ -339,7 +339,7 @@ A 0.1 kg ball hits a wall at 12 m/s and rebounds at 8 m/s. The collision lasts 0
 ### Question 6 (3 marks)
 Distinguish between an elastic and an inelastic collision.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Elastic: objects bounce apart, kinetic energy conserved (1 mark)
 - Inelastic: objects stick together (1 mark)
 - In inelastic collision, kinetic energy is not conserved (converted to heat/sound) (1 mark)
@@ -349,7 +349,7 @@ Distinguish between an elastic and an inelastic collision.
 ### Question 7 (4 marks)
 A 5 kg cannon fires a 0.02 kg cannonball at 250 m/s. Calculate the recoil velocity of the cannon.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Total momentum before = 0 (1 mark)
 - After: (5×v) + (0.02×250) = 0 (1 mark)
 - 5v + 5 = 0 (1 mark)
@@ -360,7 +360,7 @@ A 5 kg cannon fires a 0.02 kg cannonball at 250 m/s. Calculate the recoil veloci
 ### Question 8 (2 marks)
 State the principle of conservation of momentum.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - In a closed system with no external forces (1 mark)
 - Total momentum before collision = total momentum after collision (1 mark)
 
@@ -369,7 +369,7 @@ State the principle of conservation of momentum.
 ### Question 9 (3 marks)
 Explain why momentum is conserved in a collision between two objects.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - During collision, forces on the two objects are equal and opposite (Newton's Third Law) (1 mark)
 - Forces act for the same time (1 mark)
 - Therefore changes in momentum are equal and opposite, so total momentum unchanged (1 mark)
@@ -381,7 +381,7 @@ A 2000 kg truck moving at 15 m/s collides with a 1000 kg stationary car. They lo
 (a) Calculate their velocity immediately after the collision. (2 marks)
 (b) Explain whether this collision is elastic or inelastic. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) (2000×15) + (1000×0) = (2000+1000)×v (1 mark)
     30000 = 3000v, so v = 10 m/s (1 mark)
 
@@ -392,25 +392,25 @@ A 2000 kg truck moving at 15 m/s collides with a 1000 kg stationary car. They lo
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A 0.5 kg trolley moving at 3 m/s collides with a 1.5 kg trolley moving at 1 m/s in the opposite direction. After the collision, the 0.5 kg trolley rebounds at 1 m/s.
 
 (a) Calculate the total momentum before the collision. (2 marks)
 (b) Calculate the velocity of the 1.5 kg trolley after the collision. (3 marks)
 (c) State whether the collision is elastic or inelastic, giving a reason. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Total momentum before***
+**(a) Total momentum before**
 - Taking initial direction of 0.5 kg trolley as positive:
 - p = (0.5×3) + (1.5×-1) = 1.5 - 1.5 = 0 kg m/s (2 marks)
 
-**(b) Velocity after collision***
+**(b) Velocity after collision**
 - Total momentum after = 0 (conservation) (1 mark)
 - After: (0.5×-1) + (1.5×v) = 0 (1 mark)
 - -0.5 + 1.5v = 0, so v = 0.33 m/s (in original direction) (1 mark)
 
-**(c) Type of collision***
+**(c) Type of collision**
 - KE before = ½(0.5)(3)² + ½(1.5)(1)² = 2.25 + 0.75 = 3 J
 - KE after = ½(0.5)(1)² + ½(1.5)(0.33)² = 0.25 + 0.08 = 0.33 J
 - KE not conserved, so inelastic (1 mark)
@@ -418,4 +418,4 @@ A 0.5 kg trolley moving at 3 m/s collides with a 1.5 kg trolley moving at 1 m/s 
 
 ---
 
-*End of Chapter 4 Quiz**
+*End of Chapter 4 Quiz*

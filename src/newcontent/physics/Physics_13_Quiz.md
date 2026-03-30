@@ -15,7 +15,7 @@ D) Stationary waves
 
 **Answer: B**
 
-**Explanation**: Sound waves are longitudinal - particles vibrate parallel to the direction of travel.*
+**Explanation**: Sound waves are longitudinal - particles vibrate parallel to the direction of travel.
 
 ---
 
@@ -29,7 +29,7 @@ D) A vacuum
 
 **Answer: D**
 
-**Explanation**: Sound is a mechanical wave and needs a medium to travel. It cannot travel through a vacuum.*
+**Explanation**: Sound is a mechanical wave and needs a medium to travel. It cannot travel through a vacuum.
 
 ---
 
@@ -43,7 +43,7 @@ D) Wavelength
 
 **Answer: B**
 
-**Explanation**: Higher frequency = higher pitch. Amplitude determines loudness.*
+**Explanation**: Higher frequency = higher pitch. Amplitude determines loudness.
 
 ---
 
@@ -57,7 +57,7 @@ D) 30,000 m/s
 
 **Answer: B**
 
-**Explanation**: The speed of sound in air is approximately 330-340 m/s (at room temperature).*
+**Explanation**: The speed of sound in air is approximately 330-340 m/s (at room temperature).
 
 ---
 
@@ -71,7 +71,7 @@ D) Sound travels at same speed in all
 
 **Answer: C**
 
-**Explanation**: Sound travels fastest in solids, then liquids, then gases. Steel is a solid.*
+**Explanation**: Sound travels fastest in solids, then liquids, then gases. Steel is a solid.
 
 ---
 
@@ -85,7 +85,7 @@ D) 200 Hz - 200,000 Hz
 
 **Answer: C**
 
-**Explanation**: Humans can typically hear sounds between 20 Hz and 20,000 Hz (20 kHz).*
+**Explanation**: Humans can typically hear sounds between 20 Hz and 20,000 Hz (20 kHz).
 
 ---
 
@@ -99,7 +99,7 @@ D) Above 200,000 Hz
 
 **Answer: C**
 
-**Explanation**: Ultrasound is sound with frequency above the upper limit of human hearing (20,000 Hz).*
+**Explanation**: Ultrasound is sound with frequency above the upper limit of human hearing (20,000 Hz).
 
 ---
 
@@ -113,7 +113,7 @@ D) 1320 m
 
 **Answer: C**
 
-**Explanation**: Distance = (speed × time) ÷ 2 = (330 × 4) ÷ 2 = 660 m. Divide by 2 because sound travels to the surface and back.*
+**Explanation**: Distance = (speed × time) ÷ 2 = (330 × 4) ÷ 2 = 660 m. Divide by 2 because sound travels to the surface and back.
 
 ---
 
@@ -127,7 +127,7 @@ D) Cooking food
 
 **Answer: B**
 
-**Explanation**: Ultrasound is used for medical imaging (e.g., scanning fetuses) because it is non-ionizing and safe.*
+**Explanation**: Ultrasound is used for medical imaging (e.g., scanning fetuses) because it is non-ionizing and safe.
 
 ---
 
@@ -141,7 +141,7 @@ D) Wavelength
 
 **Answer: B**
 
-**Explanation**: Larger amplitude = louder sound. Frequency determines pitch.*
+**Explanation**: Larger amplitude = louder sound. Frequency determines pitch.
 
 ---
 
@@ -155,7 +155,7 @@ D) Newtons
 
 **Answer: B**
 
-**Explanation**: Sound intensity level is measured in decibels (dB).*
+**Explanation**: Sound intensity level is measured in decibels (dB).
 
 ---
 
@@ -169,7 +169,7 @@ D) Keep warm
 
 **Answer: B**
 
-**Explanation**: Bats emit ultrasound and use the echoes (echolocation) to navigate and locate prey.*
+**Explanation**: Bats emit ultrasound and use the echoes (echolocation) to navigate and locate prey.
 
 ---
 
@@ -198,7 +198,7 @@ Ultrasound can be used for medical imaging during pregnancy.
 
 **Answer: True***
 
-**Explanation**: Ultrasound is safe for fetuses (non-ionizing) and is commonly used for prenatal scans.*
+**Explanation**: Ultrasound is safe for fetuses (non-ionizing) and is commonly used for prenatal scans.
 
 ---
 
@@ -225,7 +225,7 @@ The human ear converts sound vibrations into electrical signals.
 
 **Answer: True***
 
-**Explanation**: The cochlea in the inner ear converts mechanical vibrations into electrical signals sent to the brain.*
+**Explanation**: The cochlea in the inner ear converts mechanical vibrations into electrical signals sent to the brain.
 
 ---
 
@@ -234,7 +234,7 @@ Higher frequency sound waves have higher pitch.
 
 **Answer: True***
 
-**Explanation**: Pitch is directly related to frequency. Higher frequency = higher pitch.*
+**Explanation**: Pitch is directly related to frequency. Higher frequency = higher pitch.
 
 ---
 
@@ -252,7 +252,7 @@ Prolonged exposure to loud noise can damage hearing.
 
 **Answer: True***
 
-**Explanation**: Loud noise (typically above 85 dB) can cause permanent hearing damage with prolonged exposure.*
+**Explanation**: Loud noise (typically above 85 dB) can cause permanent hearing damage with prolonged exposure.
 
 ---
 
@@ -270,7 +270,7 @@ The eardrum vibrates when sound waves reach it.
 
 **Answer: True***
 
-**Explanation**: Sound waves cause the eardrum to vibrate, which is then transmitted through the middle ear bones.*
+**Explanation**: Sound waves cause the eardrum to vibrate, which is then transmitted through the middle ear bones.
 
 ---
 
@@ -288,7 +288,7 @@ Echoes are caused by the refraction of sound waves.
 ### Question 1 (2 marks)
 Explain why sound cannot travel through a vacuum.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Sound is a mechanical wave / needs a medium (1 mark)
 - Particles must vibrate to transfer energy, and there are no particles in a vacuum (1 mark)
 
@@ -297,7 +297,7 @@ Explain why sound cannot travel through a vacuum.
 ### Question 2 (3 marks)
 Describe an experiment to show that sound needs a medium to travel.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Place an electric bell in a bell jar (1 mark)
 - Remove air with a vacuum pump (1 mark)
 - Sound becomes quieter / stops as air is removed (1 mark)
@@ -307,7 +307,7 @@ Describe an experiment to show that sound needs a medium to travel.
 ### Question 3 (4 marks)
 Explain the difference between pitch and loudness, stating what determines each.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Pitch is how high or low a sound is (1 mark)
 - Pitch is determined by frequency (1 mark)
 - Loudness is how loud or quiet a sound is (1 mark)
@@ -318,7 +318,7 @@ Explain the difference between pitch and loudness, stating what determines each.
 ### Question 4 (3 marks)
 An echo is heard 2.5 seconds after a shout. Calculate the distance to the reflecting surface. (Speed of sound = 340 m/s)
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: distance = (speed × time) ÷ 2 (1 mark)
 - Distance = (340 × 2.5) ÷ 2 (1 mark)
 - Distance = 425 m (1 mark)
@@ -328,7 +328,7 @@ An echo is heard 2.5 seconds after a shout. Calculate the distance to the reflec
 ### Question 5 (4 marks)
 State two uses of ultrasound and explain why it is suitable for each use.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two uses with explanations:
   - Medical imaging: non-ionizing / safe for fetus / real-time imaging (2 marks)
   - SONAR: travels well in water / reflects from objects (2 marks)
@@ -340,7 +340,7 @@ State two uses of ultrasound and explain why it is suitable for each use.
 ### Question 6 (3 marks)
 Explain why sound travels faster in steel than in air.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Steel is denser than air (1 mark)
 - Particles in steel are closer together (1 mark)
 - Vibrations are transferred more quickly between closely spaced particles (1 mark)
@@ -352,7 +352,7 @@ A ship uses SONAR to measure the depth of the sea. The ultrasound pulse takes 0.
 (a) Calculate the depth of the sea. (Speed of sound in water = 1500 m/s) (3 marks)
 (b) Why is ultrasound used rather than ordinary sound? (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Distance = (1500 × 0.8) ÷ 2 (1 mark)
     Distance = 1200 ÷ 2 (1 mark)
     Depth = 600 m (1 mark)
@@ -363,7 +363,7 @@ A ship uses SONAR to measure the depth of the sea. The ultrasound pulse takes 0.
 ### Question 8 (2 marks)
 State the normal range of human hearing.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - 20 Hz to 20,000 Hz (1 mark)
 - Or: 20 Hz to 20 kHz (1 mark)
 
@@ -372,7 +372,7 @@ State the normal range of human hearing.
 ### Question 9 (3 marks)
 Explain how bats use ultrasound to catch insects.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Bats emit ultrasound pulses (1 mark)
 - Pulses reflect from insects (echo) (1 mark)
 - Bats detect echoes and determine insect location (1 mark)
@@ -382,7 +382,7 @@ Explain how bats use ultrasound to catch insects.
 ### Question 10 (4 marks)
 Describe how the structure of the ear enables humans to hear sound.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Pinna collects sound waves (1 mark)
 - Eardrum vibrates in response to sound (1 mark)
 - Ossicles amplify vibrations (1 mark)
@@ -392,27 +392,27 @@ Describe how the structure of the ear enables humans to hear sound.
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe an experiment to compare the speed of sound in air and in a solid. (3 marks)
 (b) A student hears thunder 5 seconds after seeing lightning. Calculate how far away the lightning strike was. (Speed of sound in air = 330 m/s) (2 marks)
 (c) Explain why you see lightning before you hear thunder. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Experiment to compare speeds***
+**(a) Experiment to compare speeds**
 - Method: Tap one end of a long metal rod / use two microphones (1 mark)
 - Measure time for sound to travel known distance in air and in solid (1 mark)
 - Compare times / calculate speeds for each medium (1 mark)
 - Or: listen through air and through solid simultaneously, sound arrives faster through solid
 
-**(b) Distance calculation***
+**(b) Distance calculation**
 - Distance = speed × time = 330 × 5 (1 mark)
 - Distance = 1650 m (1 mark)
 
-**(c) Lightning before thunder***
+**(c) Lightning before thunder**
 - Light travels much faster than sound (1 mark)
 - So light arrives almost instantly while sound takes noticeable time (1 mark)
 
 ---
 
-*End of Chapter 13 Quiz**
+*End of Chapter 13 Quiz*

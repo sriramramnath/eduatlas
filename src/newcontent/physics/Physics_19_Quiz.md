@@ -15,7 +15,7 @@ D) Are far apart
 
 **Answer: B**
 
-**Explanation**: In solids, particles are held in a fixed pattern and vibrate about their positions.*
+**Explanation**: In solids, particles are held in a fixed pattern and vibrate about their positions.
 
 ---
 
@@ -29,7 +29,7 @@ D) Fluctuates randomly
 
 **Answer: C**
 
-**Explanation**: During melting, boiling, freezing, or condensation, temperature remains constant while energy goes into breaking/forming bonds.*
+**Explanation**: During melting, boiling, freezing, or condensation, temperature remains constant while energy goes into breaking/forming bonds.
 
 ---
 
@@ -43,7 +43,7 @@ D) Gas particles sticking to walls
 
 **Answer: B**
 
-**Explanation**: Gas pressure results from countless collisions of gas particles with the walls of their container.*
+**Explanation**: Gas pressure results from countless collisions of gas particles with the walls of their container.
 
 ---
 
@@ -57,7 +57,7 @@ D) 600,000 Pa
 
 **Answer: D**
 
-**Explanation**: p₁V₁ = p₂V₂ → 200,000 × 3 = p₂ × 1 → p₂ = 600,000 Pa.*
+**Explanation**: p₁V₁ = p₂V₂ → 200,000 × 3 = p₂ × 1 → p₂ = 600,000 Pa.
 
 ---
 
@@ -71,7 +71,7 @@ D) Only in solids
 
 **Answer: B**
 
-**Explanation**: Evaporation occurs at the surface of a liquid at any temperature, unlike boiling which occurs throughout at the boiling point.*
+**Explanation**: Evaporation occurs at the surface of a liquid at any temperature, unlike boiling which occurs throughout at the boiling point.
 
 ---
 
@@ -85,7 +85,7 @@ D) Static electricity
 
 **Answer: B**
 
-**Explanation**: Brownian motion shows that particles are in constant random motion, supporting the kinetic theory.*
+**Explanation**: Brownian motion shows that particles are in constant random motion, supporting the kinetic theory.
 
 ---
 
@@ -99,7 +99,7 @@ D) -373°C
 
 **Answer: C**
 
-**Explanation**: Absolute zero is 0 K, which equals -273°C. This is the theoretical temperature where particle motion is minimal.*
+**Explanation**: Absolute zero is 0 K, which equals -273°C. This is the theoretical temperature where particle motion is minimal.
 
 ---
 
@@ -113,7 +113,7 @@ D) Becomes zero
 
 **Answer: C**
 
-**Explanation**: Evaporation causes cooling because the fastest particles escape, leaving particles with lower average kinetic energy.*
+**Explanation**: Evaporation causes cooling because the fastest particles escape, leaving particles with lower average kinetic energy.
 
 ---
 
@@ -127,7 +127,7 @@ D) 373 K
 
 **Answer: C**
 
-**Explanation**: K = °C + 273 = 27 + 273 = 300 K.*
+**Explanation**: K = °C + 273 = 27 + 273 = 300 K.
 
 ---
 
@@ -141,7 +141,7 @@ D) Solid turns to gas
 
 **Answer: C**
 
-**Explanation**: Condensation is the change from gas to liquid, releasing energy.*
+**Explanation**: Condensation is the change from gas to liquid, releasing energy.
 
 ---
 
@@ -155,7 +155,7 @@ D) Not moving at all
 
 **Answer: C**
 
-**Explanation**: Gas particles are far apart and move freely in all directions at high speeds.*
+**Explanation**: Gas particles are far apart and move freely in all directions at high speeds.
 
 ---
 
@@ -169,7 +169,7 @@ D) Becomes zero
 
 **Answer: C**
 
-**Explanation**: Higher temperature means particles move faster, colliding more frequently and with greater force, increasing pressure.*
+**Explanation**: Higher temperature means particles move faster, colliding more frequently and with greater force, increasing pressure.
 
 ---
 
@@ -198,7 +198,7 @@ Boyle's Law applies at constant temperature.
 
 **Answer: True***
 
-**Explanation**: Boyle's Law states that pV = constant at constant temperature.*
+**Explanation**: Boyle's Law states that pV = constant at constant temperature.
 
 ---
 
@@ -207,7 +207,7 @@ Boiling occurs throughout a liquid, not just at the surface.
 
 **Answer: True***
 
-**Explanation**: Boiling occurs at the boiling point throughout the liquid, with bubbles forming in the liquid.*
+**Explanation**: Boiling occurs at the boiling point throughout the liquid, with bubbles forming in the liquid.
 
 ---
 
@@ -225,7 +225,7 @@ Evaporation causes heating of the remaining liquid.
 
 **Answer: True***
 
-**Explanation**: Absolute zero (0 K) equals -273°C.*
+**Explanation**: Absolute zero (0 K) equals -273°C.
 
 ---
 
@@ -243,7 +243,7 @@ When a gas is compressed at constant temperature, its pressure increases.
 
 **Answer: True***
 
-**Explanation**: Compressing a gas (reducing volume) means particles collide more frequently with walls, increasing pressure.*
+**Explanation**: Compressing a gas (reducing volume) means particles collide more frequently with walls, increasing pressure.
 
 ---
 
@@ -270,7 +270,7 @@ Gas pressure increases with temperature because particles move faster.
 
 **Answer: True***
 
-**Explanation**: Higher temperature means faster particles, which collide more frequently and with more force, increasing pressure.*
+**Explanation**: Higher temperature means faster particles, which collide more frequently and with more force, increasing pressure.
 
 ---
 
@@ -288,7 +288,7 @@ In a liquid, particles are far apart with large spaces between them.
 ### Question 1 (2 marks)
 Describe the arrangement and motion of particles in a solid.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Particles arranged in regular pattern / close together (1 mark)
 - Vibrate about fixed positions (1 mark)
 
@@ -297,7 +297,7 @@ Describe the arrangement and motion of particles in a solid.
 ### Question 2 (3 marks)
 Explain why the temperature stays constant during boiling.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Energy is being supplied (1 mark)
 - But energy is used to break bonds between particles (1 mark)
 - Rather than increase kinetic energy / temperature (1 mark)
@@ -307,7 +307,7 @@ Explain why the temperature stays constant during boiling.
 ### Question 3 (4 marks)
 A gas occupies 4 m³ at 150,000 Pa. Calculate its volume when the pressure is increased to 300,000 Pa at constant temperature.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Boyle's Law: p₁V₁ = p₂V₂ (1 mark)
 - 150,000 × 4 = 300,000 × V₂ (1 mark)
 - 600,000 = 300,000 × V₂ (1 mark)
@@ -318,7 +318,7 @@ A gas occupies 4 m³ at 150,000 Pa. Calculate its volume when the pressure is in
 ### Question 4 (3 marks)
 Explain how Brownian motion provides evidence for the particle nature of matter.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Smoke particles move randomly (1 mark)
 - This is caused by collisions with invisible air molecules (1 mark)
 - Shows that matter is made of particles in constant motion (1 mark)
@@ -328,7 +328,7 @@ Explain how Brownian motion provides evidence for the particle nature of matter.
 ### Question 5 (4 marks)
 Explain why sweating helps to cool the body.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Sweat evaporates from skin surface (1 mark)
 - Fastest water molecules escape (1 mark)
 - Average kinetic energy of remaining sweat decreases (1 mark)
@@ -341,7 +341,7 @@ Convert:
 (a) 100°C to Kelvin (1 mark)
 (b) 350 K to Celsius (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) 100 + 273 = 373 K (1 mark)
 (b) 350 - 273 = 77°C (2 marks)
 
@@ -350,7 +350,7 @@ Convert:
 ### Question 7 (4 marks)
 Describe the differences between evaporation and boiling.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Evaporation: any temperature, surface only, slow, no bubbles (2 marks)
 - Boiling: at boiling point only, throughout liquid, rapid, bubbles (2 marks)
 
@@ -359,7 +359,7 @@ Describe the differences between evaporation and boiling.
 ### Question 8 (2 marks)
 Explain why the pressure of a gas increases when it is heated at constant volume.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Particles move faster (1 mark)
 - Collide more frequently and with greater force with container walls (1 mark)
 
@@ -368,7 +368,7 @@ Explain why the pressure of a gas increases when it is heated at constant volume
 ### Question 9 (3 marks)
 A gas at 300 K has a pressure of 80,000 Pa. Calculate the pressure when heated to 450 K at constant volume.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - p₁/T₁ = p₂/T₂ (1 mark)
 - 80,000/300 = p₂/450 (1 mark)
 - p₂ = 120,000 Pa (1 mark)
@@ -378,7 +378,7 @@ A gas at 300 K has a pressure of 80,000 Pa. Calculate the pressure when heated t
 ### Question 10 (4 marks)
 Explain why a gas exerts pressure on the walls of its container.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Gas particles are in constant random motion (1 mark)
 - Particles collide with container walls (1 mark)
 - Each collision exerts a force on the wall (1 mark)
@@ -388,22 +388,22 @@ Explain why a gas exerts pressure on the walls of its container.
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe an experiment to demonstrate Brownian motion. (3 marks)
 (b) A bicycle pump is used to compress air into a tyre. Explain why the pressure in the tyre increases as more air is pumped in. (3 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Brownian motion experiment***
+**(a) Brownian motion experiment**
 - Smoke particles in air viewed under microscope (1 mark)
 - Particles seen moving randomly (1 mark)
 - This is evidence of collisions with invisible air molecules (1 mark)
 
-**(b) Pressure increase explanation***
+**(b) Pressure increase explanation**
 - More air particles in tyre (1 mark)
 - More frequent collisions with tyre walls (1 mark)
 - Greater total force on walls, so pressure increases (1 mark)
 
 ---
 
-*End of Chapter 19 Quiz**
+*End of Chapter 19 Quiz*

@@ -427,9 +427,7 @@ $$\text{Taxable Income} = £42,500 - £12,570 = £39,930$$
 | Calculate tax | $20\% \times £39,930 = £7,986$ | M1 |
 | State answer | Annual income tax = £7,986 | A1 |
 
-**Answer:**
-- (a) Taxable income = £39,930
-- (b) Income tax = £7,986
+**Answer:** (a) Taxable income = £39,930; (b) Income tax = £7,986.
 
 ---
 
@@ -608,9 +606,7 @@ $$\text{Taxable Income} = £42,500 - £12,570 = £39,930$$
 | This year's cost | $\frac{\$2000}{1.27} = £1,574.80$ | M1 |
 | Difference | $£1,574.80 - £1,315.79 = £259.01$ | A1 |
 
-**Answer:**
-- (a) The pound has weakened (each pound buys fewer dollars)
-- (b) It costs £259.01 more this year
+**Answer:** (a) The pound has weakened because each pound now buys fewer dollars; (b) it costs £259.01 more this year.
 
 ---
 
@@ -687,9 +683,7 @@ $$\text{Taxable Income} = £42,500 - £12,570 = £39,930$$
 | Printer A: £596, Printer B: £479 | A1 |
 | Printer B is cheaper by $£596 - £479 = £117$ | A1 |
 
-**Answer:**
-- (a) Printer A total cost = £596, Printer B total cost = £479
-- (b) Printer B is more economical, saving £117 over the year
+**Answer:** (a) Printer A total cost = £596 and Printer B total cost = £479; (b) Printer B is more economical, saving £117 over the year.
 
 ---
 

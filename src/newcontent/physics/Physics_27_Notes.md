@@ -7,22 +7,39 @@
 
 ### Overview
 
-```
-NEBULA ──► PROTOSTAR ──► MAIN SEQUENCE ──► RED GIANT/SUPERGIANT
-                                              │
-                    ┌─────────────────────────┴─────────────────────────┐
-                    │                                                   │
-            Low-mass star                                    High-mass star
-           (like Sun)                                          (>8 solar masses)
-                    │                                                   │
-                    ▼                                                   ▼
-            PLANETARY NEBULA                                    SUPERNOVA
-                    │                                                   │
-                    ▼                                                   ▼
-            WHITE DWARF ──► BLACK DWARF                    NEUTRON STAR
-                                                                    │
-                                                                    ▼
-                                                              BLACK HOLE
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (nebula) at (0,0) {NEBULA};
+  \node (protostar) at (3,0) {PROTOSTAR};
+  \node (main) at (6.2,0) {MAIN SEQUENCE};
+  \node (giant) at (10.1,0) {RED GIANT / SUPERGIANT};
+
+  \node (low1) at (7.6,-2.0) {Low-mass star};
+  \node (low2) at (7.6,-2.7) {(like Sun)};
+  \node (high1) at (12.0,-2.0) {High-mass star};
+  \node (high2) at (12.0,-2.7) {(greater than 8 solar masses)};
+  \node (pn) at (7.6,-4.3) {PLANETARY NEBULA};
+  \node (sn) at (12.0,-4.3) {SUPERNOVA};
+  \node (wd) at (6.7,-6.1) {WHITE DWARF};
+  \node (bd) at (9.0,-6.1) {BLACK DWARF};
+  \node (ns) at (12.0,-6.1) {NEUTRON STAR};
+  \node (bh) at (12.0,-7.9) {BLACK HOLE};
+
+  \draw[->] (nebula) -- (protostar);
+  \draw[->] (protostar) -- (main);
+  \draw[->] (main) -- (giant);
+  \draw (giant) -- (10.1,-0.8);
+  \draw (10.1,-0.8) -- (7.6,-0.8);
+  \draw (10.1,-0.8) -- (12.0,-0.8);
+  \draw (7.6,-0.8) -- (7.6,-1.4);
+  \draw (12.0,-0.8) -- (12.0,-1.4);
+  \draw[->] (7.6,-3.0) -- (pn);
+  \draw[->] (12.0,-3.0) -- (sn);
+  \draw[->] (pn) -- (wd);
+  \draw[->] (wd) -- (bd);
+  \draw[->] (sn) -- (ns);
+  \draw[->] (ns) -- (bh);
+\end{tikzpicture}
 ```
 
 ---
@@ -89,14 +106,18 @@ Process:
 
 ### Red Giant (Low-Mass Stars)
 
-```
-    ┌───────────────────────────────┐
-    │      Expanded outer layers    │  ← Cool, red
-    │    ┌─────────────────────┐    │
-    │    │   Helium core       │    │  ← Hot, dense
-    │    │  (not yet fusing)   │    │
-    │    └─────────────────────┘    │
-    └───────────────────────────────┘
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \draw (-3.6,-2.0) rectangle (3.6,2.0);
+  \draw (-1.5,-0.9) rectangle (1.5,0.9);
+  \node at (0,1.2) {Expanded outer layers};
+  \node at (0,0.0) {Helium core};
+  \node at (0,-0.6) {(not yet fusing)};
+  \node at (5.0,1.2) {Cool, red};
+  \node at (5.0,-0.1) {Hot, dense};
+  \draw[->] (4.2,1.2) -- (3.6,1.2);
+  \draw[->] (4.2,-0.1) -- (1.5,-0.1);
+\end{tikzpicture}
 ```
 
 ### Supergiant (High-Mass Stars)
@@ -117,17 +138,17 @@ Process:
 4. Forms planetary nebula
 5. Core left behind as white dwarf
 
-```
-    Expanding shell of gas
-    ╭───────────────────────────╮
-   ╱    PLANETARY NEBULA        ╲
-  │    (glowing gas shell)       │
-  │        ╭──────╮               │
-  │       │ CORE  │ ← White dwarf │
-  │       │       │    forming    │
-  │        ╰──────╯               │
-   ╲                              ╱
-    ╰───────────────────────────╯
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \draw (0,0) ellipse (3.6 and 2.0);
+  \draw (0,0) circle (0.8);
+  \node at (0,0.9) {PLANETARY NEBULA};
+  \node at (0,0.2) {(glowing gas shell)};
+  \node at (0,-0.2) {CORE};
+  \node at (0,2.6) {Expanding shell of gas};
+  \node at (4.7,-0.1) {White dwarf forming};
+  \draw[->] (3.6,-0.1) -- (0.8,-0.1);
+\end{tikzpicture}
 ```
 
 ### White Dwarf
@@ -186,26 +207,24 @@ When iron core forms:
 
 ### Axes
 
-```
-    Luminosity
-    (relative
-    to Sun)
-    ↑
-1000│                    ★ Supergiants
-    │                 ★
- 100│    ★ Giants   ★
-    │  ★
-   10│                    ★
-    │    Main sequence
-    1│●─────────────────────────────
-    │
- 0.1│
-    │
-0.01│                    ★ White dwarfs
-    └───────────────────────────────►
-    50,000  10,000  5,000  3,000
-              Surface Temperature (K)
-              (decreasing →)
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \draw[->] (0,0) -- (0,5.5);
+  \draw[->] (0,0) -- (8.0,0);
+  \node at (0,5.9) {Luminosity};
+  \node at (7.0,-0.6) {Temperature (decreasing)};
+  \draw (0.8,4.7) -- (6.8,1.8);
+  \node at (4.1,2.6) {Main sequence};
+  \draw (1.2,4.4) circle (0.07);
+  \draw (1.7,4.9) circle (0.07);
+  \node at (1.4,5.2) {Giants};
+  \draw (5.7,5.0) circle (0.07);
+  \draw (6.2,4.6) circle (0.07);
+  \node at (6.1,5.3) {Supergiants};
+  \draw (6.0,1.0) circle (0.07);
+  \draw (6.6,1.2) circle (0.07);
+  \node at (6.7,0.5) {White dwarfs};
+\end{tikzpicture}
 ```
 
 ### Features

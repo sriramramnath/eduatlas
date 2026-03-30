@@ -15,6 +15,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^6.0.5",
     "marked": "^17.0.4",
+    "node-tikzjax": "^1.0.5",
     "tailwindcss": "^4.2.1"
   }
 }

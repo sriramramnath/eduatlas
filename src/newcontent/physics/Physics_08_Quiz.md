@@ -15,7 +15,7 @@ D) Watt
 
 **Answer: C**
 
-**Explanation**: Resistance is measured in ohms (Ω), named after Georg Ohm.*
+**Explanation**: Resistance is measured in ohms (Ω), named after Georg Ohm.
 
 ---
 
@@ -29,7 +29,7 @@ D) P = I × V
 
 **Answer: B**
 
-**Explanation**: Ohm's Law states that voltage = current × resistance.*
+**Explanation**: Ohm's Law states that voltage = current × resistance.
 
 ---
 
@@ -43,7 +43,7 @@ D) 16 Ω
 
 **Answer: C**
 
-**Explanation**: Resistance is directly proportional to length. Double length = double resistance.*
+**Explanation**: Resistance is directly proportional to length. Double length = double resistance.
 
 ---
 
@@ -57,7 +57,7 @@ D) 24 Ω
 
 **Answer: B**
 
-**Explanation**: Resistance is inversely proportional to area. Double area = half resistance.*
+**Explanation**: Resistance is inversely proportional to area. Double area = half resistance.
 
 ---
 
@@ -71,7 +71,7 @@ D) Nichrome wire at constant temperature
 
 **Answer: C**
 
-**Explanation**: A filament lamp's resistance increases as it gets hotter, so it does not obey Ohm's Law.*
+**Explanation**: A filament lamp's resistance increases as it gets hotter, so it does not obey Ohm's Law.
 
 ---
 
@@ -85,7 +85,7 @@ D) 18 A
 
 **Answer: B**
 
-**Explanation**: I = V ÷ R = 6 ÷ 3 = 2 A.*
+**Explanation**: I = V ÷ R = 6 ÷ 3 = 2 A.
 
 ---
 
@@ -99,7 +99,7 @@ D) It becomes zero
 
 **Answer: C**
 
-**Explanation**: For metals, higher temperature means more ion vibrations, causing more electron collisions and higher resistance.*
+**Explanation**: For metals, higher temperature means more ion vibrations, causing more electron collisions and higher resistance.
 
 ---
 
@@ -113,7 +113,7 @@ D) Obeys Ohm's Law
 
 **Answer: B**
 
-**Explanation**: Diodes are semiconductor devices that conduct current in one direction only (forward bias).*
+**Explanation**: Diodes are semiconductor devices that conduct current in one direction only (forward bias).
 
 ---
 
@@ -127,7 +127,7 @@ D) The voltage applied
 
 **Answer: C**
 
-**Explanation**: Resistivity is a property of the material. It does not depend on dimensions or voltage.*
+**Explanation**: Resistivity is a property of the material. It does not depend on dimensions or voltage.
 
 ---
 
@@ -141,7 +141,7 @@ D) 4 Ω
 
 **Answer: B**
 
-**Explanation**: R = ρL/A = (2×10⁻⁸ × 2) ÷ (1×10⁻⁶) = 4×10⁻⁸ ÷ 10⁻⁶ = 0.04 Ω.*
+**Explanation**: R = ρL/A = (2×10⁻⁸ × 2) ÷ (1×10⁻⁶) = 4×10⁻⁸ ÷ 10⁻⁶ = 0.04 Ω.
 
 ---
 
@@ -155,7 +155,7 @@ D) Rubber
 
 **Answer: A**
 
-**Explanation**: Copper is an excellent conductor with very low resistivity (about 1.7 × 10⁻⁸ Ωm).*
+**Explanation**: Copper is an excellent conductor with very low resistivity (about 1.7 × 10⁻⁸ Ωm).
 
 ---
 
@@ -169,7 +169,7 @@ D) Becomes magnetic when current flows
 
 **Answer: B**
 
-**Explanation**: Superconductors have zero electrical resistance below their critical temperature.*
+**Explanation**: Superconductors have zero electrical resistance below their critical temperature.
 
 ---
 
@@ -180,7 +180,7 @@ Resistance is defined as voltage divided by current.
 
 **Answer: True***
 
-**Explanation**: R = V ÷ I is the definition of resistance (Ohm's Law).*
+**Explanation**: R = V ÷ I is the definition of resistance (Ohm's Law).
 
 ---
 
@@ -216,7 +216,7 @@ The unit of resistivity is the ohm-metre (Ωm).
 
 **Answer: True***
 
-**Explanation**: From R = ρL/A, the units of ρ are Ω × m = Ωm.*
+**Explanation**: From R = ρL/A, the units of ρ are Ω × m = Ωm.
 
 ---
 
@@ -225,7 +225,7 @@ For a thermistor (NTC), resistance decreases as temperature increases.
 
 **Answer: True***
 
-**Explanation**: Negative Temperature Coefficient (NTC) thermistors have lower resistance at higher temperatures.*
+**Explanation**: Negative Temperature Coefficient (NTC) thermistors have lower resistance at higher temperatures.
 
 ---
 
@@ -252,7 +252,7 @@ Copper has a lower resistivity than nichrome.
 
 **Answer: True***
 
-**Explanation**: Copper (1.7 × 10⁻⁸ Ωm) has much lower resistivity than nichrome (1.1 × 10⁻⁶ Ωm), making it a better conductor.*
+**Explanation**: Copper (1.7 × 10⁻⁸ Ωm) has much lower resistivity than nichrome (1.1 × 10⁻⁶ Ωm), making it a better conductor.
 
 ---
 
@@ -261,7 +261,7 @@ The V-I graph for an ohmic conductor is a straight line through the origin.
 
 **Answer: True***
 
-**Explanation**: Ohmic conductors have constant resistance, so V = IR gives a straight line through the origin.*
+**Explanation**: Ohmic conductors have constant resistance, so V = IR gives a straight line through the origin.
 
 ---
 
@@ -288,7 +288,7 @@ For metals, resistance decreases as temperature increases.
 ### Question 1 (2 marks)
 State Ohm's Law.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The current through a conductor is directly proportional to the voltage across it (1 mark)
 - Provided the temperature remains constant (1 mark)
 
@@ -297,7 +297,7 @@ State Ohm's Law.
 ### Question 2 (3 marks)
 A 12 V battery is connected to a resistor, and a current of 0.4 A flows. Calculate the resistance.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: R = V ÷ I (1 mark)
 - Substitution: R = 12 ÷ 0.4 (1 mark)
 - Answer: 30 Ω (1 mark)
@@ -307,7 +307,7 @@ A 12 V battery is connected to a resistor, and a current of 0.4 A flows. Calcula
 ### Question 3 (4 marks)
 Explain why the resistance of a metal wire increases as its temperature increases.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - As temperature increases, metal ions vibrate more (1 mark)
 - This causes more collisions between electrons and ions (1 mark)
 - Electrons find it harder to flow through the wire (1 mark)
@@ -318,7 +318,7 @@ Explain why the resistance of a metal wire increases as its temperature increase
 ### Question 4 (3 marks)
 A wire has length 3 m and resistance 6 Ω. Calculate the resistance of a wire of the same material with length 9 m and the same cross-sectional area.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Resistance is proportional to length (1 mark)
 - New length is 3× original, so new resistance = 3× original (1 mark)
 - New resistance = 18 Ω (1 mark)
@@ -328,7 +328,7 @@ A wire has length 3 m and resistance 6 Ω. Calculate the resistance of a wire of
 ### Question 5 (4 marks)
 Describe an experiment to investigate how the resistance of a wire changes with its length.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Set up circuit with wire, ammeter in series, voltmeter across wire (1 mark)
 - Measure current and voltage for different lengths of wire (1 mark)
 - Calculate resistance using R = V/I for each length (1 mark)
@@ -339,7 +339,7 @@ Describe an experiment to investigate how the resistance of a wire changes with 
 ### Question 6 (3 marks)
 Explain why a filament lamp does not obey Ohm's Law.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - As voltage increases, the lamp gets hotter (1 mark)
 - The resistance of the filament increases with temperature (1 mark)
 - Therefore the V-I graph is not a straight line (1 mark)
@@ -349,7 +349,7 @@ Explain why a filament lamp does not obey Ohm's Law.
 ### Question 7 (4 marks)
 A copper wire has length 5 m, cross-sectional area 2 mm², and resistivity 1.7 × 10⁻⁸ Ωm. Calculate its resistance.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Convert area: 2 mm² = 2 × 10⁻⁶ m² (1 mark)
 - Formula: R = ρL/A (1 mark)
 - R = (1.7×10⁻⁸ × 5) ÷ (2×10⁻⁶) (1 mark)
@@ -360,7 +360,7 @@ A copper wire has length 5 m, cross-sectional area 2 mm², and resistivity 1.7 �
 ### Question 8 (2 marks)
 State two factors that affect the resistance of a wire (other than temperature).
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Length of wire (1 mark)
   - Cross-sectional area (1 mark)
@@ -373,7 +373,7 @@ Sketch the V-I characteristic graph for:
 (a) A fixed resistor (1 mark)
 (b) A filament lamp (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Straight line through origin (1 mark)
 (b) Curve starting at origin, getting less steep as V increases (1 mark)
     Correct shape showing increasing resistance (1 mark)
@@ -383,7 +383,7 @@ Sketch the V-I characteristic graph for:
 ### Question 10 (4 marks)
 Explain the difference between an ohmic conductor and a non-ohmic conductor, giving an example of each.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Ohmic: obeys Ohm's Law, constant resistance, straight V-I graph (1 mark)
 - Example: metal wire at constant temperature / fixed resistor (1 mark)
 - Non-ohmic: does not obey Ohm's Law, resistance changes (1 mark)
@@ -393,7 +393,7 @@ Explain the difference between an ohmic conductor and a non-ohmic conductor, giv
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A student investigates the resistance of a nichrome wire.
 
 (a) The wire has length 2.0 m, cross-sectional area 0.5 mm², and resistivity 1.1 × 10⁻⁶ Ωm. Calculate the resistance of the wire. (3 marks)
@@ -402,21 +402,21 @@ A student investigates the resistance of a nichrome wire.
 
 (c) The student doubles the length of the wire. State and explain what happens to the current. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Resistance calculation***
+**(a) Resistance calculation**
 - Convert area: 0.5 mm² = 0.5 × 10⁻⁶ m² = 5 × 10⁻⁷ m² (1 mark)
 - R = ρL/A = (1.1×10⁻⁶ × 2.0) ÷ (5×10⁻⁷) (1 mark)
 - R = 2.2×10⁻⁶ ÷ 5×10⁻⁷ = 4.4 Ω (1 mark)
 
-**(b) Current calculation***
+**(b) Current calculation**
 - I = V/R = 6.0/4.4 (1 mark)
 - I = 1.36 A (accept 1.4 A) (1 mark)
 
-**(c) Effect of doubling length***
+**(c) Effect of doubling length**
 - Current halves / decreases (1 mark)
 - Because resistance doubles (and V = IR) (1 mark)
 
 ---
 
-*End of Chapter 8 Quiz**
+*End of Chapter 8 Quiz*

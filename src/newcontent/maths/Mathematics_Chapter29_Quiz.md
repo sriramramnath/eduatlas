@@ -441,9 +441,7 @@ Find and classify the stationary points on the curve $y = x^3 - 3x^2 - 9x + 5$.
 | 8 | At $x = 3$: $\frac{d^2y}{dx^2} = 12 > 0$, so **minimum** | |
 | 9 | At $x = -1$: $\frac{d^2y}{dx^2} = -12 < 0$, so **maximum** | A1 |
 
-**Answer:** 
-- **Maximum at $(-1, 10)$**
-- **Minimum at $(3, -22)$**
+**Answer:** Maximum at $(-1, 10)$; minimum at $(3, -22)$.
 
 ---
 

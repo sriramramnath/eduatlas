@@ -15,7 +15,7 @@ D) James Watt
 
 **Answer: B**
 
-**Explanation**: Michael Faraday discovered electromagnetic induction in 1831.*
+**Explanation**: Michael Faraday discovered electromagnetic induction in 1831.
 
 ---
 
@@ -29,7 +29,7 @@ D) It is placed in water
 
 **Answer: B**
 
-**Explanation**: Electromagnetic induction requires a changing magnetic field.*
+**Explanation**: Electromagnetic induction requires a changing magnetic field.
 
 ---
 
@@ -43,7 +43,7 @@ D) 200 V
 
 **Answer: D**
 
-**Explanation**: Vp/Vs = Np/Ns → 50/Vs = 200/800 → Vs = 50 × 4 = 200 V.*
+**Explanation**: Vp/Vs = Np/Ns → 50/Vs = 200/800 → Vs = 50 × 4 = 200 V.
 
 ---
 
@@ -57,7 +57,7 @@ D) Neither AC nor DC
 
 **Answer: B**
 
-**Explanation**: Transformers need a changing current to create a changing magnetic field, so they only work with AC.*
+**Explanation**: Transformers need a changing current to create a changing magnetic field, so they only work with AC.
 
 ---
 
@@ -71,7 +71,7 @@ D) It makes the electricity cleaner
 
 **Answer: B**
 
-**Explanation**: High voltage means lower current for the same power, which reduces heat loss (I²R) in transmission cables.*
+**Explanation**: High voltage means lower current for the same power, which reduces heat loss (I²R) in transmission cables.
 
 ---
 
@@ -85,7 +85,7 @@ D) Finding the resistance of a wire
 
 **Answer: B**
 
-**Explanation**: Fleming's right-hand rule (Thumb = Motion, First = Field, Second = Current) is used for generators/induction.*
+**Explanation**: Fleming's right-hand rule (Thumb = Motion, First = Field, Second = Current) is used for generators/induction.
 
 ---
 
@@ -99,7 +99,7 @@ D) No iron core
 
 **Answer: B**
 
-**Explanation**: Step-down transformers have Ns < Np, so Vs < Vp.*
+**Explanation**: Step-down transformers have Ns < Np, so Vs < Vp.
 
 ---
 
@@ -113,7 +113,7 @@ D) Power out = 0
 
 **Answer: B**
 
-**Explanation**: In an ideal transformer, no energy is lost, so power in equals power out (Vp × Ip = Vs × Is).*
+**Explanation**: In an ideal transformer, no energy is lost, so power in equals power out (Vp × Ip = Vs × Is).
 
 ---
 
@@ -127,7 +127,7 @@ D) Using a smaller coil
 
 **Answer: C**
 
-**Explanation**: More turns, stronger magnet, or faster rotation all increase induced voltage.*
+**Explanation**: More turns, stronger magnet, or faster rotation all increase induced voltage.
 
 ---
 
@@ -141,7 +141,7 @@ D) 275,000 - 400,000 V
 
 **Answer: D**
 
-**Explanation**: The National Grid transmits at very high voltages (275-400 kV) to minimize energy loss.*
+**Explanation**: The National Grid transmits at very high voltages (275-400 kV) to minimize energy loss.
 
 ---
 
@@ -155,7 +155,7 @@ D) Stores energy
 
 **Answer: B**
 
-**Explanation**: The commutator reverses connections to keep current flowing in the same direction (DC).*
+**Explanation**: The commutator reverses connections to keep current flowing in the same direction (DC).
 
 ---
 
@@ -169,7 +169,7 @@ D) Neither type of generator
 
 **Answer: B**
 
-**Explanation**: AC generators use slip rings for continuous contact. DC generators use a commutator.*
+**Explanation**: AC generators use slip rings for continuous contact. DC generators use a commutator.
 
 ---
 
@@ -180,7 +180,7 @@ Electromagnetic induction occurs when a conductor moves through a magnetic field
 
 **Answer: True***
 
-**Explanation**: Moving a conductor through a magnetic field (or changing the field) induces a voltage.*
+**Explanation**: Moving a conductor through a magnetic field (or changing the field) induces a voltage.
 
 ---
 
@@ -207,7 +207,7 @@ Step-up transformers increase voltage and decrease current.
 
 **Answer: True***
 
-**Explanation**: Step-up transformers increase voltage (Vs > Vp) and decrease current (Is < Ip) to conserve power.*
+**Explanation**: Step-up transformers increase voltage (Vs > Vp) and decrease current (Is < Ip) to conserve power.
 
 ---
 
@@ -216,7 +216,7 @@ The iron core in a transformer is used to reduce energy loss.
 
 **Answer: True***
 
-**Explanation**: The iron core channels the magnetic field efficiently from primary to secondary coil.*
+**Explanation**: The iron core channels the magnetic field efficiently from primary to secondary coil.
 
 ---
 
@@ -243,7 +243,7 @@ A changing magnetic field is required for electromagnetic induction.
 
 **Answer: True***
 
-**Explanation**: Induction requires a changing magnetic field - either by moving the magnet, moving the coil, or changing the current.*
+**Explanation**: Induction requires a changing magnetic field - either by moving the magnet, moving the coil, or changing the current.
 
 ---
 
@@ -261,7 +261,7 @@ Eddy currents in a transformer core reduce efficiency.
 
 **Answer: True***
 
-**Explanation**: Eddy currents in the core cause heating, which wastes energy and reduces efficiency.*
+**Explanation**: Eddy currents in the core cause heating, which wastes energy and reduces efficiency.
 
 ---
 
@@ -270,7 +270,7 @@ AC is used for power transmission because it can be easily transformed.
 
 **Answer: True***
 
-**Explanation**: AC can be stepped up or down easily using transformers, making it ideal for power transmission.*
+**Explanation**: AC can be stepped up or down easily using transformers, making it ideal for power transmission.
 
 ---
 
@@ -288,7 +288,7 @@ The faster a coil rotates in a generator, the lower the induced voltage.
 ### Question 1 (2 marks)
 State two factors that affect the size of the induced voltage in a generator.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Strength of magnetic field (1 mark)
   - Number of turns on coil (1 mark)
@@ -299,7 +299,7 @@ State two factors that affect the size of the induced voltage in a generator.
 ### Question 2 (3 marks)
 Explain how a transformer works.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - AC in primary coil creates changing magnetic field (1 mark)
 - Iron core channels field to secondary coil (1 mark)
 - Changing field induces voltage in secondary coil (1 mark)
@@ -312,7 +312,7 @@ A transformer has 400 primary turns and 100 secondary turns. The primary voltage
 (b) State whether this is a step-up or step-down transformer. (1 mark)
 (c) Calculate the current in the secondary coil if the primary current is 0.5 A (assume 100% efficiency). (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Vp/Vs = Np/Ns → 240/Vs = 400/100 (1 mark)
     Vs = 60 V (1 mark)
 (b) Step-down (1 mark)
@@ -323,7 +323,7 @@ A transformer has 400 primary turns and 100 secondary turns. The primary voltage
 ### Question 4 (3 marks)
 Explain why electricity is transmitted at high voltage.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - High voltage means lower current for same power (1 mark)
 - Lower current means less heat loss in cables (P = I²R) (1 mark)
 - More efficient transmission (1 mark)
@@ -333,7 +333,7 @@ Explain why electricity is transmitted at high voltage.
 ### Question 5 (4 marks)
 Describe the difference between AC and DC generators.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - AC generator: slip rings, produces alternating current (2 marks)
 - DC generator: commutator, produces direct current (2 marks)
 
@@ -342,7 +342,7 @@ Describe the difference between AC and DC generators.
 ### Question 6 (3 marks)
 State Fleming's right-hand rule for electromagnetic induction.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Thumb = Motion (1 mark)
 - First finger = Field (N to S) (1 mark)
 - Second finger = Current (1 mark)
@@ -352,7 +352,7 @@ State Fleming's right-hand rule for electromagnetic induction.
 ### Question 7 (4 marks)
 Explain why transformers only work with AC, not DC.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Transformers need a changing magnetic field (1 mark)
 - AC constantly changes direction, creating changing field (1 mark)
 - DC is steady, so no changing field (1 mark)
@@ -363,7 +363,7 @@ Explain why transformers only work with AC, not DC.
 ### Question 8 (2 marks)
 State two causes of energy loss in a transformer.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Any two from:
   - Resistance in coils (1 mark)
   - Eddy currents in core (1 mark)
@@ -374,7 +374,7 @@ State two causes of energy loss in a transformer.
 ### Question 9 (3 marks)
 Describe an experiment to demonstrate electromagnetic induction.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Connect coil to sensitive galvanometer (1 mark)
 - Move magnet into/out of coil (1 mark)
 - Galvanometer shows induced current (1 mark)
@@ -386,7 +386,7 @@ The National Grid transmits electricity at 400 kV to homes at 230 V.
 (a) Calculate the turns ratio needed for a transformer to step down 400 kV to 230 V. (2 marks)
 (b) Explain why such high voltages are used for transmission. (2 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 (a) Np/Ns = Vp/Vs = 400,000/230 (1 mark)
     Ratio = 1739:1 (or approximately 1740:1) (1 mark)
 (b) High voltage means low current (1 mark)
@@ -396,22 +396,22 @@ The National Grid transmits electricity at 400 kV to homes at 230 V.
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 (a) Describe the construction of a simple AC generator. (3 marks)
 (b) Explain how the generator produces an alternating current. (3 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) AC generator construction***
+**(a) AC generator construction**
 - Coil of wire that can rotate (1 mark)
 - Magnetic field (permanent magnets or electromagnets) (1 mark)
 - Slip rings and brushes for electrical contact (1 mark)
 
-**(b) How AC is produced***
+**(b) How AC is produced**
 - Coil rotates, cutting magnetic field lines (1 mark)
 - This induces a voltage in the coil (1 mark)
 - Direction of induced current reverses every half turn, producing AC (1 mark)
 
 ---
 
-*End of Chapter 21 Quiz**
+*End of Chapter 21 Quiz*

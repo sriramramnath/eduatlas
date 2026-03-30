@@ -15,7 +15,7 @@ D) Metre
 
 **Answer: B**
 
-**Explanation**: Moment = force × distance, so units = N × m = Nm.*
+**Explanation**: Moment = force × distance, so units = N × m = Nm.
 
 ---
 
@@ -29,7 +29,7 @@ D) 80 Nm
 
 **Answer: B**
 
-**Explanation**: M = F × d = 20 × 0.4 = 8 Nm.*
+**Explanation**: M = F × d = 20 × 0.4 = 8 Nm.
 
 ---
 
@@ -43,7 +43,7 @@ D) The pivot must be in the centre
 
 **Answer: B**
 
-**Explanation**: The principle of moments states that sum of clockwise moments equals sum of anticlockwise moments for equilibrium.*
+**Explanation**: The principle of moments states that sum of clockwise moments equals sum of anticlockwise moments for equilibrium.
 
 ---
 
@@ -57,7 +57,7 @@ D) 4 m
 
 **Answer: C**
 
-**Explanation**: 30 × 2 = 20 × d → 60 = 20d → d = 3 m.*
+**Explanation**: 30 × 2 = 20 × d → 60 = 20d → d = 3 m.
 
 ---
 
@@ -71,7 +71,7 @@ D) Where the mass is greatest
 
 **Answer: B**
 
-**Explanation**: Centre of gravity is the point where the weight of the object can be considered to act.*
+**Explanation**: Centre of gravity is the point where the weight of the object can be considered to act.
 
 ---
 
@@ -85,7 +85,7 @@ D) Less mass
 
 **Answer: C**
 
-**Explanation**: A lower centre of gravity and wider base both increase stability.*
+**Explanation**: A lower centre of gravity and wider base both increase stability.
 
 ---
 
@@ -99,7 +99,7 @@ D) Load - Pivot - Effort
 
 **Answer: B**
 
-**Explanation**: Class 2 levers have the pivot at one end, load in the middle, and effort at the other end (e.g., wheelbarrow).*
+**Explanation**: Class 2 levers have the pivot at one end, load in the middle, and effort at the other end (e.g., wheelbarrow).
 
 ---
 
@@ -113,7 +113,7 @@ D) Two forces at right angles
 
 **Answer: C**
 
-**Explanation**: A couple is a pair of equal, opposite, parallel forces that produce rotation.*
+**Explanation**: A couple is a pair of equal, opposite, parallel forces that produce rotation.
 
 ---
 
@@ -127,7 +127,7 @@ D) Force × Distance
 
 **Answer: B**
 
-**Explanation**: MA = Load ÷ Effort. MA > 1 means the machine multiplies force.*
+**Explanation**: MA = Load ÷ Effort. MA > 1 means the machine multiplies force.
 
 ---
 
@@ -135,13 +135,13 @@ D) Force × Distance
 A metre rule is balanced at its centre. A 40 N weight hangs at the 20 cm mark. What weight at the 70 cm mark will balance it?
 
 A) 10 N  
-B) 16 N  
+B) 60 N  
 C) 20 N  
 D) 40 N
 
 **Answer: B**
 
-**Explanation**: Distance from centre = 30 cm = 0.3 m for both. 40 × 0.3 = W × 0.5 → W = 24 N. Wait - let me recalculate: 40 × 0.3 = W × 0.2 (70-50=20cm=0.2m) → W = 60 N. Hmm, let me redo: 40 N at 20cm (30cm from centre), need weight at 70cm (20cm from centre). 40 × 30 = W × 20 → W = 60 N. This doesn't match options. Let me try: 40 × 0.3 = W × 0.5 → W = 24 N. Still no match. The closest is B) 16 N if distances are different. Let me recalculate with 40 N at 30cm from centre (20cm mark on 100cm rule, centre at 50cm): distance = 30cm. At 70cm mark: distance = 20cm. So 40 × 30 = W × 20 → W = 60 N. None match. I'll use a different setup: 40 N at 10cm from centre, W at 25cm from centre: 40 × 10 = W × 25 → W = 16 N. Answer B.*
+**Explanation**: The 40 N weight is 30 cm from the pivot and the unknown weight is 20 cm from the pivot. Using the principle of moments, \(40 \times 30 = W \times 20\). Solving gives \(W = 60\text{ N}\).
 
 ---
 
@@ -155,7 +155,7 @@ D) It has a wide base
 
 **Answer: C**
 
-**Explanation**: An object topples when a vertical line from its centre of gravity falls outside its base.*
+**Explanation**: An object topples when a vertical line from its centre of gravity falls outside its base.
 
 ---
 
@@ -169,7 +169,7 @@ D) Not a lever
 
 **Answer: A**
 
-**Explanation**: A crowbar has the pivot between the effort and load (Class 1 lever).*
+**Explanation**: A crowbar has the pivot between the effort and load (Class 1 lever).
 
 ---
 
@@ -189,7 +189,7 @@ For an object in equilibrium, the sum of clockwise moments equals the sum of ant
 
 **Answer: True***
 
-**Explanation**: This is the principle of moments, a condition for rotational equilibrium.*
+**Explanation**: This is the principle of moments, a condition for rotational equilibrium.
 
 ---
 
@@ -198,7 +198,7 @@ The centre of gravity of a uniform metre rule is at the 50 cm mark.
 
 **Answer: True***
 
-**Explanation**: For a uniform object, the centre of gravity is at the geometric centre.*
+**Explanation**: For a uniform object, the centre of gravity is at the geometric centre.
 
 ---
 
@@ -207,7 +207,7 @@ A wider base always makes an object more stable.
 
 **Answer: True***
 
-**Explanation**: A wider base makes it harder for the centre of gravity to move outside the base, increasing stability.*
+**Explanation**: A wider base makes it harder for the centre of gravity to move outside the base, increasing stability.
 
 ---
 
@@ -225,7 +225,7 @@ A couple produces rotation without translation.
 
 **Answer: True***
 
-**Explanation**: A couple consists of equal and opposite forces, so there's no net force (no translation), only a turning effect.*
+**Explanation**: A couple consists of equal and opposite forces, so there's no net force (no translation), only a turning effect.
 
 ---
 
@@ -252,7 +252,7 @@ A lower centre of gravity increases stability.
 
 **Answer: True***
 
-**Explanation**: A lower centre of gravity means the object must tilt further before the CG moves outside the base.*
+**Explanation**: A lower centre of gravity means the object must tilt further before the CG moves outside the base.
 
 ---
 
@@ -261,7 +261,7 @@ Mechanical advantage can be less than 1.
 
 **Answer: True***
 
-**Explanation**: MA < 1 means the effort is greater than the load. This happens in Class 3 levers where distance/speed is gained.*
+**Explanation**: MA < 1 means the effort is greater than the load. This happens in Class 3 levers where distance/speed is gained.
 
 ---
 
@@ -270,7 +270,7 @@ The perpendicular distance in moment calculations is always the shortest distanc
 
 **Answer: True***
 
-**Explanation**: The perpendicular (shortest) distance from the pivot to the line of action of the force is used in moment calculations.*
+**Explanation**: The perpendicular (shortest) distance from the pivot to the line of action of the force is used in moment calculations.
 
 ---
 
@@ -288,7 +288,7 @@ A wheelbarrow is a Class 1 lever.
 ### Question 1 (2 marks)
 Define the moment of a force.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - The turning effect of a force (1 mark)
 - Calculated as force × perpendicular distance from pivot (1 mark)
 
@@ -297,7 +297,7 @@ Define the moment of a force.
 ### Question 2 (3 marks)
 A 25 N force acts at a perpendicular distance of 0.8 m from a pivot. Calculate the moment.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Formula: M = F × d (1 mark)
 - Substitution: M = 25 × 0.8 (1 mark)
 - Answer: 20 Nm (1 mark)
@@ -307,7 +307,7 @@ A 25 N force acts at a perpendicular distance of 0.8 m from a pivot. Calculate t
 ### Question 3 (4 marks)
 A seesaw is balanced with a 40 N child sitting 1.5 m from the pivot on one side. Calculate where a 30 N child should sit to balance the seesaw.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Principle: Clockwise moment = Anticlockwise moment (1 mark)
 - 40 × 1.5 = 30 × d (1 mark)
 - 60 = 30d (1 mark)
@@ -318,7 +318,7 @@ A seesaw is balanced with a 40 N child sitting 1.5 m from the pivot on one side.
 ### Question 4 (3 marks)
 Explain why a racing car is designed with a low centre of gravity and wide wheelbase.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Low centre of gravity makes it harder to topple (1 mark)
 - Wide wheelbase increases stability (1 mark)
 - Both factors make the car more stable when cornering at high speed (1 mark)
@@ -328,7 +328,7 @@ Explain why a racing car is designed with a low centre of gravity and wide wheel
 ### Question 5 (4 marks)
 Describe how you would find the centre of gravity of an irregularly shaped card.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Suspend the card from a point using a pin (1 mark)
 - Hang a plumb line from the same point and mark the vertical line (1 mark)
 - Repeat from a different suspension point (1 mark)
@@ -339,7 +339,7 @@ Describe how you would find the centre of gravity of an irregularly shaped card.
 ### Question 6 (3 marks)
 A metre rule is balanced at its 60 cm mark. A 20 N weight hangs at the 20 cm mark. Calculate the weight needed at the 90 cm mark to maintain balance.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Distance from pivot: 20 N at 40 cm (0.4 m), W at 30 cm (0.3 m) (1 mark)
 - 20 × 0.4 = W × 0.3 (1 mark)
 - W = 26.7 N (or 80/3 N) (1 mark)
@@ -349,7 +349,7 @@ A metre rule is balanced at its 60 cm mark. A 20 N weight hangs at the 20 cm mar
 ### Question 7 (2 marks)
 State the two conditions for an object to be in equilibrium.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Resultant force must be zero (1 mark)
 - Resultant moment must be zero (1 mark)
 
@@ -358,7 +358,7 @@ State the two conditions for an object to be in equilibrium.
 ### Question 8 (4 marks)
 Explain the difference between a Class 1 and Class 2 lever, giving an example of each.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Class 1: Pivot is between effort and load (1 mark)
 - Example: seesaw, crowbar, scissors (1 mark)
 - Class 2: Load is between pivot and effort (1 mark)
@@ -369,7 +369,7 @@ Explain the difference between a Class 1 and Class 2 lever, giving an example of
 ### Question 9 (3 marks)
 A uniform metre rule of weight 10 N is pivoted at the 30 cm mark. A 20 N weight hangs at the 10 cm mark. Calculate the force needed at the 80 cm mark to maintain balance.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Rule's weight acts at 50 cm mark, 20 cm from pivot (1 mark)
 - Clockwise: (10 × 0.2) + (20 × 0.2) = 2 + 4 = 6 Nm (1 mark)
 - Anticlockwise: F × 0.5 = 6, so F = 12 N (1 mark)
@@ -379,7 +379,7 @@ A uniform metre rule of weight 10 N is pivoted at the 30 cm mark. A 20 N weight 
 ### Question 10 (4 marks)
 A couple consists of two 15 N forces acting 0.4 m apart. Calculate the moment of the couple and explain what effect it has on an object.
 
-**Mark Scheme:***
+**Mark Scheme:**
 - Moment = F × d = 15 × 0.4 (1 mark)
 - Moment = 6 Nm (1 mark)
 - A couple produces rotation (1 mark)
@@ -389,25 +389,25 @@ A couple consists of two 15 N forces acting 0.4 m apart. Calculate the moment of
 
 ## Extended Answer Question (6 marks)
 
-### Question
+### Question 11 (6 marks)
 A uniform bridge of weight 8000 N and length 20 m rests on two supports P and Q at either end.
 
 (a) State the weight of the bridge and where it acts. (1 mark)
 (b) A 3000 N car is parked 5 m from support P. Calculate the reaction force at support P. (4 marks)
 (c) Calculate the reaction force at support Q. (1 mark)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
-**(a) Bridge weight***
+**(a) Bridge weight**
 - 8000 N acting at the centre (10 m from either end) (1 mark)
 
-**(b) Reaction at P***
+**(b) Reaction at P**
 - Take moments about Q: (1 mark)
 - Clockwise: (8000 × 10) + (3000 × 15) = 80000 + 45000 = 125000 Nm (1 mark)
 - Anticlockwise: Rp × 20 (1 mark)
 - Rp × 20 = 125000 → Rp = 6250 N (1 mark)
 
-**(c) Reaction at Q***
+**(c) Reaction at Q**
 - Total upward force = Total downward force (1 mark)
 - Rp + Rq = 8000 + 3000 = 11000
 - Rq = 11000 - 6250 = 4750 N (1 mark)
@@ -415,4 +415,4 @@ A uniform bridge of weight 8000 N and length 20 m rests on two supports P and Q 
 
 ---
 
-*End of Chapter 5 Quiz**
+*End of Chapter 5 Quiz*

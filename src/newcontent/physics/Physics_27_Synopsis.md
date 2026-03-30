@@ -6,19 +6,43 @@
 ## Life Cycle of Stars
 
 ### Low-Mass Stars (like Sun)
-```
-Nebula → Protostar → Main Sequence → Red Giant 
-                                          ↓
-                              Planetary Nebula → White Dwarf → Black Dwarf
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (nebula) at (0,0) {Nebula};
+  \node (protostar) at (2.7,0) {Protostar};
+  \node (main) at (5.8,0) {Main Sequence};
+  \node (giant) at (8.7,0) {Red Giant};
+  \node (pn) at (8.7,-2.0) {Planetary Nebula};
+  \node (wd) at (8.7,-4.0) {White Dwarf};
+  \node (bd) at (11.4,-4.0) {Black Dwarf};
+
+  \draw[->] (nebula) -- (protostar);
+  \draw[->] (protostar) -- (main);
+  \draw[->] (main) -- (giant);
+  \draw[->] (giant) -- (pn);
+  \draw[->] (pn) -- (wd);
+  \draw[->] (wd) -- (bd);
+\end{tikzpicture}
 ```
 
 ### High-Mass Stars (>8 solar masses)
-```
-Nebula → Protostar → Main Sequence → Supergiant 
-                                          ↓
-                                    Supernova
-                                          ↓
-                              Neutron Star OR Black Hole
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (nebula) at (0,0) {Nebula};
+  \node (protostar) at (2.7,0) {Protostar};
+  \node (main) at (5.8,0) {Main Sequence};
+  \node[align=center] (sg) at (8.8,0) {Supergiant};
+  \node (sn) at (8.8,-2.0) {Supernova};
+  \node (ns) at (7.1,-4.1) {Neutron Star};
+  \node (bh) at (10.5,-4.1) {Black Hole};
+
+  \draw[->] (nebula) -- (protostar);
+  \draw[->] (protostar) -- (main);
+  \draw[->] (main) -- (sg);
+  \draw[->] (sg) -- (sn);
+  \draw[->] (sn) -- (ns);
+  \draw[->] (sn) -- (bh);
+\end{tikzpicture}
 ```
 
 ---
@@ -47,16 +71,21 @@ Nebula → Protostar → Main Sequence → Supergiant
 
 ## HR Diagram
 
-```
-Luminosity ↑
-           │    ★ Supergiants
-           │ ★ Giants
-           │
-        1 ─┼──────────── Main sequence
-           │
-           │        ★ White dwarfs
-           └──────────────────►
-              Temperature (hot → cool)
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \draw[->] (0,0) -- (0,4.6);
+  \draw[->] (0,0) -- (7.2,0);
+  \node at (0.7,4.8) {Luminosity};
+  \node at (5.7,-0.5) {Temperature};
+  \draw (0.9,4.0) -- (5.8,1.2);
+  \node at (3.8,2.1) {Main sequence};
+  \draw (5.2,4.1) circle (0.07);
+  \node at (5.7,4.4) {Supergiants};
+  \draw (1.5,3.4) circle (0.07);
+  \node at (1.8,3.8) {Giants};
+  \draw (5.8,0.8) circle (0.07);
+  \node at (6.3,0.5) {White dwarfs};
+\end{tikzpicture}
 ```
 
 ---

@@ -252,7 +252,7 @@ All isotopes of an element are radioactive.
 ### Question 1
 Describe the structure of an atom, including the location and properties of subatomic particles.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Nucleus at center containing protons and neutrons (1)
 - Protons: positive charge, mass = 1 (1)
 - Neutrons: neutral, mass = 1 (1)
@@ -263,7 +263,7 @@ Describe the structure of an atom, including the location and properties of suba
 ### Question 2
 Define the term 'isotope' and give an example.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Atoms of same element/same number of protons (1)
 - Different number of neutrons (1)
 - Example: carbon-12 and carbon-14 (or any valid example) (1)
@@ -273,7 +273,7 @@ Define the term 'isotope' and give an example.
 ### Question 3
 Compare the ionizing ability and penetrating power of alpha and beta radiation.
 
-**Mark Scheme (4 marks):***
+**Mark Scheme (4 marks):**
 - Alpha: highly ionizing, low penetration/stopped by paper (2)
 - Beta: moderately ionizing, moderate penetration/stopped by aluminum (2)
 
@@ -283,7 +283,7 @@ Compare the ionizing ability and penetrating power of alpha and beta radiation.
 Complete the following alpha decay equation:
 ₂₂₆₈₈Ra → ? + ₄²He
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - ₂₂₆₈₈Ra → ₂₂₂₈₆Rn + ₄²He (2)
 (Award 1 mark for correct mass number, 1 mark for correct atomic number)
 
@@ -292,7 +292,7 @@ Complete the following alpha decay equation:
 ### Question 5
 Explain why gamma radiation is not deflected by magnetic fields.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Gamma has no charge/is neutral (1)
 - Magnetic fields only affect charged particles (1)
 
@@ -304,7 +304,7 @@ a) The atomic number
 b) The mass number
 c) The element
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - a) 15 (1)
 - b) 31 (1)
 - c) Phosphorus (1)
@@ -314,7 +314,7 @@ c) The element
 ### Question 7
 Describe what happens during beta decay.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Neutron changes to proton (1)
 - Electron (beta particle) emitted (1)
 - Atomic number increases by 1, mass number unchanged (1)
@@ -324,7 +324,7 @@ Describe what happens during beta decay.
 ### Question 8
 Explain why alpha particles are dangerous inside the body but relatively safe outside.
 
-**Mark Scheme (3 marks):***
+**Mark Scheme (3 marks):**
 - Alpha highly ionizing/damages cells (1)
 - Cannot penetrate skin from outside (1)
 - If ingested/inhaled, directly damages internal tissues (1)
@@ -334,7 +334,7 @@ Explain why alpha particles are dangerous inside the body but relatively safe ou
 ### Question 9
 Calculate the number of neutrons in ₂₃₅₉₂U.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Neutrons = mass number - atomic number (1)
 - 235 - 92 = 143 neutrons (1)
 
@@ -343,14 +343,14 @@ Calculate the number of neutrons in ₂₃₅₉₂U.
 ### Question 10
 State two safety precautions when handling radioactive materials.
 
-**Mark Scheme (2 marks):***
+**Mark Scheme (2 marks):**
 - Any two from: use tongs/distance, wear protective clothing, limit exposure time, use shielding, store in lead containers (2)
 
 ---
 
 ## Extended Answer Question
 
-### Question
+### Question 11
 A student investigates the radiation emitted by an unknown source. She finds that:
 - The radiation is stopped by a sheet of paper
 - The radiation is deflected by a magnetic field
@@ -362,7 +362,7 @@ b) Describe an experiment to compare the penetrating power of different types of
 
 c) Explain the changes that occur in the nucleus during the decay that produces this radiation. Write a decay equation for radon-222 undergoing this type of decay. (4 marks)
 
-**Mark Scheme:***
+**Mark Scheme:**
 
 **Part a) (3 marks):***
 - Alpha radiation (1)
