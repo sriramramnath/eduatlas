@@ -56,15 +56,12 @@ n = time ÷ half-life
 
 ## Decay Curve
 
-```
-Activity
-  │
-  │████
-  │    ████
-  │        ████
-  │            ████
-  │                ████
-  └───────────────────────► Time
+```tex
+\begin{tikzpicture}[x=1cm,y=0.9cm,>=stealth,font=\small]
+  \draw[->] (0,0) -- (5.8,0) node[right] {Time};
+  \draw[->] (0,0) -- (0,4.4) node[above] {Activity};
+  \draw[smooth,thick] plot coordinates {(0,4) (1,3.15) (2,2.45) (3,1.85) (4,1.35) (5,0.95)};
+\end{tikzpicture}
 ```
 - Exponential decay
 - Constant half-life

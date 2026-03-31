@@ -7,157 +7,157 @@
 
 ### Question 1
 Which planet is closest to the Sun?
-- A) Venus
-- B) Earth
-- C) Mercury
-- D) Mars
+A) Venus
+B) Earth
+C) Mercury
+D) Mars
 
 **Answer: C**
 
-***Explanation**:** Mercury is the innermost planet, orbiting closest to the Sun at 0.39 AU.
+**Explanation:** Mercury is the innermost planet, orbiting closest to the Sun at 0.39 AU.
 
 ---
 
 ### Question 2
 According to Newton's law of gravitation, if the distance between two masses doubles, the gravitational force becomes:
-- A) Double
-- B) Half
-- C) One quarter
-- D) Four times
+A) Double
+B) Half
+C) One quarter
+D) Four times
 
 **Answer: C**
 
-***Explanation**:** Gravitational force follows an inverse square law; if distance doubles, force becomes (½)² = ¼.
+**Explanation:** Gravitational force follows an inverse square law; if distance doubles, force becomes (½)² = ¼.
 
 ---
 
 ### Question 3
 A geostationary satellite has an orbital period of:
-- A) 12 hours
-- B) 24 hours
-- C) 1 month
-- D) 1 year
+A) 12 hours
+B) 24 hours
+C) 1 month
+D) 1 year
 
 **Answer: B**
 
-***Explanation**:** Geostationary satellites have a 24-hour orbital period, matching Earth's rotation.
+**Explanation:** Geostationary satellites have a 24-hour orbital period, matching Earth's rotation.
 
 ---
 
 ### Question 4
 The Sun's energy is produced by:
-- A) Nuclear fission
-- B) Nuclear fusion
-- C) Chemical burning
-- D) Gravitational collapse
+A) Nuclear fission
+B) Nuclear fusion
+C) Chemical burning
+D) Gravitational collapse
 
 **Answer: B**
 
-***Explanation**:** The Sun produces energy through nuclear fusion of hydrogen into helium in its core.
+**Explanation:** The Sun produces energy through nuclear fusion of hydrogen into helium in its core.
 
 ---
 
 ### Question 5
 Which planet has the most extensive ring system?
-- A) Jupiter
-- B) Saturn
-- C) Uranus
-- D) Neptune
+A) Jupiter
+B) Saturn
+C) Uranus
+D) Neptune
 
 **Answer: B**
 
-***Explanation**:** Saturn has the most prominent and extensive ring system of all planets.
+**Explanation:** Saturn has the most prominent and extensive ring system of all planets.
 
 ---
 
 ### Question 6
 The Moon's gravity is approximately:
-- A) The same as Earth's
-- B) Half of Earth's
-- C) One-sixth of Earth's
-- D) One-tenth of Earth's
+A) The same as Earth's
+B) Half of Earth's
+C) One-sixth of Earth's
+D) One-tenth of Earth's
 
 **Answer: C**
 
-***Explanation**:** The Moon's surface gravity is about ¹⁄₆ of Earth's gravity (1.6 m/s² vs 9.8 m/s²).
+**Explanation:** The Moon's surface gravity is about ¹⁄₆ of Earth's gravity (1.6 m/s² vs 9.8 m/s²).
 
 ---
 
 ### Question 7
 Spring tides occur when:
-- A) The Sun and Moon are at right angles
-- B) The Sun, Earth, and Moon are aligned
-- C) Only the Moon affects Earth
-- D) The Moon is in first quarter phase
+A) The Sun and Moon are at right angles
+B) The Sun, Earth, and Moon are aligned
+C) Only the Moon affects Earth
+D) The Moon is in first quarter phase
 
 **Answer: B**
 
-***Explanation**:** Spring tides occur during full and new moons when Sun, Earth, and Moon are aligned, combining gravitational forces.
+**Explanation:** Spring tides occur during full and new moons when Sun, Earth, and Moon are aligned, combining gravitational forces.
 
 ---
 
 ### Question 8
 The orbital speed of a satellite depends on:
-- A) Its mass only
-- B) The mass of the planet and orbital radius
-- C) Its color
-- D) The time of day
+A) Its mass only
+B) The mass of the planet and orbital radius
+C) Its color
+D) The time of day
 
 **Answer: B**
 
-***Explanation**:** Orbital speed v = √(GM/r), depending on the planet's mass (M) and orbital radius (r).
+**Explanation:** Orbital speed v = √(GM/r), depending on the planet's mass (M) and orbital radius (r).
 
 ---
 
 ### Question 9
 A solar eclipse occurs when:
-- A) Earth is between Sun and Moon
-- B) Moon is between Sun and Earth
-- C) Sun is between Earth and Moon
-- D) Earth blocks the Moon
+A) Earth is between Sun and Moon
+B) Moon is between Sun and Earth
+C) Sun is between Earth and Moon
+D) Earth blocks the Moon
 
 **Answer: B**
 
-***Explanation**:** A solar eclipse occurs when the Moon passes between Earth and Sun, blocking the Sun's light.
+**Explanation:** A solar eclipse occurs when the Moon passes between Earth and Sun, blocking the Sun's light.
 
 ---
 
 ### Question 10
 Jupiter is classified as a:
-- A) Terrestrial planet
-- B) Gas giant
-- C) Dwarf planet
-- D) Asteroid
+A) Terrestrial planet
+B) Gas giant
+C) Dwarf planet
+D) Asteroid
 
 **Answer: B**
 
-***Explanation**:** Jupiter is a gas giant, composed mainly of hydrogen and helium with no solid surface.
+**Explanation:** Jupiter is a gas giant, composed mainly of hydrogen and helium with no solid surface.
 
 ---
 
 ### Question 11
 The temperature of the Sun's core is approximately:
-- A) 5,500 °C
-- B) 1 million °C
-- C) 15 million °C
-- D) 100 million °C
+A) 5,500 °C
+B) 1 million °C
+C) 15 million °C
+D) 100 million °C
 
 **Answer: C**
 
-***Explanation**:** The Sun's core reaches about 15 million °C, where nuclear fusion occurs.
+**Explanation:** The Sun's core reaches about 15 million °C, where nuclear fusion occurs.
 
 ---
 
 ### Question 12
 Neap tides occur during:
-- A) Full and new moon
-- B) First and last quarter moon
-- C) Solar eclipse
-- D) Lunar eclipse
+A) Full and new moon
+B) First and last quarter moon
+C) Solar eclipse
+D) Lunar eclipse
 
 **Answer: B**
 
-***Explanation**:** Neap tides occur when the Moon is at first or last quarter, with Sun and Moon at right angles.
+**Explanation:** Neap tides occur when the Moon is at first or last quarter, with Sun and Moon at right angles.
 
 ---
 
@@ -166,84 +166,108 @@ Neap tides occur during:
 ### Statement 1
 All planets orbit the Sun in the same direction.
 
-**True** - All planets orbit the Sun in the same direction (counterclockwise when viewed from above the North Pole).
+**Answer: True**
+
+**Explanation:** All planets orbit the Sun in the same direction (counterclockwise when viewed from above the North Pole).
 
 ---
 
 ### Statement 2
 The gravitational constant G = 6.67 × 10⁻¹¹ N m²/kg².
 
-**True** - This is the correct value of the universal gravitational constant.
+**Answer: True**
+
+**Explanation:** This is the correct value of the universal gravitational constant.
 
 ---
 
 ### Statement 3
 Satellites in lower orbits travel faster than those in higher orbits.
 
-**True** - Orbital speed v = √(GM/r); smaller r gives larger v.
+**Answer: True**
+
+**Explanation:** Orbital speed v = √(GM/r); smaller r gives larger v.
 
 ---
 
 ### Statement 4
 Venus is hotter than Mercury despite being farther from the Sun.
 
-**True** - Venus has a thick atmosphere causing extreme greenhouse effect, making it hotter than Mercury.
+**Answer: True**
+
+**Explanation:** Venus has a thick atmosphere causing extreme greenhouse effect, making it hotter than Mercury.
 
 ---
 
 ### Statement 5
 The Moon produces its own light.
 
-**False** - The Moon reflects sunlight; it does not produce its own light.
+**Answer: False**
+
+**Correction:** The Moon reflects sunlight; it does not produce its own light.
 
 ---
 
 ### Statement 6
 A lunar eclipse can only occur during a full moon.
 
-**True** - A lunar eclipse occurs when Earth is between Sun and Moon, which only happens during full moon.
+**Answer: True**
+
+**Explanation:** A lunar eclipse occurs when Earth is between Sun and Moon, which only happens during full moon.
 
 ---
 
 ### Statement 7
 Comets are made mostly of rock and metal.
 
-**False** - Comets are composed mainly of ice, dust, and frozen gases.
+**Answer: False**
+
+**Correction:** Comets are composed mainly of ice, dust, and frozen gases.
 
 ---
 
 ### Statement 8
 The same side of the Moon always faces Earth.
 
-**True** - The Moon is tidally locked to Earth, so the same side always faces us.
+**Answer: True**
+
+**Explanation:** The Moon is tidally locked to Earth, so the same side always faces us.
 
 ---
 
 ### Statement 9
 Spring tides are lower than neap tides.
 
-**False** - Spring tides are the highest tides; neap tides are the lowest.
+**Answer: False**
+
+**Correction:** Spring tides are the highest tides; neap tides are the lowest.
 
 ---
 
 ### Statement 10
 Mars is known as the red planet due to iron oxide on its surface.
 
-**True** - Mars appears red due to iron oxide (rust) on its surface.
+**Answer: True**
+
+**Explanation:** Mars appears red due to iron oxide (rust) on its surface.
 
 ---
 
 ### Statement 11
 Geostationary satellites orbit above Earth's poles.
 
-**False** - Geostationary satellites orbit above the equator to remain stationary relative to Earth's surface.
+**Answer: False**
+
+**Correction:** Geostationary satellites orbit above the equator to remain stationary relative to Earth's surface.
 
 ---
 
 ### Statement 12
 Uranus rotates on its side compared to other planets.
 
-**True** - Uranus has an axial tilt of about 98°, essentially rotating on its side.
+**Answer: True**
+
+**Explanation:** Uranus has an axial tilt of about 98°, essentially rotating on its side.
 
 ---
 

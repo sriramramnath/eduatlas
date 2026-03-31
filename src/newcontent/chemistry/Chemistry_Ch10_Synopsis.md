@@ -1,4 +1,4 @@
-# Chapter 10: Electrolysis - Concise Synopsis
+# Chapter 10: Electrolysis - Concise Synopsis (Chemistry Only)
 
 ## Quick Revision Guide for Pearson Edexcel IGCSE Chemistry
 

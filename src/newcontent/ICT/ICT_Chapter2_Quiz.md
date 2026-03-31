@@ -14,7 +14,7 @@ B) System software
 C) Utility software  
 D) Programming software  
 
-**Answer: B) System software**
+**Answer: B**
 
 **Explanation:** System software manages and controls computer hardware, providing a platform for application software to run. It includes operating systems, utility programs, device drivers, and language translators. Application software performs specific tasks for users.
 
@@ -28,7 +28,7 @@ B) Allocating and deallocating RAM to programs
 C) Organising files into folders  
 D) Connecting to the internet  
 
-**Answer: B) Allocating and deallocating RAM to programs**
+**Answer: B**
 
 **Explanation:** Memory management involves assigning RAM space to programs when they load and reclaiming it when they close. The OS ensures programs have sufficient memory and prevents programs from accessing memory allocated to other programs.
 
@@ -42,7 +42,7 @@ B) Disk defragmenter
 C) Disk cleanup  
 D) Backup software  
 
-**Answer: C) Disk cleanup**
+**Answer: C**
 
 **Explanation:** Disk cleanup utilities remove temporary files, browser cache, recycle bin contents, and other unnecessary files to free storage space. Defragmentation reorganises files; antivirus removes malware; backup creates copies of data.
 
@@ -56,7 +56,7 @@ B) Compilers translate entire programs before execution; interpreters translate 
 C) Interpreters produce faster programs than compilers  
 D) Compilers only work with Python; interpreters work with all languages  
 
-**Answer: B) Compilers translate entire programs before execution; interpreters translate line by line during execution**
+**Answer: B**
 
 **Explanation:** Compilers translate the entire source code into machine code before execution, producing an executable file. Interpreters translate and execute code line by line during runtime, which is slower but provides immediate error feedback.
 
@@ -70,7 +70,7 @@ B) Spreadsheet software
 C) Presentation software  
 D) Database software  
 
-**Answer: B) Spreadsheet software**
+**Answer: B**
 
 **Explanation:** Spreadsheet software is designed for numerical data and calculations. It uses formulas and functions to automatically calculate values when data changes, making it ideal for budgets, financial analysis, and data tracking.
 
@@ -84,7 +84,7 @@ B) General-purpose application software
 C) Special-purpose application software  
 D) Utility software  
 
-**Answer: C) Special-purpose application software**
+**Answer: C**
 
 **Explanation:** Adobe Photoshop is special-purpose application software designed specifically for photo editing and graphic manipulation. Unlike general-purpose applications (word processors, spreadsheets), it serves a specific industry and task.
 
@@ -98,7 +98,7 @@ B) Adobe Photoshop
 C) Mozilla Firefox  
 D) Windows 10  
 
-**Answer: C) Mozilla Firefox**
+**Answer: C**
 
 **Explanation:** Mozilla Firefox is open source software, meaning its source code is publicly available for anyone to view, modify, and distribute. Microsoft Word, Adobe Photoshop, and Windows 10 are proprietary software with closed source code.
 
@@ -112,7 +112,7 @@ B) Software that enables the OS to communicate with hardware
 C) A type of application software for gaming  
 D) A utility that cleans up disk space  
 
-**Answer: B) Software that enables the OS to communicate with hardware**
+**Answer: B**
 
 **Explanation:** Device drivers are specialised programs that translate operating system commands into instructions that specific hardware devices understand. Each hardware device requires a driver to function properly with the OS.
 
@@ -126,7 +126,7 @@ B) Multi-user licence
 C) Site licence  
 D) Subscription licence  
 
-**Answer: C) Site licence**
+**Answer: C**
 
 **Explanation:** A site licence permits installation on all computers at a specific location, such as a school or business. This is cost-effective for organisations with many computers at one site.
 
@@ -140,7 +140,7 @@ B) Graphical User Interface
 C) Global User Interaction  
 D) Graphics Utility Integration  
 
-**Answer: B) Graphical User Interface**
+**Answer: B**
 
 **Explanation:** GUI stands for Graphical User Interface. It is a visual interface that uses windows, icons, menus, and pointers (WIMP) to allow users to interact with the computer, as opposed to text-based command-line interfaces.
 
@@ -154,7 +154,7 @@ B) Incremental backup
 C) System backup  
 D) Image backup  
 
-**Answer: B) Incremental backup**
+**Answer: B**
 
 **Explanation:** Incremental backups copy only files that have changed since the last backup (whether full or incremental). This makes them faster and uses less storage than full backups, though recovery takes longer.
 
@@ -168,7 +168,7 @@ B) Immediately available
 C) Tailored exactly to specific needs  
 D) Better vendor support  
 
-**Answer: C) Tailored exactly to specific needs**
+**Answer: C**
 
 **Explanation:** Custom software is developed specifically for an organisation's unique requirements, providing features that precisely match business needs. However, it has higher costs, longer development time, and more risk than off-the-shelf software.
 
@@ -181,7 +181,7 @@ D) Better vendor support
 ### Statement 1
 **Microsoft Word is an example of system software.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Microsoft Word is application software. It performs specific tasks for users (creating documents) rather than managing computer hardware. System software includes operating systems, utilities, and device drivers.
 
@@ -190,7 +190,7 @@ D) Better vendor support
 ### Statement 2
 **Antivirus software protects computers from malware including viruses, worms, and trojans.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Antivirus software protects against various types of malware (malicious software) including viruses, worms, trojans, spyware, ransomware, and other threats. It uses signature detection and heuristic analysis to identify threats.
 
@@ -199,7 +199,7 @@ D) Better vendor support
 ### Statement 3
 **Defragmentation is necessary for Solid State Drives (SSDs).**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** SSDs should NOT be defragmented. Defragmentation is designed for hard disk drives (HDDs) with spinning platters. SSDs have no moving parts and use flash memory; defragmentation can actually reduce their lifespan. SSDs use TRIM commands for maintenance instead.
 
@@ -208,7 +208,7 @@ D) Better vendor support
 ### Statement 4
 **Open source software is always free to use.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Open source software is typically free to use, though there may be costs for commercial support, enterprise versions, or hosting services. The defining characteristic is that source code is publicly available, not necessarily that it's free, but most open source software is free.
 
@@ -217,7 +217,7 @@ D) Better vendor support
 ### Statement 5
 **A compiler produces an executable file that can run independently.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Compilers translate entire source code into machine code, producing a standalone executable file. This file can be distributed and run without the compiler or source code, unlike interpreted programs which require the interpreter.
 
@@ -226,7 +226,7 @@ D) Better vendor support
 ### Statement 6
 **Spreadsheet software uses formulas to perform calculations automatically.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Spreadsheets use formulas (e.g., =SUM(A1:A10), =AVERAGE(B1:B20)) to perform calculations. When data changes, formulas automatically recalculate, making spreadsheets ideal for budgets, financial analysis, and data manipulation.
 
@@ -235,7 +235,7 @@ D) Better vendor support
 ### Statement 7
 **Proprietary software allows users to modify and redistribute the source code.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Proprietary software has closed source code that users cannot view, modify, or redistribute. Only the software owner (developer or company) can make changes. Open source software allows modification and redistribution.
 
@@ -244,7 +244,7 @@ D) Better vendor support
 ### Statement 8
 **Windows Defender is an example of utility software.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Windows Defender is antivirus software, which is a type of utility software. Utility software maintains and protects the computer system, as opposed to application software which performs user tasks.
 
@@ -253,7 +253,7 @@ D) Better vendor support
 ### Statement 9
 **Web browsers are examples of system software.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Web browsers (Chrome, Firefox, Edge) are application software. They perform specific tasks for users (accessing websites). System software manages the computer hardware and provides the platform for applications to run.
 
@@ -262,7 +262,7 @@ D) Better vendor support
 ### Statement 10
 **A single-user licence permits installation on multiple computers in a household.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** A single-user licence typically permits installation on one computer. To install on multiple computers, a multi-user licence or site licence would be required. Licence terms vary, so always check specific conditions.
 
@@ -271,7 +271,7 @@ D) Better vendor support
 ### Statement 11
 **Lossless compression reduces file size without losing any data.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Lossless compression algorithms reduce file size while preserving all original data. The file can be perfectly reconstructed to its original state. Examples include ZIP compression for documents and PNG for images.
 
@@ -280,7 +280,7 @@ D) Better vendor support
 ### Statement 12
 **CAD software is used for creating professional text documents.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** CAD (Computer-Aided Design) software is used for creating precise technical drawings and 3D models for engineering, architecture, and product design. Word processing software is used for creating text documents.
 

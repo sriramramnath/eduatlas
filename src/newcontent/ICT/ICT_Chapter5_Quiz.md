@@ -13,7 +13,7 @@ B) WAN
 C) PAN  
 D) WLAN  
 
-**Answer: B) WAN**
+**Answer: B**
 
 **Explanation:** WAN (Wide Area Network) spans large geographical areas such as cities, countries, or continents. The internet is the largest WAN. LAN covers a single building, PAN covers just a few metres, and WLAN is a wireless LAN.
 
@@ -27,7 +27,7 @@ B) Hub
 C) Router  
 D) Modem  
 
-**Answer: C) Router**
+**Answer: C**
 
 **Explanation:** Routers connect different networks together, such as connecting a LAN to the internet (WAN). Switches connect devices on the same network. Hubs are basic devices that broadcast to all ports. Modems connect to ISP networks.
 
@@ -41,7 +41,7 @@ B) Ring topology
 C) Star topology  
 D) Mesh topology  
 
-**Answer: C) Star topology**
+**Answer: C**
 
 **Explanation:** In star topology, all devices connect to a central device (usually a switch or hub). This is the most common LAN topology because it's easy to troubleshoot and a single device failure doesn't affect others.
 
@@ -55,7 +55,7 @@ B) Assigns IP addresses automatically
 C) Connects wireless devices  
 D) Filters network traffic  
 
-**Answer: B) Assigns IP addresses automatically**
+**Answer: B**
 
 **Explanation:** DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration to devices when they connect to a network. This eliminates manual configuration and prevents IP address conflicts.
 
@@ -69,7 +69,7 @@ B) MAC address
 C) DNS address  
 D) Web address  
 
-**Answer: B) MAC address**
+**Answer: B**
 
 **Explanation:** MAC (Media Access Control) addresses are permanently assigned to network hardware by manufacturers. IP addresses can change and are assigned by DHCP or manually. MAC addresses are used for local network communication.
 
@@ -83,7 +83,7 @@ B) If the central device fails, the entire network fails
 C) Uses too much cable  
 D) Slow data transfer speeds  
 
-**Answer: B) If the central device fails, the entire network fails**
+**Answer: B**
 
 **Explanation:** In star topology, all devices connect to a central device. If this central device (switch or hub) fails, all connected devices lose network connectivity. This is the main weakness of star topology.
 
@@ -97,7 +97,7 @@ B) Switch
 C) Modem  
 D) Repeater  
 
-**Answer: B) Switch**
+**Answer: B**
 
 **Explanation:** Switches learn the MAC addresses of connected devices and forward data only to the port where the recipient device is connected. Hubs broadcast data to all ports regardless of destination.
 
@@ -111,7 +111,7 @@ B) Virtual Public Network
 C) Variable Private Network  
 D) Verified Private Network  
 
-**Answer: A) Virtual Private Network**
+**Answer: A**
 
 **Explanation:** VPN (Virtual Private Network) creates a secure, encrypted connection over a public network like the internet. It allows remote users to securely access private networks.
 
@@ -125,7 +125,7 @@ B) Switch
 C) Firewall  
 D) Modem  
 
-**Answer: C) Firewall**
+**Answer: C**
 
 **Explanation:** A firewall monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted and untrusted networks.
 
@@ -139,7 +139,7 @@ B) Allow wireless devices to connect to a wired network
 C) Assign IP addresses  
 D) Block unauthorised access  
 
-**Answer: B) Allow wireless devices to connect to a wired network**
+**Answer: B**
 
 **Explanation:** A WAP (Wireless Access Point) enables wireless devices to connect to a wired network using Wi-Fi. It bridges wireless and wired network segments.
 
@@ -153,7 +153,7 @@ B) 192.168.1.1
 C) 192.168.1.1.1  
 D) 192.168.1  
 
-**Answer: B) 192.168.1.1**
+**Answer: B**
 
 **Explanation:** IPv4 addresses consist of four numbers separated by dots, each ranging from 0 to 255. 192.168.1.1 is a valid private IP address format. 256 is invalid (too high), and the other options have wrong numbers of segments.
 
@@ -167,7 +167,7 @@ B) Data can still reach its destination via alternative paths
 C) Only that device disconnects  
 D) The network becomes slower but works  
 
-**Answer: B) Data can still reach its destination via alternative paths**
+**Answer: B**
 
 **Explanation:** In mesh topology, devices have multiple connections to other devices. If one connection fails, data can be rerouted through alternative paths, making mesh networks highly fault-tolerant.
 
@@ -180,7 +180,7 @@ D) The network becomes slower but works
 ### Statement 1
 **A switch is more intelligent than a hub because it sends data only to the intended recipient.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Switches learn MAC addresses and create a table mapping devices to ports. They forward data only to the correct port, unlike hubs which broadcast to all ports. This makes switches more efficient and secure.
 
@@ -189,7 +189,7 @@ D) The network becomes slower but works
 ### Statement 2
 **LAN covers a larger geographical area than WAN.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** WAN (Wide Area Network) covers a larger geographical area than LAN. LAN (Local Area Network) is limited to a building or campus, while WAN can span cities, countries, or globally.
 
@@ -198,7 +198,7 @@ D) The network becomes slower but works
 ### Statement 3
 **IP addresses can change, but MAC addresses are permanent.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** IP addresses are assigned by DHCP or manually and can change when a device reconnects to a network. MAC addresses are permanently assigned to network hardware by the manufacturer and cannot be changed.
 
@@ -207,7 +207,7 @@ D) The network becomes slower but works
 ### Statement 4
 **In a bus topology, all devices connect to a central switch.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** In a bus topology, all devices connect to a single central cable (the bus). Star topology uses a central switch or hub. Bus topology is rarely used in modern networks.
 
@@ -216,7 +216,7 @@ D) The network becomes slower but works
 ### Statement 5
 **A router can connect a LAN to the internet.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Routers connect different networks together, including connecting a LAN to the internet (WAN). They route packets between networks and often provide NAT (Network Address Translation) for internet access.
 
@@ -225,7 +225,7 @@ D) The network becomes slower but works
 ### Statement 6
 **WPA3 is more secure than WPA2 for Wi-Fi networks.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** WPA3 is the latest Wi-Fi security standard, offering improved encryption and security features over WPA2. WPA3 provides stronger encryption and better protection against password-guessing attacks.
 
@@ -234,7 +234,7 @@ D) The network becomes slower but works
 ### Statement 7
 **A hub forwards data to all connected ports.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Hubs are basic networking devices that broadcast incoming data to all connected ports regardless of the intended destination. This is inefficient compared to switches and is why hubs are largely obsolete.
 
@@ -243,7 +243,7 @@ D) The network becomes slower but works
 ### Statement 8
 **Static IP addresses are assigned automatically by DHCP.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Static IP addresses are manually configured and do not change. DHCP automatically assigns dynamic IP addresses. Static IPs are used for servers, printers, and network devices that need consistent addresses.
 
@@ -252,7 +252,7 @@ D) The network becomes slower but works
 ### Statement 9
 **The internet is an example of a WAN.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** The internet is the largest example of a Wide Area Network (WAN), connecting millions of networks globally across countries and continents. It spans the entire world.
 
@@ -261,7 +261,7 @@ D) The network becomes slower but works
 ### Statement 10
 **A proxy server hides the client's IP address.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** A proxy server acts as an intermediary between clients and servers. When using a proxy, requests go through the proxy server, so the destination server sees the proxy's IP address, not the client's.
 
@@ -270,7 +270,7 @@ D) The network becomes slower but works
 ### Statement 11
 **Fibre optic cables are commonly used within LANs for connecting end-user devices.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Fibre optic cables are typically used for WAN connections and backbone links due to their high cost. LANs usually use copper Ethernet cables (Cat5e, Cat6) for connecting end-user devices, as they are more cost-effective for short distances.
 
@@ -279,7 +279,7 @@ D) The network becomes slower but works
 ### Statement 12
 **A modem converts digital signals to analogue signals for transmission over telephone lines.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** A modem (modulator-demodulator) converts digital signals from a computer to analogue signals for transmission over telephone or cable lines, and converts incoming analogue signals back to digital.
 

@@ -7,157 +7,157 @@
 
 ### Question 1
 Nuclear fission involves:
-- A) Joining light nuclei
-- B) Splitting heavy nuclei
-- C) Removing electrons
-- D) Adding neutrons without splitting
+A) Joining light nuclei
+B) Splitting heavy nuclei
+C) Removing electrons
+D) Adding neutrons without splitting
 
 **Answer: B**
 
-***Explanation**:** Nuclear fission is the process where a heavy nucleus splits into two smaller nuclei, releasing energy.
+**Explanation:** Nuclear fission is the process where a heavy nucleus splits into two smaller nuclei, releasing energy.
 
 ---
 
 ### Question 2
 What is the purpose of a moderator in a nuclear reactor?
-- A) To absorb all neutrons
-- B) To speed up neutrons
-- C) To slow down neutrons
-- D) To increase temperature
+A) To absorb all neutrons
+B) To speed up neutrons
+C) To slow down neutrons
+D) To increase temperature
 
 **Answer: C**
 
-***Explanation**:** The moderator slows down fast neutrons so they are more likely to be captured by uranium-235 nuclei.
+**Explanation:** The moderator slows down fast neutrons so they are more likely to be captured by uranium-235 nuclei.
 
 ---
 
 ### Question 3
 Nuclear fusion occurs in:
-- A) Nuclear power stations
-- B) The Sun and stars
-- C) Nuclear bombs
-- D) Radioactive waste
+A) Nuclear power stations
+B) The Sun and stars
+C) Nuclear bombs
+D) Radioactive waste
 
 **Answer: B**
 
-***Explanation**:** Stars, including our Sun, produce energy through nuclear fusion of hydrogen into helium.
+**Explanation:** Stars, including our Sun, produce energy through nuclear fusion of hydrogen into helium.
 
 ---
 
 ### Question 4
 Control rods in a nuclear reactor are made of:
-- A) Uranium
-- B) Graphite
-- C) Boron or cadmium
-- D) Lead
+A) Uranium
+B) Graphite
+C) Boron or cadmium
+D) Lead
 
 **Answer: C**
 
-***Explanation**:** Control rods are made of materials like boron or cadmium that absorb neutrons to control the reaction rate.
+**Explanation:** Control rods are made of materials like boron or cadmium that absorb neutrons to control the reaction rate.
 
 ---
 
 ### Question 5
 Which condition is NOT required for nuclear fusion?
-- A) High temperature
-- B) High pressure
-- C) Presence of oxygen
-- D) Confinement
+A) High temperature
+B) High pressure
+C) Presence of oxygen
+D) Confinement
 
 **Answer: C**
 
-***Explanation**:** Fusion requires high temperature, high pressure, and confinement, but not oxygen (fusion is not combustion).
+**Explanation:** Fusion requires high temperature, high pressure, and confinement, but not oxygen (fusion is not combustion).
 
 ---
 
 ### Question 6
 The equation E = mc² relates:
-- A) Energy and velocity
-- B) Mass and energy
-- C) Mass and charge
-- D) Energy and temperature
+A) Energy and velocity
+B) Mass and energy
+C) Mass and charge
+D) Energy and temperature
 
 **Answer: B**
 
-***Explanation**:** Einstein's equation shows that mass can be converted to energy, where c is the speed of light.
+**Explanation:** Einstein's equation shows that mass can be converted to energy, where c is the speed of light.
 
 ---
 
 ### Question 7
 In a chain reaction, each fission produces:
-- A) No neutrons
-- B) 1 neutron
-- C) 2-3 neutrons
-- D) 10 neutrons
+A) No neutrons
+B) 1 neutron
+C) 2-3 neutrons
+D) 10 neutrons
 
 **Answer: C**
 
-***Explanation**:** Each fission of uranium-235 releases 2-3 neutrons that can cause further fissions.
+**Explanation:** Each fission of uranium-235 releases 2-3 neutrons that can cause further fissions.
 
 ---
 
 ### Question 8
 Which produces more energy per reaction?
-- A) Fusion
-- B) Fission
-- C) Both produce the same
-- D) Neither produces energy
+A) Fusion
+B) Fission
+C) Both produce the same
+D) Neither produces energy
 
 **Answer: B**
 
-***Explanation**:** Fission releases about 200 MeV per reaction, while typical fusion reactions release 17-24 MeV.
+**Explanation:** Fission releases about 200 MeV per reaction, while typical fusion reactions release 17-24 MeV.
 
 ---
 
 ### Question 9
 Deuterium and tritium are:
-- A) Isotopes of helium
-- B) Isotopes of uranium
-- C) Isotopes of hydrogen
-- D) Types of radiation
+A) Isotopes of helium
+B) Isotopes of uranium
+C) Isotopes of hydrogen
+D) Types of radiation
 
 **Answer: C**
 
-***Explanation**:** Deuterium (²H) and tritium (³H) are isotopes of hydrogen used in fusion reactions.
+**Explanation:** Deuterium (²H) and tritium (³H) are isotopes of hydrogen used in fusion reactions.
 
 ---
 
 ### Question 10
 What happens when control rods are lowered into a reactor core?
-- A) Reaction speeds up
-- B) Reaction slows down
-- C) Temperature increases
-- D) Nothing happens
+A) Reaction speeds up
+B) Reaction slows down
+C) Temperature increases
+D) Nothing happens
 
 **Answer: B**
 
-***Explanation**:** Lowering control rods absorbs more neutrons, reducing the number available to cause fission.
+**Explanation:** Lowering control rods absorbs more neutrons, reducing the number available to cause fission.
 
 ---
 
 ### Question 11
 Fusion is not yet used for commercial power because:
-- A) It produces too much energy
-- B) It requires extreme conditions difficult to maintain
-- C) It is too cheap
-- D) There is no fuel available
+A) It produces too much energy
+B) It requires extreme conditions difficult to maintain
+C) It is too cheap
+D) There is no fuel available
 
 **Answer: B**
 
-***Explanation**:** Fusion requires temperatures of ~100 million °C and effective confinement, which are technically challenging.
+**Explanation:** Fusion requires temperatures of ~100 million °C and effective confinement, which are technically challenging.
 
 ---
 
 ### Question 12
 High-level nuclear waste includes:
-- A) Contaminated paper
-- B) Used protective clothing
-- C) Spent fuel rods
-- D) Packaging materials
+A) Contaminated paper
+B) Used protective clothing
+C) Spent fuel rods
+D) Packaging materials
 
 **Answer: C**
 
-***Explanation**:** Spent fuel rods from nuclear reactors are high-level waste due to their high radioactivity and heat generation.
+**Explanation:** Spent fuel rods from nuclear reactors are high-level waste due to their high radioactivity and heat generation.
 
 ---
 
@@ -166,84 +166,108 @@ High-level nuclear waste includes:
 ### Statement 1
 Nuclear fission releases energy by converting mass to energy.
 
-**True** - The mass of fission products is less than the original nucleus; this mass difference becomes energy.
+**Answer: True**
+
+**Explanation:** The mass of fission products is less than the original nucleus; this mass difference becomes energy.
 
 ---
 
 ### Statement 2
 Fusion reactions produce radioactive waste like fission reactions.
 
-**False** - Fusion produces helium and neutrons; the main products are not radioactive, unlike fission waste.
+**Answer: False**
+
+**Correction:** Fusion produces helium and neutrons; the main products are not radioactive, unlike fission waste.
 
 ---
 
 ### Statement 3
 Graphite can be used as a moderator in nuclear reactors.
 
-**True** - Graphite is commonly used as a moderator to slow down neutrons.
+**Answer: True**
+
+**Explanation:** Graphite is commonly used as a moderator to slow down neutrons.
 
 ---
 
 ### Statement 4
 A chain reaction can be controlled using control rods.
 
-**True** - Control rods absorb neutrons to control the rate of the chain reaction.
+**Answer: True**
+
+**Explanation:** Control rods absorb neutrons to control the rate of the chain reaction.
 
 ---
 
 ### Statement 5
 The temperature required for fusion is about 100°C.
 
-**False** - Fusion requires temperatures of about 100 million °C to overcome electrostatic repulsion.
+**Answer: False**
+
+**Correction:** Fusion requires temperatures of about 100 million °C to overcome electrostatic repulsion.
 
 ---
 
 ### Statement 6
 Uranium-235 is the main fuel used in nuclear reactors.
 
-**True** - Uranium-235 is the fissile isotope used as fuel in most nuclear reactors.
+**Answer: True**
+
+**Explanation:** Uranium-235 is the fissile isotope used as fuel in most nuclear reactors.
 
 ---
 
 ### Statement 7
 Fast neutrons are more likely to cause fission than slow neutrons.
 
-**False** - Slow (thermal) neutrons are more readily absorbed by uranium-235 and more likely to cause fission.
+**Answer: False**
+
+**Correction:** Slow (thermal) neutrons are more readily absorbed by uranium-235 and more likely to cause fission.
 
 ---
 
 ### Statement 8
 The Sun's energy comes from nuclear fusion.
 
-**True** - The Sun produces energy through fusion of hydrogen nuclei into helium.
+**Answer: True**
+
+**Explanation:** The Sun produces energy through fusion of hydrogen nuclei into helium.
 
 ---
 
 ### Statement 9
 In E = mc², c represents the speed of sound.
 
-**False** - c represents the speed of light (3 × 10⁸ m/s), not the speed of sound.
+**Answer: False**
+
+**Correction:** c represents the speed of light (3 × 10⁸ m/s), not the speed of sound.
 
 ---
 
 ### Statement 10
 Low-level nuclear waste can be disposed of in shallow burial sites.
 
-**True** - Low-level waste like contaminated clothing is compacted and buried in shallow sites.
+**Answer: True**
+
+**Explanation:** Low-level waste like contaminated clothing is compacted and buried in shallow sites.
 
 ---
 
 ### Statement 11
 An uncontrolled chain reaction occurs in a nuclear power station.
 
-**False** - Nuclear power stations use controlled chain reactions; uncontrolled reactions occur in nuclear weapons.
+**Answer: False**
+
+**Correction:** Nuclear power stations use controlled chain reactions; uncontrolled reactions occur in nuclear weapons.
 
 ---
 
 ### Statement 12
 Tritium has two protons and one neutron.
 
-**False** - Tritium (³H) has 1 proton and 2 neutrons; it is an isotope of hydrogen.
+**Answer: False**
+
+**Correction:** Tritium (³H) has 1 proton and 2 neutrons; it is an isotope of hydrogen.
 
 ---
 

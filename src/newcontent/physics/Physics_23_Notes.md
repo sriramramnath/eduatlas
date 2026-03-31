@@ -37,21 +37,20 @@ Background radiation is all around us constantly. It comes from:
 
 ### Geiger-Müller (GM) Tube
 
-```
-┌─────────────────────────┐
-│  Window (thin mica)     │
-│  ┌─────────────────┐    │
-│  │                 │    │
-│  │    Argon gas    │◄───┼── Anode wire (+)
-│  │                 │    │
-│  └─────────────────┘    │
-│         │               │
-│        Cathode (-)      │
-└─────────────────────────┘
-         │
-    ┌────┴────┐
-    │ Counter │
-    └─────────┘
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \draw[thick,rounded corners] (0,0.6) rectangle (6.2,4.3);
+  \node[anchor=west] at (0.3,4.0) {Window (thin mica)};
+  \draw[thick,rounded corners] (1.0,1.5) rectangle (4.7,3.6);
+  \node at (2.85,2.55) {Argon gas};
+  \draw[thick] (3.0,1.5) -- (3.0,0.9);
+  \node[anchor=west] at (3.15,1.05) {Cathode (-)};
+  \draw[->] (6.0,2.55) -- (4.7,2.55);
+  \node[anchor=west] at (6.15,2.55) {Anode wire (+)};
+  \draw[thick] (3.0,0.6) -- (3.0,-0.2);
+  \draw[thick,rounded corners] (2.0,-1.2) rectangle (4.0,-0.2);
+  \node at (3.0,-0.7) {Counter};
+\end{tikzpicture}
 ```
 
 **How it works:**
@@ -87,19 +86,24 @@ Background radiation is all around us constantly. It comes from:
 
 ### Understanding Half-Life
 
-```
-Activity
-  │
-A │████
-  │    ████
-A/2│        ████
-   │            ████
-A/4│                ████
-   │                    ████
-A/8│                        ████
-   └───────────────────────────────► Time
-   0    1    2    3    4    5
-      t½   2t½  3t½  4t½
+```tex
+\begin{tikzpicture}[x=1.15cm,y=1cm,>=stealth,font=\small]
+  \draw[->] (0,0) -- (6.2,0) node[right] {Time};
+  \draw[->] (0,0) -- (0,4.4) node[above] {Activity};
+  \draw[smooth,thick] plot coordinates {(0,4) (1,3) (2,2.2) (3,1.55) (4,1.05) (5,0.72)};
+  \draw[dashed] (1,0) -- (1,3);
+  \draw[dashed] (2,0) -- (2,2.2);
+  \draw[dashed] (3,0) -- (3,1.55);
+  \draw[dashed] (4,0) -- (4,1.05);
+  \node[left] at (0,4) {$A$};
+  \node[left] at (0,2.2) {$A/2$};
+  \node[left] at (0,1.1) {$A/4$};
+  \node[left] at (0,0.55) {$A/8$};
+  \node[below] at (1,0) {$t_{1/2}$};
+  \node[below] at (2,0) {$2t_{1/2}$};
+  \node[below] at (3,0) {$3t_{1/2}$};
+  \node[below] at (4,0) {$4t_{1/2}$};
+\end{tikzpicture}
 ```
 
 ### Half-Life Calculations
@@ -171,20 +175,24 @@ A = A₀e^(-λt)
 
 ### Activity-Time Graph
 
-```
-Activity (Bq)
-    │
-800 ┤████
-    │    ████
-400 ┤        ████
-    │            ████
-200 ┤                ████
-    │                    ████
-100 ┤                        ████
-    └───────────────────────────────► Time (hours)
-    0    4    8   12   16   20
-         ↑
-      Half-life = 4 hours
+```tex
+\begin{tikzpicture}[x=0.95cm,y=0.8cm,>=stealth,font=\small]
+  \draw[->] (0,0) -- (6.6,0) node[right] {Time (hours)};
+  \draw[->] (0,0) -- (0,5.6) node[above] {Activity (Bq)};
+  \draw[smooth,thick] plot coordinates {(0,5) (1,4) (2,3.1) (3,2.35) (4,1.75) (5,1.3) (6,0.95)};
+  \node[below] at (0,0) {0};
+  \node[below] at (1,0) {4};
+  \node[below] at (2,0) {8};
+  \node[below] at (3,0) {12};
+  \node[below] at (4,0) {16};
+  \node[below] at (5,0) {20};
+  \node[left] at (0,5) {800};
+  \node[left] at (0,3.1) {400};
+  \node[left] at (0,1.75) {200};
+  \node[left] at (0,0.95) {100};
+  \draw[dashed] (1,0) -- (1,4);
+  \node[below] at (1,-0.45) {Half-life = 4 h};
+\end{tikzpicture}
 ```
 
 ### Mass-Time Graph

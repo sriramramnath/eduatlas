@@ -35,6 +35,7 @@ export interface Chapter {
   synopsis: string;
   topics: string[];
   estimatedTime: string;
+  contentType?: 'biology' | 'chemistry' | 'physics';
 }
 
 function extractSubjectTitle(raw: string, chapterNumber: number): string {
@@ -43,14 +44,20 @@ function extractSubjectTitle(raw: string, chapterNumber: number): string {
 
   const title = heading
     .replace(/^#\s*/, '')
+    .replace(/^(?:IGCSE\s+)?(?:Chemistry|Biology|Physics|ICT|Mathematics)\s+(?:—\s+)?Chapter\s+\d+\s+Synopsis:\s*/i, '')
     .replace(/^(?:IGCSE\s+)?(?:Chemistry|Biology|Physics|ICT|Mathematics)\s+(?:—\s+)?Chapter\s+\d+:\s*/i, '')
+    .replace(/^Chapter\s+\d+\s+Synopsis:\s*/i, '')
     .replace(/^Chapter\s+\d+:\s*/i, '')
     .replace(/^#\s*Chapter\s+\d+:\s*/i, '')
+    .replace(/\s*-\s*Synopsis\s*$/i, '')
     .replace(/\s*-\s*Concise Synopsis\s*$/i, '')
     .replace(/\s*-\s*Quick Synopsis.*$/i, '')
     .replace(/\s*-\s*Quiz Section\s*$/i, '')
     .replace(/\s*-\s*Notes\s*$/i, '')
     .replace(/\s*—\s*/i, '')
+    .replace(/\s*\(Chemistry Only\)\s*$/i, '')
+    .replace(/\s*\(Physics Only\)\s*$/i, '')
+    .replace(/\s*\(Biology Only\)\s*$/i, '')
     .trim();
 
   return title || `Chapter ${chapterNumber}`;
@@ -128,6 +135,18 @@ function extractMathsTopics(raw: string): string[] {
     )
     .filter((topic) => topic && !/^(Detailed Notes|Quick Revision Synopsis|Concise Synopsis|Common Exam Mistakes|Key Terms|QUICK REFERENCE|EXAM CHECKLIST|HIGH-YIELD|FORMULA SHEET)/i.test(topic))
     .slice(0, 6);
+}
+
+function detectContentType(raw: string): 'biology' | 'chemistry' | 'physics' | undefined {
+  const firstLine = raw.split('\n').slice(0, 5).join(' ');
+  const hasBiologyOnly = /\(Biology Only\)/i.test(firstLine);
+  const hasChemistryOnly = /\(Chemistry Only\)/i.test(firstLine);
+  const hasPhysicsOnly = /((Physics Only)|(Physics only))/i.test(firstLine);
+  
+  if (hasBiologyOnly) return 'biology';
+  if (hasChemistryOnly) return 'chemistry';
+  if (hasPhysicsOnly) return 'physics';
+  return undefined;
 }
 
 function buildBiologySynopsis(title: string, topics: string[]): string {
@@ -316,6 +335,8 @@ export function getSubjects(): Record<string, Subject> {
         const rawNotes = notesModules[config.notePath(chapterIdStr)] as string | undefined;
         const title = extractSubjectTitle(rawSynopsis, chapterNum);
         const topics = topicExtractor(rawNotes || rawSynopsis);
+        const combinedContent = rawSynopsis + '\n' + (rawNotes || '');
+        const contentType = detectContentType(combinedContent);
 
         chapters.push({
           id: `chapter-${chapterIdStr}`,
@@ -324,6 +345,7 @@ export function getSubjects(): Record<string, Subject> {
           synopsis: buildChapterSynopsis(title, topics),
           topics,
           estimatedTime: '60 min',
+          contentType,
         });
       }
       console.log(`Added ${chapters.length} chapters for content subject ${subjectId}`, chapters.map(c => c.id).slice(0, 5));

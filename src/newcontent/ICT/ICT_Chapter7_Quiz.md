@@ -13,7 +13,7 @@ B) Business to Consumer
 C) Buyer to Consumer  
 D) Business to Customer  
 
-**Answer: B) Business to Consumer**
+**Answer: B**
 
 **Explanation:** B2C (Business to Consumer) refers to transactions where businesses sell directly to individual consumers, such as when a customer buys products from Amazon or ASOS.
 
@@ -27,7 +27,7 @@ B) Digital divide
 C) Digital discrimination  
 D) Digital distance  
 
-**Answer: B) Digital divide**
+**Answer: B**
 
 **Explanation:** The digital divide refers to the gap between those who have access to modern information technology (computers, internet) and those who do not. This gap can be based on geography, income, age, or education.
 
@@ -41,7 +41,7 @@ B) Guarantees employment
 C) Offers flexible learning times and locations  
 D) Is always free  
 
-**Answer: C) Offers flexible learning times and locations**
+**Answer: C**
 
 **Explanation:** Online learning allows students to access educational content at times and locations convenient for them. This flexibility is one of its main advantages, though it requires self-discipline and motivation.
 
@@ -55,7 +55,7 @@ B) Social comparison affecting self-esteem
 C) Improved physical fitness  
 D) Better sleep quality  
 
-**Answer: B) Social comparison affecting self-esteem**
+**Answer: B**
 
 **Explanation:** Social media can negatively affect mental health when users compare themselves unfavourably to the curated, idealised images others post. This comparison culture can lead to feelings of inadequacy and low self-esteem.
 
@@ -69,7 +69,7 @@ B) B2B
 C) C2C  
 D) C2B  
 
-**Answer: C) C2C**
+**Answer: C**
 
 **Explanation:** C2C (Consumer to Consumer) e-commerce involves transactions between individual consumers. Platforms like eBay, Facebook Marketplace, and Gumtree facilitate these transactions.
 
@@ -83,7 +83,7 @@ B) Reduced travel through remote work and meetings
 C) Higher energy consumption from data centres  
 D) Increased consumption from online shopping  
 
-**Answer: B) Reduced travel through remote work and meetings**
+**Answer: B**
 
 **Explanation:** Remote work and online meetings reduce the need for commuting and business travel, decreasing carbon emissions from transportation. This is a positive environmental impact of internet usage.
 
@@ -97,7 +97,7 @@ B) Medical care delivered remotely via technology
 C) Online medical insurance  
 D) Social media for doctors  
 
-**Answer: B) Medical care delivered remotely via technology**
+**Answer: B**
 
 **Explanation:** Telemedicine involves providing healthcare services remotely using telecommunications technology. Patients can consult with doctors via video calls, receive diagnoses, and get prescriptions without visiting a physical clinic.
 
@@ -111,7 +111,7 @@ B) Young professionals
 C) Elderly people  
 D) University students  
 
-**Answer: C) Elderly people**
+**Answer: C**
 
 **Explanation:** Elderly people are more likely to be affected by the skills digital divide because they may have had less exposure to digital technology during their working lives and may find it harder to adapt to new technologies.
 
@@ -125,7 +125,7 @@ B) A personalised information environment limiting exposure to diverse views
 C) A type of internet security  
 D) A content creation tool  
 
-**Answer: B) A personalised information environment limiting exposure to diverse views**
+**Answer: B**
 
 **Explanation:** Filter bubbles occur when algorithms show users content aligned with their existing beliefs and interests, potentially limiting their exposure to different perspectives and creating echo chambers.
 
@@ -139,7 +139,7 @@ B) Physical media retail (DVDs, CDs)
 C) Food delivery  
 D) Telecommunications  
 
-**Answer: B) Physical media retail (DVDs, CDs)**
+**Answer: B**
 
 **Explanation:** Streaming services like Netflix and Spotify have dramatically reduced demand for physical media such as DVDs and CDs. Video rental stores have largely disappeared, and music stores have declined significantly.
 
@@ -153,7 +153,7 @@ B) Labour market with freelance, flexible work arrangements
 C) Economy of online gaming  
 D) Economic theory about internet growth  
 
-**Answer: B) Labour market with freelance, flexible work arrangements**
+**Answer: B**
 
 **Explanation:** The gig economy refers to a labour market characterised by short-term contracts and freelance work rather than permanent jobs. Examples include Uber drivers, food delivery riders, and freelance designers.
 
@@ -167,7 +167,7 @@ B) Cannot physically examine products before purchase
 C) Price comparison available  
 D) 24/7 availability  
 
-**Answer: B) Cannot physically examine products before purchase**
+**Answer: B**
 
 **Explanation:** A key disadvantage of online shopping is that consumers cannot touch, try on, or physically examine products before buying. This can lead to disappointment when products don't match expectations.
 
@@ -180,7 +180,7 @@ D) 24/7 availability
 ### Statement 1
 **The digital divide only affects people in developing countries.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** The digital divide affects people in all countries, including developed nations. It can affect rural communities, low-income households, elderly people, and those with limited education anywhere in the world.
 
@@ -189,7 +189,7 @@ D) 24/7 availability
 ### Statement 2
 **E-commerce allows businesses to reach customers globally.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** One of the main advantages of e-commerce is that it removes geographical limitations. Businesses can sell to customers anywhere in the world, expanding their market beyond local areas.
 
@@ -198,7 +198,7 @@ D) 24/7 availability
 ### Statement 3
 **Social media has only negative effects on society.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Social media has both positive and negative effects. Positives include connecting people globally, building communities, enabling activism, and providing business opportunities. The impact is mixed, not purely negative.
 
@@ -207,7 +207,7 @@ D) 24/7 availability
 ### Statement 4
 **Online learning requires more self-discipline than traditional classroom learning.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Online learning typically requires greater self-discipline and motivation because students must manage their own time, stay focused without teacher supervision, and resist distractions at home.
 
@@ -216,7 +216,7 @@ D) 24/7 availability
 ### Statement 5
 **The internet has created new types of jobs that didn't exist before.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** The internet has created entirely new job categories such as social media managers, web developers, digital marketers, cybersecurity specialists, and content creators—roles that didn't exist before the internet age.
 
@@ -225,7 +225,7 @@ D) 24/7 availability
 ### Statement 6
 **Remote work has no impact on work-life balance.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Remote work significantly affects work-life balance. While it can provide flexibility, it can also blur boundaries between work and personal life, leading to longer working hours and difficulty "switching off."
 
@@ -234,7 +234,7 @@ D) 24/7 availability
 ### Statement 7
 **Young people are always more digitally literate than older people.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** While young people may be more comfortable with some technologies, digital literacy involves many skills including evaluating information quality, understanding security, and using technology productively—skills that not all young people possess equally.
 
@@ -243,7 +243,7 @@ D) 24/7 availability
 ### Statement 8
 **The internet has reduced the need for people to commute to work.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Remote work enabled by the internet allows many people to work from home, reducing or eliminating daily commutes. This has significant implications for traffic, pollution, and lifestyle.
 
@@ -252,7 +252,7 @@ D) 24/7 availability
 ### Statement 9
 **E-commerce has had no effect on traditional high street shops.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** E-commerce has significantly impacted traditional retail, contributing to the decline of high street shops as consumers increasingly shop online. Many physical stores have closed due to online competition.
 
@@ -261,7 +261,7 @@ D) 24/7 availability
 ### Statement 10
 **Access to online health information empowers patients.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Online health information allows patients to research symptoms, understand conditions, and prepare for medical consultations. However, they must be able to distinguish reliable sources from misinformation.
 
@@ -270,7 +270,7 @@ D) 24/7 availability
 ### Statement 11
 **The internet has made journalism completely obsolete.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** While the internet has transformed journalism (more online content, citizen journalism, declining print), professional journalism remains important. However, journalists now work across multiple digital platforms.
 
@@ -279,7 +279,7 @@ D) 24/7 availability
 ### Statement 12
 **Digital literacy is an essential skill in the modern workplace.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Most modern jobs require some level of digital literacy—from basic computer skills to using specialised software. Workers without digital skills are at a significant disadvantage in the job market.
 

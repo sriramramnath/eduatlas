@@ -30,14 +30,20 @@ A **wave** is a transfer of energy from one place to another without transferrin
 
 **Definition:** Particles vibrate perpendicular to the direction of wave travel.
 
-```
-Direction of travel →
-    │╲    ╱╲    ╱╲    ╱
-    │ ╲  ╱  ╲  ╱  ╲  ╱
-    │  ╲╱    ╲╱    ╲╱
-    │  ╱╲    ╱╲    ╱╲
-    │ ╱  ╲  ╱  ╲  ╱  ╲
-    │╱    ╲╱    ╲╱    ╲
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \node[anchor=west] at (0,3.8) {Direction of travel};
+  \draw[->] (4.1,3.8) -- (6.2,3.8);
+  \draw[gray!70] (0.8,-2.7) -- (0.8,2.8);
+  \draw[thick] (1.2,0) -- (2.2,1.2) -- (3.2,0) -- (4.2,-1.2) -- (5.2,0) -- (6.2,1.2) -- (7.2,0) -- (8.2,-1.2) -- (9.2,0);
+  \draw[dashed] (1.2,0) -- (9.2,0);
+  \draw[<->] (2.2,0) -- (2.2,1.2);
+  \node[right] at (2.2,0.6) {Amplitude};
+  \draw[<->] (2.2,-1.9) -- (6.2,-1.9);
+  \node[below] at (4.2,-1.9) {Wavelength};
+  \node[above] at (2.2,1.2) {Crest};
+  \node[below] at (4.2,-1.2) {Trough};
+\end{tikzpicture}
 ```
 
 **Examples:**
@@ -54,12 +60,19 @@ Direction of travel →
 
 **Definition:** Particles vibrate parallel to the direction of wave travel.
 
-```
-Direction of travel →
-    │▓▓▓░░░▓▓▓░░░▓▓▓░░░▓▓▓
-    
-    Compressions (▓▓▓) = high pressure, particles close
-    Rarefactions (░░░) = low pressure, particles far apart
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \node[anchor=west] at (0,2.6) {Direction of travel};
+  \draw[->] (4.1,2.6) -- (6.2,2.6);
+  \foreach \x in {1.0,1.15,1.3,1.45,1.6,3.0,3.15,3.3,3.45,3.6,5.0,5.15,5.3,5.45,5.6,7.0,7.15,7.3,7.45,7.6} {
+    \draw[thick] (\x,-0.5) -- (\x,1.7);
+  }
+  \node at (1.3,-1.1) {Compression};
+  \node at (2.3,-1.1) {Rarefaction};
+  \node at (5.3,-1.1) {Compression};
+  \draw[<->] (2.0,0.6) -- (2.8,0.6);
+  \draw[<->] (4.0,0.6) -- (4.8,0.6);
+\end{tikzpicture}
 ```
 
 **Examples:**
@@ -86,16 +99,18 @@ Direction of travel →
 
 ### Visual Representation
 
-```
-    Amplitude
-    ↑
-    │    ╱╲        ╱╲
-────┼───╱──╲──────╱──╲──────
-    │  ╱    ╲    ╱    ╲
-    │ ╱      ╲──╱      ╲──
-    │╱                    ╲
-    └────────────────────────→
-    │←─────── Wavelength ───────→│
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \draw[->] (0,0) -- (0,3.1);
+  \draw[->] (0,0) -- (8.5,0);
+  \draw[thick] (0.6,1.2) -- (1.6,2.2) -- (2.6,1.2) -- (3.6,0.2) -- (4.6,1.2) -- (5.6,2.2) -- (6.6,1.2) -- (7.6,0.2);
+  \draw[dashed] (0,1.2) -- (8.1,1.2);
+  \draw[<->] (1.6,1.2) -- (1.6,2.2);
+  \node[right] at (1.6,1.7) {Amplitude};
+  \draw[<->] (1.6,-0.5) -- (5.6,-0.5);
+  \node[below] at (3.6,-0.5) {Wavelength};
+  \node[below right] at (8.5,0) {Distance};
+\end{tikzpicture}
 ```
 
 ### Relationships
@@ -150,15 +165,17 @@ f = v ÷ λ = 340 ÷ 0.17 = 2000 Hz
 - Angle of incidence = Angle of reflection
 - Can form standing waves
 
-```
-    Incident wave    Reflected wave
-         ╲              ╱
-          ╲            ╱
-           ╲    │    ╱
-            ╲   │   ╱
-    ─────────╲──┼──╱─────────
-              ╲ │ ╱
-    Surface →  ╲╱
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) -- (8,0);
+  \draw[dashed] (4,0) -- (4,3.2);
+  \draw[->,thick] (1.5,2.6) -- (4,0);
+  \draw[->,thick] (4,0) -- (6.5,2.6);
+  \node[left] at (2.0,2.0) {Incident};
+  \node[right] at (6.0,2.0) {Reflected};
+  \node[right] at (4.2,1.6) {Normal};
+  \node[below] at (4,-0.2) {Surface};
+\end{tikzpicture}
 ```
 
 ### Refraction
@@ -167,14 +184,18 @@ f = v ÷ λ = 340 ÷ 0.17 = 2000 Hz
 - Caused by change in wave speed
 - Frequency stays constant, wavelength changes
 
-```
-    Air (fast)          Glass (slow)
-    
-         ╲                │
-          ╲               │
-           ╲              │
-            ╲             │
-             ╲            │
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (4,-0.4) -- (4,3.2);
+  \draw[dashed] (4,1.4) -- (7.0,1.4);
+  \draw[dashed] (4,1.4) -- (1.0,1.4);
+  \draw[->,thick] (1.2,2.8) -- (4,1.4);
+  \draw[->,thick] (4,1.4) -- (5.4,0.2);
+  \node at (1.8,3.2) {Air};
+  \node at (5.8,3.2) {Glass};
+  \node at (1.8,2.6) {(fast)};
+  \node at (5.8,2.6) {(slow)};
+\end{tikzpicture}
 ```
 
 ### Diffraction
@@ -182,16 +203,21 @@ f = v ÷ λ = 340 ÷ 0.17 = 2000 Hz
 - Waves spread out after passing through a gap or around an obstacle
 - Most noticeable when gap size ≈ wavelength
 
-```
-    Waves approaching gap:
-    ────────│        │────────
-            │        │
-    After gap (diffraction):
-              ╲    ╱
-               ╲  ╱
-                ╲╱
-               ╱  ╲
-              ╱    ╲
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \foreach \y in {0.4,1.0,1.6,2.2} {
+    \draw[thick] (0,\y) -- (2.6,\y);
+  }
+  \draw[thick] (3.2,0) -- (3.2,1.1);
+  \draw[thick] (3.2,1.7) -- (3.2,2.8);
+  \draw[thick] (4.2,0) -- (4.2,1.1);
+  \draw[thick] (4.2,1.7) -- (4.2,2.8);
+  \foreach \r in {0.7,1.3,1.9,2.5} {
+    \draw[thick] (3.7,1.4) arc[start angle=-70,end angle=70,radius=\r];
+  }
+  \node at (1.4,3.3) {Waves approaching};
+  \node at (3.7,3.3) {Diffraction through gap};
+\end{tikzpicture}
 ```
 
 ---
@@ -248,12 +274,24 @@ Sound travels faster in denser media.
 
 ### Order of Electromagnetic Spectrum
 
-```
-Long λ ←────────────────────────────────────→ Short λ
-Low f  ←────────────────────────────────────→ High f
-
-Radio → Micro → Infra → Visible → Ultra → X-ray → Gamma
-        waves    red              violet   rays    rays
+```tex
+\begin{tikzpicture}[x=0.75cm,y=0.75cm,>=stealth,font=\small]
+  \draw[<->] (0,2.2) -- (12,2.2);
+  \draw[<->] (0,1.3) -- (12,1.3);
+  \node[left] at (0,2.2) {Long $\lambda$};
+  \node[right] at (12,2.2) {Short $\lambda$};
+  \node[left] at (0,1.3) {Low $f$};
+  \node[right] at (12,1.3) {High $f$};
+  \foreach \x/\label in {0.8/Radio,2.5/Micro,4.2/Infrared,6.0/Visible,7.7/UV,9.4/X-ray,11.1/Gamma} {
+    \node at (\x,0) {\label};
+  }
+  \draw[->] (1.3,0.6) -- (2.0,0.6);
+  \draw[->] (3.0,0.6) -- (3.7,0.6);
+  \draw[->] (4.9,0.6) -- (5.6,0.6);
+  \draw[->] (6.5,0.6) -- (7.2,0.6);
+  \draw[->] (8.2,0.6) -- (8.9,0.6);
+  \draw[->] (10.0,0.6) -- (10.7,0.6);
+\end{tikzpicture}
 ```
 
 ---

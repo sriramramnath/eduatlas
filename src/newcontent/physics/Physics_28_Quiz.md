@@ -1,4 +1,4 @@
-# Chapter 28: Cosmology
+# Chapter 28: Cosmology (Physics Only)
 ## Pearson Edexcel IGCSE Physics Quiz
 
 ---
@@ -7,157 +7,157 @@
 
 ### Question 1
 One light-year is:
-- A) The time for light to travel one year
-- B) The distance light travels in one year
-- C) The speed of light
-- D) The age of the universe
+A) The time for light to travel one year
+B) The distance light travels in one year
+C) The speed of light
+D) The age of the universe
 
 **Answer: B**
 
-***Explanation**:** A light-year is a unit of distance equal to how far light travels in one year (~9.5 × 10¹⁵ m).
+**Explanation:** A light-year is a unit of distance equal to how far light travels in one year (~9.5 × 10¹⁵ m).
 
 ---
 
 ### Question 2
 The redshift of light from distant galaxies indicates that:
-- A) Galaxies are moving toward us
-- B) Galaxies are moving away from us
-- C) Galaxies are stationary
-- D) Light is slowing down
+A) Galaxies are moving toward us
+B) Galaxies are moving away from us
+C) Galaxies are stationary
+D) Light is slowing down
 
 **Answer: B**
 
-***Explanation**:** Redshift (longer wavelength/lower frequency) occurs when a light source is moving away from the observer.
+**Explanation:** Redshift (longer wavelength/lower frequency) occurs when a light source is moving away from the observer.
 
 ---
 
 ### Question 3
 Hubble's Law states that:
-- A) Galaxy mass is proportional to distance
-- B) Recession velocity is proportional to distance
-- C) Galaxy brightness is proportional to distance
-- D) Temperature is proportional to distance
+A) Galaxy mass is proportional to distance
+B) Recession velocity is proportional to distance
+C) Galaxy brightness is proportional to distance
+D) Temperature is proportional to distance
 
 **Answer: B**
 
-***Explanation**:** Hubble's Law (v = H₀d) states that a galaxy's recession velocity is directly proportional to its distance from us.
+**Explanation:** Hubble's Law (v = H₀d) states that a galaxy's recession velocity is directly proportional to its distance from us.
 
 ---
 
 ### Question 4
 The Cosmic Microwave Background (CMB) provides evidence for:
-- A) Dark matter
-- B) The Big Bang
-- C) Black holes
-- D) Neutron stars
+A) Dark matter
+B) The Big Bang
+C) Black holes
+D) Neutron stars
 
 **Answer: B**
 
-***Explanation**:** The CMB is relic radiation from about 380,000 years after the Big Bang, providing strong evidence for it.
+**Explanation:** The CMB is relic radiation from about 380,000 years after the Big Bang, providing strong evidence for it.
 
 ---
 
 ### Question 5
 The current age of the universe is approximately:
-- A) 4.6 billion years
-- B) 13.8 billion years
-- C) 100 billion years
-- D) 1 trillion years
+A) 4.6 billion years
+B) 13.8 billion years
+C) 100 billion years
+D) 1 trillion years
 
 **Answer: B**
 
-***Explanation**:** Current estimates place the age of the universe at approximately 13.8 billion years.
+**Explanation:** Current estimates place the age of the universe at approximately 13.8 billion years.
 
 ---
 
 ### Question 6
 If the density of the universe is greater than the critical density, the universe will:
-- A) Expand forever
-- B) Eventually collapse
-- C) Stay the same size
-- D) Disappear
+A) Expand forever
+B) Eventually collapse
+C) Stay the same size
+D) Disappear
 
 **Answer: B**
 
-***Explanation**:** If density > critical density, gravity will eventually overcome expansion and the universe will collapse (Big Crunch).
+**Explanation:** If density > critical density, gravity will eventually overcome expansion and the universe will collapse (Big Crunch).
 
 ---
 
 ### Question 7
 The Milky Way is classified as what type of galaxy?
-- A) Elliptical
-- B) Irregular
-- C) Spiral
-- D) Spherical
+A) Elliptical
+B) Irregular
+C) Spiral
+D) Spherical
 
 **Answer: C**
 
-***Explanation**:** The Milky Way is a spiral galaxy with a central bulge and spiral arms containing young stars.
+**Explanation:** The Milky Way is a spiral galaxy with a central bulge and spiral arms containing young stars.
 
 ---
 
 ### Question 8
 Dark matter is called "dark" because:
-- A) It is black in color
-- B) It does not emit or interact with light
-- C) It only exists at night
-- D) It absorbs all radiation
+A) It is black in color
+B) It does not emit or interact with light
+C) It only exists at night
+D) It absorbs all radiation
 
 **Answer: B**
 
-***Explanation**:** Dark matter does not emit, absorb, or reflect light, making it invisible to telescopes.
+**Explanation:** Dark matter does not emit, absorb, or reflect light, making it invisible to telescopes.
 
 ---
 
 ### Question 9
 The temperature of the Cosmic Microwave Background is approximately:
-- A) 0 K
-- B) 2.7 K
-- C) 273 K
-- D) 3000 K
+A) 0 K
+B) 2.7 K
+C) 273 K
+D) 3000 K
 
 **Answer: B**
 
-***Explanation**:** The CMB has a temperature of approximately 2.7 K (-270.5 °C), cooled from ~3000 K due to expansion.
+**Explanation:** The CMB has a temperature of approximately 2.7 K (-270.5 °C), cooled from ~3000 K due to expansion.
 
 ---
 
 ### Question 10
 What causes the accelerating expansion of the universe?
-- A) Dark matter
-- B) Dark energy
-- C) Gravity
-- D) Black holes
+A) Dark matter
+B) Dark energy
+C) Gravity
+D) Black holes
 
 **Answer: B**
 
-***Explanation**:** Dark energy is thought to be responsible for the observed accelerating expansion of the universe.
+**Explanation:** Dark energy is thought to be responsible for the observed accelerating expansion of the universe.
 
 ---
 
 ### Question 11
 The Andromeda Galaxy is approximately how far from the Milky Way?
-- A) 4 light-years
-- B) 2.5 million light-years
-- C) 100 million light-years
-- D) 1 billion light-years
+A) 4 light-years
+B) 2.5 million light-years
+C) 100 million light-years
+D) 1 billion light-years
 
 **Answer: B**
 
-***Explanation**:** The Andromeda Galaxy is our nearest major galaxy neighbor, about 2.5 million light-years away.
+**Explanation:** The Andromeda Galaxy is our nearest major galaxy neighbor, about 2.5 million light-years away.
 
 ---
 
 ### Question 12
 Which type of telescope can observe through cosmic dust?
-- A) Only optical telescopes
-- B) Radio telescopes
-- C) Only space telescopes
-- D) No telescopes can
+A) Only optical telescopes
+B) Radio telescopes
+C) Only space telescopes
+D) No telescopes can
 
 **Answer: B**
 
-***Explanation**:** Radio waves penetrate cosmic dust that blocks visible light, allowing radio telescopes to see through it.
+**Explanation:** Radio waves penetrate cosmic dust that blocks visible light, allowing radio telescopes to see through it.
 
 ---
 
@@ -166,84 +166,108 @@ Which type of telescope can observe through cosmic dust?
 ### Statement 1
 The universe has a center from which everything is expanding.
 
-**False** - The universe has no center; all points are expanding away from each other.
+**Answer: False**
+
+**Correction:** The universe has no center; all points are expanding away from each other.
 
 ---
 
 ### Statement 2
 The Hubble constant has a value of approximately 70 km/s/Mpc.
 
-**True** - The Hubble constant is approximately 70 km/s per megaparsec.
+**Answer: True**
+
+**Explanation:** The Hubble constant is approximately 70 km/s per megaparsec.
 
 ---
 
 ### Statement 3
 Blueshift indicates a galaxy is moving toward us.
 
-**True** - Blueshift (shorter wavelength/higher frequency) occurs when a source moves toward the observer.
+**Answer: True**
+
+**Explanation:** Blueshift (shorter wavelength/higher frequency) occurs when a source moves toward the observer.
 
 ---
 
 ### Statement 4
 Elliptical galaxies have more young stars than spiral galaxies.
 
-**False** - Spiral galaxies have more young stars in their arms; elliptical galaxies are mostly old stars.
+**Answer: False**
+
+**Correction:** Spiral galaxies have more young stars in their arms; elliptical galaxies are mostly old stars.
 
 ---
 
 ### Statement 5
 The Big Bang was an explosion in space.
 
-**False** - The Big Bang was an expansion OF space, not an explosion IN space.
+**Answer: False**
+
+**Correction:** The Big Bang was an expansion OF space, not an explosion IN space.
 
 ---
 
 ### Statement 6
 Dark matter can be detected through its gravitational effects.
 
-**True** - Dark matter cannot be seen directly but its gravitational effects on visible matter can be observed.
+**Answer: True**
+
+**Explanation:** Dark matter cannot be seen directly but its gravitational effects on visible matter can be observed.
 
 ---
 
 ### Statement 7
 The universe is currently cooling down.
 
-**True** - As the universe expands, it cools; the CMB temperature continues to decrease.
+**Answer: True**
+
+**Explanation:** As the universe expands, it cools; the CMB temperature continues to decrease.
 
 ---
 
 ### Statement 8
 All galaxies are moving away from the Milky Way at the same speed.
 
-**False** - More distant galaxies recede faster (Hubble's Law); speeds are proportional to distance.
+**Answer: False**
+
+**Correction:** More distant galaxies recede faster (Hubble's Law); speeds are proportional to distance.
 
 ---
 
 ### Statement 9
 Nucleosynthesis in the early universe created mostly hydrogen and helium.
 
-**True** - The early universe produced mainly hydrogen (~75%) and helium (~25%) with trace amounts of lithium.
+**Answer: True**
+
+**Explanation:** The early universe produced mainly hydrogen (~75%) and helium (~25%) with trace amounts of lithium.
 
 ---
 
 ### Statement 10
 Space telescopes like Hubble are above Earth's atmosphere.
 
-**True** - Space telescopes orbit above the atmosphere, avoiding atmospheric distortion and absorption.
+**Answer: True**
+
+**Explanation:** Space telescopes orbit above the atmosphere, avoiding atmospheric distortion and absorption.
 
 ---
 
 ### Statement 11
 The parsec is a unit of time.
 
-**False** - The parsec is a unit of distance equal to about 3.26 light-years.
+**Answer: False**
+
+**Correction:** The parsec is a unit of distance equal to about 3.26 light-years.
 
 ---
 
 ### Statement 12
 Irregular galaxies have no definite shape.
 
-**True** - Irregular galaxies, as their name suggests, lack a regular or symmetrical shape.
+**Answer: True**
+
+**Explanation:** Irregular galaxies, as their name suggests, lack a regular or symmetrical shape.
 
 ---
 

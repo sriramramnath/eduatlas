@@ -20,8 +20,14 @@
 ## Industrial Applications
 
 ### Thickness Gauging
-```
-Source → Material → Detector
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[draw,rounded corners] (source) at (0,0) {Source};
+  \node[draw,rounded corners,minimum width=2.6cm,minimum height=1cm] (material) at (3.8,0) {Material};
+  \node[draw,rounded corners] (detector) at (7.6,0) {Detector};
+  \draw[->] (source) -- (material);
+  \draw[->] (material) -- (detector);
+\end{tikzpicture}
 ```
 - Beta for thin materials
 - Gamma for thick materials
@@ -47,9 +53,17 @@ Source → Material → Detector
 - Measure remaining C-14 for age
 
 ### Example
-```
-100% → 50% → 25%
- 0    5730   11460 years
+```tex
+\begin{tikzpicture}[x=1.35cm,y=1cm,>=stealth,font=\small]
+  \node (a) at (0,0) {100\%};
+  \node (b) at (2.2,0) {50\%};
+  \node (c) at (4.4,0) {25\%};
+  \draw[->] (a) -- (b);
+  \draw[->] (b) -- (c);
+  \node[below] at (0,-0.1) {0};
+  \node[below] at (2.2,-0.1) {5730 yr};
+  \node[below] at (4.4,-0.1) {11\,460 yr};
+\end{tikzpicture}
 ```
 
 ### Limitations

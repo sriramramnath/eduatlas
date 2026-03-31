@@ -69,11 +69,14 @@
 - Amount transmitted depends on thickness
 - Detector measures transmitted radiation
 
-```
-Source ──► ┌─────────────┐ ──► Detector
-           │   Material  │
-           │   (sheet)   │
-           └─────────────┘
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[draw,rounded corners,minimum width=1.8cm,minimum height=0.9cm] (source) at (0,0) {Source};
+  \node[draw,rounded corners,minimum width=3cm,minimum height=1.4cm] (sheet) at (4,0) {Material\\(sheet)};
+  \node[draw,rounded corners,minimum width=2cm,minimum height=0.9cm] (detector) at (8,0) {Detector};
+  \draw[->] (source) -- (sheet);
+  \draw[->] (sheet) -- (detector);
+\end{tikzpicture}
 ```
 
 **Radiation choice:**
@@ -133,6 +136,19 @@ If ancient wood has 25% of the C-14 activity of living wood:
 - 100% → 50% → 25% = 2 half-lives
 - Age = 2 × 5730 = 11,460 years
 
+```tex
+\begin{tikzpicture}[x=1.5cm,y=1cm,>=stealth,font=\small]
+  \node (a) at (0,0) {100\%};
+  \node (b) at (2.4,0) {50\%};
+  \node (c) at (4.8,0) {25\%};
+  \draw[->] (a) -- (b);
+  \draw[->] (b) -- (c);
+  \node[below] at (0,-0.1) {0 yr};
+  \node[below] at (2.4,-0.1) {5730 yr};
+  \node[below] at (4.8,-0.1) {11\,460 yr};
+\end{tikzpicture}
+```
+
 ### Limitations
 
 | Limitation | Explanation |
@@ -184,12 +200,18 @@ P = number of parent atoms
 - Alarm circuit
 
 **How it works:**
-```
-1. Alpha particles ionize air in chamber
-2. Ions allow small current to flow
-3. Smoke particles attach to ions
-4. Current decreases
-5. Alarm triggered
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[draw,rounded corners,minimum width=3.1cm,minimum height=0.9cm] (a) at (0,0) {Alpha ionizes air};
+  \node[draw,rounded corners,minimum width=3.1cm,minimum height=0.9cm] (b) at (4.2,0) {Current flows};
+  \node[draw,rounded corners,minimum width=3.1cm,minimum height=0.9cm] (c) at (8.4,0) {Smoke captures ions};
+  \node[draw,rounded corners,minimum width=3.1cm,minimum height=0.9cm] (d) at (12.6,0) {Current falls};
+  \node[draw,rounded corners,minimum width=2.6cm,minimum height=0.9cm] (e) at (16.3,0) {Alarm sounds};
+  \draw[->] (a) -- (b);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \draw[->] (d) -- (e);
+\end{tikzpicture}
 ```
 
 **Why alpha?**

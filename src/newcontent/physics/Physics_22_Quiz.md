@@ -7,157 +7,157 @@
 
 ### Question 1
 Which particle has a positive charge?
-- A) Electron
-- B) Neutron
-- C) Proton
-- D) Photon
+A) Electron
+B) Neutron
+C) Proton
+D) Photon
 
 **Answer: C**
 
-***Explanation**:** Protons carry a positive charge (+1), electrons carry a negative charge (-1), and neutrons are neutral (no charge).
+**Explanation:** Protons carry a positive charge (+1), electrons carry a negative charge (-1), and neutrons are neutral (no charge).
 
 ---
 
 ### Question 2
 What is the mass number of an atom?
-- A) Number of protons only
-- B) Number of protons plus neutrons
-- C) Number of electrons only
-- D) Number of neutrons only
+A) Number of protons only
+B) Number of protons plus neutrons
+C) Number of electrons only
+D) Number of neutrons only
 
 **Answer: B**
 
-***Explanation**:** The mass number (A) is the total number of protons and neutrons in the nucleus.
+**Explanation:** The mass number (A) is the total number of protons and neutrons in the nucleus.
 
 ---
 
 ### Question 3
 Isotopes of an element have:
-- A) Different numbers of protons
-- B) Same number of neutrons
-- C) Same number of protons but different numbers of neutrons
-- D) Different numbers of electrons
+A) Different numbers of protons
+B) Same number of neutrons
+C) Same number of protons but different numbers of neutrons
+D) Different numbers of electrons
 
 **Answer: C**
 
-***Explanation**:** Isotopes are atoms of the same element (same atomic number/protons) with different numbers of neutrons.
+**Explanation:** Isotopes are atoms of the same element (same atomic number/protons) with different numbers of neutrons.
 
 ---
 
 ### Question 4
 Alpha radiation consists of:
-- A) High-energy electrons
-- B) Helium nuclei
-- C) Electromagnetic waves
-- D) Neutrons
+A) High-energy electrons
+B) Helium nuclei
+C) Electromagnetic waves
+D) Neutrons
 
 **Answer: B**
 
-***Explanation**:** Alpha particles are helium nuclei (₂⁴He) consisting of 2 protons and 2 neutrons.
+**Explanation:** Alpha particles are helium nuclei (₂⁴He) consisting of 2 protons and 2 neutrons.
 
 ---
 
 ### Question 5
 Which radiation is most strongly ionizing?
-- A) Alpha
-- B) Beta
-- C) Gamma
-- D) X-rays
+A) Alpha
+B) Beta
+C) Gamma
+D) X-rays
 
 **Answer: A**
 
-***Explanation**:** Alpha particles are the most strongly ionizing due to their large mass and double positive charge.
+**Explanation:** Alpha particles are the most strongly ionizing due to their large mass and double positive charge.
 
 ---
 
 ### Question 6
 What can stop beta radiation?
-- A) Paper
-- B) Aluminum sheet
-- C) Lead sheet
-- D) Nothing
+A) Paper
+B) Aluminum sheet
+C) Lead sheet
+D) Nothing
 
 **Answer: B**
 
-***Explanation**:** Beta radiation can be stopped by a few millimeters of aluminum or about 1 meter of air.
+**Explanation:** Beta radiation can be stopped by a few millimeters of aluminum or about 1 meter of air.
 
 ---
 
 ### Question 7
 During alpha decay, the atomic number:
-- A) Increases by 1
-- B) Decreases by 2
-- C) Stays the same
-- D) Increases by 2
+A) Increases by 1
+B) Decreases by 2
+C) Stays the same
+D) Increases by 2
 
 **Answer: B**
 
-***Explanation**:** In alpha decay, the nucleus loses 2 protons (and 2 neutrons), so the atomic number decreases by 2.
+**Explanation:** In alpha decay, the nucleus loses 2 protons (and 2 neutrons), so the atomic number decreases by 2.
 
 ---
 
 ### Question 8
 Gamma radiation is:
-- A) A particle with mass
-- B) An electromagnetic wave
-- C) A helium nucleus
-- D) An electron
+A) A particle with mass
+B) An electromagnetic wave
+C) A helium nucleus
+D) An electron
 
 **Answer: B**
 
-***Explanation**:** Gamma radiation is high-frequency electromagnetic radiation with no mass and no charge.
+**Explanation:** Gamma radiation is high-frequency electromagnetic radiation with no mass and no charge.
 
 ---
 
 ### Question 9
 In beta decay, a neutron changes into:
-- A) A proton and an electron
-- B) A proton only
-- C) Two protons
-- D) An alpha particle
+A) A proton and an electron
+B) A proton only
+C) Two protons
+D) An alpha particle
 
 **Answer: A**
 
-***Explanation**:** In beta decay, a neutron converts to a proton (stays in nucleus) and emits an electron (beta particle).
+**Explanation:** In beta decay, a neutron converts to a proton (stays in nucleus) and emits an electron (beta particle).
 
 ---
 
 ### Question 10
 Which radiation is not deflected by electric or magnetic fields?
-- A) Alpha
-- B) Beta
-- C) Gamma
-- D) Both A and B
+A) Alpha
+B) Beta
+C) Gamma
+D) Both A and B
 
 **Answer: C**
 
-***Explanation**:** Gamma radiation has no charge, so it is not deflected by electric or magnetic fields.
+**Explanation:** Gamma radiation has no charge, so it is not deflected by electric or magnetic fields.
 
 ---
 
 ### Question 11
 The relative mass of an electron is approximately:
-- A) 1
-- B) 4
-- C) 1/1840
-- D) 0
+A) 1
+B) 4
+C) 1/1840
+D) 0
 
 **Answer: C**
 
-***Explanation**:** An electron has a negligible mass of approximately 1/1840 the mass of a proton.
+**Explanation:** An electron has a negligible mass of approximately 1/1840 the mass of a proton.
 
 ---
 
 ### Question 12
 Which type of radiation has the greatest range in air?
-- A) Alpha
-- B) Beta
-- C) Gamma
-- D) All have the same range
+A) Alpha
+B) Beta
+C) Gamma
+D) All have the same range
 
 **Answer: C**
 
-***Explanation**:** Gamma radiation can travel several kilometers in air, while alpha travels only a few centimeters and beta about 1 meter.
+**Explanation:** Gamma radiation can travel several kilometers in air, while alpha travels only a few centimeters and beta about 1 meter.
 
 ---
 
@@ -166,84 +166,108 @@ Which type of radiation has the greatest range in air?
 ### Statement 1
 The atomic number equals the number of neutrons in the nucleus.
 
-**False** - The atomic number equals the number of protons, not neutrons.
+**Answer: False**
+
+**Correction:** The atomic number equals the number of protons, not neutrons.
 
 ---
 
 ### Statement 2
 Alpha particles are more penetrating than gamma rays.
 
-**False** - Alpha particles are the least penetrating (stopped by paper), while gamma rays are the most penetrating.
+**Answer: False**
+
+**Correction:** Alpha particles are the least penetrating (stopped by paper), while gamma rays are the most penetrating.
 
 ---
 
 ### Statement 3
 Isotopes of an element have identical chemical properties.
 
-**True** - Isotopes have the same electron configuration, so they have identical chemical properties.
+**Answer: True**
+
+**Explanation:** Isotopes have the same electron configuration, so they have identical chemical properties.
 
 ---
 
 ### Statement 4
 Beta particles are positively charged.
 
-**False** - Beta particles are electrons and carry a negative charge.
+**Answer: False**
+
+**Correction:** Beta particles are electrons and carry a negative charge.
 
 ---
 
 ### Statement 5
 During gamma decay, both the mass number and atomic number remain unchanged.
 
-**True** - Gamma decay only releases energy; no particles are emitted from the nucleus.
+**Answer: True**
+
+**Explanation:** Gamma decay only releases energy; no particles are emitted from the nucleus.
 
 ---
 
 ### Statement 6
 Neutrons have a relative charge of +1.
 
-**False** - Neutrons have no charge (neutral, charge = 0).
+**Answer: False**
+
+**Correction:** Neutrons have no charge (neutral, charge = 0).
 
 ---
 
 ### Statement 7
 The nucleus of an atom contains protons and electrons.
 
-**False** - The nucleus contains protons and neutrons only; electrons orbit outside the nucleus.
+**Answer: False**
+
+**Correction:** The nucleus contains protons and neutrons only; electrons orbit outside the nucleus.
 
 ---
 
 ### Statement 8
 Alpha radiation causes the most ionization per unit length.
 
-**True** - Due to their large mass and double charge, alpha particles cause intense ionization.
+**Answer: True**
+
+**Explanation:** Due to their large mass and double charge, alpha particles cause intense ionization.
 
 ---
 
 ### Statement 9
 In a neutral atom, the number of electrons equals the number of protons.
 
-**True** - The positive and negative charges balance to make the atom electrically neutral.
+**Answer: True**
+
+**Explanation:** The positive and negative charges balance to make the atom electrically neutral.
 
 ---
 
 ### Statement 10
 Beta decay increases the atomic number by 1.
 
-**True** - A neutron becomes a proton, increasing the atomic number by 1 while mass number stays the same.
+**Answer: True**
+
+**Explanation:** A neutron becomes a proton, increasing the atomic number by 1 while mass number stays the same.
 
 ---
 
 ### Statement 11
 Lead is used to shield against gamma radiation.
 
-**True** - Dense materials like lead are effective at absorbing gamma radiation.
+**Answer: True**
+
+**Explanation:** Dense materials like lead are effective at absorbing gamma radiation.
 
 ---
 
 ### Statement 12
 All isotopes of an element are radioactive.
 
-**False** - Many isotopes are stable and not radioactive; only some isotopes are radioactive.
+**Answer: False**
+
+**Correction:** Many isotopes are stable and not radioactive; only some isotopes are radioactive.
 
 ---
 

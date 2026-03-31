@@ -9,22 +9,19 @@
 
 **The angle of incidence equals the angle of reflection.**
 
-```
-            Normal (perpendicular to surface)
-                │
-                │
-    Incident    │    Reflected
-    ray    →    │    → ray
-         ╲      │      ╱
-          ╲  i  │  r  ╱
-           ╲    │    ╱
-    ────────────┼────────────
-                │
-              Surface
-              
-    i = angle of incidence
-    r = angle of reflection
-    i = r
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) -- (8,0);
+  \draw[dashed] (4,0) -- (4,3.3);
+  \draw[->,thick] (1.5,2.8) -- (4,0);
+  \draw[->,thick] (4,0) -- (6.5,2.8);
+  \node[left] at (2.0,2.0) {Incident ray};
+  \node[right] at (6.0,2.0) {Reflected ray};
+  \node[right] at (4.2,2.7) {Normal};
+  \node[below] at (4,-0.2) {Surface};
+  \node at (3.4,0.8) {$i$};
+  \node at (4.6,0.8) {$r$};
+\end{tikzpicture}
 ```
 
 ### Types of Reflection
@@ -59,23 +56,19 @@ Light changes speed when entering a different medium:
 
 ### Refraction Diagram
 
-```
-    Air (less dense, faster)
-    
-         ╲
-          ╲  Incident ray
-           ╲
-            ╲  i
-    ─────────●──────────────────
-              ╲│
-               ╲│  Refracted ray
-                ╲│ r
-                 ╲│
-    Glass (denser, slower)
-    
-    i = angle of incidence
-    r = angle of refraction
-    i > r (light bends towards normal)
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) -- (8,0);
+  \draw[dashed] (4,-2.5) -- (4,2.8);
+  \draw[->,thick] (1.4,2.3) -- (4,0);
+  \draw[->,thick] (4,0) -- (5.3,-2.1);
+  \node at (1.8,2.8) {Air};
+  \node at (6.0,-2.8) {Glass};
+  \node[left] at (2.2,1.2) {Incident ray};
+  \node[right] at (5.6,-1.4) {Refracted ray};
+  \node at (3.4,0.7) {$i$};
+  \node at (4.5,-0.8) {$r$};
+\end{tikzpicture}
 ```
 
 ### Snell's Law (Not required, but useful)
@@ -125,26 +118,24 @@ n = refractive index
 
 ### Total Internal Reflection Diagram
 
-```
-    Glass
-    
-    Incident ray →
-                  ╲
-                   ╲  (less than critical angle)
-                    ╲───→ Refracted ray
-    ─────────────────
-    
-    Incident ray →
-                  ╲
-                   ╲  (equal to critical angle)
-                    ╲→→→→→→→→→→→→→→→
-    ─────────────────
-    
-    Incident ray →
-                  ╲
-                   ╲  (greater than critical angle)
-                    ╲←←←←←←←←←←←←←←←
-                     (Total Internal Reflection)
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \node[anchor=west] at (0,3.2) {Less than critical angle};
+  \draw[thick] (0,2.4) -- (7.8,2.4);
+  \draw[->,thick] (1.0,4.0) -- (4.0,2.4);
+  \draw[->,thick] (4.0,2.4) -- (6.0,1.2);
+
+  \node[anchor=west] at (0,0.9) {Equal to critical angle};
+  \draw[thick] (0,0.1) -- (7.8,0.1);
+  \draw[->,thick] (1.0,1.7) -- (4.0,0.1);
+  \draw[->,thick] (4.0,0.1) -- (7.2,0.1);
+
+  \node[anchor=west] at (0,-1.5) {Greater than critical angle};
+  \draw[thick] (0,-2.3) -- (7.8,-2.3);
+  \draw[->,thick] (1.0,-0.7) -- (4.0,-2.3);
+  \draw[->,thick] (4.0,-2.3) -- (6.7,-0.9);
+  \node[right] at (6.8,-0.9) {TIR};
+\end{tikzpicture}
 ```
 
 ### Applications of TIR
@@ -162,16 +153,17 @@ n = refractive index
 
 ### Structure
 
-```
-    ┌─────────────────────┐
-    │    Core (glass)     │  ← Light travels here
-    │   ┌─────────────┐   │
-    │   │   Cladding  │   │  ← Lower refractive index
-    │   │  (glass)    │   │
-    │   │ ┌─────────┐ │   │
-    │   │ │ Protective│ │   │
-    │   │ │  coating  │ │   │
-    └───┴─┴─────────┴─┴───┘
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (-3,-1.5) rectangle (3,1.5);
+  \draw[thick] (-2.2,-1.0) rectangle (2.2,1.0);
+  \draw[thick] (-1.4,-0.5) rectangle (1.4,0.5);
+  \node at (0,0) {Core};
+  \node at (0,0.85) {Cladding};
+  \node at (0,1.3) {Protective coating};
+  \draw[->] (3.3,0) -- (1.4,0);
+  \node[right] at (3.3,0) {Light travels here};
+\end{tikzpicture}
 ```
 
 ### How They Work
@@ -211,36 +203,41 @@ n = refractive index
 
 ### Converging Lens
 
-```
-         │
-    ═════╪═════
-        ╱│╲
-       ╱ │ ╲
-      ╱  │  ╲
-    ─┼───┼───┼──→
-      ╲  │  ╱
-       ╲ │ ╱
-        ╲│╱
-    ═════╪═════
-         │
-         
-    Focal point (F) where parallel rays converge
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (4,-2.2) .. controls (4.6,-1.2) and (4.6,1.2) .. (4,2.2);
+  \draw[thick] (4,-2.2) .. controls (3.4,-1.2) and (3.4,1.2) .. (4,2.2);
+  \draw[dashed] (0,0) -- (8,0);
+  \foreach \y in {1.2,0.4,-0.4} {
+    \draw[->,thick] (0,\y) -- (4,\y);
+  }
+  \draw[->,thick] (4,1.2) -- (7,0);
+  \draw[->,thick] (4,0.4) -- (7,0);
+  \draw[->,thick] (4,-0.4) -- (7,0);
+  \filldraw (7,0) circle (0.06);
+  \node[below] at (7,0) {$F$};
+\end{tikzpicture}
 ```
 
 ### Diverging Lens
 
-```
-         │
-    ═════╪═════
-        ╲│╱
-         │
-    ─────┼─────→
-         │
-        ╱│╲
-    ═════╪═════
-         │
-         
-    Focal point (virtual) where diverging rays appear to come from
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (4,-2.2) .. controls (3.4,-1.2) and (3.4,1.2) .. (4,2.2);
+  \draw[thick] (4,-2.2) .. controls (4.6,-1.2) and (4.6,1.2) .. (4,2.2);
+  \draw[dashed] (0,0) -- (8,0);
+  \foreach \y in {1.2,0.4,-0.4} {
+    \draw[->,thick] (0,\y) -- (4,\y);
+  }
+  \draw[->,thick] (4,1.2) -- (7,2.0);
+  \draw[->,thick] (4,0.4) -- (7,0.9);
+  \draw[->,thick] (4,-0.4) -- (7,-0.2);
+  \draw[dashed] (4,1.2) -- (1.6,0);
+  \draw[dashed] (4,0.4) -- (1.6,0);
+  \draw[dashed] (4,-0.4) -- (1.6,0);
+  \filldraw (1.6,0) circle (0.06);
+  \node[below] at (1.6,0) {$F$};
+\end{tikzpicture}
 ```
 
 ### Lens Terminology

@@ -1,4 +1,4 @@
-# Chapter 5: Chemical Formulae, Equations and Calculations Part 1 - Concise Synopsis
+# Chapter 5: Chemical Formulae, Equations and Calculations Part 1 - Concise Synopsis (Chemistry Only)
 
 ## Quick Revision Guide for Pearson Edexcel IGCSE Chemistry
 

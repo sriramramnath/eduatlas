@@ -129,26 +129,53 @@ const noteModule = contentNoteModules[notePath] as any;
 const synopsisModule = contentSynopsisModules[synopsisPath] as any;
 const quizModule = contentQuizModules[quizPath] as any;
 const practiceModule = practiceModules[practicePath] as any;
-const biologyPracticeLinks = [
-  {
-    label: 'Mock Paper 1',
-    href: '/biology/practice/IGCSE_Biology_Mock1_Paper1.pdf',
-    description: 'First full mock paper for chapter practice and exam timing.',
-    meta: 'PDF',
+const mockPapersBySubject: Record<string, Array<{label: string; href: string; description: string; meta: string}>> = {
+  biology: [
+    { label: 'Mock Paper 1', href: '/biology/practice/IGCSE_Biology_Mock1_Paper1.pdf', description: 'First full mock paper for chapter practice and exam timing.', meta: 'PDF' },
+    { label: 'Mock Paper 2', href: '/biology/practice/IGCSE_Biology_Mock1_Paper2.pdf', description: 'Second mock paper using the same format for repeated revision.', meta: 'PDF' },
+    { label: 'Mark Scheme', href: '/biology/practice/IGCSE_Biology_Mock1_MarkSchemes.pdf', description: 'Official answers and mark allocations for both mock papers.', meta: 'PDF' },
+  ],
+  chemistry: [],
+  physics: [],
+  maths: [],
+  ict: [],
+};
+
+const pastPapersBySubject: Record<string, { label: string; href: string; description: string; meta: string }> = {
+  biology: {
+    label: 'Pearson Edexcel IGCSE Biology Past Papers',
+    href: 'https://www.savemyexams.com/igcse/biology/edexcel/past-papers/',
+    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
+    meta: 'External',
   },
-  {
-    label: 'Mock Paper 2',
-    href: '/biology/practice/IGCSE_Biology_Mock1_Paper2.pdf',
-    description: 'Second mock paper using the same format for repeated revision.',
-    meta: 'PDF',
+  chemistry: {
+    label: 'Pearson Edexcel IGCSE Chemistry Past Papers',
+    href: 'https://www.savemyexams.com/igcse/chemistry/edexcel/past-papers/',
+    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
+    meta: 'External',
   },
-  {
-    label: 'Mark Scheme',
-    href: '/biology/practice/IGCSE_Biology_Mock1_MarkSchemes.pdf',
-    description: 'Official answers and mark allocations for both mock papers.',
-    meta: 'PDF',
+  physics: {
+    label: 'Pearson Edexcel IGCSE Physics Past Papers',
+    href: 'https://www.savemyexams.com/igcse/physics/edexcel/past-papers/',
+    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
+    meta: 'External',
   },
-];
+  maths: {
+    label: 'Pearson Edexcel IGCSE Maths Past Papers',
+    href: 'https://www.savemyexams.com/igcse/maths/edexcel/past-papers/',
+    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
+    meta: 'External',
+  },
+  ict: {
+    label: 'Pearson Edexcel IGCSE ICT Past Papers',
+    href: 'https://www.savemyexams.com/igcse/ict/edexcel/past-papers/',
+    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
+    meta: 'External',
+  },
+};
+
+const currentMockPapers = mockPapersBySubject[subjectId!] || [];
+const currentPastPaper = pastPapersBySubject[subjectId!];
 
 const tabIcons: Record<string, string> = {
   notes: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>',
@@ -180,6 +207,9 @@ const tabIcons: Record<string, string> = {
           <div class="chapter-header">
             <div class="chapter-tag-wrap">
               <span class="chapter-tag" style={`background: ${subject.color}`}>Chapter {chapter.number}</span>
+              {chapter.contentType && (
+                <span class="chapter-tag content-type-tag" data-type={chapter.contentType}>{chapter.contentType === 'biology' ? 'Biology Only' : chapter.contentType === 'chemistry' ? 'Chemistry Only' : 'Physics Only'}</span>
+              )}
             </div>
             <h1 class="hero-title wiggly-heading">{chapter.title}</h1>
             <p class="hero-subtitle">{chapter.synopsis}</p>
@@ -193,6 +223,15 @@ const tabIcons: Record<string, string> = {
                 {chapter.topics.length} Topics
               </span>
             </div>
+            {(isBiology || isChemistry || isPhysics) && (
+              <div class="separate-science-toggle">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="separate-science-toggle" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Show Separate Science content</span>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -300,30 +339,73 @@ const tabIcons: Record<string, string> = {
                     <h2 class="panel-card-title">Practice Questions</h2>
                   </div>
                   <div class="card-body">
-                    {isBiology ? (
-                      <div class="practice-links">
-                        {biologyPracticeLinks.map((resource) => (
-                          <a
-                            href={resource.href}
-                            target="_blank"
-                            rel="noreferrer"
-                            class="practice-link-card card glass"
-                          >
-                            <div class="practice-link-main">
-                              <div class="practice-link-icon" aria-hidden="true">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/><path d="M9 18h6"/><path d="M10 12h1"/></svg>
-                              </div>
-                              <div class="practice-link-copy">
-                                <span class="practice-link-label">{resource.label}</span>
-                                <span class="practice-link-description">{resource.description}</span>
-                              </div>
+                    {currentMockPapers.length > 0 || currentPastPaper ? (
+                      <div class="practice-sections">
+                        {currentMockPapers.length > 0 && (
+                          <div class="practice-section">
+                            <h3 class="practice-section-title">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                              Mock Papers by EduOS Atlas
+                            </h3>
+                            <div class="practice-links">
+                              {currentMockPapers.map((resource) => (
+                                <a
+                                  href={resource.href}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  class="practice-link-card card glass"
+                                >
+                                  <div class="practice-link-main">
+                                    <div class="practice-link-icon" aria-hidden="true">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/><path d="M9 18h6"/><path d="M10 12h1"/></svg>
+                                    </div>
+                                    <div class="practice-link-copy">
+                                      <span class="practice-link-label">{resource.label}</span>
+                                      <span class="practice-link-description">{resource.description}</span>
+                                    </div>
+                                  </div>
+                                  <div class="practice-link-side">
+                                    <span class="practice-link-meta">{resource.meta}</span>
+                                    <span class="practice-link-action">Open</span>
+                                  </div>
+                                </a>
+                              ))}
                             </div>
-                            <div class="practice-link-side">
-                              <span class="practice-link-meta">{resource.meta}</span>
-                              <span class="practice-link-action">Open</span>
+                          </div>
+                        )}
+                        {currentPastPaper && (
+                          <div class="practice-section">
+                            <h3 class="practice-section-title">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                              Past Papers
+                            </h3>
+                            <p class="practice-section-desc">Official Pearson Edexcel past papers from the exam board.</p>
+                            <div class="practice-links">
+                              <a
+                                href={currentPastPaper.href}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                class="practice-link-card card glass external-link"
+                              >
+                                <div class="practice-link-main">
+                                  <div class="practice-link-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                  </div>
+                                  <div class="practice-link-copy">
+                                    <span class="practice-link-label">{currentPastPaper.label}</span>
+                                    <span class="practice-link-description">{currentPastPaper.description}</span>
+                                  </div>
+                                </div>
+                                <div class="practice-link-side">
+                                  <span class="practice-link-meta">{currentPastPaper.meta}</span>
+                                  <span class="practice-link-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                  </span>
+                                </div>
+                              </a>
                             </div>
-                          </a>
-                        ))}
+                          </div>
+                        )}
                       </div>
                     ) : practiceModule ? (
                       <div class="markdown-content">
@@ -888,6 +970,144 @@ const tabIcons: Record<string, string> = {
   // Run on page load
   initTabs();
   initQuizCards();
+
+  // Separate Science Toggle
+  function initSeparateScienceToggle() {
+    const toggle = document.getElementById('separate-science-toggle');
+    if (!toggle) return;
+
+    // Load saved preference
+    const savedPreference = localStorage.getItem('showSeparateScience');
+    if (savedPreference !== null) {
+      toggle.checked = savedPreference === 'true';
+    }
+    updateSeparateScienceContent(toggle.checked);
+
+    toggle.addEventListener('change', () => {
+      localStorage.setItem('showSeparateScience', String(toggle.checked));
+      updateSeparateScienceContent(toggle.checked);
+    });
+  }
+
+  function updateSeparateScienceContent(show: boolean) {
+    // Hide/show elements marked as separate science only
+    document.querySelectorAll('[data-separation-only]').forEach(el => {
+      if (show) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    });
+  }
+
+  function markSeparationOnlySections() {
+    // Find all h2 and h3 headings in content areas
+    const contentAreas = document.querySelectorAll('.markdown-content');
+    
+    contentAreas.forEach(contentArea => {
+      const headings = contentArea.querySelectorAll('h2, h3');
+      
+      headings.forEach(heading => {
+        const text = heading.textContent || '';
+        if (/\((Biology Only|Chemistry Only|Physics Only)\)/i.test(text)) {
+          // Mark this heading and all content until next heading as separation-only
+          let sibling = heading.nextElementSibling;
+          const wrapper = document.createElement('div');
+          wrapper.setAttribute('data-separation-only', 'true');
+          
+          wrapper.appendChild(heading.cloneNode(true));
+          heading.parentNode?.insertBefore(wrapper, heading);
+          wrapper.appendChild(heading);
+          
+          while (sibling && !['H2', 'H3'].includes(sibling.tagName)) {
+            const next = sibling.nextElementSibling;
+            wrapper.appendChild(sibling);
+            sibling = next;
+          }
+          
+          // Add appropriate data-type for styling
+          if (/\(Biology Only\)/i.test(text)) {
+            wrapper.setAttribute('data-type', 'biology');
+          } else if (/\(Chemistry Only\)/i.test(text)) {
+            wrapper.setAttribute('data-type', 'chemistry');
+          } else if (/\(Physics Only\)/i.test(text)) {
+            wrapper.setAttribute('data-type', 'physics');
+          }
+        }
+      });
+    });
+    
+    // Also check if chapter is entirely separation-only
+    const chapterTag = document.querySelector('.content-type-tag');
+    if (chapterTag) {
+      const type = chapterTag.getAttribute('data-type');
+      const contentSections = document.querySelectorAll('.markdown-content');
+      contentSections.forEach(section => {
+        if (!section.hasAttribute('data-separation-only')) {
+          section.setAttribute('data-separation-only', 'true');
+          section.setAttribute('data-type', type || '');
+        }
+      });
+    }
+  }
+
+  initSeparateScienceToggle();
+  markSeparationOnlySections();
+  markDiagramReferences();
+  // Apply toggle state after marking sections
+  const toggle = document.getElementById('separate-science-toggle');
+  if (toggle) {
+    updateSeparateScienceContent(toggle.checked);
+  }
+
+  function markDiagramReferences() {
+    const contentAreas = document.querySelectorAll('.markdown-content');
+    
+    contentAreas.forEach(contentArea => {
+      // Look for paragraphs or list items that reference graphs/diagrams that need to be shown
+      const elements = contentArea.querySelectorAll('p, li, h3, h4');
+      
+      const diagramPatterns = [
+        /is shown (below|in (the )?(figure|diagram|graph))/i,
+        /(figure|diagram|graph)\s+\d+/i,
+        /shown in (the )?(figure|diagram|graph)/i,
+        /see (figure|diagram|graph)/i,
+        /as shown (below|in)/i,
+        /sketch the.*graph/i,
+        /plot a graph/i,
+        /draw a (graph|diagram|chart)/i,
+        /HR diagram/i,
+      ];
+      
+      elements.forEach(el => {
+        const text = el.textContent || '';
+        const needsDiagram = diagramPatterns.some(pattern => pattern.test(text));
+        
+        if (needsDiagram && !el.closest('.needs-diagram') && !el.closest('.tikz-diagram')) {
+          // Check if the image/graph actually exists nearby
+          const nextSibling = el.nextElementSibling;
+          const hasImage = nextSibling && (nextSibling.tagName === 'IMG' || nextSibling.querySelector('img, svg, .tikz-diagram'));
+          
+          if (!hasImage) {
+            // Wrap in needs-diagram marker
+            const wrapper = document.createElement('div');
+            wrapper.className = 'needs-diagram';
+            el.parentNode?.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+          }
+        }
+      });
+      
+      // Also look for manually marked sections using <!-- diagram-needed --> or ::: diagram-needed
+      const manualMarkers = contentArea.querySelectorAll('*:not(script):not(style), .comment-diagram');
+      contentArea.querySelectorAll('*').forEach(el => {
+        const comment = el.textContent || '';
+        if (comment.includes('<!-- diagram-needed -->') || comment.includes('::: diagram-needed')) {
+          el.classList.add('needs-diagram');
+        }
+      });
+    });
+  }
 </script>
 
 <style define:vars={{ bannerSrc }}>
@@ -948,7 +1168,7 @@ const tabIcons: Record<string, string> = {
   .breadcrumb-link { color: var(--app-accent); }
   .breadcrumb-current { color: var(--app-text-muted); }
 
-  .chapter-tag-wrap { margin-bottom: 1.5rem; }
+  .chapter-tag-wrap { margin-bottom: 1.5rem; display: flex; gap: 0.75rem; align-items: center; }
   .chapter-tag {
     padding: 0.4rem 1.25rem;
     border-radius: 999px;
@@ -956,6 +1176,103 @@ const tabIcons: Record<string, string> = {
     font-weight: 800;
     font-size: 1.1rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .content-type-tag[data-type="biology"] {
+    background: #22c55e !important;
+  }
+
+  .content-type-tag[data-type="chemistry"] {
+    background: #f97316 !important;
+  }
+
+  .content-type-tag[data-type="physics"] {
+    background: #a855f7 !important;
+  }
+
+  .separate-science-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--app-surface-muted);
+    border-radius: 999px;
+    width: fit-content;
+  }
+
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+  }
+
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: var(--app-border);
+    transition: 0.3s;
+    border-radius: 26px;
+  }
+
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+
+  .toggle-switch input:checked + .toggle-slider {
+    background-color: #22c55e;
+  }
+
+  .toggle-switch input:checked + .toggle-slider:before {
+    transform: translateX(22px);
+  }
+
+  .toggle-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--app-text);
+  }
+
+  :global(.hidden) {
+    display: none !important;
+  }
+
+  :global([data-separation-only]) {
+    transition: opacity 0.3s ease;
+  }
+
+  :global([data-separation-only][data-type="biology"]) {
+    border-left: 3px solid #22c55e;
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+
+  :global([data-separation-only][data-type="chemistry"]) {
+    border-left: 3px solid #f97316;
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+
+  :global([data-separation-only][data-type="physics"]) {
+    border-left: 3px solid #a855f7;
+    padding-left: 1rem;
+    margin: 1rem 0;
   }
 
   .hero-title { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem; }
@@ -1125,6 +1442,36 @@ const tabIcons: Record<string, string> = {
     color: var(--app-accent);
     font-weight: 700;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .practice-link-card.external-link {
+    border-color: var(--app-accent);
+    background: color-mix(in srgb, var(--app-accent) 6%, var(--app-surface));
+  }
+
+  .practice-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .practice-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--app-text);
+    margin-bottom: 0.75rem;
+  }
+
+  .practice-section-desc {
+    font-size: 1.05rem;
+    color: var(--app-text-muted);
+    margin-bottom: 1rem;
   }
 
   /* Markdown Content Styling */
@@ -1176,6 +1523,42 @@ const tabIcons: Record<string, string> = {
   }
   .markdown-content :global(.tikz-diagram svg polygon:not([fill="none"])) {
     fill: var(--tikz-fg) !important;
+  }
+
+  .markdown-content :global(.needs-diagram) {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 2px dashed #f59e0b !important;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+  }
+
+  :global([data-theme='dark']) .markdown-content :global(.needs-diagram) {
+    background: linear-gradient(135deg, #451a03 0%, #78350f 100%);
+    border-color: #f59e0b !important;
+  }
+
+  .markdown-content :global(.needs-diagram)::before {
+    content: "📊 Diagram Needed";
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #92400e;
+    margin-bottom: 0.75rem;
+  }
+
+  :global([data-theme='dark']) .markdown-content :global(.needs-diagram)::before {
+    color: #fbbf24;
+  }
+
+  .markdown-content :global(.needs-diagram p) {
+    color: #78350f !important;
+    font-style: italic;
+  }
+
+  :global([data-theme='dark']) .markdown-content :global(.needs-diagram p) {
+    color: #fde68a !important;
   }
   :global(html[data-theme='dark']) .markdown-content :global(.tikz-diagram svg) {
     --tikz-fg: #ffffff;

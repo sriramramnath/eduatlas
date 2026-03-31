@@ -7,157 +7,157 @@
 
 ### Question 1
 What is the unit of activity?
-- A) Joule
-- B) Watt
-- C) Becquerel
-- D) Gray
+A) Joule
+B) Watt
+C) Becquerel
+D) Gray
 
 **Answer: C**
 
-***Explanation**:** Activity is measured in becquerels (Bq), where 1 Bq = 1 decay per second.
+**Explanation:** Activity is measured in becquerels (Bq), where 1 Bq = 1 decay per second.
 
 ---
 
 ### Question 2
 The largest source of background radiation is:
-- A) Medical X-rays
-- B) Radon gas
-- C) Cosmic rays
-- D) Nuclear power
+A) Medical X-rays
+B) Radon gas
+C) Cosmic rays
+D) Nuclear power
 
 **Answer: B**
 
-***Explanation**:** Radon gas from rocks and soil contributes about 50% of background radiation.
+**Explanation:** Radon gas from rocks and soil contributes about 50% of background radiation.
 
 ---
 
 ### Question 3
 A sample has activity 400 Bq. After one half-life, the activity is:
-- A) 800 Bq
-- B) 400 Bq
-- C) 200 Bq
-- D) 100 Bq
+A) 800 Bq
+B) 400 Bq
+C) 200 Bq
+D) 100 Bq
 
 **Answer: C**
 
-***Explanation**:** After one half-life, the activity halves: 400 ÷ 2 = 200 Bq.
+**Explanation:** After one half-life, the activity halves: 400 ÷ 2 = 200 Bq.
 
 ---
 
 ### Question 4
 A substance has half-life of 10 years. How much remains after 30 years?
-- A) ½
-- B) ¼
-- C) ⅛
-- D) ¹⁄₁₆
+A) ½
+B) ¼
+C) ⅛
+D) ¹⁄₁₆
 
 **Answer: C**
 
-***Explanation**:** 30 years = 3 half-lives. Remaining = (½)³ = ⅛.
+**Explanation:** 30 years = 3 half-lives. Remaining = (½)³ = ⅛.
 
 ---
 
 ### Question 5
 Which has the shortest half-life?
-- A) Uranium-238
-- B) Carbon-14
-- C) Iodine-131
-- D) Technetium-99m
+A) Uranium-238
+B) Carbon-14
+C) Iodine-131
+D) Technetium-99m
 
 **Answer: D**
 
-***Explanation**:** Technetium-99m has a half-life of about 6 hours, much shorter than the others.
+**Explanation:** Technetium-99m has a half-life of about 6 hours, much shorter than the others.
 
 ---
 
 ### Question 6
 Radioactive decay is:
-- A) Predictable for individual nuclei
-- B) A random process
-- C) Triggered by heating
-- D) Prevented by cooling
+A) Predictable for individual nuclei
+B) A random process
+C) Triggered by heating
+D) Prevented by cooling
 
 **Answer: B**
 
-***Explanation**:** Radioactive decay is random and spontaneous - we cannot predict when a particular nucleus will decay.
+**Explanation:** Radioactive decay is random and spontaneous - we cannot predict when a particular nucleus will decay.
 
 ---
 
 ### Question 7
 A counter shows 520 counts/minute. Background is 20 counts/minute. The corrected count rate is:
-- A) 540 counts/min
-- B) 520 counts/min
-- C) 500 counts/min
-- D) 26 counts/min
+A) 540 counts/min
+B) 520 counts/min
+C) 500 counts/min
+D) 26 counts/min
 
 **Answer: C**
 
-***Explanation**:** Corrected count = measured count - background = 520 - 20 = 500 counts/min.
+**Explanation:** Corrected count = measured count - background = 520 - 20 = 500 counts/min.
 
 ---
 
 ### Question 8
 The half-life of a radioactive isotope is the time taken for:
-- A) All nuclei to decay
-- B) Half the time for all to decay
-- C) Half the nuclei to decay
-- D) Activity to reach zero
+A) All nuclei to decay
+B) Half the time for all to decay
+C) Half the nuclei to decay
+D) Activity to reach zero
 
 **Answer: C**
 
-***Explanation**:** Half-life is the time for half the radioactive nuclei to decay or for activity to halve.
+**Explanation:** Half-life is the time for half the radioactive nuclei to decay or for activity to halve.
 
 ---
 
 ### Question 9
 A sample of 80g decays to 10g. How many half-lives have passed?
-- A) 2
-- B) 3
-- C) 4
-- D) 5
+A) 2
+B) 3
+C) 4
+D) 5
 
 **Answer: B**
 
-***Explanation**:** 80 → 40 → 20 → 10 (3 half-lives).
+**Explanation:** 80 → 40 → 20 → 10 (3 half-lives).
 
 ---
 
 ### Question 10
 In a GM tube, radiation is detected by:
-- A) Heating effect
-- B) Ionization of gas
-- C) Chemical reaction
-- D) Magnetic deflection
+A) Heating effect
+B) Ionization of gas
+C) Chemical reaction
+D) Magnetic deflection
 
 **Answer: B**
 
-***Explanation**:** Radiation ionizes gas atoms, creating ions that produce electrical pulses.
+**Explanation:** Radiation ionizes gas atoms, creating ions that produce electrical pulses.
 
 ---
 
 ### Question 11
 A source has activity 1200 Bq and half-life 4 hours. What is the activity after 8 hours?
-- A) 600 Bq
-- B) 400 Bq
-- C) 300 Bq
-- D) 200 Bq
+A) 600 Bq
+B) 400 Bq
+C) 300 Bq
+D) 200 Bq
 
 **Answer: C**
 
-***Explanation**:** 8 hours = 2 half-lives. Activity = 1200 × (½)² = 1200 × ¼ = 300 Bq.
+**Explanation:** 8 hours = 2 half-lives. Activity = 1200 × (½)² = 1200 × ¼ = 300 Bq.
 
 ---
 
 ### Question 12
 Which statement about half-life is correct?
-- A) It changes with temperature
-- B) It is constant for a given isotope
-- C) It decreases over time
-- D) It can be changed by pressure
+A) It changes with temperature
+B) It is constant for a given isotope
+C) It decreases over time
+D) It can be changed by pressure
 
 **Answer: B**
 
-***Explanation**:** Half-life is a constant property of a radioactive isotope and cannot be changed by physical conditions.
+**Explanation:** Half-life is a constant property of a radioactive isotope and cannot be changed by physical conditions.
 
 ---
 
@@ -166,84 +166,108 @@ Which statement about half-life is correct?
 ### Statement 1
 Background radiation comes only from artificial sources.
 
-**False** - Most background radiation is natural (radon, cosmic rays, rocks).
+**Answer: False**
+
+**Correction:** Most background radiation is natural (radon, cosmic rays, rocks).
 
 ---
 
 ### Statement 2
 After two half-lives, one quarter of the original radioactive nuclei remain.
 
-**True** - After 1 half-life: ½ remains; after 2 half-lives: ½ × ½ = ¼ remains.
+**Answer: True**
+
+**Explanation:** After 1 half-life: ½ remains; after 2 half-lives: ½ × ½ = ¼ remains.
 
 ---
 
 ### Statement 3
 The activity of a radioactive source increases over time.
 
-**False** - Activity decreases over time as fewer radioactive nuclei remain.
+**Answer: False**
+
+**Correction:** Activity decreases over time as fewer radioactive nuclei remain.
 
 ---
 
 ### Statement 4
 1 Becquerel equals 1 decay per second.
 
-**True** - The Becquerel is defined as one radioactive decay per second.
+**Answer: True**
+
+**Explanation:** The Becquerel is defined as one radioactive decay per second.
 
 ---
 
 ### Statement 5
 We can predict exactly when a particular nucleus will decay.
 
-**False** - Radioactive decay is a random process; exact timing cannot be predicted.
+**Answer: False**
+
+**Correction:** Radioactive decay is a random process; exact timing cannot be predicted.
 
 ---
 
 ### Statement 6
 Film badges are used to measure cumulative radiation exposure.
 
-**True** - Film badges darken with radiation exposure and measure total dose received.
+**Answer: True**
+
+**Explanation:** Film badges darken with radiation exposure and measure total dose received.
 
 ---
 
 ### Statement 7
 Cosmic rays contribute more to background radiation than radon gas.
 
-**False** - Radon gas (~50%) contributes much more than cosmic rays (~10%).
+**Answer: False**
+
+**Correction:** Radon gas (~50%) contributes much more than cosmic rays (~10%).
 
 ---
 
 ### Statement 8
 A short half-life means a radioactive sample is less dangerous.
 
-**False** - Short half-life means high activity (more decays per second), potentially more dangerous.
+**Answer: False**
+
+**Correction:** Short half-life means high activity (more decays per second), potentially more dangerous.
 
 ---
 
 ### Statement 9
 The decay constant is related to half-life by λ = 0.693/t½.
 
-**True** - The decay constant λ equals ln(2) divided by half-life, approximately 0.693/t½.
+**Answer: True**
+
+**Explanation:** The decay constant λ equals ln(2) divided by half-life, approximately 0.693/t½.
 
 ---
 
 ### Statement 10
 When measuring count rate, background radiation should be subtracted.
 
-**True** - Background radiation adds to measurements and must be subtracted for accurate results.
+**Answer: True**
+
+**Explanation:** Background radiation adds to measurements and must be subtracted for accurate results.
 
 ---
 
 ### Statement 11
 All isotopes of an element have the same half-life.
 
-**False** - Different isotopes of the same element have different half-lives.
+**Answer: False**
+
+**Correction:** Different isotopes of the same element have different half-lives.
 
 ---
 
 ### Statement 12
 The ionization caused by radiation in a GM tube creates a detectable signal.
 
-**True** - Ionization creates charged particles that produce electrical pulses detected by the counter.
+**Answer: True**
+
+**Explanation:** Ionization creates charged particles that produce electrical pulses detected by the counter.
 
 ---
 

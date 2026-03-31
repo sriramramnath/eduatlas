@@ -9,19 +9,17 @@
 
 **Nuclear fission** is the splitting of a heavy nucleus into two smaller nuclei, releasing energy and neutrons.
 
-```
-    ┌─────────┐
-    │  Heavy  │
-    │ Nucleus │──► Splitting
-    │  (U-235)│
-    └────┬────┘
-         │
-    ┌────┴────┐
-    ▼         ▼
-┌───────┐ ┌───────┐
-│Product│ │Product│ + Energy + Neutrons
-│   1   │ │   2   │
-└───────┘ └───────┘
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[draw,rounded corners,minimum width=2.4cm,minimum height=1.3cm] (u) at (3.6,2.6) {Heavy nucleus\\(U-235)};
+  \node at (6.2,2.6) {Splitting};
+  \node[draw,rounded corners,minimum width=2.2cm,minimum height=1.1cm] (p1) at (1.4,0.5) {Product 1};
+  \node[draw,rounded corners,minimum width=2.2cm,minimum height=1.1cm] (p2) at (5.8,0.5) {Product 2};
+  \node at (8.5,0.5) {Energy + neutrons};
+  \draw[->] (u) -- (5.1,2.6);
+  \draw[->] (u) -- (p1);
+  \draw[->] (u) -- (p2);
+\end{tikzpicture}
 ```
 
 ### Induced Fission
@@ -34,23 +32,24 @@ Fission can be induced by bombarding the nucleus with neutrons:
 
 ### Chain Reactions
 
-```
-      ┌─────────┐
-      │  U-235  │◄─── Slow neutron
-      └────┬────┘
-           │ Fission
-    ┌──────┼──────┐
-    ▼      ▼      ▼
- Product  Energy  2-3 neutrons
-           │
-    ┌──────┴──────┐
-    ▼             ▼
- ┌──────┐     ┌──────┐
- │ U-235│     │ U-235│
- └──┬───┘     └──┬───┘
-    │            │
-    ▼            ▼
- More fissions... (chain reaction)
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[draw,rounded corners] (u0) at (4,4.3) {U-235};
+  \node[left] at (1.1,4.3) {Slow neutron};
+  \draw[->] (1.9,4.3) -- (u0);
+  \node at (4,3.4) {Fission};
+  \node (prod) at (1.5,2.4) {Products};
+  \node (energy) at (4,2.4) {Energy};
+  \node (neut) at (6.5,2.4) {2--3 neutrons};
+  \draw[->] (u0) -- (prod);
+  \draw[->] (u0) -- (energy);
+  \draw[->] (u0) -- (neut);
+  \node[draw,rounded corners] (u1) at (2.4,0.8) {U-235};
+  \node[draw,rounded corners] (u2) at (5.6,0.8) {U-235};
+  \draw[->] (neut) -- (u1);
+  \draw[->] (neut) -- (u2);
+  \node at (4,-0.1) {More fissions continue the chain reaction};
+\end{tikzpicture}
 ```
 
 **Controlled chain reaction (nuclear reactor):**
@@ -84,27 +83,23 @@ c = speed of light (3 × 10⁸ m/s)
 
 ### Components
 
-```
-┌─────────────────────────────────────────┐
-│           REACTOR CORE                  │
-│  ┌─────────────────────────────────┐    │
-│  │  Fuel rods (U-235)              │    │
-│  │  ││││││││││││││││││││││││││││││││    │
-│  └─────────────────────────────────┘    │
-│  ┌─────────────────────────────────┐    │
-│  │  Moderator (graphite/water)     │    │
-│  │  Slows down neutrons            │    │
-│  └─────────────────────────────────┘    │
-│  ┌─────────────────────────────────┐    │
-│  │  Control rods (boron/cadmium)   │    │
-│  │  Absorbs neutrons               │    │
-│  └─────────────────────────────────┘    │
-└─────────────────────────────────────────┘
-                   │
-         ┌─────────┴─────────┐
-         ▼                   ▼
-    Coolant system      Steam generator
-    (removes heat)      (produces electricity)
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \draw[thick,rounded corners] (0,0.8) rectangle (8,6.2);
+  \node at (4,5.8) {Reactor core};
+  \draw[rounded corners] (0.7,4.4) rectangle (7.3,5.4);
+  \node[anchor=west] at (1.0,4.95) {Fuel rods (U-235)};
+  \draw[rounded corners] (0.7,3.0) rectangle (7.3,4.0);
+  \node[anchor=west] at (1.0,3.55) {Moderator (graphite/water)};
+  \node[anchor=west] at (1.0,3.15) {Slows neutrons};
+  \draw[rounded corners] (0.7,1.5) rectangle (7.3,2.5);
+  \node[anchor=west] at (1.0,2.05) {Control rods (boron/cadmium)};
+  \node[anchor=west] at (1.0,1.65) {Absorb neutrons};
+  \node[draw,rounded corners,minimum width=2.5cm,minimum height=1cm] (coolant) at (2.3,-0.5) {Coolant system};
+  \node[draw,rounded corners,minimum width=2.8cm,minimum height=1cm] (steam) at (5.9,-0.5) {Steam generator};
+  \draw[->] (4,0.8) -- (coolant);
+  \draw[->] (4,0.8) -- (steam);
+\end{tikzpicture}
 ```
 
 ### Functions of Components
@@ -138,21 +133,17 @@ c = speed of light (3 × 10⁸ m/s)
 
 **Nuclear fusion** is the joining of two light nuclei to form a heavier nucleus, releasing energy.
 
-```
-┌─────────┐   ┌─────────┐
-│ Light   │ + │ Light   │──► Fusion
-│ Nucleus │   │ Nucleus │
-│  (H-2)  │   │  (H-3)  │
-└────┬────┘   └────┬────┘
-     │             │
-     └──────┬──────┘
-            │
-            ▼
-      ┌───────────┐
-      │  Heavier  │ + Energy + Neutron
-      │  Nucleus  │
-      │  (He-4)   │
-      └───────────┘
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[draw,rounded corners,minimum width=2.2cm,minimum height=1.2cm] (h2) at (1.5,2.5) {Light nucleus\\(H-2)};
+  \node[draw,rounded corners,minimum width=2.2cm,minimum height=1.2cm] (h3) at (5.1,2.5) {Light nucleus\\(H-3)};
+  \node at (3.3,2.5) {+};
+  \node at (7.5,2.5) {Fusion};
+  \node[draw,rounded corners,minimum width=2.4cm,minimum height=1.2cm] (he) at (3.3,0.4) {Heavier nucleus\\(He-4)};
+  \node at (6.8,0.4) {Energy + neutron};
+  \draw[->] (h2) -- (he);
+  \draw[->] (h3) -- (he);
+\end{tikzpicture}
 ```
 
 ### Example Reaction

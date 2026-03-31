@@ -1,4 +1,4 @@
-# Chapter 28: Cosmology
+# Chapter 28: Cosmology (Physics Only)
 ## Pearson Edexcel IGCSE Physics - Concise Synopsis
 
 ---
@@ -10,6 +10,20 @@
 | 1 AU | 1.5 × 10¹¹ m (Earth-Sun) |
 | 1 light-year | 9.5 × 10¹⁵ m |
 | 1 parsec | 3.26 light-years |
+
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (earth) at (0,0) {Earth};
+  \node (solar) at (2.8,0) {Solar System};
+  \node (stars) at (5.8,0) {Nearest stars};
+  \node (mw) at (8.8,0) {Milky Way};
+  \node (universe) at (12.0,0) {Universe};
+  \draw[->] (earth) -- (solar);
+  \draw[->] (solar) -- (stars);
+  \draw[->] (stars) -- (mw);
+  \draw[->] (mw) -- (universe);
+\end{tikzpicture}
+```
 
 ---
 

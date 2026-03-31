@@ -7,157 +7,157 @@
 
 ### Question 1
 Which isotope is commonly used as a medical tracer?
-- A) Carbon-14
-- B) Technetium-99m
-- C) Uranium-238
-- D) Americium-241
+A) Carbon-14
+B) Technetium-99m
+C) Uranium-238
+D) Americium-241
 
 **Answer: B**
 
-***Explanation**:** Technetium-99m is widely used as a medical tracer due to its suitable half-life (6 hours) and gamma emission.
+**Explanation:** Technetium-99m is widely used as a medical tracer due to its suitable half-life (6 hours) and gamma emission.
 
 ---
 
 ### Question 2
 Why is gamma radiation used in radiotherapy for cancer treatment?
-- A) It has low penetration
-- B) It is highly ionizing
-- C) It can penetrate tissue to reach tumors
-- D) It is not dangerous
+A) It has low penetration
+B) It is highly ionizing
+C) It can penetrate tissue to reach tumors
+D) It is not dangerous
 
 **Answer: C**
 
-***Explanation**:** Gamma radiation penetrates deeply into the body, allowing it to reach and destroy cancerous tumors.
+**Explanation:** Gamma radiation penetrates deeply into the body, allowing it to reach and destroy cancerous tumors.
 
 ---
 
 ### Question 3
 In thickness gauging, beta radiation is used for:
-- A) Thick steel sheets
-- B) Thin paper or plastic
-- C) Concrete walls
-- D) Lead sheets
+A) Thick steel sheets
+B) Thin paper or plastic
+C) Concrete walls
+D) Lead sheets
 
 **Answer: B**
 
-***Explanation**:** Beta radiation has moderate penetration and is suitable for measuring thickness of thin materials.
+**Explanation:** Beta radiation has moderate penetration and is suitable for measuring thickness of thin materials.
 
 ---
 
 ### Question 4
 The half-life of carbon-14 is:
-- A) 573 years
-- B) 5730 years
-- C) 57300 years
-- D) 5.73 million years
+A) 573 years
+B) 5730 years
+C) 57300 years
+D) 5.73 million years
 
 **Answer: B**
 
-***Explanation**:** Carbon-14 has a half-life of approximately 5730 years, making it useful for dating archaeological samples.
+**Explanation:** Carbon-14 has a half-life of approximately 5730 years, making it useful for dating archaeological samples.
 
 ---
 
 ### Question 5
 Which radiation is used in ionization smoke detectors?
-- A) Beta
-- B) Gamma
-- C) Alpha
-- D) X-rays
+A) Beta
+B) Gamma
+C) Alpha
+D) X-rays
 
 **Answer: C**
 
-***Explanation**:** Americium-241 in smoke detectors emits alpha particles that ionize air in the detection chamber.
+**Explanation:** Americium-241 in smoke detectors emits alpha particles that ionize air in the detection chamber.
 
 ---
 
 ### Question 6
 A sample of ancient wood has 25% of the carbon-14 activity of living wood. How old is it?
-- A) 5730 years
-- B) 11460 years
-- C) 17190 years
-- D) 22920 years
+A) 5730 years
+B) 11460 years
+C) 17190 years
+D) 22920 years
 
 **Answer: B**
 
-***Explanation**:** 100% → 50% → 25% represents 2 half-lives. Age = 2 × 5730 = 11460 years.
+**Explanation:** 100% → 50% → 25% represents 2 half-lives. Age = 2 × 5730 = 11460 years.
 
 ---
 
 ### Question 7
 Why is a short half-life important for medical tracers?
-- A) It makes them cheaper
-- B) It minimizes patient radiation dose
-- C) It makes them easier to produce
-- D) It increases their activity
+A) It makes them cheaper
+B) It minimizes patient radiation dose
+C) It makes them easier to produce
+D) It increases their activity
 
 **Answer: B**
 
-***Explanation**:** A short half-life means the tracer decays quickly, reducing the total radiation exposure to the patient.
+**Explanation:** A short half-life means the tracer decays quickly, reducing the total radiation exposure to the patient.
 
 ---
 
 ### Question 8
 In industrial sterilization, gamma radiation is used because it:
-- A) Is cheap
-- B) Penetrates packaging and kills microorganisms
-- C) Has a short half-life
-- D) Is not ionizing
+A) Is cheap
+B) Penetrates packaging and kills microorganisms
+C) Has a short half-life
+D) Is not ionizing
 
 **Answer: B**
 
-***Explanation**:** Gamma radiation penetrates packaging materials and effectively kills bacteria and viruses without heat.
+**Explanation:** Gamma radiation penetrates packaging materials and effectively kills bacteria and viruses without heat.
 
 ---
 
 ### Question 9
 The ALARA principle in radiation safety stands for:
-- A) All Radiation Allowed Regularly Always
-- B) As Low As Reasonably Achievable
-- C) Always Leave Area Rapidly Away
-- D) All Levels Are Radiation Active
+A) All Radiation Allowed Regularly Always
+B) As Low As Reasonably Achievable
+C) Always Leave Area Rapidly Away
+D) All Levels Are Radiation Active
 
 **Answer: B**
 
-***Explanation**:** ALARA means keeping radiation exposure as low as reasonably achievable, considering economic and practical factors.
+**Explanation:** ALARA means keeping radiation exposure as low as reasonably achievable, considering economic and practical factors.
 
 ---
 
 ### Question 10
 Which isotope is used for dating ancient rocks?
-- A) Carbon-14
-- B) Technetium-99m
-- C) Uranium-238
-- D) Iodine-131
+A) Carbon-14
+B) Technetium-99m
+C) Uranium-238
+D) Iodine-131
 
 **Answer: C**
 
-***Explanation**:** Uranium-238 has a very long half-life (4.5 billion years), making it suitable for dating ancient geological samples.
+**Explanation:** Uranium-238 has a very long half-life (4.5 billion years), making it suitable for dating ancient geological samples.
 
 ---
 
 ### Question 11
 In a smoke detector, smoke particles:
-- A) Increase the current
-- B) Reduce ionization and current
-- C) Have no effect
-- D) Create more ions
+A) Increase the current
+B) Reduce ionization and current
+C) Have no effect
+D) Create more ions
 
 **Answer: B**
 
-***Explanation**:** Smoke particles attach to ions, reducing the number of ions and therefore the current, triggering the alarm.
+**Explanation:** Smoke particles attach to ions, reducing the number of ions and therefore the current, triggering the alarm.
 
 ---
 
 ### Question 12
 Why must medical tracers be gamma emitters?
-- A) They are cheaper
-- B) Gamma can exit the body for detection
-- C) Gamma is more ionizing
-- D) They have longer half-lives
+A) They are cheaper
+B) Gamma can exit the body for detection
+C) Gamma is more ionizing
+D) They have longer half-lives
 
 **Answer: B**
 
-***Explanation**:** Gamma radiation penetrates tissue and can be detected outside the body by a gamma camera.
+**Explanation:** Gamma radiation penetrates tissue and can be detected outside the body by a gamma camera.
 
 ---
 
@@ -166,84 +166,108 @@ Why must medical tracers be gamma emitters?
 ### Statement 1
 Carbon dating can be used to date rocks millions of years old.
 
-**False** - Carbon dating is only effective for samples up to about 50,000 years old; older rocks need other methods like uranium-lead dating.
+**Answer: False**
+
+**Correction:** Carbon dating is only effective for samples up to about 50,000 years old; older rocks need other methods like uranium-lead dating.
 
 ---
 
 ### Statement 2
 Alpha radiation is used in smoke detectors because it is highly ionizing.
 
-**True** - Alpha particles strongly ionize air, creating the current that smoke particles disrupt.
+**Answer: True**
+
+**Explanation:** Alpha particles strongly ionize air, creating the current that smoke particles disrupt.
 
 ---
 
 ### Statement 3
 Cancer cells are less susceptible to radiation damage than healthy cells.
 
-**False** - Cancer cells are MORE susceptible to radiation damage and less able to repair it.
+**Answer: False**
+
+**Correction:** Cancer cells are MORE susceptible to radiation damage and less able to repair it.
 
 ---
 
 ### Statement 4
 Gamma sterilization leaves no chemical residues on treated items.
 
-**True** - Gamma radiation is a cold process that kills microorganisms without chemicals or heat.
+**Answer: True**
+
+**Explanation:** Gamma radiation is a cold process that kills microorganisms without chemicals or heat.
 
 ---
 
 ### Statement 5
 Industrial tracers can be used to detect leaks in underground pipelines.
 
-**True** - Radioactive tracers added to fluids can be detected if they leak out of pipelines.
+**Answer: True**
+
+**Explanation:** Radioactive tracers added to fluids can be detected if they leak out of pipelines.
 
 ---
 
 ### Statement 6
 Technetium-99m has a half-life of about 6 hours.
 
-**True** - Technetium-99m has a half-life of approximately 6 hours, ideal for medical imaging.
+**Answer: True**
+
+**Explanation:** Technetium-99m has a half-life of approximately 6 hours, ideal for medical imaging.
 
 ---
 
 ### Statement 7
 Lead shielding is used to protect against alpha radiation.
 
-**False** - Alpha is stopped by paper; lead is used for gamma radiation protection.
+**Answer: False**
+
+**Correction:** Alpha is stopped by paper; lead is used for gamma radiation protection.
 
 ---
 
 ### Statement 8
 The three principles of radiation protection are time, distance, and shielding.
 
-**True** - Minimize time, maximize distance, and use appropriate shielding (ALARA principle).
+**Answer: True**
+
+**Explanation:** Minimize time, maximize distance, and use appropriate shielding (ALARA principle).
 
 ---
 
 ### Statement 9
 If a sample has 12.5% of its original carbon-14, it is approximately 17190 years old.
 
-**True** - 100% → 50% → 25% → 12.5% = 3 half-lives = 3 × 5730 = 17190 years.
+**Answer: True**
+
+**Explanation:** 100% → 50% → 25% → 12.5% = 3 half-lives = 3 × 5730 = 17190 years.
 
 ---
 
 ### Statement 10
 Americium-241 is used in smoke detectors because it has a short half-life.
 
-**False** - Americium-241 has a long half-life (458 years), so the detector doesn't need frequent replacement.
+**Answer: False**
+
+**Correction:** Americium-241 has a long half-life (458 years), so the detector doesn't need frequent replacement.
 
 ---
 
 ### Statement 11
 Beta radiation is suitable for thickness gauging of thin metal sheets.
 
-**False** - Beta is used for thin materials like paper; gamma is needed for metal sheets.
+**Answer: False**
+
+**Correction:** Beta is used for thin materials like paper; gamma is needed for metal sheets.
 
 ---
 
 ### Statement 12
 Radiation can damage DNA and cause mutations.
 
-**True** - Ionizing radiation can damage DNA molecules, potentially causing mutations and cancer.
+**Answer: True**
+
+**Explanation:** Ionizing radiation can damage DNA molecules, potentially causing mutations and cancer.
 
 ---
 

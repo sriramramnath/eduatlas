@@ -13,7 +13,7 @@ B) Worm
 C) Ransomware  
 D) Spyware  
 
-**Answer: C) Ransomware**
+**Answer: C**
 
 **Explanation:** Ransomware encrypts victims' files and demands payment (usually in cryptocurrency) for the decryption key. It has become one of the most damaging types of malware for both individuals and organisations.
 
@@ -27,7 +27,7 @@ B) Worms require a host file; viruses do not
 C) Viruses require a host file; worms do not  
 D) Worms only affect mobile devices  
 
-**Answer: C) Viruses require a host file; worms do not**
+**Answer: C**
 
 **Explanation:** Viruses attach themselves to host files and spread when those files are executed. Worms are self-contained programs that can spread independently across networks without needing a host file.
 
@@ -41,7 +41,7 @@ B) Brute force
 C) DDoS  
 D) Packet sniffing  
 
-**Answer: A) Phishing**
+**Answer: A**
 
 **Explanation:** Phishing attacks use fraudulent emails, text messages, or websites that appear to be from legitimate organisations to trick victims into revealing sensitive information like passwords, credit card numbers, or personal details.
 
@@ -55,7 +55,7 @@ B) Firewall
 C) Password manager  
 D) Encryption  
 
-**Answer: B) Firewall**
+**Answer: B**
 
 **Explanation:** A firewall monitors and controls network traffic based on security rules. It acts as a barrier between trusted and untrusted networks, blocking unauthorised access while permitting legitimate communication.
 
@@ -69,7 +69,7 @@ B) Two-File Access
 C) Triple-Feature Authentication  
 D) Two-Form Authorization  
 
-**Answer: A) Two-Factor Authentication**
+**Answer: A**
 
 **Explanation:** 2FA (Two-Factor Authentication) requires users to provide two different authentication factors to verify their identity, typically something they know (password) and something they have (phone for code).
 
@@ -83,7 +83,7 @@ B) Worm
 C) Trojan horse  
 D) Adware  
 
-**Answer: C) Trojan horse**
+**Answer: C**
 
 **Explanation:** Trojan horses disguise themselves as legitimate or useful software to trick users into installing them. Once installed, they can steal data, create backdoors, or download additional malware.
 
@@ -97,7 +97,7 @@ B) Convert data into unreadable format that requires a key to decode
 C) Compress files to save space  
 D) Detect malware infections  
 
-**Answer: B) Convert data into unreadable format that requires a key to decode**
+**Answer: B**
 
 **Explanation:** Encryption converts readable data (plaintext) into an unreadable format (ciphertext) that can only be decoded with the correct decryption key. This protects data confidentiality during transmission and storage.
 
@@ -111,7 +111,7 @@ B) Mix of upper and lower case letters
 C) Contains personal information like your birthday  
 D) Includes numbers and special characters  
 
-**Answer: C) Contains personal information like your birthday**
+**Answer: C**
 
 **Explanation:** Strong passwords should NOT contain personal information like birthdays, names, or pet names. This information can be easily discovered by attackers through social media or social engineering.
 
@@ -125,7 +125,7 @@ B) Manipulating people into revealing confidential information
 C) Engineering software for social networks  
 D) Testing software with real users  
 
-**Answer: B) Manipulating people into revealing confidential information**
+**Answer: B**
 
 **Explanation:** Social engineering involves manipulating people into divulging confidential information or performing actions that compromise security. It exploits human psychology rather than technical vulnerabilities.
 
@@ -139,7 +139,7 @@ B) Click the link and check if the website looks legitimate
 C) Forward the email to friends to warn them  
 D) Do not respond; contact the bank directly through official channels  
 
-**Answer: D) Do not respond; contact the bank directly through official channels**
+**Answer: D**
 
 **Explanation:** Legitimate banks never ask for login details via email. This is likely a phishing attempt. Always contact the organisation directly through official channels rather than using links in suspicious emails.
 
@@ -153,7 +153,7 @@ B) Incremental backup
 C) Mirror backup  
 D) Cloud backup  
 
-**Answer: B) Incremental backup**
+**Answer: B**
 
 **Explanation:** Incremental backups only copy files that have changed since the last backup (whether full or incremental). This makes them faster and uses less storage space than full backups.
 
@@ -167,7 +167,7 @@ B) An attacker intercepting communication between two parties
 C) A type of malware that replicates itself  
 D) An attack that floods a network with traffic  
 
-**Answer: B) An attacker intercepting communication between two parties**
+**Answer: B**
 
 **Explanation:** In a MITM attack, the attacker secretly positions themselves between two communicating parties, intercepting and potentially altering the communication without either party's knowledge.
 
@@ -180,7 +180,7 @@ D) An attack that floods a network with traffic
 ### Statement 1
 **Antivirus software can detect and remove all types of malware.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Antivirus software cannot detect all malware, especially new or unknown threats (zero-day attacks). It primarily detects known malware through signature matching and heuristic analysis. Users need multiple security measures, not just antivirus.
 
@@ -189,7 +189,7 @@ D) An attack that floods a network with traffic
 ### Statement 2
 **A worm can spread across networks without any user action.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Worms are self-replicating malware that can spread automatically across networks by exploiting security vulnerabilities. Unlike viruses, they don't require user action or host files to propagate.
 
@@ -198,7 +198,7 @@ D) An attack that floods a network with traffic
 ### Statement 3
 **Using the same strong password for all accounts is a good security practice.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Even if a password is strong, using it for multiple accounts is dangerous. If one account is compromised, all accounts using that password are at risk. Use unique passwords for each account.
 
@@ -207,7 +207,7 @@ D) An attack that floods a network with traffic
 ### Statement 4
 **HTTPS indicates that the connection between your browser and the website is encrypted.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** HTTPS (HTTP Secure) uses SSL/TLS encryption to protect data transmitted between your browser and the website server. The padlock icon in the browser indicates an encrypted connection.
 
@@ -216,7 +216,7 @@ D) An attack that floods a network with traffic
 ### Statement 5
 **Spyware is designed to display advertisements on your computer.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Spyware secretly monitors user activity and collects information without consent. Adware displays unwanted advertisements. While some spyware may also display ads, their primary purpose differs.
 
@@ -225,7 +225,7 @@ D) An attack that floods a network with traffic
 ### Statement 6
 **Software updates are important because they patch security vulnerabilities.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Software updates frequently include security patches that fix vulnerabilities discovered since the previous version. Keeping software updated is one of the most important security practices.
 
@@ -234,7 +234,7 @@ D) An attack that floods a network with traffic
 ### Statement 7
 **A firewall can only protect against viruses.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Firewalls filter network traffic based on rules, blocking unauthorised access and potentially malicious connections. They don't specifically target viruses—antivirus software handles malware detection and removal.
 
@@ -243,7 +243,7 @@ D) An attack that floods a network with traffic
 ### Statement 8
 **Phishing attacks only happen through email.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Phishing can occur through various channels including email, SMS (smishing), phone calls (vishing), and fake websites. Attackers use whichever method they think will be most effective.
 
@@ -252,7 +252,7 @@ D) An attack that floods a network with traffic
 ### Statement 9
 **Regular backups can help recover data after a ransomware attack.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** If you have recent, uninfected backups stored offline or in a location the ransomware couldn't access, you can restore your files without paying the ransom. This is why regular backups are essential.
 
@@ -261,7 +261,7 @@ D) An attack that floods a network with traffic
 ### Statement 10
 **Brute force attacks try every possible password combination.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Brute force attacks systematically try every possible combination of characters until the correct password is found. This is why long, complex passwords are important—they take longer to crack.
 
@@ -270,7 +270,7 @@ D) An attack that floods a network with traffic
 ### Statement 11
 **An Acceptable Use Policy (AUP) defines how an organisation's IT resources may be used.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** An AUP is a document that outlines the rules and guidelines for using an organisation's IT resources, including acceptable and prohibited activities, security requirements, and consequences for violations.
 
@@ -279,7 +279,7 @@ D) An attack that floods a network with traffic
 ### Statement 12
 **Encryption is only useful for protecting data during transmission.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Encryption protects data both during transmission (data in transit) and when stored (data at rest). Full-disk encryption protects stored files, while protocols like HTTPS protect transmitted data.
 

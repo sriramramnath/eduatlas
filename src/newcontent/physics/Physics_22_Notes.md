@@ -7,14 +7,21 @@
 
 ### The Nuclear Model
 
-```
-    Atom
-    ├── Nucleus (centre)
-    │   ├── Protons (positive)
-    │   └── Neutrons (neutral)
-    │
-    └── Electrons (negative)
-        Orbiting nucleus in shells
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (atom) at (4,4.2) {Atom};
+  \node[draw,rounded corners,minimum width=2.8cm,minimum height=1cm] (nucleus) at (2.3,2.4) {Nucleus};
+  \node at (2.3,1.8) {(centre)};
+  \node[draw,rounded corners,minimum width=3.4cm,minimum height=1cm] (electrons) at (5.9,2.4) {Electrons};
+  \node at (5.9,1.8) {(negative)};
+  \node at (5.9,1.2) {Orbiting in shells};
+  \node[draw,rounded corners,minimum width=2.8cm,minimum height=0.9cm] (protons) at (1.0,0.5) {Protons (+)};
+  \node[draw,rounded corners,minimum width=2.8cm,minimum height=0.9cm] (neutrons) at (3.6,0.5) {Neutrons (0)};
+  \draw[->] (atom) -- (nucleus);
+  \draw[->] (atom) -- (electrons);
+  \draw[->] (nucleus) -- (protons);
+  \draw[->] (nucleus) -- (neutrons);
+\end{tikzpicture}
 ```
 
 ### Subatomic Particles
@@ -34,13 +41,17 @@
 
 ### Notation
 
-```
-    A
-    X    where X = element symbol
-    Z
-    
-    Example: ²³⁸U means uranium with 92 protons and 146 neutrons
-              ₉₂
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small]
+  \node at (1.2,1.9) {Mass number $A$};
+  \node[draw,rounded corners,minimum width=1.1cm,minimum height=1.4cm] (symbol) at (4,1.1) {$X$};
+  \node at (2.9,1.6) {$A$};
+  \node at (2.9,0.6) {$Z$};
+  \draw[->] (2.0,1.8) -- (3.2,1.6);
+  \node at (1.1,0.2) {Atomic number $Z$};
+  \draw[->] (2.0,0.3) -- (3.2,0.6);
+  \node[align=left] at (7.6,1.0) {Example: $^{238}_{92}\mathrm{U}$\\92 protons, 146 neutrons};
+\end{tikzpicture}
 ```
 
 ---

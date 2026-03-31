@@ -18,6 +18,20 @@
 - **Mass number (A)** = protons + neutrons
 - **Neutrons** = A - Z
 
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (atom) at (3.5,3.1) {Atom};
+  \node[draw,rounded corners] (nucleus) at (1.7,1.6) {Nucleus};
+  \node[draw,rounded corners] (shells) at (5.3,1.6) {Electrons in shells};
+  \node[draw,rounded corners] (protons) at (0.8,0.1) {Protons};
+  \node[draw,rounded corners] (neutrons) at (2.7,0.1) {Neutrons};
+  \draw[->] (atom) -- (nucleus);
+  \draw[->] (atom) -- (shells);
+  \draw[->] (nucleus) -- (protons);
+  \draw[->] (nucleus) -- (neutrons);
+\end{tikzpicture}
+```
+
 ---
 
 ## Isotopes

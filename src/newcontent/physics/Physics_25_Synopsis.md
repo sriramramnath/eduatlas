@@ -9,10 +9,15 @@
 Splitting of heavy nucleus → two smaller nuclei + energy + neutrons
 
 ### Chain Reaction
-```
-Fission → Neutrons → More fission
-   │                    │
-   └────────────────────┘
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (f1) at (0,0) {Fission};
+  \node (n) at (3.3,0) {Neutrons};
+  \node (f2) at (6.6,0) {More fission};
+  \draw[->] (f1) -- (n);
+  \draw[->] (n) -- (f2);
+  \draw[->] (f2.south) .. controls (5.2,-1.0) and (1.4,-1.0) .. (f1.south);
+\end{tikzpicture}
 ```
 
 **Controlled:** Nuclear reactor

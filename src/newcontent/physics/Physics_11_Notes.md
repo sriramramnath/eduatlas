@@ -30,13 +30,24 @@ All electromagnetic waves:
 
 ### Order by Wavelength and Frequency
 
-```
-Long λ ──────────────────────────────────────→ Short λ
-Low f  ──────────────────────────────────────→ High f
-Low energy ───────────────────────────────────→ High energy
-
-Radio → Micro → Infrared → Visible → UV → X-rays → Gamma
-        waves                              rays      rays
+```tex
+\begin{tikzpicture}[x=0.75cm,y=0.75cm,>=stealth,font=\small]
+  \draw[->] (0,2.2) -- (12,2.2);
+  \draw[->] (0,1.4) -- (12,1.4);
+  \draw[->] (0,0.6) -- (12,0.6);
+  \node[left] at (0,2.2) {Long $\lambda$};
+  \node[right] at (12,2.2) {Short $\lambda$};
+  \node[left] at (0,1.4) {Low $f$};
+  \node[right] at (12,1.4) {High $f$};
+  \node[left] at (0,0.6) {Low energy};
+  \node[right] at (12,0.6) {High energy};
+  \foreach \x/\label in {0.8/Radio,2.6/Microwaves,4.5/Infrared,6.2/Visible,7.7/UV,9.4/X-rays,11.1/Gamma} {
+    \node at (\x,-0.5) {\label};
+  }
+  \foreach \a/\b in {1.4/2.0,3.3/3.9,5.2/5.8,6.9/7.4,8.3/8.8,10.0/10.6} {
+    \draw[->] (\a,-0.1) -- (\b,-0.1);
+  }
+\end{tikzpicture}
 ```
 
 ### Detailed Table
@@ -53,8 +64,25 @@ Radio → Micro → Infrared → Visible → UV → X-rays → Gamma
 
 ### Visible Light Spectrum
 
-```
-Red (700 nm) → Orange → Yellow → Green → Blue → Indigo → Violet (400 nm)
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \foreach \x/\label in {
+    0/Red,
+    2/Orange,
+    4/Yellow,
+    6/Green,
+    8/Blue,
+    10/Indigo,
+    12/Violet
+  } {
+    \node at (\x,0) {\label};
+  }
+  \foreach \a/\b in {0.7/1.3,2.7/3.3,4.7/5.3,6.7/7.3,8.7/9.3,10.7/11.3} {
+    \draw[->] (\a,0.5) -- (\b,0.5);
+  }
+  \node[below] at (0,-0.3) {700 nm};
+  \node[below] at (12,-0.3) {400 nm};
+\end{tikzpicture}
 ```
 
 - **Red** has the longest wavelength in visible light

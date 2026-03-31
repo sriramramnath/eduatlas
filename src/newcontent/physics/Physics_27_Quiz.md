@@ -7,157 +7,157 @@
 
 ### Question 1
 Stars are born from:
-- A) Black holes
-- B) Nebulae
-- C) White dwarfs
-- D) Supernovae
+A) Black holes
+B) Nebulae
+C) White dwarfs
+D) Supernovae
 
 **Answer: B**
 
-***Explanation**:** Stars form from clouds of gas and dust called nebulae that collapse under gravity.
+**Explanation:** Stars form from clouds of gas and dust called nebulae that collapse under gravity.
 
 ---
 
 ### Question 2
 During most of its lifetime, a star like the Sun is in the:
-- A) Red giant phase
-- B) Main sequence phase
-- C) White dwarf phase
-- D) Supernova phase
+A) Red giant phase
+B) Main sequence phase
+C) White dwarf phase
+D) Supernova phase
 
 **Answer: B**
 
-***Explanation**:** Stars spend the majority of their lives on the main sequence, fusing hydrogen in their cores.
+**Explanation:** Stars spend the majority of their lives on the main sequence, fusing hydrogen in their cores.
 
 ---
 
 ### Question 3
 What is the final state of a star similar to our Sun?
-- A) Neutron star
-- B) Black hole
-- C) White dwarf
-- D) Supernova
+A) Neutron star
+B) Black hole
+C) White dwarf
+D) Supernova
 
 **Answer: C**
 
-***Explanation**:** Low to medium mass stars (like the Sun) end their lives as white dwarfs after the planetary nebula phase.
+**Explanation:** Low to medium mass stars (like the Sun) end their lives as white dwarfs after the planetary nebula phase.
 
 ---
 
 ### Question 4
 A supernova occurs at the end of the life of:
-- A) All stars
-- B) Only low-mass stars
-- C) Only high-mass stars
-- D) Only main sequence stars
+A) All stars
+B) Only low-mass stars
+C) Only high-mass stars
+D) Only main sequence stars
 
 **Answer: C**
 
-***Explanation**:** Supernovae occur when massive stars (greater than about 8 solar masses) reach the end of their lives.
+**Explanation:** Supernovae occur when massive stars (greater than about 8 solar masses) reach the end of their lives.
 
 ---
 
 ### Question 5
 Elements heavier than iron are formed in:
-- A) Main sequence stars
-- B) Red giants
-- C) Supernovae
-- D) White dwarfs
+A) Main sequence stars
+B) Red giants
+C) Supernovae
+D) White dwarfs
 
 **Answer: C**
 
-***Explanation**:** The extreme conditions in supernovae allow the formation of elements heavier than iron.
+**Explanation:** The extreme conditions in supernovae allow the formation of elements heavier than iron.
 
 ---
 
 ### Question 6
 On the HR diagram, main sequence stars:
-- A) Are in the top right corner
-- B) Form a diagonal band from top left to bottom right
-- C) Are in the bottom left corner
-- D) Form a horizontal line
+A) Are in the top right corner
+B) Form a diagonal band from top left to bottom right
+C) Are in the bottom left corner
+D) Form a horizontal line
 
 **Answer: B**
 
-***Explanation**:** Main sequence stars form a diagonal band running from hot, luminous stars (top left) to cool, dim stars (bottom right).
+**Explanation:** Main sequence stars form a diagonal band running from hot, luminous stars (top left) to cool, dim stars (bottom right).
 
 ---
 
 ### Question 7
 Our Sun is classified as what type of star?
-- A) O-type
-- B) A-type
-- C) G-type
-- D) M-type
+A) O-type
+B) A-type
+C) G-type
+D) M-type
 
 **Answer: C**
 
-***Explanation**:** The Sun is a G-type main sequence star with a surface temperature of about 5,800 K.
+**Explanation:** The Sun is a G-type main sequence star with a surface temperature of about 5,800 K.
 
 ---
 
 ### Question 8
 What process provides energy during the main sequence phase?
-- A) Nuclear fission
-- B) Nuclear fusion of hydrogen
-- C) Gravitational collapse
-- D) Chemical burning
+A) Nuclear fission
+B) Nuclear fusion of hydrogen
+C) Gravitational collapse
+D) Chemical burning
 
 **Answer: B**
 
-***Explanation**:** Main sequence stars generate energy through nuclear fusion of hydrogen into helium in their cores.
+**Explanation:** Main sequence stars generate energy through nuclear fusion of hydrogen into helium in their cores.
 
 ---
 
 ### Question 9
 A neutron star forms from the core of:
-- A) A low-mass star
-- B) A medium-mass star
-- C) A high-mass star after supernova
-- D) A white dwarf
+A) A low-mass star
+B) A medium-mass star
+C) A high-mass star after supernova
+D) A white dwarf
 
 **Answer: C**
 
-***Explanation**:** Neutron stars form from the collapsed core of a massive star following a supernova explosion.
+**Explanation:** Neutron stars form from the collapsed core of a massive star following a supernova explosion.
 
 ---
 
 ### Question 10
 The Chandrasekhar limit is approximately:
-- A) 1.4 solar masses
-- B) 8 solar masses
-- C) 25 solar masses
-- D) 100 solar masses
+A) 1.4 solar masses
+B) 8 solar masses
+C) 25 solar masses
+D) 100 solar masses
 
 **Answer: A**
 
-***Explanation**:** The Chandrasekhar limit (~1.4 solar masses) is the maximum mass a white dwarf can have before collapsing.
+**Explanation:** The Chandrasekhar limit (~1.4 solar masses) is the maximum mass a white dwarf can have before collapsing.
 
 ---
 
 ### Question 11
 Red giant stars are:
-- A) Smaller and hotter than main sequence stars
-- B) Larger and cooler than main sequence stars
-- C) The same size as main sequence stars
-- D) Smaller and cooler than main sequence stars
+A) Smaller and hotter than main sequence stars
+B) Larger and cooler than main sequence stars
+C) The same size as main sequence stars
+D) Smaller and cooler than main sequence stars
 
 **Answer: B**
 
-***Explanation**:** Red giants have expanded outer layers that are cooler, making them large and red in appearance.
+**Explanation:** Red giants have expanded outer layers that are cooler, making them large and red in appearance.
 
 ---
 
 ### Question 12
 A black hole forms when:
-- A) Any star dies
-- B) A low-mass star dies
-- C) A very massive star collapses
-- D) A white dwarf cools
+A) Any star dies
+B) A low-mass star dies
+C) A very massive star collapses
+D) A white dwarf cools
 
 **Answer: C**
 
-***Explanation**:** Black holes form from the collapse of very massive stars (typically >20-25 solar masses) after supernovae.
+**Explanation:** Black holes form from the collapse of very massive stars (typically >20-25 solar masses) after supernovae.
 
 ---
 
@@ -166,84 +166,108 @@ A black hole forms when:
 ### Statement 1
 All stars eventually become black holes.
 
-**False** - Only the most massive stars become black holes; most stars become white dwarfs.
+**Answer: False**
+
+**Correction:** Only the most massive stars become black holes; most stars become white dwarfs.
 
 ---
 
 ### Statement 2
 The Sun is currently in the main sequence phase.
 
-**True** - The Sun is a main sequence star fusing hydrogen in its core.
+**Answer: True**
+
+**Explanation:** The Sun is a main sequence star fusing hydrogen in its core.
 
 ---
 
 ### Statement 3
 More massive stars have longer lifetimes than less massive stars.
 
-**False** - More massive stars burn their fuel faster and have shorter lifetimes.
+**Answer: False**
+
+**Correction:** More massive stars burn their fuel faster and have shorter lifetimes.
 
 ---
 
 ### Statement 4
 A planetary nebula forms from a low-mass star.
 
-**True** - Low to medium mass stars shed their outer layers as a planetary nebula.
+**Answer: True**
+
+**Explanation:** Low to medium mass stars shed their outer layers as a planetary nebula.
 
 ---
 
 ### Statement 5
 O-type stars are the coolest stars.
 
-**False** - O-type stars are the hottest; M-type stars are the coolest.
+**Answer: False**
+
+**Correction:** O-type stars are the hottest; M-type stars are the coolest.
 
 ---
 
 ### Statement 6
 White dwarfs are supported by electron degeneracy pressure.
 
-**True** - White dwarfs are supported by electron degeneracy pressure, not fusion.
+**Answer: True**
+
+**Explanation:** White dwarfs are supported by electron degeneracy pressure, not fusion.
 
 ---
 
 ### Statement 7
 The triple-alpha process converts helium into carbon.
 
-**True** - Three helium nuclei (alpha particles) fuse to form carbon-12.
+**Answer: True**
+
+**Explanation:** Three helium nuclei (alpha particles) fuse to form carbon-12.
 
 ---
 
 ### Statement 8
 Neutron stars are typically about the size of Earth.
 
-**False** - Neutron stars are much smaller, typically about 20 km in diameter.
+**Answer: False**
+
+**Correction:** Neutron stars are much smaller, typically about 20 km in diameter.
 
 ---
 
 ### Statement 9
 Gravity causes a nebula to collapse and form a protostar.
 
-**True** - Gravitational attraction causes the gas and dust in a nebula to collapse.
+**Answer: True**
+
+**Explanation:** Gravitational attraction causes the gas and dust in a nebula to collapse.
 
 ---
 
 ### Statement 10
 Iron fusion releases energy in a star's core.
 
-**False** - Iron fusion absorbs energy; this triggers the core collapse leading to supernova.
+**Answer: False**
+
+**Correction:** Iron fusion absorbs energy; this triggers the core collapse leading to supernova.
 
 ---
 
 ### Statement 11
 Supergiants are found in the top right of the HR diagram.
 
-**True** - Supergiants are luminous but relatively cool, placing them in the top right.
+**Answer: True**
+
+**Explanation:** Supergiants are luminous but relatively cool, placing them in the top right.
 
 ---
 
 ### Statement 12
 A brown dwarf is a star that never began fusion.
 
-**True** - Brown dwarfs have insufficient mass to sustain hydrogen fusion.
+**Answer: True**
+
+**Explanation:** Brown dwarfs have insufficient mass to sustain hydrogen fusion.
 
 ---
 

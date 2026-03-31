@@ -18,8 +18,15 @@
 
 ### Order (Long λ → Short λ)
 
-```
-Radio → Microwaves → Infrared → Visible → UV → X-rays → Gamma
+```tex
+\begin{tikzpicture}[x=0.85cm,y=0.85cm,>=stealth,font=\small]
+  \foreach \x/\label in {0/Radio,2/Microwaves,4/Infrared,6/Visible,8/UV,10/X-rays,12/Gamma} {
+    \node at (\x,0) {\label};
+  }
+  \foreach \a/\b in {0.7/1.3,2.8/3.4,4.8/5.4,6.7/7.3,8.6/9.2,10.8/11.4} {
+    \draw[->] (\a,0.5) -- (\b,0.5);
+  }
+\end{tikzpicture}
 ```
 
 ### Summary Table
@@ -38,8 +45,25 @@ Radio → Microwaves → Infrared → Visible → UV → X-rays → Gamma
 
 ## Visible Light Spectrum
 
-```
-Red (700 nm) → Orange → Yellow → Green → Blue → Indigo → Violet (400 nm)
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \foreach \x/\label in {
+    0/Red,
+    2/Orange,
+    4/Yellow,
+    6/Green,
+    8/Blue,
+    10/Indigo,
+    12/Violet
+  } {
+    \node at (\x,0) {\label};
+  }
+  \foreach \a/\b in {0.7/1.3,2.7/3.3,4.7/5.3,6.7/7.3,8.7/9.3,10.7/11.3} {
+    \draw[->] (\a,0.5) -- (\b,0.5);
+  }
+  \node[below] at (0,-0.3) {700 nm};
+  \node[below] at (12,-0.3) {400 nm};
+\end{tikzpicture}
 ```
 
 - **Red**: Longest λ, lowest f in visible

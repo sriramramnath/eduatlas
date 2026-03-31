@@ -13,7 +13,7 @@ B) Coaxial cable
 C) Fibre optic cable  
 D) USB cable  
 
-**Answer: C) Fibre optic cable**
+**Answer: C**
 
 **Explanation:** Fibre optic cables transmit data as pulses of light through thin glass or plastic fibres. Copper-based cables (twisted pair, coaxial) transmit electrical signals. Fibre optics offer the highest speeds and longest distances.
 
@@ -27,7 +27,7 @@ B) The maximum data transfer rate
 C) The time delay in transmission  
 D) The number of connected devices  
 
-**Answer: B) The maximum data transfer rate**
+**Answer: B**
 
 **Explanation:** Bandwidth measures the maximum rate at which data can be transferred, typically expressed in bits per second (bps, Mbps, Gbps). It represents the capacity of a connection, not the speed or latency.
 
@@ -41,7 +41,7 @@ B) IMAP
 C) SMTP  
 D) HTTP  
 
-**Answer: C) SMTP**
+**Answer: C**
 
 **Explanation:** SMTP (Simple Mail Transfer Protocol) is used to send emails from clients to servers and between mail servers. POP3 and IMAP are used for receiving/downloading emails. HTTP is used for web pages.
 
@@ -55,7 +55,7 @@ B) Smaller file sizes
 C) Encrypted secure communication  
 D) Better image quality  
 
-**Answer: C) Encrypted secure communication**
+**Answer: C**
 
 **Explanation:** HTTPS (HTTP Secure) adds SSL/TLS encryption to HTTP, ensuring data transmitted between browser and server cannot be intercepted or read by third parties. This is essential for secure transactions like banking and shopping.
 
@@ -69,7 +69,7 @@ B) Bluetooth
 C) 4G mobile network  
 D) Satellite  
 
-**Answer: B) Bluetooth**
+**Answer: B**
 
 **Explanation:** Bluetooth typically has a range of 10-100 metres, designed for personal area networks. Wi-Fi ranges 30-100 metres, 4G covers kilometres via cell towers, and satellite provides global coverage.
 
@@ -83,7 +83,7 @@ B) The time delay between sending and receiving data
 C) The amount of data that can be stored  
 D) The number of users on a network  
 
-**Answer: B) The time delay between sending and receiving data**
+**Answer: B**
 
 **Explanation:** Latency is the time delay between data being sent and received, measured in milliseconds (ms). High latency causes lag in video calls and online gaming, even with high bandwidth connections.
 
@@ -97,7 +97,7 @@ B) FTP
 C) DNS  
 D) TCP  
 
-**Answer: C) DNS**
+**Answer: C**
 
 **Explanation:** DNS (Domain Name System) translates human-readable domain names into numerical IP addresses that computers use to identify each other on the network.
 
@@ -111,7 +111,7 @@ B) Half-duplex
 C) Full-duplex  
 D) Multiplex  
 
-**Answer: C) Full-duplex**
+**Answer: C**
 
 **Explanation:** Full-duplex transmission allows data to flow in both directions at the same time. Simplex is one-way only; half-duplex allows both directions but not simultaneously (one at a time).
 
@@ -125,7 +125,7 @@ B) 5GHz
 C) 600MHz  
 D) 10GHz  
 
-**Answer: B) 5GHz**
+**Answer: B**
 
 **Explanation:** The 5GHz frequency band is less congested than 2.4GHz, which is used by many devices including microwaves, Bluetooth devices, and older Wi-Fi networks. 5GHz offers better performance in areas with many wireless networks.
 
@@ -139,7 +139,7 @@ B) Provide reliable, ordered delivery of data packets
 C) Encrypt data for secure transmission  
 D) Compress files for faster transfer  
 
-**Answer: B) Provide reliable, ordered delivery of data packets**
+**Answer: B**
 
 **Explanation:** TCP (Transmission Control Protocol) ensures reliable data delivery by breaking data into packets, numbering them, confirming receipt, and resending any lost packets. IP handles addressing and routing.
 
@@ -153,7 +153,7 @@ B) Long distance to satellite
 C) Too many Wi-Fi networks nearby  
 D) Old web browser  
 
-**Answer: B) Long distance to satellite**
+**Answer: B**
 
 **Explanation:** Geostationary satellites orbit at approximately 35,786km above Earth. Data must travel this distance twice (up and down), causing significant signal delay (latency) regardless of bandwidth availability.
 
@@ -167,7 +167,7 @@ B) Bandwidth is shared among users
 C) Latency decreases  
 D) Security improves  
 
-**Answer: B) Bandwidth is shared among users**
+**Answer: B**
 
 **Explanation:** Wi-Fi bandwidth is shared among all connected users. As more users connect and use the network, less bandwidth is available per user, potentially causing slower speeds for everyone.
 
@@ -180,7 +180,7 @@ D) Security improves
 ### Statement 1
 **Fibre optic cables are immune to electromagnetic interference.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Fibre optic cables transmit data using light pulses through glass or plastic fibres. Since they don't use electrical signals, they are completely immune to electromagnetic interference that affects copper cables.
 
@@ -189,7 +189,7 @@ D) Security improves
 ### Statement 2
 **HTTP is more secure than HTTPS.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** HTTPS is more secure than HTTP. HTTPS encrypts all data between the browser and server using SSL/TLS, while HTTP transmits data in plain text that can be intercepted and read.
 
@@ -198,7 +198,7 @@ D) Security improves
 ### Statement 3
 **Higher bandwidth always means faster internet speed.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Bandwidth refers to capacity (how much data can be transferred), not speed (how fast data travels). A connection with high bandwidth but high latency may feel slow for activities like gaming or video calls that require quick responses.
 
@@ -207,7 +207,7 @@ D) Security improves
 ### Statement 4
 **Bluetooth uses radio waves to transmit data.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Bluetooth operates in the 2.4GHz ISM (Industrial, Scientific, Medical) radio frequency band, using radio waves to transmit data wirelessly between devices over short distances.
 
@@ -216,7 +216,7 @@ D) Security improves
 ### Statement 5
 **POP3 keeps copies of emails on the server by default.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** POP3 (Post Office Protocol v3) typically downloads emails to the local device and removes them from the server by default. IMAP keeps emails on the server and syncs across devices.
 
@@ -225,7 +225,7 @@ D) Security improves
 ### Statement 6
 **Distance affects the strength of wireless signals.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Wireless signal strength decreases with distance according to the inverse square law. The further a device is from the wireless access point, the weaker the signal and potentially slower the connection.
 
@@ -234,7 +234,7 @@ D) Security improves
 ### Statement 7
 **Microwave ovens can interfere with 5GHz Wi-Fi networks.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Microwave ovens operate at approximately 2.45GHz, which interferes with 2.4GHz Wi-Fi networks, not 5GHz networks. The 5GHz band is typically free from microwave interference.
 
@@ -243,7 +243,7 @@ D) Security improves
 ### Statement 8
 **TCP guarantees that data packets arrive in the correct order.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** TCP numbers each packet during transmission. The receiving device uses these sequence numbers to reassemble packets in the correct order, even if they arrive out of sequence due to different routes.
 
@@ -252,7 +252,7 @@ D) Security improves
 ### Statement 9
 **5G mobile networks have lower latency than 4G networks.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** 5G networks are designed to have ultra-low latency (as low as 1ms) compared to 4G latency (typically 30-50ms). This makes 5G suitable for applications requiring instant response times like autonomous vehicles and remote surgery.
 
@@ -261,7 +261,7 @@ D) Security improves
 ### Statement 10
 **Copper cables can transmit data over longer distances than fibre optic cables.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Fibre optic cables can transmit data over much longer distances (up to 100km) without signal degradation compared to copper cables (typically limited to 100 metres for Ethernet). Fibre is superior for long-distance communication.
 
@@ -270,7 +270,7 @@ D) Security improves
 ### Statement 11
 **FTP transmits passwords securely by default.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Standard FTP transmits passwords and data in plain text, making it insecure. Secure alternatives like SFTP (SSH File Transfer Protocol) or FTPS (FTP Secure) should be used for transferring sensitive files.
 
@@ -279,7 +279,7 @@ D) Security improves
 ### Statement 12
 **A simplex transmission allows two-way communication.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Simplex transmission only allows one-way communication (from transmitter to receiver only). Two-way communication requires either half-duplex (one direction at a time) or full-duplex (both directions simultaneously).
 

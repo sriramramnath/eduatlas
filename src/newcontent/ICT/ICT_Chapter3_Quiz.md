@@ -13,7 +13,7 @@ B) Arithmetic Logic Unit (ALU)
 C) Register  
 D) Cache  
 
-**Answer: B) Arithmetic Logic Unit (ALU)**
+**Answer: B)**
 
 **Explanation:** The ALU performs all mathematical operations (addition, subtraction, multiplication, division) and logical comparisons (AND, OR, NOT, equal to, greater than). The Control Unit coordinates operations but doesn't perform calculations.
 
@@ -27,7 +27,7 @@ B) Decode – Fetch – Execute
 C) Fetch – Decode – Execute  
 D) Fetch – Execute – Decode  
 
-**Answer: C) Fetch – Decode – Execute**
+**Answer: C**
 
 **Explanation:** The CPU follows this cycle: first it fetches the instruction from memory, then it decodes the instruction to understand what operation to perform, and finally it executes the instruction.
 
@@ -41,7 +41,7 @@ B) RAM
 C) Flash memory  
 D) Hard disk drive  
 
-**Answer: B) RAM**
+**Answer: B**
 
 **Explanation:** RAM (Random Access Memory) is volatile memory that requires constant power to retain data. When power is removed, all data in RAM is lost. ROM, flash memory, and HDDs are non-volatile and retain data without power.
 
@@ -55,7 +55,7 @@ B) To store the operating system permanently
 C) To provide fast access to frequently used data and instructions  
 D) To connect the CPU to external devices  
 
-**Answer: C) To provide fast access to frequently used data and instructions**
+**Answer: C**
 
 **Explanation:** Cache memory is located close to or inside the CPU and stores frequently accessed data and instructions. This reduces the time the CPU spends waiting for data from slower RAM.
 
@@ -69,7 +69,7 @@ B) Dual-core
 C) Quad-core  
 D) Octa-core  
 
-**Answer: C) Quad-core**
+**Answer: C**
 
 **Explanation:** A quad-core processor contains four independent processing units (cores). Dual-core has two cores, octa-core has eight cores, and single-core has one core.
 
@@ -83,7 +83,7 @@ B) Solid State Drive (SSD)
 C) DVD drive  
 D) Blu-ray drive  
 
-**Answer: B) Solid State Drive (SSD)**
+**Answer: B**
 
 **Explanation:** SSDs use flash memory chips with no moving mechanical parts. HDDs have spinning platters and moving read/write heads. Optical drives (DVD, Blu-ray) have spinning discs and moving laser assemblies.
 
@@ -97,7 +97,7 @@ B) The number of instruction cycles per second
 C) The temperature of the CPU  
 D) The amount of RAM installed  
 
-**Answer: B) The number of instruction cycles per second**
+**Answer: B**
 
 **Explanation:** Clock speed, measured in Hertz (Hz), indicates how many cycles the CPU can perform per second. A 3GHz processor theoretically completes 3 billion cycles per second.
 
@@ -111,7 +111,7 @@ B) Virtual memory is used to extend available memory
 C) The CPU stops processing  
 D) Data is permanently deleted  
 
-**Answer: B) Virtual memory is used to extend available memory**
+**Answer: B**
 
 **Explanation:** When RAM is full, the operating system moves inactive data to virtual memory (a swap file on the hard drive). This frees RAM for active applications, though performance is reduced.
 
@@ -125,7 +125,7 @@ B) RAM
 C) SSD  
 D) HDD  
 
-**Answer: A) L1 Cache**
+**Answer: A**
 
 **Explanation:** L1 cache is located directly inside the CPU core and is the fastest memory type. The speed hierarchy from fastest to slowest is: Registers → L1 Cache → L2 Cache → L3 Cache → RAM → SSD → HDD.
 
@@ -139,7 +139,7 @@ B) Storing data permanently
 C) Coordinating and controlling all CPU operations  
 D) Connecting to external networks  
 
-**Answer: C) Coordinating and controlling all CPU operations**
+**Answer: C**
 
 **Explanation:** The Control Unit directs and coordinates all CPU operations, managing the fetch-decode-execute cycle, sending control signals, and directing data flow between components. The ALU performs calculations.
 
@@ -153,7 +153,7 @@ B) Storage space used as temporary RAM
 C) A type of ROM  
 D) Memory used specifically for graphics  
 
-**Answer: B) Storage space used as temporary RAM**
+**Answer: B**
 
 **Explanation:** Virtual memory uses part of the hard drive or SSD as temporary RAM when physical RAM is full. Data is "swapped" between RAM and storage, allowing systems to run more programs than physical RAM would permit.
 
@@ -167,7 +167,7 @@ B) No moving parts
 C) Lower cost per GB  
 D) Quieter operation  
 
-**Answer: C) Lower cost per GB**
+**Answer: C**
 
 **Explanation:** SSDs are faster, more durable (no moving parts), and quieter than HDDs. However, SSDs have a higher cost per GB compared to HDDs, which is a disadvantage, not an advantage.
 
@@ -180,7 +180,7 @@ D) Quieter operation
 ### Statement 1
 **The ALU is responsible for coordinating the fetch-decode-execute cycle.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** The Control Unit, not the ALU, coordinates the fetch-decode-execute cycle. The ALU performs arithmetic and logical operations. The Control Unit manages instruction flow and sends control signals.
 
@@ -189,7 +189,7 @@ D) Quieter operation
 ### Statement 2
 **Increasing the amount of RAM in a computer can improve its performance when running multiple applications.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** More RAM allows more applications to run simultaneously without relying on slower virtual memory. This reduces paging (swapping data between RAM and storage), improving overall system responsiveness.
 
@@ -198,7 +198,7 @@ D) Quieter operation
 ### Statement 3
 **L3 cache is faster than L1 cache.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** L1 cache is the fastest cache type, located directly inside the CPU core. L3 cache is larger but slower than both L1 and L2 cache. The speed order is L1 > L2 > L3 > RAM.
 
@@ -207,7 +207,7 @@ D) Quieter operation
 ### Statement 4
 **A dual-core processor can execute two instructions simultaneously.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** A dual-core processor has two independent processing units that can execute instructions simultaneously. This enables true parallel processing and better multitasking compared to a single-core processor.
 
@@ -216,7 +216,7 @@ D) Quieter operation
 ### Statement 5
 **ROM is used to store the BIOS on a computer motherboard.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** The BIOS (Basic Input/Output System) is stored on a ROM chip on the motherboard. This firmware initialises hardware during boot and provides the interface between hardware and operating system.
 
@@ -225,7 +225,7 @@ D) Quieter operation
 ### Statement 6
 **SSDs are more resistant to physical shock than HDDs.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** SSDs have no moving parts, making them more resistant to drops and physical shock. HDDs have spinning platters and read/write heads that can be damaged by movement during operation.
 
@@ -234,7 +234,7 @@ D) Quieter operation
 ### Statement 7
 **Virtual memory is faster than physical RAM.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Virtual memory uses storage (HDD/SSD) which is much slower than physical RAM. Virtual memory is a backup when RAM is full, but accessing virtual memory causes significant delays compared to RAM access.
 
@@ -243,7 +243,7 @@ D) Quieter operation
 ### Statement 8
 **Registers are the smallest but fastest memory locations in a computer.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** Registers are tiny memory locations directly inside the CPU, holding only a few bytes each. They are the fastest memory type, accessed instantly by the CPU for immediate operations.
 
@@ -252,7 +252,7 @@ D) Quieter operation
 ### Statement 9
 **DDR5 RAM is compatible with any motherboard.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** RAM must match the motherboard's specifications. DDR5 RAM requires a motherboard designed for DDR5. Different DDR generations (DDR3, DDR4, DDR5) are physically different and not interchangeable.
 
@@ -261,7 +261,7 @@ D) Quieter operation
 ### Statement 10
 **A computer with 8GB RAM can only run programs totalling 8GB in size.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** Virtual memory allows computers to run programs requiring more memory than physical RAM. The operating system swaps data between RAM and storage, though performance decreases when relying heavily on virtual memory.
 
@@ -270,7 +270,7 @@ D) Quieter operation
 ### Statement 11
 **Higher clock speed always means better CPU performance.**
 
-**Answer: FALSE**
+**Answer: False**
 
 **Correction:** While higher clock speed generally improves performance, other factors like number of cores, cache size, and CPU architecture also significantly affect performance. A slower multi-core processor can outperform a faster single-core processor in many tasks.
 
@@ -279,7 +279,7 @@ D) Quieter operation
 ### Statement 12
 **Data stored in RAM is lost when the computer is turned off.**
 
-**Answer: TRUE**
+**Answer: True**
 
 **Explanation:** RAM is volatile memory—it requires constant power to retain data. When the computer is turned off, all data in RAM is lost. This is why users must save work to non-volatile storage (SSD/HDD) before shutting down.
 

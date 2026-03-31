@@ -14,7 +14,7 @@ D) USB Flash Drive
 
 **Answer: B**
 
-**Explanation**: RAM is volatile memory, meaning it requires constant power to maintain data. When power is removed, all data in RAM is lost. SSDs, HDDs, and USB flash drives are non-volatile storage devices that retain data without power.
+**Explanation:** RAM is volatile memory, meaning it requires constant power to maintain data. When power is removed, all data in RAM is lost. SSDs, HDDs, and USB flash drives are non-volatile storage devices that retain data without power.
 
 ---
 
@@ -28,7 +28,7 @@ D) It uses less power
 
 **Answer: B**
 
-**Explanation**: Capacitive touchscreens detect the electrical properties of the human touch and support multi-touch gestures such as pinch-to-zoom. Resistive touchscreens detect pressure and only support single-touch input, though they can work with gloves or styluses.
+**Explanation:** Capacitive touchscreens detect the electrical properties of the human touch and support multi-touch gestures such as pinch-to-zoom. Resistive touchscreens detect pressure and only support single-touch input, though they can work with gloves or styluses.
 
 ---
 
@@ -42,7 +42,7 @@ D) Smartphone with cloud storage
 
 **Answer: C**
 
-**Explanation**: Video editing, especially 4K footage, requires substantial processing power, dedicated graphics for rendering, large fast storage, and adequate RAM. A high-performance desktop meets these requirements and can be upgraded as needed.
+**Explanation:** Video editing, especially 4K footage, requires substantial processing power, dedicated graphics for rendering, large fast storage, and adequate RAM. A high-performance desktop meets these requirements and can be upgraded as needed.
 
 ---
 
@@ -56,7 +56,7 @@ D) Thermal printer
 
 **Answer: C**
 
-**Explanation**: Laser printers use toner powder fused onto paper with heat. They are faster, more cost-effective for high-volume printing, and produce sharper text than inkjet printers. They are ideal for office environments with high print volumes.
+**Explanation:** Laser printers use toner powder fused onto paper with heat. They are faster, more cost-effective for high-volume printing, and produce sharper text than inkjet printers. They are ideal for office environments with high print volumes.
 
 ---
 
@@ -70,7 +70,7 @@ D) 5G Cellular
 
 **Answer: C**
 
-**Explanation**: NFC has a very short range (less than 10cm) which makes it ideal for secure applications like contactless payments. The short range ensures the devices must be deliberately placed close together, adding security.
+**Explanation:** NFC has a very short range (less than 10cm) which makes it ideal for secure applications like contactless payments. The short range ensures the devices must be deliberately placed close together, adding security.
 
 ---
 
@@ -84,7 +84,7 @@ D) SSDs have larger storage capacities than HDDs
 
 **Answer: B**
 
-**Explanation**: SSDs use flash memory with no moving parts, making them faster, quieter, and more durable. HDDs store data on spinning magnetic platters, making them slower but typically offering larger capacities at lower costs.
+**Explanation:** SSDs use flash memory with no moving parts, making them faster, quieter, and more durable. HDDs store data on spinning magnetic platters, making them slower but typically offering larger capacities at lower costs.
 
 ---
 
@@ -98,7 +98,7 @@ D) Smartwatch
 
 **Answer: B**
 
-**Explanation**: A laptop provides the portability needed for taking notes in different locations, a physical keyboard suitable for writing essays, and sufficient processing power for word processing and research. Desktops aren't portable; games consoles and smartwatches aren't designed for document creation.
+**Explanation:** A laptop provides the portability needed for taking notes in different locations, a physical keyboard suitable for writing essays, and sufficient processing power for word processing and research. Desktops aren't portable; games consoles and smartwatches aren't designed for document creation.
 
 ---
 
@@ -112,7 +112,7 @@ D) Plasma
 
 **Answer: C**
 
-**Explanation**: OLED (Organic Light-Emitting Diode) displays have pixels that emit their own light. When a pixel is off, it produces true black because no light is emitted. This results in superior contrast compared to LCD displays which require a backlight.
+**Explanation:** OLED (Organic Light-Emitting Diode) displays have pixels that emit their own light. When a pixel is off, it produces true black because no light is emitted. This results in superior contrast compared to LCD displays which require a backlight.
 
 ---
 
@@ -126,7 +126,7 @@ D) Unified Serial Buffer
 
 **Answer: A**
 
-**Explanation**: USB stands for Universal Serial Bus. It is an industry standard for connecting peripherals to computers, providing both data transfer and power supply capabilities.
+**Explanation:** USB stands for Universal Serial Bus. It is an industry standard for connecting peripherals to computers, providing both data transfer and power supply capabilities.
 
 ---
 
@@ -140,7 +140,7 @@ D) Smart TV
 
 **Answer: B**
 
-**Explanation**: A laptop provides portability for travel, the ability to connect to projectors for presentations, sufficient processing power for remote access to company systems, and network connectivity options. Desktop computers aren't portable, while games consoles and smart TVs aren't designed for business applications.
+**Explanation:** A laptop provides portability for travel, the ability to connect to projectors for presentations, sufficient processing power for remote access to company systems, and network connectivity options. Desktop computers aren't portable, while games consoles and smart TVs aren't designed for business applications.
 
 ---
 
@@ -154,7 +154,7 @@ D) Memory Stick
 
 **Answer: C**
 
-**Explanation**: microSD cards are the smallest form factor of SD cards and are commonly used in smartphones to expand storage capacity. Full-size SD cards are used in cameras, and CompactFlash and Memory Stick are older formats.
+**Explanation:** microSD cards are the smallest form factor of SD cards and are commonly used in smartphones to expand storage capacity. Full-size SD cards are used in cameras, and CompactFlash and Memory Stick are older formats.
 
 ---
 
@@ -168,7 +168,7 @@ D) Converts text to speech
 
 **Answer: B**
 
-**Explanation**: An ADC (Analogue-to-Digital Converter) converts continuous analogue signals from the real world (like sound, light, temperature) into digital binary data that computers can process and store.
+**Explanation:** An ADC (Analogue-to-Digital Converter) converts continuous analogue signals from the real world (like sound, light, temperature) into digital binary data that computers can process and store.
 
 ---
 
@@ -177,7 +177,7 @@ RAM retains data even when the computer is turned off.
 
 **Answer: False**
 
-**Explanation**: RAM (Random Access Memory) is volatile memory. It requires constant power to retain data. When the computer is turned off, all data in RAM is lost. Only non-volatile storage like HDDs, SSDs, and USB drives retain data without power.
+**Explanation:** RAM (Random Access Memory) is volatile memory. It requires constant power to retain data. When the computer is turned off, all data in RAM is lost. Only non-volatile storage like HDDs, SSDs, and USB drives retain data without power.
 
 ---
 

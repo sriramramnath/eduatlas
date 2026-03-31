@@ -7,22 +7,25 @@
 
 ### Structure
 
-```
-                    SUN
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-    Mercury       Venus         Earth
-        │             │             │
-        └─────────────┼─────────────┘
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-      Mars        Jupiter        Saturn
-        │             │             │
-        └─────────────┼─────────────┘
-                      │
-              Uranus, Neptune
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (sun) at (0,4.5) {SUN};
+  \node (mercury) at (-3,2.7) {Mercury};
+  \node (venus) at (0,2.7) {Venus};
+  \node (earth) at (3,2.7) {Earth};
+  \node (mars) at (-3,0.9) {Mars};
+  \node (jupiter) at (0,0.9) {Jupiter};
+  \node (saturn) at (3,0.9) {Saturn};
+  \node (outer) at (0,-0.8) {Uranus, Neptune};
+  \draw (sun) -- (0,3.8);
+  \draw (-3,3.2) -- (3,3.2);
+  \draw (-3,1.4) -- (3,1.4);
+  \draw (0,3.8) -- (0,-0.2);
+  \foreach \p in {mercury,venus,earth,mars,jupiter,saturn} {
+    \draw (\p) -- ++(0,0.5);
+  }
+  \draw (outer) -- (0,-0.2);
+\end{tikzpicture}
 ```
 
 ### Planets (in order from Sun)
@@ -125,15 +128,18 @@ T² ∝ r³
 - Appear stationary from Earth
 - Used for TV, communications
 
-```
-        Earth rotates ──►
-             ╭──────╮
-            ╱   ↑    ╲
-           │ Satellite│
-            ╲   │    ╱
-             ╰──┼───╯
-                │
-         Stays above same point
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) circle (1.3);
+  \node at (0,0) {Earth};
+  \draw[->] (1.6,1.0) arc[start angle=35,end angle=320,radius=1.9];
+  \node at (0,2.4) {Earth rotates};
+  \filldraw (0,3.2) circle (0.08);
+  \node[right] at (0.2,3.2) {Satellite};
+  \draw[dashed] (0,1.3) -- (0,3.1);
+  \node[right] at (0.3,1.8) {Stays above};
+  \node[right] at (0.3,1.4) {same point};
+\end{tikzpicture}
 ```
 
 ---
@@ -173,20 +179,25 @@ Planets closer to Sun move faster than those farther away.
 
 ### Structure
 
-```
-    ┌─────────────────────┐
-    │     CORONA          │  ← Outer atmosphere (millions °C)
-    │  ┌───────────────┐  │
-    │  │   CHROMOSPHERE │ │  ← Middle layer
-    │  │  ┌─────────┐  │  │
-    │  │  │  PHOTOSPHERE│ │  ← Visible surface (~5500°C)
-    │  │  │ ┌─────┐ │  │  │
-    │  │  │ │CORE │ │  │  │  ← 15 million °C, fusion occurs
-    │  │  │ │     │ │  │  │
-    │  │  │ └─────┘ │  │  │
-    │  │  └─────────┘  │  │
-    │  └───────────────┘  │
-    └─────────────────────┘
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) circle (2.4);
+  \draw[thick] (0,0) circle (1.8);
+  \draw[thick] (0,0) circle (1.2);
+  \draw[thick] (0,0) circle (0.5);
+  \node at (0,0) {Core};
+  \node at (0,0.9) {Photosphere};
+  \node at (0,1.55) {Chromosphere};
+  \node at (0,2.2) {Corona};
+  \draw[->] (2.8,2.2) -- (2.3,2.2);
+  \node[right] at (2.8,2.2) {Outer atmosphere};
+  \draw[->] (2.8,1.55) -- (1.7,1.55);
+  \node[right] at (2.8,1.55) {Middle layer};
+  \draw[->] (2.8,0.9) -- (1.1,0.9);
+  \node[right] at (2.8,0.9) {Visible surface};
+  \draw[->] (2.8,0.0) -- (0.5,0.0);
+  \node[right] at (2.8,0.0) {Fusion occurs};
+\end{tikzpicture}
 ```
 
 ### Key Facts
@@ -221,14 +232,21 @@ Planets closer to Sun move faster than those farther away.
 
 ### Phases of the Moon
 
-```
-Sunlight ─────►
-
-    New        First       Full        Last
-    Moon      Quarter      Moon       Quarter
-      ●         D─►         ○         ◄─C
-     Dark    Half lit     Fully      Half lit
-                         lit
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node[anchor=west] at (0,2.5) {Sunlight};
+  \draw[->] (1.6,2.5) -- (3.4,2.5);
+  \fill (1,0.8) circle (0.28);
+  \node[below] at (1,0.3) {New};
+  \draw (3,0.8) circle (0.28);
+  \fill[black] (3,0.8) arc[start angle=90,end angle=270,radius=0.28] -- cycle;
+  \node[below] at (3,0.3) {First quarter};
+  \draw (5,0.8) circle (0.28);
+  \node[below] at (5,0.3) {Full};
+  \draw (7,0.8) circle (0.28);
+  \fill[black] (7,0.8) arc[start angle=-90,end angle=90,radius=0.28] -- cycle;
+  \node[below] at (7,0.3) {Last quarter};
+\end{tikzpicture}
 ```
 
 - Phases caused by changing illumination by Sun
@@ -257,17 +275,24 @@ Sunlight ─────►
 
 ### Spring and Neap Tides
 
-```
-SPRING TIDES (highest)
-Sun ──► Moon ──► Earth
-(aligned - gravitational forces add)
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \node at (0,2.8) {Spring tides};
+  \node at (0,2.2) {(forces add)};
+  \node (sun1) at (0,1.2) {Sun};
+  \node (moon1) at (2.5,1.2) {Moon};
+  \node (earth1) at (5.0,1.2) {Earth};
+  \draw[->] (sun1) -- (moon1);
+  \draw[->] (moon1) -- (earth1);
 
-NEAP TIDES (lowest)
-     Moon
-       │
-       ▼
-Earth ────► Sun
-(Moon at right angle - forces partially cancel)
+  \node at (9.0,2.8) {Neap tides};
+  \node at (9.0,2.2) {(forces partly cancel)};
+  \node (moon2) at (9.0,1.6) {Moon};
+  \node (earth2) at (9.0,0.2) {Earth};
+  \node (sun2) at (11.8,0.2) {Sun};
+  \draw[->] (moon2) -- (earth2);
+  \draw[->] (earth2) -- (sun2);
+\end{tikzpicture}
 ```
 
 | Tide Type | Moon Phase | Height |

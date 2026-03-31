@@ -20,20 +20,17 @@ Sound is a **longitudinal wave** produced by vibrating objects.
 
 ### Sound Cannot Travel Through a Vacuum
 
-```
-    Bell jar experiment:
-    
-    ┌─────────────────┐
-    │  🔔 Electric    │
-    │     bell        │
-    │                 │
-    │   (air removed  │
-    │    by vacuum    │
-    │     pump)       │
-    └─────────────────┘
-    
-    As air is removed, sound gets quieter until silence.
-    Proves sound needs a medium.
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) rectangle (5,4);
+  \draw[thick] (2.5,0) -- (2.5,-1.1);
+  \draw[thick] (2.0,2.4) circle (0.45);
+  \draw[thick] (1.8,2.85) -- (1.6,3.2);
+  \draw[thick] (2.2,2.85) -- (2.4,3.2);
+  \node at (2.0,1.4) {Electric bell};
+  \node[right] at (5.2,2.8) {Bell jar};
+  \node[right] at (3.0,-1.1) {Vacuum pump};
+\end{tikzpicture}
 ```
 
 ---
@@ -42,17 +39,17 @@ Sound is a **longitudinal wave** produced by vibrating objects.
 
 ### Compression and Rarefaction
 
-```
-    Sound wave in air:
-    
-    Compressions      Rarefactions
-    (high pressure)   (low pressure)
-    
-    ▓▓▓░░░▓▓▓░░░▓▓▓░░░▓▓▓
-    
-    Direction of travel →→→→→→→
-    
-    Particles vibrate back and forth parallel to direction of travel
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \foreach \x in {0.8,0.95,1.1,1.25,1.4,2.8,2.95,3.1,3.25,3.4,4.8,4.95,5.1,5.25,5.4,6.8,6.95,7.1,7.25,7.4} {
+    \draw[thick] (\x,0) -- (\x,2.0);
+  }
+  \node at (1.2,-0.6) {Compression};
+  \node at (2.1,-0.6) {Rarefaction};
+  \node at (5.2,-0.6) {Compression};
+  \draw[->] (0.8,2.8) -- (7.6,2.8);
+  \node[above] at (4.2,2.8) {Direction of travel};
+\end{tikzpicture}
 ```
 
 ### Process
@@ -86,24 +83,17 @@ Sound is a **longitudinal wave** produced by vibrating objects.
 
 ### Visual Representation
 
-```
-    High pitch (high frequency):
-    ∿∿∿∿∿∿∿∿∿∿
-    
-    Low pitch (low frequency):
-    ∿‾‾∿‾‾∿‾‾∿‾‾
-    
-    Loud (large amplitude):
-       ╱╲        ╱╲
-      ╱  ╲      ╱  ╲
-    ─╱────╲────╱────╲──
-          ╲    ╱
-           ╲──╱
-    
-    Quiet (small amplitude):
-      ╱╲      ╱╲
-    ─╱──╲────╱──╲──
-         ╲──╱
+```tex
+\begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,font=\small]
+  \node[anchor=west] at (0,4.4) {High pitch};
+  \draw[thick] plot[smooth] coordinates {(2,4.2) (2.4,4.6) (2.8,4.2) (3.2,4.6) (3.6,4.2) (4.0,4.6) (4.4,4.2) (4.8,4.6) (5.2,4.2)};
+  \node[anchor=west] at (0,3.1) {Low pitch};
+  \draw[thick] plot[smooth] coordinates {(2,2.9) (3.0,3.5) (4.0,2.9) (5.0,3.5) (6.0,2.9)};
+  \node[anchor=west] at (0,1.7) {Loud};
+  \draw[thick] plot[smooth] coordinates {(2,1.4) (3,2.4) (4,1.4) (5,0.4) (6,1.4) (7,2.4) (8,1.4)};
+  \node[anchor=west] at (0,0.1) {Quiet};
+  \draw[thick] plot[smooth] coordinates {(2,-0.1) (3,0.4) (4,-0.1) (5,-0.6) (6,-0.1) (7,0.4) (8,-0.1)};
+\end{tikzpicture}
 ```
 
 ---
@@ -186,12 +176,19 @@ Sound is a **longitudinal wave** produced by vibrating objects.
 
 ### Ultrasound Imaging
 
-```
-    Transducer sends    Ultrasound reflects    Image formed
-    ultrasound pulse →  from tissue boundary → from echoes
-    
-    Time delay of echo indicates depth
-    Strength of echo indicates tissue type
+```tex
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,font=\small]
+  \draw[thick] (0,0) rectangle (1.2,1.8);
+  \node at (0.6,0.9) {Transducer};
+  \draw[fill=gray!20] (3,0) rectangle (3.5,1.8);
+  \draw[fill=gray!35] (5,0) rectangle (5.8,1.8);
+  \draw[->,thick] (1.2,1.2) -- (3,1.2);
+  \draw[->,thick] (1.2,0.9) -- (5,0.9);
+  \draw[->,thick] (3,0.6) -- (1.2,0.6);
+  \draw[->,thick] (5,0.3) -- (1.2,0.3);
+  \node[above] at (3.8,1.2) {Outgoing pulse};
+  \node[below] at (3.3,0.4) {Echoes};
+\end{tikzpicture}
 ```
 
 ### Advantages over X-rays
@@ -241,13 +238,17 @@ Distance = (330 × 3) ÷ 2 = 990 ÷ 2 = 495 m
 
 ### Structure of the Human Ear
 
-```
-    Outer ear →  Middle ear  →  Inner ear
-    
-    Pinna    →   Eardrum    →   Cochlea
-    (collects  (vibrates)      (converts to
-     sound)                      electrical
-                                signals)
+```tex
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,font=\small]
+  \node (outer) at (0,0) {Outer ear};
+  \node (middle) at (3.2,0) {Middle ear};
+  \node (inner) at (6.4,0) {Inner ear};
+  \draw[->] (0.8,0) -- (2.4,0);
+  \draw[->] (4.0,0) -- (5.6,0);
+  \node[below] at (0,-0.4) {Pinna};
+  \node[below] at (3.2,-0.4) {Eardrum};
+  \node[below] at (6.4,-0.4) {Cochlea};
+\end{tikzpicture}
 ```
 
 ### How Hearing Works
