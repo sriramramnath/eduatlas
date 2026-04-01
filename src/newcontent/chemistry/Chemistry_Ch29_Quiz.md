@@ -7,9 +7,7 @@
 
 ## Section A: Multiple Choice Questions (12 marks)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 What is a monomer?

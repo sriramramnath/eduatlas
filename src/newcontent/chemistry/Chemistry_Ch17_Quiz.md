@@ -6,9 +6,7 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 What are the products when zinc reacts with hydrochloric acid?

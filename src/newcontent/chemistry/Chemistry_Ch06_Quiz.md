@@ -6,16 +6,17 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
+Select the correct answer for each question.
+
+---
+
 ### Question 1
 Which is the correct balanced equation for the combustion of ethane (C₂H₆)?
 
-A) C₂H₆ + O₂ → 2CO₂ + 3H₂O
-
-B) 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O
-
-C) C₂H₆ + 3O₂ → 2CO₂ + 3H₂O
-
-D) 2C₂H₆ + 3O₂ → 4CO₂ + 3H₂O
+A) C₂H₆ + O₂ → 2CO₂ + 3H₂O  
+B) 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O  
+C) C₂H₆ + 3O₂ → 2CO₂ + 3H₂O  
+D) 2C₂H₆ + 3O₂ → 4CO₂ + 3H₂O  
 
 **Answer: B**
 
@@ -26,13 +27,10 @@ D) 2C₂H₆ + 3O₂ → 4CO₂ + 3H₂O
 ### Question 2
 What does the state symbol (aq) represent?
 
-A) Aqueous - a solid dissolved in water
-
-B) Aqueous - a substance dissolved in water
-
-C) Aqueous - a liquid at room temperature
-
-D) Aqueous - a gas dissolved in water only
+A) Aqueous - a solid dissolved in water  
+B) Aqueous - a substance dissolved in water  
+C) Aqueous - a liquid at room temperature  
+D) Aqueous - a gas dissolved in water only  
 
 **Answer: B**
 
@@ -43,13 +41,10 @@ D) Aqueous - a gas dissolved in water only
 ### Question 3
 Which is the correct ionic equation for the reaction between hydrochloric acid and sodium hydroxide?
 
-A) HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
-
-B) H⁺(aq) + Cl⁻(aq) + Na⁺(aq) + OH⁻(aq) → Na⁺(aq) + Cl⁻(aq) + H₂O(l)
-
-C) H⁺(aq) + OH⁻(aq) → H₂O(l)
-
-D) Na⁺(aq) + Cl⁻(aq) → NaCl(aq)
+A) HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)  
+B) H⁺(aq) + Cl⁻(aq) + Na⁺(aq) + OH⁻(aq) → Na⁺(aq) + Cl⁻(aq) + H₂O(l)  
+C) H⁺(aq) + OH⁻(aq) → H₂O(l)  
+D) Na⁺(aq) + Cl⁻(aq) → NaCl(aq)  
 
 **Answer: C**
 
@@ -60,13 +55,10 @@ D) Na⁺(aq) + Cl⁻(aq) → NaCl(aq)
 ### Question 4
 What is the molar mass of calcium carbonate, CaCO₃?
 
-A) 68 g/mol
-
-B) 84 g/mol
-
-C) 100 g/mol
-
-D) 116 g/mol
+A) 68 g/mol  
+B) 84 g/mol  
+C) 100 g/mol  
+D) 116 g/mol  
 
 **Answer: C**
 
@@ -78,13 +70,10 @@ D) 116 g/mol
 In the reaction: 2Mg + O₂ → 2MgO, what mass of magnesium oxide is formed from 4.8g of magnesium?
 (Ar: Mg = 24, O = 16)
 
-A) 4.0 g
-
-B) 8.0 g
-
-C) 16.0 g
-
-D) 40.0 g
+A) 4.0 g  
+B) 8.0 g  
+C) 16.0 g  
+D) 40.0 g  
 
 **Answer: B**
 
@@ -95,13 +84,10 @@ D) 40.0 g
 ### Question 6
 Which species are spectator ions in the reaction between silver nitrate and sodium chloride?
 
-A) Ag⁺ and Cl⁻
-
-B) Ag⁺ and NO₃⁻
-
-C) Na⁺ and NO₃⁻
-
-D) Na⁺ and Cl⁻
+A) Ag⁺ and Cl⁻  
+B) Ag⁺ and NO₃⁻  
+C) Na⁺ and NO₃⁻  
+D) Na⁺ and Cl⁻  
 
 **Answer: C**
 
@@ -112,13 +98,10 @@ D) Na⁺ and Cl⁻
 ### Question 7
 A student calculates a percentage yield of 120%. What does this indicate?
 
-A) The reaction was very efficient
-
-B) There was an error in the calculation or measurement
-
-C) The limiting reactant was not completely used
-
-D) The theoretical yield was incorrectly calculated
+A) The reaction was very efficient  
+B) There was an error in the calculation or measurement  
+C) The limiting reactant was not completely used  
+D) The theoretical yield was incorrectly calculated  
 
 **Answer: B**
 
@@ -130,13 +113,10 @@ D) The theoretical yield was incorrectly calculated
 What is the atom economy for the reaction: CaCO₃ → CaO + CO₂, if CaO is the desired product?
 (Ar: Ca = 40, C = 12, O = 16)
 
-A) 44%
-
-B) 56%
-
-C) 78%
-
-D) 100%
+A) 44%  
+B) 56%  
+C) 78%  
+D) 100%  
 
 **Answer: B**
 
@@ -148,13 +128,10 @@ D) 100%
 When 6g of carbon burns in excess oxygen, what mass of carbon dioxide is produced?
 (Ar: C = 12, O = 16)
 
-A) 11 g
-
-B) 22 g
-
-C) 44 g
-
-D) 88 g
+A) 11 g  
+B) 22 g  
+C) 44 g  
+D) 88 g  
 
 **Answer: B**
 
@@ -166,13 +143,10 @@ D) 88 g
 In the reaction: N₂ + 3H₂ ⇌ 2NH₃, if 28g of N₂ reacts with 6g of H₂, which is the limiting reactant?
 (Ar: N = 14, H = 1)
 
-A) N₂
-
-B) H₂
-
-C) Both are limiting
-
-D) Neither - they are in exact proportions
+A) N₂  
+B) H₂  
+C) Both are limiting  
+D) Neither - they are in exact proportions  
 
 **Answer: D**
 
@@ -183,13 +157,10 @@ D) Neither - they are in exact proportions
 ### Question 11
 Which of the following should NOT be split into ions when writing an ionic equation?
 
-A) NaCl(aq)
-
-B) CuSO₄(aq)
-
-C) AgCl(s)
-
-D) HNO₃(aq)
+A) NaCl(aq)  
+B) CuSO₄(aq)  
+C) AgCl(s)  
+D) HNO₃(aq)  
 
 **Answer: C**
 
@@ -200,13 +171,10 @@ D) HNO₃(aq)
 ### Question 12
 A reaction has a percentage yield of 75% and an atom economy of 90%. What is the overall efficiency of the reaction?
 
-A) 67.5%
-
-B) 75%
-
-C) 82.5%
-
-D) 90%
+A) 67.5%  
+B) 75%  
+C) 82.5%  
+D) 90%  
 
 **Answer: A**
 
@@ -216,7 +184,7 @@ D) 90%
 
 ## Part B: True/False Questions
 
-State whether each statement is True or False. If False, provide the correct statement.
+For each statement, write TRUE or FALSE. If FALSE, write the correct statement.
 
 ---
 
@@ -224,6 +192,8 @@ State whether each statement is True or False. If False, provide the correct sta
 The state symbol (l) should be used for sodium chloride solution.
 
 **Answer: False**
+
+**Correction**: Sodium chloride solution should have the state symbol (aq) standing for aqueous, while (l) represents a pure liquid.
 
 **Explanation**: Sodium chloride solution should have the state symbol (aq) standing for aqueous, while (l) represents a pure liquid.
 
@@ -233,6 +203,8 @@ The state symbol (l) should be used for sodium chloride solution.
 One mole of any substance always has a mass of 24g.
 
 **Answer: False**
+
+**Correction**: One mole of a substance has a mass equal to its molar mass (Mr or Ar) in grams, which is unique to each substance.
 
 **Explanation**: One mole of a substance has a mass equal to its molar mass (Mr or Ar) in grams, which is unique to each substance.
 
@@ -244,5 +216,3 @@ Percentage yield can never be greater than 100%.
 **Answer: True**
 
 **Explanation**: Since you cannot create matter, you cannot obtain more product than the theoretical maximum predicted by the balanced equation.
-
----

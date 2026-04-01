@@ -6,9 +6,7 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 Which test is used to identify oxygen gas?

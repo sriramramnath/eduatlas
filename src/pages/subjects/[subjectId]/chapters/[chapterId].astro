@@ -129,56 +129,232 @@ const noteModule = contentNoteModules[notePath] as any;
 const synopsisModule = contentSynopsisModules[synopsisPath] as any;
 const quizModule = contentQuizModules[quizPath] as any;
 const practiceModule = practiceModules[practicePath] as any;
-const mockPapersBySubject: Record<string, Array<{label: string; href: string; description: string; meta: string}>> = {
-  biology: [
-    { label: 'Mock Paper 1', href: '/biology/practice/IGCSE_Biology_Mock1_Paper1.pdf', description: 'First full mock paper for chapter practice and exam timing.', meta: 'PDF' },
-    { label: 'Mock Paper 2', href: '/biology/practice/IGCSE_Biology_Mock1_Paper2.pdf', description: 'Second mock paper using the same format for repeated revision.', meta: 'PDF' },
-    { label: 'Mark Scheme', href: '/biology/practice/IGCSE_Biology_Mock1_MarkSchemes.pdf', description: 'Official answers and mark allocations for both mock papers.', meta: 'PDF' },
-  ],
-  chemistry: [],
-  physics: [],
-  maths: [],
-  ict: [],
+const pastPaperModules = import.meta.glob('/src/pastpaper/**/*.pdf', { eager: true, import: 'default' }) as Record<string, string>;
+const pastPaperPaths = Object.keys(pastPaperModules);
+const subjectPastPaperPaths = pastPaperPaths.filter(path => path.includes(`/${subjectId}/`));
+
+function parseYearAndSessionToDate(yearAndSession: string) {
+  const yearMatch = yearAndSession.match(/(\d{4})/);
+  const monthMatch = yearAndSession.match(/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/i);
+  let date = new Date(0);
+
+  if (yearMatch && monthMatch) {
+    const year = Number.parseInt(yearMatch[1], 10);
+    const monthIndex = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].findIndex(
+      (month) => month.toLowerCase() === monthMatch[1].toLowerCase(),
+    );
+    return new Date(year, monthIndex === -1 ? 0 : monthIndex, 1);
+  }
+
+  if (yearMatch) {
+    return new Date(Number.parseInt(yearMatch[1], 10), 0, 1);
+  }
+
+  return date;
+}
+
+const variantRank: Record<string, number> = {
+  Core: 0,
+  Foundation: 1,
+  Higher: 2,
+  Regional: 3,
 };
 
-const pastPapersBySubject: Record<string, { label: string; href: string; description: string; meta: string }> = {
-  biology: {
-    label: 'Pearson Edexcel IGCSE Biology Past Papers',
-    href: 'https://www.savemyexams.com/igcse/biology/edexcel/past-papers/',
-    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
-    meta: 'External',
-  },
-  chemistry: {
-    label: 'Pearson Edexcel IGCSE Chemistry Past Papers',
-    href: 'https://www.savemyexams.com/igcse/chemistry/edexcel/past-papers/',
-    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
-    meta: 'External',
-  },
-  physics: {
-    label: 'Pearson Edexcel IGCSE Physics Past Papers',
-    href: 'https://www.savemyexams.com/igcse/physics/edexcel/past-papers/',
-    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
-    meta: 'External',
-  },
-  maths: {
-    label: 'Pearson Edexcel IGCSE Maths Past Papers',
-    href: 'https://www.savemyexams.com/igcse/maths/edexcel/past-papers/',
-    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
-    meta: 'External',
-  },
-  ict: {
-    label: 'Pearson Edexcel IGCSE ICT Past Papers',
-    href: 'https://www.savemyexams.com/igcse/ict/edexcel/past-papers/',
-    description: 'Access official past papers, mark schemes, and examiner reports from Pearson Edexcel. Includes papers from June 2018 onwards.',
-    meta: 'External',
-  },
-};
+interface PastPaperEntry {
+  label: string;
+  href: string;
+  fileName: string;
+  session: string;
+  sortDate: number;
+  paperNumber: number;
+  paperVariant: string;
+  paperTier: 'foundation' | 'higher' | 'core' | 'unknown';
+  paperTypeName: 'Question Paper' | 'Mark Scheme';
+  assetLabel: string;
+  assetPriority: number;
+}
 
-const currentMockPapers = mockPapersBySubject[subjectId!] || [];
-const currentPastPaper = pastPapersBySubject[subjectId!];
+interface PastPaperGroup {
+  label: string;
+  paperNumber: number;
+  paperVariant: string;
+  paperTier: 'foundation' | 'higher' | 'core' | 'unknown';
+  questionPapers: PastPaperEntry[];
+  markSchemes: PastPaperEntry[];
+}
+
+interface PastPaperSession {
+  label: string;
+  sortDate: number;
+  groups: PastPaperGroup[];
+}
+
+function getAssetMeta(fileName: string, paperTypeName: 'Question Paper' | 'Mark Scheme') {
+  const normalized = fileName.replace(/\.pdf$/i, '').toLowerCase();
+
+  if (paperTypeName === 'Mark Scheme') {
+    if (normalized.includes('detailed') || normalized.includes('solution')) {
+      return { assetLabel: 'Detailed Solution', assetPriority: 3 };
+    }
+    if (normalized.includes('model answer')) {
+      return { assetLabel: 'Model Answer', assetPriority: 2 };
+    }
+    return { assetLabel: 'Official Mark Scheme', assetPriority: 1 };
+  }
+
+  if (normalized.includes('unseen')) {
+    return { assetLabel: 'Unseen Paper', assetPriority: 2 };
+  }
+
+  return { assetLabel: 'Official Question Paper', assetPriority: 1 };
+}
+
+function extractPaperMeta(fileName: string) {
+  const rawFileName = fileName.replace(/\.pdf$/i, '');
+  const newFormatMatch = rawFileName.match(/(?:^|[_\s-])(\d+)(FR|HR|BR|CR|PR|F|H|B|C|P)(?=[_\s-]|$)/i)
+    || rawFileName.match(/_(\d+)([A-Za-z]+)_/);
+  const legacyMatch = rawFileName.match(/paper[\s-]*(\d+)([a-z]*)/i);
+
+  let paperNumber = 1;
+  let paperVariant = 'Core';
+  let paperTier: 'foundation' | 'higher' | 'core' | 'unknown' = 'core';
+
+  if (newFormatMatch) {
+    paperNumber = Number.parseInt(newFormatMatch[1], 10);
+    const suffix = newFormatMatch[2].toUpperCase();
+    if (suffix === 'FR') {
+      paperVariant = 'Regional';
+      paperTier = 'foundation';
+    } else if (suffix === 'HR') {
+      paperVariant = 'Regional';
+      paperTier = 'higher';
+    } else if (suffix.includes('BR') || suffix.includes('CR') || suffix.includes('PR')) {
+      paperVariant = 'Regional';
+      paperTier = 'core';
+    } else if (suffix.includes('F')) {
+      paperVariant = 'Foundation';
+      paperTier = 'foundation';
+    } else if (suffix.includes('H')) {
+      paperVariant = 'Higher';
+      paperTier = 'higher';
+    }
+  } else if (legacyMatch) {
+    paperNumber = Number.parseInt(legacyMatch[1], 10);
+    const suffix = legacyMatch[2].toLowerCase();
+    if (suffix === 'fr') {
+      paperVariant = 'Regional';
+      paperTier = 'foundation';
+    } else if (suffix === 'hr') {
+      paperVariant = 'Regional';
+      paperTier = 'higher';
+    } else if (suffix.includes('r')) {
+      paperVariant = 'Regional';
+      paperTier = 'core';
+    } else if (suffix === 'f') {
+      paperVariant = 'Foundation';
+      paperTier = 'foundation';
+    } else if (suffix === 'h') {
+      paperVariant = 'Higher';
+      paperTier = 'higher';
+    }
+  }
+
+  const lowerRawFileName = rawFileName.toLowerCase();
+  if (paperTier === 'core' && /\bfoundation\b/.test(lowerRawFileName)) {
+    paperVariant = 'Foundation';
+    paperTier = 'foundation';
+  } else if (paperTier === 'core' && /\bhigher\b/.test(lowerRawFileName)) {
+    paperVariant = 'Higher';
+    paperTier = 'higher';
+  }
+
+  let label = `Paper ${paperNumber}`;
+  if (paperVariant === 'Regional' && paperTier === 'foundation') label += ' Foundation (Regional)';
+  else if (paperVariant === 'Regional' && paperTier === 'higher') label += ' Higher (Regional)';
+  else if (paperVariant === 'Regional') label += ' (Regional)';
+  else if (paperVariant !== 'Core') label += ` ${paperVariant}`;
+
+  return { label, paperNumber, paperVariant, paperTier };
+}
+
+const pastPaperSessionMap = new Map<string, Map<string, PastPaperGroup>>();
+
+for (const path of subjectPastPaperPaths) {
+  const lowerPath = path.toLowerCase();
+  if (lowerPath.includes('examiner-report')) continue;
+
+  const parts = path.split('/');
+  const session = parts[4];
+  const paperType = parts[5];
+  const fileName = parts[parts.length - 1];
+  const href = pastPaperModules[path];
+
+  if (!session || !paperType || !href) continue;
+
+  const { label, paperNumber, paperVariant, paperTier } = extractPaperMeta(fileName);
+  const paperTypeName = (paperType === 'mark-scheme' || lowerPath.includes('mark-scheme'))
+    ? 'Mark Scheme'
+    : 'Question Paper';
+  const { assetLabel, assetPriority } = getAssetMeta(fileName, paperTypeName);
+
+  const entry: PastPaperEntry = {
+    label,
+    href,
+    fileName,
+    session,
+    sortDate: parseYearAndSessionToDate(session).getTime(),
+    paperNumber,
+    paperVariant,
+    paperTier,
+    paperTypeName,
+    assetLabel,
+    assetPriority,
+  };
+
+  const sessionGroups = pastPaperSessionMap.get(session) ?? new Map<string, PastPaperGroup>();
+  const existingGroup = sessionGroups.get(label) ?? {
+    label,
+    paperNumber,
+    paperVariant,
+    paperTier,
+    questionPapers: [],
+    markSchemes: [],
+  };
+
+  if (paperTypeName === 'Question Paper') {
+    if (!existingGroup.questionPapers.some((paper) => paper.fileName === entry.fileName)) {
+      existingGroup.questionPapers.push(entry);
+    }
+  } else if (!existingGroup.markSchemes.some((paper) => paper.fileName === entry.fileName)) {
+    existingGroup.markSchemes.push(entry);
+  }
+
+  sessionGroups.set(label, existingGroup);
+  pastPaperSessionMap.set(session, sessionGroups);
+}
+
+const pastPaperSessions: PastPaperSession[] = Array.from(pastPaperSessionMap.entries())
+  .map(([label, groupsMap]) => ({
+    label,
+    sortDate: parseYearAndSessionToDate(label).getTime(),
+    groups: Array.from(groupsMap.values())
+      .map((group) => ({
+        ...group,
+        questionPapers: group.questionPapers.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+        markSchemes: group.markSchemes.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+      }))
+      .sort((a, b) => {
+        if (a.paperNumber !== b.paperNumber) return a.paperNumber - b.paperNumber;
+        return (variantRank[a.paperVariant] ?? 99) - (variantRank[b.paperVariant] ?? 99);
+      }),
+  }))
+  .sort((a, b) => b.sortDate - a.sortDate);
+
+const totalPastPaperGroups = pastPaperSessions.reduce((sum, session) => sum + session.groups.length, 0);
+const hasPastPapers = pastPaperSessions.length > 0;
 
 const tabIcons: Record<string, string> = {
-  notes: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>',
+  notes: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2 0 0 1 0-5H20"/></svg>',
   synopsis: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   quiz: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>',
   practice: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>',
@@ -336,76 +512,85 @@ const tabIcons: Record<string, string> = {
               <div class="notes-panel animate-fade-in">
                 <div class="panel-card card">
                   <div class="card-header-accent" style={`background: ${subject.color}`}>
-                    <h2 class="panel-card-title">Practice Questions</h2>
+                    <h2 class="panel-card-title">Past Papers</h2>
                   </div>
                   <div class="card-body">
-                    {currentMockPapers.length > 0 || currentPastPaper ? (
-                      <div class="practice-sections">
-                        {currentMockPapers.length > 0 && (
-                          <div class="practice-section">
-                            <h3 class="practice-section-title">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-                              Mock Papers by EduOS Atlas
-                            </h3>
-                            <div class="practice-links">
-                              {currentMockPapers.map((resource) => (
-                                <a
-                                  href={resource.href}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  class="practice-link-card card glass"
-                                >
-                                  <div class="practice-link-main">
-                                    <div class="practice-link-icon" aria-hidden="true">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/><path d="M9 18h6"/><path d="M10 12h1"/></svg>
-                                    </div>
-                                    <div class="practice-link-copy">
-                                      <span class="practice-link-label">{resource.label}</span>
-                                      <span class="practice-link-description">{resource.description}</span>
-                                    </div>
-                                  </div>
-                                  <div class="practice-link-side">
-                                    <span class="practice-link-meta">{resource.meta}</span>
-                                    <span class="practice-link-action">Open</span>
-                                  </div>
-                                </a>
-                              ))}
+                    
+                    {hasPastPapers ? (
+                      <div class="past-papers-container" data-past-papers-root data-subject-id={subjectId}>
+                        <div class="past-papers-toolbar">
+                          <div class="past-papers-summary">
+                            <div>
+                              <p class="past-papers-eyebrow">Full archive</p>
+                              <p class="past-papers-copy">Question papers, official mark schemes, and extra solutions grouped by exam session.</p>
+                            </div>
+                            <div class="past-papers-metrics">
+                              <span class="past-papers-metric">{pastPaperSessions.length} sessions</span>
+                              <span class="past-papers-metric">{totalPastPaperGroups} paper sets</span>
                             </div>
                           </div>
-                        )}
-                        {currentPastPaper && (
-                          <div class="practice-section">
-                            <h3 class="practice-section-title">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                              Past Papers
-                            </h3>
-                            <p class="practice-section-desc">Official Pearson Edexcel past papers from the exam board.</p>
-                            <div class="practice-links">
-                              <a
-                                href={currentPastPaper.href}
-                                target="_blank"
-                                rel="noreferrer noopener"
-                                class="practice-link-card card glass external-link"
-                              >
-                                <div class="practice-link-main">
-                                  <div class="practice-link-icon" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                  </div>
-                                  <div class="practice-link-copy">
-                                    <span class="practice-link-label">{currentPastPaper.label}</span>
-                                    <span class="practice-link-description">{currentPastPaper.description}</span>
-                                  </div>
-                                </div>
-                                <div class="practice-link-side">
-                                  <span class="practice-link-meta">{currentPastPaper.meta}</span>
-                                  <span class="practice-link-action">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                  </span>
-                                </div>
-                              </a>
+
+                          {isMaths && (
+                            <div class="paper-filter-strip" data-filter-group="maths-tier">
+                              <button type="button" class="paper-filter-chip active" data-tier-filter="both">Show Both</button>
+                              <button type="button" class="paper-filter-chip" data-tier-filter="foundation">Show Foundation</button>
+                              <button type="button" class="paper-filter-chip" data-tier-filter="higher">Show Higher Tier</button>
                             </div>
-                          </div>
-                        )}
+                          )}
+                        </div>
+                        <div class="paper-filter-state" id="paper-filter-state">
+                          Science filter follows the separate science toggle. Maths filter can switch between foundation, higher, or both.
+                        </div>
+                        {pastPaperSessions.map((session) => {
+                          return (
+                            <div class="year-section" data-session-block>
+                              <div class="year-header">
+                                <span class="year-title">{session.label}</span>
+                                <span class="year-count" data-session-count>{session.groups.length} paper{session.groups.length === 1 ? '' : 's'}</span>
+                              </div>
+                              <div class="papers-list">
+                                {session.groups.map((group) => (
+                                  <div
+                                    class="paper-row"
+                                    data-paper-card
+                                    data-paper-number={String(group.paperNumber)}
+                                    data-paper-variant={group.paperVariant.toLowerCase()}
+                                    data-paper-tier={group.paperTier}
+                                  >
+                                    <div class="paper-meta">
+                                      <div class="paper-name">{group.label}</div>
+                                      <div class="paper-subtitle">
+                                        {group.paperVariant === 'Core'
+                                          ? 'Core route'
+                                          : group.paperVariant === 'Regional'
+                                            ? group.paperTier === 'foundation'
+                                              ? 'Regional foundation route'
+                                              : group.paperTier === 'higher'
+                                                ? 'Regional higher route'
+                                                : 'Regional route'
+                                            : `${group.paperVariant} route`}
+                                      </div>
+                                    </div>
+                                    <div class="paper-links">
+                                      {group.questionPapers.map((paper) => (
+                                        <a href={paper.href} target="_blank" rel="noreferrer" class="paper-link qp" title={paper.fileName}>
+                                          <span class="link-label">{paper.assetLabel}</span>
+                                          <span class="link-short">QP</span>
+                                        </a>
+                                      ))}
+                                      {group.markSchemes.map((paper) => (
+                                        <a href={paper.href} target="_blank" rel="noreferrer" class="paper-link ms" title={paper.fileName}>
+                                          <span class="link-label">{paper.assetLabel}</span>
+                                          <span class="link-short">MS</span>
+                                        </a>
+                                      ))}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
                     ) : practiceModule ? (
                       <div class="markdown-content">
@@ -479,233 +664,303 @@ const tabIcons: Record<string, string> = {
     return value.replace(/^["']|["']$/g, '').trim();
   }
 
-  function isQuizParagraphHeading(text: string) {
+  function isSectionHeader(text: string): boolean {
     const normalized = text.replace(/\*/g, '').replace(/\[[^\]]+\]/g, '').trim();
-    return /^(question|statement)\s+\d+$/i.test(normalized);
+    return /^(part\s+[a-z]|multiple choice|true[\/\s]*(or|and)\s*false|short answer|extended answer)/i.test(normalized);
   }
 
-  function isQuestionStartNode(node: Element) {
-    if (node.tagName === 'H3') {
-      return true;
-    }
-
-    if (node.tagName !== 'P') {
-      return false;
-    }
-
-    return isQuizParagraphHeading(node.textContent || '');
+  function isQuestionHeading(text: string): boolean {
+    const normalized = text.replace(/\*/g, '').replace(/\[[^\]]+\]/g, '').trim();
+    return /^(question|statement)\s+\d+/i.test(normalized);
   }
 
-  function isOptionLine(text: string) {
+  function isQuestionStartNode(node: Element): boolean {
+    if (node.tagName === 'H2' || node.tagName === 'H3') {
+      const text = node.textContent?.trim() || '';
+      return isQuestionHeading(text);
+    }
+    return false;
+  }
+
+  function isOptionLine(text: string): boolean {
     return /^[A-Z][\)\.]\s+/.test(text);
   }
 
-  function getLeadingLabel(text: string) {
+  function getLeadingLabel(text: string): string {
     const match = text.match(/^([A-Z])[\)\.]\s+/);
     return match ? match[1] : '';
   }
 
-  function stripLeadingLabel(text: string) {
+  function stripLeadingLabel(text: string): string {
     return text.replace(/^[A-Z][\)\.]\s+/, '').trim();
   }
 
-  function normalizeAnswerValue(value: string) {
+  function normalizeAnswerValue(value: string): string {
     return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
   }
 
-  function parseAnswerLine(text: string) {
-    const normalizedText = stripHtmlTags(text) || text;
-
-    // Check if the text is JUST True or False OR starts with it (for physics explanations on same line)
-    const cleanText = normalizedText.replace(/\*/g, '').trim().toUpperCase();
-    if (/^(TRUE|FALSE)/.test(cleanText)) {
-      // Extract just the TRUE/FALSE part
-      const match = cleanText.match(/^(TRUE|FALSE)/);
-      return match ? match[0] : cleanText;
-    }
-
-    return normalizedText
-      .replace(/^[\s\*]*\*\*[\s\*]*answer:\*\*[\s\*]*/i, '')
-      .replace(/^[\s\*]*correct answer:\*\*[\s\*]*/i, '')
-      .replace(/^[\s\*]*answer:\s*/i, '')
-      .replace(/^[\s\*]*correct answer:\s*/i, '')
-      .replace(/^[\s\*]*answer:\s*/i, '')
-      .replace(/[\s\*]+$/, '')
-      .trim();
-  }
-
-  function parseExplanationLine(text: string) {
-    const normalizedText = stripHtmlTags(text) || text;
-    return normalizedText
-      .replace(/^[\s\*]*\*\*(explanation|correction):\*\*[\s\*]*/i, '$1:')
-      .replace(/^[\s\*]*\*\*(explanation|correction)\*\*:\s*/i, '')
-      .replace(/^[\s\*]*(explanation|correction):\s*/i, '')
-      .replace(/[\s\*]+$/, '')
-      .trim();
-  }
-
-  function parseInlineTrueFalseExplanation(text: string) {
-    const normalizedText = stripHtmlTags(text) || text;
-    return normalizedText
-      .replace(/^[\s\*]*(true|false)\b[\s\*]*[:\-–—]?\s*/i, '')
-      .replace(/[\s\*]+$/, '')
-      .trim();
-  }
-
-  function stripHtmlTags(value: string) {
+  function stripHtmlTags(value: string): string {
     const temp = document.createElement('div');
     temp.innerHTML = value;
     return temp.textContent?.trim() || '';
   }
 
-  function getParagraphLines(node: Element, keepHtml: boolean = false) {
-    if (keepHtml) {
-      return node.innerHTML
-        .split(/<br\s*\/?>/i)
-        .map((line) => line.replace(/\u00a0/g, ' ').trim())
-        .filter(Boolean);
+  function parseAnswerLine(text: string): { value: string; raw: string } {
+    const normalizedText = stripHtmlTags(text) || text;
+    const cleanText = normalizedText.replace(/\*/g, '').trim().toUpperCase();
+    
+    if (/^(TRUE|FALSE)/.test(cleanText)) {
+      const match = cleanText.match(/^(TRUE|FALSE)/);
+      return { value: match ? match[0] : '', raw: normalizedText };
     }
-    return node.innerHTML
-      .split(/<br\s*\/?>/i)
-      .map((line) => stripHtmlTags(line))
-      .map((line) => line.replace(/\u00a0/g, ' ').trim())
-      .filter(Boolean);
+
+    const extracted = normalizedText
+      .replace(/\*\*/g, '')
+      .replace(/^[\s]*answer:\s*/i, '')
+      .replace(/^[\s]*correct answer:\s*/i, '')
+      .replace(/\s*$/, '')
+      .trim();
+
+    return { value: extracted, raw: extracted };
   }
 
-  function parseQuizBlock(nodes: Element[]) {
+  function parseExplanation(text: string): string {
+    const normalizedText = stripHtmlTags(text) || text;
+    return normalizedText
+      .replace(/\*\*/g, '')
+      .replace(/^(explanation|correction):\s*/i, '')
+      .replace(/^mark scheme:\s*/i, '')
+      .trim();
+  }
+
+  function parseMarkScheme(text: string): string {
+    const normalizedText = stripHtmlTags(text) || text;
+    return normalizedText
+      .replace(/\*\*/g, '')
+      .replace(/^mark scheme:?\s*/i, '')
+      .trim();
+  }
+
+  function extractOptionsFromContent(nodes: Element[]): { options: Array<{value: string; label: string}>; promptEndIndex: number } {
+    const options: Array<{value: string; label: string}> = [];
+    const optionPattern = /^([A-Z])[\)\.]\s+(.+)/;
+    
+    function processText(text: string): void {
+      const lines = text.split(/\n|<br\s*\/?>/i).map(l => l.trim()).filter(l => l);
+      for (const line of lines) {
+        const cleanLine = line.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        const match = cleanLine.match(optionPattern);
+        if (match) {
+          options.push({ value: match[1].toUpperCase(), label: match[2].trim() });
+        }
+      }
+    }
+    
+    for (let i = 0; i < nodes.length; i++) {
+      const node = nodes[i];
+      
+      if (node.tagName === 'P') {
+        const html = node.innerHTML;
+        const text = node.textContent || '';
+        const normalizedText = text.replace(/\s+/g, ' ').trim();
+        if (optionPattern.test(normalizedText) || /^([A-Z][\)\.]\s*.){2}/.test(normalizedText)) {
+          processText(html);
+          continue;
+        }
+      }
+      
+      if (node.tagName === 'UL' || node.tagName === 'OL') {
+        const listItems = Array.from(node.querySelectorAll('li'));
+        let foundOptionInList = false;
+        
+        for (const li of listItems) {
+          const text = li.textContent || '';
+          const match = text.match(/^([A-Z])[\)\.]\s+(.+)/);
+          if (match) {
+            options.push({ value: match[1].toUpperCase(), label: match[2].trim() });
+            foundOptionInList = true;
+          }
+        }
+        
+        if (foundOptionInList) continue;
+      }
+      
+      if (node.tagName === 'TABLE') {
+        const rows = node.querySelectorAll('tr');
+        for (const row of rows) {
+          const cells = row.querySelectorAll('td, th');
+          for (const cell of cells) {
+            const text = cell.textContent || '';
+            const match = text.match(/^([A-Z])[\)\.]\s+(.+)/);
+            if (match) {
+              options.push({ value: match[1].toUpperCase(), label: match[2].trim() });
+            }
+          }
+        }
+        if (options.length > 0) continue;
+      }
+      
+      const cleanText = stripHtmlTags(node.innerHTML);
+      if (/^answer:\s*(true|false)/i.test(cleanText) || /^correct answer:\s*(true|false)/i.test(cleanText)) {
+        break;
+      }
+      if (/^answer:\s*/i.test(cleanText) || /^correct answer:\s*/i.test(cleanText)) {
+        break;
+      }
+    }
+    
+    return { options, promptEndIndex: -1 };
+  }
+
+  function parseQuizBlock(nodes: Element[]): any {
     const heading = nodes[0];
     const headingText = heading.textContent?.trim() || '';
-    console.log('[Quiz] parseQuizBlock called, heading:', headingText);
     const contentNodes = nodes.slice(1);
     
-    // Check for Short Answer Questions (SAQ)
-    const isSAQ = contentNodes.some((node) => 
-      node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme|m1|a1)/i.test(node.textContent?.replace(/\*/g, '') || '')
+    const isStatementTF = /statement\s*\d+/i.test(headingText);
+    const isSAQ = /mark scheme/i.test(headingText) || contentNodes.some(n => 
+      /^[\s\*]*mark scheme/i.test(stripHtmlTags(n.innerHTML))
     );
 
-    if (isSAQ) {
-      const markSchemeIndex = contentNodes.findIndex((node) => 
-        node.tagName === 'P' && /^[\s\*]*(mark scheme:|mark scheme|m1|a1)/i.test(node.textContent?.replace(/\*/g, '') || '')
+    if (isSAQ && !isStatementTF) {
+      const markSchemeIndex = contentNodes.findIndex(n => 
+        /^[\s\*]*mark scheme/i.test(stripHtmlTags(n.innerHTML))
       );
+      
+      if (markSchemeIndex !== -1) {
+        const promptHtml = contentNodes.slice(0, markSchemeIndex).map(n => n.outerHTML).join('');
+        const explanationHtml = contentNodes.slice(markSchemeIndex).map(n => {
+          const text = stripHtmlTags(n.innerHTML);
+          if (/^mark scheme/i.test(text)) {
+            return parseMarkScheme(text);
+          }
+          return n.outerHTML;
+        }).join('<br>');
+        
+        return {
+          isSAQ: true,
+          heading: headingText,
+          prompt: promptHtml,
+          options: [],
+          correctValue: '',
+          answerLabel: 'Mark Scheme',
+          explanation: explanationHtml,
+        };
+      }
+    }
 
-      const promptHtml = contentNodes.slice(0, markSchemeIndex).map(n => n.outerHTML).join('');
-      const explanationHtml = contentNodes.slice(markSchemeIndex + 1).map(n => n.outerHTML).join('');
+    const textLines: string[] = [];
+    const htmlLines: string[] = [];
+    
+    for (const node of contentNodes) {
+      if (['P', 'LI', 'TH', 'TD'].includes(node.tagName)) {
+        textLines.push(stripHtmlTags(node.innerHTML));
+        htmlLines.push(node.innerHTML);
+      } else if (node.tagName === 'UL' || node.tagName === 'OL') {
+        for (const li of Array.from(node.children)) {
+          textLines.push(stripHtmlTags(li.innerHTML));
+          htmlLines.push(li.innerHTML);
+        }
+      }
+    }
 
+    let answerIndex = -1;
+    let explanationIndex = -1;
+    let markSchemeIndex = -1;
+    let isTrueFalseAnswer = false;
+    
+    for (let i = 0; i < textLines.length; i++) {
+      const text = textLines[i].replace(/\*/g, '');
+      if (/^answer:\s*(true|false)/i.test(text) || /^correct answer:\s*(true|false)/i.test(text)) {
+        if (answerIndex === -1) {
+          answerIndex = i;
+          isTrueFalseAnswer = true;
+        }
+      }
+      if (/^answer:\s*[a-z]/i.test(text) && !/^answer:\s*(true|false)/i.test(text)) {
+        if (answerIndex === -1) answerIndex = i;
+      }
+      if (/^explanation:/i.test(text) || /^correction:/i.test(text)) {
+        if (explanationIndex === -1) explanationIndex = i;
+      }
+      if (/^mark scheme/i.test(text)) {
+        if (markSchemeIndex === -1) markSchemeIndex = i;
+      }
+    }
+
+    const { options } = extractOptionsFromContent(contentNodes);
+    const hasMCQOptions = options.length >= 2;
+    
+    if (answerIndex === -1 && !isStatementTF && !hasMCQOptions) {
+      return null;
+    }
+
+    let correctValue = '';
+    let answerLabel = '';
+    
+    if (answerIndex !== -1) {
+      const { value } = parseAnswerLine(textLines[answerIndex]);
+      if (isTrueFalseAnswer) {
+        correctValue = normalizeAnswerValue(value);
+        answerLabel = correctValue.charAt(0).toUpperCase() + correctValue.slice(1);
+      } else {
+        const match = value.match(/^[A-Z]/);
+        correctValue = match ? match[0].toUpperCase() : '';
+        answerLabel = textLines[answerIndex].replace(/\*\*/g, '').replace(/^answer:\s*/i, '').replace(/^correct answer:\s*/i, '').trim();
+      }
+    }
+
+    let promptEndIndex = answerIndex !== -1 ? answerIndex : (explanationIndex !== -1 ? explanationIndex : textLines.length);
+    if (markSchemeIndex !== -1 && markSchemeIndex < promptEndIndex) {
+      promptEndIndex = markSchemeIndex;
+    }
+    
+    const optionLinePattern = /^([A-Z])[\)\.]\s+/;
+    const isTrueFalseQuestion = isTrueFalseAnswer || isStatementTF;
+    const promptHtmlParts: string[] = [];
+    for (let i = 0; i < promptEndIndex && i < htmlLines.length; i++) {
+      const textLine = textLines[i] || '';
+      const normalizedLine = textLine.replace(/\s+/g, ' ').trim();
+      if (isTrueFalseQuestion || !optionLinePattern.test(normalizedLine)) {
+        promptHtmlParts.push(htmlLines[i]);
+      }
+    }
+    const promptHtml = promptHtmlParts.join('');
+    
+    let explanationHtml = 'Review the chapter notes for the reasoning.';
+    if (explanationIndex !== -1) {
+      explanationHtml = textLines.slice(explanationIndex).map(t => parseExplanation(t)).join('<br>');
+    } else if (markSchemeIndex !== -1) {
+      explanationHtml = textLines.slice(markSchemeIndex).map(t => parseMarkScheme(t)).join('<br>');
+    }
+
+    if ((isTrueFalseAnswer || isStatementTF) && !hasMCQOptions) {
       return {
-        isSAQ: true,
+        isTrueFalse: true,
         heading: headingText,
         prompt: promptHtml,
-        options: [],
-        correctValue: '',
-        answerLabel: '',
+        options: [
+          { value: 'true', label: 'True' },
+          { value: 'false', label: 'False' },
+        ],
+        correctValue,
+        answerLabel,
         explanation: explanationHtml,
       };
     }
 
-    const quizBlocks = contentNodes.filter((node) => ['P', 'UL', 'OL', 'LI'].includes(node.tagName));
+    const validOptions = options.filter(o => o.value && o.label);
     
-    function getNodesContent(nodes: Element[], keepHtml: boolean) {
-      return nodes.flatMap((node) => {
-        if (node.tagName === 'P' || node.tagName === 'LI') {
-          return getParagraphLines(node, keepHtml);
-        } else if (node.tagName === 'UL' || node.tagName === 'OL') {
-          return Array.from(node.children).flatMap((li) => getParagraphLines(li, keepHtml));
-        }
-        return [];
-      });
-    }
-
-    const textParagraphs = getNodesContent(quizBlocks, false);
-    const htmlParagraphs = getNodesContent(quizBlocks, true);
-    console.log('[Quiz] textParagraphs:', textParagraphs.slice(0, 5));
-
-    const optionIndices = textParagraphs
-      .map((text, index) => (isOptionLine(text) ? index : -1))
-      .filter((index) => index !== -1);
-    const firstOptionIndex = optionIndices[0] ?? -1;
-
-    // Find answer line - look in ALL text paragraphs
-    // Look for "Answer:" OR just "TRUE"/"FALSE"
-    const answerIndex = textParagraphs.findIndex((text) => {
-      const clean = text.replace(/\*/g, '').trim().toUpperCase();
-      return (
-        /^[\s\*]*(answer:|correct answer:)/i.test(text.replace(/\*/g, '')) ||
-        /^(TRUE|FALSE)\b/.test(clean)
-      ) && !/(explanation|correction):/i.test(text);
-    });
-    
-    console.log('[Quiz] answerLine:', answerIndex !== -1 ? textParagraphs[answerIndex] : 'NOT FOUND');
-    if (answerIndex === -1) {
-      console.log('[Quiz] Returning null - no answer line found');
-      return null;
-    }
-    const answerLine = textParagraphs[answerIndex];
-
-    const explanationIndex = textParagraphs.findIndex((text) => /^[\s\*]*(explanation|correction):/i.test(text.replace(/\*/g, '')));
-
-    const answerValue = parseAnswerLine(answerLine);
-    const isTrueFalse = /statement/i.test(headingText) || /^(TRUE|FALSE)/.test(answerValue.toUpperCase());
-
-    let options = optionIndices.map((index) => ({
-      value: getLeadingLabel(stripHtmlTags(htmlParagraphs[index])),
-      label: stripLeadingLabel(htmlParagraphs[index]),
-    }));
-
-    const promptEndCandidates = [firstOptionIndex, answerIndex, explanationIndex].filter((index) => index !== -1);
-    const promptEndIndex = promptEndCandidates.length ? Math.min(...promptEndCandidates) : textParagraphs.length;
-    const promptHtml = htmlParagraphs
-      .slice(0, promptEndIndex)
-      .filter((html) => !isQuizParagraphHeading(stripHtmlTags(html)))
-      .join('');
-
-    let answerHtml = parseAnswerLine(htmlParagraphs[answerIndex] || answerLine);
-    if (!answerHtml) {
-      const answerContinuation = htmlParagraphs
-        .slice(answerIndex + 1, explanationIndex === -1 ? undefined : explanationIndex)
-        .filter((html) => !isOptionLine(stripHtmlTags(html)))
-        .map((html) => stripHtmlTags(html))
-        .filter(Boolean);
-      if (answerContinuation.length) {
-        answerHtml = answerContinuation.join(' ');
-      }
-    }
-
-    let correctValue = '';
-    if (isTrueFalse) {
-      options = [
-        { value: 'true', label: 'True' },
-        { value: 'false', label: 'False' },
-      ];
-      correctValue = normalizeAnswerValue(answerValue);
-    } else {
-      const answerMatch = answerValue.match(/[A-Z]/i);
-      correctValue = answerMatch ? answerMatch[0].toUpperCase() : '';
-    }
-
-    const inlineTrueFalseExplanation = isTrueFalse ? parseInlineTrueFalseExplanation(answerLine) : '';
-    const explanationHtml =
-      explanationIndex === -1
-        ? inlineTrueFalseExplanation || 'Review the marked answer and chapter notes for the reasoning.'
-        : htmlParagraphs
-            .slice(explanationIndex)
-            .map((html, index) => (index === 0 ? parseExplanationLine(html) : html))
-            .filter(Boolean)
-            .join('<br />');
-
-    options = options.filter((option) => option.value && option.label);
-
-    // If options not found but answer is valid, still return (may be broken format)
-    // For MCQ we need options, for True/False we don't
-    if (!options.length && !isTrueFalse && !correctValue) {
+    if (validOptions.length < 2 && correctValue.length === 0) {
       return null;
     }
 
     return {
       heading: headingText,
-      prompt: promptHtml || headingText,
-      options,
+      prompt: promptHtml,
+      options: validOptions,
       correctValue,
-      answerLabel: answerHtml,
+      answerLabel,
       explanation: explanationHtml,
     };
   }
@@ -896,37 +1151,37 @@ const tabIcons: Record<string, string> = {
 
   function initQuizCards() {
     const quizContent = document.querySelector('#tab-quiz .markdown-content') || document.querySelector('.tab-content#tab-quiz .markdown-content');
-    console.log('[Quiz] quizContent found:', !!quizContent);
-    if (!quizContent) {
-      // Try all markdown-content elements
-      const allContent = document.querySelectorAll('.markdown-content');
-      console.log('[Quiz] All markdown-content elements:', allContent.length);
-      for (const el of allContent) {
-        const parent = el.closest('.tab-content');
-        console.log('[Quiz] Content parent ID:', parent?.id);
-      }
-    }
-    console.log('[Quiz] Starting initQuizCards');
-    if (!(quizContent instanceof HTMLElement) || quizContent.dataset.enhanced === 'true') {
-      console.log('[Quiz] Returning early, enhanced:', quizContent?.dataset?.enhanced);
+    if (!quizContent || !(quizContent instanceof HTMLElement) || quizContent.dataset.enhanced === 'true') {
       return;
     }
 
     const children = Array.from(quizContent.children);
-    console.log('[Quiz] Children count:', children.length);
     const fragment = document.createDocumentFragment();
     const interactiveQuestions: ReturnType<typeof parseQuizBlock>[] = [];
 
+    function isSectionHeadingNode(node: Element): boolean {
+      if (node.tagName === 'H2' || node.tagName === 'H3') {
+        const text = node.textContent?.trim() || '';
+        return isSectionHeader(text);
+      }
+      return false;
+    }
+
     for (let index = 0; index < children.length; index += 1) {
       const node = children[index];
-      console.log('[Quiz] Node:', node.tagName);
 
-      const isHeading = isQuestionStartNode(node);
-      if (isHeading) {
-        const blockNodes = [node];
+      if (isSectionHeadingNode(node)) {
+        continue;
+      }
+
+      if (isQuestionStartNode(node)) {
+        const blockNodes: Element[] = [node];
         let nextIndex = index + 1;
 
-        while (nextIndex < children.length && !isQuestionStartNode(children[nextIndex])) {
+        while (nextIndex < children.length && 
+               !isQuestionStartNode(children[nextIndex]) && 
+               !isSectionHeadingNode(children[nextIndex]) &&
+               children[nextIndex].tagName !== 'HR') {
           blockNodes.push(children[nextIndex]);
           nextIndex += 1;
         }
@@ -956,15 +1211,22 @@ const tabIcons: Record<string, string> = {
         <div class="quiz-intro-copy">
           <span class="quiz-intro-kicker">Interactive quiz mode</span>
           <h3 class="quiz-intro-title">Tap an answer to reveal the explanation instantly.</h3>
-          <p class="quiz-intro-text">${interactiveQuestions.length} questions were upgraded with instant feedback so you can check the reasoning right away.</p>
+          <p class="quiz-intro-text">${interactiveQuestions.length} question${interactiveQuestions.length === 1 ? '' : 's'} upgraded with instant feedback.</p>
         </div>
       `;
-      quizContent.append(introCard);
+      fragment.prepend(introCard);
     }
 
     quizContent.append(fragment);
     quizContent.dataset.enhanced = 'true';
     quizContent.classList.add('quiz-enhanced');
+
+    // Render LaTeX in all quiz cards
+    setTimeout(() => {
+      if (typeof (window as any).renderMath === 'function') {
+        (window as any).renderMath(quizContent);
+      }
+    }, 100);
   }
   
   // Run on page load
@@ -998,6 +1260,8 @@ const tabIcons: Record<string, string> = {
         el.classList.add('hidden');
       }
     });
+
+    applyPastPaperFilters();
   }
 
   function markSeparationOnlySections() {
@@ -1059,6 +1323,104 @@ const tabIcons: Record<string, string> = {
   if (toggle) {
     updateSeparateScienceContent(toggle.checked);
   }
+
+  function getMathsTierFilter(): 'both' | 'foundation' | 'higher' {
+    const saved = localStorage.getItem('mathsPastPaperTier');
+    if (saved === 'foundation' || saved === 'higher') return saved;
+    return 'both';
+  }
+
+  function updatePastPaperFilterStateText(subjectId: string, visibleCards: number) {
+    const state = document.getElementById('paper-filter-state');
+    if (!state) return;
+
+    const separateScienceToggle = document.getElementById('separate-science-toggle') as HTMLInputElement | null;
+    const showSeparateScience = separateScienceToggle?.checked ?? true;
+    const mathsTier = getMathsTierFilter();
+
+    if (subjectId === 'maths') {
+      const mathsLabel = mathsTier === 'both' ? 'both tiers' : `${mathsTier} tier`;
+      state.textContent = `Showing ${visibleCards} paper set${visibleCards === 1 ? '' : 's'} for ${mathsLabel}.`;
+      return;
+    }
+
+    if (subjectId === 'biology' || subjectId === 'chemistry' || subjectId === 'physics') {
+      state.textContent = showSeparateScience
+        ? `Showing all available paper sets, including separate science papers.`
+        : `Showing paper 1 only. Turn on separate science to reveal the full archive.`;
+      return;
+    }
+
+    state.textContent = `Showing ${visibleCards} paper set${visibleCards === 1 ? '' : 's'} in the full archive.`;
+  }
+
+  function applyPastPaperFilters() {
+    const root = document.querySelector('[data-past-papers-root]') as HTMLElement | null;
+    if (!root) return;
+
+    const subjectId = root.dataset.subjectId || '';
+    const separateScienceToggle = document.getElementById('separate-science-toggle') as HTMLInputElement | null;
+    const showSeparateScience = separateScienceToggle?.checked ?? true;
+    const mathsTier = getMathsTierFilter();
+
+    let visibleCards = 0;
+    root.querySelectorAll<HTMLElement>('[data-session-block]').forEach((sessionBlock) => {
+      const cards = Array.from(sessionBlock.querySelectorAll<HTMLElement>('[data-paper-card]'));
+      let visibleInSession = 0;
+
+      cards.forEach((card) => {
+        const paperNumber = card.dataset.paperNumber || '';
+        const paperTier = card.dataset.paperTier || 'core';
+        let showCard = true;
+
+        if ((subjectId === 'biology' || subjectId === 'chemistry' || subjectId === 'physics') && !showSeparateScience) {
+          showCard = paperNumber === '1';
+        }
+
+        if (subjectId === 'maths' && mathsTier !== 'both') {
+          showCard = paperTier === mathsTier;
+        }
+
+        card.classList.toggle('hidden', !showCard);
+        if (showCard) {
+          visibleCards += 1;
+          visibleInSession += 1;
+        }
+      });
+
+      sessionBlock.classList.toggle('hidden', visibleInSession === 0);
+      const count = sessionBlock.querySelector<HTMLElement>('[data-session-count]');
+      if (count) {
+        count.textContent = `${visibleInSession} paper${visibleInSession === 1 ? '' : 's'}`;
+      }
+    });
+
+    updatePastPaperFilterStateText(subjectId, visibleCards);
+  }
+
+  function initPastPaperFilters() {
+    const root = document.querySelector('[data-past-papers-root]') as HTMLElement | null;
+    if (!root) return;
+
+    const tierButtons = Array.from(document.querySelectorAll<HTMLElement>('[data-tier-filter]'));
+    if (tierButtons.length > 0) {
+      const savedTier = getMathsTierFilter();
+      tierButtons.forEach((button) => {
+        button.classList.toggle('active', button.dataset.tierFilter === savedTier);
+        button.addEventListener('click', () => {
+          const nextTier = button.dataset.tierFilter;
+          if (nextTier !== 'both' && nextTier !== 'foundation' && nextTier !== 'higher') return;
+          localStorage.setItem('mathsPastPaperTier', nextTier);
+          tierButtons.forEach((candidate) => candidate.classList.toggle('active', candidate === button));
+          applyPastPaperFilters();
+        });
+      });
+    }
+
+    applyPastPaperFilters();
+  }
+
+  initPastPaperFilters();
 
   function markDiagramReferences() {
     const contentAreas = document.querySelectorAll('.markdown-content');
@@ -1372,7 +1734,6 @@ const tabIcons: Record<string, string> = {
     padding: 1.35rem;
     text-decoration: none;
     color: var(--app-text);
-    border-width: 2px;
     transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
   }
 
@@ -1395,8 +1756,8 @@ const tabIcons: Record<string, string> = {
     width: 3rem;
     height: 3rem;
     border-radius: 1rem;
-    background: color-mix(in srgb, var(--app-accent) 14%, white);
-    color: var(--app-accent);
+    background: color-mix(in srgb, var(--accent-color) 14%, transparent);
+    color: var(--accent-color);
     flex-shrink: 0;
   }
 
@@ -1452,26 +1813,252 @@ const tabIcons: Record<string, string> = {
     background: color-mix(in srgb, var(--app-accent) 6%, var(--app-surface));
   }
 
-  .practice-sections {
+  /* Past Papers Container */
+  .past-papers-container {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
   }
 
-  .practice-section-title {
+  .past-papers-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .past-papers-summary {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--app-text);
-    margin-bottom: 0.75rem;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--app-border);
+    border-radius: 1rem;
+    background:
+      radial-gradient(circle at top left, color-mix(in srgb, var(--app-accent) 18%, transparent), transparent 42%),
+      linear-gradient(180deg, var(--app-surface), var(--app-surface-muted));
   }
 
-  .practice-section-desc {
-    font-size: 1.05rem;
+  .past-papers-eyebrow {
+    margin: 0 0 0.25rem;
+    color: var(--app-accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .past-papers-copy {
+    margin: 0;
     color: var(--app-text-muted);
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .past-papers-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .past-papers-metric {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 7rem;
+    padding: 0.65rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--app-accent) 25%, var(--app-border));
+    background: color-mix(in srgb, var(--app-accent) 10%, var(--app-surface));
+    color: var(--app-text);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .paper-filter-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .paper-filter-chip {
+    appearance: none;
+    border: 1px solid color-mix(in srgb, var(--app-accent) 22%, var(--app-border));
+    background: var(--app-surface);
+    color: var(--app-text);
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    font: inherit;
+    font-size: 0.86rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .paper-filter-chip:hover,
+  .paper-filter-chip.active {
+    background: color-mix(in srgb, var(--app-accent) 12%, var(--app-surface));
+    border-color: color-mix(in srgb, var(--app-accent) 55%, var(--app-border));
+    transform: translateY(-1px);
+  }
+
+  .paper-filter-state {
+    color: var(--app-text-muted);
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  .year-section {
+    background: var(--app-surface-muted);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--app-border);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+  }
+
+  .year-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.85rem 1.25rem;
+    background: linear-gradient(135deg, var(--app-accent) 0%, color-mix(in srgb, var(--app-accent) 65%, black) 100%);
+  }
+
+  .year-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+
+  .year-count {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .papers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.4rem;
+  }
+
+  .paper-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .paper-name {
+    font-weight: 600;
+    color: var(--app-text);
+    font-size: 1rem;
+  }
+
+  .paper-subtitle {
+    color: var(--app-text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .paper-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.85rem;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .paper-row:hover {
+    background: var(--app-surface);
+    transform: translateY(-1px);
+  }
+
+  .paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .paper-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    min-width: 8.5rem;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .paper-link.qp {
+    background: #3b82f6;
+    color: white;
+  }
+
+  .paper-link.qp:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  }
+
+  .paper-link.ms {
+    background: #22c55e;
+    color: white;
+  }
+
+  .paper-link.ms:hover {
+    background: #16a34a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  }
+
+  .link-label {
+    white-space: nowrap;
+  }
+
+  .link-short {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2rem;
+    padding: 0.28rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 720px) {
+    .past-papers-summary,
+    .year-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .past-papers-metrics,
+    .paper-links {
+      width: 100%;
+    }
+
+    .paper-link {
+      flex: 1 1 0;
+      min-width: 0;
+      justify-content: space-between;
+    }
   }
 
   /* Markdown Content Styling */
@@ -1894,5 +2481,39 @@ const tabIcons: Record<string, string> = {
     }
   }
 
-  .debug-info { display: none; }
-</style>
+  .practice-link-card {
+    border: 1px solid var(--app-border);
+    border-left: 5px solid var(--accent-color);
+  }
+
+  .papers-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .papers-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .papers-column {
+    border: 1px solid var(--app-border);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .column-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .practice-link-icon {
+    background: color-mix(in srgb, var(--accent-color) 14%, white);
+    color: var(--accent-color);
+  }
+
+  .debug-info { display: block; background: #eee; padding: 1rem; margin: 1rem 0; color: #111 }
+:global([data-theme='dark']) .debug-info { background: #333; color: #fff; }

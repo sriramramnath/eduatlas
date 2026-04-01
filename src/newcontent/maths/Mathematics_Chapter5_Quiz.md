@@ -5,9 +5,7 @@
 
 ## 📋 SECTION A: Multiple Choice Questions (10 marks)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 Calculate $3 + 4 \times 2^2 - 6 \div 2$

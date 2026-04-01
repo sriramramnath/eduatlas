@@ -6,10 +6,6 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
-**Choose the correct answer for each question.**
-
----
-
 ### Question 1
 According to collision theory, what must happen for a reaction to occur?
 

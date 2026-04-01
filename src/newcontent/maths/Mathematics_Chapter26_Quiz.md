@@ -5,9 +5,7 @@
 
 ## SECTION A: MULTIPLE CHOICE QUESTIONS (10 marks)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 

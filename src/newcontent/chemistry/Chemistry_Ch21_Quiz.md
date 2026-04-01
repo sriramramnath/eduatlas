@@ -6,9 +6,7 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 Which symbol is used to represent a reversible reaction?

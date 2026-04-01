@@ -6,9 +6,7 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
-**Choose the correct answer for each question.**
 
----
 
 ### Question 1
 Which statement about exothermic reactions is correct?

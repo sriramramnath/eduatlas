@@ -6,16 +6,17 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
+Select the correct answer for each question.
+
+---
+
 ### Question 1
 Who developed the first widely accepted periodic table?
 
-A) John Dalton
-
-B) Dmitri Mendeleev
-
-C) John Newlands
-
-D) Ernest Rutherford
+A) John Dalton  
+B) Dmitri Mendeleev  
+C) John Newlands  
+D) Ernest Rutherford  
 
 **Answer: B**
 
@@ -26,13 +27,10 @@ D) Ernest Rutherford
 ### Question 2
 How are elements arranged in the modern periodic table?
 
-A) By atomic mass
-
-B) By number of neutrons
-
-C) By atomic number
-
-D) By number of electrons
+A) By atomic mass  
+B) By number of neutrons  
+C) By atomic number  
+D) By number of electrons  
 
 **Answer: C**
 
@@ -43,13 +41,10 @@ D) By number of electrons
 ### Question 3
 What do elements in the same group have in common?
 
-A) Same number of protons
-
-B) Same number of electron shells
-
-C) Same number of outer shell electrons
-
-D) Same atomic mass
+A) Same number of protons  
+B) Same number of electron shells  
+C) Same number of outer shell electrons  
+D) Same atomic mass  
 
 **Answer: C**
 
@@ -60,13 +55,10 @@ D) Same atomic mass
 ### Question 4
 Which statement about alkali metals is correct?
 
-A) They are hard and dense
-
-B) They have high melting points
-
-C) They react vigorously with water
-
-D) They form +2 ions
+A) They are hard and dense  
+B) They have high melting points  
+C) They react vigorously with water  
+D) They form +2 ions  
 
 **Answer: C**
 
@@ -77,13 +69,10 @@ D) They form +2 ions
 ### Question 5
 Which halogen is a liquid at room temperature?
 
-A) Fluorine
-
-B) Chlorine
-
-C) Bromine
-
-D) Iodine
+A) Fluorine  
+B) Chlorine  
+C) Bromine  
+D) Iodine  
 
 **Answer: C**
 
@@ -94,13 +83,10 @@ D) Iodine
 ### Question 6
 What happens when chlorine is added to sodium bromide solution?
 
-A) No reaction occurs
-
-B) Sodium chloride and bromine are formed
-
-C) Sodium chlorate is formed
-
-D) Chlorine gas is released
+A) No reaction occurs  
+B) Sodium chloride and bromine are formed  
+C) Sodium chlorate is formed  
+D) Chlorine gas is released  
 
 **Answer: B**
 
@@ -111,13 +97,10 @@ D) Chlorine gas is released
 ### Question 7
 Why are noble gases unreactive?
 
-A) They have low atomic mass
-
-B) They have full outer electron shells
-
-C) They have no electrons
-
-D) They are all metals
+A) They have low atomic mass  
+B) They have full outer electron shells  
+C) They have no electrons  
+D) They are all metals  
 
 **Answer: B**
 
@@ -128,13 +111,10 @@ D) They are all metals
 ### Question 8
 Which property increases down Group 1?
 
-A) Melting point
-
-B) Density
-
-C) Reactivity
-
-D) Electronegativity
+A) Melting point  
+B) Density  
+C) Reactivity  
+D) Electronegativity  
 
 **Answer: C**
 
@@ -145,13 +125,10 @@ D) Electronegativity
 ### Question 9
 Which property decreases down Group 7?
 
-A) Atomic radius
-
-B) Melting point
-
-C) Reactivity
-
-D) Boiling point
+A) Atomic radius  
+B) Melting point  
+C) Reactivity  
+D) Boiling point  
 
 **Answer: C**
 
@@ -162,13 +139,10 @@ D) Boiling point
 ### Question 10
 Which statement about transition metals is correct?
 
-A) They have low melting points
-
-B) They are all very reactive
-
-C) They can form ions with different charges
-
-D) They are found in Group 1
+A) They have low melting points  
+B) They are all very reactive  
+C) They can form ions with different charges  
+D) They are found in Group 1  
 
 **Answer: C**
 
@@ -179,13 +153,10 @@ D) They are found in Group 1
 ### Question 11
 What colour is copper(II) sulfate solution?
 
-A) Green
-
-B) Blue
-
-C) Yellow
-
-D) Purple
+A) Green  
+B) Blue  
+C) Yellow  
+D) Purple  
 
 **Answer: B**
 
@@ -196,13 +167,10 @@ D) Purple
 ### Question 12
 Which element is used in balloons because it is less dense than air and non-flammable?
 
-A) Neon
-
-B) Argon
-
-C) Helium
-
-D) Xenon
+A) Neon  
+B) Argon  
+C) Helium  
+D) Xenon  
 
 **Answer: C**
 
@@ -212,7 +180,7 @@ D) Xenon
 
 ## Part B: True/False Questions
 
-State whether each statement is True or False. If False, provide the correct statement.
+For each statement, write TRUE or FALSE. If FALSE, write the correct statement.
 
 ---
 
@@ -239,6 +207,6 @@ Group 0 elements are also known as the reactive gases.
 
 **Answer: False**
 
-**Explanation**: Group 0 elements are noble gases and are highly unreactive due to their stable electron configurations.
+**Correction**: Group 0 elements are noble gases and are highly unreactive due to their stable electron configurations.
 
----
+**Explanation**: Group 0 elements are noble gases and are highly unreactive due to their stable electron configurations.

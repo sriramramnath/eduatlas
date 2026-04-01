@@ -6,16 +6,17 @@
 
 ## Part A: Multiple Choice Questions (MCQs)
 
+Select the correct answer for each question.
+
+---
+
 ### Question 1
 Which of the following is an element?
 
-A) Water
-
-B) Air
-
-C) Copper
-
-D) Carbon dioxide
+A) Water  
+B) Air  
+C) Copper  
+D) Carbon dioxide  
 
 **Answer: C**
 
@@ -26,13 +27,10 @@ D) Carbon dioxide
 ### Question 2
 Which statement about compounds is correct?
 
-A) They can be separated by filtration
-
-B) They have variable composition
-
-C) They contain elements chemically combined in fixed proportions
-
-D) They retain the properties of their constituent elements
+A) They can be separated by filtration  
+B) They have variable composition  
+C) They contain elements chemically combined in fixed proportions  
+D) They retain the properties of their constituent elements  
 
 **Answer: C**
 
@@ -43,13 +41,10 @@ D) They retain the properties of their constituent elements
 ### Question 3
 Which method is used to separate sand from water?
 
-A) Distillation
-
-B) Filtration
-
-C) Chromatography
-
-D) Crystallisation
+A) Distillation  
+B) Filtration  
+C) Chromatography  
+D) Crystallisation  
 
 **Answer: B**
 
@@ -60,13 +55,10 @@ D) Crystallisation
 ### Question 4
 What is the Rf value if a substance moves 4.0 cm and the solvent moves 8.0 cm?
 
-A) 0.20
-
-B) 0.50
-
-C) 2.0
-
-D) 32
+A) 0.20  
+B) 0.50  
+C) 2.0  
+D) 32  
 
 **Answer: B**
 
@@ -77,13 +69,10 @@ D) 32
 ### Question 5
 Which of the following is a mixture?
 
-A) Sodium chloride
-
-B) Water
-
-C) Air
-
-D) Copper sulfate
+A) Sodium chloride  
+B) Water  
+C) Air  
+D) Copper sulfate  
 
 **Answer: C**
 
@@ -94,13 +83,10 @@ D) Copper sulfate
 ### Question 6
 Which property is characteristic of metals?
 
-A) Poor conductor of electricity
-
-B) Low melting point
-
-C) Brittle when solid
-
-D) Ductile
+A) Poor conductor of electricity  
+B) Low melting point  
+C) Brittle when solid  
+D) Ductile  
 
 **Answer: D**
 
@@ -111,13 +97,10 @@ D) Ductile
 ### Question 7
 In fractional distillation, what is the purpose of the fractionating column?
 
-A) To heat the mixture
-
-B) To provide surface area for repeated condensation and vaporisation
-
-C) To cool the vapour
-
-D) To filter impurities
+A) To heat the mixture  
+B) To provide surface area for repeated condensation and vaporisation  
+C) To cool the vapour  
+D) To filter impurities  
 
 **Answer: B**
 
@@ -128,13 +111,10 @@ D) To filter impurities
 ### Question 8
 Which separation technique would be most suitable for obtaining pure water from seawater?
 
-A) Filtration
-
-B) Chromatography
-
-C) Simple distillation
-
-D) Crystallisation
+A) Filtration  
+B) Chromatography  
+C) Simple distillation  
+D) Crystallisation  
 
 **Answer: C**
 
@@ -145,13 +125,10 @@ D) Crystallisation
 ### Question 9
 Which statement correctly describes a heterogeneous mixture?
 
-A) It has uniform composition throughout
-
-B) The components are not visible
-
-C) It has a single phase
-
-D) The composition varies from one region to another
+A) It has uniform composition throughout  
+B) The components are not visible  
+C) It has a single phase  
+D) The composition varies from one region to another  
 
 **Answer: D**
 
@@ -162,13 +139,10 @@ D) The composition varies from one region to another
 ### Question 10
 A compound contains 40% calcium, 12% carbon, and 48% oxygen by mass. What type of compound is this?
 
-A) An element
-
-B) A mixture
-
-C) A compound with fixed composition
-
-D) A solution
+A) An element  
+B) A mixture  
+C) A compound with fixed composition  
+D) A solution  
 
 **Answer: C**
 
@@ -179,13 +153,10 @@ D) A solution
 ### Question 11
 Which technique separates substances based on their different solubilities in a solvent?
 
-A) Filtration
-
-B) Magnetic separation
-
-C) Chromatography
-
-D) Distillation
+A) Filtration  
+B) Magnetic separation  
+C) Chromatography  
+D) Distillation  
 
 **Answer: C**
 
@@ -196,13 +167,10 @@ D) Distillation
 ### Question 12
 Why does water have different properties from hydrogen and oxygen?
 
-A) Water is a mixture of hydrogen and oxygen
-
-B) Hydrogen and oxygen are physically combined in water
-
-C) Hydrogen and oxygen are chemically bonded in water, forming a new substance
-
-D) Water contains more oxygen than hydrogen
+A) Water is a mixture of hydrogen and oxygen  
+B) Hydrogen and oxygen are physically combined in water  
+C) Hydrogen and oxygen are chemically bonded in water, forming a new substance  
+D) Water contains more oxygen than hydrogen  
 
 **Answer: C**
 
@@ -212,7 +180,7 @@ D) Water contains more oxygen than hydrogen
 
 ## Part B: True/False Questions
 
-State whether each statement is True or False. If False, provide the correct statement.
+For each statement, write TRUE or FALSE. If FALSE, write the correct statement.
 
 ---
 
@@ -220,6 +188,8 @@ State whether each statement is True or False. If False, provide the correct sta
 An element can be broken down into simpler substances by chemical reactions.
 
 **Answer: False**
+
+**Correction**: Elements are the simplest form of matter and cannot be decomposed chemically into simpler substances.
 
 **Explanation**: Elements are the simplest form of matter and cannot be decomposed chemically into simpler substances.
 
@@ -239,6 +209,6 @@ Air is an example of a compound.
 
 **Answer: False**
 
-**Explanation**: Air is a mixture of several gases (N₂, O₂, Ar, CO₂) that are not chemically combined and can exist in varying proportions.
+**Correction**: Air is a mixture of several gases (N₂, O₂, Ar, CO₂) that are not chemically combined and can exist in varying proportions.
 
----
+**Explanation**: Air is a mixture of several gases (N₂, O₂, Ar, CO₂) that are not chemically combined and can exist in varying proportions.
