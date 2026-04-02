@@ -129,9 +129,261 @@ const noteModule = contentNoteModules[notePath] as any;
 const synopsisModule = contentSynopsisModules[synopsisPath] as any;
 const quizModule = contentQuizModules[quizPath] as any;
 const practiceModule = practiceModules[practicePath] as any;
-const pastPaperModules = import.meta.glob('/src/pastpaper/**/*.pdf', { eager: true, import: 'default' }) as Record<string, string>;
-const pastPaperPaths = Object.keys(pastPaperModules);
-const subjectPastPaperPaths = pastPaperPaths.filter(path => path.includes(`/${subjectId}/`));
+
+const pastPaperContentModules = import.meta.glob('/src/newpastpapers/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+
+const variantRank: Record<string, number> = {
+  Core: 0,
+  Foundation: 1,
+  Higher: 2,
+  Regional: 3,
+};
+
+function parseMathsPastPapers(content: string): PastPaperSession[] {
+  const sessionMap = new Map<string, Map<string, PastPaperGroup>>();
+  const lines = content.split('\n');
+  let currentSession = '';
+  let currentPaperType: 'Question Paper' | 'Mark Scheme' | 'Examiner Report' = 'Question Paper';
+  
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    
+    // Match year headers like "2025"
+    const yearOnly = trimmed.match(/^\d{4}$/);
+    if (yearOnly) {
+      currentPaperType = 'Question Paper';
+      continue;
+    }
+    
+    // Match session lines like "- November 2025"
+    const sessionMatch = trimmed.match(/^-\s+(November|June|January)\s+\d{4}$/i);
+    if (sessionMatch) {
+      currentSession = sessionMatch[0].replace(/^-\s+/, '');
+      if (!sessionMap.has(currentSession)) {
+        sessionMap.set(currentSession, new Map());
+      }
+      currentPaperType = 'Question Paper';
+      continue;
+    }
+    
+    if (trimmed.startsWith('▫')) {
+      const lower = trimmed.toLowerCase();
+      if (lower.includes('question')) {
+        currentPaperType = 'Question Paper';
+      } else if (lower.includes('mark')) {
+        currentPaperType = 'Mark Scheme';
+      } else if (lower.includes('examiner')) {
+        currentPaperType = 'Examiner Report';
+      }
+      continue;
+    }
+    
+    if (!trimmed.startsWith('Paper ')) continue;
+    
+    const urlMatches = trimmed.match(/https:\/\/[^,\s)]+/g) || [];
+    for (const url of urlMatches) {
+      if (url.includes('youtubemodal') || url.includes('#')) continue;
+      if (!url.includes('.pdf') && !url.includes('_pdf')) continue;
+      
+      let rawFileName = url.split('/').pop()?.split('?')[0] || 'unknown.pdf';
+      rawFileName = rawFileName.replace(/[-–—]\d+[,\s]*$/, '').replace(/[)\]]+$/, '');
+      const fileName = rawFileName;
+      const lowerUrl = url.toLowerCase();
+      
+      let paperTypeName = currentPaperType;
+      if (lowerUrl.includes('pef')) {
+        paperTypeName = 'Examiner Report';
+      } else if (lowerUrl.includes('rms') || lowerUrl.includes('msc') || lowerUrl.includes('mark-scheme') || lowerUrl.includes('mark_scheme')) {
+        paperTypeName = 'Mark Scheme';
+      }
+      
+      const { label, paperNumber, paperVariant, paperTier } = extractPaperMeta(fileName);
+      const { assetLabel, assetPriority } = getAssetMeta(fileName, paperTypeName);
+      
+      const entry: PastPaperEntry = {
+        label,
+        href: url,
+        fileName,
+        session: currentSession,
+        sortDate: parseYearAndSessionToDate(currentSession).getTime(),
+        paperNumber,
+        paperVariant,
+        paperTier,
+        paperTypeName,
+        assetLabel,
+        assetPriority,
+      };
+      
+      const sessionGroups = sessionMap.get(currentSession) ?? new Map<string, PastPaperGroup>();
+      const existingGroup = sessionGroups.get(label) ?? {
+        label,
+        paperNumber,
+        paperVariant,
+        paperTier,
+        questionPapers: [],
+        markSchemes: [],
+        examinerReports: [],
+      };
+      
+      if (paperTypeName === 'Question Paper') {
+        if (!existingGroup.questionPapers.some((paper) => paper.fileName === entry.fileName)) {
+          existingGroup.questionPapers.push(entry);
+        }
+      } else if (paperTypeName === 'Examiner Report') {
+        if (!existingGroup.examinerReports.some((paper) => paper.fileName === entry.fileName)) {
+          existingGroup.examinerReports.push(entry);
+        }
+      } else if (!existingGroup.markSchemes.some((paper) => paper.fileName === entry.fileName)) {
+        existingGroup.markSchemes.push(entry);
+      }
+      
+      sessionGroups.set(label, existingGroup);
+      sessionMap.set(currentSession, sessionGroups);
+    }
+  }
+  
+  return Array.from(sessionMap.entries())
+    .map(([label, groupsMap]) => ({
+      label,
+      sortDate: parseYearAndSessionToDate(label).getTime(),
+      groups: Array.from(groupsMap.values())
+        .map((group) => ({
+          ...group,
+          questionPapers: group.questionPapers.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+          examinerReports: group.examinerReports.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+          markSchemes: group.markSchemes.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+        }))
+        .sort((a, b) => {
+          if (a.paperNumber !== b.paperNumber) return a.paperNumber - b.paperNumber;
+          return (variantRank[a.paperVariant] ?? 99) - (variantRank[b.paperVariant] ?? 99);
+        }),
+    }))
+    .sort((a, b) => b.sortDate - a.sortDate);
+}
+
+function parsePastPaperContent(content: string, subjectId: string) {
+  if (subjectId === 'maths') {
+    return parseMathsPastPapers(content);
+  }
+  
+  const sessionMap = new Map<string, Map<string, PastPaperGroup>>();
+  const lines = content.split('\n');
+  let currentSession = '';
+  
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    
+    const sessionMatch = trimmed.match(/^(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}$/i);
+    if (sessionMatch) {
+      currentSession = trimmed;
+      if (!sessionMap.has(currentSession)) {
+        sessionMap.set(currentSession, new Map());
+      }
+      continue;
+    }
+    
+    if (trimmed.startsWith('-')) {
+      const urlMatches = trimmed.match(/https:\/\/[^\]]+/g) || [];
+      
+      for (const url of urlMatches) {
+        if (url.includes('youtubemodal') || url.includes('#')) continue;
+        if (!url.includes('.pdf')) continue;
+        
+        const fileName = url.split('/').pop()?.split('?')[0] || 'unknown.pdf';
+        const lowerUrl = url.toLowerCase();
+        
+        if (subjectId === 'ict' && (lowerUrl.includes('-01r-') || lowerUrl.includes('_01r_') || lowerUrl.includes('_01R_') || lowerUrl.includes('-01R-') || lowerUrl.includes('past-paper-redraft') || lowerUrl.includes('changes-for-june'))) continue;
+        
+        let paperTypeName: 'Question Paper' | 'Mark Scheme' | 'Examiner Report' = 'Question Paper';
+        if (lowerUrl.includes('pef')) {
+          paperTypeName = 'Examiner Report';
+        } else if (lowerUrl.includes('rms') || lowerUrl.includes('msc') || lowerUrl.includes('mark-scheme') || lowerUrl.includes('mark_scheme')) {
+          paperTypeName = 'Mark Scheme';
+        }
+        
+        const { label, paperNumber, paperVariant, paperTier, paperComponent } = extractPaperMeta(fileName);
+        
+        let finalLabel = paperComponent || label;
+        
+        const { assetLabel, assetPriority } = getAssetMeta(fileName, paperTypeName);
+        
+        const entry: PastPaperEntry = {
+          label: finalLabel,
+          href: url,
+          fileName,
+          session: currentSession,
+          sortDate: parseYearAndSessionToDate(currentSession).getTime(),
+          paperNumber,
+          paperVariant,
+          paperTier,
+          paperTypeName,
+          assetLabel,
+          assetPriority,
+        };
+        
+        const sessionGroups = sessionMap.get(currentSession) ?? new Map<string, PastPaperGroup>();
+        const existingGroup = sessionGroups.get(finalLabel) ?? {
+          label: finalLabel,
+          paperNumber,
+          paperVariant,
+          paperTier,
+          questionPapers: [],
+          markSchemes: [],
+          examinerReports: [],
+        };
+        
+        if (paperTypeName === 'Question Paper') {
+          if (!existingGroup.questionPapers.some((paper) => paper.fileName === entry.fileName)) {
+            existingGroup.questionPapers.push(entry);
+          }
+        } else if (paperTypeName === 'Examiner Report') {
+          if (!existingGroup.examinerReports.some((paper) => paper.fileName === entry.fileName)) {
+            existingGroup.examinerReports.push(entry);
+          }
+        } else if (!existingGroup.markSchemes.some((paper) => paper.fileName === entry.fileName)) {
+          existingGroup.markSchemes.push(entry);
+        }
+        
+        sessionGroups.set(finalLabel, existingGroup);
+        sessionMap.set(currentSession, sessionGroups);
+      }
+    }
+  }
+  
+  return Array.from(sessionMap.entries())
+    .map(([label, groupsMap]) => ({
+      label,
+      sortDate: parseYearAndSessionToDate(label).getTime(),
+      groups: Array.from(groupsMap.values())
+        .map((group) => ({
+          ...group,
+          questionPapers: group.questionPapers.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+          examinerReports: group.examinerReports.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+          markSchemes: group.markSchemes.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
+        }))
+        .sort((a, b) => {
+          if (a.paperNumber !== b.paperNumber) return a.paperNumber - b.paperNumber;
+          return (variantRank[a.paperVariant] ?? 99) - (variantRank[b.paperVariant] ?? 99);
+        }),
+    }))
+    .sort((a, b) => b.sortDate - a.sortDate);
+}
+
+const pastPaperContent = isBiology
+  ? pastPaperContentModules['/src/newpastpapers/biologypapers.md']
+  : isChemistry
+    ? pastPaperContentModules['/src/newpastpapers/chemistrypapers.md']
+    : isPhysics
+      ? pastPaperContentModules['/src/newpastpapers/physicspapers.md']
+      : isMaths
+        ? pastPaperContentModules['/src/newpastpapers/mathspapers.md']
+        : isIct
+          ? pastPaperContentModules['/src/newpastpapers/ictpastpapers.md']
+          : '';
+
+const pastPaperSessions: PastPaperSession[] = pastPaperContent ? parsePastPaperContent(pastPaperContent, subjectId!) : [];
 
 function parseYearAndSessionToDate(yearAndSession: string) {
   const yearMatch = yearAndSession.match(/(\d{4})/);
@@ -153,13 +405,6 @@ function parseYearAndSessionToDate(yearAndSession: string) {
   return date;
 }
 
-const variantRank: Record<string, number> = {
-  Core: 0,
-  Foundation: 1,
-  Higher: 2,
-  Regional: 3,
-};
-
 interface PastPaperEntry {
   label: string;
   href: string;
@@ -169,7 +414,7 @@ interface PastPaperEntry {
   paperNumber: number;
   paperVariant: string;
   paperTier: 'foundation' | 'higher' | 'core' | 'unknown';
-  paperTypeName: 'Question Paper' | 'Mark Scheme';
+  paperTypeName: 'Question Paper' | 'Mark Scheme' | 'Examiner Report';
   assetLabel: string;
   assetPriority: number;
 }
@@ -181,6 +426,7 @@ interface PastPaperGroup {
   paperTier: 'foundation' | 'higher' | 'core' | 'unknown';
   questionPapers: PastPaperEntry[];
   markSchemes: PastPaperEntry[];
+  examinerReports: PastPaperEntry[];
 }
 
 interface PastPaperSession {
@@ -189,8 +435,12 @@ interface PastPaperSession {
   groups: PastPaperGroup[];
 }
 
-function getAssetMeta(fileName: string, paperTypeName: 'Question Paper' | 'Mark Scheme') {
+function getAssetMeta(fileName: string, paperTypeName: 'Question Paper' | 'Mark Scheme' | 'Examiner Report') {
   const normalized = fileName.replace(/\.pdf$/i, '').toLowerCase();
+
+  if (paperTypeName === 'Examiner Report') {
+    return { assetLabel: 'Examiner Report', assetPriority: 2 };
+  }
 
   if (paperTypeName === 'Mark Scheme') {
     if (normalized.includes('detailed') || normalized.includes('solution')) {
@@ -199,14 +449,14 @@ function getAssetMeta(fileName: string, paperTypeName: 'Question Paper' | 'Mark 
     if (normalized.includes('model answer')) {
       return { assetLabel: 'Model Answer', assetPriority: 2 };
     }
-    return { assetLabel: 'Official Mark Scheme', assetPriority: 1 };
+    return { assetLabel: 'Mark Scheme', assetPriority: 1 };
   }
 
   if (normalized.includes('unseen')) {
     return { assetLabel: 'Unseen Paper', assetPriority: 2 };
   }
 
-  return { assetLabel: 'Official Question Paper', assetPriority: 1 };
+  return { assetLabel: 'Question Paper', assetPriority: 1 };
 }
 
 function extractPaperMeta(fileName: string) {
@@ -214,10 +464,19 @@ function extractPaperMeta(fileName: string) {
   const newFormatMatch = rawFileName.match(/(?:^|[_\s-])(\d+)(FR|HR|BR|CR|PR|F|H|B|C|P)(?=[_\s-]|$)/i)
     || rawFileName.match(/_(\d+)([A-Za-z]+)_/);
   const legacyMatch = rawFileName.match(/paper[\s-]*(\d+)([a-z]*)/i);
+  
+  const ictPaperMatch = rawFileName.match(/(?:^|[_\s-])(0?1|0?2)(?:r?)(?=[_\s-]|$)/i);
 
   let paperNumber = 1;
   let paperVariant = 'Core';
   let paperTier: 'foundation' | 'higher' | 'core' | 'unknown' = 'core';
+  let paperComponent: string | undefined = undefined;
+  
+  if (ictPaperMatch) {
+    const component = ictPaperMatch[1].replace(/^0/, '');
+    paperComponent = component === '1' ? 'Paper 1 (Theory)' : 'Paper 2 (Practical)';
+    return { label: paperComponent, paperNumber: parseInt(component), paperVariant: 'Core', paperTier: 'core' as const, paperComponent };
+  }
 
   if (newFormatMatch) {
     paperNumber = Number.parseInt(newFormatMatch[1], 10);
@@ -278,77 +537,6 @@ function extractPaperMeta(fileName: string) {
 }
 
 const pastPaperSessionMap = new Map<string, Map<string, PastPaperGroup>>();
-
-for (const path of subjectPastPaperPaths) {
-  const lowerPath = path.toLowerCase();
-  if (lowerPath.includes('examiner-report')) continue;
-
-  const parts = path.split('/');
-  const session = parts[4];
-  const paperType = parts[5];
-  const fileName = parts[parts.length - 1];
-  const href = pastPaperModules[path];
-
-  if (!session || !paperType || !href) continue;
-
-  const { label, paperNumber, paperVariant, paperTier } = extractPaperMeta(fileName);
-  const paperTypeName = (paperType === 'mark-scheme' || lowerPath.includes('mark-scheme'))
-    ? 'Mark Scheme'
-    : 'Question Paper';
-  const { assetLabel, assetPriority } = getAssetMeta(fileName, paperTypeName);
-
-  const entry: PastPaperEntry = {
-    label,
-    href,
-    fileName,
-    session,
-    sortDate: parseYearAndSessionToDate(session).getTime(),
-    paperNumber,
-    paperVariant,
-    paperTier,
-    paperTypeName,
-    assetLabel,
-    assetPriority,
-  };
-
-  const sessionGroups = pastPaperSessionMap.get(session) ?? new Map<string, PastPaperGroup>();
-  const existingGroup = sessionGroups.get(label) ?? {
-    label,
-    paperNumber,
-    paperVariant,
-    paperTier,
-    questionPapers: [],
-    markSchemes: [],
-  };
-
-  if (paperTypeName === 'Question Paper') {
-    if (!existingGroup.questionPapers.some((paper) => paper.fileName === entry.fileName)) {
-      existingGroup.questionPapers.push(entry);
-    }
-  } else if (!existingGroup.markSchemes.some((paper) => paper.fileName === entry.fileName)) {
-    existingGroup.markSchemes.push(entry);
-  }
-
-  sessionGroups.set(label, existingGroup);
-  pastPaperSessionMap.set(session, sessionGroups);
-}
-
-const pastPaperSessions: PastPaperSession[] = Array.from(pastPaperSessionMap.entries())
-  .map(([label, groupsMap]) => ({
-    label,
-    sortDate: parseYearAndSessionToDate(label).getTime(),
-    groups: Array.from(groupsMap.values())
-      .map((group) => ({
-        ...group,
-        questionPapers: group.questionPapers.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
-        markSchemes: group.markSchemes.sort((a, b) => a.assetPriority - b.assetPriority || a.fileName.localeCompare(b.fileName)),
-      }))
-      .sort((a, b) => {
-        if (a.paperNumber !== b.paperNumber) return a.paperNumber - b.paperNumber;
-        return (variantRank[a.paperVariant] ?? 99) - (variantRank[b.paperVariant] ?? 99);
-      }),
-  }))
-  .sort((a, b) => b.sortDate - a.sortDate);
 
 const totalPastPaperGroups = pastPaperSessions.reduce((sum, session) => sum + session.groups.length, 0);
 const hasPastPapers = pastPaperSessions.length > 0;
@@ -575,13 +763,16 @@ const tabIcons: Record<string, string> = {
                                       {group.questionPapers.map((paper) => (
                                         <a href={paper.href} target="_blank" rel="noreferrer" class="paper-link qp" title={paper.fileName}>
                                           <span class="link-label">{paper.assetLabel}</span>
-                                          <span class="link-short">QP</span>
                                         </a>
                                       ))}
                                       {group.markSchemes.map((paper) => (
                                         <a href={paper.href} target="_blank" rel="noreferrer" class="paper-link ms" title={paper.fileName}>
                                           <span class="link-label">{paper.assetLabel}</span>
-                                          <span class="link-short">MS</span>
+                                        </a>
+                                      ))}
+                                      {group.examinerReports.map((paper) => (
+                                        <a href={paper.href} target="_blank" rel="noreferrer" class="paper-link er" title={paper.fileName}>
+                                          <span class="link-label">{paper.assetLabel}</span>
                                         </a>
                                       ))}
                                     </div>
@@ -1990,56 +2181,50 @@ const tabIcons: Record<string, string> = {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.65rem;
-    padding: 0.7rem 1rem;
-    border-radius: 999px;
-    font-size: 0.82rem;
-    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: all 0.2s ease;
-    min-width: 8.5rem;
-    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+    transition: all 0.15s ease;
+    border: 2px solid;
   }
 
   .paper-link.qp {
+    background: transparent;
+    color: #3b82f6;
+    border-color: #3b82f6;
+  }
+
+  .paper-link.qp:hover {
     background: #3b82f6;
     color: white;
   }
 
-  .paper-link.qp:hover {
-    background: #2563eb;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  .paper-link.ms {
+    background: transparent;
+    color: #22c55e;
+    border-color: #22c55e;
   }
 
-  .paper-link.ms {
+  .paper-link.ms:hover {
     background: #22c55e;
     color: white;
   }
 
-  .paper-link.ms:hover {
-    background: #16a34a;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  .paper-link.er {
+    background: transparent;
+    color: #f59e0b;
+    border-color: #f59e0b;
+  }
+
+  .paper-link.er:hover {
+    background: #f59e0b;
+    color: white;
   }
 
   .link-label {
     white-space: nowrap;
-  }
-
-  .link-short {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 2.2rem;
-    padding: 0.28rem 0.5rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.18);
-    color: white;
-    font-weight: 700;
-    font-size: 0.72rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
   }
 
   @media (max-width: 720px) {
