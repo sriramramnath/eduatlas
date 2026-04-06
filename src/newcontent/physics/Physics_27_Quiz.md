@@ -7,6 +7,7 @@
 
 ### Question 1
 Stars are born from:
+
 A) Black holes
 B) Nebulae
 C) White dwarfs
@@ -20,6 +21,7 @@ D) Supernovae
 
 ### Question 2
 During most of its lifetime, a star like the Sun is in the:
+
 A) Red giant phase
 B) Main sequence phase
 C) White dwarf phase
@@ -33,6 +35,7 @@ D) Supernova phase
 
 ### Question 3
 What is the final state of a star similar to our Sun?
+
 A) Neutron star
 B) Black hole
 C) White dwarf
@@ -46,6 +49,7 @@ D) Supernova
 
 ### Question 4
 A supernova occurs at the end of the life of:
+
 A) All stars
 B) Only low-mass stars
 C) Only high-mass stars
@@ -59,6 +63,7 @@ D) Only main sequence stars
 
 ### Question 5
 Elements heavier than iron are formed in:
+
 A) Main sequence stars
 B) Red giants
 C) Supernovae
@@ -72,6 +77,7 @@ D) White dwarfs
 
 ### Question 6
 On the HR diagram, main sequence stars:
+
 A) Are in the top right corner
 B) Form a diagonal band from top left to bottom right
 C) Are in the bottom left corner
@@ -85,6 +91,7 @@ D) Form a horizontal line
 
 ### Question 7
 Our Sun is classified as what type of star?
+
 A) O-type
 B) A-type
 C) G-type
@@ -98,6 +105,7 @@ D) M-type
 
 ### Question 8
 What process provides energy during the main sequence phase?
+
 A) Nuclear fission
 B) Nuclear fusion of hydrogen
 C) Gravitational collapse
@@ -111,6 +119,7 @@ D) Chemical burning
 
 ### Question 9
 A neutron star forms from the core of:
+
 A) A low-mass star
 B) A medium-mass star
 C) A high-mass star after supernova
@@ -124,6 +133,7 @@ D) A white dwarf
 
 ### Question 10
 The Chandrasekhar limit is approximately:
+
 A) 1.4 solar masses
 B) 8 solar masses
 C) 25 solar masses
@@ -137,6 +147,7 @@ D) 100 solar masses
 
 ### Question 11
 Red giant stars are:
+
 A) Smaller and hotter than main sequence stars
 B) Larger and cooler than main sequence stars
 C) The same size as main sequence stars
@@ -150,6 +161,7 @@ D) Smaller and cooler than main sequence stars
 
 ### Question 12
 A black hole forms when:
+
 A) Any star dies
 B) A low-mass star dies
 C) A very massive star collapses

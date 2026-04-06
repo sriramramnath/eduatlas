@@ -7,6 +7,7 @@
 
 ### Question 1
 Nuclear fission involves:
+
 A) Joining light nuclei
 B) Splitting heavy nuclei
 C) Removing electrons
@@ -20,6 +21,7 @@ D) Adding neutrons without splitting
 
 ### Question 2
 What is the purpose of a moderator in a nuclear reactor?
+
 A) To absorb all neutrons
 B) To speed up neutrons
 C) To slow down neutrons
@@ -33,6 +35,7 @@ D) To increase temperature
 
 ### Question 3
 Nuclear fusion occurs in:
+
 A) Nuclear power stations
 B) The Sun and stars
 C) Nuclear bombs
@@ -46,6 +49,7 @@ D) Radioactive waste
 
 ### Question 4
 Control rods in a nuclear reactor are made of:
+
 A) Uranium
 B) Graphite
 C) Boron or cadmium
@@ -59,6 +63,7 @@ D) Lead
 
 ### Question 5
 Which condition is NOT required for nuclear fusion?
+
 A) High temperature
 B) High pressure
 C) Presence of oxygen
@@ -72,6 +77,7 @@ D) Confinement
 
 ### Question 6
 The equation E = mc² relates:
+
 A) Energy and velocity
 B) Mass and energy
 C) Mass and charge
@@ -85,6 +91,7 @@ D) Energy and temperature
 
 ### Question 7
 In a chain reaction, each fission produces:
+
 A) No neutrons
 B) 1 neutron
 C) 2-3 neutrons
@@ -98,6 +105,7 @@ D) 10 neutrons
 
 ### Question 8
 Which produces more energy per reaction?
+
 A) Fusion
 B) Fission
 C) Both produce the same
@@ -111,6 +119,7 @@ D) Neither produces energy
 
 ### Question 9
 Deuterium and tritium are:
+
 A) Isotopes of helium
 B) Isotopes of uranium
 C) Isotopes of hydrogen
@@ -124,6 +133,7 @@ D) Types of radiation
 
 ### Question 10
 What happens when control rods are lowered into a reactor core?
+
 A) Reaction speeds up
 B) Reaction slows down
 C) Temperature increases
@@ -137,6 +147,7 @@ D) Nothing happens
 
 ### Question 11
 Fusion is not yet used for commercial power because:
+
 A) It produces too much energy
 B) It requires extreme conditions difficult to maintain
 C) It is too cheap
@@ -150,6 +161,7 @@ D) There is no fuel available
 
 ### Question 12
 High-level nuclear waste includes:
+
 A) Contaminated paper
 B) Used protective clothing
 C) Spent fuel rods

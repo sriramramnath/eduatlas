@@ -939,8 +939,7 @@ const tabIcons: Record<string, string> = {
     function processText(text: string): void {
       const lines = text.split(/\n|<br\s*\/?>/i).map(l => l.trim()).filter(l => l);
       for (const line of lines) {
-        const cleanLine = line.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-        const match = cleanLine.match(optionPattern);
+        const match = line.match(optionPattern);
         if (match) {
           options.push({ value: match[1].toUpperCase(), label: match[2].trim() });
         }
@@ -965,7 +964,8 @@ const tabIcons: Record<string, string> = {
         let foundOptionInList = false;
         
         for (const li of listItems) {
-          const text = li.textContent || '';
+          const html = li.innerHTML;  // Use innerHTML to preserve LaTeX
+          const text = html.replace(/\s+/g, ' ').trim();
           const match = text.match(/^([A-Z])[\)\.]\s+(.+)/);
           if (match) {
             options.push({ value: match[1].toUpperCase(), label: match[2].trim() });
@@ -981,7 +981,8 @@ const tabIcons: Record<string, string> = {
         for (const row of rows) {
           const cells = row.querySelectorAll('td, th');
           for (const cell of cells) {
-            const text = cell.textContent || '';
+            const html = cell.innerHTML;  // Use innerHTML to preserve LaTeX
+            const text = html.replace(/\s+/g, ' ').trim();
             const match = text.match(/^([A-Z])[\)\.]\s+(.+)/);
             if (match) {
               options.push({ value: match[1].toUpperCase(), label: match[2].trim() });
@@ -1035,6 +1036,7 @@ const tabIcons: Record<string, string> = {
           options: [],
           correctValue: '',
           answerLabel: 'Mark Scheme',
+          answerLabelHtml: 'Mark Scheme',
           explanation: explanationHtml,
         };
       }
@@ -1088,16 +1090,19 @@ const tabIcons: Record<string, string> = {
 
     let correctValue = '';
     let answerLabel = '';
+    let answerLabelHtml = '';
     
     if (answerIndex !== -1) {
       const { value } = parseAnswerLine(textLines[answerIndex]);
       if (isTrueFalseAnswer) {
         correctValue = normalizeAnswerValue(value);
         answerLabel = correctValue.charAt(0).toUpperCase() + correctValue.slice(1);
+        answerLabelHtml = answerLabel;
       } else {
         const match = value.match(/^[A-Z]/);
         correctValue = match ? match[0].toUpperCase() : '';
         answerLabel = textLines[answerIndex].replace(/\*\*/g, '').replace(/^answer:\s*/i, '').replace(/^correct answer:\s*/i, '').trim();
+        answerLabelHtml = htmlLines[answerIndex]?.replace(/\*\*/g, '').replace(/^[\s]*answer:\s*/i, '').replace(/^[\s]*correct answer:\s*/i, '').trim() || answerLabel;
       }
     }
 
@@ -1120,9 +1125,9 @@ const tabIcons: Record<string, string> = {
     
     let explanationHtml = 'Review the chapter notes for the reasoning.';
     if (explanationIndex !== -1) {
-      explanationHtml = textLines.slice(explanationIndex).map(t => parseExplanation(t)).join('<br>');
+      explanationHtml = htmlLines.slice(explanationIndex).map((t, i) => i === 0 ? parseExplanation(t) : t).join('<br>');
     } else if (markSchemeIndex !== -1) {
-      explanationHtml = textLines.slice(markSchemeIndex).map(t => parseMarkScheme(t)).join('<br>');
+      explanationHtml = htmlLines.slice(markSchemeIndex).map((t, i) => i === 0 ? parseMarkScheme(t) : t).join('<br>');
     }
 
     if ((isTrueFalseAnswer || isStatementTF) && !hasMCQOptions) {
@@ -1136,6 +1141,7 @@ const tabIcons: Record<string, string> = {
         ],
         correctValue,
         answerLabel,
+        answerLabelHtml: answerLabelHtml || answerLabel,
         explanation: explanationHtml,
       };
     }
@@ -1152,6 +1158,7 @@ const tabIcons: Record<string, string> = {
       options: validOptions,
       correctValue,
       answerLabel,
+      answerLabelHtml,
       explanation: explanationHtml,
     };
   }
@@ -1163,6 +1170,7 @@ const tabIcons: Record<string, string> = {
     options: Array<{ value: string; label: string }>;
     correctValue: string;
     answerLabel: string;
+    answerLabelHtml?: string;
     explanation: string;
   }) {
     const card = document.createElement('article');
@@ -1263,7 +1271,7 @@ const tabIcons: Record<string, string> = {
           <div class="quiz-feedback hidden" aria-live="polite">
             <div class="quiz-feedback-main">
               <div class="quiz-feedback-badge"></div>
-              <p class="quiz-feedback-answer">Correct answer: <strong>${question.answerLabel}</strong></p>
+              <p class="quiz-feedback-answer">Correct answer: <strong>${question.answerLabelHtml || question.answerLabel}</strong></p>
               <p class="quiz-feedback-explanation">${question.explanation}</p>
             </div>
             <button type="button" class="quiz-answer-button">View answer</button>

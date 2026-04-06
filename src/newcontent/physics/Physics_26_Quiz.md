@@ -7,6 +7,7 @@
 
 ### Question 1
 Which planet is closest to the Sun?
+
 A) Venus
 B) Earth
 C) Mercury
@@ -20,6 +21,7 @@ D) Mars
 
 ### Question 2
 According to Newton's law of gravitation, if the distance between two masses doubles, the gravitational force becomes:
+
 A) Double
 B) Half
 C) One quarter
@@ -33,6 +35,7 @@ D) Four times
 
 ### Question 3
 A geostationary satellite has an orbital period of:
+
 A) 12 hours
 B) 24 hours
 C) 1 month
@@ -46,6 +49,7 @@ D) 1 year
 
 ### Question 4
 The Sun's energy is produced by:
+
 A) Nuclear fission
 B) Nuclear fusion
 C) Chemical burning
@@ -59,6 +63,7 @@ D) Gravitational collapse
 
 ### Question 5
 Which planet has the most extensive ring system?
+
 A) Jupiter
 B) Saturn
 C) Uranus
@@ -72,6 +77,7 @@ D) Neptune
 
 ### Question 6
 The Moon's gravity is approximately:
+
 A) The same as Earth's
 B) Half of Earth's
 C) One-sixth of Earth's
@@ -85,6 +91,7 @@ D) One-tenth of Earth's
 
 ### Question 7
 Spring tides occur when:
+
 A) The Sun and Moon are at right angles
 B) The Sun, Earth, and Moon are aligned
 C) Only the Moon affects Earth
@@ -98,6 +105,7 @@ D) The Moon is in first quarter phase
 
 ### Question 8
 The orbital speed of a satellite depends on:
+
 A) Its mass only
 B) The mass of the planet and orbital radius
 C) Its color
@@ -111,6 +119,7 @@ D) The time of day
 
 ### Question 9
 A solar eclipse occurs when:
+
 A) Earth is between Sun and Moon
 B) Moon is between Sun and Earth
 C) Sun is between Earth and Moon
@@ -124,6 +133,7 @@ D) Earth blocks the Moon
 
 ### Question 10
 Jupiter is classified as a:
+
 A) Terrestrial planet
 B) Gas giant
 C) Dwarf planet
@@ -137,6 +147,7 @@ D) Asteroid
 
 ### Question 11
 The temperature of the Sun's core is approximately:
+
 A) 5,500 °C
 B) 1 million °C
 C) 15 million °C
@@ -150,6 +161,7 @@ D) 100 million °C
 
 ### Question 12
 Neap tides occur during:
+
 A) Full and new moon
 B) First and last quarter moon
 C) Solar eclipse

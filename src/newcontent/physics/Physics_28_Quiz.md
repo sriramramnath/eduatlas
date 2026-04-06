@@ -7,6 +7,7 @@
 
 ### Question 1
 One light-year is:
+
 A) The time for light to travel one year
 B) The distance light travels in one year
 C) The speed of light
@@ -20,6 +21,7 @@ D) The age of the universe
 
 ### Question 2
 The redshift of light from distant galaxies indicates that:
+
 A) Galaxies are moving toward us
 B) Galaxies are moving away from us
 C) Galaxies are stationary
@@ -33,6 +35,7 @@ D) Light is slowing down
 
 ### Question 3
 Hubble's Law states that:
+
 A) Galaxy mass is proportional to distance
 B) Recession velocity is proportional to distance
 C) Galaxy brightness is proportional to distance
@@ -46,6 +49,7 @@ D) Temperature is proportional to distance
 
 ### Question 4
 The Cosmic Microwave Background (CMB) provides evidence for:
+
 A) Dark matter
 B) The Big Bang
 C) Black holes
@@ -59,6 +63,7 @@ D) Neutron stars
 
 ### Question 5
 The current age of the universe is approximately:
+
 A) 4.6 billion years
 B) 13.8 billion years
 C) 100 billion years
@@ -72,6 +77,7 @@ D) 1 trillion years
 
 ### Question 6
 If the density of the universe is greater than the critical density, the universe will:
+
 A) Expand forever
 B) Eventually collapse
 C) Stay the same size
@@ -85,6 +91,7 @@ D) Disappear
 
 ### Question 7
 The Milky Way is classified as what type of galaxy?
+
 A) Elliptical
 B) Irregular
 C) Spiral
@@ -98,6 +105,7 @@ D) Spherical
 
 ### Question 8
 Dark matter is called "dark" because:
+
 A) It is black in color
 B) It does not emit or interact with light
 C) It only exists at night
@@ -111,6 +119,7 @@ D) It absorbs all radiation
 
 ### Question 9
 The temperature of the Cosmic Microwave Background is approximately:
+
 A) 0 K
 B) 2.7 K
 C) 273 K
@@ -124,6 +133,7 @@ D) 3000 K
 
 ### Question 10
 What causes the accelerating expansion of the universe?
+
 A) Dark matter
 B) Dark energy
 C) Gravity
@@ -137,6 +147,7 @@ D) Black holes
 
 ### Question 11
 The Andromeda Galaxy is approximately how far from the Milky Way?
+
 A) 4 light-years
 B) 2.5 million light-years
 C) 100 million light-years
@@ -150,6 +161,7 @@ D) 1 billion light-years
 
 ### Question 12
 Which type of telescope can observe through cosmic dust?
+
 A) Only optical telescopes
 B) Radio telescopes
 C) Only space telescopes
