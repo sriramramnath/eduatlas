@@ -1431,8 +1431,48 @@ const tabIcons: Record<string, string> = {
   // Run on page load
   initTabs();
   initQuizCards();
+</script>
 
-  // Separate Science Toggle
+<script is:inline>
+  // Inject ads into notes and quiz content
+  (function() {
+    // Inject ads into notes content (every 5 elements)
+    setTimeout(function() {
+      var notesContent = document.querySelector('#tab-notes .markdown-content');
+      if (notesContent && notesContent instanceof HTMLElement) {
+        var elements = notesContent.querySelectorAll('p, h2, h3, ul, ol, table, li');
+        var counter = 0;
+        var adHtml = '<div class="notes-ad-inject"><script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/d0d3dfaf022b14256f933e6b64a7d22d/invoke.js"><\/script><div id="container-d0d3dfaf022b14256f933e6b64a7d22d"></div></div>';
+        elements.forEach(function(el, idx) {
+          counter++;
+          if (counter === 5 && idx < elements.length - 1) {
+            var adDiv = document.createElement('div');
+            adDiv.innerHTML = adHtml;
+            if (el.nextSibling && el.parentNode) {
+              el.parentNode.insertBefore(adDiv.firstElementChild, el.nextSibling);
+            }
+            counter = 0;
+          }
+        });
+      }
+    }, 200);
+
+    // Inject ads between quiz questions
+    setTimeout(function() {
+      var quizCards = document.querySelectorAll('#tab-quiz .quiz-card-shell');
+      var adHtml = '<div class="quiz-ad-inject"><script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/a27f97495afa53594a3a28dae3561612/invoke.js"><\/script><div id="container-a27f97495afa53594a3a28dae3561612"></div></div>';
+      quizCards.forEach(function(card, idx) {
+        if (idx > 0 && card.parentNode) {
+          var adDiv = document.createElement('div');
+          adDiv.innerHTML = adHtml;
+          card.parentNode.insertBefore(adDiv.firstElementChild, card);
+        }
+      });
+    }, 600);
+  })();
+</script>
+
+<script>
   function initSeparateScienceToggle() {
     const toggle = document.getElementById('separate-science-toggle');
     if (!toggle) return;

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Adsterra from '../components/Adsterra.astro';
 import { getSearchDocuments } from '../utils/search';
 
 const searchDocuments = getSearchDocuments();
@@ -40,6 +41,8 @@ const searchDocuments = getSearchDocuments();
           </div>
         </div>
       </section>
+
+      <Adsterra position="header" />
 
       <section class="search-results-section">
         <div class="container">

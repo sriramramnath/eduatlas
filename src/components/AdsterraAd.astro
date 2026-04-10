@@ -1,0 +1,36 @@
+---
+interface Props {
+  id?: string;
+}
+
+const { id = '300x250' } = Astro.props;
+
+const ads: Record<string, string> = {
+  '160x300': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/f94fcc38c66efdedfab93f228e233259/invoke.js"></script><div id="container-f94fcc38c66efdedfab93f228e233259"></div>`,
+  '300x250': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/a27f97495afa53594a3a28dae3561612/invoke.js"></script><div id="container-a27f97495afa53594a3a28dae3561612"></div>`,
+  '320x50': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/b474db6c7b5407cfc4a00b811ec0ea88/invoke.js"></script><div id="container-b474db6c7b5407cfc4a00b811ec0ea88"></div>`,
+  '468x60': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/2d9cf8a04c27b8185dedc91921fc84c9/invoke.js"></script><div id="container-2d9cf8a04c27b8185dedc91921fc84c9"></div>`,
+  '728x90': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/d0d3dfaf022b14256f933e6b64a7d22d/invoke.js"></script><div id="container-d0d3dfaf022b14256f933e6b64a7d22d"></div>`,
+  '160x600': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/6205de4c1dffd89c740d2d833c2644d3/invoke.js"></script><div id="container-6205de4c1dffd89c740d2d833c2644d3"></div>`,
+  'native': `<script async="async" data-cfasync="false" src="https://pl29114110.profitablecpmratenetwork.com/ed82e9d688143dbf883745c69c6c8ee3/invoke.js"></script><div id="container-ed82e9d688143dbf883745c69c6c8ee3"></div>`,
+};
+
+const adHtml = ads[id] || ads['300x250'];
+---
+
+<div class="ad-wrapper" data-ad={id}>
+  <Fragment set:html={adHtml} />
+</div>
+
+<style>
+  .ad-wrapper {
+    margin: 1.5rem auto;
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+</style>

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import SubjectCard from '../../components/SubjectCard.astro';
+import Adsterra from '../../components/Adsterra.astro';
 import { getSubjects } from '../../utils/subjects';
 
 const subjects = getSubjects();
@@ -25,6 +26,8 @@ const subjectsList = Object.values(subjects);
           <p class="hero-subtitle">Browse our complete collection of IGCSE resources, curated for excellence.</p>
         </div>
       </section>
+
+      <Adsterra position="content" />
 
       <section class="subjects-grid-section">
         <div class="container">
